@@ -298,7 +298,7 @@ def catch_up(now=None):
     """놓친 매매 회차를 다음 회차까지 기다리지 않고 바로 보충 (11-05 09:45 사고 뒤 추가).
     매매 회차가 실패·건너뜀으로 국면 기록 없이 끝났으면(C.missed_trade) 정기 판단 작업을 지금 한 번 더 띄움.
     같은 회차·같은 코드로는 한 번만 시도 → 코드 버그로 계속 실패해도 1분마다 토큰을 쓰지 않음.
-    수정 코드가 반영되면(HEAD 가 바뀌면) 다시 한 번 시도 = '복구되자마자 매매'."""
+    수정 코드가 반영되면(에이전트 기록이 아닌 코드 커밋이 바뀌면) 다시 한 번 시도 = '복구되자마자 매매'."""
     n = now or C.now()
     s = C.params()["schedule"]
     times = s.get("trade_times") or []
@@ -307,7 +307,10 @@ def catch_up(now=None):
     missed = C.missed_trade(n)
     if not missed or run_busy():
         return False
-    key = f"{n.date().isoformat()} {missed} {rev('HEAD')[:7]}"
+    # 11-15: HEAD 대신 '코드' 커밋 기준. 에이전트 기록 커밋(Agent ...)은 실패해도 매번 생겨서,
+    # 11-13 사용 한도에 걸린 동안 HEAD 가 바뀔 때마다 1분마다 58번 다시 띄우던 것
+    code = git("log", "-1", "--format=%h", "--invert-grep", "--grep=^Agent ").stdout.strip()[:7]
+    key = f"{n.date().isoformat()} {missed} {code}"
     if state().get("catch_up") == key:
         return False
     save(catch_up=key)
