@@ -305,8 +305,8 @@ def apply_tuning(changes: list[dict], summary: str, lessons: list[str] = None) -
     다음 판단부터 브리핑에 실려 총괄·bull·bear 가 참고함 (기준값과 따로, 판단 자체를 고치는 용도).
     서버가 허용 키·범위·변경폭·개수·쿨다운·기준값 일관성을 검사해 통과한 것만 반영하고, 거절 사유를 돌려줍니다."""
     if lessons:   # 11-06 S.Lee: 맞은 판단은 유지, 틀린 판단은 다음부터 바꾸도록
-        C.write_json(tuning.LESSONS, {"time": C.stamp(), "lessons": [str(x)[:200] for x in lessons][:6]})
-        C.journal("lessons", lessons=[str(x)[:200] for x in lessons][:6])
+        C.write_json(tuning.LESSONS, {"time": C.stamp(), "lessons": [str(x)[:400] for x in lessons][:6]})
+        C.journal("lessons", lessons=[str(x)[:400] for x in lessons][:6])
     return tuning.apply(changes, summary)
 
 
