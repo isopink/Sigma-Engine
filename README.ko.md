@@ -4,9 +4,11 @@
 
 **Claude Code 에이전트가 토론하고, 코드가 결정한다**
 
-2026 나비스트 AI 자동매매 대회 · 팀 「하이닉스 298층 주민」
+## 🎯 목표: 시장을 이긴다.
 
-[**Live Dashboard →**](https://isopink.github.io/hynix-298f/) · [English](README.md)
+기준: KODEX 200 (KOSPI 200 ETF)
+
+[**Live Dashboard →**](https://isopink.github.io/Sigma-Engine/) · [English](README.md)
 
 <img src="assets/dashboard.jpg" alt="Sigma Engine 대시보드" width="100%">
 
@@ -14,7 +16,7 @@
 
 ---
 
-4주 동안 국내 주식을 거래하는 자율 매매 에이전트입니다. 팀 계좌 1개 · 5,000만 원, 판단과 주문은 모두 AI가 직접 합니다. 사람의 수동 주문이나 주문 승인은 없습니다.
+국내 주식을 거래하는 자율 매매 에이전트입니다. 계좌 1개 · 5,000만 원, 판단과 주문은 모두 AI가 직접 합니다. 사람의 수동 주문이나 주문 승인은 없습니다.
 
 ## 컨셉: 에이전트는 제안하고, 규칙이 결정한다
 
@@ -85,14 +87,12 @@ reports/    계획서, 주간 보고서, 변경 기록
 
 ## 결과
 
-> 🏁 대회 종료 후 (2026.11.29): KODEX 200 대비 최종 수익률, 확신도가 수익을 예측했는지, Hook이 막은 주문, 자동 조정이 바꾼 것
+> 🏁 실운용 종료 후 공개 (2026.11.29): KODEX 200 대비 최종 수익률, 확신도가 수익을 예측했는지, Hook이 막은 주문, 자동 조정이 바꾼 것
 
-## 팀
+## 참고
 
-**하이닉스 298층 주민** — 이석민 · 박문화
-
-참고: [bitra](https://github.com/BijectiveLabs/bitra) ("에이전트는 제안하고 시스템이 결정한다"), [qanat](https://github.com/fidetolabs/qanat), [Kiwoom REST API](https://github.com/Kiwoom-Securities/Kiwoom-REST-API), [gs-quant](https://github.com/goldmansachs/gs-quant)
+ [bitra](https://github.com/BijectiveLabs/bitra) ("에이전트는 제안하고 시스템이 결정한다"), [qanat](https://github.com/fidetolabs/qanat), [Kiwoom REST API](https://github.com/Kiwoom-Securities/Kiwoom-REST-API), [gs-quant](https://github.com/goldmansachs/gs-quant)
 
 <div align="center">
-<sub>매매 대회용으로 만든 프로젝트입니다. 투자 권유가 아닙니다.</sub>
+<sub>투자 권유가 아닙니다.</sub>
 </div>

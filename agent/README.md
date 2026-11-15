@@ -16,7 +16,7 @@ The trading agent. **The agent proposes, the rules decide**: Claude Code reads t
 | Wed · Fri 17:00 | `report` — weekly report draft (writer) | yes |
 | always (from logon) | `sync` — every minute, pulls pushed code, checks it, restarts `monitor` / the balance loop if their code changed | no |
 
-Register them with `setup_tasks.ps1` (Windows Task Scheduler). The agent runs on an always-on PC and is edited from a laptop; see [MOVE_PC.md](MOVE_PC.md) (Korean) for moving it between machines.
+Register them with `setup_tasks.ps1` (Windows Task Scheduler). The agent runs on an always-on PC and is edited from a laptop.
 
 ## Layout
 
@@ -29,7 +29,7 @@ agent/
 │   └── settings.json         # Hook registration, tool permissions (no Bash / Edit / Write)
 ├── .mcp.json                 # kiwoom MCP server
 ├── config/
-│   ├── risk_limits.json      # Fixed for the whole competition; enforced by the hook
+│   ├── risk_limits.json      # Fixed limits; enforced by the hook
 │   ├── params.json           # Decision thresholds, conviction adjustments, screen settings (auto-tuned daily)
 │   └── tuning.json           # What the tuner may change: keys, ranges, step size, cooldown
 ├── src/

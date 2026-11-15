@@ -4,9 +4,11 @@
 
 **Claude Code agents argue. Code decides.**
 
-Team *Hynix 298F* · 2026 Navist AI Auto-Trading Competition (University of Seoul)
+## 🎯 Goal: Beat the market.
 
-[**Live Dashboard →**](https://isopink.github.io/hynix-298f/) · [한국어](README.ko.md)
+Benchmark: KODEX 200 (KOSPI 200 ETF)
+
+[**Live Dashboard →**](https://isopink.github.io/Sigma-Engine/) · [한국어](README.ko.md)
 
 <img src="assets/dashboard.jpg" alt="Sigma Engine dashboard" width="100%">
 
@@ -14,7 +16,7 @@ Team *Hynix 298F* · 2026 Navist AI Auto-Trading Competition (University of Seou
 
 ---
 
-An autonomous trading agent for a four-week competition on Korean equities: one team account, ₩50M, and every decision and order must come from the AI. No manual orders and no human approval.
+An autonomous trading agent for Korean equities: one ₩50M account, and every decision and order comes from the AI. No manual orders and no human approval.
 
 ## Concept: agents propose, rules decide
 
@@ -85,14 +87,12 @@ reports/    plan, weekly reports, change log
 
 ## Results
 
-> 🏁 After the competition (Nov 29, 2026): final return vs. KODEX 200, whether conviction predicted returns, what the Hook blocked, and what self-tuning changed.
+> 🏁 Coming after the live run ends (Nov 29, 2026): final return vs. KODEX 200, whether conviction predicted returns, what the Hook blocked, and what self-tuning changed.
 
-## Team
-
-**Hynix 298F** — Seokmin Lee · Munhwa Park
+## Acknowledgements
 
 Thanks to [bitra](https://github.com/BijectiveLabs/bitra) ("agents propose, the system decides"), [qanat](https://github.com/fidetolabs/qanat), [Kiwoom REST API](https://github.com/Kiwoom-Securities/Kiwoom-REST-API) and [gs-quant](https://github.com/goldmansachs/gs-quant).
 
 <div align="center">
-<sub>Built for a trading competition. Not investment advice.</sub>
+<sub>Not investment advice.</sub>
 </div>

@@ -25,7 +25,7 @@ agent/      트레이딩 에이전트 (실행법 agent/README.md, 에이전트 �
   work/       실행 산출물 (커밋 안 함). journal.jsonl 이 모든 기록의 원본
 live/       snapshot.py — 키움 잔고(kt00018) · KOSPI(ka20001) → Supabase push_snapshot, 30초마다 (params.live.snapshot_sec, 30초 밑 금지)
 supabase/   schema.sql (comments · snapshots · push_snapshot) · kospi.sql · flow.sql · realtime.sql (KOSPI · 수급 20초 수집) · heartbeat.sql
-docs/       GitHub Pages 대시보드 https://isopink.github.io/hynix-298f/ — index.html 한 파일 (D3 7.9.0, 빌드 없음) · config.js · data/*.json
+docs/       GitHub Pages 대시보드 https://isopink.github.io/Sigma-Engine/ — index.html 한 파일 (D3 7.9.0, 빌드 없음) · config.js · data/*.json
 reports/    보고서 · changes.tsv · changelog_plain.tsv · make_changelog.py · drafts/ (회고 · 보고서 초안) · decisions.md
 assets/     README 그림 · diagrams/*.mmd
 ```
@@ -36,7 +36,7 @@ assets/     README 그림 · diagrams/*.mmd
 - push → 데스크톱 `sync` (로그온부터 상시)가 1분 안에 pull · 검사 · 반영, 장중이면 감시 · 잔고 루프 재시작, `sync.py` 가 바뀌면 자기 자신도 재시작. 1분마다 heartbeat
 - 에이전트도 판단마다 `docs/data` 를 커밋 · push 함 → push 가 거절되면 `git pull --rebase` 후 다시
 - 작업을 멈출 때: `Stop-ScheduledTask` 는 run.bat 만 끔 → 감시를 재시작하려면 `run.py monitor` python 도 종료
-- 옮기는 순서 `agent/MOVE_PC.md`, 배포 `docs/DEPLOY.md`
+- PC 이전 · 배포 메모는 저장소에서 뺌 (git 기록에 남아 있음)
 
 ## 실행 일정 (평일)
 
