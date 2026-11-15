@@ -17,3 +17,4 @@ live/last_snapshot.json
 
 # 보고서 빌드 중간 산출물 (PDF 만 커밋)
 reports/*/*_report.html
+reports/week2/*.woff2
