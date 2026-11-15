@@ -294,6 +294,11 @@ def single_instance():
     return f
 
 
+def code_head():
+    """마지막 코드 커밋 (에이전트 기록 커밋 'Agent ...' 은 건너뜀)."""
+    return git("log", "-1", "--format=%h", "--invert-grep", "--grep=^Agent ").stdout.strip()[:7]
+
+
 def catch_up(now=None):
     """놓친 매매 회차를 다음 회차까지 기다리지 않고 바로 보충 (11-05 09:45 사고 뒤 추가).
     매매 회차가 실패·건너뜀으로 국면 기록 없이 끝났으면(C.missed_trade) 정기 판단 작업을 지금 한 번 더 띄움.
@@ -309,8 +314,7 @@ def catch_up(now=None):
         return False
     # 11-15: HEAD 대신 '코드' 커밋 기준. 에이전트 기록 커밋(Agent ...)은 실패해도 매번 생겨서,
     # 11-13 사용 한도에 걸린 동안 HEAD 가 바뀔 때마다 1분마다 58번 다시 띄우던 것
-    code = git("log", "-1", "--format=%h", "--invert-grep", "--grep=^Agent ").stdout.strip()[:7]
-    key = f"{n.date().isoformat()} {missed} {code}"
+    key = f"{n.date().isoformat()} {missed} {code_head()}"
     if state().get("catch_up") == key:
         return False
     save(catch_up=key)

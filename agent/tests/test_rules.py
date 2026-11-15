@@ -490,7 +490,7 @@ def test_sync_catch_up_once_per_slot_and_code():
     sync.start_task = lambda task: started.append(task) or True
     sync.run_busy = lambda: False
     head = ["aaaaaaa"]
-    sync.rev = lambda ref: head[0]
+    sync.code_head = lambda: head[0]
     t = datetime(2026, 11, 5, 9, 47, tzinfo=C.KST)   # 목요일 09:47, 09:45 매매가 기록 없이 끝난 상황
     orig = C.missed_trade
     try:
