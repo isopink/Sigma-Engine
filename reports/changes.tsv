@@ -209,3 +209,4 @@ bc73c9d	전략	KODEX 200 매수 다시 허용 (index.enabled=true, buy_banned=fa
 6b8300b	운영	서브에이전트 effort 올림: position high→xhigh, regime Sonnet→Opus high, bear high→xhigh (14:00 회차 토큰 3.5만으로 여유)
 bb7c923	운영	sync 를 평일 08:00~16:00 에만 돌림 (주말 · 장 마감 뒤 쉼, params.sync.window). 대시보드 서버 점은 그 밖이면 회색
 c543c59	운영	sync 종료 시각 16:00 → 18:00 (16:00 조정 · 수 · 금 회고 · 보고서 push 까지 반영)
+e4cc083	운영	보충 매매 재시도 기준을 HEAD → 코드 커밋으로 (11-13 사용 한도 중 에이전트 기록 커밋마다 1분 간격 58번 재시도)
