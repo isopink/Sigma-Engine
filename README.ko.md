@@ -8,7 +8,7 @@
 
 기준: KODEX 200 (KOSPI 200 ETF)
 
-[**Live Dashboard →**](https://isopink.github.io/Sigma-Engine/) · [English](README.md)
+[**Live Dashboard →**](https://isopink.github.io/sigma-engine/) · [English](README.md)
 
 <img src="assets/dashboard.jpg" alt="Sigma Engine 대시보드" width="100%">
 
