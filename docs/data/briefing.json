@@ -1,19 +1,18 @@
 {
-  "created": "2026-11-13 08:31",
-  "asof": "2026-11-12",
+  "created": "2026-11-16 08:31",
+  "asof": "2026-11-13",
   "universe": 74,
   "source": "krx",
   "market": {
     "source": "KOSPI",
-    "close": 5343,
-    "ma20": 5560,
-    "ma60": 6356,
-    "ret5": -0.0076,
-    "ret20": -0.0381,
-    "rsi14": 39.9,
+    "close": 5291,
+    "ma20": 5542,
+    "ma60": 6328,
+    "ret5": 0.0456,
+    "ret20": -0.0666,
+    "rsi14": 38.9,
     "rule_hint": "횡보",
     "closes": [
-      6258.77,
       6299.66,
       6345.53,
       6579.04,
@@ -77,337 +76,130 @@
       5018.85,
       5239.13,
       5375.36,
-      5342.73
+      5342.73,
+      5290.53
     ]
   },
-  "intraday": {
-    "time": "15:15",
-    "pool": 421,
-    "analyzed_new": 4,
-    "passed": 14,
-    "kept_prep": false
-  },
+  "intraday": null,
   "candidates": [
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 31750,
-      "ret5": -0.0124,
-      "ret20": 0.0111,
-      "rsi14": 50.8,
-      "vol20": 0.327,
-      "foreign_net": -29095907075,
-      "inst_net": 37693300675,
-      "score": 0.732,
-      "news": [],
-      "foreign_today": 539750000,
-      "inst_today": 3968750000,
-      "exchange": "KOSPI"
-    },
     {
       "code": "028050",
       "name": "삼성E&A",
-      "close": 65700,
-      "ret5": 0.0139,
-      "ret20": 0.5737,
-      "rsi14": 63.8,
-      "vol20": 0.884,
-      "foreign_net": -81770056900,
-      "inst_net": 59675563500,
-      "score": 0.732,
-      "news": [
-        {
-          "date": "11-12",
-          "title": "삼성E&A, 모듈화 시공 기술로 중동 프로젝트상 수상",
-          "risk": false
-        }
-      ],
-      "price": 69000,
-      "chg": 0.0455,
-      "activity": 0.96,
-      "foreign_today": 0,
-      "inst_today": 4278000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "004020",
-      "name": "현대제철",
-      "close": 28700,
-      "ret5": -0.0103,
-      "ret20": 0.0649,
-      "rsi14": 51.1,
-      "vol20": 0.6,
-      "foreign_net": 1608696075,
-      "inst_net": 2739770850,
-      "score": 0.61,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "포스코, GS그룹과 AI 데이터센터 사업 협력…현대제철, 내화·내진 H형강...",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "현대제철, 내화·내진 H형강 국내 첫 KS 인증…화재·지진 대응 성능 확...",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "사진 한 장에 담긴 이웃의 마음... 현대제철, 19년 나눔의 기록 펼치다",
-          "risk": false
-        }
-      ],
-      "foreign_today": 545300000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "326030",
-      "name": "SK바이오팜",
-      "close": 88000,
-      "ret5": -0.0351,
-      "ret20": 0.2791,
-      "rsi14": 66.6,
-      "vol20": 0.538,
-      "foreign_net": -14472598100,
-      "inst_net": 18845759500,
-      "score": 0.61,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "SK바이오팜 세노바메이트, 일본 판매 시작…한·중·일 시장 진출 완료",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "SK바이오팜 세노바메이트, 일본 판매 개시…동북아 3국 상업화",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "[포토뉴스] SK바이오팜, '세노바메이트' 중국 이어 日 출시",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 880000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "267270",
-      "name": "HD건설기계",
-      "close": 91200,
-      "ret5": 0.0922,
-      "ret20": -0.0044,
-      "rsi14": 47.0,
-      "vol20": 0.748,
-      "foreign_net": -34774154200,
-      "inst_net": 28642292800,
-      "score": 0.537,
-      "news": [
-        {
-          "date": "11-12",
-          "title": "[1분영상] HD건설기계, 에티오피아 6·25 전사자 '추모의 벽' 건립…참전...",
-          "risk": false
-        },
-        {
-          "date": "11-12",
-          "title": "HD건설기계, 에티오피아에 6·25 참전 전사자 '추모의 벽' 건립",
-          "risk": false
-        },
-        {
-          "date": "11-12",
-          "title": "HD건설기계, 에티오피아 ‘6·25 전사자 추모의 벽’ 제막",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 820800000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "086450",
-      "name": "동국제약",
-      "close": 24750,
-      "ret5": 0.0102,
-      "ret20": 0.0227,
-      "rsi14": 56.2,
-      "vol20": 0.469,
-      "foreign_net": 994866350,
-      "inst_net": 3654508325,
-      "score": 0.317,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "동국제약 센텔리안24, 컬리뷰티페스타 참가...피부 진단·제품 체험 운영",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "동국제약 센텔리안24, '컬리뷰티페스타 2026'서 단독 부스 꾸리고 소비자...",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "동국제약 센텔리안24, 뷰티 행사서 피부 진단·제품 체험 공간 운영",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 222750000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "425420",
-      "name": "티에프이",
-      "close": 83400,
-      "ret5": 0.2,
-      "ret20": 0.5977,
-      "rsi14": 60.5,
-      "vol20": 1.453,
-      "foreign_net": -6514931100,
-      "inst_net": 8639681450,
+      "close": 69400,
+      "ret5": 0.1321,
+      "ret20": 0.5917,
+      "rsi14": 68.1,
+      "vol20": 0.889,
+      "foreign_net": -57418179000,
+      "inst_net": 52231499650,
       "score": 1.0,
       "news": [
         {
+          "date": "11-16",
+          "title": "삼성E&A, 반도체 투자·화공 수익성 개선 기반 성장-LS證",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "삼성E&A 주가 4.24% 상승…기관·기타법인 동반 순매수",
+          "risk": false
+        },
+        {
           "date": "11-13",
-          "title": "티에프이, 글로벌 빅테크 고객사 '1차 벤더 등록' 완료",
-          "risk": false
-        },
-        {
-          "date": "11-12",
-          "title": "티에프이 장중 7%대 상승…하나증권 목표가 11만원",
-          "risk": false
-        },
-        {
-          "date": "11-12",
-          "title": "[모닝 리포트] \"티에프이, 소캠2 매출 확대에 실적 성장 지속\"",
+          "title": "[오늘의 특징주] SK스퀘어·컴투스·삼성E&A",
           "risk": false
         }
       ],
-      "price": 90200,
-      "chg": 0.07,
-      "activity": 0.95,
-      "foreign_today": 0,
-      "inst_today": 992200000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "468530",
-      "name": "프로티나",
-      "close": 58000,
-      "ret5": 0.0902,
-      "ret20": 0.7059,
-      "rsi14": 61.9,
-      "vol20": 1.202,
-      "foreign_net": -219934325,
-      "inst_net": 6802284425,
-      "score": 0.805,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 754000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "009420",
-      "name": "한올바이오파마",
-      "close": 51200,
-      "ret5": 0.2946,
-      "ret20": 0.2673,
-      "rsi14": 67.3,
-      "vol20": 1.006,
-      "foreign_net": -12666495850,
-      "inst_net": 23546180550,
-      "score": 0.707,
-      "news": [
-        {
-          "date": "11-12",
-          "title": "한올바이오파마 아이메로프루바트, 4개 적응증에 집중",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1177600000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "451760",
-      "name": "컨텍",
-      "close": 12370,
-      "ret5": 0.3593,
-      "ret20": 0.9984,
-      "rsi14": 66.1,
-      "vol20": 2.006,
-      "foreign_net": -513491960,
-      "inst_net": -109460540,
-      "score": 0.61,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "컨텍, 15일간 주가 97.6% 급등에 소수계좌 매수 관여로 투자주의종목 지...",
-          "risk": false
-        },
-        {
-          "date": "11-12",
-          "title": "코난테크놀로지·컨텍 급등…코스닥 상승률 상위권",
-          "risk": false
-        },
-        {
-          "date": "11-12",
-          "title": "컨텍, 15일간 주가 97.6% 급등…소수계좌 매수 관여로 투자주의종목 지...",
-          "risk": false
-        }
-      ],
-      "price": 11280,
-      "chg": -0.0881,
-      "activity": 1.47,
-      "foreign_today": 406080000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "263860",
       "name": "지니언스",
-      "close": 33300,
-      "ret5": 0.4323,
-      "ret20": 0.5895,
-      "rsi14": 70.4,
-      "vol20": 1.681,
-      "foreign_net": -16169810550,
-      "inst_net": 4107522025,
-      "score": 0.585,
+      "close": 34150,
+      "ret5": 0.4594,
+      "ret20": 0.5594,
+      "rsi14": 71.5,
+      "vol20": 1.68,
+      "foreign_net": -17891982750,
+      "inst_net": 4515189550,
+      "score": 0.778,
       "news": [
         {
-          "date": "11-13",
-          "title": "유안타증권 “지니언스, 금융권 보안투자 확대 수혜…3분기 영업익 253%...",
+          "date": "11-15",
+          "title": "지니언스 주가 49.78% 급등…외국인 179억원 순매도",
           "risk": false
         },
         {
-          "date": "11-12",
-          "title": "지니언스 3분기 영업익 37억7774만원…전년 동기 대비 253% 증가",
+          "date": "11-14",
+          "title": "11월 2주차 지니언스 주가 가파른 상승세 마감",
           "risk": false
         },
         {
-          "date": "11-12",
-          "title": "지니언스, 누적 영업익 3배 넘게 늘었다…NAC·EDR로 ‘폭풍성장’",
+          "date": "11-14",
+          "title": "매출보다 이익 더 빠르게 늘었다…지니언스 수익성 대폭 개선",
           "risk": false
         }
       ],
-      "price": 34550,
-      "chg": 0.1021,
-      "activity": 4.38,
-      "foreign_today": 0,
-      "inst_today": 207300000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "092870",
+      "name": "엑시콘",
+      "close": 62500,
+      "ret5": 0.4013,
+      "ret20": 0.1553,
+      "rsi14": 59.7,
+      "vol20": 1.607,
+      "foreign_net": -32698757925,
+      "inst_net": 13779729525,
+      "score": 0.556,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "엑시콘 3분기 영업흑자 151억원…연결 순이익도 184억원",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "002990",
+      "name": "금호건설",
+      "close": 11210,
+      "ret5": 0.3874,
+      "ret20": 0.0915,
+      "rsi14": 59.5,
+      "vol20": 1.115,
+      "foreign_net": -2508101775,
+      "inst_net": 545111590,
+      "score": 0.333,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "\"공정 정상화 여부가 관건\"...금호건설, 수주잔고 10조 돌파에도 매출 \"...",
+          "risk": false
+        },
+        {
+          "date": "11-15",
+          "title": "금호건설, 3분기 영업이익 222억원…전년 대비 44.2% 증가",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "금호건설 주가 5거래일 상승 급등 마감",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSPI"
     },
     {
       "code": "114800",
       "name": "KODEX 인버스",
-      "close": 1256,
-      "ret5": -0.0024,
-      "ret20": 0.0113,
-      "rsi14": 56.8,
-      "vol20": 0.579,
+      "close": 1272,
+      "ret5": -0.0515,
+      "ret20": 0.0452,
+      "rsi14": 58.3,
+      "vol20": 0.575,
       "foreign_net": null,
       "inst_net": null,
       "score": null,
@@ -417,61 +209,16 @@
     {
       "code": "069500",
       "name": "KODEX 200",
-      "close": 84240,
-      "ret5": -0.0044,
-      "ret20": -0.032,
-      "rsi14": 40.5,
-      "vol20": 0.584,
+      "close": 83115,
+      "ret5": 0.052,
+      "ret20": -0.0635,
+      "rsi14": 39.2,
+      "vol20": 0.58,
       "foreign_net": null,
       "inst_net": null,
       "score": null,
-      "news": [
-        {
-          "date": "11-12",
-          "title": "삼성자산운용, KODEX 200타겟위클리커버드콜 분배금 확대",
-          "risk": false
-        },
-        {
-          "date": "11-11",
-          "title": "'KODEX 200타겟위클리커버드콜' 11월 분배금 266원…특별배당 반영",
-          "risk": false
-        },
-        {
-          "date": "11-11",
-          "title": "삼성자산운용, 'KODEX 200타겟위클리커버드콜'  삼성전자 특별배당 월중...",
-          "risk": false
-        }
-      ],
+      "news": [],
       "exchange": "ETF"
-    },
-    {
-      "code": "035420",
-      "name": "NAVER",
-      "close": 180900,
-      "ret5": -0.0163,
-      "ret20": 0.0554,
-      "rsi14": 47.6,
-      "vol20": 0.546,
-      "foreign_net": 76831028650,
-      "inst_net": 89266470200,
-      "score": 0,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "NAVER, 고저차 7,700원…다음 변수는 AI 팩토리와 이익 부담",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "상위 1%, 이틀 연속 NAVER 사들여 [주식 초고수는 지금]",
-          "risk": false
-        }
-      ],
-      "price": 172000,
-      "chg": -0.0539,
-      "foreign_today": 5848000000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
     }
   ]
 }
