@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "13:00",
+    "time": "13:15",
     "pool": 406,
-    "analyzed_new": 27,
+    "analyzed_new": 10,
     "passed": 22,
     "kept_prep": false
   },
@@ -118,8 +118,38 @@
       ],
       "price": 1279000,
       "chg": 0.057,
-      "activity": 1.46,
+      "activity": 1.42,
       "foreign_today": 8953000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "close": 235500,
+      "ret5": 0.0953,
+      "ret20": 0.1852,
+      "rsi14": 62.9,
+      "vol20": 0.547,
+      "foreign_net": -23004040500,
+      "inst_net": 73478613250,
+      "score": 0.791,
+      "news": [
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
+          "risk": false
+        }
+      ],
+      "price": 228500,
+      "chg": -0.0256,
+      "activity": 1.17,
+      "foreign_today": 1599500000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -133,43 +163,13 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.797,
+      "score": 0.784,
       "news": [],
-      "price": 161400,
-      "chg": 0.0151,
-      "activity": 0.8,
-      "foreign_today": 7263000000,
-      "inst_today": 2905200000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "018260",
-      "name": "삼성에스디에스",
-      "close": 235500,
-      "ret5": 0.0953,
-      "ret20": 0.1852,
-      "rsi14": 62.9,
-      "vol20": 0.547,
-      "foreign_net": -23004040500,
-      "inst_net": 73478613250,
-      "score": 0.797,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
-          "risk": false
-        }
-      ],
-      "price": 231000,
-      "chg": -0.0149,
-      "activity": 1.21,
-      "foreign_today": 1617000000,
-      "inst_today": 0,
+      "price": 160800,
+      "chg": 0.0113,
+      "activity": 0.79,
+      "foreign_today": 7236000000,
+      "inst_today": 2894400000,
       "exchange": "KOSPI"
     },
     {
@@ -182,7 +182,7 @@
       "vol20": 0.828,
       "foreign_net": 3992409275,
       "inst_net": -1135994300,
-      "score": 0.73,
+      "score": 0.736,
       "news": [
         {
           "date": "11-13",
@@ -197,29 +197,10 @@
       ],
       "price": 44400,
       "chg": 0.0207,
-      "activity": 0.89,
+      "activity": 0.85,
       "foreign_today": 266400000,
       "inst_today": 355200000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32400,
-      "ret5": 0.0221,
-      "ret20": 0.0253,
-      "rsi14": 55.4,
-      "vol20": 0.334,
-      "foreign_net": 3464594100,
-      "inst_net": 16462940750,
-      "score": 0.716,
-      "news": [],
-      "price": 32850,
-      "chg": 0.0108,
-      "activity": 0.92,
-      "foreign_today": 164250000,
-      "inst_today": 1346850000,
-      "exchange": "KOSPI"
     },
     {
       "code": "008930",
@@ -254,6 +235,25 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32400,
+      "ret5": 0.0221,
+      "ret20": 0.0253,
+      "rsi14": 55.4,
+      "vol20": 0.334,
+      "foreign_net": 3464594100,
+      "inst_net": 16462940750,
+      "score": 0.703,
+      "news": [],
+      "price": 32800,
+      "chg": 0.0092,
+      "activity": 0.9,
+      "foreign_today": 164000000,
+      "inst_today": 1344800000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "032830",
       "name": "삼성생명",
       "close": 253500,
@@ -271,11 +271,11 @@
           "risk": false
         }
       ],
-      "price": 255000,
-      "chg": 0.0119,
+      "price": 254000,
+      "chg": 0.0079,
       "activity": 0.6,
-      "foreign_today": 4335000000,
-      "inst_today": 2295000000,
+      "foreign_today": 4318000000,
+      "inst_today": 2286000000,
       "exchange": "KOSPI"
     },
     {
@@ -292,12 +292,12 @@
       "news": [
         {
           "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
           "risk": false
         },
         {
           "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
           "risk": false
         }
       ],
@@ -333,11 +333,11 @@
           "risk": false
         }
       ],
-      "price": 33000,
-      "chg": 0.041,
-      "activity": 1.66,
+      "price": 32900,
+      "chg": 0.0379,
+      "activity": 1.6,
       "foreign_today": 0,
-      "inst_today": 462000000,
+      "inst_today": 460600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -366,7 +366,7 @@
       "vol20": 0.577,
       "foreign_net": 3717914800,
       "inst_net": 774816875,
-      "score": 0.534,
+      "score": 0.541,
       "news": [
         {
           "date": "11-15",
@@ -393,8 +393,13 @@
       "vol20": 0.861,
       "foreign_net": -7935039700,
       "inst_net": 19218676450,
-      "score": 0.514,
+      "score": 0.52,
       "news": [
+        {
+          "date": "11-16",
+          "title": "GS건설, 안산시 '아르뮤제자이' 견본주택 개관···4일간 1.2만명 방문",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "GS건설, 아르뮤제자이 견본주택 4일간 12000여명 방문…23일 청약 시작",
@@ -403,11 +408,6 @@
         {
           "date": "11-16",
           "title": "시공사 교체 추진하다 조합장 해임…상대원2구역 DL이앤씨·GS건설 갈등...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "DL이앤씨 성수 2조 · GS건설 목동 1.8조, 이번주 시공권 결정",
           "risk": false
         }
       ],
@@ -425,8 +425,13 @@
       "vol20": 0.364,
       "foreign_net": 13529679450,
       "inst_net": -8623580400,
-      "score": 0.514,
+      "score": 0.52,
       "news": [
+        {
+          "date": "11-16",
+          "title": "교통 과태료 고지서도 PASS로 받는다…KT·경찰청 18일 시행",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "KT \"과태료 부과 알림부터 납부기한 확인까지 간편하게 해결하세요\"",
@@ -435,11 +440,6 @@
         {
           "date": "11-16",
           "title": "KT, 18일부터 PASS로 교통 과태료 고지",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "KT, 경찰청 교통 과태료 고지서 PASS 앱으로 모바일 발송",
           "risk": false
         }
       ],
@@ -470,11 +470,11 @@
           "risk": false
         }
       ],
-      "price": 90700,
-      "chg": 0.01,
-      "activity": 0.72,
-      "foreign_today": 1451200000,
-      "inst_today": 453500000,
+      "price": 90500,
+      "chg": 0.0078,
+      "activity": 0.71,
+      "foreign_today": 1448000000,
+      "inst_today": 452500000,
       "exchange": "KOSPI"
     },
     {
@@ -503,7 +503,7 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.845,
+      "score": 0.838,
       "news": [
         {
           "date": "11-16",
@@ -516,11 +516,11 @@
           "risk": false
         }
       ],
-      "price": 13930,
-      "chg": 0.0757,
-      "activity": 4.37,
-      "foreign_today": 557200000,
-      "inst_today": 1546230000,
+      "price": 13540,
+      "chg": 0.0456,
+      "activity": 4.17,
+      "foreign_today": 541600000,
+      "inst_today": 1502940000,
       "exchange": "KOSDAQ"
     },
     {
@@ -551,11 +551,11 @@
           "risk": false
         }
       ],
-      "price": 49350,
-      "chg": 0.0489,
-      "activity": 2.7,
+      "price": 49450,
+      "chg": 0.051,
+      "activity": 2.58,
       "foreign_today": 0,
-      "inst_today": 888300000,
+      "inst_today": 890100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -586,11 +586,11 @@
           "risk": false
         }
       ],
-      "price": 55500,
-      "chg": 0.0165,
-      "activity": 1.45,
+      "price": 55200,
+      "chg": 0.011,
+      "activity": 1.4,
       "foreign_today": 0,
-      "inst_today": 1165500000,
+      "inst_today": 1159200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -621,11 +621,11 @@
           "risk": false
         }
       ],
-      "price": 10720,
-      "chg": -0.0437,
-      "activity": 11.79,
+      "price": 10690,
+      "chg": -0.0464,
+      "activity": 11.11,
       "foreign_today": 0,
-      "inst_today": 150080000,
+      "inst_today": 149660000,
       "exchange": "KOSPI"
     },
     {
