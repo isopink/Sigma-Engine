@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "12:30",
+    "time": "12:45",
     "pool": 405,
     "analyzed_new": 30,
     "passed": 22,
@@ -116,10 +116,10 @@
           "risk": false
         }
       ],
-      "price": 1279000,
-      "chg": 0.057,
-      "activity": 1.57,
-      "foreign_today": 8953000000,
+      "price": 1278000,
+      "chg": 0.0562,
+      "activity": 1.51,
+      "foreign_today": 8946000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -133,13 +133,13 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.815,
+      "score": 0.803,
       "news": [],
-      "price": 161400,
-      "chg": 0.0151,
-      "activity": 0.84,
-      "foreign_today": 7263000000,
-      "inst_today": 2905200000,
+      "price": 161200,
+      "chg": 0.0138,
+      "activity": 0.81,
+      "foreign_today": 7254000000,
+      "inst_today": 2901600000,
       "exchange": "KOSPI"
     },
     {
@@ -152,7 +152,7 @@
       "vol20": 0.547,
       "foreign_net": -23004040500,
       "inst_net": 73478613250,
-      "score": 0.808,
+      "score": 0.803,
       "news": [
         {
           "date": "11-13",
@@ -167,9 +167,28 @@
       ],
       "price": 230000,
       "chg": -0.0192,
-      "activity": 1.3,
+      "activity": 1.25,
       "foreign_today": 1610000000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32400,
+      "ret5": 0.0221,
+      "ret20": 0.0253,
+      "rsi14": 55.4,
+      "vol20": 0.334,
+      "foreign_net": 3464594100,
+      "inst_net": 16462940750,
+      "score": 0.73,
+      "news": [],
+      "price": 32850,
+      "chg": 0.0108,
+      "activity": 0.94,
+      "foreign_today": 164250000,
+      "inst_today": 1346850000,
       "exchange": "KOSPI"
     },
     {
@@ -182,7 +201,7 @@
       "vol20": 0.828,
       "foreign_net": 3992409275,
       "inst_net": -1135994300,
-      "score": 0.748,
+      "score": 0.73,
       "news": [
         {
           "date": "11-13",
@@ -197,29 +216,10 @@
       ],
       "price": 44250,
       "chg": 0.0172,
-      "activity": 0.97,
+      "activity": 0.92,
       "foreign_today": 265500000,
       "inst_today": 354000000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32400,
-      "ret5": 0.0221,
-      "ret20": 0.0253,
-      "rsi14": 55.4,
-      "vol20": 0.334,
-      "foreign_net": 3464594100,
-      "inst_net": 16462940750,
-      "score": 0.735,
-      "news": [],
-      "price": 32850,
-      "chg": 0.0108,
-      "activity": 0.97,
-      "foreign_today": 164250000,
-      "inst_today": 1346850000,
-      "exchange": "KOSPI"
     },
     {
       "code": "008930",
@@ -231,7 +231,7 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.722,
+      "score": 0.717,
       "news": [
         {
           "date": "11-16",
@@ -263,7 +263,7 @@
       "vol20": 0.53,
       "foreign_net": -3089221250,
       "inst_net": 51442437500,
-      "score": 0.715,
+      "score": 0.697,
       "news": [
         {
           "date": "11-16",
@@ -276,11 +276,11 @@
           "risk": false
         }
       ],
-      "price": 256500,
-      "chg": 0.0179,
-      "activity": 0.62,
-      "foreign_today": 4360500000,
-      "inst_today": 2308500000,
+      "price": 254000,
+      "chg": 0.0079,
+      "activity": 0.6,
+      "foreign_today": 4318000000,
+      "inst_today": 2286000000,
       "exchange": "KOSPI"
     },
     {
@@ -293,7 +293,7 @@
       "vol20": 0.753,
       "foreign_net": -36432959100,
       "inst_net": 34735975550,
-      "score": 0.689,
+      "score": 0.684,
       "news": [
         {
           "date": "11-14",
@@ -320,8 +320,13 @@
       "vol20": 0.956,
       "foreign_net": -2193733150,
       "inst_net": 4197740900,
-      "score": 0.649,
+      "score": 0.645,
       "news": [
+        {
+          "date": "11-16",
+          "title": "서진시스템, 3분기 영업이익 387억 원 '흑자 전환'…3대 핵심 사업 호조",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "[마켓포인트] 서진시스템, 3분기 매출 196% 급증…누적 1조2200억원 '역대...",
@@ -331,18 +336,13 @@
           "date": "11-16",
           "title": "서진시스템, 3분기 매출 5621억 원… 영업익 흑자 전환",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "5G 투자 재개 기대감에 통신장비주 들썩…피노·서진시스템 매수 봇물",
-          "risk": false
         }
       ],
-      "price": 32950,
-      "chg": 0.0394,
-      "activity": 1.81,
+      "price": 32750,
+      "chg": 0.0331,
+      "activity": 1.72,
       "foreign_today": 0,
-      "inst_today": 461300000,
+      "inst_today": 458500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -355,7 +355,7 @@
       "vol20": 0.504,
       "foreign_net": -17925916200,
       "inst_net": 19544951450,
-      "score": 0.563,
+      "score": 0.559,
       "news": [],
       "foreign_today": 808600000,
       "inst_today": 373200000,
@@ -371,7 +371,7 @@
       "vol20": 0.577,
       "foreign_net": 3717914800,
       "inst_net": 774816875,
-      "score": 0.543,
+      "score": 0.539,
       "news": [
         {
           "date": "11-15",
@@ -398,51 +398,26 @@
       "vol20": 0.364,
       "foreign_net": 13529679450,
       "inst_net": -8623580400,
-      "score": 0.523,
+      "score": 0.526,
       "news": [
         {
           "date": "11-16",
-          "title": "KT, 경찰청과 PASS로 교통 과태료 전자고지 시행",
+          "title": "KT, 경찰청 교통 과태료 고지서 PASS 앱으로 모바일 발송",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "실책 이후 21점이나 올린 LG, KT 꺾은 원동력",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "과태료 우편 기다릴 필요 없다…KT, PASS 모바일 고지 시행",
           "risk": false
         }
       ],
       "foreign_today": 255000000,
       "inst_today": 510000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "028050",
-      "name": "삼성E&A",
-      "close": 69400,
-      "ret5": 0.1321,
-      "ret20": 0.5917,
-      "rsi14": 68.1,
-      "vol20": 0.889,
-      "foreign_net": -57418179000,
-      "inst_net": 52231499650,
-      "score": 0.523,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "삼성E&A, 반도체 투자·화공 수익성 개선 기반 성장-LS證",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "삼성E&A 주가 4.24% 상승…기관·기타법인 동반 순매수",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "[오늘의 특징주] SK스퀘어·컴투스·삼성E&A",
-          "risk": false
-        }
-      ],
-      "price": 69200,
-      "chg": 0.0058,
-      "activity": 0.79,
-      "foreign_today": 0,
-      "inst_today": 69200000,
       "exchange": "KOSPI"
     },
     {
@@ -455,7 +430,7 @@
       "vol20": 0.843,
       "foreign_net": 11082469550,
       "inst_net": 4849326525,
-      "score": 0.517,
+      "score": 0.513,
       "news": [],
       "foreign_today": 1157500000,
       "inst_today": 0,
@@ -471,7 +446,7 @@
       "vol20": 0.861,
       "foreign_net": -7935039700,
       "inst_net": 19218676450,
-      "score": 0.517,
+      "score": 0.513,
       "news": [
         {
           "date": "11-16",
@@ -494,6 +469,41 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "028050",
+      "name": "삼성E&A",
+      "close": 69400,
+      "ret5": 0.1321,
+      "ret20": 0.5917,
+      "rsi14": 68.1,
+      "vol20": 0.889,
+      "foreign_net": -57418179000,
+      "inst_net": 52231499650,
+      "score": 0.513,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "삼성E&A, 반도체 투자·화공 수익성 개선 기반 성장-LS證",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "삼성E&A 주가 4.24% 상승…기관·기타법인 동반 순매수",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "[오늘의 특징주] SK스퀘어·컴투스·삼성E&A",
+          "risk": false
+        }
+      ],
+      "price": 69000,
+      "chg": 0.0029,
+      "activity": 0.75,
+      "foreign_today": 0,
+      "inst_today": 69000000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "232140",
       "name": "와이씨",
       "close": 13030,
@@ -503,7 +513,7 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.854,
+      "score": 0.849,
       "news": [
         {
           "date": "11-16",
@@ -516,11 +526,11 @@
           "risk": false
         }
       ],
-      "price": 13860,
-      "chg": 0.0703,
-      "activity": 4.4,
-      "foreign_today": 554400000,
-      "inst_today": 1538460000,
+      "price": 13760,
+      "chg": 0.0625,
+      "activity": 4.27,
+      "foreign_today": 550400000,
+      "inst_today": 1527360000,
       "exchange": "KOSDAQ"
     },
     {
@@ -533,7 +543,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.801,
+      "score": 0.783,
       "news": [
         {
           "date": "11-16",
@@ -551,11 +561,11 @@
           "risk": false
         }
       ],
-      "price": 49700,
-      "chg": 0.0563,
-      "activity": 3.0,
+      "price": 49400,
+      "chg": 0.0499,
+      "activity": 2.84,
       "foreign_today": 0,
-      "inst_today": 894600000,
+      "inst_today": 889200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -568,7 +578,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.735,
+      "score": 0.724,
       "news": [
         {
           "date": "11-16",
@@ -588,10 +598,45 @@
       ],
       "price": 55400,
       "chg": 0.0147,
-      "activity": 1.59,
+      "activity": 1.51,
       "foreign_today": 0,
       "inst_today": 1163400000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "002990",
+      "name": "금호건설",
+      "close": 11210,
+      "ret5": 0.3874,
+      "ret20": 0.0915,
+      "rsi14": 59.5,
+      "vol20": 1.115,
+      "foreign_net": -2508101775,
+      "inst_net": 545111590,
+      "score": 0.572,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "\"공정 정상화 여부가 관건\"...금호건설, 수주잔고 10조 돌파에도 매출 \"...",
+          "risk": false
+        },
+        {
+          "date": "11-15",
+          "title": "금호건설, 3분기 영업이익 222억원…전년 대비 44.2% 증가",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "금호건설 주가 5거래일 상승 급등 마감",
+          "risk": false
+        }
+      ],
+      "price": 10800,
+      "chg": -0.0366,
+      "activity": 12.62,
+      "foreign_today": 0,
+      "inst_today": 151200000,
+      "exchange": "KOSPI"
     },
     {
       "code": "181710",
@@ -603,7 +648,7 @@
       "vol20": 1.414,
       "foreign_net": 16236481600,
       "inst_net": -4033637200,
-      "score": 0.576,
+      "score": 0.572,
       "news": [
         {
           "date": "11-16",
@@ -623,41 +668,6 @@
       ],
       "foreign_today": 0,
       "inst_today": 531200000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "002990",
-      "name": "금호건설",
-      "close": 11210,
-      "ret5": 0.3874,
-      "ret20": 0.0915,
-      "rsi14": 59.5,
-      "vol20": 1.115,
-      "foreign_net": -2508101775,
-      "inst_net": 545111590,
-      "score": 0.563,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "\"공정 정상화 여부가 관건\"...금호건설, 수주잔고 10조 돌파에도 매출 \"...",
-          "risk": false
-        },
-        {
-          "date": "11-15",
-          "title": "금호건설, 3분기 영업이익 222억원…전년 대비 44.2% 증가",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "금호건설 주가 5거래일 상승 급등 마감",
-          "risk": false
-        }
-      ],
-      "price": 10540,
-      "chg": -0.0598,
-      "activity": 13.05,
-      "foreign_today": 0,
-      "inst_today": 147560000,
       "exchange": "KOSPI"
     },
     {
