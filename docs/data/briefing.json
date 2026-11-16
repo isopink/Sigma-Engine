@@ -81,13 +81,193 @@
     ]
   },
   "intraday": {
-    "time": "09:30",
+    "time": "09:45",
     "pool": 264,
     "analyzed_new": 30,
-    "passed": 7,
+    "passed": 13,
     "kept_prep": false
   },
   "candidates": [
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "close": 235500,
+      "ret5": 0.0953,
+      "ret20": 0.1852,
+      "rsi14": 62.9,
+      "vol20": 0.547,
+      "foreign_net": -23004040500,
+      "inst_net": 73478613250,
+      "score": 0.942,
+      "news": [
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
+          "risk": false
+        }
+      ],
+      "price": 236000,
+      "chg": 0.0064,
+      "activity": 2.3,
+      "foreign_today": 708000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "close": 158000,
+      "ret5": 0.0381,
+      "ret20": -0.0143,
+      "rsi14": 50.9,
+      "vol20": 0.334,
+      "foreign_net": 115091312200,
+      "inst_net": -103163323750,
+      "score": 0.788,
+      "news": [],
+      "price": 159400,
+      "chg": 0.0025,
+      "activity": 1.48,
+      "foreign_today": 2231600000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "close": 89800,
+      "ret5": 0.031,
+      "ret20": -0.0426,
+      "rsi14": 45.4,
+      "vol20": 0.299,
+      "foreign_net": -1311042400,
+      "inst_net": 5739344250,
+      "score": 0.577,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "하나증권 \"은행주 금리 급등에 방어주 매력 부각, 최선호주 신한지주 B...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "신한지주·BNK금융, 저PBR 매력에 주목-하나證",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "[오늘의 주목주] '금융주 강세' 신한지주 주가 5%대 상승, 코스피 외국인...",
+          "risk": false
+        }
+      ],
+      "price": 89500,
+      "chg": -0.0033,
+      "activity": 1.46,
+      "foreign_today": 626500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "030200",
+      "name": "KT",
+      "close": 51000,
+      "ret5": -0.0286,
+      "ret20": 0.0119,
+      "rsi14": 54.4,
+      "vol20": 0.364,
+      "foreign_net": 13529679450,
+      "inst_net": -8623580400,
+      "score": 0.442,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "KT, 경찰청과 손잡고 PASS 앱 기반 교통 과태료 모바일 전자고지 시행",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "KT, PASS로 교통 과태료 모바일 고지 서비스 시행",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "KT, PASS앱에서 '교통딱지' 열람 지원",
+          "risk": false
+        }
+      ],
+      "foreign_today": 102000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "078930",
+      "name": "GS",
+      "close": 83800,
+      "ret5": 0.0841,
+      "ret20": -0.0941,
+      "rsi14": 43.0,
+      "vol20": 0.491,
+      "foreign_net": -56586326950,
+      "inst_net": 58156017500,
+      "score": 0.404,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "GS25, 브리오슈번·치즈쏙치킨 선봬…출시 기념 할인 행사",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "계속되는 사고·하자·정보유출 … GS건설 '안전혁신' 허언인가",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "치킨·빵 조합 수제버거로…GS25, 브리오슈번·치즈쏙치킨 출시",
+          "risk": false
+        }
+      ],
+      "foreign_today": 167600000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 51500,
+      "ret5": -0.041,
+      "ret20": 0.0981,
+      "rsi14": 54.1,
+      "vol20": 0.686,
+      "foreign_net": 12294732950,
+      "inst_net": -7023543750,
+      "score": 0.404,
+      "news": [
+        {
+          "date": "11-13",
+          "title": "한미사이언스 '아데시', 무신사·29CM 입점",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "[이슈+] 도마 오른 신동국 회장의 한미사이언스 공격적 지분매입",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "한미사이언스, '아데시' 유통망 확대…무신사·29CM 입점",
+          "risk": false
+        }
+      ],
+      "foreign_today": 51500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
     {
       "code": "010060",
       "name": "OCI홀딩스",
@@ -102,44 +282,54 @@
       "news": [
         {
           "date": "11-16",
-          "title": "[특징주] OCI홀딩스, 美 태양광 투자 확대·폴리실리콘 가격 상승 기대에...",
+          "title": "OCI홀딩스·OCI, '2026년 ESG 평가'서 나란히 통합 A등급 획득",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "OCI홀딩스, 폴리실리콘 적자 축소…내년 공급 확대 본격화",
+          "title": "OCI홀딩스·OCI, 한국ESG기준원 평가서 나란히 종합 A등급",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "OCI홀딩스·OCI, ESG 평가 나란히 A등급",
           "risk": false
         }
       ],
-      "price": 203000,
-      "chg": 0.0405,
-      "activity": 4.79,
-      "foreign_today": 1218000000,
+      "price": 199700,
+      "chg": 0.0236,
+      "activity": 3.67,
+      "foreign_today": 1198200000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
-      "code": "290550",
-      "name": "디케이티",
-      "close": 27850,
-      "ret5": 0.3487,
-      "ret20": 0.3422,
-      "rsi14": 61.9,
-      "vol20": 1.199,
-      "foreign_net": 1665552535,
-      "inst_net": 10858636135,
-      "score": 0.846,
+      "code": "218410",
+      "name": "RFHIC",
+      "close": 55400,
+      "ret5": 0.439,
+      "ret20": 0.1058,
+      "rsi14": 56.4,
+      "vol20": 1.319,
+      "foreign_net": -28433069200,
+      "inst_net": 60260684950,
+      "score": 0.615,
       "news": [
         {
           "date": "11-16",
-          "title": "디케이티 2026년 3분기 영업익 129억원 기록",
+          "title": "iM증권 “스페이스X, 美 전국 5G망 구축 구체화…RFHIC·케이엠더블유 등...",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "[주간 코스닥 기관] 심텍 주성엔지니어링 RFHIC 에코프로비엠 쓸어 담았...",
           "risk": false
         }
       ],
-      "price": 28300,
-      "chg": 0.0443,
-      "activity": 8.98,
-      "foreign_today": 169800000,
+      "price": 56600,
+      "chg": 0.0366,
+      "activity": 3.51,
+      "foreign_today": 113200000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -153,7 +343,7 @@
       "vol20": 1.68,
       "foreign_net": -17891982750,
       "inst_net": 4515189550,
-      "score": 0.769,
+      "score": 0.577,
       "news": [
         {
           "date": "11-15",
@@ -171,67 +361,67 @@
           "risk": false
         }
       ],
-      "price": 35350,
-      "chg": 0.0306,
-      "activity": 16.43,
-      "foreign_today": 141400000,
+      "price": 34650,
+      "chg": 0.0102,
+      "activity": 12.45,
+      "foreign_today": 138600000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "092870",
-      "name": "엑시콘",
-      "close": 62500,
-      "ret5": 0.4013,
-      "ret20": 0.1553,
-      "rsi14": 59.7,
-      "vol20": 1.607,
-      "foreign_net": -32698757925,
-      "inst_net": 13779729525,
-      "score": 0.308,
+      "code": "232140",
+      "name": "와이씨",
+      "close": 13030,
+      "ret5": 0.3323,
+      "ret20": -0.1118,
+      "rsi14": 52.0,
+      "vol20": 1.403,
+      "foreign_net": -9958210790,
+      "inst_net": 13887287640,
+      "score": 0.558,
       "news": [
         {
-          "date": "11-16",
-          "title": "엑시콘 3분기 영업흑자 151억원…연결 순이익도 184억원",
+          "date": "11-13",
+          "title": "와이씨 11일 17.05% 상승…검사장비주 동반 강세",
           "risk": false
         }
       ],
-      "price": 59200,
-      "chg": -0.0405,
-      "activity": 4.04,
-      "foreign_today": 118400000,
+      "price": 13460,
+      "chg": 0.0394,
+      "activity": 6.71,
+      "foreign_today": 53840000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "028050",
-      "name": "삼성E&A",
-      "close": 69400,
-      "ret5": 0.1321,
-      "ret20": 0.5917,
-      "rsi14": 68.1,
-      "vol20": 0.889,
-      "foreign_net": -57418179000,
-      "inst_net": 52231499650,
-      "score": 1.0,
+      "code": "064290",
+      "name": "인텍플러스",
+      "close": 55200,
+      "ret5": 0.4319,
+      "ret20": -0.0383,
+      "rsi14": 54.6,
+      "vol20": 1.586,
+      "foreign_net": -20245294325,
+      "inst_net": 13253781875,
+      "score": 0.462,
       "news": [
         {
           "date": "11-16",
-          "title": "삼성E&A, 반도체 투자·화공 수익성 개선 기반 성장-LS證",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "삼성E&A 주가 4.24% 상승…기관·기타법인 동반 순매수",
+          "title": "[대전상장기업지수] 11월 13일 시총 49조 규모... 위월드·인텍플러스·...",
           "risk": false
         },
         {
           "date": "11-13",
-          "title": "[오늘의 특징주] SK스퀘어·컴투스·삼성E&A",
+          "title": "인텍플러스 3분기 흑자 전환…장중 주가 18%대 상승",
           "risk": false
         }
       ],
-      "exchange": "KOSPI"
+      "price": 52800,
+      "chg": -0.0347,
+      "activity": 2.21,
+      "foreign_today": 211200000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "114800",
