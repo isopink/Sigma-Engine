@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "11:15",
-    "pool": 403,
+    "time": "11:30",
+    "pool": 404,
     "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-16",
+          "title": "[특징주] 삼양식품, 해외 판매 확대 기대…장 초반 6%대 상승",
+          "risk": false
+        },
+        {
+          "date": "11-16",
           "title": "삼양식품, 글로벌 생산기지 확장 승부수..4000억 투자 회수는 안갯속",
           "risk": false
         },
@@ -109,47 +114,12 @@
           "date": "11-16",
           "title": "[특징주] 삼양식품, 中 신공장 가동 등 성장 기대감.. '강세'",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "불닭볶음면 내년엔 3.7조 팔린다…삼양식품 주가 5% ‘쑤욱’ [줍줍 리포...",
-          "risk": false
         }
       ],
-      "price": 1289000,
-      "chg": 0.0653,
-      "activity": 2.01,
-      "foreign_today": 9023000000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "018260",
-      "name": "삼성에스디에스",
-      "close": 235500,
-      "ret5": 0.0953,
-      "ret20": 0.1852,
-      "rsi14": 62.9,
-      "vol20": 0.547,
-      "foreign_net": -23004040500,
-      "inst_net": 73478613250,
-      "score": 0.788,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
-          "risk": false
-        }
-      ],
-      "price": 231500,
-      "chg": -0.0128,
-      "activity": 1.5,
-      "foreign_today": 1620500000,
+      "price": 1276000,
+      "chg": 0.0545,
+      "activity": 1.91,
+      "foreign_today": 8932000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -163,7 +133,7 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.735,
+      "score": 0.779,
       "news": [
         {
           "date": "11-16",
@@ -171,11 +141,41 @@
           "risk": false
         }
       ],
-      "price": 159500,
-      "chg": 0.0031,
-      "activity": 1.02,
-      "foreign_today": 7177500000,
-      "inst_today": 2871000000,
+      "price": 160400,
+      "chg": 0.0088,
+      "activity": 0.99,
+      "foreign_today": 7218000000,
+      "inst_today": 2887200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "close": 235500,
+      "ret5": 0.0953,
+      "ret20": 0.1852,
+      "rsi14": 62.9,
+      "vol20": 0.547,
+      "foreign_net": -23004040500,
+      "inst_net": 73478613250,
+      "score": 0.779,
+      "news": [
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
+          "risk": false
+        }
+      ],
+      "price": 230500,
+      "chg": -0.0171,
+      "activity": 1.41,
+      "foreign_today": 1613500000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -188,7 +188,7 @@
       "vol20": 0.828,
       "foreign_net": 3992409275,
       "inst_net": -1135994300,
-      "score": 0.727,
+      "score": 0.728,
       "news": [
         {
           "date": "11-13",
@@ -201,11 +201,11 @@
           "risk": false
         }
       ],
-      "price": 43800,
-      "chg": 0.0069,
-      "activity": 1.35,
-      "foreign_today": 262800000,
-      "inst_today": 350400000,
+      "price": 43650,
+      "chg": 0.0034,
+      "activity": 1.23,
+      "foreign_today": 261900000,
+      "inst_today": 349200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -218,8 +218,13 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.705,
+      "score": 0.713,
       "news": [
+        {
+          "date": "11-16",
+          "title": "한미사이언스, 청각장애 바리스타 창의력 지원",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "한미사이언스, 청각장애인 바리스타 창의상 시상",
@@ -229,34 +234,10 @@
           "date": "11-16",
           "title": "제약업계 ESG 경영의 진화…유한양행·한미사이언스, 사회적 가치 창출...",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "한미사이언스, 청각장애인 바리스타 전국대회 후원…'완전두유 창의상...",
-          "risk": false
         }
       ],
       "foreign_today": 824000000,
       "inst_today": 206000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32400,
-      "ret5": 0.0221,
-      "ret20": 0.0253,
-      "rsi14": 55.4,
-      "vol20": 0.334,
-      "foreign_net": 3464594100,
-      "inst_net": 16462940750,
-      "score": 0.682,
-      "news": [],
-      "price": 32750,
-      "chg": 0.0077,
-      "activity": 1.13,
-      "foreign_today": 163750000,
-      "inst_today": 1342750000,
       "exchange": "KOSPI"
     },
     {
@@ -269,7 +250,7 @@
       "vol20": 0.53,
       "foreign_net": -3089221250,
       "inst_net": 51442437500,
-      "score": 0.674,
+      "score": 0.706,
       "news": [
         {
           "date": "11-16",
@@ -280,54 +261,33 @@
           "date": "11-16",
           "title": "삼성생명, BNK 69-63 제압…강유림 21점·3연승 단독 선두",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "삼성생명, 종신보험 확대로 신계약 CSM 14% 성장",
-          "risk": false
         }
       ],
-      "price": 254500,
-      "chg": 0.0099,
-      "activity": 0.72,
-      "foreign_today": 4326500000,
-      "inst_today": 2290500000,
+      "price": 256000,
+      "chg": 0.0159,
+      "activity": 0.69,
+      "foreign_today": 4352000000,
+      "inst_today": 2304000000,
       "exchange": "KOSPI"
     },
     {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 32100,
-      "ret5": 0.1303,
-      "ret20": -0.1842,
-      "rsi14": 49.7,
-      "vol20": 0.956,
-      "foreign_net": -2193733150,
-      "inst_net": 4197740900,
-      "score": 0.667,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[마켓포인트] 서진시스템, 3분기 매출 196% 급증…누적 1조2200억원 '역대...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "서진시스템, 3분기 매출 5621억 원… 영업익 흑자 전환",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "5G 투자 재개 기대감에 통신장비주 들썩…피노·서진시스템 매수 봇물",
-          "risk": false
-        }
-      ],
-      "price": 33350,
-      "chg": 0.0521,
-      "activity": 2.56,
-      "foreign_today": 0,
-      "inst_today": 466900000,
-      "exchange": "KOSDAQ"
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32400,
+      "ret5": 0.0221,
+      "ret20": 0.0253,
+      "rsi14": 55.4,
+      "vol20": 0.334,
+      "foreign_net": 3464594100,
+      "inst_net": 16462940750,
+      "score": 0.684,
+      "news": [],
+      "price": 32750,
+      "chg": 0.0077,
+      "activity": 1.08,
+      "foreign_today": 163750000,
+      "inst_today": 1342750000,
+      "exchange": "KOSPI"
     },
     {
       "code": "267270",
@@ -339,7 +299,7 @@
       "vol20": 0.753,
       "foreign_net": -36432959100,
       "inst_net": 34735975550,
-      "score": 0.667,
+      "score": 0.676,
       "news": [
         {
           "date": "11-14",
@@ -357,6 +317,57 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 32100,
+      "ret5": 0.1303,
+      "ret20": -0.1842,
+      "rsi14": 49.7,
+      "vol20": 0.956,
+      "foreign_net": -2193733150,
+      "inst_net": 4197740900,
+      "score": 0.662,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "[마켓포인트] 서진시스템, 3분기 매출 196% 급증…누적 1조2200억원 '역대...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "서진시스템, 3분기 매출 5621억 원… 영업익 흑자 전환",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "5G 투자 재개 기대감에 통신장비주 들썩…피노·서진시스템 매수 봇물",
+          "risk": false
+        }
+      ],
+      "price": 33250,
+      "chg": 0.0489,
+      "activity": 2.34,
+      "foreign_today": 0,
+      "inst_today": 465500000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "close": 62200,
+      "ret5": 0.0065,
+      "ret20": -0.0127,
+      "rsi14": 54.8,
+      "vol20": 0.504,
+      "foreign_net": -17925916200,
+      "inst_net": 19544951450,
+      "score": 0.551,
+      "news": [],
+      "foreign_today": 808600000,
+      "inst_today": 373200000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "004020",
       "name": "현대제철",
       "close": 28950,
@@ -366,7 +377,7 @@
       "vol20": 0.577,
       "foreign_net": 3717914800,
       "inst_net": 774816875,
-      "score": 0.538,
+      "score": 0.537,
       "news": [
         {
           "date": "11-15",
@@ -397,38 +408,22 @@
       "news": [
         {
           "date": "11-16",
-          "title": "KT, ‘PASS’로 교통 과태료 고지서 보낸다",
+          "title": "KT, PASS 앱으로 교통 과태료 모바일 고지…18일부터 시행",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "KT, 경찰청 교통 과태료 'PASS' 앱 전자고지 시행",
+          "title": "교통 과태료 고지서도 모바일로…KT, 경찰청과 PASS 전자고지",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "KT·경찰청, PASS 앱으로 교통 과태료 모바일 전자고지 서비스 제공",
+          "title": "KT, PASS로 경찰청 교통 과태료 전자고지…18일부터 시행",
           "risk": false
         }
       ],
       "foreign_today": 255000000,
       "inst_today": 510000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "112610",
-      "name": "씨에스윈드",
-      "close": 46300,
-      "ret5": -0.0512,
-      "ret20": -0.0957,
-      "rsi14": 49.0,
-      "vol20": 0.843,
-      "foreign_net": 11082469550,
-      "inst_net": 4849326525,
-      "score": 0.508,
-      "news": [],
-      "foreign_today": 1157500000,
-      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -441,7 +436,7 @@
       "vol20": 0.889,
       "foreign_net": -57418179000,
       "inst_net": 52231499650,
-      "score": 0.508,
+      "score": 0.515,
       "news": [
         {
           "date": "11-16",
@@ -459,11 +454,27 @@
           "risk": false
         }
       ],
-      "price": 68300,
-      "chg": -0.0073,
-      "activity": 1.07,
+      "price": 68400,
+      "chg": -0.0058,
+      "activity": 0.99,
       "foreign_today": 0,
-      "inst_today": 68300000,
+      "inst_today": 68400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "112610",
+      "name": "씨에스윈드",
+      "close": 46300,
+      "ret5": -0.0512,
+      "ret20": -0.0957,
+      "rsi14": 49.0,
+      "vol20": 0.843,
+      "foreign_net": 11082469550,
+      "inst_net": 4849326525,
+      "score": 0.5,
+      "news": [],
+      "foreign_today": 1157500000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -476,8 +487,13 @@
       "vol20": 0.861,
       "foreign_net": -7935039700,
       "inst_net": 19218676450,
-      "score": 0.485,
+      "score": 0.493,
       "news": [
+        {
+          "date": "11-16",
+          "title": "GS건설, 아르뮤제자이 견본주택 4일간 12000여명 방문…23일 청약 시작",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "시공사 교체 추진하다 조합장 해임…상대원2구역 DL이앤씨·GS건설 갈등...",
@@ -487,50 +503,10 @@
           "date": "11-16",
           "title": "DL이앤씨 성수 2조 · GS건설 목동 1.8조, 이번주 시공권 결정",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "GS건설, 대한민국 조경·색채대상서 잇따라 수상",
-          "risk": false
         }
       ],
       "foreign_today": 664650000,
       "inst_today": 94950000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "close": 31900,
-      "ret5": -0.0031,
-      "ret20": 0.0063,
-      "rsi14": 53.1,
-      "vol20": 0.43,
-      "foreign_net": -16207143400,
-      "inst_net": -11183474075,
-      "score": 0.462,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "카카오페이손보 해외여행보험 재가입률 70%의 공식, 펫보험에도 통할까",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[게임 게시판]카카오게임즈·펄어비스·크래프톤·넥슨",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "카카오뱅크, '스텔스통장' 출시 기념 이벤트…최대 3만원 랜덤 캐시",
-          "risk": false
-        }
-      ],
-      "price": 32350,
-      "chg": 0.0205,
-      "activity": 1.14,
-      "foreign_today": 0,
-      "inst_today": 32350000,
       "exchange": "KOSPI"
     },
     {
@@ -543,7 +519,7 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.848,
+      "score": 0.853,
       "news": [
         {
           "date": "11-13",
@@ -551,11 +527,11 @@
           "risk": false
         }
       ],
-      "price": 13480,
-      "chg": 0.0409,
-      "activity": 4.74,
-      "foreign_today": 539200000,
-      "inst_today": 1496280000,
+      "price": 13510,
+      "chg": 0.0432,
+      "activity": 4.63,
+      "foreign_today": 540400000,
+      "inst_today": 1499610000,
       "exchange": "KOSDAQ"
     },
     {
@@ -568,7 +544,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.811,
+      "score": 0.794,
       "news": [
         {
           "date": "11-16",
@@ -586,11 +562,11 @@
           "risk": false
         }
       ],
-      "price": 49800,
-      "chg": 0.0584,
-      "activity": 4.29,
+      "price": 49600,
+      "chg": 0.0542,
+      "activity": 3.94,
       "foreign_today": 0,
-      "inst_today": 896400000,
+      "inst_today": 892800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -603,7 +579,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.742,
+      "score": 0.735,
       "news": [
         {
           "date": "11-16",
@@ -621,44 +597,12 @@
           "risk": false
         }
       ],
-      "price": 55800,
-      "chg": 0.022,
-      "activity": 2.12,
+      "price": 55600,
+      "chg": 0.0183,
+      "activity": 1.99,
       "foreign_today": 0,
-      "inst_today": 1171800000,
+      "inst_today": 1167600000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "181710",
-      "name": "NHN",
-      "close": 66400,
-      "ret5": 0.1488,
-      "ret20": 0.2918,
-      "rsi14": 58.4,
-      "vol20": 1.414,
-      "foreign_net": 16236481600,
-      "inst_net": -4033637200,
-      "score": 0.561,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "NHN두레이 개인정보 유출 확인... API 키도 유출",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[뉴스워커_NHN KCP] 스테이블코인 결제·자동 정산 실증 완료…상용화 준...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "NHN KCP “스테이블코인 결제, 간편결제만큼 빨라야”",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 531200000,
-      "exchange": "KOSPI"
     },
     {
       "code": "002990",
@@ -670,7 +614,7 @@
       "vol20": 1.115,
       "foreign_net": -2508101775,
       "inst_net": 545111590,
-      "score": 0.553,
+      "score": 0.566,
       "news": [
         {
           "date": "11-16",
@@ -688,11 +632,43 @@
           "risk": false
         }
       ],
-      "price": 10600,
-      "chg": -0.0544,
-      "activity": 19.76,
+      "price": 10720,
+      "chg": -0.0437,
+      "activity": 18.09,
       "foreign_today": 0,
-      "inst_today": 148400000,
+      "inst_today": 150080000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "181710",
+      "name": "NHN",
+      "close": 66400,
+      "ret5": 0.1488,
+      "ret20": 0.2918,
+      "rsi14": 58.4,
+      "vol20": 1.414,
+      "foreign_net": 16236481600,
+      "inst_net": -4033637200,
+      "score": 0.559,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "NHN KCP, 스테이블코인 결제·자동정산 기술 실증 완료…상용화 준비 본...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "NHN두레이 개인정보 유출 확인... API 키도 유출",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[뉴스워커_NHN KCP] 스테이블코인 결제·자동 정산 실증 완료…상용화 준...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 531200000,
       "exchange": "KOSPI"
     },
     {
