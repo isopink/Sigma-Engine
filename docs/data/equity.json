@@ -61,5 +61,12 @@
     "kospi": null,
     "regime": "횡보",
     "cap": 0.7
+  },
+  {
+    "date": "2026-11-16",
+    "total": 48251571,
+    "kospi": null,
+    "regime": "하락",
+    "cap": 0.6
   }
 ]

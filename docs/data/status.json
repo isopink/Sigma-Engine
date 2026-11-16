@@ -8,8 +8,8 @@
   "sync": {
     "ok": true,
     "error": null,
-    "head": "00b7a10",
-    "checked_at": "2026-11-16 15:27",
+    "head": "dcef36b",
+    "checked_at": "2026-11-16 15:44",
     "rejected": null,
     "applied_at": "2026-11-16 14:41",
     "catch_up": "2026-11-13 14:00 bae8626",
