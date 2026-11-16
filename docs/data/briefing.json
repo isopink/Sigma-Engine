@@ -80,8 +80,129 @@
       5290.53
     ]
   },
-  "intraday": null,
+  "intraday": {
+    "time": "09:30",
+    "pool": 264,
+    "analyzed_new": 30,
+    "passed": 7,
+    "kept_prep": false
+  },
   "candidates": [
+    {
+      "code": "010060",
+      "name": "OCI홀딩스",
+      "close": 195300,
+      "ret5": -0.0176,
+      "ret20": -0.0171,
+      "rsi14": 47.9,
+      "vol20": 1.016,
+      "foreign_net": 3884104850,
+      "inst_net": 9584090400,
+      "score": 1.0,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "[특징주] OCI홀딩스, 美 태양광 투자 확대·폴리실리콘 가격 상승 기대에...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "OCI홀딩스, 폴리실리콘 적자 축소…내년 공급 확대 본격화",
+          "risk": false
+        }
+      ],
+      "price": 203000,
+      "chg": 0.0405,
+      "activity": 4.79,
+      "foreign_today": 1218000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "290550",
+      "name": "디케이티",
+      "close": 27850,
+      "ret5": 0.3487,
+      "ret20": 0.3422,
+      "rsi14": 61.9,
+      "vol20": 1.199,
+      "foreign_net": 1665552535,
+      "inst_net": 10858636135,
+      "score": 0.846,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "디케이티 2026년 3분기 영업익 129억원 기록",
+          "risk": false
+        }
+      ],
+      "price": 28300,
+      "chg": 0.0443,
+      "activity": 8.98,
+      "foreign_today": 169800000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "263860",
+      "name": "지니언스",
+      "close": 34150,
+      "ret5": 0.4594,
+      "ret20": 0.5594,
+      "rsi14": 71.5,
+      "vol20": 1.68,
+      "foreign_net": -17891982750,
+      "inst_net": 4515189550,
+      "score": 0.769,
+      "news": [
+        {
+          "date": "11-15",
+          "title": "지니언스 주가 49.78% 급등…외국인 179억원 순매도",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "11월 2주차 지니언스 주가 가파른 상승세 마감",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "매출보다 이익 더 빠르게 늘었다…지니언스 수익성 대폭 개선",
+          "risk": false
+        }
+      ],
+      "price": 35350,
+      "chg": 0.0306,
+      "activity": 16.43,
+      "foreign_today": 141400000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "092870",
+      "name": "엑시콘",
+      "close": 62500,
+      "ret5": 0.4013,
+      "ret20": 0.1553,
+      "rsi14": 59.7,
+      "vol20": 1.607,
+      "foreign_net": -32698757925,
+      "inst_net": 13779729525,
+      "score": 0.308,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "엑시콘 3분기 영업흑자 151억원…연결 순이익도 184억원",
+          "risk": false
+        }
+      ],
+      "price": 59200,
+      "chg": -0.0405,
+      "activity": 4.04,
+      "foreign_today": 118400000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
     {
       "code": "028050",
       "name": "삼성E&A",
@@ -107,86 +228,6 @@
         {
           "date": "11-13",
           "title": "[오늘의 특징주] SK스퀘어·컴투스·삼성E&A",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "263860",
-      "name": "지니언스",
-      "close": 34150,
-      "ret5": 0.4594,
-      "ret20": 0.5594,
-      "rsi14": 71.5,
-      "vol20": 1.68,
-      "foreign_net": -17891982750,
-      "inst_net": 4515189550,
-      "score": 0.778,
-      "news": [
-        {
-          "date": "11-15",
-          "title": "지니언스 주가 49.78% 급등…외국인 179억원 순매도",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "11월 2주차 지니언스 주가 가파른 상승세 마감",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "매출보다 이익 더 빠르게 늘었다…지니언스 수익성 대폭 개선",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "092870",
-      "name": "엑시콘",
-      "close": 62500,
-      "ret5": 0.4013,
-      "ret20": 0.1553,
-      "rsi14": 59.7,
-      "vol20": 1.607,
-      "foreign_net": -32698757925,
-      "inst_net": 13779729525,
-      "score": 0.556,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "엑시콘 3분기 영업흑자 151억원…연결 순이익도 184억원",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "002990",
-      "name": "금호건설",
-      "close": 11210,
-      "ret5": 0.3874,
-      "ret20": 0.0915,
-      "rsi14": 59.5,
-      "vol20": 1.115,
-      "foreign_net": -2508101775,
-      "inst_net": 545111590,
-      "score": 0.333,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "\"공정 정상화 여부가 관건\"...금호건설, 수주잔고 10조 돌파에도 매출 \"...",
-          "risk": false
-        },
-        {
-          "date": "11-15",
-          "title": "금호건설, 3분기 영업이익 222억원…전년 대비 44.2% 증가",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "금호건설 주가 5거래일 상승 급등 마감",
           "risk": false
         }
       ],
