@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "11:30",
-    "pool": 404,
+    "time": "11:45",
+    "pool": 405,
     "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
@@ -116,10 +116,10 @@
           "risk": false
         }
       ],
-      "price": 1276000,
-      "chg": 0.0545,
-      "activity": 1.91,
-      "foreign_today": 8932000000,
+      "price": 1284000,
+      "chg": 0.0612,
+      "activity": 1.84,
+      "foreign_today": 8988000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -133,19 +133,13 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.779,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[500조 연금 새 판]①KB금융 '기금형' 솔루션…수탁법인 차별화는",
-          "risk": false
-        }
-      ],
-      "price": 160400,
-      "chg": 0.0088,
-      "activity": 0.99,
-      "foreign_today": 7218000000,
-      "inst_today": 2887200000,
+      "score": 0.788,
+      "news": [],
+      "price": 160600,
+      "chg": 0.0101,
+      "activity": 0.95,
+      "foreign_today": 7227000000,
+      "inst_today": 2890800000,
       "exchange": "KOSPI"
     },
     {
@@ -158,7 +152,7 @@
       "vol20": 0.547,
       "foreign_net": -23004040500,
       "inst_net": 73478613250,
-      "score": 0.779,
+      "score": 0.781,
       "news": [
         {
           "date": "11-13",
@@ -171,10 +165,10 @@
           "risk": false
         }
       ],
-      "price": 230500,
-      "chg": -0.0171,
-      "activity": 1.41,
-      "foreign_today": 1613500000,
+      "price": 230000,
+      "chg": -0.0192,
+      "activity": 1.38,
+      "foreign_today": 1610000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -188,7 +182,7 @@
       "vol20": 0.828,
       "foreign_net": 3992409275,
       "inst_net": -1135994300,
-      "score": 0.728,
+      "score": 0.723,
       "news": [
         {
           "date": "11-13",
@@ -201,11 +195,11 @@
           "risk": false
         }
       ],
-      "price": 43650,
-      "chg": 0.0034,
-      "activity": 1.23,
-      "foreign_today": 261900000,
-      "inst_today": 349200000,
+      "price": 43750,
+      "chg": 0.0057,
+      "activity": 1.15,
+      "foreign_today": 262500000,
+      "inst_today": 350000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -218,8 +212,13 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.713,
+      "score": 0.715,
       "news": [
+        {
+          "date": "11-16",
+          "title": "한미사이언스, 청각장애인 바리스타 전국대회 후원…창의상 신설",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "한미사이언스, 청각장애 바리스타 창의력 지원",
@@ -228,11 +227,6 @@
         {
           "date": "11-16",
           "title": "한미사이언스, 청각장애인 바리스타 창의상 시상",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "제약업계 ESG 경영의 진화…유한양행·한미사이언스, 사회적 가치 창출...",
           "risk": false
         }
       ],
@@ -250,7 +244,7 @@
       "vol20": 0.53,
       "foreign_net": -3089221250,
       "inst_net": 51442437500,
-      "score": 0.706,
+      "score": 0.701,
       "news": [
         {
           "date": "11-16",
@@ -263,11 +257,11 @@
           "risk": false
         }
       ],
-      "price": 256000,
-      "chg": 0.0159,
-      "activity": 0.69,
-      "foreign_today": 4352000000,
-      "inst_today": 2304000000,
+      "price": 255500,
+      "chg": 0.0139,
+      "activity": 0.67,
+      "foreign_today": 4343500000,
+      "inst_today": 2299500000,
       "exchange": "KOSPI"
     },
     {
@@ -280,13 +274,13 @@
       "vol20": 0.334,
       "foreign_net": 3464594100,
       "inst_net": 16462940750,
-      "score": 0.684,
+      "score": 0.686,
       "news": [],
-      "price": 32750,
-      "chg": 0.0077,
-      "activity": 1.08,
-      "foreign_today": 163750000,
-      "inst_today": 1342750000,
+      "price": 32800,
+      "chg": 0.0092,
+      "activity": 1.04,
+      "foreign_today": 164000000,
+      "inst_today": 1344800000,
       "exchange": "KOSPI"
     },
     {
@@ -299,7 +293,7 @@
       "vol20": 0.753,
       "foreign_net": -36432959100,
       "inst_net": 34735975550,
-      "score": 0.676,
+      "score": 0.672,
       "news": [
         {
           "date": "11-14",
@@ -326,7 +320,7 @@
       "vol20": 0.956,
       "foreign_net": -2193733150,
       "inst_net": 4197740900,
-      "score": 0.662,
+      "score": 0.664,
       "news": [
         {
           "date": "11-16",
@@ -344,11 +338,11 @@
           "risk": false
         }
       ],
-      "price": 33250,
-      "chg": 0.0489,
-      "activity": 2.34,
+      "price": 33200,
+      "chg": 0.0473,
+      "activity": 2.18,
       "foreign_today": 0,
-      "inst_today": 465500000,
+      "inst_today": 464800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -361,7 +355,7 @@
       "vol20": 0.504,
       "foreign_net": -17925916200,
       "inst_net": 19544951450,
-      "score": 0.551,
+      "score": 0.547,
       "news": [],
       "foreign_today": 808600000,
       "inst_today": 373200000,
@@ -377,7 +371,7 @@
       "vol20": 0.577,
       "foreign_net": 3717914800,
       "inst_net": 774816875,
-      "score": 0.537,
+      "score": 0.533,
       "news": [
         {
           "date": "11-15",
@@ -404,16 +398,16 @@
       "vol20": 0.364,
       "foreign_net": 13529679450,
       "inst_net": -8623580400,
-      "score": 0.515,
+      "score": 0.511,
       "news": [
         {
           "date": "11-16",
-          "title": "KT, PASS 앱으로 교통 과태료 모바일 고지…18일부터 시행",
+          "title": "교통 과태료 고지서도 모바일로…KT, 경찰청과 PASS 전자고지",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "교통 과태료 고지서도 모바일로…KT, 경찰청과 PASS 전자고지",
+          "title": "KT, PASS 앱으로 교통 과태료 모바일 고지…18일부터 시행",
           "risk": false
         },
         {
@@ -427,41 +421,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "028050",
-      "name": "삼성E&A",
-      "close": 69400,
-      "ret5": 0.1321,
-      "ret20": 0.5917,
-      "rsi14": 68.1,
-      "vol20": 0.889,
-      "foreign_net": -57418179000,
-      "inst_net": 52231499650,
-      "score": 0.515,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "삼성E&A, 반도체 투자·화공 수익성 개선 기반 성장-LS證",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "삼성E&A 주가 4.24% 상승…기관·기타법인 동반 순매수",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "[오늘의 특징주] SK스퀘어·컴투스·삼성E&A",
-          "risk": false
-        }
-      ],
-      "price": 68400,
-      "chg": -0.0058,
-      "activity": 0.99,
-      "foreign_today": 0,
-      "inst_today": 68400000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "112610",
       "name": "씨에스윈드",
       "close": 46300,
@@ -471,7 +430,7 @@
       "vol20": 0.843,
       "foreign_net": 11082469550,
       "inst_net": 4849326525,
-      "score": 0.5,
+      "score": 0.496,
       "news": [],
       "foreign_today": 1157500000,
       "inst_today": 0,
@@ -487,7 +446,7 @@
       "vol20": 0.861,
       "foreign_net": -7935039700,
       "inst_net": 19218676450,
-      "score": 0.493,
+      "score": 0.489,
       "news": [
         {
           "date": "11-16",
@@ -510,6 +469,41 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "028050",
+      "name": "삼성E&A",
+      "close": 69400,
+      "ret5": 0.1321,
+      "ret20": 0.5917,
+      "rsi14": 68.1,
+      "vol20": 0.889,
+      "foreign_net": -57418179000,
+      "inst_net": 52231499650,
+      "score": 0.489,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "삼성E&A, 반도체 투자·화공 수익성 개선 기반 성장-LS證",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "삼성E&A 주가 4.24% 상승…기관·기타법인 동반 순매수",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "[오늘의 특징주] SK스퀘어·컴투스·삼성E&A",
+          "risk": false
+        }
+      ],
+      "price": 68300,
+      "chg": -0.0073,
+      "activity": 0.91,
+      "foreign_today": 0,
+      "inst_today": 68300000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "232140",
       "name": "와이씨",
       "close": 13030,
@@ -519,19 +513,24 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.853,
+      "score": 0.839,
       "news": [
+        {
+          "date": "11-16",
+          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
+          "risk": false
+        },
         {
           "date": "11-13",
           "title": "와이씨 11일 17.05% 상승…검사장비주 동반 강세",
           "risk": false
         }
       ],
-      "price": 13510,
-      "chg": 0.0432,
-      "activity": 4.63,
-      "foreign_today": 540400000,
-      "inst_today": 1499610000,
+      "price": 13440,
+      "chg": 0.0378,
+      "activity": 4.38,
+      "foreign_today": 537600000,
+      "inst_today": 1491840000,
       "exchange": "KOSDAQ"
     },
     {
@@ -544,7 +543,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.794,
+      "score": 0.781,
       "news": [
         {
           "date": "11-16",
@@ -562,11 +561,11 @@
           "risk": false
         }
       ],
-      "price": 49600,
-      "chg": 0.0542,
-      "activity": 3.94,
+      "price": 49450,
+      "chg": 0.051,
+      "activity": 3.62,
       "foreign_today": 0,
-      "inst_today": 892800000,
+      "inst_today": 890100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -579,7 +578,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.735,
+      "score": 0.73,
       "news": [
         {
           "date": "11-16",
@@ -597,11 +596,11 @@
           "risk": false
         }
       ],
-      "price": 55600,
-      "chg": 0.0183,
-      "activity": 1.99,
+      "price": 55400,
+      "chg": 0.0147,
+      "activity": 1.87,
       "foreign_today": 0,
-      "inst_today": 1167600000,
+      "inst_today": 1163400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -614,7 +613,7 @@
       "vol20": 1.115,
       "foreign_net": -2508101775,
       "inst_net": 545111590,
-      "score": 0.566,
+      "score": 0.562,
       "news": [
         {
           "date": "11-16",
@@ -632,11 +631,11 @@
           "risk": false
         }
       ],
-      "price": 10720,
-      "chg": -0.0437,
-      "activity": 18.09,
+      "price": 10730,
+      "chg": -0.0428,
+      "activity": 16.66,
       "foreign_today": 0,
-      "inst_today": 150080000,
+      "inst_today": 150220000,
       "exchange": "KOSPI"
     },
     {
@@ -649,7 +648,7 @@
       "vol20": 1.414,
       "foreign_net": 16236481600,
       "inst_net": -4033637200,
-      "score": 0.559,
+      "score": 0.555,
       "news": [
         {
           "date": "11-16",
