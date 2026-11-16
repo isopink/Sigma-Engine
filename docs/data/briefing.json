@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "13:45",
+    "time": "14:00",
     "pool": 439,
-    "analyzed_new": 30,
+    "analyzed_new": 27,
     "passed": 22,
     "kept_prep": false
   },
@@ -116,10 +116,10 @@
           "risk": false
         }
       ],
-      "price": 1282000,
-      "chg": 0.0595,
-      "activity": 1.37,
-      "foreign_today": 10256000000,
+      "price": 1277000,
+      "chg": 0.0554,
+      "activity": 1.34,
+      "foreign_today": 10216000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -133,7 +133,7 @@
       "vol20": 0.547,
       "foreign_net": -23004040500,
       "inst_net": 73478613250,
-      "score": 0.856,
+      "score": 0.865,
       "news": [
         {
           "date": "11-13",
@@ -148,7 +148,7 @@
       ],
       "price": 229500,
       "chg": -0.0213,
-      "activity": 1.11,
+      "activity": 1.09,
       "foreign_today": 4131000000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -163,49 +163,14 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.763,
+      "score": 0.791,
       "news": [],
-      "price": 161200,
-      "chg": 0.0138,
+      "price": 161300,
+      "chg": 0.0145,
       "activity": 0.77,
-      "foreign_today": 11445200000,
-      "inst_today": 1450800000,
+      "foreign_today": 11452300000,
+      "inst_today": 1451700000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 32100,
-      "ret5": 0.1303,
-      "ret20": -0.1842,
-      "rsi14": 49.7,
-      "vol20": 0.956,
-      "foreign_net": -2193733150,
-      "inst_net": 4197740900,
-      "score": 0.762,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "서진시스템, 3분기 영업이익 387억 원 '흑자 전환'…3대 핵심 사업 호조",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[마켓포인트] 서진시스템, 3분기 매출 196% 급증…누적 1조2200억원 '역대...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "서진시스템, 3분기 매출 5621억 원… 영업익 흑자 전환",
-          "risk": false
-        }
-      ],
-      "price": 32750,
-      "chg": 0.0331,
-      "activity": 1.51,
-      "foreign_today": 0,
-      "inst_today": 1473750000,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "316140",
@@ -217,13 +182,13 @@
       "vol20": 0.334,
       "foreign_net": 3464594100,
       "inst_net": 16462940750,
-      "score": 0.756,
+      "score": 0.767,
       "news": [],
-      "price": 32800,
-      "chg": 0.0092,
-      "activity": 0.86,
+      "price": 32850,
+      "chg": 0.0108,
+      "activity": 0.85,
       "foreign_today": 0,
-      "inst_today": 3575200000,
+      "inst_today": 3580650000,
       "exchange": "KOSPI"
     },
     {
@@ -236,7 +201,7 @@
       "vol20": 0.828,
       "foreign_net": 3992409275,
       "inst_net": -1135994300,
-      "score": 0.744,
+      "score": 0.748,
       "news": [
         {
           "date": "11-13",
@@ -249,11 +214,46 @@
           "risk": false
         }
       ],
-      "price": 44300,
-      "chg": 0.0184,
-      "activity": 0.79,
-      "foreign_today": 531600000,
-      "inst_today": 708800000,
+      "price": 44175,
+      "chg": 0.0155,
+      "activity": 0.76,
+      "foreign_today": 530100000,
+      "inst_today": 706800000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 32100,
+      "ret5": 0.1303,
+      "ret20": -0.1842,
+      "rsi14": 49.7,
+      "vol20": 0.956,
+      "foreign_net": -2193733150,
+      "inst_net": 4197740900,
+      "score": 0.742,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "서진시스템, 3분기 영업이익 387억원…반도체·ESS 성장 견인",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "서진시스템, 3분기 영업이익 387억 원 '흑자 전환'…3대 핵심 사업 호조",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[마켓포인트] 서진시스템, 3분기 매출 196% 급증…누적 1조2200억원 '역대...",
+          "risk": false
+        }
+      ],
+      "price": 32400,
+      "chg": 0.0221,
+      "activity": 1.46,
+      "foreign_today": 0,
+      "inst_today": 1458000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -266,13 +266,13 @@
       "vol20": 0.53,
       "foreign_net": -3089221250,
       "inst_net": 51442437500,
-      "score": 0.681,
+      "score": 0.706,
       "news": [],
-      "price": 254500,
-      "chg": 0.0099,
-      "activity": 0.58,
-      "foreign_today": 7635000000,
-      "inst_today": 3817500000,
+      "price": 255000,
+      "chg": 0.0119,
+      "activity": 0.57,
+      "foreign_today": 7650000000,
+      "inst_today": 3825000000,
       "exchange": "KOSPI"
     },
     {
@@ -285,7 +285,7 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.681,
+      "score": 0.687,
       "news": [
         {
           "date": "11-16",
@@ -317,7 +317,7 @@
       "vol20": 0.504,
       "foreign_net": -17925916200,
       "inst_net": 19544951450,
-      "score": 0.594,
+      "score": 0.601,
       "news": [],
       "foreign_today": 995200000,
       "inst_today": 1181800000,
@@ -333,7 +333,7 @@
       "vol20": 0.753,
       "foreign_net": -36432959100,
       "inst_net": 34735975550,
-      "score": 0.575,
+      "score": 0.583,
       "news": [
         {
           "date": "11-14",
@@ -360,7 +360,7 @@
       "vol20": 0.299,
       "foreign_net": -1311042400,
       "inst_net": 5739344250,
-      "score": 0.556,
+      "score": 0.564,
       "news": [
         {
           "date": "11-16",
@@ -375,7 +375,7 @@
       ],
       "price": 90800,
       "chg": 0.0111,
-      "activity": 0.7,
+      "activity": 0.69,
       "foreign_today": 3268800000,
       "inst_today": 272400000,
       "exchange": "KOSPI"
@@ -390,8 +390,13 @@
       "vol20": 0.428,
       "foreign_net": -15839984530,
       "inst_net": 19367937840,
-      "score": 0.544,
+      "score": 0.558,
       "news": [
+        {
+          "date": "11-16",
+          "title": "LG유플러스, 'U+SASE' 출시…네트워크·보안 통합 관리",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "LG유플러스, 생성형 AI 통한 기업 기밀 유출 막는다…통합 보안 플랫폼...",
@@ -400,11 +405,6 @@
         {
           "date": "11-16",
           "title": "LG유플러스, 네트워크·보안 통합 클라우드 플랫폼 'U+SASE' 출시",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "LG유플러스, ‘U+SASE’ 출시…네트워크·보안 한곳서 관리",
           "risk": false
         }
       ],
@@ -422,8 +422,13 @@
       "vol20": 0.364,
       "foreign_net": 13529679450,
       "inst_net": -8623580400,
-      "score": 0.537,
+      "score": 0.552,
       "news": [
+        {
+          "date": "11-16",
+          "title": "KT, 교통 과태료 고지서 PASS로 받는다···18일부터 시행",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "KT·경찰청, 18일부터 'PASS 앱' 교통 과태료 모바일 전자고지 시행",
@@ -432,11 +437,6 @@
         {
           "date": "11-16",
           "title": "KT텔레캅, 창립 20주년 맞아 'AX 보안기업' 비전 선포",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[KT 인사이드] KT, 교통 과태료 전자고지 확대…행정비용 절감은 열람률...",
           "risk": false
         }
       ],
@@ -454,13 +454,13 @@
       "vol20": 0.983,
       "foreign_net": 5087040500,
       "inst_net": 16633407000,
-      "score": 0.525,
+      "score": 0.546,
       "news": [],
-      "price": 364000,
-      "chg": 0.0014,
-      "activity": 1.26,
+      "price": 362000,
+      "chg": -0.0041,
+      "activity": 1.21,
       "foreign_today": 0,
-      "inst_today": 364000000,
+      "inst_today": 362000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -473,29 +473,29 @@
       "vol20": 0.43,
       "foreign_net": -16207143400,
       "inst_net": -11183474075,
-      "score": 0.512,
+      "score": 0.521,
       "news": [
         {
           "date": "11-16",
-          "title": "공정위, '대리기사 단체보험 강요' 카카오·티맵 동의의결 절차 개시",
+          "title": "카카오·티맵 대리기사 보험 중복가입 의혹…공정위 동의의결 개시",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "카카오·티맵 대리운전 '보험 강요' 혐의…공정위, 자진시정 절차 착수",
+          "title": "카카오뱅크의 적금은 '이자 수익' 아니라 '쇼핑과 놀이' : 고객 일상 파...",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "[금융 라운지] 카카오뱅크, '한달적금 with 다이슨' 출시…할인 쿠폰·경...",
+          "title": "카카오뱅크, 다이슨 협업 '한달적금' 선봬…\"협업 상품 지속\"",
           "risk": false
         }
       ],
-      "price": 32450,
-      "chg": 0.0237,
-      "activity": 0.91,
+      "price": 32400,
+      "chg": 0.0221,
+      "activity": 0.9,
       "foreign_today": 0,
-      "inst_today": 486750000,
+      "inst_today": 486000000,
       "exchange": "KOSPI"
     },
     {
@@ -508,7 +508,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.838,
+      "score": 0.847,
       "news": [
         {
           "date": "11-16",
@@ -526,11 +526,11 @@
           "risk": false
         }
       ],
-      "price": 49250,
-      "chg": 0.0468,
-      "activity": 2.37,
+      "price": 49025,
+      "chg": 0.042,
+      "activity": 2.28,
       "foreign_today": 0,
-      "inst_today": 2561000000,
+      "inst_today": 2549300000,
       "exchange": "KOSDAQ"
     },
     {
@@ -543,7 +543,7 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.831,
+      "score": 0.834,
       "news": [
         {
           "date": "11-16",
@@ -556,11 +556,11 @@
           "risk": false
         }
       ],
-      "price": 13320,
-      "chg": 0.0286,
-      "activity": 3.79,
-      "foreign_today": 1851480000,
-      "inst_today": 2397600000,
+      "price": 13270,
+      "chg": 0.0247,
+      "activity": 3.65,
+      "foreign_today": 1844530000,
+      "inst_today": 2388600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -573,7 +573,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.756,
+      "score": 0.773,
       "news": [
         {
           "date": "11-16",
@@ -591,11 +591,11 @@
           "risk": false
         }
       ],
-      "price": 54800,
-      "chg": 0.0037,
-      "activity": 1.31,
+      "price": 54900,
+      "chg": 0.0055,
+      "activity": 1.29,
       "foreign_today": 0,
-      "inst_today": 2849600000,
+      "inst_today": 2854800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -608,7 +608,7 @@
       "vol20": 1.414,
       "foreign_net": 16236481600,
       "inst_net": -4033637200,
-      "score": 0.638,
+      "score": 0.65,
       "news": [
         {
           "date": "11-16",
@@ -640,7 +640,7 @@
       "vol20": 1.115,
       "foreign_net": -2508101775,
       "inst_net": 545111590,
-      "score": 0.55,
+      "score": 0.558,
       "news": [
         {
           "date": "11-16",
@@ -658,11 +658,11 @@
           "risk": false
         }
       ],
-      "price": 11200,
-      "chg": -0.0009,
-      "activity": 11.27,
+      "price": 11045,
+      "chg": -0.0147,
+      "activity": 10.92,
       "foreign_today": 0,
-      "inst_today": 190400000,
+      "inst_today": 187765000,
       "exchange": "KOSPI"
     },
     {
