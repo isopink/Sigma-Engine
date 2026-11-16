@@ -10,7 +10,7 @@
     "weight": 0.0466,
     "stop": 29388,
     "take": 34760,
-    "held_days": 3,
+    "held_days": 4,
     "max_days": 5
   },
   {
@@ -24,7 +24,7 @@
     "weight": 0.0424,
     "stop": 82651,
     "take": 112707,
-    "held_days": 1,
+    "held_days": 2,
     "max_days": 5
   },
   {
@@ -38,7 +38,7 @@
     "weight": 0.0443,
     "stop": 335730,
     "take": 397100,
-    "held_days": 1,
+    "held_days": 2,
     "max_days": 5
   },
   {
@@ -52,7 +52,7 @@
     "weight": 0.0522,
     "stop": 76260,
     "take": 90200,
-    "held_days": 4,
+    "held_days": 5,
     "max_days": 5
   },
   {
@@ -66,7 +66,7 @@
     "weight": 0.0495,
     "stop": 27677,
     "take": 37742,
-    "held_days": 2,
+    "held_days": 3,
     "max_days": 5
   },
   {
@@ -80,7 +80,7 @@
     "weight": 0.0431,
     "stop": 74855,
     "take": 88538,
-    "held_days": 1,
+    "held_days": 2,
     "max_days": 5
   },
   {
@@ -94,7 +94,7 @@
     "weight": 0.0178,
     "stop": 198090,
     "take": 234300,
-    "held_days": 3,
+    "held_days": 4,
     "max_days": 5
   },
   {
@@ -108,7 +108,7 @@
     "weight": 0.0447,
     "stop": 116376,
     "take": 137649,
-    "held_days": 1,
+    "held_days": 2,
     "max_days": 5
   },
   {
@@ -122,7 +122,7 @@
     "weight": 0.0402,
     "stop": 178200,
     "take": 243000,
-    "held_days": 2,
+    "held_days": 3,
     "max_days": 5
   },
   {
@@ -136,7 +136,7 @@
     "weight": 0.0474,
     "stop": 25005,
     "take": 34098,
-    "held_days": 0,
+    "held_days": 1,
     "max_days": 5
   }
 ]

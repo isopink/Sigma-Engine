@@ -1,19 +1,18 @@
 {
-  "created": "2026-11-16 08:31",
-  "asof": "2026-11-13",
-  "universe": 74,
+  "created": "2026-11-17 08:31",
+  "asof": "2026-11-16",
+  "universe": 75,
   "source": "krx",
   "market": {
     "source": "KOSPI",
-    "close": 5291,
-    "ma20": 5542,
-    "ma60": 6328,
-    "ret5": 0.0456,
-    "ret20": -0.0666,
-    "rsi14": 38.9,
-    "rule_hint": "횡보",
+    "close": 5100,
+    "ma20": 5508,
+    "ma60": 6298,
+    "ret5": 0.0163,
+    "ret20": -0.1157,
+    "rsi14": 35.5,
+    "rule_hint": "하락",
     "closes": [
-      6299.66,
       6345.53,
       6579.04,
       6813.34,
@@ -77,554 +76,277 @@
       5239.13,
       5375.36,
       5342.73,
-      5290.53
+      5290.53,
+      5100.5
     ]
   },
-  "intraday": {
-    "time": "15:15",
-    "pool": 459,
-    "analyzed_new": 6,
-    "passed": 25,
-    "kept_prep": false
-  },
+  "intraday": null,
   "candidates": [
     {
-      "code": "003230",
-      "name": "삼양식품",
-      "close": 1215000,
-      "ret5": 0.0297,
-      "ret20": -0.0106,
-      "rsi14": 51.0,
-      "vol20": 0.582,
-      "foreign_net": -36741654500,
-      "inst_net": 22016588000,
+      "code": "028050",
+      "name": "삼성E&A",
+      "close": 68900,
+      "ret5": 0.1388,
+      "ret20": 0.521,
+      "rsi14": 67.0,
+      "vol20": 0.894,
+      "foreign_net": -74517283400,
+      "inst_net": 47861420450,
       "score": 1.0,
       "news": [
         {
-          "date": "11-16",
-          "title": "삼양식품, 장중 6.20% 상승…불닭 브랜드 해외 성장 점검",
+          "date": "11-17",
+          "title": "[오늘의 IR] 삼성E&A·SFA·삼양컴텍 등",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "삼양식품 주가 6%대 강세…코스피·코스닥 동반 급락 속 '다른 흐름' 눈...",
+          "date": "11-17",
+          "title": "삼성E&A, AI·모듈러로 EPC 경쟁력 높였다…목표가 9.1%↑-KB",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "K-푸드 열풍에 음식료주 뜨겁다… 삼양식품·롯데웰푸드 상승 주도",
+          "date": "11-17",
+          "title": "\"삼성E&A, AI·모듈러로 공기 단축 프리미엄 확보…목표가↑\"-KB",
           "risk": false
         }
       ],
-      "price": 1284000,
-      "chg": 0.0612,
-      "activity": 1.37,
-      "foreign_today": 11556000000,
-      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
       "code": "018260",
       "name": "삼성에스디에스",
-      "close": 235500,
-      "ret5": 0.0953,
-      "ret20": 0.1852,
-      "rsi14": 62.9,
-      "vol20": 0.547,
-      "foreign_net": -23004040500,
-      "inst_net": 73478613250,
-      "score": 0.823,
+      "close": 227500,
+      "ret5": 0.0436,
+      "ret20": 0.1179,
+      "rsi14": 56.9,
+      "vol20": 0.564,
+      "foreign_net": -8533104500,
+      "inst_net": 53321107000,
+      "score": 1.0,
       "news": [
         {
           "date": "11-16",
           "title": "삼성에스디에스, 고가 24만2500원 이후 하락…변동폭 1만6000원",
           "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
-          "risk": false
         }
       ],
-      "price": 228000,
-      "chg": -0.0277,
-      "activity": 1.07,
-      "foreign_today": 4560000000,
-      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
       "code": "316140",
       "name": "우리금융지주",
-      "close": 32400,
-      "ret5": 0.0221,
-      "ret20": 0.0253,
-      "rsi14": 55.4,
-      "vol20": 0.334,
-      "foreign_net": 3464594100,
-      "inst_net": 16462940750,
-      "score": 0.805,
+      "close": 33100,
+      "ret5": 0.0525,
+      "ret20": 0.0525,
+      "rsi14": 59.7,
+      "vol20": 0.34,
+      "foreign_net": -2321307850,
+      "inst_net": 24381897025,
+      "score": 0.8,
+      "news": [],
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "003230",
+      "name": "삼양식품",
+      "close": 1277000,
+      "ret5": 0.1124,
+      "ret20": 0.0315,
+      "rsi14": 56.9,
+      "vol20": 0.61,
+      "foreign_net": -3733857500,
+      "inst_net": 25308615000,
+      "score": 0.8,
       "news": [
         {
-          "date": "11-16",
-          "title": "임종룡 우리금융지주 회장, 비은행 날개 달고 '종합금융 승부수'",
+          "date": "11-17",
+          "title": "\"불닭이 진짜 황금알 낳는 닭이었네\"…삼양식품 '잭팟'",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "K푸드 해외 확장 속 삼양식품 질주…농심·오뚜기·풀무원은 ‘주춤’",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "삼양식품, 11월 식품 상장기업 브랜드평판 1위…농심·오리온 順",
           "risk": false
         }
       ],
-      "price": 32950,
-      "chg": 0.0138,
-      "activity": 1.0,
-      "foreign_today": 0,
-      "inst_today": 5107250000,
       "exchange": "KOSPI"
     },
     {
       "code": "105560",
       "name": "KB금융",
-      "close": 158000,
-      "ret5": 0.0381,
-      "ret20": -0.0143,
-      "rsi14": 50.9,
-      "vol20": 0.334,
-      "foreign_net": 115091312200,
-      "inst_net": -103163323750,
-      "score": 0.762,
+      "close": 161700,
+      "ret5": 0.0603,
+      "ret20": 0.0062,
+      "rsi14": 56.2,
+      "vol20": 0.345,
+      "foreign_net": 127103705300,
+      "inst_net": -110127660200,
+      "score": 0.7,
       "news": [
         {
           "date": "11-16",
-          "title": "3분기 순이익과 주주환원 살피는 KB금융, 16만1000원 거래",
+          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
           "risk": false
         }
       ],
-      "price": 160900,
-      "chg": 0.0119,
-      "activity": 0.77,
-      "foreign_today": 13998300000,
-      "inst_today": 1609000000,
       "exchange": "KOSPI"
     },
     {
-      "code": "035900",
-      "name": "JYP Ent.",
-      "close": 44450,
-      "ret5": 0.0802,
-      "ret20": 0.1397,
-      "rsi14": 63.2,
-      "vol20": 0.828,
-      "foreign_net": 3992409275,
-      "inst_net": -1135994300,
-      "score": 0.701,
+      "code": "032830",
+      "name": "삼성생명",
+      "close": 254000,
+      "ret5": 0.0717,
+      "ret20": 0.0431,
+      "rsi14": 47.7,
+      "vol20": 0.525,
+      "foreign_net": -4125534500,
+      "inst_net": 55226460250,
+      "score": 0.667,
       "news": [
         {
-          "date": "11-16",
-          "title": "JYP Ent. 거래대금 17,104백만원…장중 상승 흐름",
+          "date": "11-17",
+          "title": "무릎 로봇수술·폐렴 입원비 차등 '업계 최초'…삼성생명, 배타권 신청",
           "risk": false
         },
         {
-          "date": "11-13",
-          "title": "JYP Ent., 43,450원 형성…다음 숫자는 역대 최대 분기 매출과 투어",
+          "date": "11-17",
+          "title": "생보업계, 3분기 실적 양극화 심화...삼성생명 빼면 순익 18.5%↓",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[K금융 리더] 홍원학, 시니어 시장 4700억 승부수… 삼성생명 ‘평생 돌...",
           "risk": false
         }
       ],
-      "price": 44000,
-      "chg": 0.0115,
-      "activity": 0.71,
-      "foreign_today": 704000000,
-      "inst_today": 792000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 32100,
-      "ret5": 0.1303,
-      "ret20": -0.1842,
-      "rsi14": 49.7,
-      "vol20": 0.956,
-      "foreign_net": -2193733150,
-      "inst_net": 4197740900,
-      "score": 0.677,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "서진시스템, 매출 1조 돌파…영업익 흑자전환",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "서진시스템, 3분기 영업이익 387억원…반도체·ESS 성장 견인",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "서진시스템, 3분기 영업이익 387억 원 '흑자 전환'…3대 핵심 사업 호조",
-          "risk": false
-        }
-      ],
-      "price": 31650,
-      "chg": -0.0016,
-      "activity": 1.31,
-      "foreign_today": 0,
-      "inst_today": 1899000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 51500,
-      "ret5": -0.041,
-      "ret20": 0.0981,
-      "rsi14": 54.1,
-      "vol20": 0.686,
-      "foreign_net": 12294732950,
-      "inst_net": -7023543750,
-      "score": 0.671,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[의료기기 이모저모②]엔젠바이오, DXVX, 한미사이언스, 지씨씨엘 등 소...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[제약·바이오 브리핑]유한양행·한미사이언스·동아제약·메디톡스",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "한미사이언스 '아데시', 무신사·29CM·코오드로 판로 확대",
-          "risk": false
-        }
-      ],
-      "foreign_today": 1081500000,
-      "inst_today": 463500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "161390",
-      "name": "한국타이어앤테크놀로지",
-      "close": 62200,
-      "ret5": 0.0065,
-      "ret20": -0.0127,
-      "rsi14": 54.8,
-      "vol20": 0.504,
-      "foreign_net": -17925916200,
-      "inst_net": 19544951450,
-      "score": 0.598,
-      "news": [],
-      "foreign_today": 870800000,
-      "inst_today": 1803800000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "032640",
-      "name": "LG유플러스",
-      "close": 15560,
-      "ret5": -0.0581,
-      "ret20": 0.0032,
-      "rsi14": 56.0,
-      "vol20": 0.428,
-      "foreign_net": -15839984530,
-      "inst_net": 19367937840,
-      "score": 0.549,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "LG유플러스, 네트워크 우수 협력사 43곳에 감사패 전달",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[부고] 이창우(전 LG유플러스 부사장)씨 별세",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "LG유플러스, 기업 네트워크·보안 관리 'U+SASE' 출시",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1851640000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "055550",
-      "name": "신한지주",
-      "close": 89800,
-      "ret5": 0.031,
-      "ret20": -0.0426,
-      "rsi14": 45.4,
-      "vol20": 0.299,
-      "foreign_net": -1311042400,
-      "inst_net": 5739344250,
-      "score": 0.524,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "하나증권 \"은행주 금리 급등에 방어주 매력 부각, 최선호주 신한지주 B...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "신한지주·BNK금융, 저PBR 매력에 주목-하나證",
-          "risk": false
-        }
-      ],
-      "price": 90300,
-      "chg": 0.0056,
-      "activity": 0.69,
-      "foreign_today": 4153800000,
-      "inst_today": 632100000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "047810",
-      "name": "한국항공우주",
-      "close": 104500,
-      "ret5": 0.0245,
-      "ret20": -0.0297,
-      "rsi14": 46.3,
-      "vol20": 0.703,
-      "foreign_net": -1744276500,
-      "inst_net": 11463270150,
-      "score": 0.512,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "한국항공우주 거래대금 26,822백만원…장중 상승 흐름",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "한서대 오준민·우상휘 학생, 2026년도 한국항공우주학회 주관 장학생 선...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 3657500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "close": 31900,
-      "ret5": -0.0031,
-      "ret20": 0.0063,
-      "rsi14": 53.1,
-      "vol20": 0.43,
-      "foreign_net": -16207143400,
-      "inst_net": -11183474075,
-      "score": 0.512,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "카카오뱅크, 애플페이 서비스 도입… 체크·mini카드 결제 지원",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "카카오뱅크, 애플페이 도입…mini카드로 청소년도 이용",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "카카오게임즈 '아키에이지 S', PC 전용 MMORPG로 개발…노동력 시스템 폐...",
-          "risk": false
-        }
-      ],
-      "price": 32400,
-      "chg": 0.0221,
-      "activity": 0.86,
-      "foreign_today": 0,
-      "inst_today": 777600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "030200",
-      "name": "KT",
-      "close": 51000,
-      "ret5": -0.0286,
-      "ret20": 0.0119,
-      "rsi14": 54.4,
-      "vol20": 0.364,
-      "foreign_net": 13529679450,
-      "inst_net": -8623580400,
-      "score": 0.506,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "KT, 교통 과태료 고지서 PASS로 확인…본인인증으로 스미싱 위험 줄인다",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "KT, 18일부터 PASS로 경찰청 교통 과태료 고지",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "'AX 플랫폼' 내건 박윤영, KT AI 거버넌스 어떻게 바꿨나",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1683000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "267270",
-      "name": "HD건설기계",
-      "close": 93500,
-      "ret5": 0.1557,
-      "ret20": 0.013,
-      "rsi14": 49.8,
-      "vol20": 0.753,
-      "foreign_net": -36432959100,
-      "inst_net": 34735975550,
-      "score": 0.482,
-      "news": [
-        {
-          "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 1309000000,
-      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
       "code": "277810",
       "name": "레인보우로보틱스",
-      "close": 378500,
-      "ret5": 0.1646,
-      "ret20": 0.0647,
-      "rsi14": 52.7,
-      "vol20": 0.983,
-      "foreign_net": 5087040500,
-      "inst_net": 16633407000,
-      "score": 0.439,
+      "close": 358500,
+      "ret5": 0.193,
+      "ret20": -0.0566,
+      "rsi14": 48.5,
+      "vol20": 0.973,
+      "foreign_net": -3709702250,
+      "inst_net": 16475420000,
+      "score": 0.433,
       "news": [
         {
           "date": "11-16",
-          "title": "휴머노이드 개발과 양산 검증 살피는 레인보우로보틱스, 36만1000원 거래",
+          "title": "레인보우로보틱스 3분기 매출 늘고 영업손실 확대",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "레인보우로보틱스, 3분기 매출 30%↑...영업손실 2.5배 확대",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "레인보우로보틱스, 3분기 매출 139억원…적자 폭 커져",
           "risk": false
         }
       ],
-      "price": 357500,
-      "chg": -0.0165,
-      "activity": 1.13,
-      "foreign_today": 0,
-      "inst_today": 357500000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "055550",
+      "name": "신한지주",
+      "close": 90900,
+      "ret5": 0.0436,
+      "ret20": -0.0173,
+      "rsi14": 48.4,
+      "vol20": 0.3,
+      "foreign_net": 13209099000,
+      "inst_net": -4793198650,
+      "score": 0.367,
+      "news": [],
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 31800,
+      "ret5": 0.1648,
+      "ret20": -0.2244,
+      "rsi14": 49.0,
+      "vol20": 0.937,
+      "foreign_net": 980010800,
+      "inst_net": 5734256075,
+      "score": 0.267,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "서진시스템 주가, 11월 16일 애프터마켓 32,050원 1.10% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "ESS·통신장비 부품 양산 살피는 서진시스템, 3만1850원 거래",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "서진시스템, 매출 1조 돌파…영업익 흑자전환",
+          "risk": false
+        }
+      ],
       "exchange": "KOSDAQ"
     },
     {
       "code": "437730",
       "name": "삼현",
-      "close": 47550,
-      "ret5": 0.2579,
-      "ret20": 0.2099,
-      "rsi14": 57.8,
-      "vol20": 1.267,
-      "foreign_net": 13341322450,
-      "inst_net": -1870236350,
-      "score": 0.829,
+      "close": 47650,
+      "ret5": 0.3872,
+      "ret20": 0.1524,
+      "rsi14": 57.9,
+      "vol20": 1.259,
+      "foreign_net": 10116222150,
+      "inst_net": 4650541900,
+      "score": 0.833,
       "news": [
         {
-          "date": "11-16",
-          "title": "삼현 거래대금 34,922백만원…장중 상승 흐름",
+          "date": "11-17",
+          "title": "삼현, 북미 휴머노이드 액추에이터 공급 임박…내년 로봇 매출 200억 전...",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "테슬라 밸류체인 기대 삼현...\"북미 휴머노이드 시장 공략\" [현장르포]",
+          "title": "삼현 주가, 11월 16일 애프터마켓 48,600원 3.29% 상승",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "삼현, 3분기 매출 234억원…휴머노이드 액추에이터 첫 해외 매출 발생",
+          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
           "risk": false
         }
       ],
-      "price": 48650,
-      "chg": 0.034,
-      "activity": 2.07,
-      "foreign_today": 0,
-      "inst_today": 3405500000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 13030,
-      "ret5": 0.3323,
-      "ret20": -0.1118,
-      "rsi14": 52.0,
-      "vol20": 1.403,
-      "foreign_net": -9958210790,
-      "inst_net": 13887287640,
-      "score": 0.793,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "와이씨 11일 17.05% 상승…검사장비주 동반 강세",
-          "risk": false
-        }
-      ],
-      "price": 13120,
-      "chg": 0.0131,
-      "activity": 3.1,
-      "foreign_today": 1758080000,
-      "inst_today": 4159040000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "121600",
-      "name": "나노신소재",
-      "close": 74200,
-      "ret5": 0.1311,
-      "ret20": 0.2972,
-      "rsi14": 62.0,
-      "vol20": 1.128,
-      "foreign_net": -5178410000,
-      "inst_net": 20878772500,
-      "score": 0.793,
-      "news": [],
-      "price": 66800,
-      "chg": -0.1009,
-      "activity": 1.16,
-      "foreign_today": 935200000,
-      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
       "code": "218410",
       "name": "RFHIC",
-      "close": 55400,
-      "ret5": 0.439,
-      "ret20": 0.1058,
-      "rsi14": 56.4,
-      "vol20": 1.319,
-      "foreign_net": -28433069200,
-      "inst_net": 60260684950,
-      "score": 0.744,
+      "close": 53700,
+      "ret5": 0.268,
+      "ret20": 0.017,
+      "rsi14": 54.2,
+      "vol20": 1.314,
+      "foreign_net": -29287303150,
+      "inst_net": 55201061900,
+      "score": 0.8,
       "news": [
+        {
+          "date": "11-16",
+          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "[특징주] 광통신 관련주, 주초장 대체로 약세…RFHIC 상승 속 머큐리·RF...",
@@ -634,165 +356,139 @@
           "date": "11-16",
           "title": "iM증권 “스페이스X, 美 전국 5G망 구축 구체화…RFHIC·케이엠더블유 등...",
           "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "[주간 코스닥 기관] 심텍 주성엔지니어링 RFHIC 에코프로비엠 쓸어 담았...",
-          "risk": false
         }
       ],
-      "price": 54000,
-      "chg": -0.011,
-      "activity": 1.16,
-      "foreign_today": 0,
-      "inst_today": 3564000000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "181710",
-      "name": "NHN",
-      "close": 66400,
-      "ret5": 0.1488,
-      "ret20": 0.2918,
-      "rsi14": 58.4,
-      "vol20": 1.414,
-      "foreign_net": 16236481600,
-      "inst_net": -4033637200,
-      "score": 0.652,
+      "code": "263860",
+      "name": "지니언스",
+      "close": 34750,
+      "ret5": 0.454,
+      "ret20": 0.5977,
+      "rsi14": 72.2,
+      "vol20": 1.675,
+      "foreign_net": -16476106725,
+      "inst_net": 4127490000,
+      "score": 0.767,
       "news": [
         {
-          "date": "11-16",
-          "title": "NHN KCP, 스테이블코인 토론회서 가맹점 결제·정산 인프라 활용 방향 제...",
+          "date": "11-17",
+          "title": "지니언스 회전율 43.59%…4개 종목 50% 돌파",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "NHN KCP, 스테이블코인 결제·정산 기술 실증 성과 공유",
+          "title": "피델리티, 국내 보안기업 지니언스 지분율 5.26% 확보",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "NHN KCP, 스테이블코인 결제·자동정산 기술 실증 완료…상용화 준비 본...",
+          "title": "지니언스 3만4075원…NAC·EDR 성장과 서비스 매출 점검",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 1726400000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "232140",
+      "name": "와이씨",
+      "close": 12970,
+      "ret5": 0.3303,
+      "ret20": -0.1061,
+      "rsi14": 51.8,
+      "vol20": 1.402,
+      "foreign_net": -13014820770,
+      "inst_net": 20382754405,
+      "score": 0.467,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "002990",
+      "name": "금호건설",
+      "close": 10580,
+      "ret5": 0.3325,
+      "ret20": 0.0134,
+      "rsi14": 54.8,
+      "vol20": 1.136,
+      "foreign_net": -3734926955,
+      "inst_net": 564249515,
+      "score": 0.433,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "현대차증권, 금호건설 목표가 163% 상향…\"호남 반도체 구체화\"",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "현대차證 \"금호건설, 수익성 개선…목표가 1만5000원↑\"",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "금호건설, 수능 앞둔 본사·협력사 직원 자녀 187명에 응원 선물",
+          "risk": false
+        }
+      ],
       "exchange": "KOSPI"
     },
     {
       "code": "114800",
       "name": "KODEX 인버스",
-      "close": 1272,
-      "ret5": -0.0515,
-      "ret20": 0.0452,
-      "rsi14": 58.3,
-      "vol20": 0.575,
+      "close": 1324,
+      "ret5": -0.0207,
+      "ret20": 0.1024,
+      "rsi14": 62.7,
+      "vol20": 0.587,
       "foreign_net": null,
       "inst_net": null,
       "score": null,
-      "news": [],
+      "news": [
+        {
+          "date": "11-16",
+          "title": "KODEX 인버스, 고가 1,332원 이후 상승…변동폭 69원",
+          "risk": false
+        }
+      ],
       "exchange": "ETF"
     },
     {
       "code": "069500",
       "name": "KODEX 200",
-      "close": 83115,
-      "ret5": 0.052,
-      "ret20": -0.0635,
-      "rsi14": 39.2,
-      "vol20": 0.58,
+      "close": 79900,
+      "ret5": 0.018,
+      "ret20": -0.1115,
+      "rsi14": 35.7,
+      "vol20": 0.591,
       "foreign_net": null,
       "inst_net": null,
       "score": null,
-      "news": [],
+      "news": [
+        {
+          "date": "11-16",
+          "title": "KODEX 200선물인버스2X, 장중 9.82% 상승…코스피200 선물의 일간 역방향...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "KODEX 200 주가 8만10원…코스피200 추적과 추적오차 점검",
+          "risk": false
+        }
+      ],
       "exchange": "ETF"
-    },
-    {
-      "code": "080580",
-      "name": "오킨스전자",
-      "close": 25100,
-      "ret5": 0.3273,
-      "ret20": -0.1178,
-      "rsi14": 53.2,
-      "vol20": 1.671,
-      "foreign_net": -10410617175,
-      "inst_net": 8844244075,
-      "score": 0,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "오킨스전자, 고가 2만5,400원 찍은 뒤 하락",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[TOP's Pick] 오킨스전자, 반도체 훈풍 타고 3분기 누적 매출 986억",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "오킨스전자, 3분기 누적 매출 986억·영업익 192억… 고부가 반도체 소켓...",
-          "risk": false
-        }
-      ],
-      "price": 17990,
-      "chg": -0.279,
-      "foreign_today": 2230760000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "067310",
-      "name": "하나마이크론",
-      "close": 28350,
-      "ret5": 0.125,
-      "ret20": -0.3051,
-      "rsi14": 39.5,
-      "vol20": 1.187,
-      "foreign_net": -20777525125,
-      "inst_net": 2782651150,
-      "score": 0,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "하나마이크론, 장중 14.34% 하락…후공정 증설과 베트남 법인 점검",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "네패스-하나마이크론, 첨단 반도체 패키징 맞손 “개방형 협업으로 Full...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "네패스, 하나마이크론과 첨단 반도체 패키징 협력 맞손",
-          "risk": false
-        }
-      ],
-      "price": 24400,
-      "chg": -0.1572,
-      "foreign_today": 0,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "253590",
-      "name": "네오셈",
-      "close": 16360,
-      "ret5": 0.3344,
-      "ret20": 0.1062,
-      "rsi14": 55.0,
-      "vol20": 1.411,
-      "foreign_net": -2113726490,
-      "inst_net": -2354162675,
-      "score": 0,
-      "news": [],
-      "price": 13800,
-      "chg": -0.1534,
-      "foreign_today": 0,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
     }
   ]
 }
