@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "12:15",
+    "time": "12:30",
     "pool": 405,
     "analyzed_new": 30,
     "passed": 22,
@@ -116,40 +116,10 @@
           "risk": false
         }
       ],
-      "price": 1278500,
-      "chg": 0.0566,
-      "activity": 1.64,
-      "foreign_today": 8949500000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "018260",
-      "name": "삼성에스디에스",
-      "close": 235500,
-      "ret5": 0.0953,
-      "ret20": 0.1852,
-      "rsi14": 62.9,
-      "vol20": 0.547,
-      "foreign_net": -23004040500,
-      "inst_net": 73478613250,
-      "score": 0.792,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
-          "risk": false
-        }
-      ],
-      "price": 229000,
-      "chg": -0.0235,
-      "activity": 1.35,
-      "foreign_today": 1603000000,
+      "price": 1279000,
+      "chg": 0.057,
+      "activity": 1.57,
+      "foreign_today": 8953000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -163,13 +133,43 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.785,
+      "score": 0.815,
       "news": [],
-      "price": 160400,
-      "chg": 0.0088,
-      "activity": 0.87,
-      "foreign_today": 7218000000,
-      "inst_today": 2887200000,
+      "price": 161400,
+      "chg": 0.0151,
+      "activity": 0.84,
+      "foreign_today": 7263000000,
+      "inst_today": 2905200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "close": 235500,
+      "ret5": 0.0953,
+      "ret20": 0.1852,
+      "rsi14": 62.9,
+      "vol20": 0.547,
+      "foreign_net": -23004040500,
+      "inst_net": 73478613250,
+      "score": 0.808,
+      "news": [
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스 주가, 11월 13일 애프터마켓 234,000원 1.52% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "삼성에스디에스, +1.95%…클라우드·AI와 물류에 시선",
+          "risk": false
+        }
+      ],
+      "price": 230000,
+      "chg": -0.0192,
+      "activity": 1.3,
+      "foreign_today": 1610000000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -182,7 +182,7 @@
       "vol20": 0.828,
       "foreign_net": 3992409275,
       "inst_net": -1135994300,
-      "score": 0.732,
+      "score": 0.748,
       "news": [
         {
           "date": "11-13",
@@ -195,12 +195,31 @@
           "risk": false
         }
       ],
-      "price": 44200,
-      "chg": 0.0161,
-      "activity": 1.02,
-      "foreign_today": 265200000,
-      "inst_today": 353600000,
+      "price": 44250,
+      "chg": 0.0172,
+      "activity": 0.97,
+      "foreign_today": 265500000,
+      "inst_today": 354000000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32400,
+      "ret5": 0.0221,
+      "ret20": 0.0253,
+      "rsi14": 55.4,
+      "vol20": 0.334,
+      "foreign_net": 3464594100,
+      "inst_net": 16462940750,
+      "score": 0.735,
+      "news": [],
+      "price": 32850,
+      "chg": 0.0108,
+      "activity": 0.97,
+      "foreign_today": 164250000,
+      "inst_today": 1346850000,
+      "exchange": "KOSPI"
     },
     {
       "code": "008930",
@@ -212,8 +231,13 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.711,
+      "score": 0.722,
       "news": [
+        {
+          "date": "11-16",
+          "title": "한미사이언스, 청각장애인 바리스타 대회서 완전두유 창의상 신설…직...",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "한미사이언스, 청각장애인 바리스타 전국대회 후원…창의상 신설",
@@ -222,11 +246,6 @@
         {
           "date": "11-16",
           "title": "한미사이언스, 청각장애 바리스타 창의력 지원",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "제약업계 ESG 경영의 진화…유한양행·한미사이언스, 사회적 가치 창출...",
           "risk": false
         }
       ],
@@ -244,7 +263,7 @@
       "vol20": 0.53,
       "foreign_net": -3089221250,
       "inst_net": 51442437500,
-      "score": 0.705,
+      "score": 0.715,
       "news": [
         {
           "date": "11-16",
@@ -257,30 +276,11 @@
           "risk": false
         }
       ],
-      "price": 255500,
-      "chg": 0.0139,
+      "price": 256500,
+      "chg": 0.0179,
       "activity": 0.62,
-      "foreign_today": 4343500000,
-      "inst_today": 2299500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32400,
-      "ret5": 0.0221,
-      "ret20": 0.0253,
-      "rsi14": 55.4,
-      "vol20": 0.334,
-      "foreign_net": 3464594100,
-      "inst_net": 16462940750,
-      "score": 0.698,
-      "news": [],
-      "price": 32850,
-      "chg": 0.0108,
-      "activity": 0.96,
-      "foreign_today": 164250000,
-      "inst_today": 1346850000,
+      "foreign_today": 4360500000,
+      "inst_today": 2308500000,
       "exchange": "KOSPI"
     },
     {
@@ -293,7 +293,7 @@
       "vol20": 0.753,
       "foreign_net": -36432959100,
       "inst_net": 34735975550,
-      "score": 0.678,
+      "score": 0.689,
       "news": [
         {
           "date": "11-14",
@@ -320,7 +320,7 @@
       "vol20": 0.956,
       "foreign_net": -2193733150,
       "inst_net": 4197740900,
-      "score": 0.658,
+      "score": 0.649,
       "news": [
         {
           "date": "11-16",
@@ -340,7 +340,7 @@
       ],
       "price": 32950,
       "chg": 0.0394,
-      "activity": 1.93,
+      "activity": 1.81,
       "foreign_today": 0,
       "inst_today": 461300000,
       "exchange": "KOSDAQ"
@@ -355,7 +355,7 @@
       "vol20": 0.504,
       "foreign_net": -17925916200,
       "inst_net": 19544951450,
-      "score": 0.557,
+      "score": 0.563,
       "news": [],
       "foreign_today": 808600000,
       "inst_today": 373200000,
@@ -371,7 +371,7 @@
       "vol20": 0.577,
       "foreign_net": 3717914800,
       "inst_net": 774816875,
-      "score": 0.544,
+      "score": 0.543,
       "news": [
         {
           "date": "11-15",
@@ -399,25 +399,15 @@
       "foreign_net": 13529679450,
       "inst_net": -8623580400,
       "score": 0.523,
-      "news": [],
+      "news": [
+        {
+          "date": "11-16",
+          "title": "KT, 경찰청과 PASS로 교통 과태료 전자고지 시행",
+          "risk": false
+        }
+      ],
       "foreign_today": 255000000,
       "inst_today": 510000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "112610",
-      "name": "씨에스윈드",
-      "close": 46300,
-      "ret5": -0.0512,
-      "ret20": -0.0957,
-      "rsi14": 49.0,
-      "vol20": 0.843,
-      "foreign_net": 11082469550,
-      "inst_net": 4849326525,
-      "score": 0.51,
-      "news": [],
-      "foreign_today": 1157500000,
-      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -430,7 +420,7 @@
       "vol20": 0.889,
       "foreign_net": -57418179000,
       "inst_net": 52231499650,
-      "score": 0.51,
+      "score": 0.523,
       "news": [
         {
           "date": "11-16",
@@ -448,11 +438,27 @@
           "risk": false
         }
       ],
-      "price": 68500,
-      "chg": -0.0044,
-      "activity": 0.82,
+      "price": 69200,
+      "chg": 0.0058,
+      "activity": 0.79,
       "foreign_today": 0,
-      "inst_today": 68500000,
+      "inst_today": 69200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "112610",
+      "name": "씨에스윈드",
+      "close": 46300,
+      "ret5": -0.0512,
+      "ret20": -0.0957,
+      "rsi14": 49.0,
+      "vol20": 0.843,
+      "foreign_net": 11082469550,
+      "inst_net": 4849326525,
+      "score": 0.517,
+      "news": [],
+      "foreign_today": 1157500000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -465,7 +471,7 @@
       "vol20": 0.861,
       "foreign_net": -7935039700,
       "inst_net": 19218676450,
-      "score": 0.503,
+      "score": 0.517,
       "news": [
         {
           "date": "11-16",
@@ -497,7 +503,7 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.866,
+      "score": 0.854,
       "news": [
         {
           "date": "11-16",
@@ -510,11 +516,11 @@
           "risk": false
         }
       ],
-      "price": 13850,
-      "chg": 0.0695,
-      "activity": 4.52,
-      "foreign_today": 554000000,
-      "inst_today": 1537350000,
+      "price": 13860,
+      "chg": 0.0703,
+      "activity": 4.4,
+      "foreign_today": 554400000,
+      "inst_today": 1538460000,
       "exchange": "KOSDAQ"
     },
     {
@@ -527,7 +533,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.792,
+      "score": 0.801,
       "news": [
         {
           "date": "11-16",
@@ -545,11 +551,11 @@
           "risk": false
         }
       ],
-      "price": 49550,
-      "chg": 0.0531,
-      "activity": 3.19,
+      "price": 49700,
+      "chg": 0.0563,
+      "activity": 3.0,
       "foreign_today": 0,
-      "inst_today": 891900000,
+      "inst_today": 894600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -562,7 +568,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.725,
+      "score": 0.735,
       "news": [
         {
           "date": "11-16",
@@ -580,30 +586,11 @@
           "risk": false
         }
       ],
-      "price": 55500,
-      "chg": 0.0165,
-      "activity": 1.68,
+      "price": 55400,
+      "chg": 0.0147,
+      "activity": 1.59,
       "foreign_today": 0,
-      "inst_today": 1165500000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "098120",
-      "name": "마이크로컨텍솔",
-      "close": 52100,
-      "ret5": 0.2524,
-      "ret20": 0.042,
-      "rsi14": 53.7,
-      "vol20": 1.438,
-      "foreign_net": -7477600450,
-      "inst_net": 3633612050,
-      "score": 0.651,
-      "news": [],
-      "price": 48650,
-      "chg": -0.059,
-      "activity": 1.8,
-      "foreign_today": 632450000,
-      "inst_today": 1118950000,
+      "inst_today": 1163400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -616,7 +603,7 @@
       "vol20": 1.414,
       "foreign_net": 16236481600,
       "inst_net": -4033637200,
-      "score": 0.57,
+      "score": 0.576,
       "news": [
         {
           "date": "11-16",
@@ -636,6 +623,41 @@
       ],
       "foreign_today": 0,
       "inst_today": 531200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "002990",
+      "name": "금호건설",
+      "close": 11210,
+      "ret5": 0.3874,
+      "ret20": 0.0915,
+      "rsi14": 59.5,
+      "vol20": 1.115,
+      "foreign_net": -2508101775,
+      "inst_net": 545111590,
+      "score": 0.563,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "\"공정 정상화 여부가 관건\"...금호건설, 수주잔고 10조 돌파에도 매출 \"...",
+          "risk": false
+        },
+        {
+          "date": "11-15",
+          "title": "금호건설, 3분기 영업이익 222억원…전년 대비 44.2% 증가",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "금호건설 주가 5거래일 상승 급등 마감",
+          "risk": false
+        }
+      ],
+      "price": 10540,
+      "chg": -0.0598,
+      "activity": 13.05,
+      "foreign_today": 0,
+      "inst_today": 147560000,
       "exchange": "KOSPI"
     },
     {
