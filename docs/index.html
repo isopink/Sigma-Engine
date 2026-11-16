@@ -1309,7 +1309,7 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
   }
   // ---------- 일별 초과수익: 날짜별 (Sigma Engine 일수익 − KOSPI 일수익) ----------
   function alpha() {
-    const el = $('ch-alpha'), rows = D.eq.map(r => ({ d: r.d, v: r.day - r.kday, day: r.day, kday: r.kday }));
+    const el = $('ch-alpha'), rows = D.eq.map(r => ({ d: r.d, v: r.day - r.kday, day: r.day, kday: r.kday, err: !!CAL_NOTE[r.d.toISOString().slice(0, 10)] }));   // 11-16 S.Lee: 시스템 오류 날은 회색 · '오류'
     if (!rows.length) return none(el, '첫 마감 기록을 기다리는 중이에요.');
     const { svg, W, H } = svgIn(el, 200), lab = rows.length <= 12, top = 18 + (lab ? 14 : 0), bot = H - 24 - (lab ? 16 : 0);   // 막대 끝 값 글자 자리
     const M = d3.max(rows, r => Math.abs(r.v)) || .01, y = d3.scaleLinear([-M, M], [bot, top]).nice(4);
@@ -1319,16 +1319,16 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
     svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', d => d === 0 ? '#5a5a5a' : C.grid);
     svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', m.l - 8).attr('y', y).attr('dy', '.32em').attr('text-anchor', 'end').attr('font-size', 10).attr('fill', C.muted).text(tf);
     svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', r => x(+r.d) + off).attr('width', bw)
-      .attr('y', r => y(Math.max(0, r.v))).attr('height', r => Math.max(1, Math.abs(y(r.v) - y(0)))).attr('fill', r => r.v >= 0 ? C.up : C.down).attr('opacity', .9)
+      .attr('y', r => y(Math.max(0, r.v))).attr('height', r => Math.max(1, Math.abs(y(r.v) - y(0)))).attr('fill', r => r.err ? '#5a5a5a' : r.v >= 0 ? C.up : C.down).attr('opacity', .9)
       .call(tipMark, r => `<div class="t">${md(r.d)}</div>${row('초과', tf(r.v) + '%p', r.v >= 0 ? 'up' : 'down')}${row('Sigma Engine', pct(r.day), r.day >= 0 ? 'up' : 'down')}${row(BMN(), pct(r.kday))}`)
       .on('pointerleave', hideTip);
     if (lab) svg.append('g').selectAll('text').data(rows).join('text').attr('x', r => x(+r.d) + x.bandwidth() / 2).attr('y', r => r.v >= 0 ? y(r.v) - 5 : y(r.v) + 13)
-      .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', r => r.v >= 0 ? C.upHi : C.down).text(r => tf(r.v));
+      .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', r => r.err ? C.muted : r.v >= 0 ? C.upHi : C.down).text(r => r.err ? '오류' : tf(r.v));
     const step = Math.ceil(rows.length / Math.max(1, Math.floor((W - m.l) / 44)));   // 날짜 글자가 겹치지 않게 솎기
     svg.append('g').selectAll('text').data(rows.filter((r, i) => i % step === 0 || i === rows.length - 1)).join('text').attr('x', r => x(+r.d) + x.bandwidth() / 2).attr('y', H - 6)
       .attr('text-anchor', 'middle').attr('font-size', 11).attr('fill', C.muted).text(r => md(r.d));
-    const win = rows.filter(r => r.v > 0).length;
-    svg.append('text').attr('x', W - m.r).attr('y', 10).attr('text-anchor', 'end').attr('font-size', 11).attr('fill', C.body).text(`${BMN()} 이긴 날 ${win} / ${rows.length}일`);
+    const ok = rows.filter(r => !r.err), win = ok.filter(r => r.v > 0).length, nerr = rows.length - ok.length;   // 오류 날은 이긴 날 셈에서 뺌
+    svg.append('text').attr('x', W - m.r).attr('y', 10).attr('text-anchor', 'end').attr('font-size', 11).attr('fill', C.body).text(`${BMN()} 이긴 날 ${win} / ${ok.length}일` + (nerr ? ` · 오류 ${nerr}일 제외` : ''));
   }
 
   function hero() {
