@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:30",
-    "pool": 457,
-    "analyzed_new": 30,
+    "time": "14:45",
+    "pool": 456,
+    "analyzed_new": 19,
     "passed": 22,
     "kept_prep": false
   },
@@ -116,10 +116,10 @@
           "risk": false
         }
       ],
-      "price": 1281000,
-      "chg": 0.0587,
-      "activity": 1.31,
-      "foreign_today": 11529000000,
+      "price": 1285000,
+      "chg": 0.062,
+      "activity": 1.35,
+      "foreign_today": 11565000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -133,7 +133,7 @@
       "vol20": 0.547,
       "foreign_net": -23004040500,
       "inst_net": 73478613250,
-      "score": 0.825,
+      "score": 0.827,
       "news": [
         {
           "date": "11-13",
@@ -146,10 +146,10 @@
           "risk": false
         }
       ],
-      "price": 228000,
-      "chg": -0.0277,
+      "price": 227000,
+      "chg": -0.032,
       "activity": 1.07,
-      "foreign_today": 4560000000,
+      "foreign_today": 4540000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -163,7 +163,7 @@
       "vol20": 0.334,
       "foreign_net": 3464594100,
       "inst_net": 16462940750,
-      "score": 0.789,
+      "score": 0.79,
       "news": [
         {
           "date": "11-16",
@@ -173,7 +173,7 @@
       ],
       "price": 32800,
       "chg": 0.0092,
-      "activity": 0.84,
+      "activity": 0.83,
       "foreign_today": 0,
       "inst_today": 5084000000,
       "exchange": "KOSPI"
@@ -188,13 +188,13 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.759,
+      "score": 0.772,
       "news": [],
-      "price": 160600,
-      "chg": 0.0101,
+      "price": 161000,
+      "chg": 0.0126,
       "activity": 0.75,
-      "foreign_today": 13972200000,
-      "inst_today": 1606000000,
+      "foreign_today": 14007000000,
+      "inst_today": 1610000000,
       "exchange": "KOSPI"
     },
     {
@@ -207,7 +207,7 @@
       "vol20": 0.956,
       "foreign_net": -2193733150,
       "inst_net": 4197740900,
-      "score": 0.711,
+      "score": 0.71,
       "news": [
         {
           "date": "11-16",
@@ -225,11 +225,11 @@
           "risk": false
         }
       ],
-      "price": 32050,
-      "chg": 0.011,
-      "activity": 1.38,
+      "price": 32150,
+      "chg": 0.0142,
+      "activity": 1.36,
       "foreign_today": 0,
-      "inst_today": 1923000000,
+      "inst_today": 1929000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -242,7 +242,7 @@
       "vol20": 0.828,
       "foreign_net": 3992409275,
       "inst_net": -1135994300,
-      "score": 0.711,
+      "score": 0.71,
       "news": [
         {
           "date": "11-13",
@@ -255,37 +255,12 @@
           "risk": false
         }
       ],
-      "price": 44200,
-      "chg": 0.0161,
-      "activity": 0.73,
-      "foreign_today": 707200000,
-      "inst_today": 795600000,
+      "price": 44150,
+      "chg": 0.0149,
+      "activity": 0.72,
+      "foreign_today": 706400000,
+      "inst_today": 794700000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "032830",
-      "name": "삼성생명",
-      "close": 253500,
-      "ret5": 0.0742,
-      "ret20": 0.0651,
-      "rsi14": 47.4,
-      "vol20": 0.53,
-      "foreign_net": -3089221250,
-      "inst_net": 51442437500,
-      "score": 0.687,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "삼성생명, 자구노력은 어디로?... '지연된 밸류업'과 갇힌 주가에 주주...",
-          "risk": false
-        }
-      ],
-      "price": 253500,
-      "chg": 0.006,
-      "activity": 0.55,
-      "foreign_today": 9126000000,
-      "inst_today": 5323500000,
-      "exchange": "KOSPI"
     },
     {
       "code": "008930",
@@ -297,21 +272,21 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.669,
+      "score": 0.679,
       "news": [
         {
           "date": "11-16",
-          "title": "[위클리오늘] 산업일반 소식_한미사이언스, 대원제약(11.16)",
+          "title": "한미사이언스 '아데시', 무신사·29CM·코오드로 판로 확대",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "[민주 약국] 제일파마홀딩스·동아제약·한미사이언스",
+          "title": "한미사이언스, '2026 청각장애인 바리스타 전국대회' 후원 및 '완전두유...",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "한미사이언스, 청각장애인 바리스타 '완전두유 창의상' 시상",
+          "title": "한미사이언스, 청각장애인 바리스타에 '완전두유 창의상' 시상",
           "risk": false
         }
       ],
@@ -329,7 +304,7 @@
       "vol20": 0.504,
       "foreign_net": -17925916200,
       "inst_net": 19544951450,
-      "score": 0.59,
+      "score": 0.599,
       "news": [],
       "foreign_today": 870800000,
       "inst_today": 1803800000,
@@ -345,8 +320,13 @@
       "vol20": 0.428,
       "foreign_net": -15839984530,
       "inst_net": 19367937840,
-      "score": 0.542,
+      "score": 0.556,
       "news": [
+        {
+          "date": "11-16",
+          "title": "[부고] 이창우(전 LG유플러스 부사장)씨 별세",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "LG유플러스, 'U+SASE' 출시…네트워크·보안 통합 관리",
@@ -356,50 +336,10 @@
           "date": "11-16",
           "title": "LG유플러스, 생성형 AI 통한 기업 기밀 유출 막는다…통합 보안 플랫폼...",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "LG유플러스, 네트워크·보안 통합 클라우드 플랫폼 'U+SASE' 출시",
-          "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 1851640000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "close": 31900,
-      "ret5": -0.0031,
-      "ret20": 0.0063,
-      "rsi14": 53.1,
-      "vol20": 0.43,
-      "foreign_net": -16207143400,
-      "inst_net": -11183474075,
-      "score": 0.542,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "카카오·티맵, 대리기사 보험료 건당 환급·등급제 폐지…공정위 동의의...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "공정위, 카카오·티맵 대리기사 보험 중복가입·등급제 손본다",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "공정위, 카카오·티맵 대리기사 등급 없애고 보험료 줄인다",
-          "risk": false
-        }
-      ],
-      "price": 32450,
-      "chg": 0.0237,
-      "activity": 0.88,
-      "foreign_today": 0,
-      "inst_today": 778800000,
       "exchange": "KOSPI"
     },
     {
@@ -412,7 +352,7 @@
       "vol20": 0.299,
       "foreign_net": -1311042400,
       "inst_net": 5739344250,
-      "score": 0.536,
+      "score": 0.531,
       "news": [
         {
           "date": "11-16",
@@ -425,11 +365,78 @@
           "risk": false
         }
       ],
-      "price": 90200,
-      "chg": 0.0045,
+      "price": 90400,
+      "chg": 0.0067,
       "activity": 0.68,
-      "foreign_today": 4149200000,
-      "inst_today": 631400000,
+      "foreign_today": 4158400000,
+      "inst_today": 632800000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "close": 31900,
+      "ret5": -0.0031,
+      "ret20": 0.0063,
+      "rsi14": 53.1,
+      "vol20": 0.43,
+      "foreign_net": -16207143400,
+      "inst_net": -11183474075,
+      "score": 0.531,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "카카오뱅크, 애플페이 서비스 도입",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "카카오뱅크, 애플페이 도입…만 14세 이상도 결제 가능",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "카카오뱅크, 현대카드 이어 애플페이 도입",
+          "risk": false
+        }
+      ],
+      "price": 32350,
+      "chg": 0.0205,
+      "activity": 0.87,
+      "foreign_today": 0,
+      "inst_today": 776400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "030200",
+      "name": "KT",
+      "close": 51000,
+      "ret5": -0.0286,
+      "ret20": 0.0119,
+      "rsi14": 54.4,
+      "vol20": 0.364,
+      "foreign_net": 13529679450,
+      "inst_net": -8623580400,
+      "score": 0.512,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "양자암호주 줄줄이 약세…KT·SK텔레콤만 '휘파람'",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "교통 과태료 고지서도 PASS 앱으로…KT, 18일부터 시행",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "KT eyes 2027 rebound as mobile business stabilizes, AI orders grow",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 1683000000,
       "exchange": "KOSPI"
     },
     {
@@ -442,7 +449,7 @@
       "vol20": 0.703,
       "foreign_net": -1744276500,
       "inst_net": 11463270150,
-      "score": 0.5,
+      "score": 0.506,
       "news": [
         {
           "date": "11-16",
@@ -460,35 +467,30 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "030200",
-      "name": "KT",
-      "close": 51000,
-      "ret5": -0.0286,
-      "ret20": 0.0119,
-      "rsi14": 54.4,
-      "vol20": 0.364,
-      "foreign_net": 13529679450,
-      "inst_net": -8623580400,
-      "score": 0.5,
+      "code": "267270",
+      "name": "HD건설기계",
+      "close": 93500,
+      "ret5": 0.1557,
+      "ret20": 0.013,
+      "rsi14": 49.8,
+      "vol20": 0.753,
+      "foreign_net": -36432959100,
+      "inst_net": 34735975550,
+      "score": 0.488,
       "news": [
         {
-          "date": "11-16",
-          "title": "교통 과태료 고지서도 PASS 앱으로…KT, 18일부터 시행",
+          "date": "11-14",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "KT eyes 2027 rebound as mobile business stabilizes, AI orders grow",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[IT는 지금] SKT, 효성중공업과 GW급 AI 데이터센터 구축 맞손 外",
+          "date": "11-14",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 1683000000,
+      "foreign_today": 1309000000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -501,13 +503,13 @@
       "vol20": 0.983,
       "foreign_net": 5087040500,
       "inst_net": 16633407000,
-      "score": 0.476,
+      "score": 0.469,
       "news": [],
-      "price": 361000,
-      "chg": -0.0069,
-      "activity": 1.17,
+      "price": 360500,
+      "chg": -0.0083,
+      "activity": 1.14,
       "foreign_today": 0,
-      "inst_today": 361000000,
+      "inst_today": 360500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -520,7 +522,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.831,
+      "score": 0.84,
       "news": [
         {
           "date": "11-16",
@@ -538,11 +540,11 @@
           "risk": false
         }
       ],
-      "price": 49100,
-      "chg": 0.0436,
-      "activity": 2.22,
+      "price": 49350,
+      "chg": 0.0489,
+      "activity": 2.17,
       "foreign_today": 0,
-      "inst_today": 3437000000,
+      "inst_today": 3454500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -555,7 +557,7 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.825,
+      "score": 0.802,
       "news": [
         {
           "date": "11-16",
@@ -568,11 +570,11 @@
           "risk": false
         }
       ],
-      "price": 13250,
-      "chg": 0.0232,
-      "activity": 3.41,
-      "foreign_today": 1775500000,
-      "inst_today": 4200250000,
+      "price": 13110,
+      "chg": 0.0124,
+      "activity": 3.28,
+      "foreign_today": 1756740000,
+      "inst_today": 4155870000,
       "exchange": "KOSDAQ"
     },
     {
@@ -585,12 +587,12 @@
       "vol20": 1.128,
       "foreign_net": -5178410000,
       "inst_net": 20878772500,
-      "score": 0.777,
+      "score": 0.784,
       "news": [],
-      "price": 66800,
-      "chg": -0.1009,
-      "activity": 1.08,
-      "foreign_today": 935200000,
+      "price": 66700,
+      "chg": -0.1023,
+      "activity": 1.11,
+      "foreign_today": 933800000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -604,7 +606,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.759,
+      "score": 0.765,
       "news": [
         {
           "date": "11-16",
@@ -622,11 +624,11 @@
           "risk": false
         }
       ],
-      "price": 55000,
-      "chg": 0.0073,
-      "activity": 1.23,
+      "price": 54700,
+      "chg": 0.0018,
+      "activity": 1.2,
       "foreign_today": 0,
-      "inst_today": 3630000000,
+      "inst_today": 3610200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -639,7 +641,7 @@
       "vol20": 1.414,
       "foreign_net": 16236481600,
       "inst_net": -4033637200,
-      "score": 0.645,
+      "score": 0.654,
       "news": [
         {
           "date": "11-16",
