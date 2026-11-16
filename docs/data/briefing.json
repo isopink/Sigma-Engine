@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "10:45",
-    "pool": 318,
+    "time": "11:00",
+    "pool": 317,
     "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
@@ -111,10 +111,10 @@
           "risk": false
         }
       ],
-      "price": 232000,
-      "chg": -0.0107,
-      "activity": 1.63,
-      "foreign_today": 1856000000,
+      "price": 231500,
+      "chg": -0.0128,
+      "activity": 1.51,
+      "foreign_today": 1852000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -128,13 +128,13 @@
       "vol20": 0.334,
       "foreign_net": 115091312200,
       "inst_net": -103163323750,
-      "score": 0.805,
+      "score": 0.777,
       "news": [],
-      "price": 158800,
-      "chg": -0.0013,
-      "activity": 1.18,
-      "foreign_today": 4287600000,
-      "inst_today": 1429200000,
+      "price": 158600,
+      "chg": -0.0025,
+      "activity": 1.09,
+      "foreign_today": 4282200000,
+      "inst_today": 1427400000,
       "exchange": "KOSPI"
     },
     {
@@ -147,7 +147,7 @@
       "vol20": 0.889,
       "foreign_net": -57418179000,
       "inst_net": 52231499650,
-      "score": 0.703,
+      "score": 0.708,
       "news": [
         {
           "date": "11-16",
@@ -165,11 +165,11 @@
           "risk": false
         }
       ],
-      "price": 68100,
-      "chg": -0.0102,
-      "activity": 1.25,
+      "price": 67800,
+      "chg": -0.0145,
+      "activity": 1.14,
       "foreign_today": 0,
-      "inst_today": 1362000000,
+      "inst_today": 1356000000,
       "exchange": "KOSPI"
     },
     {
@@ -182,44 +182,44 @@
       "vol20": 0.334,
       "foreign_net": 3464594100,
       "inst_net": 16462940750,
-      "score": 0.688,
+      "score": 0.692,
       "news": [],
-      "price": 32700,
-      "chg": 0.0062,
-      "activity": 1.26,
+      "price": 32650,
+      "chg": 0.0046,
+      "activity": 1.18,
       "foreign_today": 0,
-      "inst_today": 392400000,
+      "inst_today": 391800000,
       "exchange": "KOSPI"
     },
     {
-      "code": "055550",
-      "name": "신한지주",
-      "close": 89800,
-      "ret5": 0.031,
-      "ret20": -0.0426,
-      "rsi14": 45.4,
-      "vol20": 0.299,
-      "foreign_net": -1311042400,
-      "inst_net": 5739344250,
-      "score": 0.68,
+      "code": "035900",
+      "name": "JYP Ent.",
+      "close": 44450,
+      "ret5": 0.0802,
+      "ret20": 0.1397,
+      "rsi14": 63.2,
+      "vol20": 0.828,
+      "foreign_net": 3992409275,
+      "inst_net": -1135994300,
+      "score": 0.677,
       "news": [
         {
-          "date": "11-16",
-          "title": "하나증권 \"은행주 금리 급등에 방어주 매력 부각, 최선호주 신한지주 B...",
+          "date": "11-13",
+          "title": "JYP Ent., 43,450원 형성…다음 숫자는 역대 최대 분기 매출과 투어",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "신한지주·BNK금융, 저PBR 매력에 주목-하나證",
+          "date": "11-13",
+          "title": "최대 매출에도... JYP Ent., 저연차 IP 체급이 문제 [엔터코노미]",
           "risk": false
         }
       ],
-      "price": 89200,
-      "chg": -0.0067,
-      "activity": 1.02,
-      "foreign_today": 1070400000,
-      "inst_today": 624400000,
-      "exchange": "KOSPI"
+      "price": 43650,
+      "chg": 0.0034,
+      "activity": 1.46,
+      "foreign_today": 0,
+      "inst_today": 87300000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "008930",
@@ -231,7 +231,7 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.664,
+      "score": 0.677,
       "news": [
         {
           "date": "11-16",
@@ -254,34 +254,34 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "035900",
-      "name": "JYP Ent.",
-      "close": 44450,
-      "ret5": 0.0802,
-      "ret20": 0.1397,
-      "rsi14": 63.2,
-      "vol20": 0.828,
-      "foreign_net": 3992409275,
-      "inst_net": -1135994300,
-      "score": 0.656,
+      "code": "055550",
+      "name": "신한지주",
+      "close": 89800,
+      "ret5": 0.031,
+      "ret20": -0.0426,
+      "rsi14": 45.4,
+      "vol20": 0.299,
+      "foreign_net": -1311042400,
+      "inst_net": 5739344250,
+      "score": 0.646,
       "news": [
         {
-          "date": "11-13",
-          "title": "JYP Ent., 43,450원 형성…다음 숫자는 역대 최대 분기 매출과 투어",
+          "date": "11-16",
+          "title": "하나증권 \"은행주 금리 급등에 방어주 매력 부각, 최선호주 신한지주 B...",
           "risk": false
         },
         {
-          "date": "11-13",
-          "title": "최대 매출에도... JYP Ent., 저연차 IP 체급이 문제 [엔터코노미]",
+          "date": "11-16",
+          "title": "신한지주·BNK금융, 저PBR 매력에 주목-하나證",
           "risk": false
         }
       ],
-      "price": 43500,
-      "chg": 0.0,
-      "activity": 1.62,
-      "foreign_today": 0,
-      "inst_today": 87000000,
-      "exchange": "KOSDAQ"
+      "price": 89000,
+      "chg": -0.0089,
+      "activity": 0.94,
+      "foreign_today": 1068000000,
+      "inst_today": 623000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "178320",
@@ -293,7 +293,7 @@
       "vol20": 0.956,
       "foreign_net": -2193733150,
       "inst_net": 4197740900,
-      "score": 0.617,
+      "score": 0.615,
       "news": [
         {
           "date": "11-16",
@@ -311,10 +311,10 @@
           "risk": false
         }
       ],
-      "price": 33250,
-      "chg": 0.0489,
-      "activity": 2.95,
-      "foreign_today": 33250000,
+      "price": 33200,
+      "chg": 0.0473,
+      "activity": 2.76,
+      "foreign_today": 33200000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -328,21 +328,21 @@
       "vol20": 0.364,
       "foreign_net": 13529679450,
       "inst_net": -8623580400,
-      "score": 0.586,
+      "score": 0.592,
       "news": [
         {
           "date": "11-16",
-          "title": "[위클리오늘] KT 소식(11.16)",
+          "title": "KT, PASS 전자고지 서비스 확대...경찰청 과태료 안내 지원",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "“과태료 고지서도 모바일로”…KT, PASS 전자고지 서비스 도입",
+          "title": "KT, 교통 과태료 고지서 PASS 앱으로 제공…18일 서비스 시작",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "앤트로픽 상장 D-3…지분 가치 재조명에 반등하는 SKT 주가",
+          "title": "교통 과태료 고지서 PASS 앱으로…KT, 경찰청과 전자고지 서비스",
           "risk": false
         }
       ],
@@ -360,21 +360,21 @@
       "vol20": 0.246,
       "foreign_net": 9659207000,
       "inst_net": -3959931025,
-      "score": 0.578,
+      "score": 0.585,
       "news": [
         {
           "date": "11-16",
-          "title": "카카오뱅크, 시간·장소 따라 계좌 숨기는 '스텔스통장' 출시",
+          "title": "카카오뱅크, 스텔스통장 가입 시 최대 3만원 지급",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "카카오뱅크, 다이슨 손잡고 '한달적금' 출시…소비자 관심도 상승",
+          "title": "나만 아는 비상금 통장…카카오뱅크 '스텔스통장' 최대 3만원 이벤트",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "카카오뱅크, 원하는 시간·장소에서만 계좌 숨기는 '스텔스통장' 출시…...",
+          "title": "카카오뱅크, 스텔스통장 가입하면 최대 3만원 랜덤 캐시 지급",
           "risk": false
         }
       ],
@@ -392,7 +392,7 @@
       "vol20": 0.911,
       "foreign_net": -287034150,
       "inst_net": 33322069000,
-      "score": 0.555,
+      "score": 0.531,
       "news": [
         {
           "date": "11-16",
@@ -400,38 +400,46 @@
           "risk": false
         }
       ],
-      "price": 173200,
-      "chg": 0.0,
-      "activity": 1.26,
-      "foreign_today": 346400000,
+      "price": 171400,
+      "chg": -0.0104,
+      "activity": 1.16,
+      "foreign_today": 342800000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
-      "code": "032830",
-      "name": "삼성생명",
-      "close": 253500,
-      "ret5": 0.0742,
-      "ret20": 0.0651,
-      "rsi14": 47.4,
-      "vol20": 0.53,
-      "foreign_net": -3089221250,
-      "inst_net": 51442437500,
-      "score": 0.539,
+      "code": "035720",
+      "name": "카카오",
+      "close": 31900,
+      "ret5": -0.0031,
+      "ret20": 0.0063,
+      "rsi14": 53.1,
+      "vol20": 0.43,
+      "foreign_net": -16207143400,
+      "inst_net": -11183474075,
+      "score": 0.469,
       "news": [
         {
           "date": "11-16",
-          "title": "삼성생명, BNK 69-63 제압…강유림 21점·3연승 단독 선두",
+          "title": "카카오게임즈, ‘아키에이지 S’ 주요 콘텐츠·개발 방향 공개",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "삼성생명, 종신보험 확대로 신계약 CSM 14% 성장",
+          "title": "카카오게임즈 '아키에이지 S: 자유의 해협' QA 영상 공개",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "카카오뱅크, 스텔스통장 가입 시 최대 3만원 지급",
           "risk": false
         }
       ],
-      "foreign_today": 1267500000,
-      "inst_today": 507000000,
+      "price": 32250,
+      "chg": 0.0174,
+      "activity": 1.2,
+      "foreign_today": 32250000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -444,8 +452,14 @@
       "vol20": 0.703,
       "foreign_net": -1744276500,
       "inst_net": 11463270150,
-      "score": 0.359,
-      "news": [],
+      "score": 0.377,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "한국항공우주 FA-50 멕시코 전투기 수주전 잠재 후보로 거론, 미·멕시코...",
+          "risk": false
+        }
+      ],
       "foreign_today": 0,
       "inst_today": 209000000,
       "exchange": "KOSPI"
@@ -460,21 +474,21 @@
       "vol20": 0.428,
       "foreign_net": -15839984530,
       "inst_net": 19367937840,
-      "score": 0.344,
+      "score": 0.346,
       "news": [
         {
           "date": "11-16",
-          "title": "[위클리오늘] LG유플러스 소식(11.16)",
+          "title": "LG유플러스, 네트워크·보안 일체형 클라우드 플랫폼 'U+SASE' 정식 출시",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "[부고] 이창우(전 LG유플러스 부사장)씨 별세",
+          "title": "LG유플러스, 기업용 통합 보안 플랫폼 'U+SASE' 출시",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "LG유플러스, 네트워크·보안 통합 플랫폼 'U+SASE' 정식 출시",
+          "title": "LG유플러스, 기업 네트워크·보안 통합 관리하는 'U+SASE' 출시",
           "risk": false
         }
       ],
@@ -483,71 +497,48 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 31650,
-      "ret5": 0.0621,
-      "ret20": 0.1086,
-      "rsi14": 54.5,
-      "vol20": 0.861,
-      "foreign_net": -7935039700,
-      "inst_net": 19218676450,
-      "score": 0.336,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "DL이앤씨 성수 2조 · GS건설 목동 1.8조, 이번주 시공권 결정",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "GS건설, 대한민국 조경·색채대상서 잇따라 수상",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "계속되는 사고·하자·정보유출 … GS건설 '안전혁신' 허언인가",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 63300000,
-      "exchange": "KOSPI"
+      "code": "204270",
+      "name": "제이앤티씨",
+      "close": 19590,
+      "ret5": 0.2198,
+      "ret20": -0.0467,
+      "rsi14": 53.2,
+      "vol20": 0.928,
+      "foreign_net": -244051155,
+      "inst_net": 624104190,
+      "score": 0.323,
+      "news": [],
+      "price": 18390,
+      "chg": -0.0491,
+      "activity": 1.33,
+      "foreign_today": 55170000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
     },
     {
-      "code": "010060",
-      "name": "OCI홀딩스",
-      "close": 195300,
-      "ret5": -0.0176,
-      "ret20": -0.0171,
-      "rsi14": 47.9,
-      "vol20": 1.016,
-      "foreign_net": 3884104850,
-      "inst_net": 9584090400,
-      "score": 0.844,
+      "code": "232140",
+      "name": "와이씨",
+      "close": 13030,
+      "ret5": 0.3323,
+      "ret20": -0.1118,
+      "rsi14": 52.0,
+      "vol20": 1.403,
+      "foreign_net": -9958210790,
+      "inst_net": 13887287640,
+      "score": 0.808,
       "news": [
         {
-          "date": "11-16",
-          "title": "OCI홀딩스·OCI, KCGS ESG 평가 종합 A등급 획득",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "OCI홀딩스·OCI, KCGS ESG 평가서 ‘A등급’ 획득",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "OCI홀딩스·OCI, 2026 ESG 평가 나란히 'A등급' 획득",
+          "date": "11-13",
+          "title": "와이씨 11일 17.05% 상승…검사장비주 동반 강세",
           "risk": false
         }
       ],
-      "price": 194700,
-      "chg": -0.0021,
-      "activity": 2.12,
-      "foreign_today": 1947000000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
+      "price": 13320,
+      "chg": 0.0286,
+      "activity": 4.69,
+      "foreign_today": 53280000,
+      "inst_today": 426240000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "002990",
@@ -559,7 +550,7 @@
       "vol20": 1.115,
       "foreign_net": -2508101775,
       "inst_net": 545111590,
-      "score": 0.797,
+      "score": 0.8,
       "news": [
         {
           "date": "11-16",
@@ -577,37 +568,12 @@
           "risk": false
         }
       ],
-      "price": 10700,
-      "chg": -0.0455,
-      "activity": 24.59,
+      "price": 10520,
+      "chg": -0.0616,
+      "activity": 21.73,
       "foreign_today": 0,
-      "inst_today": 117700000,
+      "inst_today": 115720000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 13030,
-      "ret5": 0.3323,
-      "ret20": -0.1118,
-      "rsi14": 52.0,
-      "vol20": 1.403,
-      "foreign_net": -9958210790,
-      "inst_net": 13887287640,
-      "score": 0.789,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "와이씨 11일 17.05% 상승…검사장비주 동반 강세",
-          "risk": false
-        }
-      ],
-      "price": 12910,
-      "chg": -0.0031,
-      "activity": 4.68,
-      "foreign_today": 51640000,
-      "inst_today": 413120000,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "437730",
@@ -619,7 +585,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.75,
+      "score": 0.754,
       "news": [
         {
           "date": "11-16",
@@ -637,11 +603,11 @@
           "risk": false
         }
       ],
-      "price": 49100,
-      "chg": 0.0436,
-      "activity": 5.08,
+      "price": 49600,
+      "chg": 0.0542,
+      "activity": 4.64,
       "foreign_today": 0,
-      "inst_today": 147300000,
+      "inst_today": 148800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -654,7 +620,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.711,
+      "score": 0.731,
       "news": [
         {
           "date": "11-16",
@@ -672,11 +638,46 @@
           "risk": false
         }
       ],
-      "price": 55400,
-      "chg": 0.0147,
-      "activity": 2.29,
+      "price": 54900,
+      "chg": 0.0055,
+      "activity": 2.19,
       "foreign_today": 0,
-      "inst_today": 221600000,
+      "inst_today": 219600000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "328130",
+      "name": "루닛",
+      "close": 15250,
+      "ret5": -0.0142,
+      "ret20": 0.2656,
+      "rsi14": 57.2,
+      "vol20": 1.45,
+      "foreign_net": -2684079650,
+      "inst_net": -1765618585,
+      "score": 0.623,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "루닛·디알텍 실적 개선에 상승…큐리옥스, 소송 불확실성에 20%↓[바이...",
+          "risk": true
+        },
+        {
+          "date": "11-16",
+          "title": "루닛, 적자 줄이고 현금 확보…美 사업 장기 성장 가시성도",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[모닝 리포트] \"루닛, 3분기 적자폭 축소…해외사업 성장 지속\"",
+          "risk": false
+        }
+      ],
+      "price": 14840,
+      "chg": -0.012,
+      "activity": 0.95,
+      "foreign_today": 0,
+      "inst_today": 326480000,
       "exchange": "KOSDAQ"
     },
     {
