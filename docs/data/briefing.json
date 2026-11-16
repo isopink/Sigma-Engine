@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:15",
-    "pool": 438,
-    "analyzed_new": 6,
+    "time": "14:30",
+    "pool": 457,
+    "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
   },
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-16",
+          "title": "K-푸드 열풍에 음식료주 뜨겁다… 삼양식품·롯데웰푸드 상승 주도",
+          "risk": false
+        },
+        {
+          "date": "11-16",
           "title": "[특징주] 삼양식품, 해외 판매 확대 기대…장 초반 6%대 상승",
           "risk": false
         },
@@ -109,17 +114,12 @@
           "date": "11-16",
           "title": "삼양식품, 글로벌 생산기지 확장 승부수..4000억 투자 회수는 안갯속",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[특징주] 삼양식품, 中 신공장 가동 등 성장 기대감.. '강세'",
-          "risk": false
         }
       ],
-      "price": 1277000,
-      "chg": 0.0554,
-      "activity": 1.32,
-      "foreign_today": 10216000000,
+      "price": 1281000,
+      "chg": 0.0587,
+      "activity": 1.31,
+      "foreign_today": 11529000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -133,7 +133,7 @@
       "vol20": 0.547,
       "foreign_net": -23004040500,
       "inst_net": 73478613250,
-      "score": 0.852,
+      "score": 0.825,
       "news": [
         {
           "date": "11-13",
@@ -146,30 +146,11 @@
           "risk": false
         }
       ],
-      "price": 227500,
-      "chg": -0.0299,
-      "activity": 1.06,
-      "foreign_today": 4095000000,
+      "price": 228000,
+      "chg": -0.0277,
+      "activity": 1.07,
+      "foreign_today": 4560000000,
       "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 158000,
-      "ret5": 0.0381,
-      "ret20": -0.0143,
-      "rsi14": 50.9,
-      "vol20": 0.334,
-      "foreign_net": 115091312200,
-      "inst_net": -103163323750,
-      "score": 0.763,
-      "news": [],
-      "price": 160700,
-      "chg": 0.0107,
-      "activity": 0.75,
-      "foreign_today": 11409700000,
-      "inst_today": 1446300000,
       "exchange": "KOSPI"
     },
     {
@@ -182,7 +163,7 @@
       "vol20": 0.334,
       "foreign_net": 3464594100,
       "inst_net": 16462940750,
-      "score": 0.751,
+      "score": 0.789,
       "news": [
         {
           "date": "11-16",
@@ -190,42 +171,31 @@
           "risk": false
         }
       ],
-      "price": 32750,
-      "chg": 0.0077,
+      "price": 32800,
+      "chg": 0.0092,
       "activity": 0.84,
       "foreign_today": 0,
-      "inst_today": 3569750000,
+      "inst_today": 5084000000,
       "exchange": "KOSPI"
     },
     {
-      "code": "035900",
-      "name": "JYP Ent.",
-      "close": 44450,
-      "ret5": 0.0802,
-      "ret20": 0.1397,
-      "rsi14": 63.2,
-      "vol20": 0.828,
-      "foreign_net": 3992409275,
-      "inst_net": -1135994300,
-      "score": 0.734,
-      "news": [
-        {
-          "date": "11-13",
-          "title": "JYP Ent., 43,450원 형성…다음 숫자는 역대 최대 분기 매출과 투어",
-          "risk": false
-        },
-        {
-          "date": "11-13",
-          "title": "최대 매출에도... JYP Ent., 저연차 IP 체급이 문제 [엔터코노미]",
-          "risk": false
-        }
-      ],
-      "price": 44300,
-      "chg": 0.0184,
+      "code": "105560",
+      "name": "KB금융",
+      "close": 158000,
+      "ret5": 0.0381,
+      "ret20": -0.0143,
+      "rsi14": 50.9,
+      "vol20": 0.334,
+      "foreign_net": 115091312200,
+      "inst_net": -103163323750,
+      "score": 0.759,
+      "news": [],
+      "price": 160600,
+      "chg": 0.0101,
       "activity": 0.75,
-      "foreign_today": 531600000,
-      "inst_today": 708800000,
-      "exchange": "KOSDAQ"
+      "foreign_today": 13972200000,
+      "inst_today": 1606000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "178320",
@@ -237,7 +207,7 @@
       "vol20": 0.956,
       "foreign_net": -2193733150,
       "inst_net": 4197740900,
-      "score": 0.722,
+      "score": 0.711,
       "news": [
         {
           "date": "11-16",
@@ -255,11 +225,41 @@
           "risk": false
         }
       ],
-      "price": 32300,
-      "chg": 0.0189,
-      "activity": 1.41,
+      "price": 32050,
+      "chg": 0.011,
+      "activity": 1.38,
       "foreign_today": 0,
-      "inst_today": 1453500000,
+      "inst_today": 1923000000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "035900",
+      "name": "JYP Ent.",
+      "close": 44450,
+      "ret5": 0.0802,
+      "ret20": 0.1397,
+      "rsi14": 63.2,
+      "vol20": 0.828,
+      "foreign_net": 3992409275,
+      "inst_net": -1135994300,
+      "score": 0.711,
+      "news": [
+        {
+          "date": "11-13",
+          "title": "JYP Ent., 43,450원 형성…다음 숫자는 역대 최대 분기 매출과 투어",
+          "risk": false
+        },
+        {
+          "date": "11-13",
+          "title": "최대 매출에도... JYP Ent., 저연차 IP 체급이 문제 [엔터코노미]",
+          "risk": false
+        }
+      ],
+      "price": 44200,
+      "chg": 0.0161,
+      "activity": 0.73,
+      "foreign_today": 707200000,
+      "inst_today": 795600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -272,7 +272,7 @@
       "vol20": 0.53,
       "foreign_net": -3089221250,
       "inst_net": 51442437500,
-      "score": 0.698,
+      "score": 0.687,
       "news": [
         {
           "date": "11-16",
@@ -280,11 +280,11 @@
           "risk": false
         }
       ],
-      "price": 254500,
-      "chg": 0.0099,
-      "activity": 0.56,
-      "foreign_today": 7635000000,
-      "inst_today": 3817500000,
+      "price": 253500,
+      "chg": 0.006,
+      "activity": 0.55,
+      "foreign_today": 9126000000,
+      "inst_today": 5323500000,
       "exchange": "KOSPI"
     },
     {
@@ -297,8 +297,13 @@
       "vol20": 0.686,
       "foreign_net": 12294732950,
       "inst_net": -7023543750,
-      "score": 0.68,
+      "score": 0.669,
       "news": [
+        {
+          "date": "11-16",
+          "title": "[위클리오늘] 산업일반 소식_한미사이언스, 대원제약(11.16)",
+          "risk": false
+        },
         {
           "date": "11-16",
           "title": "[민주 약국] 제일파마홀딩스·동아제약·한미사이언스",
@@ -308,15 +313,10 @@
           "date": "11-16",
           "title": "한미사이언스, 청각장애인 바리스타 '완전두유 창의상' 시상",
           "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[뉴스워커_한미사이언스] 청각장애인 바리스타 전국대회 후원…창의상...",
-          "risk": false
         }
       ],
-      "foreign_today": 1030000000,
-      "inst_today": 257500000,
+      "foreign_today": 1081500000,
+      "inst_today": 463500000,
       "exchange": "KOSPI"
     },
     {
@@ -329,37 +329,10 @@
       "vol20": 0.504,
       "foreign_net": -17925916200,
       "inst_net": 19544951450,
-      "score": 0.598,
+      "score": 0.59,
       "news": [],
-      "foreign_today": 995200000,
-      "inst_today": 1181800000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "267270",
-      "name": "HD건설기계",
-      "close": 93500,
-      "ret5": 0.1557,
-      "ret20": 0.013,
-      "rsi14": 49.8,
-      "vol20": 0.753,
-      "foreign_net": -36432959100,
-      "inst_net": 34735975550,
-      "score": 0.58,
-      "news": [
-        {
-          "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
-          "risk": false
-        }
-      ],
-      "foreign_today": 1589500000,
-      "inst_today": 0,
+      "foreign_today": 870800000,
+      "inst_today": 1803800000,
       "exchange": "KOSPI"
     },
     {
@@ -372,7 +345,7 @@
       "vol20": 0.428,
       "foreign_net": -15839984530,
       "inst_net": 19367937840,
-      "score": 0.55,
+      "score": 0.542,
       "news": [
         {
           "date": "11-16",
@@ -391,39 +364,42 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 1493760000,
+      "inst_today": 1851640000,
       "exchange": "KOSPI"
     },
     {
-      "code": "030200",
-      "name": "KT",
-      "close": 51000,
-      "ret5": -0.0286,
-      "ret20": 0.0119,
-      "rsi14": 54.4,
-      "vol20": 0.364,
-      "foreign_net": 13529679450,
-      "inst_net": -8623580400,
-      "score": 0.544,
+      "code": "035720",
+      "name": "카카오",
+      "close": 31900,
+      "ret5": -0.0031,
+      "ret20": 0.0063,
+      "rsi14": 53.1,
+      "vol20": 0.43,
+      "foreign_net": -16207143400,
+      "inst_net": -11183474075,
+      "score": 0.542,
       "news": [
         {
           "date": "11-16",
-          "title": "KT, PASS로 교통 과태료 모바일 전자고지 서비스",
+          "title": "카카오·티맵, 대리기사 보험료 건당 환급·등급제 폐지…공정위 동의의...",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "KT, 경찰청 교통 과태료 고지 PASS로 안내…18일 서비스 시작",
+          "title": "공정위, 카카오·티맵 대리기사 보험 중복가입·등급제 손본다",
           "risk": false
         },
         {
           "date": "11-16",
-          "title": "[텔코 NOW] KTㆍLGU+",
+          "title": "공정위, 카카오·티맵 대리기사 등급 없애고 보험료 줄인다",
           "risk": false
         }
       ],
+      "price": 32450,
+      "chg": 0.0237,
+      "activity": 0.88,
       "foreign_today": 0,
-      "inst_today": 1530000000,
+      "inst_today": 778800000,
       "exchange": "KOSPI"
     },
     {
@@ -436,7 +412,7 @@
       "vol20": 0.299,
       "foreign_net": -1311042400,
       "inst_net": 5739344250,
-      "score": 0.533,
+      "score": 0.536,
       "news": [
         {
           "date": "11-16",
@@ -449,11 +425,70 @@
           "risk": false
         }
       ],
-      "price": 90400,
-      "chg": 0.0067,
+      "price": 90200,
+      "chg": 0.0045,
       "activity": 0.68,
-      "foreign_today": 3254400000,
-      "inst_today": 271200000,
+      "foreign_today": 4149200000,
+      "inst_today": 631400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "047810",
+      "name": "한국항공우주",
+      "close": 104500,
+      "ret5": 0.0245,
+      "ret20": -0.0297,
+      "rsi14": 46.3,
+      "vol20": 0.703,
+      "foreign_net": -1744276500,
+      "inst_net": 11463270150,
+      "score": 0.5,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "한서대 오준민·우상휘 학생, 2026년도 한국항공우주학회 주관 장학생 선...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "한국항공우주 FA-50 멕시코 전투기 수주전 잠재 후보로 거론, 미·멕시코...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 3657500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "030200",
+      "name": "KT",
+      "close": 51000,
+      "ret5": -0.0286,
+      "ret20": 0.0119,
+      "rsi14": 54.4,
+      "vol20": 0.364,
+      "foreign_net": 13529679450,
+      "inst_net": -8623580400,
+      "score": 0.5,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "교통 과태료 고지서도 PASS 앱으로…KT, 18일부터 시행",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "KT eyes 2027 rebound as mobile business stabilizes, AI orders grow",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[IT는 지금] SKT, 효성중공업과 GW급 AI 데이터센터 구축 맞손 外",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 1683000000,
       "exchange": "KOSPI"
     },
     {
@@ -466,49 +501,14 @@
       "vol20": 0.983,
       "foreign_net": 5087040500,
       "inst_net": 16633407000,
-      "score": 0.533,
+      "score": 0.476,
       "news": [],
-      "price": 360500,
-      "chg": -0.0083,
-      "activity": 1.19,
+      "price": 361000,
+      "chg": -0.0069,
+      "activity": 1.17,
       "foreign_today": 0,
-      "inst_today": 360500000,
+      "inst_today": 361000000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "close": 31900,
-      "ret5": -0.0031,
-      "ret20": 0.0063,
-      "rsi14": 53.1,
-      "vol20": 0.43,
-      "foreign_net": -16207143400,
-      "inst_net": -11183474075,
-      "score": 0.509,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "원하는 시간 장소에서만 확인…카카오뱅크 ‘스텔스통장’ 출시",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "카카오·티맵, 대리기사 보험 강요 혐의에 '상생 카드'",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "카카오뱅크, 다이슨과 제휴 적금 출시…매일 저축하면 가전 할인 혜택",
-          "risk": false
-        }
-      ],
-      "price": 32350,
-      "chg": 0.0205,
-      "activity": 0.88,
-      "foreign_today": 0,
-      "inst_today": 485250000,
-      "exchange": "KOSPI"
     },
     {
       "code": "437730",
@@ -520,7 +520,7 @@
       "vol20": 1.267,
       "foreign_net": 13341322450,
       "inst_net": -1870236350,
-      "score": 0.84,
+      "score": 0.831,
       "news": [
         {
           "date": "11-16",
@@ -538,11 +538,11 @@
           "risk": false
         }
       ],
-      "price": 48450,
-      "chg": 0.0298,
-      "activity": 2.26,
+      "price": 49100,
+      "chg": 0.0436,
+      "activity": 2.22,
       "foreign_today": 0,
-      "inst_today": 2519400000,
+      "inst_today": 3437000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -555,7 +555,7 @@
       "vol20": 1.403,
       "foreign_net": -9958210790,
       "inst_net": 13887287640,
-      "score": 0.828,
+      "score": 0.825,
       "news": [
         {
           "date": "11-16",
@@ -568,11 +568,30 @@
           "risk": false
         }
       ],
-      "price": 13210,
-      "chg": 0.0201,
-      "activity": 3.51,
-      "foreign_today": 1836190000,
-      "inst_today": 2377800000,
+      "price": 13250,
+      "chg": 0.0232,
+      "activity": 3.41,
+      "foreign_today": 1775500000,
+      "inst_today": 4200250000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "121600",
+      "name": "나노신소재",
+      "close": 74200,
+      "ret5": 0.1311,
+      "ret20": 0.2972,
+      "rsi14": 62.0,
+      "vol20": 1.128,
+      "foreign_net": -5178410000,
+      "inst_net": 20878772500,
+      "score": 0.777,
+      "news": [],
+      "price": 66800,
+      "chg": -0.1009,
+      "activity": 1.08,
+      "foreign_today": 935200000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -585,7 +604,7 @@
       "vol20": 1.319,
       "foreign_net": -28433069200,
       "inst_net": 60260684950,
-      "score": 0.769,
+      "score": 0.759,
       "news": [
         {
           "date": "11-16",
@@ -603,30 +622,11 @@
           "risk": false
         }
       ],
-      "price": 54600,
-      "chg": 0.0,
-      "activity": 1.26,
+      "price": 55000,
+      "chg": 0.0073,
+      "activity": 1.23,
       "foreign_today": 0,
-      "inst_today": 2839200000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "121600",
-      "name": "나노신소재",
-      "close": 74200,
-      "ret5": 0.1311,
-      "ret20": 0.2972,
-      "rsi14": 62.0,
-      "vol20": 1.128,
-      "foreign_net": -5178410000,
-      "inst_net": 20878772500,
-      "score": 0.751,
-      "news": [],
-      "price": 67100,
-      "chg": -0.0969,
-      "activity": 1.05,
-      "foreign_today": 738100000,
-      "inst_today": 0,
+      "inst_today": 3630000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -658,7 +658,7 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 1394400000,
+      "inst_today": 1726400000,
       "exchange": "KOSPI"
     },
     {
