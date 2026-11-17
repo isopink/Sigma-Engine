@@ -87,6 +87,8 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
             limits[f"평단 {held['avg_price']:,.0f}원 대비 손실 중이라 추가 매수 금지"] = 0
         elif conf < C.buy_threshold(p) - 1e-9 and not xd:
             limits["추가 매수는 정식 매수 기준 이상만 (소액 매수 구간 제외)"] = 0
+    if (kb := C.kosdaq_buy_block(code, price, p)):   # 11-17 S.Lee 코스닥: 10:00 이후 · 추격 금지
+        limits[kb] = 0
     if p["decision"].get("no_rebuy_same_day") and C.sold_today(code):   # 15분마다 매매하면서 팔고 바로 다시 사는 왕복(수수료 0.9%) 방지
         limits["오늘 판 종목은 재매수 안 함"] = 0
     hv = C.high_vol(code, p)
@@ -137,6 +139,9 @@ def plan_sell(code, conf, price, account, p=None, rule_exit=False):
     wait = not rule_exit and have and C.etf_wait(code, p)   # 11-06 시장 ETF 판단 매도도 trade_from 이후만
     if wait:
         qty = 0
+    kw = not rule_exit and have and C.kosdaq_sell_wait(code, price, p)   # 11-17 S.Lee 코스닥 판단 매도는 5일선 · 20일선 둘 다 이탈 때만
+    if kw:
+        qty = 0
     min_pct = (p["decision"].get("partial_sell") or {}).get("min_amount_pct") or 0
     tiny = part and qty and qty * price < min_pct * account["total"]   # 11-12 S.Lee: 소액 분할 매도 금지 (몇 주씩 쪼개 팔아 비용만 쌓이던 것)
     if tiny:
@@ -144,6 +149,7 @@ def plan_sell(code, conf, price, account, p=None, rule_exit=False):
     return {"side": "매도", "code": code, "qty": qty, "price": price, "amount": qty * price, "held_qty": have,
             "confidence": conf, "partial": part, "rule_exit": rule_exit,
             "limited_by": (f"{wait} 이후에만 판단 매도" if wait
+                           else kw if kw
                            else "소액 분할 매도 금지 (절반 금액 < 총자산 %.0f%%, 전량은 확신도 %.2f 이상이거나 손절·익절·보유일)" % (min_pct * 100, p["decision"]["partial_sell"]["full_at"]) if tiny
                            else "급락일 예외 매수분 (익절·손절·보유일 규칙 매도만)" if hold
                            else "오늘 이미 분할 매도함 (나머지는 확신도 %.2f 이상이거나 손절·익절·보유일 때 전량)" % p["decision"]["partial_sell"]["full_at"] if again

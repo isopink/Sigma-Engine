@@ -940,6 +940,27 @@ def test_benchmark_kodex200_parse():
         pass
 
 
+def test_kosdaq_buy_block_and_sell_wait():
+    """11-17 S.Lee 코스닥: 10:00 전 매수 금지, 20일 +25% 초과 · 5일선 +8% 초과 추격 금지, 판단 매도는 5일선 · 20일선 둘 다 이탈 때만."""
+    from datetime import datetime
+    p = C.params()
+    old = C.market_of
+    C.market_of = lambda code, p=None, markets=None: "KOSDAQ" if code == "999999" else "KOSPI"
+    try:
+        b = {"candidates": [{"code": "999999", "ret20": 0.10, "ma5": 10000, "ma20": 9500}]}
+        t9, t10 = datetime(2026, 11, 17, 9, 45), datetime(2026, 11, 17, 10, 15)
+        assert C.kosdaq_buy_block("999999", 10200, p, t9, b)            # 10:00 전
+        assert C.kosdaq_buy_block("999999", 10200, p, t10, b) is None   # 정상
+        assert C.kosdaq_buy_block("999999", 10900, p, t10, b)           # 5일선 +9%
+        b2 = {"candidates": [{"code": "999999", "ret20": 0.30, "ma5": 10000, "ma20": 9500}]}
+        assert C.kosdaq_buy_block("999999", 10000, p, t10, b2)          # 20일 +30%
+        assert C.kosdaq_buy_block("000001", 99999, p, t9, b2) is None   # 코스피는 해당 없음
+        assert C.kosdaq_sell_wait("999999", 9800, p, b)                  # 5일선 아래지만 20일선 위 → 판단 매도 안 함
+        assert C.kosdaq_sell_wait("999999", 9400, p, b) is None          # 둘 다 아래 → 판단 매도 가능
+    finally:
+        C.market_of = old
+
+
 if __name__ == "__main__":
     fails = 0
     for n, f in list(globals().items()):

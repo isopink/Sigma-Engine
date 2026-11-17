@@ -247,6 +247,42 @@ def index_dip(code, chg, p=None, t=None):
     return {**dd, "weight": w}
 
 
+def kosdaq_buy_block(code, price, p=None, t=None, briefing=None):
+    """11-17 S.Lee 코스닥 매수 제한. 막히면 이유 문자열, 아니면 None.
+    10:00 전 매수 금지 · 20일 수익률이 max_ret20 초과 · 5일선보다 max_gap_ma5 넘게 떠 있으면 추격 금지."""
+    p = p or params()
+    k = p.get("kosdaq") or {}
+    if not k.get("enabled") or market_of(code, p) != "KOSDAQ":
+        return None
+    f = k.get("buy_from")
+    if f and (t or now()).strftime("%H:%M") < f:
+        return f"코스닥은 {f} 이후에만 매수"
+    row = briefing_row(code, briefing) or {}
+    r20 = row.get("ret20")
+    if r20 is not None and k.get("max_ret20") is not None and r20 > k["max_ret20"]:
+        return f"코스닥 추격 금지: 20일 수익률 {r20:+.1%} > {k['max_ret20']:+.0%}"
+    ma5 = row.get("ma5")
+    if ma5 and price and k.get("max_gap_ma5") is not None and price / ma5 - 1 > k["max_gap_ma5"]:
+        return f"코스닥 추격 금지: 5일선 {ma5:,.0f}원보다 {price / ma5 - 1:+.1%} 위 (> {k['max_gap_ma5']:+.0%})"
+    return None
+
+
+def kosdaq_sell_wait(code, price, p=None, briefing=None):
+    """11-17 S.Lee 코스닥 판단 매도는 5일선 · 20일선 둘 다 아래일 때만 (손절 -12% 를 믿고 흔들림은 버팀). 아직이면 이유, 아니면 None.
+    이평선 자료가 없으면 막지 않음. 손절 · 익절 · 보유일 규칙 매도는 해당 없음."""
+    p = p or params()
+    k = p.get("kosdaq") or {}
+    if not k.get("enabled") or not k.get("sell_needs_ma_break") or market_of(code, p) != "KOSDAQ":
+        return None
+    row = briefing_row(code, briefing) or {}
+    ma5, ma20 = row.get("ma5"), row.get("ma20")
+    if not (ma5 and ma20 and price):
+        return None
+    if price < ma5 and price < ma20:
+        return None
+    return f"코스닥 판단 매도는 5일선 {ma5:,.0f} · 20일선 {ma20:,.0f} 둘 다 아래일 때만 (지금 {price:,.0f}원)"
+
+
 def dip_held(code):
     """급락일 지수 예외(index.dip_buy)로 산 보유분인지 (positions.json 의 index_dip 표시). 11-06 S.Lee: 이런 보유분은 판단 매도 없이 익절·손절·보유일 규칙으로만 판다."""
     return bool(((read_json(POSITIONS, {}) or {}).get(code) or {}).get("index_dip"))

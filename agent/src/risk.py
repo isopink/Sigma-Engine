@@ -85,6 +85,8 @@ def check(order, account, price, p=None, r=None):
                 bad.append((f"{label} 하루 매수", f"오늘 이미 {n}번 매수 · {label}는 하루 {etf['max_buys_per_day']}번만"))
         if C.inverse_chase(code, order.get("today_change"), p):   # 11-06 S.Lee: 시장 급락일엔 인버스 신규 매수 금지
             bad.append(("인버스 추격", f"오늘 인버스 {order['today_change']:+.1%} · {p['inverse']['no_chase_change']:+.0%} 이상 오른 날은 신규 매수 금지"))
+        if (kb := C.kosdaq_buy_block(code, price, p)):   # 11-17 S.Lee
+            bad.append(("코스닥 매수 제한", kb))
         if p["decision"].get("no_rebuy_same_day") and C.sold_today(code):
             bad.append(("당일 재매수", "오늘 판 종목은 그날 다시 사지 않음"))
         if held:   # 보유 종목 추가 매수 (11-05): 손실 중 물타기 금지, 소액 매수 구간으로는 추가 안 함
@@ -116,6 +118,8 @@ def check(order, account, price, p=None, r=None):
             bad.append(("확신도", f"{conf:.2f} < 매도 기준 {p['decision']['sell_min_confidence']:.2f}"))
         if run_mode != "exit" and not order.get("rule_exit") and (f := C.etf_wait(code, p)):   # 11-06 S.Lee: 시장 ETF 판단 매도도 trade_from 이후만
             bad.append((f"{C.market_etf(code, p)[1]} 시간", f"{C.market_etf(code, p)[1]} 판단 매도는 {f} 이후에만"))
+        if run_mode != "exit" and not order.get("rule_exit") and (kw := C.kosdaq_sell_wait(code, price, p)):   # 11-17 S.Lee
+            bad.append(("코스닥 판단 매도", kw))
         if run_mode != "exit" and not order.get("rule_exit") and C.dip_held(code):   # 11-06 급락일 예외 매수분은 판단 매도 금지
             bad.append(("급락일 예외 보유", "급락일 예외로 산 지수 ETF 는 익절·손절·보유일 규칙 매도만"))
         cap_q, part = sizing.sell_qty(have, conf, p, order.get("rule_exit") or run_mode == "exit")
