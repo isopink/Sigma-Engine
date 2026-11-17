@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "15:00",
-    "pool": 474,
-    "analyzed_new": 4,
-    "passed": 21,
+    "time": "15:15",
+    "pool": 473,
+    "analyzed_new": 5,
+    "passed": 24,
     "kept_prep": false
   },
   "candidates": [
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 258750,
-      "chg": 0.001,
-      "activity": 1.53,
+      "price": 258000,
+      "chg": -0.0019,
+      "activity": 1.51,
       "foreign_today": 0,
-      "inst_today": 4140000000,
+      "inst_today": 4128000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.932,
+      "score": 0.936,
       "news": [
         {
           "date": "11-17",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 24700,
-      "chg": 0.0716,
-      "activity": 2.45,
-      "foreign_today": 889200000,
-      "inst_today": 1136200000,
+      "price": 24650,
+      "chg": 0.0694,
+      "activity": 2.42,
+      "foreign_today": 887400000,
+      "inst_today": 1133900000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,13 +168,13 @@
       "vol20": 0.34,
       "foreign_net": -2321307850,
       "inst_net": 24381897025,
-      "score": 0.705,
+      "score": 0.7,
       "news": [],
-      "price": 32500,
-      "chg": -0.0152,
-      "activity": 0.62,
+      "price": 32550,
+      "chg": -0.0136,
+      "activity": 0.64,
       "foreign_today": 0,
-      "inst_today": 4452500000,
+      "inst_today": 4459350000,
       "exchange": "KOSPI"
     },
     {
@@ -187,7 +187,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.664,
+      "score": 0.693,
       "news": [
         {
           "date": "11-16",
@@ -195,11 +195,11 @@
           "risk": false
         }
       ],
-      "price": 156800,
-      "chg": -0.0297,
-      "activity": 0.61,
-      "foreign_today": 2665600000,
-      "inst_today": 16150400000,
+      "price": 157100,
+      "chg": -0.0278,
+      "activity": 0.62,
+      "foreign_today": 2670700000,
+      "inst_today": 16181300000,
       "exchange": "KOSPI"
     },
     {
@@ -212,8 +212,13 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.644,
+      "score": 0.657,
       "news": [
+        {
+          "date": "11-17",
+          "title": "일동제약·한미약품·유한양행, AI 제조혁신부터 항암·신장질환 신약까...",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "[ESG트렌드] 유한양행, 제4회 ‘유한ESG학술상’ 시상식 개최 外",
@@ -222,11 +227,6 @@
         {
           "date": "11-17",
           "title": "유한양행, 개별인정형 잇몸 유산균 출시…구강 건강 기능성 시장 공략",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
           "risk": false
         }
       ],
@@ -244,8 +244,13 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.63,
+      "score": 0.636,
       "news": [
+        {
+          "date": "11-17",
+          "title": "아이크래프트·RFHIC 상승세, 삼성전자·SK텔레콤은 약세…5G주 무슨 이...",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "라우프·SK텔레콤, ‘SKT 뉴스룸 굿체인지 캠페인’으로 한국 PR대상 수...",
@@ -255,17 +260,12 @@
           "date": "11-17",
           "title": "[금주의 통신 톡톡] SK텔레콤, 효성중공업과 AI 데이터센터 구축... LG U+...",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "SK텔레콤 약보합…통신 회복·AI 데이터센터 투자 병행",
-          "risk": false
         }
       ],
-      "price": 83300,
-      "chg": -0.0072,
-      "activity": 1.21,
-      "foreign_today": 1499400000,
+      "price": 83000,
+      "chg": -0.0107,
+      "activity": 1.23,
+      "foreign_today": 1494000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -279,8 +279,13 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.603,
+      "score": 0.607,
       "news": [
+        {
+          "date": "11-17",
+          "title": "[금융 이모저모] 카카오뱅크, 'AI 목표적금' 한 달 만에 10만좌 돌파",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "현대카드 독점 깨진 애플페이…카카오뱅크 참전, 결제시장 '요동'",
@@ -289,11 +294,6 @@
         {
           "date": "11-17",
           "title": "카카오뱅크, 'AI 목표적금' 출시 한 달 만에 10만좌 돌파",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크, 'AI·청소년·외국인' 금융 공략...맞춤형 서비스로 고객층...",
           "risk": false
         }
       ],
@@ -311,7 +311,7 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.555,
+      "score": 0.557,
       "news": [
         {
           "date": "11-17",
@@ -343,7 +343,7 @@
       "vol20": 0.741,
       "foreign_net": -286835500,
       "inst_net": 2846949050,
-      "score": 0.548,
+      "score": 0.55,
       "news": [],
       "foreign_today": 0,
       "inst_today": 2563400000,
@@ -359,7 +359,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.527,
+      "score": 0.536,
       "news": [
         {
           "date": "11-16",
@@ -381,7 +381,7 @@
       "vol20": 0.496,
       "foreign_net": -7996328400,
       "inst_net": 9174280200,
-      "score": 0.527,
+      "score": 0.529,
       "news": [
         {
           "date": "11-17",
@@ -413,7 +413,7 @@
       "vol20": 0.894,
       "foreign_net": -74517283400,
       "inst_net": 47861420450,
-      "score": 0.521,
+      "score": 0.514,
       "news": [
         {
           "date": "11-17",
@@ -431,11 +431,11 @@
           "risk": false
         }
       ],
-      "price": 68000,
-      "chg": -0.0058,
-      "activity": 0.61,
+      "price": 68100,
+      "chg": -0.0044,
+      "activity": 0.6,
       "foreign_today": 0,
-      "inst_today": 748000000,
+      "inst_today": 749100000,
       "exchange": "KOSPI"
     },
     {
@@ -464,7 +464,7 @@
       "vol20": 0.57,
       "foreign_net": 3150326550,
       "inst_net": -87228175,
-      "score": 0.473,
+      "score": 0.471,
       "news": [
         {
           "date": "11-17",
@@ -491,8 +491,13 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.432,
+      "score": 0.429,
       "news": [
+        {
+          "date": "11-17",
+          "title": "‘가을의 아쉬움 뒤로하고’ KT, 팬 페스티벌로 시즌 마침표",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "\"AX 내세우며 현장 안전은 뒷전\"…KT새노조, 박윤영 사장에 대책 촉구",
@@ -513,29 +518,29 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.904,
+      "score": 0.907,
       "news": [
+        {
+          "date": "11-17",
+          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "루닛, 유방암 AI 연구 15편 공개…의사 보조 넘어 자율 판독 가능성 검증",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "루닛, RSNA 2026서 의료 AI 연구 17편 발표…유방암 검출·위험 예측 성능...",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "루닛 7.41% 상승…매출 성장과 적자 축소 기대에 거래 집중",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "루닛, AI 자율 판독·위험 예측 연구 대거 공개…RSNA서 17편 발표",
-          "risk": false
         }
       ],
-      "price": 15770,
-      "chg": 0.0728,
-      "activity": 1.0,
-      "foreign_today": 4021350000,
-      "inst_today": 1955480000,
+      "price": 15810,
+      "chg": 0.0755,
+      "activity": 0.99,
+      "foreign_today": 4031550000,
+      "inst_today": 1960440000,
       "exchange": "KOSDAQ"
     },
     {
@@ -548,7 +553,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.884,
+      "score": 0.893,
       "news": [
         {
           "date": "11-16",
@@ -561,46 +566,11 @@
           "risk": false
         }
       ],
-      "price": 13800,
-      "chg": 0.0526,
-      "activity": 2.54,
+      "price": 13690,
+      "chg": 0.0442,
+      "activity": 2.47,
       "foreign_today": 0,
-      "inst_today": 3643200000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "033790",
-      "name": "피노",
-      "close": 6620,
-      "ret5": 0.0458,
-      "ret20": -0.2669,
-      "rsi14": 42.7,
-      "vol20": 1.219,
-      "foreign_net": 938473765,
-      "inst_net": -1756373495,
-      "score": 0.774,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "5G 투자 재개 기대감에 통신장비주 들썩…피노·서진시스템 매수 봇물",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "피노, 중국계 주주 지분율 줄었지만…대표·의장은 여전히 중국인",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "美 규제가 연 기회…이차전지 저점 노린 VCㆍPE, 피노에 1830억 투자",
-          "risk": false
-        }
-      ],
-      "price": 7350,
-      "chg": 0.1256,
-      "activity": 1.95,
-      "foreign_today": 543900000,
-      "inst_today": 235200000,
+      "inst_today": 3614160000,
       "exchange": "KOSDAQ"
     },
     {
@@ -613,13 +583,48 @@
       "vol20": 1.173,
       "foreign_net": -1955910400,
       "inst_net": 15374232200,
-      "score": 0.753,
+      "score": 0.757,
       "news": [],
-      "price": 65300,
-      "chg": -0.018,
+      "price": 65200,
+      "chg": -0.0195,
       "activity": 0.81,
       "foreign_today": 0,
-      "inst_today": 1893700000,
+      "inst_today": 1890800000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "033790",
+      "name": "피노",
+      "close": 6620,
+      "ret5": 0.0458,
+      "ret20": -0.2669,
+      "rsi14": 42.7,
+      "vol20": 1.219,
+      "foreign_net": 938473765,
+      "inst_net": -1756373495,
+      "score": 0.743,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "피노 12%대 급등…니켈 투자·실적 개선 기대 반영",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "5G 투자 재개 기대감에 통신장비주 들썩…피노·서진시스템 매수 봇물",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "피노, 중국계 주주 지분율 줄었지만…대표·의장은 여전히 중국인",
+          "risk": false
+        }
+      ],
+      "price": 7310,
+      "chg": 0.1194,
+      "activity": 1.9,
+      "foreign_today": 540940000,
+      "inst_today": 233920000,
       "exchange": "KOSDAQ"
     },
     {
@@ -632,7 +637,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.603,
+      "score": 0.6,
       "news": [
         {
           "date": "11-16",
@@ -652,7 +657,7 @@
       ],
       "price": 55000,
       "chg": 0.0261,
-      "activity": 1.07,
+      "activity": 1.05,
       "foreign_today": 0,
       "inst_today": 1980000000,
       "exchange": "KOSDAQ"
@@ -681,6 +686,103 @@
         }
       ],
       "exchange": "ETF"
+    },
+    {
+      "code": "261780",
+      "name": "아리바이오랩",
+      "close": 5680,
+      "ret5": 0.2778,
+      "ret20": 0.4869,
+      "rsi14": 76.2,
+      "vol20": 1.153,
+      "foreign_net": 713098863,
+      "inst_net": 25482865,
+      "score": 0,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "아리바이오랩 29% 급락…관계사 치매약 3상 해석에 변동성",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[ET특징주] 아리바이오랩, 치매약 3상 1차 목표 달성했는데… 주가는 '하...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "아리바이오랩 주가, 11월 17일 장중 4,070원 29.95% 하락",
+          "risk": false
+        }
+      ],
+      "price": 4070,
+      "chg": -0.2995,
+      "foreign_today": 0,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "080580",
+      "name": "오킨스전자",
+      "close": 17580,
+      "ret5": -0.0157,
+      "ret20": -0.3788,
+      "rsi14": 40.8,
+      "vol20": 1.979,
+      "foreign_net": -9155497550,
+      "inst_net": 5440371655,
+      "score": 0,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "오킨스전자 3분기 연결 영업익 71억5800만원",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "오킨스전자, 고가 2만5,400원 찍은 뒤 하락",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[TOP's Pick] 오킨스전자, 반도체 훈풍 타고 3분기 누적 매출 986억",
+          "risk": false
+        }
+      ],
+      "price": 14840,
+      "chg": -0.1751,
+      "foreign_today": 0,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "131290",
+      "name": "티에스이",
+      "close": 213500,
+      "ret5": 0.2777,
+      "ret20": -0.2574,
+      "rsi14": 45.5,
+      "vol20": 1.727,
+      "foreign_net": -46312488800,
+      "inst_net": 33095991650,
+      "score": 0,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[모닝 리포트] \"티에스이, 프로브카드 수요 확대에 내년 성장 지속\"",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "티에스이 3분기 영업이익 527억원으로 359% 증가",
+          "risk": false
+        }
+      ],
+      "price": 187400,
+      "chg": -0.169,
+      "foreign_today": 0,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
     }
   ]
 }
