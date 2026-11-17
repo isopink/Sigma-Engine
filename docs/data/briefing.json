@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "10:00",
+    "time": "10:15",
     "pool": 388,
     "analyzed_new": 30,
-    "passed": 15,
+    "passed": 18,
     "kept_prep": false
   },
   "candidates": [
@@ -112,15 +112,15 @@
         },
         {
           "date": "11-17",
-          "title": "[핀포인트] [파마리서치] 리쥬란 독주 흔들…화장품 성장에도 이익 제자...",
+          "title": "[핀포인트] [파마리서치] 2대주주 CVC 투자금 회수 시점 다가온다",
           "risk": false
         }
       ],
-      "price": 268000,
-      "chg": 0.0368,
-      "activity": 3.11,
+      "price": 269000,
+      "chg": 0.0406,
+      "activity": 3.1,
       "foreign_today": 0,
-      "inst_today": 1876000000,
+      "inst_today": 1883000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,55 +133,30 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.769,
+      "score": 0.804,
       "news": [
+        {
+          "date": "11-17",
+          "title": "제약주 희비 엇갈리…동국제약 웃고 삼진제약 '휘청'",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "동국제약 캐니메이트, 펫케어 신제품 5종 출시…네이버 스토어 오픈",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "IBK證 \"동국제약, 자회사 부진에도 화장품 성장 견조…목표가 유지\"",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[리스트] MVP 상위 20선...마이크로컨텍솔, 동국제약 등 - 17일",
-          "risk": false
         }
       ],
-      "price": 24450,
-      "chg": 0.0607,
-      "activity": 3.34,
-      "foreign_today": 415650000,
+      "price": 24700,
+      "chg": 0.0716,
+      "activity": 3.2,
+      "foreign_today": 419900000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 161700,
-      "ret5": 0.0603,
-      "ret20": 0.0062,
-      "rsi14": 56.2,
-      "vol20": 0.345,
-      "foreign_net": 127103705300,
-      "inst_net": -110127660200,
-      "score": 0.654,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
-          "risk": false
-        }
-      ],
-      "price": 157400,
-      "chg": -0.026,
-      "activity": 1.22,
-      "foreign_today": 787000000,
-      "inst_today": 5194200000,
-      "exchange": "KOSPI"
     },
     {
       "code": "017670",
@@ -193,8 +168,13 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.654,
+      "score": 0.696,
       "news": [
+        {
+          "date": "11-17",
+          "title": "통신사에서 'AI 인프라 설계자'로…SK텔레콤, 15GW 데이터센터에 승부수",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "[위클리오늘] 이동통신 소식_SK텔레콤, LG유플러스(11.17)",
@@ -206,11 +186,68 @@
           "risk": false
         }
       ],
-      "price": 82700,
-      "chg": -0.0143,
-      "activity": 1.65,
+      "price": 82400,
+      "chg": -0.0179,
+      "activity": 1.52,
       "foreign_today": 0,
-      "inst_today": 1736700000,
+      "inst_today": 1730400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "close": 161700,
+      "ret5": 0.0603,
+      "ret20": 0.0062,
+      "rsi14": 56.2,
+      "vol20": 0.345,
+      "foreign_net": 127103705300,
+      "inst_net": -110127660200,
+      "score": 0.676,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
+          "risk": false
+        }
+      ],
+      "price": 158000,
+      "chg": -0.0223,
+      "activity": 1.13,
+      "foreign_today": 790000000,
+      "inst_today": 5214000000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "000100",
+      "name": "유한양행",
+      "close": 81100,
+      "ret5": 0.0397,
+      "ret20": -0.0667,
+      "rsi14": 55.3,
+      "vol20": 0.394,
+      "foreign_net": 4715649250,
+      "inst_net": 3630527050,
+      "score": 0.559,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "유한양행, 개별인정형 원료 함유 '유한잇몸유산균 Q' 출시",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "유한양행·유한재단 '유한잇몸유산균 Q' 출시·가족돌봄 청소년-청년에...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "유한양행부터 에이비엘바이오까지…항암 신약 기대감 확산",
+          "risk": false
+        }
+      ],
+      "foreign_today": 1216500000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -223,7 +260,7 @@
       "vol20": 0.937,
       "foreign_net": 980010800,
       "inst_net": 5734256075,
-      "score": 0.5,
+      "score": 0.539,
       "news": [
         {
           "date": "11-16",
@@ -241,11 +278,11 @@
           "risk": false
         }
       ],
-      "price": 32000,
-      "chg": 0.0095,
-      "activity": 2.26,
+      "price": 31650,
+      "chg": -0.0016,
+      "activity": 2.0,
       "foreign_today": 0,
-      "inst_today": 384000000,
+      "inst_today": 379800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -258,7 +295,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.449,
+      "score": 0.5,
       "news": [
         {
           "date": "11-16",
@@ -271,6 +308,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "323410",
+      "name": "카카오뱅크",
+      "close": 21200,
+      "ret5": 0.0392,
+      "ret20": 0.0367,
+      "rsi14": 65.1,
+      "vol20": 0.263,
+      "foreign_net": 13497471375,
+      "inst_net": -4428726475,
+      "score": 0.461,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "현대카드 독점 깬 카카오뱅크 애플페이…타 금융사 진입은 언제쯤",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오뱅크, 'AI 목표적금' 출시 한 달 만에 누적 10만좌 돌파...관심도...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "고객은 저축 재미, 은행은 탄탄한 자금줄…카카오뱅크의 수신 전략",
+          "risk": false
+        }
+      ],
+      "foreign_today": 63600000,
+      "inst_today": 84800000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "316140",
       "name": "우리금융지주",
       "close": 33100,
@@ -280,13 +349,42 @@
       "vol20": 0.34,
       "foreign_net": -2321307850,
       "inst_net": 24381897025,
-      "score": 0.41,
+      "score": 0.422,
       "news": [],
-      "price": 32500,
-      "chg": -0.0152,
-      "activity": 1.06,
       "foreign_today": 0,
-      "inst_today": 455000000,
+      "inst_today": 463400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "close": 32400,
+      "ret5": 0.0189,
+      "ret20": 0.0109,
+      "rsi14": 56.6,
+      "vol20": 0.432,
+      "foreign_net": -13470881275,
+      "inst_net": -11209452700,
+      "score": 0.412,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "현대카드 독점 깬 카카오뱅크 애플페이…타 금융사 진입은 언제쯤",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "진주문화관광재단, ‘하모’ 카카오톡 이모티콘 무료 배포",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오뱅크, 'AI 목표적금' 출시 한 달 만에 누적 10만좌 돌파...관심도...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 356400000,
+      "inst_today": 97200000,
       "exchange": "KOSPI"
     },
     {
@@ -299,26 +397,58 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.333,
+      "score": 0.353,
       "news": [
         {
           "date": "11-17",
-          "title": "LG유플러스, '제19회 대한민국소통어워즈' 종합대상 등 4개 부문 석권",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕…고객 제안 1만4000건 반영",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4개 부문 대상…\"고객 목소리 반영\"",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕…종합대상 2년 연속 수상",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, '대한민국소통어워즈' 4관왕…종합대상 2년 연속 수상",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕…고객 아이디어 상품·서비스로",
           "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 126400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "006360",
+      "name": "GS건설",
+      "close": 31250,
+      "ret5": 0.0399,
+      "ret20": 0.0684,
+      "rsi14": 53.1,
+      "vol20": 0.861,
+      "foreign_net": 5910916050,
+      "inst_net": 7108227875,
+      "score": 0.333,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[현장] 자동차처럼 자율주행하는 집…GS건설 '자이'의 미래 실험",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "GS건설, 연내 정비사업 10조 클럽 달성 기대…창사이래 최대 실적 전망",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "\"집이 생활 패턴 읽고 알아서 작동\" … GS건설, 미래형 자이 청사진 공개",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 93750000,
       "exchange": "KOSPI"
     },
     {
@@ -331,29 +461,29 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.795,
+      "score": 0.824,
       "news": [
+        {
+          "date": "11-17",
+          "title": "루닛 주가, 11월 17일 장중 15,860원 7.89% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[실적+] 루닛, 美 암 검진 사업 수익성 개선…신규 단기차입금 등 재무...",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "루닛, RSNA 2026서 연구초록 17편 발표",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "루닛, RSNA서 'AI 진단 솔루션' 17건..\"구두발표 11건\"",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "루닛, 세계 최대 영상의학 학술대회서 AI 연구 17편 선보인다",
-          "risk": false
         }
       ],
-      "price": 15770,
-      "chg": 0.0728,
-      "activity": 2.85,
-      "foreign_today": 1230060000,
-      "inst_today": 157700000,
+      "price": 15870,
+      "chg": 0.0796,
+      "activity": 2.57,
+      "foreign_today": 1237860000,
+      "inst_today": 158700000,
       "exchange": "KOSDAQ"
     },
     {
@@ -366,12 +496,12 @@
       "vol20": 1.244,
       "foreign_net": 4235918800,
       "inst_net": -2924718550,
-      "score": 0.756,
+      "score": 0.784,
       "news": [],
-      "price": 51000,
-      "chg": -0.0377,
-      "activity": 2.57,
-      "foreign_today": 1785000000,
+      "price": 51600,
+      "chg": -0.0264,
+      "activity": 2.19,
+      "foreign_today": 1806000000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -385,7 +515,7 @@
       "vol20": 1.675,
       "foreign_net": -16476106725,
       "inst_net": 4127490000,
-      "score": 0.718,
+      "score": 0.725,
       "news": [
         {
           "date": "11-17",
@@ -403,10 +533,10 @@
           "risk": false
         }
       ],
-      "price": 35500,
-      "chg": 0.032,
-      "activity": 3.9,
-      "foreign_today": 1242500000,
+      "price": 33850,
+      "chg": -0.016,
+      "activity": 3.26,
+      "foreign_today": 1184750000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -420,12 +550,12 @@
       "vol20": 1.457,
       "foreign_net": -2408919750,
       "inst_net": 6374969300,
-      "score": 0.718,
+      "score": 0.716,
       "news": [],
-      "price": 75600,
-      "chg": -0.0847,
-      "activity": 3.1,
-      "foreign_today": 756000000,
+      "price": 75900,
+      "chg": -0.0811,
+      "activity": 2.77,
+      "foreign_today": 759000000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -439,7 +569,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.538,
+      "score": 0.539,
       "news": [
         {
           "date": "11-16",
@@ -452,32 +582,12 @@
           "risk": false
         }
       ],
-      "price": 13700,
-      "chg": 0.045,
-      "activity": 5.1,
+      "price": 13720,
+      "chg": 0.0465,
+      "activity": 4.74,
       "foreign_today": 0,
-      "inst_today": 95900000,
+      "inst_today": 96040000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "114800",
-      "name": "KODEX 인버스",
-      "close": 1324,
-      "ret5": -0.0207,
-      "ret20": 0.1024,
-      "rsi14": 62.7,
-      "vol20": 0.587,
-      "foreign_net": null,
-      "inst_net": null,
-      "score": null,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "KODEX 인버스, 고가 1,332원 이후 상승…변동폭 69원",
-          "risk": false
-        }
-      ],
-      "exchange": "ETF"
     },
     {
       "code": "069500",
