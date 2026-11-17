@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:15",
-    "pool": 327,
-    "analyzed_new": 3,
+    "time": "14:30",
+    "pool": 472,
+    "analyzed_new": 29,
     "passed": 21,
     "kept_prep": false
   },
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 261000,
-      "chg": 0.0097,
-      "activity": 1.63,
+      "price": 261500,
+      "chg": 0.0116,
+      "activity": 1.59,
       "foreign_today": 0,
-      "inst_today": 3393000000,
+      "inst_today": 4184000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.729,
+      "score": 0.928,
       "news": [
         {
           "date": "11-17",
@@ -153,9 +153,9 @@
       ],
       "price": 25000,
       "chg": 0.0846,
-      "activity": 2.5,
-      "foreign_today": 0,
-      "inst_today": 450000000,
+      "activity": 2.48,
+      "foreign_today": 900000000,
+      "inst_today": 1150000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.707,
+      "score": 0.68,
       "news": [
         {
           "date": "11-16",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 156900,
-      "chg": -0.0291,
-      "activity": 0.64,
-      "foreign_today": 0,
-      "inst_today": 13807200000,
+      "price": 157500,
+      "chg": -0.0254,
+      "activity": 0.63,
+      "foreign_today": 2677500000,
+      "inst_today": 16222500000,
       "exchange": "KOSPI"
     },
     {
@@ -193,45 +193,13 @@
       "vol20": 0.34,
       "foreign_net": -2321307850,
       "inst_net": 24381897025,
-      "score": 0.669,
+      "score": 0.673,
       "news": [],
-      "price": 32600,
-      "chg": -0.0121,
+      "price": 32650,
+      "chg": -0.0106,
       "activity": 0.62,
       "foreign_today": 0,
-      "inst_today": 3455600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "323410",
-      "name": "카카오뱅크",
-      "close": 21200,
-      "ret5": 0.0392,
-      "ret20": 0.0367,
-      "rsi14": 65.1,
-      "vol20": 0.263,
-      "foreign_net": 13497471375,
-      "inst_net": -4428726475,
-      "score": 0.609,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "11월 17일 카카오뱅크 AI 퀴즈…낮 12시 정답 ‘펜슬워시’",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크 합류로 넓어진 애플페이…수수료 부담은 숙제",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크 AI 목표적금, 출시 한 달 만에 10만 좌 돌파",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 911600000,
+      "inst_today": 4473050000,
       "exchange": "KOSPI"
     },
     {
@@ -244,7 +212,7 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.602,
+      "score": 0.621,
       "news": [
         {
           "date": "11-17",
@@ -262,24 +230,75 @@
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 3406200000,
+      "foreign_today": 3162900000,
+      "inst_today": 5028200000,
       "exchange": "KOSPI"
     },
     {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 183100,
-      "ret5": 0.1523,
-      "ret20": -0.1322,
-      "rsi14": 49.1,
-      "vol20": 0.741,
-      "foreign_net": -286835500,
-      "inst_net": 2846949050,
-      "score": 0.571,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 1464800000,
+      "code": "017670",
+      "name": "SK텔레콤",
+      "close": 84300,
+      "ret5": 0.0934,
+      "ret20": 0.0684,
+      "rsi14": 57.9,
+      "vol20": 0.482,
+      "foreign_net": 22505939550,
+      "inst_net": 36013259700,
+      "score": 0.608,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "SK텔레콤·누리닷, AI 점역으로 시각장애 학생 학습 접근성 높인다",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "라우프·SK텔레콤, 공동 진행 'SKT 뉴스룸 굿체인지 캠페인'으로 한국 P...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "라우프·SK텔레콤, 'SKT 뉴스룸 굿체인지 캠페인'통해 한국 PR대상 조직...",
+          "risk": false
+        }
+      ],
+      "price": 83300,
+      "chg": -0.0072,
+      "activity": 1.18,
+      "foreign_today": 1499400000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "323410",
+      "name": "카카오뱅크",
+      "close": 21200,
+      "ret5": 0.0392,
+      "ret20": 0.0367,
+      "rsi14": 65.1,
+      "vol20": 0.263,
+      "foreign_net": 13497471375,
+      "inst_net": -4428726475,
+      "score": 0.595,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "11월 17일 카카오뱅크 AI 퀴즈…낮 12시 정답 ‘펜슬워시’",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오뱅크 합류로 넓어진 애플페이…수수료 부담은 숙제",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오뱅크 AI 목표적금, 출시 한 달 만에 10만 좌 돌파",
+          "risk": false
+        }
+      ],
+      "foreign_today": 360400000,
+      "inst_today": 1208400000,
       "exchange": "KOSPI"
     },
     {
@@ -292,7 +311,7 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.541,
+      "score": 0.549,
       "news": [
         {
           "date": "11-17",
@@ -301,76 +320,55 @@
         },
         {
           "date": "11-17",
-          "title": "LG유플러스 과기정통부 장관상",
+          "title": "LG유플러스, '제19회 대한민국소통어워즈' 종합대상 4관왕",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕 수상",
+          "title": "LG유플러스, 자사주 747억원 매입…3개월 만에 목표 83% 달성",
           "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 1137600000,
+      "inst_today": 1501000000,
       "exchange": "KOSPI"
     },
     {
-      "code": "267270",
-      "name": "HD건설기계",
-      "close": 90700,
-      "ret5": 0.1034,
-      "ret20": -0.0402,
-      "rsi14": 46.6,
-      "vol20": 0.756,
-      "foreign_net": -36757086300,
-      "inst_net": 38171008600,
-      "score": 0.511,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "중남미 영업·AS 결속 다지는 HD건설기계…과테말라·엘살바도르까지 '...",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
-          "risk": false
-        }
-      ],
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 183100,
+      "ret5": 0.1523,
+      "ret20": -0.1322,
+      "rsi14": 49.1,
+      "vol20": 0.741,
+      "foreign_net": -286835500,
+      "inst_net": 2846949050,
+      "score": 0.542,
+      "news": [],
       "foreign_today": 0,
-      "inst_today": 1179100000,
+      "inst_today": 2563400000,
       "exchange": "KOSPI"
     },
     {
-      "code": "004020",
-      "name": "현대제철",
-      "close": 28700,
-      "ret5": 0.0324,
-      "ret20": -0.0103,
-      "rsi14": 50.9,
-      "vol20": 0.57,
-      "foreign_net": 3150326550,
-      "inst_net": -87228175,
-      "score": 0.474,
+      "code": "089860",
+      "name": "롯데렌탈",
+      "close": 58400,
+      "ret5": 0.0,
+      "ret20": 0.1429,
+      "rsi14": 74.4,
+      "vol20": 0.46,
+      "foreign_net": 6431758700,
+      "inst_net": 7593445350,
+      "score": 0.523,
       "news": [
         {
-          "date": "11-17",
-          "title": "[11월 17일 고용24 채용정보] 엘지생활건강·현대제철·엘엑스판토스·엘...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[그래픽] 포스코·현대제철 수소환원제철 기술 비교",
+          "date": "11-16",
+          "title": "[더벨][인사이드 헤지펀드] VIP운용, 롯데렌탈 '전량 응모' 공개한 배경...",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 516600000,
+      "foreign_today": 992800000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -383,7 +381,7 @@
       "vol20": 0.496,
       "foreign_net": -7996328400,
       "inst_net": 9174280200,
-      "score": 0.466,
+      "score": 0.516,
       "news": [
         {
           "date": "11-17",
@@ -402,7 +400,85 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 620900000,
+      "inst_today": 1153100000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "028050",
+      "name": "삼성E&A",
+      "close": 68900,
+      "ret5": 0.1388,
+      "ret20": 0.521,
+      "rsi14": 67.0,
+      "vol20": 0.894,
+      "foreign_net": -74517283400,
+      "inst_net": 47861420450,
+      "score": 0.503,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[오늘의 IR] 삼성E&A·SFA·삼양컴텍 등",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "삼성E&A, AI·모듈러로 EPC 경쟁력 높였다…목표가 9.1%↑-KB",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "\"삼성E&A, AI·모듈러로 공기 단축 프리미엄 확보…목표가↑\"-KB",
+          "risk": false
+        }
+      ],
+      "price": 68600,
+      "chg": 0.0029,
+      "activity": 0.62,
+      "foreign_today": 0,
+      "inst_today": 754600000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "close": 63300,
+      "ret5": 0.036,
+      "ret20": -0.0031,
+      "rsi14": 57.9,
+      "vol20": 0.507,
+      "foreign_net": -18008472900,
+      "inst_net": 22704871250,
+      "score": 0.477,
+      "news": [],
+      "foreign_today": 696300000,
+      "inst_today": 569700000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "004020",
+      "name": "현대제철",
+      "close": 28700,
+      "ret5": 0.0324,
+      "ret20": -0.0103,
+      "rsi14": 50.9,
+      "vol20": 0.57,
+      "foreign_net": 3150326550,
+      "inst_net": -87228175,
+      "score": 0.464,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[11월 17일 고용24 채용정보] 엘지생활건강·현대제철·엘엑스판토스·엘...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[그래픽] 포스코·현대제철 수소환원제철 기술 비교",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 746200000,
       "exchange": "KOSPI"
     },
     {
@@ -415,8 +491,13 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.451,
+      "score": 0.418,
       "news": [
+        {
+          "date": "11-17",
+          "title": "KT클라우드, 투자유치·합병설 동시 부상…\"다양한 방안 검토\"",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "KT알파 쇼핑, 방송 비주얼·AI 서비스 전면 개편",
@@ -426,112 +507,46 @@
           "date": "11-17",
           "title": "KS 업셋 아쉬움은 잊어주세요! KT, 21일 ‘2026 팬 페스티벌’로 시즌 피...",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "KT, 21일 2026 팬 페스티벌 개최…운도현 밴드·이상훈 밴드 축하 공연",
-          "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 877200000,
+      "inst_today": 1032000000,
       "exchange": "KOSPI"
     },
     {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 31250,
-      "ret5": 0.0399,
-      "ret20": 0.0684,
-      "rsi14": 53.1,
-      "vol20": 0.861,
-      "foreign_net": 5910916050,
-      "inst_net": 7108227875,
-      "score": 0.436,
+      "code": "328130",
+      "name": "루닛",
+      "close": 14700,
+      "ret5": -0.0976,
+      "ret20": 0.1395,
+      "rsi14": 54.3,
+      "vol20": 1.445,
+      "foreign_net": -3613195490,
+      "inst_net": -5661527070,
+      "score": 0.876,
       "news": [
         {
           "date": "11-17",
-          "title": "\"헤이 자이, 나 이제 잘게\"…GS건설, 미래 주거비전 공개",
+          "title": "루닛, RSNA 2026서 의료 AI 연구 17편 발표…유방암 검출·위험 예측 성능...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "\"스위치가 사라지고 거실이 침실로\"...GS건설이 그린 '자이'의 미래",
+          "title": "루닛 7.41% 상승…매출 성장과 적자 축소 기대에 거래 집중",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "[현장] GS건설, '살수록 진화하는 집' 제시… 자이 미래 주거 전략 공개",
+          "title": "루닛, AI 자율 판독·위험 예측 연구 대거 공개…RSNA서 17편 발표",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 1031250000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 53100,
-      "ret5": -0.0861,
-      "ret20": 0.1658,
-      "rsi14": 56.8,
-      "vol20": 0.679,
-      "foreign_net": 13204400250,
-      "inst_net": -7896166600,
-      "score": 0.436,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[투자, 그 후] [한미사이언스] '바이오·헬스케어' 외부투자 엇갈린 투자...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "두나무·한미사이언스·고려아연 등, 본업 살린 나눔 활동 이어가",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "한미사이언스, 청각장애인 바리스타 전국대회 후원...직무 역량 확대 지...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 212400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "close": 32400,
-      "ret5": 0.0189,
-      "ret20": 0.0109,
-      "rsi14": 56.6,
-      "vol20": 0.432,
-      "foreign_net": -13470881275,
-      "inst_net": -11209452700,
-      "score": 0.323,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "11월 17일 카카오뱅크 AI 퀴즈…낮 12시 정답 ‘펜슬워시’",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "장윤중 카카오엔터 공동대표 내달 사임…고정희 대표 체제로 전환",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "장윤중 카카오엔터 공동대표 사임...고정희 대표 경영 지휘봉",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 162000000,
-      "exchange": "KOSPI"
+      "price": 15780,
+      "chg": 0.0735,
+      "activity": 1.06,
+      "foreign_today": 4023900000,
+      "inst_today": 1956720000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "232140",
@@ -543,7 +558,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.85,
+      "score": 0.876,
       "news": [
         {
           "date": "11-16",
@@ -556,100 +571,11 @@
           "risk": false
         }
       ],
-      "price": 13800,
-      "chg": 0.0526,
-      "activity": 2.71,
+      "price": 13940,
+      "chg": 0.0633,
+      "activity": 2.69,
       "foreign_today": 0,
-      "inst_today": 2428800000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "328130",
-      "name": "루닛",
-      "close": 14700,
-      "ret5": -0.0976,
-      "ret20": 0.1395,
-      "rsi14": 54.3,
-      "vol20": 1.445,
-      "foreign_net": -3613195490,
-      "inst_net": -5661527070,
-      "score": 0.714,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "루닛, AI 자율 판독·위험 예측 연구 대거 공개…RSNA서 17편 발표",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "루닛 주가, 11월 17일 장중 15,860원 7.89% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[실적+] 루닛, 美 암 검진 사업 수익성 개선…신규 단기차입금 등 재무...",
-          "risk": false
-        }
-      ],
-      "price": 15710,
-      "chg": 0.0687,
-      "activity": 1.08,
-      "foreign_today": 0,
-      "inst_today": 1665260000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "121600",
-      "name": "나노신소재",
-      "close": 66500,
-      "ret5": 0.112,
-      "ret20": 0.0726,
-      "rsi14": 52.7,
-      "vol20": 1.173,
-      "foreign_net": -1955910400,
-      "inst_net": 15374232200,
-      "score": 0.669,
-      "news": [],
-      "price": 64900,
-      "chg": -0.0241,
-      "activity": 0.81,
-      "foreign_today": 0,
-      "inst_today": 908600000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "218410",
-      "name": "RFHIC",
-      "close": 53700,
-      "ret5": 0.268,
-      "ret20": 0.017,
-      "rsi14": 54.2,
-      "vol20": 1.314,
-      "foreign_net": -29287303150,
-      "inst_net": 55201061900,
-      "score": 0.632,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[특징주] 광통신 관련주, 주초장 대체로 약세…RFHIC 상승 속 머큐리·RF...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "iM증권 “스페이스X, 美 전국 5G망 구축 구체화…RFHIC·케이엠더블유 등...",
-          "risk": false
-        }
-      ],
-      "price": 55300,
-      "chg": 0.0317,
-      "activity": 1.12,
-      "foreign_today": 0,
-      "inst_today": 1714300000,
+      "inst_today": 3680160000,
       "exchange": "KOSDAQ"
     },
     {
@@ -662,7 +588,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.617,
+      "score": 0.752,
       "news": [
         {
           "date": "11-16",
@@ -680,11 +606,65 @@
           "risk": false
         }
       ],
-      "price": 7370,
-      "chg": 0.1286,
-      "activity": 2.14,
+      "price": 7350,
+      "chg": 0.1256,
+      "activity": 2.07,
+      "foreign_today": 543900000,
+      "inst_today": 235200000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "121600",
+      "name": "나노신소재",
+      "close": 66500,
+      "ret5": 0.112,
+      "ret20": 0.0726,
+      "rsi14": 52.7,
+      "vol20": 1.173,
+      "foreign_net": -1955910400,
+      "inst_net": 15374232200,
+      "score": 0.732,
+      "news": [],
+      "price": 65500,
+      "chg": -0.015,
+      "activity": 0.82,
       "foreign_today": 0,
-      "inst_today": 198990000,
+      "inst_today": 1899500000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "218410",
+      "name": "RFHIC",
+      "close": 53700,
+      "ret5": 0.268,
+      "ret20": 0.017,
+      "rsi14": 54.2,
+      "vol20": 1.314,
+      "foreign_net": -29287303150,
+      "inst_net": 55201061900,
+      "score": 0.595,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[특징주] 광통신 관련주, 주초장 대체로 약세…RFHIC 상승 속 머큐리·RF...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "iM증권 “스페이스X, 美 전국 5G망 구축 구체화…RFHIC·케이엠더블유 등...",
+          "risk": false
+        }
+      ],
+      "price": 55600,
+      "chg": 0.0373,
+      "activity": 1.1,
+      "foreign_today": 0,
+      "inst_today": 2001600000,
       "exchange": "KOSDAQ"
     },
     {
