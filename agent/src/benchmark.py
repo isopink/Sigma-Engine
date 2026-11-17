@@ -37,10 +37,70 @@ def update():
     return out
 
 
+# ---- 11-17 S.Lee: 대시보드에 S&P 500 도 겹쳐 그림 (참고선) ----
+# 미국 장은 한국 장이 끝난 뒤 열리므로, 한국 날짜 d 에는 d 전날까지의 미국 종가를 씀.
+# 기준 = 대회 시작일(한국 11-02) 아침에 알 수 있던 마지막 미국 종가 (10-30 금).
+SPX_FRED = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500&cosd={start}"
+SPX_YAHOO = "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?range=3mo&interval=1d"
+
+
+def spx_parse_fred(text):
+    days = {}
+    for line in text.strip().splitlines()[1:]:
+        d, _, v = line.partition(",")
+        try:
+            days[d.strip()] = float(v)
+        except ValueError:   # 휴장일은 '.'
+            pass
+    return days
+
+
+def spx_parse_yahoo(js):
+    import datetime as dt
+    import json
+    r = json.loads(js)["chart"]["result"][0]
+    ny = dt.timezone(dt.timedelta(hours=-5))
+    return {dt.datetime.fromtimestamp(t, ny).date().isoformat(): float(c)
+            for t, c in zip(r["timestamp"], r["indicators"]["quote"][0]["close"]) if c is not None}
+
+
+def spx_build(days, start_date):
+    before = [d for d in days if d < start_date]
+    if not before:
+        raise ValueError(f"{start_date} 전 S&P 500 종가가 없음")
+    b = max(before)
+    return {"symbol": "SPX", "name": "S&P 500", "base_date": b, "base": days[b],
+            "days": {d: v for d, v in sorted(days.items()) if d >= b}, "updated": C.stamp()}
+
+
+def update_spx():
+    start = C.params()["competition"]["start"]
+    import datetime as dt
+    cosd = (dt.date.fromisoformat(start) - dt.timedelta(days=10)).isoformat()
+    ua = {"User-Agent": "Mozilla/5.0"}
+    try:
+        txt = urllib.request.urlopen(urllib.request.Request(SPX_FRED.format(start=cosd), headers=ua), timeout=20).read().decode()
+        days = spx_parse_fred(txt)
+    except Exception:  # noqa: BLE001  FRED 가 안 되면 Yahoo
+        days = spx_parse_yahoo(urllib.request.urlopen(urllib.request.Request(SPX_YAHOO, headers=ua), timeout=20).read().decode())
+    path = os.path.join(C.DOCS_DATA, "spx.json")
+    old = (C.read_json(path, {}) or {}).get("days") or {}
+    out = spx_build({**old, **days}, start)   # 받아 온 값이 없는 날은 예전 값 유지
+    C.write_json(path, out)
+    return out
+
+
 if __name__ == "__main__":
+    rc = 0
     try:
         r = update()
         print(f"KODEX 200 기준 {len(r['days'])}일 · 시작 시가 {r['start']:,.0f} · 마지막 {max(r['days'])} 종가 {r['days'][max(r['days'])]['c']:,.0f}")
     except Exception as e:  # noqa: BLE001
         print(f"  ! KODEX 200 기준 갱신 실패: {e}")
-        sys.exit(1)
+        rc = 1
+    try:
+        s = update_spx()
+        print(f"S&P 500 참고선 기준 {s['base_date']} {s['base']:,.2f} · 마지막 {max(s['days'])} {s['days'][max(s['days'])]:,.2f}")
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! S&P 500 갱신 실패: {e}")
+    sys.exit(rc)
