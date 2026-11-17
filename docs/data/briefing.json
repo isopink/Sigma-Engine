@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:45",
-    "pool": 473,
-    "analyzed_new": 5,
+    "time": "15:00",
+    "pool": 474,
+    "analyzed_new": 4,
     "passed": 21,
     "kept_prep": false
   },
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 261000,
-      "chg": 0.0097,
-      "activity": 1.55,
+      "price": 258750,
+      "chg": 0.001,
+      "activity": 1.53,
       "foreign_today": 0,
-      "inst_today": 4176000000,
+      "inst_today": 4140000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.926,
+      "score": 0.932,
       "news": [
         {
           "date": "11-17",
@@ -151,37 +151,12 @@
           "risk": false
         }
       ],
-      "price": 24850,
-      "chg": 0.0781,
-      "activity": 2.46,
-      "foreign_today": 894600000,
-      "inst_today": 1143100000,
+      "price": 24700,
+      "chg": 0.0716,
+      "activity": 2.45,
+      "foreign_today": 889200000,
+      "inst_today": 1136200000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 161700,
-      "ret5": 0.0603,
-      "ret20": 0.0062,
-      "rsi14": 56.2,
-      "vol20": 0.345,
-      "foreign_net": 127103705300,
-      "inst_net": -110127660200,
-      "score": 0.682,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
-          "risk": false
-        }
-      ],
-      "price": 157100,
-      "chg": -0.0278,
-      "activity": 0.62,
-      "foreign_today": 2670700000,
-      "inst_today": 16181300000,
-      "exchange": "KOSPI"
     },
     {
       "code": "316140",
@@ -193,13 +168,38 @@
       "vol20": 0.34,
       "foreign_net": -2321307850,
       "inst_net": 24381897025,
-      "score": 0.676,
+      "score": 0.705,
       "news": [],
       "price": 32500,
       "chg": -0.0152,
-      "activity": 0.61,
+      "activity": 0.62,
       "foreign_today": 0,
       "inst_today": 4452500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "close": 161700,
+      "ret5": 0.0603,
+      "ret20": 0.0062,
+      "rsi14": 56.2,
+      "vol20": 0.345,
+      "foreign_net": 127103705300,
+      "inst_net": -110127660200,
+      "score": 0.664,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
+          "risk": false
+        }
+      ],
+      "price": 156800,
+      "chg": -0.0297,
+      "activity": 0.61,
+      "foreign_today": 2665600000,
+      "inst_today": 16150400000,
       "exchange": "KOSPI"
     },
     {
@@ -212,16 +212,16 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.622,
+      "score": 0.644,
       "news": [
         {
           "date": "11-17",
-          "title": "유한양행, 개별인정형 잇몸 유산균 출시…구강 건강 기능성 시장 공략",
+          "title": "[ESG트렌드] 유한양행, 제4회 ‘유한ESG학술상’ 시상식 개최 外",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
+          "title": "유한양행, 개별인정형 잇몸 유산균 출시…구강 건강 기능성 시장 공략",
           "risk": false
         },
         {
@@ -244,8 +244,13 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.622,
+      "score": 0.63,
       "news": [
+        {
+          "date": "11-17",
+          "title": "라우프·SK텔레콤, ‘SKT 뉴스룸 굿체인지 캠페인’으로 한국 PR대상 수...",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "[금주의 통신 톡톡] SK텔레콤, 효성중공업과 AI 데이터센터 구축... LG U+...",
@@ -255,16 +260,11 @@
           "date": "11-17",
           "title": "SK텔레콤 약보합…통신 회복·AI 데이터센터 투자 병행",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "SK텔레콤·누리닷, AI 점역으로 시각장애 학생 학습 접근성 높인다",
-          "risk": false
         }
       ],
       "price": 83300,
       "chg": -0.0072,
-      "activity": 1.19,
+      "activity": 1.21,
       "foreign_today": 1499400000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -279,8 +279,13 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.595,
+      "score": 0.603,
       "news": [
+        {
+          "date": "11-17",
+          "title": "현대카드 독점 깨진 애플페이…카카오뱅크 참전, 결제시장 '요동'",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "카카오뱅크, 'AI 목표적금' 출시 한 달 만에 10만좌 돌파",
@@ -289,11 +294,6 @@
         {
           "date": "11-17",
           "title": "카카오뱅크, 'AI·청소년·외국인' 금융 공략...맞춤형 서비스로 고객층...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크 'AI 목표적금', 출시 한 달 만에 고객 호응",
           "risk": false
         }
       ],
@@ -311,7 +311,7 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.547,
+      "score": 0.555,
       "news": [
         {
           "date": "11-17",
@@ -320,12 +320,12 @@
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕 … 고객 참여형 소통 성과 인정",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "[실적+] LG유플러스, 눈에 띄는 AIDC '30%' 성장 비결은?",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕 … 고객 참여형 소통 성과 인정",
           "risk": false
         }
       ],
@@ -343,7 +343,7 @@
       "vol20": 0.741,
       "foreign_net": -286835500,
       "inst_net": 2846949050,
-      "score": 0.541,
+      "score": 0.548,
       "news": [],
       "foreign_today": 0,
       "inst_today": 2563400000,
@@ -359,7 +359,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.52,
+      "score": 0.527,
       "news": [
         {
           "date": "11-16",
@@ -381,8 +381,13 @@
       "vol20": 0.496,
       "foreign_net": -7996328400,
       "inst_net": 9174280200,
-      "score": 0.52,
+      "score": 0.527,
       "news": [
+        {
+          "date": "11-17",
+          "title": "SK바이오팜, 오파칼림 도입 내달 3일 종결 합의…임상보류 변수",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "SK바이오팜 '엑스코프리', 내년 美 매출 1조 넘나",
@@ -391,11 +396,6 @@
         {
           "date": "11-17",
           "title": "오파칼림 임상 보류 두 달째…SK바이오팜, '1조 신약' 도입 언제",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "삼성바이오·셀트 ‘동반 5조’ 눈앞…SK바이오팜은 ‘1조 클럽’ 도전",
           "risk": false
         }
       ],
@@ -413,7 +413,7 @@
       "vol20": 0.894,
       "foreign_net": -74517283400,
       "inst_net": 47861420450,
-      "score": 0.514,
+      "score": 0.521,
       "news": [
         {
           "date": "11-17",
@@ -431,11 +431,11 @@
           "risk": false
         }
       ],
-      "price": 68500,
-      "chg": 0.0015,
+      "price": 68000,
+      "chg": -0.0058,
       "activity": 0.61,
       "foreign_today": 0,
-      "inst_today": 753500000,
+      "inst_today": 748000000,
       "exchange": "KOSPI"
     },
     {
@@ -448,7 +448,7 @@
       "vol20": 0.507,
       "foreign_net": -18008472900,
       "inst_net": 22704871250,
-      "score": 0.473,
+      "score": 0.479,
       "news": [],
       "foreign_today": 696300000,
       "inst_today": 569700000,
@@ -464,7 +464,7 @@
       "vol20": 0.57,
       "foreign_net": 3150326550,
       "inst_net": -87228175,
-      "score": 0.459,
+      "score": 0.473,
       "news": [
         {
           "date": "11-17",
@@ -491,57 +491,17 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.426,
+      "score": 0.432,
       "news": [
         {
           "date": "11-17",
           "title": "\"AX 내세우며 현장 안전은 뒷전\"…KT새노조, 박윤영 사장에 대책 촉구",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "KT클라우드, 투자유치·합병설 동시 부상…\"다양한 방안 검토\"",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "KT알파 쇼핑, 방송 비주얼·AI 서비스 전면 개편",
           "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 1032000000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 12970,
-      "ret5": 0.3303,
-      "ret20": -0.1061,
-      "rsi14": 51.8,
-      "vol20": 1.402,
-      "foreign_net": -13014820770,
-      "inst_net": 20382754405,
-      "score": 0.872,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
-          "risk": false
-        }
-      ],
-      "price": 13800,
-      "chg": 0.0526,
-      "activity": 2.6,
-      "foreign_today": 0,
-      "inst_today": 3643200000,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "328130",
@@ -553,7 +513,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.865,
+      "score": 0.904,
       "news": [
         {
           "date": "11-17",
@@ -571,30 +531,41 @@
           "risk": false
         }
       ],
-      "price": 15700,
-      "chg": 0.068,
-      "activity": 1.02,
-      "foreign_today": 4003500000,
-      "inst_today": 1946800000,
+      "price": 15770,
+      "chg": 0.0728,
+      "activity": 1.0,
+      "foreign_today": 4021350000,
+      "inst_today": 1955480000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "121600",
-      "name": "나노신소재",
-      "close": 66500,
-      "ret5": 0.112,
-      "ret20": 0.0726,
-      "rsi14": 52.7,
-      "vol20": 1.173,
-      "foreign_net": -1955910400,
-      "inst_net": 15374232200,
-      "score": 0.764,
-      "news": [],
-      "price": 65500,
-      "chg": -0.015,
-      "activity": 0.81,
+      "code": "232140",
+      "name": "와이씨",
+      "close": 12970,
+      "ret5": 0.3303,
+      "ret20": -0.1061,
+      "rsi14": 51.8,
+      "vol20": 1.402,
+      "foreign_net": -13014820770,
+      "inst_net": 20382754405,
+      "score": 0.884,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
+          "risk": false
+        }
+      ],
+      "price": 13800,
+      "chg": 0.0526,
+      "activity": 2.54,
       "foreign_today": 0,
-      "inst_today": 1899500000,
+      "inst_today": 3643200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -607,7 +578,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.743,
+      "score": 0.774,
       "news": [
         {
           "date": "11-16",
@@ -625,11 +596,30 @@
           "risk": false
         }
       ],
-      "price": 7320,
-      "chg": 0.121,
-      "activity": 1.99,
-      "foreign_today": 541680000,
-      "inst_today": 234240000,
+      "price": 7350,
+      "chg": 0.1256,
+      "activity": 1.95,
+      "foreign_today": 543900000,
+      "inst_today": 235200000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "121600",
+      "name": "나노신소재",
+      "close": 66500,
+      "ret5": 0.112,
+      "ret20": 0.0726,
+      "rsi14": 52.7,
+      "vol20": 1.173,
+      "foreign_net": -1955910400,
+      "inst_net": 15374232200,
+      "score": 0.753,
+      "news": [],
+      "price": 65300,
+      "chg": -0.018,
+      "activity": 0.81,
+      "foreign_today": 0,
+      "inst_today": 1893700000,
       "exchange": "KOSDAQ"
     },
     {
@@ -642,7 +632,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.595,
+      "score": 0.603,
       "news": [
         {
           "date": "11-16",
@@ -660,11 +650,11 @@
           "risk": false
         }
       ],
-      "price": 55300,
-      "chg": 0.0317,
+      "price": 55000,
+      "chg": 0.0261,
       "activity": 1.07,
       "foreign_today": 0,
-      "inst_today": 1990800000,
+      "inst_today": 1980000000,
       "exchange": "KOSDAQ"
     },
     {
