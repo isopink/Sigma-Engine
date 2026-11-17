@@ -81,32 +81,32 @@
     ]
   },
   "intraday": {
-    "time": "09:30",
-    "pool": 329,
+    "time": "09:45",
+    "pool": 330,
     "analyzed_new": 30,
-    "passed": 7,
+    "passed": 10,
     "kept_prep": false
   },
   "candidates": [
     {
-      "code": "018260",
-      "name": "삼성에스디에스",
-      "close": 227500,
-      "ret5": 0.0436,
-      "ret20": 0.1179,
-      "rsi14": 56.9,
-      "vol20": 0.564,
-      "foreign_net": -8533104500,
-      "inst_net": 53321107000,
-      "score": 1.0,
+      "code": "089860",
+      "name": "롯데렌탈",
+      "close": 58400,
+      "ret5": 0.0,
+      "ret20": 0.1429,
+      "rsi14": 74.4,
+      "vol20": 0.46,
+      "foreign_net": 6431758700,
+      "inst_net": 7593445350,
+      "score": 0.724,
       "news": [
         {
           "date": "11-16",
-          "title": "삼성에스디에스, 고가 24만2500원 이후 하락…변동폭 1만6000원",
+          "title": "[더벨][인사이드 헤지펀드] VIP운용, 롯데렌탈 '전량 응모' 공개한 배경...",
           "risk": false
         }
       ],
-      "foreign_today": 682500000,
+      "foreign_today": 525600000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -120,7 +120,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.9,
+      "score": 0.621,
       "news": [
         {
           "date": "11-16",
@@ -130,10 +130,81 @@
       ],
       "price": 157300,
       "chg": -0.0266,
-      "activity": 1.59,
+      "activity": 1.43,
       "foreign_today": 786500000,
       "inst_today": 0,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "close": 227500,
+      "ret5": 0.0436,
+      "ret20": 0.1179,
+      "rsi14": 56.9,
+      "vol20": 0.564,
+      "foreign_net": -8533104500,
+      "inst_net": 53321107000,
+      "score": 0.621,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "삼성에스디에스, 고가 24만2500원 이후 하락…변동폭 1만6000원",
+          "risk": false
+        }
+      ],
+      "foreign_today": 682500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "425420",
+      "name": "티에프이",
+      "close": 80500,
+      "ret5": 0.1908,
+      "ret20": 0.2366,
+      "rsi14": 55.4,
+      "vol20": 1.457,
+      "foreign_net": -2408919750,
+      "inst_net": 6374969300,
+      "score": 1.0,
+      "news": [],
+      "price": 76000,
+      "chg": -0.0799,
+      "activity": 3.84,
+      "foreign_today": 988000000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "036540",
+      "name": "SFA반도체",
+      "close": 8100,
+      "ret5": 0.1912,
+      "ret20": -0.1337,
+      "rsi14": 48.1,
+      "vol20": 1.425,
+      "foreign_net": -32333977350,
+      "inst_net": 27597399165,
+      "score": 0.724,
+      "news": [
+        {
+          "date": "11-15",
+          "title": "[종목 브리핑] SFA반도체 3분기 매출 증가·영업적자 지속",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "코리아써키트·SFA반도체 주가 50%대 상승…반도체 관련주 강세",
+          "risk": false
+        }
+      ],
+      "price": 8440,
+      "chg": 0.0255,
+      "activity": 3.89,
+      "foreign_today": 168800000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "263860",
@@ -145,7 +216,7 @@
       "vol20": 1.675,
       "foreign_net": -16476106725,
       "inst_net": 4127490000,
-      "score": 0.8,
+      "score": 0.621,
       "news": [
         {
           "date": "11-17",
@@ -163,55 +234,70 @@
           "risk": false
         }
       ],
-      "price": 35350,
-      "chg": 0.0276,
-      "activity": 5.69,
-      "foreign_today": 141400000,
+      "price": 34950,
+      "chg": 0.016,
+      "activity": 4.73,
+      "foreign_today": 139800000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "028050",
-      "name": "삼성E&A",
-      "close": 68900,
-      "ret5": 0.1388,
-      "ret20": 0.521,
-      "rsi14": 67.0,
-      "vol20": 0.894,
-      "foreign_net": -74517283400,
-      "inst_net": 47861420450,
-      "score": 1.0,
+      "code": "009420",
+      "name": "한올바이오파마",
+      "close": 50400,
+      "ret5": 0.3316,
+      "ret20": 0.1694,
+      "rsi14": 64.9,
+      "vol20": 1.003,
+      "foreign_net": -16499103125,
+      "inst_net": 35411748975,
+      "score": 0.621,
       "news": [
         {
-          "date": "11-17",
-          "title": "[오늘의 IR] 삼성E&A·SFA·삼양컴텍 등",
+          "date": "11-16",
+          "title": "한올바이오파마 3분기 영업익 12억7400만원…매출은 감소",
           "risk": false
         },
         {
-          "date": "11-17",
-          "title": "삼성E&A, AI·모듈러로 EPC 경쟁력 높였다…목표가 9.1%↑-KB",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "\"삼성E&A, AI·모듈러로 공기 단축 프리미엄 확보…목표가↑\"-KB",
+          "date": "11-15",
+          "title": "기존 치료제 안 듣던 환자도 반응…한올바이오파마 신약 임상 주목",
           "risk": false
         }
       ],
+      "foreign_today": 504000000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.8,
-      "news": [],
+      "code": "103590",
+      "name": "일진전기",
+      "close": 56200,
+      "ret5": 0.3526,
+      "ret20": -0.1612,
+      "rsi14": 47.7,
+      "vol20": 1.214,
+      "foreign_net": 3945926200,
+      "inst_net": 1132475000,
+      "score": 0.448,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "일진전기, 3분기 영업이익 700억 원… 전년 대비 98% 증가",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "일진전기, 고가 5만9100원 이후 하락…변동폭 3,300원",
+          "risk": false
+        },
+        {
+          "date": "11-15",
+          "title": "일진전기 영업이익 98% 폭증…북미 변압기 수주가 바꾼 실적",
+          "risk": false
+        }
+      ],
+      "foreign_today": 730600000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
