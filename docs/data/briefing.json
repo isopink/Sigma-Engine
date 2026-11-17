@@ -1,19 +1,18 @@
 {
-  "created": "2026-11-17 08:31",
-  "asof": "2026-11-16",
-  "universe": 75,
+  "created": "2026-11-18 08:31",
+  "asof": "2026-11-17",
+  "universe": 76,
   "source": "krx",
   "market": {
     "source": "KOSPI",
-    "close": 5100,
-    "ma20": 5508,
-    "ma60": 6298,
-    "ret5": 0.0163,
-    "ret20": -0.1157,
-    "rsi14": 35.5,
+    "close": 4968,
+    "ma20": 5479,
+    "ma60": 6273,
+    "ret5": -0.0517,
+    "ret20": -0.1052,
+    "rsi14": 33.2,
     "rule_hint": "하락",
     "closes": [
-      6345.53,
       6579.04,
       6813.34,
       6977.94,
@@ -77,449 +76,219 @@
       5375.36,
       5342.73,
       5290.53,
-      5100.5
+      5100.5,
+      4968.48
     ]
   },
-  "intraday": {
-    "time": "15:15",
-    "pool": 473,
-    "analyzed_new": 5,
-    "passed": 24,
-    "kept_prep": false
-  },
+  "intraday": null,
   "candidates": [
-    {
-      "code": "214450",
-      "name": "파마리서치",
-      "close": 257500,
-      "ret5": 0.0981,
-      "ret20": -0.0754,
-      "rsi14": 50.7,
-      "vol20": 0.591,
-      "foreign_net": -2850390250,
-      "inst_net": 7096322000,
-      "score": 1.0,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "파마리서치, 의료진 초청 세미나로 영업·마케팅 역량 강화",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "파마리서치 매출 증가분 68% 화장품 몫…달라진 성장 공식",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "파마리서치, 임직원 대상 학술교육 확대",
-          "risk": false
-        }
-      ],
-      "price": 258000,
-      "chg": -0.0019,
-      "activity": 1.51,
-      "foreign_today": 0,
-      "inst_today": 4128000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "086450",
-      "name": "동국제약",
-      "close": 23000,
-      "ret5": -0.0129,
-      "ret20": -0.0927,
-      "rsi14": 46.0,
-      "vol20": 0.474,
-      "foreign_net": 2537917275,
-      "inst_net": 2368617375,
-      "score": 0.936,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "\"광고비만 786억 썼다…동국제약, 해외 진출 '출혈 마케팅' 딜레마\"",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "하나증권 \"동국제약, 美 코스트코·얼타뷰티 입점 확대…2027년 성장 가...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "동국제약, 리브랜딩 D-10…44년만에 'DK센텔리안'으로 간판 바꾼다",
-          "risk": false
-        }
-      ],
-      "price": 24650,
-      "chg": 0.0694,
-      "activity": 2.42,
-      "foreign_today": 887400000,
-      "inst_today": 1133900000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.7,
-      "news": [],
-      "price": 32550,
-      "chg": -0.0136,
-      "activity": 0.64,
-      "foreign_today": 0,
-      "inst_today": 4459350000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 161700,
-      "ret5": 0.0603,
-      "ret20": 0.0062,
-      "rsi14": 56.2,
-      "vol20": 0.345,
-      "foreign_net": 127103705300,
-      "inst_net": -110127660200,
-      "score": 0.693,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
-          "risk": false
-        }
-      ],
-      "price": 157100,
-      "chg": -0.0278,
-      "activity": 0.62,
-      "foreign_today": 2670700000,
-      "inst_today": 16181300000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "000100",
-      "name": "유한양행",
-      "close": 81100,
-      "ret5": 0.0397,
-      "ret20": -0.0667,
-      "rsi14": 55.3,
-      "vol20": 0.394,
-      "foreign_net": 4715649250,
-      "inst_net": 3630527050,
-      "score": 0.657,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "일동제약·한미약품·유한양행, AI 제조혁신부터 항암·신장질환 신약까...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[ESG트렌드] 유한양행, 제4회 ‘유한ESG학술상’ 시상식 개최 外",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "유한양행, 개별인정형 잇몸 유산균 출시…구강 건강 기능성 시장 공략",
-          "risk": false
-        }
-      ],
-      "foreign_today": 3162900000,
-      "inst_today": 5028200000,
-      "exchange": "KOSPI"
-    },
     {
       "code": "017670",
       "name": "SK텔레콤",
-      "close": 84300,
-      "ret5": 0.0934,
-      "ret20": 0.0684,
-      "rsi14": 57.9,
-      "vol20": 0.482,
-      "foreign_net": 22505939550,
-      "inst_net": 36013259700,
-      "score": 0.636,
+      "close": 82900,
+      "ret5": 0.0122,
+      "ret20": 0.0865,
+      "rsi14": 54.8,
+      "vol20": 0.468,
+      "foreign_net": 18957072950,
+      "inst_net": 34103456350,
+      "score": 0.96,
       "news": [
         {
-          "date": "11-17",
-          "title": "아이크래프트·RFHIC 상승세, 삼성전자·SK텔레콤은 약세…5G주 무슨 이...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "라우프·SK텔레콤, ‘SKT 뉴스룸 굿체인지 캠페인’으로 한국 PR대상 수...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[금주의 통신 톡톡] SK텔레콤, 효성중공업과 AI 데이터센터 구축... LG U+...",
+          "date": "11-18",
+          "title": "[넥스트 K-브랜드 대상] [통신서비스 부문] AI로 미래 그리는 SK텔레콤…...",
           "risk": false
         }
       ],
-      "price": 83000,
-      "chg": -0.0107,
-      "activity": 1.23,
-      "foreign_today": 1494000000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "323410",
-      "name": "카카오뱅크",
-      "close": 21200,
-      "ret5": 0.0392,
-      "ret20": 0.0367,
-      "rsi14": 65.1,
-      "vol20": 0.263,
-      "foreign_net": 13497471375,
-      "inst_net": -4428726475,
-      "score": 0.607,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[금융 이모저모] 카카오뱅크, 'AI 목표적금' 한 달 만에 10만좌 돌파",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "현대카드 독점 깨진 애플페이…카카오뱅크 참전, 결제시장 '요동'",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크, 'AI 목표적금' 출시 한 달 만에 10만좌 돌파",
-          "risk": false
-        }
-      ],
-      "foreign_today": 360400000,
-      "inst_today": 1208400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "032640",
-      "name": "LG유플러스",
-      "close": 15800,
-      "ret5": -0.0354,
-      "ret20": 0.0174,
-      "rsi14": 58.6,
-      "vol20": 0.431,
-      "foreign_net": -8457289760,
-      "inst_net": 9395563480,
-      "score": 0.557,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "LG유플러스, 5G 속도 과장광고 행정소송 패소 확정",
-          "risk": true
-        },
-        {
-          "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕 … 고객 참여형 소통 성과 인정",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1501000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 183100,
-      "ret5": 0.1523,
-      "ret20": -0.1322,
-      "rsi14": 49.1,
-      "vol20": 0.741,
-      "foreign_net": -286835500,
-      "inst_net": 2846949050,
-      "score": 0.55,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 2563400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "089860",
-      "name": "롯데렌탈",
-      "close": 58400,
-      "ret5": 0.0,
-      "ret20": 0.1429,
-      "rsi14": 74.4,
-      "vol20": 0.46,
-      "foreign_net": 6431758700,
-      "inst_net": 7593445350,
-      "score": 0.536,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[더벨][인사이드 헤지펀드] VIP운용, 롯데렌탈 '전량 응모' 공개한 배경...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 992800000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "326030",
-      "name": "SK바이오팜",
-      "close": 88700,
-      "ret5": 0.0172,
-      "ret20": 0.1764,
-      "rsi14": 67.5,
-      "vol20": 0.496,
-      "foreign_net": -7996328400,
-      "inst_net": 9174280200,
-      "score": 0.529,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "SK바이오팜, 오파칼림 도입 내달 3일 종결 합의…임상보류 변수",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "SK바이오팜 '엑스코프리', 내년 美 매출 1조 넘나",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "오파칼림 임상 보류 두 달째…SK바이오팜, '1조 신약' 도입 언제",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1153100000,
       "exchange": "KOSPI"
     },
     {
       "code": "028050",
       "name": "삼성E&A",
-      "close": 68900,
-      "ret5": 0.1388,
-      "ret20": 0.521,
-      "rsi14": 67.0,
-      "vol20": 0.894,
-      "foreign_net": -74517283400,
-      "inst_net": 47861420450,
-      "score": 0.514,
+      "close": 67600,
+      "ret5": 0.0579,
+      "ret20": 0.5684,
+      "rsi14": 63.9,
+      "vol20": 0.869,
+      "foreign_net": -87308670000,
+      "inst_net": 45532092000,
+      "score": 0.96,
       "news": [
         {
-          "date": "11-17",
-          "title": "[오늘의 IR] 삼성E&A·SFA·삼양컴텍 등",
+          "date": "11-18",
+          "title": "[단독] 삼성E&A 시공 말레이시아 가스플랜트 가동…셸, 사라왁 심해가스...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼성E&A 목표주가 9만6천원 상향…AI·모듈러 경쟁력 주목",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "삼성E&A, AI·모듈러로 EPC 경쟁력 높였다…목표가 9.1%↑-KB",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "\"삼성E&A, AI·모듈러로 공기 단축 프리미엄 확보…목표가↑\"-KB",
+          "title": "삼성E&A 1.32% 상승…수주 17조원·특별 주주환원 부각",
           "risk": false
         }
       ],
-      "price": 68100,
-      "chg": -0.0044,
-      "activity": 0.6,
-      "foreign_today": 0,
-      "inst_today": 749100000,
       "exchange": "KOSPI"
     },
     {
-      "code": "161390",
-      "name": "한국타이어앤테크놀로지",
-      "close": 63300,
-      "ret5": 0.036,
-      "ret20": -0.0031,
-      "rsi14": 57.9,
-      "vol20": 0.507,
-      "foreign_net": -18008472900,
-      "inst_net": 22704871250,
-      "score": 0.479,
-      "news": [],
-      "foreign_today": 696300000,
-      "inst_today": 569700000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "004020",
-      "name": "현대제철",
-      "close": 28700,
-      "ret5": 0.0324,
-      "ret20": -0.0103,
-      "rsi14": 50.9,
-      "vol20": 0.57,
-      "foreign_net": 3150326550,
-      "inst_net": -87228175,
-      "score": 0.471,
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32450,
+      "ret5": 0.0417,
+      "ret20": 0.0237,
+      "rsi14": 54.4,
+      "vol20": 0.349,
+      "foreign_net": -19864151125,
+      "inst_net": 40202789025,
+      "score": 0.8,
       "news": [
         {
           "date": "11-17",
-          "title": "[11월 17일 고용24 채용정보] 엘지생활건강·현대제철·엘엑스판토스·엘...",
+          "title": "우리금융지주, 보통주 5만7,369주 소각에 따른 변경상장",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "214450",
+      "name": "파마리서치",
+      "close": 258000,
+      "ret5": 0.0361,
+      "ret20": -0.019,
+      "rsi14": 51.0,
+      "vol20": 0.557,
+      "foreign_net": -1757680500,
+      "inst_net": 10807969000,
+      "score": 0.76,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "파마리서치, 사내 학술교육 강화해 영업·마케팅 전문성 높인다",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "[그래픽] 포스코·현대제철 수소환원제철 기술 비교",
+          "title": "파마리서치 주가, 11월 17일 애프터마켓 260,000원 0.58% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "파마리서치, 임직원 전문성 향상 위한 사내 교육 프로그램 전개",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 746200000,
-      "exchange": "KOSPI"
+      "exchange": "KOSDAQ"
     },
     {
-      "code": "030200",
-      "name": "KT",
-      "close": 51600,
-      "ret5": -0.0227,
-      "ret20": 0.0198,
-      "rsi14": 56.8,
+      "code": "105560",
+      "name": "KB금융",
+      "close": 156100,
+      "ret5": 0.0216,
+      "ret20": -0.0328,
+      "rsi14": 47.8,
       "vol20": 0.366,
-      "foreign_net": 17981368100,
-      "inst_net": -15665157450,
-      "score": 0.429,
+      "foreign_net": 84943533200,
+      "inst_net": -71541342600,
+      "score": 0.52,
       "news": [
         {
-          "date": "11-17",
-          "title": "‘가을의 아쉬움 뒤로하고’ KT, 팬 페스티벌로 시즌 마침표",
+          "date": "11-18",
+          "title": "국민연금, KB금융 이재근 신임 회장 선임안 '찬성' 결정",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "국민연금, 이재근 KB금융 회장 후보 찬성…지분 9.17%의 선택",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "ATM 줄이고 점포 닫고…4대금융, 비용효율화 총력, KB금융 36.4%로 최저",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "261780",
+      "name": "아리바이오랩",
+      "close": 4615,
+      "ret5": 0.1538,
+      "ret20": 0.205,
+      "rsi14": 57.4,
+      "vol20": 1.373,
+      "foreign_net": 899079882,
+      "inst_net": -377365,
+      "score": 1.0,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "아리바이오랩 주가 하한가…치매약 임상 3상 '31% 지연'에도 급락한 이...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "\"AX 내세우며 현장 안전은 뒷전\"…KT새노조, 박윤영 사장에 대책 촉구",
+          "title": "[바이오 마감 브리핑]임상 불확실성에 아리바이오랩 하한가…제약주 선...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[주가] 11월 17일 주요 제약·바이오·기기 5% 변동 현황 - 아리바이오랩...",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 1032000000,
-      "exchange": "KOSPI"
+      "exchange": "KOSDAQ"
     },
     {
-      "code": "328130",
-      "name": "루닛",
-      "close": 14700,
-      "ret5": -0.0976,
-      "ret20": 0.1395,
-      "rsi14": 54.3,
-      "vol20": 1.445,
-      "foreign_net": -3613195490,
-      "inst_net": -5661527070,
-      "score": 0.907,
+      "code": "263860",
+      "name": "지니언스",
+      "close": 36600,
+      "ret5": 0.4186,
+      "ret20": 0.7143,
+      "rsi14": 74.4,
+      "vol20": 1.668,
+      "foreign_net": -14754665125,
+      "inst_net": 5584283925,
+      "score": 0.98,
       "news": [
+        {
+          "date": "11-17",
+          "title": "지니언스 주가, 11월 17일 애프터마켓 36,700원 6.69% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "지니언스 8% 가까이 상승…3분기 영업이익 3배 이상 증가",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "지니언스 주가 7.41% 껑충…AI 해킹 위협 증가에 보안 수요 확대",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "232140",
+      "name": "와이씨",
+      "close": 13880,
+      "ret5": 0.3372,
+      "ret20": 0.076,
+      "rsi14": 55.5,
+      "vol20": 1.362,
+      "foreign_net": -16982819565,
+      "inst_net": 28477147760,
+      "score": 0.98,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
@@ -527,262 +296,85 @@
         },
         {
           "date": "11-17",
-          "title": "루닛, 유방암 AI 연구 15편 공개…의사 보조 넘어 자율 판독 가능성 검증",
+          "title": "와이씨 5%대 상승…메모리 테스터 수주·매출 인식 기대",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "328130",
+      "name": "루닛",
+      "close": 15930,
+      "ret5": -0.0507,
+      "ret20": 0.2465,
+      "rsi14": 59.3,
+      "vol20": 1.466,
+      "foreign_net": 1860752070,
+      "inst_net": -4152626025,
+      "score": 0.88,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "고양시 '디지털 제네바' 도전…루닛부터 SK하이닉스까지 수혜 가능성",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "루닛, RSNA 2026서 의료 AI 연구 17편 발표…유방암 검출·위험 예측 성능...",
-          "risk": false
-        }
-      ],
-      "price": 15810,
-      "chg": 0.0755,
-      "activity": 0.99,
-      "foreign_today": 4031550000,
-      "inst_today": 1960440000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 12970,
-      "ret5": 0.3303,
-      "ret20": -0.1061,
-      "rsi14": 51.8,
-      "vol20": 1.402,
-      "foreign_net": -13014820770,
-      "inst_net": 20382754405,
-      "score": 0.893,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
+          "title": "루닛·뷰노 동반 함박웃음…의료AI 성장 기대에 건강관리기술주 차별화",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
+          "date": "11-17",
+          "title": "루닛, 북미영상의학회서 AI 의료영상 분야 기술력 입증...연구초록 17편...",
           "risk": false
         }
       ],
-      "price": 13690,
-      "chg": 0.0442,
-      "activity": 2.47,
-      "foreign_today": 0,
-      "inst_today": 3614160000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "121600",
-      "name": "나노신소재",
-      "close": 66500,
-      "ret5": 0.112,
-      "ret20": 0.0726,
-      "rsi14": 52.7,
-      "vol20": 1.173,
-      "foreign_net": -1955910400,
-      "inst_net": 15374232200,
-      "score": 0.757,
+      "code": "190510",
+      "name": "나무가",
+      "close": 17630,
+      "ret5": 0.2142,
+      "ret20": 0.2521,
+      "rsi14": 57.6,
+      "vol20": 1.458,
+      "foreign_net": 171325475,
+      "inst_net": -3382152885,
+      "score": 0.62,
       "news": [],
-      "price": 65200,
-      "chg": -0.0195,
-      "activity": 0.81,
-      "foreign_today": 0,
-      "inst_today": 1890800000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "033790",
-      "name": "피노",
-      "close": 6620,
-      "ret5": 0.0458,
-      "ret20": -0.2669,
-      "rsi14": 42.7,
-      "vol20": 1.219,
-      "foreign_net": 938473765,
-      "inst_net": -1756373495,
-      "score": 0.743,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "피노 12%대 급등…니켈 투자·실적 개선 기대 반영",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "5G 투자 재개 기대감에 통신장비주 들썩…피노·서진시스템 매수 봇물",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "피노, 중국계 주주 지분율 줄었지만…대표·의장은 여전히 중국인",
-          "risk": false
-        }
-      ],
-      "price": 7310,
-      "chg": 0.1194,
-      "activity": 1.9,
-      "foreign_today": 540940000,
-      "inst_today": 233920000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "218410",
-      "name": "RFHIC",
-      "close": 53700,
-      "ret5": 0.268,
-      "ret20": 0.017,
-      "rsi14": 54.2,
-      "vol20": 1.314,
-      "foreign_net": -29287303150,
-      "inst_net": 55201061900,
-      "score": 0.6,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[특징주] 광통신 관련주, 주초장 대체로 약세…RFHIC 상승 속 머큐리·RF...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "iM증권 “스페이스X, 美 전국 5G망 구축 구체화…RFHIC·케이엠더블유 등...",
-          "risk": false
-        }
-      ],
-      "price": 55000,
-      "chg": 0.0261,
-      "activity": 1.05,
-      "foreign_today": 0,
-      "inst_today": 1980000000,
       "exchange": "KOSDAQ"
     },
     {
       "code": "069500",
       "name": "KODEX 200",
-      "close": 79900,
-      "ret5": 0.018,
-      "ret20": -0.1115,
-      "rsi14": 35.7,
-      "vol20": 0.591,
+      "close": 77780,
+      "ret5": -0.0515,
+      "ret20": -0.1035,
+      "rsi14": 33.6,
+      "vol20": 0.586,
       "foreign_net": null,
       "inst_net": null,
       "score": null,
       "news": [
         {
-          "date": "11-16",
-          "title": "KODEX 200선물인버스2X, 장중 9.82% 상승…코스피200 선물의 일간 역방향...",
+          "date": "11-17",
+          "title": "KODEX 200타겟위클리커버드콜 1.93% 하락",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "KODEX 200 주가 8만10원…코스피200 추적과 추적오차 점검",
+          "date": "11-17",
+          "title": "KODEX 200선물인버스2X 3.28% 상승…증시 약세에 거래 폭증",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "KODEX 200 2.11% 하락…대형주 조정에 거래대금 1.4조원",
           "risk": false
         }
       ],
       "exchange": "ETF"
-    },
-    {
-      "code": "261780",
-      "name": "아리바이오랩",
-      "close": 5680,
-      "ret5": 0.2778,
-      "ret20": 0.4869,
-      "rsi14": 76.2,
-      "vol20": 1.153,
-      "foreign_net": 713098863,
-      "inst_net": 25482865,
-      "score": 0,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "아리바이오랩 29% 급락…관계사 치매약 3상 해석에 변동성",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[ET특징주] 아리바이오랩, 치매약 3상 1차 목표 달성했는데… 주가는 '하...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "아리바이오랩 주가, 11월 17일 장중 4,070원 29.95% 하락",
-          "risk": false
-        }
-      ],
-      "price": 4070,
-      "chg": -0.2995,
-      "foreign_today": 0,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "080580",
-      "name": "오킨스전자",
-      "close": 17580,
-      "ret5": -0.0157,
-      "ret20": -0.3788,
-      "rsi14": 40.8,
-      "vol20": 1.979,
-      "foreign_net": -9155497550,
-      "inst_net": 5440371655,
-      "score": 0,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "오킨스전자 3분기 연결 영업익 71억5800만원",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "오킨스전자, 고가 2만5,400원 찍은 뒤 하락",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[TOP's Pick] 오킨스전자, 반도체 훈풍 타고 3분기 누적 매출 986억",
-          "risk": false
-        }
-      ],
-      "price": 14840,
-      "chg": -0.1751,
-      "foreign_today": 0,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "131290",
-      "name": "티에스이",
-      "close": 213500,
-      "ret5": 0.2777,
-      "ret20": -0.2574,
-      "rsi14": 45.5,
-      "vol20": 1.727,
-      "foreign_net": -46312488800,
-      "inst_net": 33095991650,
-      "score": 0,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[모닝 리포트] \"티에스이, 프로브카드 수요 확대에 내년 성장 지속\"",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "티에스이 3분기 영업이익 527억원으로 359% 증가",
-          "risk": false
-        }
-      ],
-      "price": 187400,
-      "chg": -0.169,
-      "foreign_today": 0,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
     }
   ]
 }
