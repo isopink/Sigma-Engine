@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "12:30",
-    "pool": 435,
+    "time": "12:45",
+    "pool": 436,
     "analyzed_new": 30,
     "passed": 21,
     "kept_prep": false
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-17",
+          "title": "파마리서치, 의료진 초청 세미나로 영업·마케팅 역량 강화",
+          "risk": false
+        },
+        {
+          "date": "11-17",
           "title": "파마리서치 매출 증가분 68% 화장품 몫…달라진 성장 공식",
           "risk": false
         },
@@ -109,18 +114,13 @@
           "date": "11-17",
           "title": "파마리서치, 임직원 대상 학술교육 확대",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "파마리서치, 임직원 전문성 향상 위한 사내 교육 프로그램 실시",
-          "risk": false
         }
       ],
-      "price": 271000,
-      "chg": 0.0484,
-      "activity": 2.04,
+      "price": 269500,
+      "chg": 0.0426,
+      "activity": 1.95,
       "foreign_today": 0,
-      "inst_today": 1897000000,
+      "inst_today": 1886500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,28 +133,28 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.925,
+      "score": 0.962,
       "news": [
+        {
+          "date": "11-17",
+          "title": "\"화장품은 날았는데 동국생명과학 적자가 발목 잡았다…동국제약 '속 빈...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "동국제약, 반려동물 위생관리 브랜드 '캐니메이트' 신제품 5종 출시",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "[민주 약국] 휴온스·동국제약·유한재단",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "동국제약, 반려동물 위생용품 '캐니메이트' 5종 출시",
-          "risk": false
         }
       ],
-      "price": 24850,
-      "chg": 0.0781,
-      "activity": 2.18,
-      "foreign_today": 1267350000,
+      "price": 25200,
+      "chg": 0.0933,
+      "activity": 2.3,
+      "foreign_today": 1285200000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -168,7 +168,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.687,
+      "score": 0.692,
       "news": [
         {
           "date": "11-16",
@@ -190,7 +190,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.664,
+      "score": 0.677,
       "news": [
         {
           "date": "11-16",
@@ -198,11 +198,11 @@
           "risk": false
         }
       ],
-      "price": 157700,
-      "chg": -0.0241,
-      "activity": 0.73,
-      "foreign_today": 1577000000,
-      "inst_today": 6938800000,
+      "price": 157600,
+      "chg": -0.0248,
+      "activity": 0.71,
+      "foreign_today": 1576000000,
+      "inst_today": 6934400000,
       "exchange": "KOSPI"
     },
     {
@@ -215,7 +215,7 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.619,
+      "score": 0.617,
       "news": [
         {
           "date": "11-17",
@@ -247,16 +247,16 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.612,
+      "score": 0.617,
       "news": [
         {
           "date": "11-17",
-          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
+          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
+          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
           "risk": false
         },
         {
@@ -270,6 +270,25 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 33100,
+      "ret5": 0.0525,
+      "ret20": 0.0525,
+      "rsi14": 59.7,
+      "vol20": 0.34,
+      "foreign_net": -2321307850,
+      "inst_net": 24381897025,
+      "score": 0.594,
+      "news": [],
+      "price": 32650,
+      "chg": -0.0106,
+      "activity": 0.67,
+      "foreign_today": 0,
+      "inst_today": 1403950000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "178320",
       "name": "서진시스템",
       "close": 31800,
@@ -279,7 +298,7 @@
       "vol20": 0.937,
       "foreign_net": 980010800,
       "inst_net": 5734256075,
-      "score": 0.597,
+      "score": 0.594,
       "news": [
         {
           "date": "11-16",
@@ -297,31 +316,12 @@
           "risk": false
         }
       ],
-      "price": 31500,
-      "chg": -0.0063,
-      "activity": 1.02,
+      "price": 31300,
+      "chg": -0.0126,
+      "activity": 0.96,
       "foreign_today": 0,
-      "inst_today": 976500000,
+      "inst_today": 970300000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.59,
-      "news": [],
-      "price": 32600,
-      "chg": -0.0121,
-      "activity": 0.69,
-      "foreign_today": 0,
-      "inst_today": 1401800000,
-      "exchange": "KOSPI"
     },
     {
       "code": "017670",
@@ -333,7 +333,7 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.56,
+      "score": 0.564,
       "news": [
         {
           "date": "11-17",
@@ -341,11 +341,11 @@
           "risk": false
         }
       ],
-      "price": 83300,
-      "chg": -0.0072,
-      "activity": 1.27,
+      "price": 83200,
+      "chg": -0.0083,
+      "activity": 1.23,
       "foreign_today": 0,
-      "inst_today": 333200000,
+      "inst_today": 332800000,
       "exchange": "KOSPI"
     },
     {
@@ -358,7 +358,7 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.448,
+      "score": 0.444,
       "news": [
         {
           "date": "11-17",
@@ -390,7 +390,7 @@
       "vol20": 0.57,
       "foreign_net": 3150326550,
       "inst_net": -87228175,
-      "score": 0.44,
+      "score": 0.436,
       "news": [
         {
           "date": "11-17",
@@ -412,7 +412,7 @@
       "vol20": 0.756,
       "foreign_net": -36757086300,
       "inst_net": 38171008600,
-      "score": 0.433,
+      "score": 0.436,
       "news": [
         {
           "date": "11-17",
@@ -444,7 +444,7 @@
       "vol20": 0.679,
       "foreign_net": 13204400250,
       "inst_net": -7896166600,
-      "score": 0.433,
+      "score": 0.436,
       "news": [
         {
           "date": "11-17",
@@ -476,7 +476,7 @@
       "vol20": 0.507,
       "foreign_net": -18008472900,
       "inst_net": 22704871250,
-      "score": 0.41,
+      "score": 0.406,
       "news": [],
       "foreign_today": 316500000,
       "inst_today": 0,
@@ -492,7 +492,7 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.388,
+      "score": 0.383,
       "news": [
         {
           "date": "11-17",
@@ -514,7 +514,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.933,
+      "score": 0.94,
       "news": [
         {
           "date": "11-17",
@@ -532,11 +532,11 @@
           "risk": false
         }
       ],
-      "price": 15910,
-      "chg": 0.0823,
-      "activity": 1.43,
-      "foreign_today": 3643390000,
-      "inst_today": 684130000,
+      "price": 15830,
+      "chg": 0.0769,
+      "activity": 1.35,
+      "foreign_today": 3625070000,
+      "inst_today": 680690000,
       "exchange": "KOSDAQ"
     },
     {
@@ -549,7 +549,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.799,
+      "score": 0.827,
       "news": [
         {
           "date": "11-16",
@@ -567,11 +567,11 @@
           "risk": false
         }
       ],
-      "price": 7400,
-      "chg": 0.1332,
-      "activity": 2.76,
-      "foreign_today": 266400000,
-      "inst_today": 111000000,
+      "price": 7450,
+      "chg": 0.1409,
+      "activity": 2.69,
+      "foreign_today": 268200000,
+      "inst_today": 111750000,
       "exchange": "KOSDAQ"
     },
     {
@@ -584,12 +584,12 @@
       "vol20": 1.457,
       "foreign_net": -2408919750,
       "inst_net": 6374969300,
-      "score": 0.746,
+      "score": 0.789,
       "news": [],
-      "price": 78700,
-      "chg": -0.0472,
+      "price": 79100,
+      "chg": -0.0424,
       "activity": 1.61,
-      "foreign_today": 629600000,
+      "foreign_today": 632800000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -603,7 +603,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.731,
+      "score": 0.737,
       "news": [
         {
           "date": "11-16",
@@ -616,11 +616,11 @@
           "risk": false
         }
       ],
-      "price": 14120,
-      "chg": 0.077,
-      "activity": 3.2,
+      "price": 13990,
+      "chg": 0.0671,
+      "activity": 3.11,
       "foreign_today": 0,
-      "inst_today": 494200000,
+      "inst_today": 489650000,
       "exchange": "KOSDAQ"
     },
     {
@@ -633,7 +633,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.649,
+      "score": 0.654,
       "news": [
         {
           "date": "11-16",
@@ -651,11 +651,11 @@
           "risk": false
         }
       ],
-      "price": 56700,
-      "chg": 0.0578,
-      "activity": 1.5,
+      "price": 56200,
+      "chg": 0.0485,
+      "activity": 1.41,
       "foreign_today": 0,
-      "inst_today": 1247400000,
+      "inst_today": 1236400000,
       "exchange": "KOSDAQ"
     },
     {
