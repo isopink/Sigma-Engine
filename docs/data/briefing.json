@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "11:15",
+    "time": "11:30",
     "pool": 434,
     "analyzed_new": 30,
     "passed": 20,
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-17",
+          "title": "파마리서치, 임직원 대상 학술교육 확대",
+          "risk": false
+        },
+        {
+          "date": "11-17",
           "title": "파마리서치, 임직원 전문성 향상 위한 사내 교육 프로그램 실시",
           "risk": false
         },
@@ -109,16 +114,11 @@
           "date": "11-17",
           "title": "파마리서치, 임직원 학술교육 강화…의료진 초청 세미나",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "파마리서치, 임직원 직무역량 강화위한 사내 학술교육 확대",
-          "risk": false
         }
       ],
       "price": 271000,
       "chg": 0.0484,
-      "activity": 2.31,
+      "activity": 2.25,
       "foreign_today": 0,
       "inst_today": 1897000000,
       "exchange": "KOSDAQ"
@@ -133,30 +133,55 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.963,
+      "score": 0.955,
       "news": [
         {
           "date": "11-17",
-          "title": "동국제약, ﻿펫케어 브랜드 '캐니메이트' 신제품 5종 출시",
+          "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시…라인업 강화",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "동국제약, 펫케어 시장 공략 잰걸음…'캐니메이트' 신제품 5종 출시",
+          "title": "\"계열사 영업적자에 발목 잡힌 동국제약, 그래도 믿을 건 '폭풍성장' 헬...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "동국제약, 반려동물 위생관리 제품 5종 출시…펫케어 사업 확대",
+          "title": "[제약·바이오 브리핑]GC녹십자·동국제약·유한재단",
           "risk": false
         }
       ],
-      "price": 24800,
-      "chg": 0.0759,
-      "activity": 2.74,
-      "foreign_today": 1264800000,
+      "price": 24950,
+      "chg": 0.0824,
+      "activity": 2.63,
+      "foreign_today": 1272450000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "close": 161700,
+      "ret5": 0.0603,
+      "ret20": 0.0062,
+      "rsi14": 56.2,
+      "vol20": 0.345,
+      "foreign_net": 127103705300,
+      "inst_net": -110127660200,
+      "score": 0.664,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
+          "risk": false
+        }
+      ],
+      "price": 158700,
+      "chg": -0.0179,
+      "activity": 0.83,
+      "foreign_today": 1587000000,
+      "inst_today": 6982800000,
+      "exchange": "KOSPI"
     },
     {
       "code": "089860",
@@ -168,7 +193,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.685,
+      "score": 0.664,
       "news": [
         {
           "date": "11-16",
@@ -181,31 +206,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 161700,
-      "ret5": 0.0603,
-      "ret20": 0.0062,
-      "rsi14": 56.2,
-      "vol20": 0.345,
-      "foreign_net": 127103705300,
-      "inst_net": -110127660200,
-      "score": 0.657,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
-          "risk": false
-        }
-      ],
-      "price": 158100,
-      "chg": -0.0217,
-      "activity": 0.88,
-      "foreign_today": 1581000000,
-      "inst_today": 6956400000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "000100",
       "name": "유한양행",
       "close": 81100,
@@ -215,7 +215,7 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.639,
+      "score": 0.618,
       "news": [
         {
           "date": "11-17",
@@ -247,7 +247,7 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.602,
+      "score": 0.582,
       "news": [
         {
           "date": "11-17",
@@ -270,39 +270,23 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 31800,
-      "ret5": 0.1648,
-      "ret20": -0.2244,
-      "rsi14": 49.0,
-      "vol20": 0.937,
-      "foreign_net": 980010800,
-      "inst_net": 5734256075,
-      "score": 0.556,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "서진시스템 주가, 11월 16일 애프터마켓 32,050원 1.10% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "ESS·통신장비 부품 양산 살피는 서진시스템, 3만1850원 거래",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "서진시스템, 매출 1조 돌파…영업익 흑자전환",
-          "risk": false
-        }
-      ],
-      "price": 31300,
-      "chg": -0.0126,
-      "activity": 1.37,
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 33100,
+      "ret5": 0.0525,
+      "ret20": 0.0525,
+      "rsi14": 59.7,
+      "vol20": 0.34,
+      "foreign_net": -2321307850,
+      "inst_net": 24381897025,
+      "score": 0.564,
+      "news": [],
+      "price": 32900,
+      "chg": -0.003,
+      "activity": 0.77,
       "foreign_today": 0,
-      "inst_today": 970300000,
-      "exchange": "KOSDAQ"
+      "inst_today": 1414700000,
+      "exchange": "KOSPI"
     },
     {
       "code": "017670",
@@ -314,7 +298,7 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.528,
+      "score": 0.536,
       "news": [
         {
           "date": "11-17",
@@ -332,28 +316,47 @@
           "risk": false
         }
       ],
-      "price": 82800,
-      "chg": -0.0131,
-      "activity": 1.48,
+      "price": 83300,
+      "chg": -0.0072,
+      "activity": 1.43,
       "foreign_today": 0,
-      "inst_today": 331200000,
+      "inst_today": 333200000,
       "exchange": "KOSPI"
     },
     {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.481,
-      "news": [],
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 31800,
+      "ret5": 0.1648,
+      "ret20": -0.2244,
+      "rsi14": 49.0,
+      "vol20": 0.937,
+      "foreign_net": 980010800,
+      "inst_net": 5734256075,
+      "score": 0.518,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "서진시스템 주가, 11월 16일 애프터마켓 32,050원 1.10% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "ESS·통신장비 부품 양산 살피는 서진시스템, 3만1850원 거래",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "서진시스템, 매출 1조 돌파…영업익 흑자전환",
+          "risk": false
+        }
+      ],
+      "price": 31050,
+      "chg": -0.0205,
+      "activity": 1.27,
       "foreign_today": 0,
-      "inst_today": 1423300000,
-      "exchange": "KOSPI"
+      "inst_today": 962550000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "004020",
@@ -365,7 +368,7 @@
       "vol20": 0.57,
       "foreign_net": 3150326550,
       "inst_net": -87228175,
-      "score": 0.435,
+      "score": 0.409,
       "news": [
         {
           "date": "11-17",
@@ -387,7 +390,7 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.389,
+      "score": 0.373,
       "news": [
         {
           "date": "11-17",
@@ -419,21 +422,21 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.352,
+      "score": 0.336,
       "news": [
         {
           "date": "11-17",
+          "title": "KT스카이라이프, ipit TV 조기 안착…가입자·인터넷 '쌍끌이 성장'",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "KT스카이라이프, 건재한가 … 400억대 마케팅비에 영업익 급락",
+          "risk": false
+        },
+        {
+          "date": "11-17",
           "title": "KT알파 쇼핑, '방송 AI화'로 혁신...화면 개편·실시간 맞춤 정보 제공",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "KT알파 쇼핑, 방송 비주얼·AI 서비스 등 전면 개편",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[단독] KT, '모두의 AI' 서비스명은 '이음큐브'?…상표 출원",
           "risk": false
         }
       ],
@@ -451,21 +454,11 @@
       "vol20": 0.432,
       "foreign_net": -13470881275,
       "inst_net": -11209452700,
-      "score": 0.324,
+      "score": 0.309,
       "news": [
         {
           "date": "11-17",
-          "title": "카카오뱅크, 'AI 목표적금' 누적 10만 좌... 출시 한 달 만에 돌파",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "핀테크 증권사 '승부수'… 카카오페이증권 '국내 IB' 토스는 '해외'",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[주목! e금융] 우리·하나·국민·기업은행·카카오...\"K팝 팬덤은 기부...",
+          "title": "카카오엔터 장윤중 공동대표 사임…당분간 고정희 단독 체제",
           "risk": false
         }
       ],
@@ -483,21 +476,21 @@
       "vol20": 0.861,
       "foreign_net": 5910916050,
       "inst_net": 7108227875,
-      "score": 0.324,
+      "score": 0.3,
       "news": [
         {
           "date": "11-17",
-          "title": "‘비욘드 리빙’ GS건설 자이 “미래 주거 새 기준 세운다”",
+          "title": "[현장] GS건설, 자이 미래 주거 비전 공개…AI·공간 혁신·기후 대응 기...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "GS건설, 미래 비전 '비욘드 리빙' 공개…허윤홍 \"시대 넘는 새 기준 제시...",
+          "title": "사람 있는 방의 조명·온도 저절로 바꾼다… GS건설, AI 주택 공개",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "[리포트] \"골프연습장 예약 몇시로 할까요?\"…GS건설, 집이 알아서 챙겨...",
+          "title": "“집이 사람에 맞춰 바뀐다”…GS건설, 미래 주거 전략 공개",
           "risk": false
         }
       ],
@@ -515,7 +508,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.935,
+      "score": 0.918,
       "news": [
         {
           "date": "11-17",
@@ -533,11 +526,11 @@
           "risk": false
         }
       ],
-      "price": 15970,
-      "chg": 0.0864,
-      "activity": 1.87,
-      "foreign_today": 3657130000,
-      "inst_today": 686710000,
+      "price": 15820,
+      "chg": 0.0762,
+      "activity": 1.72,
+      "foreign_today": 3622780000,
+      "inst_today": 680260000,
       "exchange": "KOSDAQ"
     },
     {
@@ -550,7 +543,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.796,
+      "score": 0.782,
       "news": [
         {
           "date": "11-16",
@@ -568,11 +561,11 @@
           "risk": false
         }
       ],
-      "price": 7290,
-      "chg": 0.1164,
-      "activity": 3.82,
-      "foreign_today": 262440000,
-      "inst_today": 109350000,
+      "price": 7270,
+      "chg": 0.1133,
+      "activity": 3.54,
+      "foreign_today": 261720000,
+      "inst_today": 109050000,
       "exchange": "KOSDAQ"
     },
     {
@@ -585,7 +578,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.685,
+      "score": 0.673,
       "news": [
         {
           "date": "11-16",
@@ -600,7 +593,7 @@
       ],
       "price": 13740,
       "chg": 0.0481,
-      "activity": 3.53,
+      "activity": 3.32,
       "foreign_today": 0,
       "inst_today": 480900000,
       "exchange": "KOSDAQ"
@@ -615,7 +608,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.639,
+      "score": 0.627,
       "news": [
         {
           "date": "11-16",
@@ -633,41 +626,30 @@
           "risk": false
         }
       ],
-      "price": 56400,
-      "chg": 0.0522,
-      "activity": 2.05,
+      "price": 55700,
+      "chg": 0.0392,
+      "activity": 1.91,
       "foreign_today": 0,
-      "inst_today": 1240800000,
+      "inst_today": 1225400000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "036540",
-      "name": "SFA반도체",
-      "close": 8100,
-      "ret5": 0.1912,
-      "ret20": -0.1337,
-      "rsi14": 48.1,
-      "vol20": 1.425,
-      "foreign_net": -32333977350,
-      "inst_net": 27597399165,
-      "score": 0.602,
-      "news": [
-        {
-          "date": "11-15",
-          "title": "[종목 브리핑] SFA반도체 3분기 매출 증가·영업적자 지속",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "코리아써키트·SFA반도체 주가 50%대 상승…반도체 관련주 강세",
-          "risk": false
-        }
-      ],
-      "price": 8400,
-      "chg": 0.0207,
-      "activity": 2.39,
-      "foreign_today": 0,
-      "inst_today": 361200000,
+      "code": "425420",
+      "name": "티에프이",
+      "close": 80500,
+      "ret5": 0.1908,
+      "ret20": 0.2366,
+      "rsi14": 55.4,
+      "vol20": 1.457,
+      "foreign_net": -2408919750,
+      "inst_net": 6374969300,
+      "score": 0.627,
+      "news": [],
+      "price": 76500,
+      "chg": -0.0738,
+      "activity": 1.89,
+      "foreign_today": 612000000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
