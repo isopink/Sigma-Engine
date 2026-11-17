@@ -182,6 +182,10 @@ def run_once(env, dry=False):
 
 
 def main():
+    try:   # 11-18: 로그를 바로바로 남김 (파일로 돌리면 출력이 모였다 늦게 써져서 멈춘 건지 알 수 없었음)
+        sys.stdout.reconfigure(line_buffering=True)
+    except Exception:  # noqa: BLE001
+        pass
     env = load_env()
     args = set(sys.argv[1:])
     if "--loop" not in args:
