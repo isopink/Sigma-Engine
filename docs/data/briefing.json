@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "13:15",
-    "pool": 469,
+    "time": "13:30",
+    "pool": 470,
     "analyzed_new": 30,
     "passed": 21,
     "kept_prep": false
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 268000,
-      "chg": 0.0368,
-      "activity": 1.82,
+      "price": 266000,
+      "chg": 0.029,
+      "activity": 1.77,
       "foreign_today": 0,
-      "inst_today": 3484000000,
+      "inst_today": 3458000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.92,
+      "score": 0.934,
       "news": [
         {
           "date": "11-17",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 24650,
-      "chg": 0.0694,
-      "activity": 2.51,
-      "foreign_today": 1774800000,
-      "inst_today": 443700000,
+      "price": 24900,
+      "chg": 0.0803,
+      "activity": 2.57,
+      "foreign_today": 1792800000,
+      "inst_today": 448200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.65,
+      "score": 0.671,
       "news": [
         {
           "date": "11-16",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 157100,
-      "chg": -0.0278,
+      "price": 157300,
+      "chg": -0.0266,
       "activity": 0.67,
-      "foreign_today": 2670700000,
-      "inst_today": 13824800000,
+      "foreign_today": 2674100000,
+      "inst_today": 13842400000,
       "exchange": "KOSPI"
     },
     {
@@ -193,21 +193,21 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.599,
+      "score": 0.605,
       "news": [
         {
           "date": "11-17",
+          "title": "[초점] 카카오뱅크, 은행권 최초 애플페이 도입…삼성페이 유료화로 번...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "예금 늘고 대출 주춤한 카카오뱅크, 단기자금 비중 25%로 확대",
+          "risk": false
+        },
+        {
+          "date": "11-17",
           "title": "AI가 저축 독려…카카오뱅크 적금 10만좌 돌파",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "11월 17일 카카오뱅크 AI 퀴즈…오전 8시 정답은 ‘뉴로비로봇청소기’",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "이게 뭐지...낮 12시 '카카오뱅크 AI 이모지' 퀴즈 정답 (11월 17일)",
           "risk": false
         }
       ],
@@ -229,12 +229,12 @@
       "news": [
         {
           "date": "11-17",
-          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
+          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
+          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
           "risk": false
         },
         {
@@ -248,6 +248,25 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 33100,
+      "ret5": 0.0525,
+      "ret20": 0.0525,
+      "rsi14": 59.7,
+      "vol20": 0.34,
+      "foreign_net": -2321307850,
+      "inst_net": 24381897025,
+      "score": 0.592,
+      "news": [],
+      "price": 32700,
+      "chg": -0.0091,
+      "activity": 0.64,
+      "foreign_today": 0,
+      "inst_today": 3466200000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "089860",
       "name": "롯데렌탈",
       "close": 58400,
@@ -257,7 +276,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.599,
+      "score": 0.586,
       "news": [
         {
           "date": "11-16",
@@ -270,22 +289,54 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.591,
-      "news": [],
-      "price": 32700,
-      "chg": -0.0091,
-      "activity": 0.65,
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 31800,
+      "ret5": 0.1648,
+      "ret20": -0.2244,
+      "rsi14": 49.0,
+      "vol20": 0.937,
+      "foreign_net": 980010800,
+      "inst_net": 5734256075,
+      "score": 0.572,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "서진시스템 주가, 11월 16일 애프터마켓 32,050원 1.10% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "ESS·통신장비 부품 양산 살피는 서진시스템, 3만1850원 거래",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "서진시스템, 매출 1조 돌파…영업익 흑자전환",
+          "risk": false
+        }
+      ],
+      "price": 31000,
+      "chg": -0.0221,
+      "activity": 0.87,
       "foreign_today": 0,
-      "inst_today": 3466200000,
+      "inst_today": 2108000000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 183100,
+      "ret5": 0.1523,
+      "ret20": -0.1322,
+      "rsi14": 49.1,
+      "vol20": 0.741,
+      "foreign_net": -286835500,
+      "inst_net": 2846949050,
+      "score": 0.539,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 1464800000,
       "exchange": "KOSPI"
     },
     {
@@ -298,7 +349,7 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.496,
+      "score": 0.52,
       "news": [
         {
           "date": "11-17",
@@ -308,7 +359,7 @@
       ],
       "price": 82700,
       "chg": -0.0143,
-      "activity": 1.21,
+      "activity": 1.19,
       "foreign_today": 827000000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -323,7 +374,7 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.482,
+      "score": 0.487,
       "news": [
         {
           "date": "11-17",
@@ -355,7 +406,7 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.46,
+      "score": 0.454,
       "news": [
         {
           "date": "11-17",
@@ -387,7 +438,7 @@
       "vol20": 0.507,
       "foreign_net": -18008472900,
       "inst_net": 22704871250,
-      "score": 0.46,
+      "score": 0.454,
       "news": [],
       "foreign_today": 1139400000,
       "inst_today": 0,
@@ -403,7 +454,7 @@
       "vol20": 0.756,
       "foreign_net": -36757086300,
       "inst_net": 38171008600,
-      "score": 0.431,
+      "score": 0.428,
       "news": [
         {
           "date": "11-17",
@@ -435,7 +486,7 @@
       "vol20": 0.496,
       "foreign_net": -7996328400,
       "inst_net": 9174280200,
-      "score": 0.431,
+      "score": 0.421,
       "news": [
         {
           "date": "11-17",
@@ -458,70 +509,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 31250,
-      "ret5": 0.0399,
-      "ret20": 0.0684,
-      "rsi14": 53.1,
-      "vol20": 0.861,
-      "foreign_net": 5910916050,
-      "inst_net": 7108227875,
-      "score": 0.394,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[현장] GS건설, 미래 주거 상품 첫선…과제는 '비용·보안'",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[현장] '뉴 자이'에선 집과 대화한다...GS건설이 본 미래 주거는? \"생활...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "\"공부하다 잠들자 조명이 알아서 꺼졌다\" ... GS건설, 생성형 AI 기반 'A...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1031250000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 53100,
-      "ret5": -0.0861,
-      "ret20": 0.1658,
-      "rsi14": 56.8,
-      "vol20": 0.679,
-      "foreign_net": 13204400250,
-      "inst_net": -7896166600,
-      "score": 0.394,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "두나무·한미사이언스·고려아연 등, 본업 살린 나눔 활동 이어가",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "한미사이언스, 청각장애인 바리스타 전국대회 후원...직무 역량 확대 지...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "﻿[제약뷰티]﻿한미사이언스, 청각장애인 바리스타 '완전두유 창의상' ...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 212400000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "328130",
       "name": "루닛",
       "close": 14700,
@@ -531,7 +518,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.869,
+      "score": 0.895,
       "news": [
         {
           "date": "11-17",
@@ -549,11 +536,11 @@
           "risk": false
         }
       ],
-      "price": 15680,
-      "chg": 0.0667,
-      "activity": 1.24,
-      "foreign_today": 4359040000,
-      "inst_today": 1662080000,
+      "price": 15750,
+      "chg": 0.0714,
+      "activity": 1.2,
+      "foreign_today": 4378500000,
+      "inst_today": 1669500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -566,7 +553,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.825,
+      "score": 0.836,
       "news": [
         {
           "date": "11-16",
@@ -579,11 +566,11 @@
           "risk": false
         }
       ],
-      "price": 13890,
-      "chg": 0.0595,
-      "activity": 2.96,
+      "price": 14060,
+      "chg": 0.0725,
+      "activity": 2.93,
       "foreign_today": 0,
-      "inst_today": 2444640000,
+      "inst_today": 2474560000,
       "exchange": "KOSDAQ"
     },
     {
@@ -596,7 +583,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.766,
+      "score": 0.789,
       "news": [
         {
           "date": "11-16",
@@ -614,11 +601,11 @@
           "risk": false
         }
       ],
-      "price": 7450,
-      "chg": 0.1409,
-      "activity": 2.47,
-      "foreign_today": 461900000,
-      "inst_today": 201150000,
+      "price": 7480,
+      "chg": 0.1455,
+      "activity": 2.37,
+      "foreign_today": 463760000,
+      "inst_today": 201960000,
       "exchange": "KOSDAQ"
     },
     {
@@ -631,13 +618,13 @@
       "vol20": 1.173,
       "foreign_net": -1955910400,
       "inst_net": 15374232200,
-      "score": 0.686,
+      "score": 0.664,
       "news": [],
-      "price": 66300,
-      "chg": -0.003,
+      "price": 66200,
+      "chg": -0.0045,
       "activity": 0.81,
       "foreign_today": 0,
-      "inst_today": 928200000,
+      "inst_today": 926800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -650,7 +637,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.606,
+      "score": 0.592,
       "news": [
         {
           "date": "11-16",
@@ -668,11 +655,11 @@
           "risk": false
         }
       ],
-      "price": 55700,
-      "chg": 0.0392,
-      "activity": 1.29,
+      "price": 55600,
+      "chg": 0.0373,
+      "activity": 1.24,
       "foreign_today": 0,
-      "inst_today": 1726700000,
+      "inst_today": 1723600000,
       "exchange": "KOSDAQ"
     },
     {
