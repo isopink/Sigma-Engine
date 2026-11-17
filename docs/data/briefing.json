@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "11:30",
-    "pool": 434,
+    "time": "11:45",
+    "pool": 435,
     "analyzed_new": 30,
-    "passed": 20,
+    "passed": 21,
     "kept_prep": false
   },
   "candidates": [
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 271000,
-      "chg": 0.0484,
-      "activity": 2.25,
+      "price": 274000,
+      "chg": 0.06,
+      "activity": 2.23,
       "foreign_today": 0,
-      "inst_today": 1897000000,
+      "inst_today": 1918000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,8 +133,13 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.955,
+      "score": 0.948,
       "news": [
+        {
+          "date": "11-17",
+          "title": "동국제약, 반려동물 위생용품 '캐니메이트' 5종 출시",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시…라인업 강화",
@@ -144,44 +149,14 @@
           "date": "11-17",
           "title": "\"계열사 영업적자에 발목 잡힌 동국제약, 그래도 믿을 건 '폭풍성장' 헬...",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[제약·바이오 브리핑]GC녹십자·동국제약·유한재단",
-          "risk": false
         }
       ],
       "price": 24950,
       "chg": 0.0824,
-      "activity": 2.63,
+      "activity": 2.48,
       "foreign_today": 1272450000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 161700,
-      "ret5": 0.0603,
-      "ret20": 0.0062,
-      "rsi14": 56.2,
-      "vol20": 0.345,
-      "foreign_net": 127103705300,
-      "inst_net": -110127660200,
-      "score": 0.664,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
-          "risk": false
-        }
-      ],
-      "price": 158700,
-      "chg": -0.0179,
-      "activity": 0.83,
-      "foreign_today": 1587000000,
-      "inst_today": 6982800000,
-      "exchange": "KOSPI"
     },
     {
       "code": "089860",
@@ -193,7 +168,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.664,
+      "score": 0.67,
       "news": [
         {
           "date": "11-16",
@@ -206,6 +181,31 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "105560",
+      "name": "KB금융",
+      "close": 161700,
+      "ret5": 0.0603,
+      "ret20": 0.0062,
+      "rsi14": 56.2,
+      "vol20": 0.345,
+      "foreign_net": 127103705300,
+      "inst_net": -110127660200,
+      "score": 0.643,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "지배구조 개선안 후 KB금융 회장 첫 인선 ‘시험대’ 올라",
+          "risk": false
+        }
+      ],
+      "price": 158500,
+      "chg": -0.0192,
+      "activity": 0.8,
+      "foreign_today": 1585000000,
+      "inst_today": 6974000000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "000100",
       "name": "유한양행",
       "close": 81100,
@@ -215,16 +215,16 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.618,
+      "score": 0.609,
       "news": [
         {
           "date": "11-17",
-          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
+          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
+          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
           "risk": false
         },
         {
@@ -238,38 +238,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "323410",
-      "name": "카카오뱅크",
-      "close": 21200,
-      "ret5": 0.0392,
-      "ret20": 0.0367,
-      "rsi14": 65.1,
-      "vol20": 0.263,
-      "foreign_net": 13497471375,
-      "inst_net": -4428726475,
-      "score": 0.582,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "카카오뱅크, 'AI 목표적금' 누적 10만 좌... 출시 한 달 만에 돌파",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크, AI 목표적금 한 달 만에 10만좌 돌파",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크, 법인 신용평가 구축 착수…기업대출 확대 시동",
-          "risk": false
-        }
-      ],
-      "foreign_today": 360400000,
-      "inst_today": 360400000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "316140",
       "name": "우리금융지주",
       "close": 33100,
@@ -279,13 +247,45 @@
       "vol20": 0.34,
       "foreign_net": -2321307850,
       "inst_net": 24381897025,
-      "score": 0.564,
+      "score": 0.583,
       "news": [],
       "price": 32900,
       "chg": -0.003,
-      "activity": 0.77,
+      "activity": 0.76,
       "foreign_today": 0,
       "inst_today": 1414700000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "323410",
+      "name": "카카오뱅크",
+      "close": 21200,
+      "ret5": 0.0392,
+      "ret20": 0.0367,
+      "rsi14": 65.1,
+      "vol20": 0.263,
+      "foreign_net": 13497471375,
+      "inst_net": -4428726475,
+      "score": 0.583,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[게시판] 카카오뱅크, 자립준비청년 금융교육 '모두의 자립' 홈커밍데이",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오뱅크 \"AI 목표적금, 출시 한 달 만에 누적 10만좌\"",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오뱅크, 'AI 목표적금' 누적 10만 좌... 출시 한 달 만에 돌파",
+          "risk": false
+        }
+      ],
+      "foreign_today": 360400000,
+      "inst_today": 360400000,
       "exchange": "KOSPI"
     },
     {
@@ -298,7 +298,7 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.536,
+      "score": 0.539,
       "news": [
         {
           "date": "11-17",
@@ -316,11 +316,11 @@
           "risk": false
         }
       ],
-      "price": 83300,
-      "chg": -0.0072,
-      "activity": 1.43,
+      "price": 83600,
+      "chg": -0.0036,
+      "activity": 1.39,
       "foreign_today": 0,
-      "inst_today": 333200000,
+      "inst_today": 334400000,
       "exchange": "KOSPI"
     },
     {
@@ -333,7 +333,7 @@
       "vol20": 0.937,
       "foreign_net": 980010800,
       "inst_net": 5734256075,
-      "score": 0.518,
+      "score": 0.53,
       "news": [
         {
           "date": "11-16",
@@ -351,11 +351,11 @@
           "risk": false
         }
       ],
-      "price": 31050,
-      "chg": -0.0205,
-      "activity": 1.27,
+      "price": 31250,
+      "chg": -0.0142,
+      "activity": 1.2,
       "foreign_today": 0,
-      "inst_today": 962550000,
+      "inst_today": 968750000,
       "exchange": "KOSDAQ"
     },
     {
@@ -390,8 +390,13 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.373,
+      "score": 0.383,
       "news": [
+        {
+          "date": "11-17",
+          "title": "LG유플러스, '대한민국소통어워즈' 4개 부문 대상 수상",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "LG유플러스, 대한민국소통어워즈 4관왕…종합대상 2년 연속",
@@ -401,15 +406,42 @@
           "date": "11-17",
           "title": "LG유플러스, 대한민국소통어워즈 4관왕…2년 연속 종합대상",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "LG유플러스, 고객 참여형 '소통'으로 상품·서비스 개선…'대한민국소통...",
-          "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 379200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "267270",
+      "name": "HD건설기계",
+      "close": 90700,
+      "ret5": 0.1034,
+      "ret20": -0.0402,
+      "rsi14": 46.6,
+      "vol20": 0.756,
+      "foreign_net": -36757086300,
+      "inst_net": 38171008600,
+      "score": 0.383,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "중남미 영업·AS 결속 다지는 HD건설기계…과테말라·엘살바도르까지 '...",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 362800000,
       "exchange": "KOSPI"
     },
     {
@@ -422,21 +454,11 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.336,
+      "score": 0.33,
       "news": [
         {
           "date": "11-17",
           "title": "KT스카이라이프, ipit TV 조기 안착…가입자·인터넷 '쌍끌이 성장'",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "KT스카이라이프, 건재한가 … 400억대 마케팅비에 영업익 급락",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "KT알파 쇼핑, '방송 AI화'로 혁신...화면 개편·실시간 맞춤 정보 제공",
           "risk": false
         }
       ],
@@ -454,11 +476,21 @@
       "vol20": 0.432,
       "foreign_net": -13470881275,
       "inst_net": -11209452700,
-      "score": 0.309,
+      "score": 0.304,
       "news": [
         {
           "date": "11-17",
-          "title": "카카오엔터 장윤중 공동대표 사임…당분간 고정희 단독 체제",
+          "title": "[분석] 30대 그룹 AI 투자 1조원 돌파…LG 1위, 카카오 2위·LS 3위",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오엔터, 고정희 단독 대표 체제 전환…장윤중 공동대표 내달 말 사...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[게시판] 카카오뱅크, 자립준비청년 금융교육 '모두의 자립' 홈커밍데이",
           "risk": false
         }
       ],
@@ -476,8 +508,13 @@
       "vol20": 0.861,
       "foreign_net": 5910916050,
       "inst_net": 7108227875,
-      "score": 0.3,
+      "score": 0.304,
       "news": [
+        {
+          "date": "11-17",
+          "title": "[현장] \"집이 사람에 맞춰 진화\"…GS건설이 그린 자이의 미래",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "[현장] GS건설, 자이 미래 주거 비전 공개…AI·공간 혁신·기후 대응 기...",
@@ -486,11 +523,6 @@
         {
           "date": "11-17",
           "title": "사람 있는 방의 조명·온도 저절로 바꾼다… GS건설, AI 주택 공개",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "“집이 사람에 맞춰 바뀐다”…GS건설, 미래 주거 전략 공개",
           "risk": false
         }
       ],
@@ -508,7 +540,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.918,
+      "score": 0.922,
       "news": [
         {
           "date": "11-17",
@@ -526,11 +558,11 @@
           "risk": false
         }
       ],
-      "price": 15820,
-      "chg": 0.0762,
-      "activity": 1.72,
-      "foreign_today": 3622780000,
-      "inst_today": 680260000,
+      "price": 16080,
+      "chg": 0.0939,
+      "activity": 1.65,
+      "foreign_today": 3682320000,
+      "inst_today": 691440000,
       "exchange": "KOSDAQ"
     },
     {
@@ -543,7 +575,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.782,
+      "score": 0.774,
       "news": [
         {
           "date": "11-16",
@@ -561,11 +593,11 @@
           "risk": false
         }
       ],
-      "price": 7270,
-      "chg": 0.1133,
-      "activity": 3.54,
-      "foreign_today": 261720000,
-      "inst_today": 109050000,
+      "price": 7320,
+      "chg": 0.121,
+      "activity": 3.3,
+      "foreign_today": 263520000,
+      "inst_today": 109800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -578,7 +610,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.673,
+      "score": 0.696,
       "news": [
         {
           "date": "11-16",
@@ -591,11 +623,30 @@
           "risk": false
         }
       ],
-      "price": 13740,
-      "chg": 0.0481,
+      "price": 13860,
+      "chg": 0.0572,
       "activity": 3.32,
       "foreign_today": 0,
-      "inst_today": 480900000,
+      "inst_today": 485100000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "425420",
+      "name": "티에프이",
+      "close": 80500,
+      "ret5": 0.1908,
+      "ret20": 0.2366,
+      "rsi14": 55.4,
+      "vol20": 1.457,
+      "foreign_net": -2408919750,
+      "inst_net": 6374969300,
+      "score": 0.678,
+      "news": [],
+      "price": 77500,
+      "chg": -0.0617,
+      "activity": 1.81,
+      "foreign_today": 620000000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -608,7 +659,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.627,
+      "score": 0.617,
       "news": [
         {
           "date": "11-16",
@@ -626,30 +677,11 @@
           "risk": false
         }
       ],
-      "price": 55700,
-      "chg": 0.0392,
-      "activity": 1.91,
+      "price": 56100,
+      "chg": 0.0466,
+      "activity": 1.78,
       "foreign_today": 0,
-      "inst_today": 1225400000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "425420",
-      "name": "티에프이",
-      "close": 80500,
-      "ret5": 0.1908,
-      "ret20": 0.2366,
-      "rsi14": 55.4,
-      "vol20": 1.457,
-      "foreign_net": -2408919750,
-      "inst_net": 6374969300,
-      "score": 0.627,
-      "news": [],
-      "price": 76500,
-      "chg": -0.0738,
-      "activity": 1.89,
-      "foreign_today": 612000000,
-      "inst_today": 0,
+      "inst_today": 1234200000,
       "exchange": "KOSDAQ"
     },
     {
