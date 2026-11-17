@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "13:45",
-    "pool": 471,
-    "analyzed_new": 30,
+    "time": "14:00",
+    "pool": 472,
+    "analyzed_new": 16,
     "passed": 21,
     "kept_prep": false
   },
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 265000,
-      "chg": 0.0251,
-      "activity": 1.73,
+      "price": 264500,
+      "chg": 0.0232,
+      "activity": 1.69,
       "foreign_today": 0,
-      "inst_today": 3445000000,
+      "inst_today": 3438500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,27 +133,27 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.949,
+      "score": 0.96,
       "news": [
         {
           "date": "11-17",
+          "title": "[특징주]동국제약, 3분기 화장품 매출 증가 부각에 8.02% 뛰어…센텔리...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "반려동물 위생관리도 세분화…동국제약, 펫케어 신제품 5종 출시",
+          "risk": false
+        },
+        {
+          "date": "11-17",
           "title": "동국제약, 뷰티ㆍ헬스케어 체질개선… '근육질 매출'로 폭풍성장",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "\"화장품은 날았는데 동국생명과학 적자가 발목 잡았다…동국제약 '속 빈...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "동국제약, 반려동물 위생관리 브랜드 '캐니메이트' 신제품 5종 출시",
           "risk": false
         }
       ],
       "price": 25000,
       "chg": 0.0846,
-      "activity": 2.54,
+      "activity": 2.52,
       "foreign_today": 1800000000,
       "inst_today": 450000000,
       "exchange": "KOSDAQ"
@@ -168,7 +168,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.679,
+      "score": 0.691,
       "news": [
         {
           "date": "11-16",
@@ -178,7 +178,7 @@
       ],
       "price": 157300,
       "chg": -0.0266,
-      "activity": 0.66,
+      "activity": 0.64,
       "foreign_today": 2674100000,
       "inst_today": 13842400000,
       "exchange": "KOSPI"
@@ -193,8 +193,13 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.615,
+      "score": 0.624,
       "news": [
+        {
+          "date": "11-17",
+          "title": "카카오뱅크 AI 목표적금, 출시 한 달 만에 10만 좌 돌파",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "\"AI가 저축 습관까지 코칭\"..카카오뱅크 목표적금, 한 달 새 10만명 가입",
@@ -204,15 +209,29 @@
           "date": "11-17",
           "title": "카카오뱅크 AI 목표적금, 한 달 만에 10만 명 가입…1분당 2개꼴 개설",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[초점] 카카오뱅크, 은행권 최초 애플페이 도입…삼성페이 유료화로 번...",
-          "risk": false
         }
       ],
       "foreign_today": 551200000,
       "inst_today": 911600000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 33100,
+      "ret5": 0.0525,
+      "ret20": 0.0525,
+      "rsi14": 59.7,
+      "vol20": 0.34,
+      "foreign_net": -2321307850,
+      "inst_net": 24381897025,
+      "score": 0.617,
+      "news": [],
+      "price": 32650,
+      "chg": -0.0106,
+      "activity": 0.62,
+      "foreign_today": 0,
+      "inst_today": 3460900000,
       "exchange": "KOSPI"
     },
     {
@@ -225,16 +244,16 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.609,
+      "score": 0.617,
       "news": [
         {
           "date": "11-17",
-          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
+          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
+          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
           "risk": false
         },
         {
@@ -248,25 +267,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.596,
-      "news": [],
-      "price": 32650,
-      "chg": -0.0106,
-      "activity": 0.63,
-      "foreign_today": 0,
-      "inst_today": 3460900000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "089860",
       "name": "롯데렌탈",
       "close": 58400,
@@ -276,7 +276,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.596,
+      "score": 0.604,
       "news": [
         {
           "date": "11-16",
@@ -289,41 +289,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 31800,
-      "ret5": 0.1648,
-      "ret20": -0.2244,
-      "rsi14": 49.0,
-      "vol20": 0.937,
-      "foreign_net": 980010800,
-      "inst_net": 5734256075,
-      "score": 0.577,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "서진시스템 주가, 11월 16일 애프터마켓 32,050원 1.10% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "ESS·통신장비 부품 양산 살피는 서진시스템, 3만1850원 거래",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "서진시스템, 매출 1조 돌파…영업익 흑자전환",
-          "risk": false
-        }
-      ],
-      "price": 30950,
-      "chg": -0.0237,
-      "activity": 0.84,
-      "foreign_today": 0,
-      "inst_today": 2104600000,
-      "exchange": "KOSDAQ"
-    },
-    {
       "code": "017670",
       "name": "SK텔레콤",
       "close": 84300,
@@ -333,18 +298,28 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.564,
+      "score": 0.577,
       "news": [
+        {
+          "date": "11-17",
+          "title": "라우프·SK텔레콤, 'SKT 뉴스룸 굿체인지 캠페인'통해 한국 PR대상 조직...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "라우프·SK텔레콤, 공동 진행 'SKT 뉴스룸 굿체인지 캠페인'으로 한국 P...",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "라우프·SK텔레콤, ‘제34회 한국 PR대상’ 조직문화 부문 최우수상 수상",
           "risk": false
         }
       ],
-      "price": 83000,
-      "chg": -0.0107,
-      "activity": 1.18,
-      "foreign_today": 830000000,
+      "price": 83100,
+      "chg": -0.0095,
+      "activity": 1.16,
+      "foreign_today": 831000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -358,7 +333,7 @@
       "vol20": 0.741,
       "foreign_net": -286835500,
       "inst_net": 2846949050,
-      "score": 0.545,
+      "score": 0.557,
       "news": [],
       "foreign_today": 0,
       "inst_today": 1464800000,
@@ -374,12 +349,12 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.506,
+      "score": 0.51,
       "news": [
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕…종합대상 2년 연속 수상",
-          "risk": false
+          "title": "LG유플러스, 5G 속도 과장광고 행정소송 패소 확정",
+          "risk": true
         },
         {
           "date": "11-17",
@@ -388,7 +363,7 @@
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕…고객 아이디어 1만4000건 서비스...",
+          "title": "LG유플러스, 고객 의견 1만4000여 건 모아 서비스 개선…소통어워즈 4관...",
           "risk": false
         }
       ],
@@ -406,7 +381,7 @@
       "vol20": 0.507,
       "foreign_net": -18008472900,
       "inst_net": 22704871250,
-      "score": 0.474,
+      "score": 0.49,
       "news": [],
       "foreign_today": 1139400000,
       "inst_today": 0,
@@ -422,21 +397,16 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.468,
+      "score": 0.483,
       "news": [
         {
           "date": "11-17",
-          "title": "우승 축제면 더 좋았을 텐데…KT 위즈, 준우승 아쉬움 뒤로하고 팬 페스...",
+          "title": "[단독]SKT, 내달 선보일 '모두의 AI' 서비스 명칭 '에이닷올' 검토",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "최지만, KT 우승 마지막 퍼즐 될 수 있나?...메이저리그 67홈런의 장타력...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "\"AI 효율화 외치며 안전은 뒷전\"⋯KT그룹, 혹한기 현장 관리 도마 위",
+          "title": "프로야구 KT, 21일 팬 페스티벌로 2026시즌 피날레",
           "risk": false
         }
       ],
@@ -454,7 +424,7 @@
       "vol20": 0.756,
       "foreign_net": -36757086300,
       "inst_net": 38171008600,
-      "score": 0.442,
+      "score": 0.456,
       "news": [
         {
           "date": "11-17",
@@ -463,12 +433,12 @@
         },
         {
           "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
           "risk": false
         },
         {
           "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
           "risk": false
         }
       ],
@@ -486,7 +456,7 @@
       "vol20": 0.496,
       "foreign_net": -7996328400,
       "inst_net": 9174280200,
-      "score": 0.436,
+      "score": 0.45,
       "news": [
         {
           "date": "11-17",
@@ -509,6 +479,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 53100,
+      "ret5": -0.0861,
+      "ret20": 0.1658,
+      "rsi14": 56.8,
+      "vol20": 0.679,
+      "foreign_net": 13204400250,
+      "inst_net": -7896166600,
+      "score": 0.43,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "두나무·한미사이언스·고려아연 등, 본업 살린 나눔 활동 이어가",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "한미사이언스, 청각장애인 바리스타 전국대회 후원...직무 역량 확대 지...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "﻿[제약뷰티]﻿한미사이언스, 청각장애인 바리스타 '완전두유 창의상' ...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 212400000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "328130",
       "name": "루닛",
       "close": 14700,
@@ -518,7 +520,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.891,
+      "score": 0.899,
       "news": [
         {
           "date": "11-17",
@@ -536,11 +538,11 @@
           "risk": false
         }
       ],
-      "price": 15820,
-      "chg": 0.0762,
-      "activity": 1.16,
-      "foreign_today": 4397960000,
-      "inst_today": 1676920000,
+      "price": 15850,
+      "chg": 0.0782,
+      "activity": 1.12,
+      "foreign_today": 4406300000,
+      "inst_today": 1680100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -553,7 +555,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.827,
+      "score": 0.846,
       "news": [
         {
           "date": "11-16",
@@ -566,11 +568,11 @@
           "risk": false
         }
       ],
-      "price": 13900,
-      "chg": 0.0603,
-      "activity": 2.85,
+      "price": 14080,
+      "chg": 0.074,
+      "activity": 2.82,
       "foreign_today": 0,
-      "inst_today": 2446400000,
+      "inst_today": 2478080000,
       "exchange": "KOSDAQ"
     },
     {
@@ -583,7 +585,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.776,
+      "score": 0.792,
       "news": [
         {
           "date": "11-16",
@@ -601,11 +603,11 @@
           "risk": false
         }
       ],
-      "price": 7450,
-      "chg": 0.1409,
-      "activity": 2.26,
-      "foreign_today": 461900000,
-      "inst_today": 201150000,
+      "price": 7500,
+      "chg": 0.1485,
+      "activity": 2.19,
+      "foreign_today": 465000000,
+      "inst_today": 202500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -618,13 +620,13 @@
       "vol20": 1.173,
       "foreign_net": -1955910400,
       "inst_net": 15374232200,
-      "score": 0.673,
+      "score": 0.678,
       "news": [],
-      "price": 66100,
-      "chg": -0.006,
-      "activity": 0.79,
+      "price": 65900,
+      "chg": -0.009,
+      "activity": 0.78,
       "foreign_today": 0,
-      "inst_today": 925400000,
+      "inst_today": 922600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -637,7 +639,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.622,
+      "score": 0.617,
       "news": [
         {
           "date": "11-16",
@@ -655,11 +657,11 @@
           "risk": false
         }
       ],
-      "price": 55700,
-      "chg": 0.0392,
-      "activity": 1.19,
+      "price": 56000,
+      "chg": 0.0448,
+      "activity": 1.16,
       "foreign_today": 0,
-      "inst_today": 1726700000,
+      "inst_today": 1736000000,
       "exchange": "KOSDAQ"
     },
     {
