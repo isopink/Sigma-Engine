@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "11:45",
-    "pool": 435,
+    "time": "12:00",
+    "pool": 436,
     "analyzed_new": 30,
     "passed": 21,
     "kept_prep": false
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 274000,
-      "chg": 0.06,
-      "activity": 2.23,
+      "price": 272250,
+      "chg": 0.0532,
+      "activity": 2.21,
       "foreign_today": 0,
-      "inst_today": 1918000000,
+      "inst_today": 1905750000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,8 +133,13 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.948,
+      "score": 0.917,
       "news": [
+        {
+          "date": "11-17",
+          "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "동국제약, 반려동물 위생용품 '캐니메이트' 5종 출시",
@@ -144,17 +149,12 @@
           "date": "11-17",
           "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시…라인업 강화",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "\"계열사 영업적자에 발목 잡힌 동국제약, 그래도 믿을 건 '폭풍성장' 헬...",
-          "risk": false
         }
       ],
-      "price": 24950,
-      "chg": 0.0824,
-      "activity": 2.48,
-      "foreign_today": 1272450000,
+      "price": 24800,
+      "chg": 0.0759,
+      "activity": 2.33,
+      "foreign_today": 1264800000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -168,7 +168,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.67,
+      "score": 0.667,
       "news": [
         {
           "date": "11-16",
@@ -190,7 +190,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.643,
+      "score": 0.642,
       "news": [
         {
           "date": "11-16",
@@ -198,11 +198,11 @@
           "risk": false
         }
       ],
-      "price": 158500,
-      "chg": -0.0192,
-      "activity": 0.8,
-      "foreign_today": 1585000000,
-      "inst_today": 6974000000,
+      "price": 157400,
+      "chg": -0.026,
+      "activity": 0.77,
+      "foreign_today": 1574000000,
+      "inst_today": 6925600000,
       "exchange": "KOSPI"
     },
     {
@@ -215,7 +215,7 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.609,
+      "score": 0.6,
       "news": [
         {
           "date": "11-17",
@@ -238,25 +238,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.583,
-      "news": [],
-      "price": 32900,
-      "chg": -0.003,
-      "activity": 0.76,
-      "foreign_today": 0,
-      "inst_today": 1414700000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "323410",
       "name": "카카오뱅크",
       "close": 21200,
@@ -266,7 +247,7 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.583,
+      "score": 0.592,
       "news": [
         {
           "date": "11-17",
@@ -289,38 +270,22 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "017670",
-      "name": "SK텔레콤",
-      "close": 84300,
-      "ret5": 0.0934,
-      "ret20": 0.0684,
-      "rsi14": 57.9,
-      "vol20": 0.482,
-      "foreign_net": 22505939550,
-      "inst_net": 36013259700,
-      "score": 0.539,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "라우프·SK텔레콤, ‘제34회 한국 PR대상’ 조직문화 부문 최우수상 수상",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "통신사에서 'AI 인프라 설계자'로…SK텔레콤, 15GW 데이터센터에 승부수",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[위클리오늘] 이동통신 소식_SK텔레콤, LG유플러스(11.17)",
-          "risk": false
-        }
-      ],
-      "price": 83600,
-      "chg": -0.0036,
-      "activity": 1.39,
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 33100,
+      "ret5": 0.0525,
+      "ret20": 0.0525,
+      "rsi14": 59.7,
+      "vol20": 0.34,
+      "foreign_net": -2321307850,
+      "inst_net": 24381897025,
+      "score": 0.55,
+      "news": [],
+      "price": 32650,
+      "chg": -0.0106,
+      "activity": 0.74,
       "foreign_today": 0,
-      "inst_today": 334400000,
+      "inst_today": 1403950000,
       "exchange": "KOSPI"
     },
     {
@@ -333,7 +298,7 @@
       "vol20": 0.937,
       "foreign_net": 980010800,
       "inst_net": 5734256075,
-      "score": 0.53,
+      "score": 0.55,
       "news": [
         {
           "date": "11-16",
@@ -351,12 +316,42 @@
           "risk": false
         }
       ],
-      "price": 31250,
-      "chg": -0.0142,
-      "activity": 1.2,
+      "price": 31300,
+      "chg": -0.0126,
+      "activity": 1.12,
       "foreign_today": 0,
-      "inst_today": 968750000,
+      "inst_today": 970300000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "017670",
+      "name": "SK텔레콤",
+      "close": 84300,
+      "ret5": 0.0934,
+      "ret20": 0.0684,
+      "rsi14": 57.9,
+      "vol20": 0.482,
+      "foreign_net": 22505939550,
+      "inst_net": 36013259700,
+      "score": 0.533,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "라우프·SK텔레콤, ‘제34회 한국 PR대상’ 조직문화 부문 최우수상 수상",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "통신사에서 'AI 인프라 설계자'로…SK텔레콤, 15GW 데이터센터에 승부수",
+          "risk": false
+        }
+      ],
+      "price": 83500,
+      "chg": -0.0048,
+      "activity": 1.34,
+      "foreign_today": 0,
+      "inst_today": 334000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "004020",
@@ -368,7 +363,7 @@
       "vol20": 0.57,
       "foreign_net": 3150326550,
       "inst_net": -87228175,
-      "score": 0.409,
+      "score": 0.425,
       "news": [
         {
           "date": "11-17",
@@ -390,16 +385,16 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.383,
+      "score": 0.4,
       "news": [
         {
           "date": "11-17",
-          "title": "LG유플러스, '대한민국소통어워즈' 4개 부문 대상 수상",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕…종합대상 2년 연속",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕…종합대상 2년 연속",
+          "title": "LG유플러스, '대한민국소통어워즈' 4개 부문 대상 수상",
           "risk": false
         },
         {
@@ -422,7 +417,7 @@
       "vol20": 0.756,
       "foreign_net": -36757086300,
       "inst_net": 38171008600,
-      "score": 0.383,
+      "score": 0.4,
       "news": [
         {
           "date": "11-17",
@@ -431,17 +426,49 @@
         },
         {
           "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
           "risk": false
         },
         {
           "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
           "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 362800000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 53100,
+      "ret5": -0.0861,
+      "ret20": 0.1658,
+      "rsi14": 56.8,
+      "vol20": 0.679,
+      "foreign_net": 13204400250,
+      "inst_net": -7896166600,
+      "score": 0.4,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "두나무·한미사이언스·고려아연 등, 본업 살린 나눔 활동 이어가",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "한미사이언스, 청각장애인 바리스타 전국대회 후원...직무 역량 확대 지...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "﻿[제약뷰티]﻿한미사이언스, 청각장애인 바리스타 '완전두유 창의상' ...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 106200000,
       "exchange": "KOSPI"
     },
     {
@@ -454,11 +481,11 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.33,
+      "score": 0.35,
       "news": [
         {
           "date": "11-17",
-          "title": "KT스카이라이프, ipit TV 조기 안착…가입자·인터넷 '쌍끌이 성장'",
+          "title": "\"박윤영 KT, AI로 비용절감 몰두…현장 노동자 안전은 뒷전\"",
           "risk": false
         }
       ],
@@ -476,7 +503,7 @@
       "vol20": 0.432,
       "foreign_net": -13470881275,
       "inst_net": -11209452700,
-      "score": 0.304,
+      "score": 0.308,
       "news": [
         {
           "date": "11-17",
@@ -499,38 +526,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 31250,
-      "ret5": 0.0399,
-      "ret20": 0.0684,
-      "rsi14": 53.1,
-      "vol20": 0.861,
-      "foreign_net": 5910916050,
-      "inst_net": 7108227875,
-      "score": 0.304,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[현장] \"집이 사람에 맞춰 진화\"…GS건설이 그린 자이의 미래",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[현장] GS건설, 자이 미래 주거 비전 공개…AI·공간 혁신·기후 대응 기...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "사람 있는 방의 조명·온도 저절로 바꾼다… GS건설, AI 주택 공개",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 62500000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "328130",
       "name": "루닛",
       "close": 14700,
@@ -540,7 +535,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.922,
+      "score": 0.917,
       "news": [
         {
           "date": "11-17",
@@ -558,11 +553,11 @@
           "risk": false
         }
       ],
-      "price": 16080,
-      "chg": 0.0939,
-      "activity": 1.65,
-      "foreign_today": 3682320000,
-      "inst_today": 691440000,
+      "price": 15960,
+      "chg": 0.0857,
+      "activity": 1.61,
+      "foreign_today": 3654840000,
+      "inst_today": 686280000,
       "exchange": "KOSDAQ"
     },
     {
@@ -575,7 +570,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.774,
+      "score": 0.783,
       "news": [
         {
           "date": "11-16",
@@ -593,41 +588,11 @@
           "risk": false
         }
       ],
-      "price": 7320,
-      "chg": 0.121,
-      "activity": 3.3,
-      "foreign_today": 263520000,
-      "inst_today": 109800000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 12970,
-      "ret5": 0.3303,
-      "ret20": -0.1061,
-      "rsi14": 51.8,
-      "vol20": 1.402,
-      "foreign_net": -13014820770,
-      "inst_net": 20382754405,
-      "score": 0.696,
-      "news": [
-        {
-          "date": "11-16",
-          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
-          "risk": false
-        }
-      ],
-      "price": 13860,
-      "chg": 0.0572,
-      "activity": 3.32,
-      "foreign_today": 0,
-      "inst_today": 485100000,
+      "price": 7350,
+      "chg": 0.1256,
+      "activity": 3.12,
+      "foreign_today": 264600000,
+      "inst_today": 110250000,
       "exchange": "KOSDAQ"
     },
     {
@@ -640,13 +605,43 @@
       "vol20": 1.457,
       "foreign_net": -2408919750,
       "inst_net": 6374969300,
-      "score": 0.678,
+      "score": 0.708,
       "news": [],
-      "price": 77500,
-      "chg": -0.0617,
-      "activity": 1.81,
-      "foreign_today": 620000000,
+      "price": 77800,
+      "chg": -0.0581,
+      "activity": 1.75,
+      "foreign_today": 622400000,
       "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "232140",
+      "name": "와이씨",
+      "close": 12970,
+      "ret5": 0.3303,
+      "ret20": -0.1061,
+      "rsi14": 51.8,
+      "vol20": 1.402,
+      "foreign_net": -13014820770,
+      "inst_net": 20382754405,
+      "score": 0.7,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "[코스닥 기관] RFHIC·와이씨·삼현 폭풍매수...주성엔지니어링은 대량 ...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "[특징주] 외국인, 삼성전자 매매 방향 전환...기관, 삼성전자·와이씨·...",
+          "risk": false
+        }
+      ],
+      "price": 13880,
+      "chg": 0.0587,
+      "activity": 3.16,
+      "foreign_today": 0,
+      "inst_today": 485800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -659,7 +654,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.617,
+      "score": 0.625,
       "news": [
         {
           "date": "11-16",
@@ -677,11 +672,11 @@
           "risk": false
         }
       ],
-      "price": 56100,
-      "chg": 0.0466,
-      "activity": 1.78,
+      "price": 56300,
+      "chg": 0.0504,
+      "activity": 1.67,
       "foreign_today": 0,
-      "inst_today": 1234200000,
+      "inst_today": 1238600000,
       "exchange": "KOSDAQ"
     },
     {
