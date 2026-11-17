@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "13:30",
-    "pool": 470,
+    "time": "13:45",
+    "pool": 471,
     "analyzed_new": 30,
     "passed": 21,
     "kept_prep": false
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 266000,
-      "chg": 0.029,
-      "activity": 1.77,
+      "price": 265000,
+      "chg": 0.0251,
+      "activity": 1.73,
       "foreign_today": 0,
-      "inst_today": 3458000000,
+      "inst_today": 3445000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.934,
+      "score": 0.949,
       "news": [
         {
           "date": "11-17",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 24900,
-      "chg": 0.0803,
-      "activity": 2.57,
-      "foreign_today": 1792800000,
-      "inst_today": 448200000,
+      "price": 25000,
+      "chg": 0.0846,
+      "activity": 2.54,
+      "foreign_today": 1800000000,
+      "inst_today": 450000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.671,
+      "score": 0.679,
       "news": [
         {
           "date": "11-16",
@@ -178,7 +178,7 @@
       ],
       "price": 157300,
       "chg": -0.0266,
-      "activity": 0.67,
+      "activity": 0.66,
       "foreign_today": 2674100000,
       "inst_today": 13842400000,
       "exchange": "KOSPI"
@@ -193,21 +193,21 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.605,
+      "score": 0.615,
       "news": [
         {
           "date": "11-17",
+          "title": "\"AI가 저축 습관까지 코칭\"..카카오뱅크 목표적금, 한 달 새 10만명 가입",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "카카오뱅크 AI 목표적금, 한 달 만에 10만 명 가입…1분당 2개꼴 개설",
+          "risk": false
+        },
+        {
+          "date": "11-17",
           "title": "[초점] 카카오뱅크, 은행권 최초 애플페이 도입…삼성페이 유료화로 번...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "예금 늘고 대출 주춤한 카카오뱅크, 단기자금 비중 25%로 확대",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "AI가 저축 독려…카카오뱅크 적금 10만좌 돌파",
           "risk": false
         }
       ],
@@ -225,16 +225,16 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.599,
+      "score": 0.609,
       "news": [
         {
           "date": "11-17",
-          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
+          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "유한양행, ESG 연구 지원 지속…제4회 학술상 수상작 선정",
+          "title": "\"잇몸 건강까지 챙기는 유산균\" 유한양행 신제품 출시",
           "risk": false
         },
         {
@@ -257,13 +257,13 @@
       "vol20": 0.34,
       "foreign_net": -2321307850,
       "inst_net": 24381897025,
-      "score": 0.592,
+      "score": 0.596,
       "news": [],
-      "price": 32700,
-      "chg": -0.0091,
-      "activity": 0.64,
+      "price": 32650,
+      "chg": -0.0106,
+      "activity": 0.63,
       "foreign_today": 0,
-      "inst_today": 3466200000,
+      "inst_today": 3460900000,
       "exchange": "KOSPI"
     },
     {
@@ -276,7 +276,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.586,
+      "score": 0.596,
       "news": [
         {
           "date": "11-16",
@@ -298,7 +298,7 @@
       "vol20": 0.937,
       "foreign_net": 980010800,
       "inst_net": 5734256075,
-      "score": 0.572,
+      "score": 0.577,
       "news": [
         {
           "date": "11-16",
@@ -316,28 +316,12 @@
           "risk": false
         }
       ],
-      "price": 31000,
-      "chg": -0.0221,
-      "activity": 0.87,
+      "price": 30950,
+      "chg": -0.0237,
+      "activity": 0.84,
       "foreign_today": 0,
-      "inst_today": 2108000000,
+      "inst_today": 2104600000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 183100,
-      "ret5": 0.1523,
-      "ret20": -0.1322,
-      "rsi14": 49.1,
-      "vol20": 0.741,
-      "foreign_net": -286835500,
-      "inst_net": 2846949050,
-      "score": 0.539,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 1464800000,
-      "exchange": "KOSPI"
     },
     {
       "code": "017670",
@@ -349,7 +333,7 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.52,
+      "score": 0.564,
       "news": [
         {
           "date": "11-17",
@@ -357,11 +341,27 @@
           "risk": false
         }
       ],
-      "price": 82700,
-      "chg": -0.0143,
-      "activity": 1.19,
-      "foreign_today": 827000000,
+      "price": 83000,
+      "chg": -0.0107,
+      "activity": 1.18,
+      "foreign_today": 830000000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 183100,
+      "ret5": 0.1523,
+      "ret20": -0.1322,
+      "rsi14": 49.1,
+      "vol20": 0.741,
+      "foreign_net": -286835500,
+      "inst_net": 2846949050,
+      "score": 0.545,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 1464800000,
       "exchange": "KOSPI"
     },
     {
@@ -374,7 +374,7 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.487,
+      "score": 0.506,
       "news": [
         {
           "date": "11-17",
@@ -397,6 +397,22 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "close": 63300,
+      "ret5": 0.036,
+      "ret20": -0.0031,
+      "rsi14": 57.9,
+      "vol20": 0.507,
+      "foreign_net": -18008472900,
+      "inst_net": 22704871250,
+      "score": 0.474,
+      "news": [],
+      "foreign_today": 1139400000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "030200",
       "name": "KT",
       "close": 51600,
@@ -406,7 +422,7 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.454,
+      "score": 0.468,
       "news": [
         {
           "date": "11-17",
@@ -429,22 +445,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "161390",
-      "name": "한국타이어앤테크놀로지",
-      "close": 63300,
-      "ret5": 0.036,
-      "ret20": -0.0031,
-      "rsi14": 57.9,
-      "vol20": 0.507,
-      "foreign_net": -18008472900,
-      "inst_net": 22704871250,
-      "score": 0.454,
-      "news": [],
-      "foreign_today": 1139400000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "267270",
       "name": "HD건설기계",
       "close": 90700,
@@ -454,7 +454,7 @@
       "vol20": 0.756,
       "foreign_net": -36757086300,
       "inst_net": 38171008600,
-      "score": 0.428,
+      "score": 0.442,
       "news": [
         {
           "date": "11-17",
@@ -463,12 +463,12 @@
         },
         {
           "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
           "risk": false
         },
         {
           "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
           "risk": false
         }
       ],
@@ -486,7 +486,7 @@
       "vol20": 0.496,
       "foreign_net": -7996328400,
       "inst_net": 9174280200,
-      "score": 0.421,
+      "score": 0.436,
       "news": [
         {
           "date": "11-17",
@@ -518,7 +518,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.895,
+      "score": 0.891,
       "news": [
         {
           "date": "11-17",
@@ -536,11 +536,11 @@
           "risk": false
         }
       ],
-      "price": 15750,
-      "chg": 0.0714,
-      "activity": 1.2,
-      "foreign_today": 4378500000,
-      "inst_today": 1669500000,
+      "price": 15820,
+      "chg": 0.0762,
+      "activity": 1.16,
+      "foreign_today": 4397960000,
+      "inst_today": 1676920000,
       "exchange": "KOSDAQ"
     },
     {
@@ -553,7 +553,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.836,
+      "score": 0.827,
       "news": [
         {
           "date": "11-16",
@@ -566,11 +566,11 @@
           "risk": false
         }
       ],
-      "price": 14060,
-      "chg": 0.0725,
-      "activity": 2.93,
+      "price": 13900,
+      "chg": 0.0603,
+      "activity": 2.85,
       "foreign_today": 0,
-      "inst_today": 2474560000,
+      "inst_today": 2446400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -583,7 +583,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.789,
+      "score": 0.776,
       "news": [
         {
           "date": "11-16",
@@ -601,11 +601,11 @@
           "risk": false
         }
       ],
-      "price": 7480,
-      "chg": 0.1455,
-      "activity": 2.37,
-      "foreign_today": 463760000,
-      "inst_today": 201960000,
+      "price": 7450,
+      "chg": 0.1409,
+      "activity": 2.26,
+      "foreign_today": 461900000,
+      "inst_today": 201150000,
       "exchange": "KOSDAQ"
     },
     {
@@ -618,13 +618,13 @@
       "vol20": 1.173,
       "foreign_net": -1955910400,
       "inst_net": 15374232200,
-      "score": 0.664,
+      "score": 0.673,
       "news": [],
-      "price": 66200,
-      "chg": -0.0045,
-      "activity": 0.81,
+      "price": 66100,
+      "chg": -0.006,
+      "activity": 0.79,
       "foreign_today": 0,
-      "inst_today": 926800000,
+      "inst_today": 925400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -637,7 +637,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.592,
+      "score": 0.622,
       "news": [
         {
           "date": "11-16",
@@ -655,11 +655,11 @@
           "risk": false
         }
       ],
-      "price": 55600,
-      "chg": 0.0373,
-      "activity": 1.24,
+      "price": 55700,
+      "chg": 0.0392,
+      "activity": 1.19,
       "foreign_today": 0,
-      "inst_today": 1723600000,
+      "inst_today": 1726700000,
       "exchange": "KOSDAQ"
     },
     {
