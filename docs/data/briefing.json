@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "12:45",
-    "pool": 436,
-    "analyzed_new": 30,
+    "time": "13:00",
+    "pool": 434,
+    "analyzed_new": 9,
     "passed": 21,
     "kept_prep": false
   },
@@ -118,7 +118,7 @@
       ],
       "price": 269500,
       "chg": 0.0426,
-      "activity": 1.95,
+      "activity": 1.88,
       "foreign_today": 0,
       "inst_today": 1886500000,
       "exchange": "KOSDAQ"
@@ -133,8 +133,13 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.962,
+      "score": 0.964,
       "news": [
+        {
+          "date": "11-17",
+          "title": "동국제약, 뷰티ㆍ헬스케어 체질개선… '근육질 매출'로 폭풍성장",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "\"화장품은 날았는데 동국생명과학 적자가 발목 잡았다…동국제약 '속 빈...",
@@ -144,16 +149,11 @@
           "date": "11-17",
           "title": "동국제약, 반려동물 위생관리 브랜드 '캐니메이트' 신제품 5종 출시",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[민주 약국] 휴온스·동국제약·유한재단",
-          "risk": false
         }
       ],
       "price": 25200,
       "chg": 0.0933,
-      "activity": 2.3,
+      "activity": 2.29,
       "foreign_today": 1285200000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
@@ -168,7 +168,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.692,
+      "score": 0.688,
       "news": [
         {
           "date": "11-16",
@@ -190,7 +190,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.677,
+      "score": 0.681,
       "news": [
         {
           "date": "11-16",
@@ -198,11 +198,11 @@
           "risk": false
         }
       ],
-      "price": 157600,
-      "chg": -0.0248,
-      "activity": 0.71,
-      "foreign_today": 1576000000,
-      "inst_today": 6934400000,
+      "price": 157300,
+      "chg": -0.0266,
+      "activity": 0.69,
+      "foreign_today": 1573000000,
+      "inst_today": 6921200000,
       "exchange": "KOSPI"
     },
     {
@@ -215,7 +215,7 @@
       "vol20": 0.263,
       "foreign_net": 13497471375,
       "inst_net": -4428726475,
-      "score": 0.617,
+      "score": 0.623,
       "news": [
         {
           "date": "11-17",
@@ -247,7 +247,7 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.617,
+      "score": 0.623,
       "news": [
         {
           "date": "11-17",
@@ -279,11 +279,11 @@
       "vol20": 0.34,
       "foreign_net": -2321307850,
       "inst_net": 24381897025,
-      "score": 0.594,
+      "score": 0.609,
       "news": [],
       "price": 32650,
       "chg": -0.0106,
-      "activity": 0.67,
+      "activity": 0.65,
       "foreign_today": 0,
       "inst_today": 1403950000,
       "exchange": "KOSPI"
@@ -316,11 +316,11 @@
           "risk": false
         }
       ],
-      "price": 31300,
-      "chg": -0.0126,
-      "activity": 0.96,
+      "price": 31000,
+      "chg": -0.0221,
+      "activity": 0.92,
       "foreign_today": 0,
-      "inst_today": 970300000,
+      "inst_today": 961000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -333,7 +333,7 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.564,
+      "score": 0.572,
       "news": [
         {
           "date": "11-17",
@@ -341,11 +341,11 @@
           "risk": false
         }
       ],
-      "price": 83200,
-      "chg": -0.0083,
-      "activity": 1.23,
+      "price": 82900,
+      "chg": -0.0119,
+      "activity": 1.21,
       "foreign_today": 0,
-      "inst_today": 332800000,
+      "inst_today": 331600000,
       "exchange": "KOSPI"
     },
     {
@@ -358,16 +358,16 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.444,
+      "score": 0.457,
       "news": [
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕 수상",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕…고객 아이디어 1만4000건 서비스...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕…고객 아이디어 1만4000건 서비스...",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕 수상",
           "risk": false
         },
         {
@@ -390,7 +390,7 @@
       "vol20": 0.57,
       "foreign_net": 3150326550,
       "inst_net": -87228175,
-      "score": 0.436,
+      "score": 0.449,
       "news": [
         {
           "date": "11-17",
@@ -403,38 +403,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "267270",
-      "name": "HD건설기계",
-      "close": 90700,
-      "ret5": 0.1034,
-      "ret20": -0.0402,
-      "rsi14": 46.6,
-      "vol20": 0.756,
-      "foreign_net": -36757086300,
-      "inst_net": 38171008600,
-      "score": 0.436,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "중남미 영업·AS 결속 다지는 HD건설기계…과테말라·엘살바도르까지 '...",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 362800000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "008930",
       "name": "한미사이언스",
       "close": 53100,
@@ -444,7 +412,7 @@
       "vol20": 0.679,
       "foreign_net": 13204400250,
       "inst_net": -7896166600,
-      "score": 0.436,
+      "score": 0.449,
       "news": [
         {
           "date": "11-17",
@@ -467,6 +435,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "267270",
+      "name": "HD건설기계",
+      "close": 90700,
+      "ret5": 0.1034,
+      "ret20": -0.0402,
+      "rsi14": 46.6,
+      "vol20": 0.756,
+      "foreign_net": -36757086300,
+      "inst_net": 38171008600,
+      "score": 0.442,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "중남미 영업·AS 결속 다지는 HD건설기계…과테말라·엘살바도르까지 '...",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 362800000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "161390",
       "name": "한국타이어앤테크놀로지",
       "close": 63300,
@@ -476,7 +476,7 @@
       "vol20": 0.507,
       "foreign_net": -18008472900,
       "inst_net": 22704871250,
-      "score": 0.406,
+      "score": 0.42,
       "news": [],
       "foreign_today": 316500000,
       "inst_today": 0,
@@ -492,8 +492,13 @@
       "vol20": 0.366,
       "foreign_net": 17981368100,
       "inst_net": -15665157450,
-      "score": 0.383,
+      "score": 0.399,
       "news": [
+        {
+          "date": "11-17",
+          "title": "\"AI 효율화 외치며 안전은 뒷전\"⋯KT그룹, 혹한기 현장 관리 도마 위",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "\"박윤영 KT, AI로 비용절감 몰두…현장 노동자 안전은 뒷전\"",
@@ -514,7 +519,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.94,
+      "score": 0.942,
       "news": [
         {
           "date": "11-17",
@@ -532,11 +537,11 @@
           "risk": false
         }
       ],
-      "price": 15830,
-      "chg": 0.0769,
-      "activity": 1.35,
-      "foreign_today": 3625070000,
-      "inst_today": 680690000,
+      "price": 15780,
+      "chg": 0.0735,
+      "activity": 1.29,
+      "foreign_today": 3613620000,
+      "inst_today": 678540000,
       "exchange": "KOSDAQ"
     },
     {
@@ -549,7 +554,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.827,
+      "score": 0.826,
       "news": [
         {
           "date": "11-16",
@@ -567,11 +572,11 @@
           "risk": false
         }
       ],
-      "price": 7450,
-      "chg": 0.1409,
-      "activity": 2.69,
-      "foreign_today": 268200000,
-      "inst_today": 111750000,
+      "price": 7440,
+      "chg": 0.1394,
+      "activity": 2.55,
+      "foreign_today": 267840000,
+      "inst_today": 111600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -584,12 +589,12 @@
       "vol20": 1.457,
       "foreign_net": -2408919750,
       "inst_net": 6374969300,
-      "score": 0.789,
+      "score": 0.746,
       "news": [],
-      "price": 79100,
-      "chg": -0.0424,
-      "activity": 1.61,
-      "foreign_today": 632800000,
+      "price": 78000,
+      "chg": -0.0557,
+      "activity": 1.54,
+      "foreign_today": 624000000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -603,7 +608,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.737,
+      "score": 0.739,
       "news": [
         {
           "date": "11-16",
@@ -616,11 +621,11 @@
           "risk": false
         }
       ],
-      "price": 13990,
-      "chg": 0.0671,
-      "activity": 3.11,
+      "price": 13970,
+      "chg": 0.0656,
+      "activity": 3.04,
       "foreign_today": 0,
-      "inst_today": 489650000,
+      "inst_today": 488950000,
       "exchange": "KOSDAQ"
     },
     {
@@ -633,7 +638,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.654,
+      "score": 0.659,
       "news": [
         {
           "date": "11-16",
@@ -651,11 +656,11 @@
           "risk": false
         }
       ],
-      "price": 56200,
-      "chg": 0.0485,
-      "activity": 1.41,
+      "price": 55700,
+      "chg": 0.0392,
+      "activity": 1.34,
       "foreign_today": 0,
-      "inst_today": 1236400000,
+      "inst_today": 1225400000,
       "exchange": "KOSDAQ"
     },
     {
