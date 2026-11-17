@@ -84,6 +84,19 @@ def get_token(env):
     return res["token"]
 
 
+def token_bad(x):
+    """11-18: 키움이 '8005 Token이 유효하지 않습니다' 를 주면 (만료 전이라도 서버가 무효로 함) 캐시를 버리고 새로 받아야 함."""
+    msg = str((x or {}).get("return_msg", "") if isinstance(x, dict) else x)
+    return "8005" in msg or "Token이 유효하지" in msg
+
+
+def drop_token():
+    try:
+        os.remove(TOKEN_CACHE)
+    except OSError:
+        pass
+
+
 def num(s, as_float=False):
     """'+000000012345' / '-0000012' / '7.03' / '' → 숫자"""
     s = str(s or "").replace(",", "").strip()
@@ -97,12 +110,20 @@ def get_balance(env, token):
     url = env["KIWOOM_BASE"] + "/api/dostk/acnt"
     body = {"qry_tp": "1", "dmst_stex_tp": "KRX"}
     head, items, cont, key = None, [], "N", ""
-    for _ in range(10):
+    renewed = False
+    for _ in range(11):
         h = {"api-id": "kt00018", "authorization": "Bearer " + token}
         if cont == "Y":
             h.update({"cont-yn": "Y", "next-key": key})
         res, rh = post_json(url, body, h)
         if res.get("return_code", 0) not in (0, "0"):
+            if token_bad(res) and not renewed:   # 11-18 토큰 무효 → 한 번만 새로 받아 다시
+                print("  토큰이 무효라 새로 받음")
+                drop_token()
+                time.sleep(1.1)
+                token, renewed = get_token(env), True
+                time.sleep(1.1)
+                continue
             raise RuntimeError(f"잔고 조회 실패: {res.get('return_msg')}")
         head = head or res
         items += res.get("acnt_evlt_remn_indv_tot") or []

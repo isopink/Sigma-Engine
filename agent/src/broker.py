@@ -136,6 +136,13 @@ class KiwoomBroker:
             time.sleep(2)
             self._last = time.time()
             res, _ = self.S.post_json(self.base + path, body, hdr)
+        if res.get("return_code", 0) not in (0, "0") and self.S.token_bad(res):   # 11-18 토큰 무효 → 새로 받아 한 번만 다시
+            self.S.drop_token()
+            time.sleep(1.1)
+            hdr["authorization"] = "Bearer " + self.S.get_token(self.env)
+            time.sleep(1.1)
+            self._last = time.time()
+            res, _ = self.S.post_json(self.base + path, body, hdr)
         if res.get("return_code", 0) not in (0, "0"):
             raise RuntimeError(f"{api_id} 실패: {res.get('return_msg')}")
         return res
