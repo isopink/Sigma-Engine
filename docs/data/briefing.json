@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "12:00",
+    "time": "12:15",
     "pool": 436,
     "analyzed_new": 30,
     "passed": 21,
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-17",
+          "title": "파마리서치 매출 증가분 68% 화장품 몫…달라진 성장 공식",
+          "risk": false
+        },
+        {
+          "date": "11-17",
           "title": "파마리서치, 임직원 대상 학술교육 확대",
           "risk": false
         },
@@ -109,18 +114,13 @@
           "date": "11-17",
           "title": "파마리서치, 임직원 전문성 향상 위한 사내 교육 프로그램 실시",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "파마리서치, 임직원 학술교육 강화…의료진 초청 세미나",
-          "risk": false
         }
       ],
-      "price": 272250,
-      "chg": 0.0532,
-      "activity": 2.21,
+      "price": 271000,
+      "chg": 0.0484,
+      "activity": 2.12,
       "foreign_today": 0,
-      "inst_today": 1905750000,
+      "inst_today": 1897000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -133,8 +133,13 @@
       "vol20": 0.474,
       "foreign_net": 2537917275,
       "inst_net": 2368617375,
-      "score": 0.917,
+      "score": 0.925,
       "news": [
+        {
+          "date": "11-17",
+          "title": "[민주 약국] 휴온스·동국제약·유한재단",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시",
@@ -144,19 +149,49 @@
           "date": "11-17",
           "title": "동국제약, 반려동물 위생용품 '캐니메이트' 5종 출시",
           "risk": false
+        }
+      ],
+      "price": 24850,
+      "chg": 0.0781,
+      "activity": 2.23,
+      "foreign_today": 1267350000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "128940",
+      "name": "한미약품",
+      "close": 443500,
+      "ret5": -0.0731,
+      "ret20": 0.1299,
+      "rsi14": 50.5,
+      "vol20": 0.671,
+      "foreign_net": 18228592750,
+      "inst_net": 21099833000,
+      "score": 0.776,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "한미약품, 유럽종양학회서 항암신약 임상 데이터 발표",
+          "risk": false
         },
         {
           "date": "11-17",
-          "title": "동국제약, 펫케어 브랜드 '캐니메이트' 신제품 5종 출시…라인업 강화",
+          "title": "한미약품, 항암 신약 2종서 초기 유효성 확인…글로벌 임상 청신호",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "한미약품, 차세대 항암신약 2종 글로벌 임상 1상서 초기 효능·안전성 확...",
           "risk": false
         }
       ],
-      "price": 24800,
-      "chg": 0.0759,
-      "activity": 2.33,
-      "foreign_today": 1264800000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
+      "price": 459000,
+      "chg": 0.028,
+      "activity": 0.81,
+      "foreign_today": 2295000000,
+      "inst_today": 918000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "089860",
@@ -168,7 +203,7 @@
       "vol20": 0.46,
       "foreign_net": 6431758700,
       "inst_net": 7593445350,
-      "score": 0.667,
+      "score": 0.672,
       "news": [
         {
           "date": "11-16",
@@ -190,7 +225,7 @@
       "vol20": 0.345,
       "foreign_net": 127103705300,
       "inst_net": -110127660200,
-      "score": 0.642,
+      "score": 0.649,
       "news": [
         {
           "date": "11-16",
@@ -198,11 +233,43 @@
           "risk": false
         }
       ],
-      "price": 157400,
-      "chg": -0.026,
-      "activity": 0.77,
-      "foreign_today": 1574000000,
-      "inst_today": 6925600000,
+      "price": 157700,
+      "chg": -0.0241,
+      "activity": 0.76,
+      "foreign_today": 1577000000,
+      "inst_today": 6938800000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "323410",
+      "name": "카카오뱅크",
+      "close": 21200,
+      "ret5": 0.0392,
+      "ret20": 0.0367,
+      "rsi14": 65.1,
+      "vol20": 0.263,
+      "foreign_net": 13497471375,
+      "inst_net": -4428726475,
+      "score": 0.604,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "11월 17일 카카오뱅크 AI 퀴즈…오전 8시 정답은 ‘뉴로비로봇청소기’",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "이게 뭐지...낮 12시 '카카오뱅크 AI 이모지' 퀴즈 정답 (11월 17일)",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[게시판] 카카오뱅크, 자립준비청년 금융교육 '모두의 자립' 홈커밍데이",
+          "risk": false
+        }
+      ],
+      "foreign_today": 360400000,
+      "inst_today": 360400000,
       "exchange": "KOSPI"
     },
     {
@@ -215,7 +282,7 @@
       "vol20": 0.394,
       "foreign_net": 4715649250,
       "inst_net": 3630527050,
-      "score": 0.6,
+      "score": 0.604,
       "news": [
         {
           "date": "11-17",
@@ -238,57 +305,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "323410",
-      "name": "카카오뱅크",
-      "close": 21200,
-      "ret5": 0.0392,
-      "ret20": 0.0367,
-      "rsi14": 65.1,
-      "vol20": 0.263,
-      "foreign_net": 13497471375,
-      "inst_net": -4428726475,
-      "score": 0.592,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[게시판] 카카오뱅크, 자립준비청년 금융교육 '모두의 자립' 홈커밍데이",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크 \"AI 목표적금, 출시 한 달 만에 누적 10만좌\"",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오뱅크, 'AI 목표적금' 누적 10만 좌... 출시 한 달 만에 돌파",
-          "risk": false
-        }
-      ],
-      "foreign_today": 360400000,
-      "inst_today": 360400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 33100,
-      "ret5": 0.0525,
-      "ret20": 0.0525,
-      "rsi14": 59.7,
-      "vol20": 0.34,
-      "foreign_net": -2321307850,
-      "inst_net": 24381897025,
-      "score": 0.55,
-      "news": [],
-      "price": 32650,
-      "chg": -0.0106,
-      "activity": 0.74,
-      "foreign_today": 0,
-      "inst_today": 1403950000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "178320",
       "name": "서진시스템",
       "close": 31800,
@@ -298,7 +314,7 @@
       "vol20": 0.937,
       "foreign_net": 980010800,
       "inst_net": 5734256075,
-      "score": 0.55,
+      "score": 0.59,
       "news": [
         {
           "date": "11-16",
@@ -316,12 +332,31 @@
           "risk": false
         }
       ],
-      "price": 31300,
-      "chg": -0.0126,
-      "activity": 1.12,
+      "price": 31650,
+      "chg": -0.0016,
+      "activity": 1.08,
       "foreign_today": 0,
-      "inst_today": 970300000,
+      "inst_today": 981150000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 33100,
+      "ret5": 0.0525,
+      "ret20": 0.0525,
+      "rsi14": 59.7,
+      "vol20": 0.34,
+      "foreign_net": -2321307850,
+      "inst_net": 24381897025,
+      "score": 0.56,
+      "news": [],
+      "price": 32650,
+      "chg": -0.0106,
+      "activity": 0.71,
+      "foreign_today": 0,
+      "inst_today": 1403950000,
+      "exchange": "KOSPI"
     },
     {
       "code": "017670",
@@ -333,7 +368,7 @@
       "vol20": 0.482,
       "foreign_net": 22505939550,
       "inst_net": 36013259700,
-      "score": 0.533,
+      "score": 0.537,
       "news": [
         {
           "date": "11-17",
@@ -346,33 +381,11 @@
           "risk": false
         }
       ],
-      "price": 83500,
-      "chg": -0.0048,
-      "activity": 1.34,
+      "price": 83100,
+      "chg": -0.0095,
+      "activity": 1.31,
       "foreign_today": 0,
-      "inst_today": 334000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "004020",
-      "name": "현대제철",
-      "close": 28700,
-      "ret5": 0.0324,
-      "ret20": -0.0103,
-      "rsi14": 50.9,
-      "vol20": 0.57,
-      "foreign_net": 3150326550,
-      "inst_net": -87228175,
-      "score": 0.425,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[그래픽] 포스코·현대제철 수소환원제철 기술 비교",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 258300000,
+      "inst_today": 332400000,
       "exchange": "KOSPI"
     },
     {
@@ -385,21 +398,21 @@
       "vol20": 0.431,
       "foreign_net": -8457289760,
       "inst_net": 9395563480,
-      "score": 0.4,
+      "score": 0.418,
       "news": [
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕…종합대상 2년 연속",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕 수상",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, '대한민국소통어워즈' 4개 부문 대상 수상",
+          "title": "LG유플러스, 대한민국소통어워즈 4관왕…고객 아이디어 1만4000건 서비스...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "LG유플러스, 대한민국소통어워즈 4관왕…2년 연속 종합대상",
+          "title": "LG유플러스, 고객 아이디어 1만4000건이 만든 혁신…대한민국소통어워즈...",
           "risk": false
         }
       ],
@@ -408,35 +421,25 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "267270",
-      "name": "HD건설기계",
-      "close": 90700,
-      "ret5": 0.1034,
-      "ret20": -0.0402,
-      "rsi14": 46.6,
-      "vol20": 0.756,
-      "foreign_net": -36757086300,
-      "inst_net": 38171008600,
-      "score": 0.4,
+      "code": "004020",
+      "name": "현대제철",
+      "close": 28700,
+      "ret5": 0.0324,
+      "ret20": -0.0103,
+      "rsi14": 50.9,
+      "vol20": 0.57,
+      "foreign_net": 3150326550,
+      "inst_net": -87228175,
+      "score": 0.41,
       "news": [
         {
           "date": "11-17",
-          "title": "중남미 영업·AS 결속 다지는 HD건설기계…과테말라·엘살바도르까지 '...",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
-          "risk": false
-        },
-        {
-          "date": "11-14",
-          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "title": "[그래픽] 포스코·현대제철 수소환원제철 기술 비교",
           "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 362800000,
+      "inst_today": 258300000,
       "exchange": "KOSPI"
     },
     {
@@ -449,7 +452,7 @@
       "vol20": 0.679,
       "foreign_net": 13204400250,
       "inst_net": -7896166600,
-      "score": 0.4,
+      "score": 0.41,
       "news": [
         {
           "date": "11-17",
@@ -472,57 +475,51 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "030200",
-      "name": "KT",
-      "close": 51600,
-      "ret5": -0.0227,
-      "ret20": 0.0198,
-      "rsi14": 56.8,
-      "vol20": 0.366,
-      "foreign_net": 17981368100,
-      "inst_net": -15665157450,
-      "score": 0.35,
+      "code": "267270",
+      "name": "HD건설기계",
+      "close": 90700,
+      "ret5": 0.1034,
+      "ret20": -0.0402,
+      "rsi14": 46.6,
+      "vol20": 0.756,
+      "foreign_net": -36757086300,
+      "inst_net": 38171008600,
+      "score": 0.403,
       "news": [
         {
           "date": "11-17",
-          "title": "\"박윤영 KT, AI로 비용절감 몰두…현장 노동자 안전은 뒷전\"",
+          "title": "중남미 영업·AS 결속 다지는 HD건설기계…과테말라·엘살바도르까지 '...",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "합병 10개월 만에 신용도 점프…HD건설기계 투자 여력 확대",
+          "risk": false
+        },
+        {
+          "date": "11-14",
+          "title": "HD건설기계, 지역 다변화·합병 시너지 뚜렷…실적 안정성 높인다 [비즈...",
           "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 206400000,
+      "inst_today": 362800000,
       "exchange": "KOSPI"
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "close": 32400,
-      "ret5": 0.0189,
-      "ret20": 0.0109,
-      "rsi14": 56.6,
-      "vol20": 0.432,
-      "foreign_net": -13470881275,
-      "inst_net": -11209452700,
-      "score": 0.308,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[분석] 30대 그룹 AI 투자 1조원 돌파…LG 1위, 카카오 2위·LS 3위",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "카카오엔터, 고정희 단독 대표 체제 전환…장윤중 공동대표 내달 말 사...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[게시판] 카카오뱅크, 자립준비청년 금융교육 '모두의 자립' 홈커밍데이",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 194400000,
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "close": 63300,
+      "ret5": 0.036,
+      "ret20": -0.0031,
+      "rsi14": 57.9,
+      "vol20": 0.507,
+      "foreign_net": -18008472900,
+      "inst_net": 22704871250,
+      "score": 0.381,
+      "news": [],
+      "foreign_today": 316500000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -535,7 +532,7 @@
       "vol20": 1.445,
       "foreign_net": -3613195490,
       "inst_net": -5661527070,
-      "score": 0.917,
+      "score": 0.933,
       "news": [
         {
           "date": "11-17",
@@ -553,11 +550,11 @@
           "risk": false
         }
       ],
-      "price": 15960,
-      "chg": 0.0857,
-      "activity": 1.61,
-      "foreign_today": 3654840000,
-      "inst_today": 686280000,
+      "price": 15920,
+      "chg": 0.083,
+      "activity": 1.51,
+      "foreign_today": 3645680000,
+      "inst_today": 684560000,
       "exchange": "KOSDAQ"
     },
     {
@@ -570,7 +567,7 @@
       "vol20": 1.219,
       "foreign_net": 938473765,
       "inst_net": -1756373495,
-      "score": 0.783,
+      "score": 0.776,
       "news": [
         {
           "date": "11-16",
@@ -588,30 +585,11 @@
           "risk": false
         }
       ],
-      "price": 7350,
-      "chg": 0.1256,
-      "activity": 3.12,
-      "foreign_today": 264600000,
-      "inst_today": 110250000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "425420",
-      "name": "티에프이",
-      "close": 80500,
-      "ret5": 0.1908,
-      "ret20": 0.2366,
-      "rsi14": 55.4,
-      "vol20": 1.457,
-      "foreign_net": -2408919750,
-      "inst_net": 6374969300,
-      "score": 0.708,
-      "news": [],
-      "price": 77800,
-      "chg": -0.0581,
-      "activity": 1.75,
-      "foreign_today": 622400000,
-      "inst_today": 0,
+      "price": 7400,
+      "chg": 0.1332,
+      "activity": 2.95,
+      "foreign_today": 266400000,
+      "inst_today": 111000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -624,7 +602,7 @@
       "vol20": 1.402,
       "foreign_net": -13014820770,
       "inst_net": 20382754405,
-      "score": 0.7,
+      "score": 0.716,
       "news": [
         {
           "date": "11-16",
@@ -637,11 +615,30 @@
           "risk": false
         }
       ],
-      "price": 13880,
-      "chg": 0.0587,
-      "activity": 3.16,
+      "price": 14020,
+      "chg": 0.0694,
+      "activity": 3.22,
       "foreign_today": 0,
-      "inst_today": 485800000,
+      "inst_today": 490700000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "425420",
+      "name": "티에프이",
+      "close": 80500,
+      "ret5": 0.1908,
+      "ret20": 0.2366,
+      "rsi14": 55.4,
+      "vol20": 1.457,
+      "foreign_net": -2408919750,
+      "inst_net": 6374969300,
+      "score": 0.716,
+      "news": [],
+      "price": 78300,
+      "chg": -0.0521,
+      "activity": 1.67,
+      "foreign_today": 626400000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -654,7 +651,7 @@
       "vol20": 1.314,
       "foreign_net": -29287303150,
       "inst_net": 55201061900,
-      "score": 0.625,
+      "score": 0.634,
       "news": [
         {
           "date": "11-16",
@@ -672,11 +669,11 @@
           "risk": false
         }
       ],
-      "price": 56300,
-      "chg": 0.0504,
-      "activity": 1.67,
+      "price": 56700,
+      "chg": 0.0578,
+      "activity": 1.58,
       "foreign_today": 0,
-      "inst_today": 1238600000,
+      "inst_today": 1247400000,
       "exchange": "KOSDAQ"
     },
     {
