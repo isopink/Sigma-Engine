@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "11:15",
+    "time": "11:30",
     "pool": 401,
     "analyzed_new": 30,
-    "passed": 20,
+    "passed": 21,
     "kept_prep": false
   },
   "candidates": [
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 45750,
-      "chg": 0.064,
-      "activity": 1.8,
-      "foreign_today": 4026000000,
-      "inst_today": 45750000,
+      "price": 45700,
+      "chg": 0.0628,
+      "activity": 1.73,
+      "foreign_today": 4021600000,
+      "inst_today": 45700000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.792,
+      "score": 0.774,
       "news": [
         {
           "date": "11-18",
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 81500,
-      "chg": -0.0169,
-      "activity": 1.53,
-      "foreign_today": 3830500000,
-      "inst_today": 2445000000,
+      "price": 81700,
+      "chg": -0.0145,
+      "activity": 1.45,
+      "foreign_today": 3839900000,
+      "inst_today": 2451000000,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +153,7 @@
       "vol20": 0.557,
       "foreign_net": -1757680500,
       "inst_net": 10807969000,
-      "score": 0.708,
+      "score": 0.686,
       "news": [
         {
           "date": "11-17",
@@ -171,11 +171,11 @@
           "risk": false
         }
       ],
-      "price": 271000,
-      "chg": 0.0504,
-      "activity": 1.95,
+      "price": 269500,
+      "chg": 0.0446,
+      "activity": 1.85,
       "foreign_today": 0,
-      "inst_today": 271000000,
+      "inst_today": 269500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -188,21 +188,21 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.633,
+      "score": 0.606,
       "news": [
         {
           "date": "11-18",
-          "title": "AX성과 낸 KT 박윤영...통신 본업 실적 반등 절실하다",
+          "title": "KTㆍ서울대병원, '의료 피지컬 AI' 실증…AI 로봇으로 어린이 환자 경험...",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "SKT·KT, 글로벌 통신업계 최고 권위 'WCA' 트로피 사냥…나란히 3개 부문...",
+          "title": "KT, 서울대병원과 '피지컬 AI' 의료 실증... 소아 케어·업무 지원",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "박정민 KT알파 대표, PB 글로벌 진출 타진",
+          "title": "KT, 서울대병원과 어린이 환자 대상 'AI 로봇' 비임상 서비스 실증",
           "risk": false
         }
       ],
@@ -220,7 +220,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.558,
+      "score": 0.577,
       "news": [
         {
           "date": "11-18",
@@ -238,10 +238,10 @@
           "risk": false
         }
       ],
-      "price": 154600,
-      "chg": -0.014,
-      "activity": 0.98,
-      "foreign_today": 8657600000,
+      "price": 156200,
+      "chg": -0.0038,
+      "activity": 0.95,
+      "foreign_today": 8747200000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -255,7 +255,7 @@
       "vol20": 0.904,
       "foreign_net": -3311756675,
       "inst_net": 9323673800,
-      "score": 0.558,
+      "score": 0.569,
       "news": [
         {
           "date": "11-18",
@@ -273,12 +273,79 @@
           "risk": false
         }
       ],
-      "price": 31400,
-      "chg": 0.0346,
-      "activity": 1.09,
-      "foreign_today": 785000000,
-      "inst_today": 31400000,
+      "price": 31450,
+      "chg": 0.0362,
+      "activity": 1.04,
+      "foreign_today": 786250000,
+      "inst_today": 31450000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "004170",
+      "name": "신세계",
+      "close": 264500,
+      "ret5": 0.0752,
+      "ret20": -0.0056,
+      "rsi14": 47.2,
+      "vol20": 0.538,
+      "foreign_net": -10208609250,
+      "inst_net": 13220551250,
+      "score": 0.547,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "광주신세계, ESG도 지역 대표기업답게…‘상생’으로 4년 연속 A등급",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "광주신세계, ESG 종합평가 4년 연속 'A등급'",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "광주신세계, 4년 연속 ESG 평가 'A등급' 달성",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 793500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "028050",
+      "name": "삼성E&A",
+      "close": 67600,
+      "ret5": 0.0579,
+      "ret20": 0.5684,
+      "rsi14": 63.9,
+      "vol20": 0.869,
+      "foreign_net": -87308670000,
+      "inst_net": 45532092000,
+      "score": 0.511,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[단독] 삼성E&A 시공 말레이시아 가스플랜트 가동…셸, 사라왁 심해가스...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼성E&A 목표주가 9만6천원 상향…AI·모듈러 경쟁력 주목",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "삼성E&A 1.32% 상승…수주 17조원·특별 주주환원 부각",
+          "risk": false
+        }
+      ],
+      "price": 62800,
+      "chg": -0.0751,
+      "activity": 1.67,
+      "foreign_today": 3893600000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
     },
     {
       "code": "008930",
@@ -290,7 +357,7 @@
       "vol20": 0.642,
       "foreign_net": 10284464750,
       "inst_net": -4842497150,
-      "score": 0.475,
+      "score": 0.474,
       "news": [
         {
           "date": "11-17",
@@ -317,7 +384,7 @@
       "vol20": 0.504,
       "foreign_net": -16652616150,
       "inst_net": 20836098850,
-      "score": 0.467,
+      "score": 0.445,
       "news": [],
       "foreign_today": 0,
       "inst_today": 440300000,
@@ -333,7 +400,7 @@
       "vol20": 0.734,
       "foreign_net": -3801142600,
       "inst_net": 6589437800,
-      "score": 0.442,
+      "score": 0.438,
       "news": [],
       "foreign_today": 0,
       "inst_today": 714400000,
@@ -349,7 +416,7 @@
       "vol20": 0.349,
       "foreign_net": -19864151125,
       "inst_net": 40202789025,
-      "score": 0.375,
+      "score": 0.394,
       "news": [
         {
           "date": "11-17",
@@ -357,11 +424,11 @@
           "risk": false
         }
       ],
-      "price": 32125,
-      "chg": -0.0146,
-      "activity": 0.92,
-      "foreign_today": 385500000,
-      "inst_today": 96375000,
+      "price": 32425,
+      "chg": -0.0054,
+      "activity": 0.9,
+      "foreign_today": 389100000,
+      "inst_today": 97275000,
       "exchange": "KOSPI"
     },
     {
@@ -374,21 +441,21 @@
       "vol20": 0.432,
       "foreign_net": -11493413925,
       "inst_net": 12284982480,
-      "score": 0.342,
+      "score": 0.314,
       "news": [
         {
           "date": "11-18",
-          "title": "LG유플러스, AI 기반 품질관리 IPTV 420만대에 적용",
+          "title": "LG유플러스, IPTV 420만대에 AI 장애 예방 시스템 적용…고객 불만 10% 감...",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "LG유플러스, IPTV 420만대 'AI 선제조치' 가동…고객 불편 발생 전 해결",
+          "title": "고객의 불편은 사전에 '차단'…LG유플러스, IPTV 420만 대 AI 품질관리",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "LG유플러스, IPTV 420만대에 AI 품질관리 적용…장애 사전 대응",
+          "title": "LG유플러스, IPTV 셋톱박스 420만대에 AI 품질관리 적용",
           "risk": false
         }
       ],
@@ -406,21 +473,21 @@
       "vol20": 0.596,
       "foreign_net": -39140101250,
       "inst_net": 15285708750,
-      "score": 0.308,
+      "score": 0.307,
       "news": [
         {
           "date": "11-18",
+          "title": "코스맥스 '2026 세계일류상품' 인증 3관왕",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "코스맥스, 쿠션·마스크팩 세계일류상품 선정···누적 인증 9건",
+          "risk": false
+        },
+        {
+          "date": "11-18",
           "title": "코스맥스, 화장품 기술력 인정받았다…세계일류상품 3건 추가",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스, 세계일류상품 3건 동시 선정…K뷰티 기술력 입증",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스 화장품 3종 '세계일류상품' 인증…누적 9건",
           "risk": false
         }
       ],
@@ -438,8 +505,13 @@
       "vol20": 0.26,
       "foreign_net": 12074038925,
       "inst_net": -1094256350,
-      "score": 0.283,
+      "score": 0.255,
       "news": [
+        {
+          "date": "11-18",
+          "title": "카카오뱅크, 몽골 ‘엠뱅크’ 2대 주주로…중앙아시아 정조준",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "카카오뱅크, '몽골 M뱅크' 2대 주주로...중앙아시아 본격 공략",
@@ -449,42 +521,10 @@
           "date": "11-18",
           "title": "카카오뱅크 애플페이 도입에 카드업계 '고심'…수수료 부담·삼성페이 ...",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "몽골까지 진출하는 카카오뱅크…엠뱅크 2대 주주 올라",
-          "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 62850000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 30600,
-      "ret5": -0.0347,
-      "ret20": 0.0968,
-      "rsi14": 50.9,
-      "vol20": 0.845,
-      "foreign_net": 5401533475,
-      "inst_net": 2037936425,
-      "score": 0.233,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "하나은행·GS건설·대한전선 등 韓기업, 바레인과 경제협력 확대…수교...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "대형건설사-지역업체 맞손…현대건설·GS건설 등 대구서 상생협력 확대",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 122400000,
       "exchange": "KOSPI"
     },
     {
@@ -497,7 +537,7 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 0.958,
+      "score": 0.942,
       "news": [
         {
           "date": "11-17",
@@ -515,10 +555,10 @@
           "risk": false
         }
       ],
-      "price": 13260,
-      "chg": -0.0075,
-      "activity": 5.21,
-      "foreign_today": 875160000,
+      "price": 13230,
+      "chg": -0.0097,
+      "activity": 4.86,
+      "foreign_today": 873180000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -532,7 +572,7 @@
       "vol20": 1.102,
       "foreign_net": -14413012180,
       "inst_net": 257219755,
-      "score": 0.95,
+      "score": 0.912,
       "news": [
         {
           "date": "11-17",
@@ -550,46 +590,11 @@
           "risk": false
         }
       ],
-      "price": 15070,
-      "chg": 0.0826,
-      "activity": 10.6,
-      "foreign_today": 1627560000,
-      "inst_today": 90420000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "053800",
-      "name": "안랩",
-      "close": 101800,
-      "ret5": -0.1094,
-      "ret20": 0.1464,
-      "rsi14": 51.8,
-      "vol20": 1.557,
-      "foreign_net": -1258193100,
-      "inst_net": -2595347850,
-      "score": 0.883,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
-          "risk": false
-        }
-      ],
-      "price": 106500,
-      "chg": 0.0441,
-      "activity": 2.28,
-      "foreign_today": 7455000000,
-      "inst_today": 0,
+      "price": 15200,
+      "chg": 0.092,
+      "activity": 9.96,
+      "foreign_today": 1641600000,
+      "inst_today": 91200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -602,7 +607,7 @@
       "vol20": 1.372,
       "foreign_net": 4532063200,
       "inst_net": -266153600,
-      "score": 0.858,
+      "score": 0.905,
       "news": [
         {
           "date": "11-18",
@@ -620,11 +625,46 @@
           "risk": false
         }
       ],
-      "price": 25500,
-      "chg": 0.1209,
-      "activity": 5.01,
-      "foreign_today": 2371500000,
-      "inst_today": 918000000,
+      "price": 25850,
+      "chg": 0.1363,
+      "activity": 4.81,
+      "foreign_today": 2404050000,
+      "inst_today": 930600000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "053800",
+      "name": "안랩",
+      "close": 101800,
+      "ret5": -0.1094,
+      "ret20": 0.1464,
+      "rsi14": 51.8,
+      "vol20": 1.557,
+      "foreign_net": -1258193100,
+      "inst_net": -2595347850,
+      "score": 0.876,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
+          "risk": false
+        }
+      ],
+      "price": 107100,
+      "chg": 0.05,
+      "activity": 2.11,
+      "foreign_today": 7497000000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -637,7 +677,7 @@
       "vol20": 1.362,
       "foreign_net": -16982819565,
       "inst_net": 28477147760,
-      "score": 0.825,
+      "score": 0.803,
       "news": [
         {
           "date": "11-17",
@@ -655,11 +695,11 @@
           "risk": false
         }
       ],
-      "price": 14190,
-      "chg": 0.0343,
-      "activity": 4.7,
-      "foreign_today": 1716990000,
-      "inst_today": 397320000,
+      "price": 14130,
+      "chg": 0.0299,
+      "activity": 4.45,
+      "foreign_today": 1709730000,
+      "inst_today": 395640000,
       "exchange": "KOSDAQ"
     },
     {
