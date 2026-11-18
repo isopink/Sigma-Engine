@@ -16,7 +16,7 @@ Benchmark: KODEX 200 (KOSPI 200 ETF)
 
 ---
 
-An autonomous trading agent for Korean equities: one ₩50M account, and every decision and order comes from the AI. No manual orders and no human approval.
+An autonomous trading agent for Korean equities, entered in the 2026 Navist UOStock AI automated trading competition (a live competition on a real account): one ₩50M account, and every decision and order comes from the AI. No manual orders and no human approval.
 
 ## Concept: agents propose, rules decide
 

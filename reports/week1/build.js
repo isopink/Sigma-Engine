@@ -86,7 +86,7 @@ tr.전략 td:last-child { font-weight: 600; }
 </style></head><body>
 
 <h1>1주차 주간 운용보고서</h1>
-<div class="meta">Sigma Six · 팀 「하이닉스 298층 주민」 이석민 · 박문화 · 2026 나비스트 UOStock AI 자동매매 모의투자대회<br>
+<div class="meta">Sigma Six · 팀 「하이닉스 298층 주민」 이석민 · 박문화 · 2026 나비스트 UOStock AI 자동매매 주식투자대회<br>
 기간 2026-11-02 ~ 11-06 · 숫자 기준 ${esc(asof)} (실시간 대시보드 ${esc(DASH)})</div>
 
 <div class="kpis">
