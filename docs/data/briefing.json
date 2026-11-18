@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "12:45",
+    "time": "13:00",
     "pool": 400,
     "analyzed_new": 6,
     "passed": 21,
@@ -113,7 +113,7 @@
       ],
       "price": 46050,
       "chg": 0.0709,
-      "activity": 1.43,
+      "activity": 1.39,
       "foreign_today": 4052400000,
       "inst_today": 46050000,
       "exchange": "KOSDAQ"
@@ -128,7 +128,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.813,
+      "score": 0.859,
       "news": [
         {
           "date": "11-18",
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 81200,
-      "chg": -0.0205,
-      "activity": 1.24,
-      "foreign_today": 3816400000,
-      "inst_today": 2436000000,
+      "price": 81800,
+      "chg": -0.0133,
+      "activity": 1.21,
+      "foreign_today": 3844600000,
+      "inst_today": 2454000000,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +153,7 @@
       "vol20": 0.557,
       "foreign_net": -1757680500,
       "inst_net": 10807969000,
-      "score": 0.697,
+      "score": 0.724,
       "news": [
         {
           "date": "11-17",
@@ -171,11 +171,11 @@
           "risk": false
         }
       ],
-      "price": 268500,
-      "chg": 0.0407,
-      "activity": 1.46,
+      "price": 270000,
+      "chg": 0.0465,
+      "activity": 1.5,
       "foreign_today": 0,
-      "inst_today": 268500000,
+      "inst_today": 270000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -192,6 +192,16 @@
       "news": [
         {
           "date": "11-18",
+          "title": "KT, 서울대병원서 AI 로봇 실증…어린이 환자 불안 던다",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "KT알파 쇼핑, 말레이시아 미디어그룹과 상품 유통 협력 논의",
+          "risk": false
+        },
+        {
+          "date": "11-18",
           "title": "KT스카이라이프, 장비 투자 90%↑…그 뒤엔 'ipit TV'",
           "risk": false
         }
@@ -201,39 +211,64 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "192820",
-      "name": "코스맥스",
-      "close": 293000,
-      "ret5": 0.2082,
-      "ret20": 0.1015,
-      "rsi14": 61.9,
-      "vol20": 0.596,
-      "foreign_net": -39140101250,
-      "inst_net": 15285708750,
-      "score": 0.594,
+      "code": "352820",
+      "name": "하이브",
+      "close": 153800,
+      "ret5": 0.0718,
+      "ret20": -0.1573,
+      "rsi14": 45.8,
+      "vol20": 0.57,
+      "foreign_net": -598444400,
+      "inst_net": 28489673750,
+      "score": 0.607,
       "news": [
         {
           "date": "11-18",
-          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스, 쿠션·마스크팩 등 '세계일류상품' 3건 동시 선정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스 쿠션·마스크팩 세계일류상품 선정, '압전 에멀젼 기술'도 차...",
+          "title": "'5년째 적자' 하이브 게임 자회사 드림에이지, 인력감축 돌입",
           "risk": false
         }
       ],
-      "price": 298000,
-      "chg": 0.0188,
-      "activity": 1.45,
-      "foreign_today": 0,
-      "inst_today": 894000000,
+      "price": 164800,
+      "chg": 0.0646,
+      "activity": 0.98,
+      "foreign_today": 659200000,
+      "inst_today": 0,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 30200,
+      "ret5": 0.0559,
+      "ret20": -0.1914,
+      "rsi14": 45.4,
+      "vol20": 0.904,
+      "foreign_net": -3311756675,
+      "inst_net": 9323673800,
+      "score": 0.589,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "서진시스템, 반도체 장비 타고 영업익 흑자 전환",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "서진시스템 주가, 11월 17일 애프터마켓 30,200원 4.73% 하락",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "서진시스템, 3분기 매출 196% 증가…영업이익 387억원 흑자전환",
+          "risk": false
+        }
+      ],
+      "price": 31300,
+      "chg": 0.0313,
+      "activity": 0.74,
+      "foreign_today": 782500000,
+      "inst_today": 31300000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "004170",
@@ -245,7 +280,7 @@
       "vol20": 0.538,
       "foreign_net": -10208609250,
       "inst_net": 13220551250,
-      "score": 0.587,
+      "score": 0.583,
       "news": [
         {
           "date": "11-18",
@@ -277,7 +312,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.581,
+      "score": 0.577,
       "news": [
         {
           "date": "11-18",
@@ -295,70 +330,10 @@
           "risk": false
         }
       ],
-      "price": 155200,
-      "chg": -0.0102,
-      "activity": 0.72,
-      "foreign_today": 8691200000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 30200,
-      "ret5": 0.0559,
-      "ret20": -0.1914,
-      "rsi14": 45.4,
-      "vol20": 0.904,
-      "foreign_net": -3311756675,
-      "inst_net": 9323673800,
-      "score": 0.555,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "서진시스템, 반도체 장비 타고 영업익 흑자 전환",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "서진시스템 주가, 11월 17일 애프터마켓 30,200원 4.73% 하락",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "서진시스템, 3분기 매출 196% 증가…영업이익 387억원 흑자전환",
-          "risk": false
-        }
-      ],
-      "price": 31250,
-      "chg": 0.0297,
-      "activity": 0.77,
-      "foreign_today": 781250000,
-      "inst_today": 31250000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "352820",
-      "name": "하이브",
-      "close": 153800,
-      "ret5": 0.0718,
-      "ret20": -0.1573,
-      "rsi14": 45.8,
-      "vol20": 0.57,
-      "foreign_net": -598444400,
-      "inst_net": 28489673750,
-      "score": 0.529,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "'5년째 적자' 하이브 게임 자회사 드림에이지, 인력감축 돌입",
-          "risk": false
-        }
-      ],
-      "price": 163800,
-      "chg": 0.0581,
-      "activity": 0.98,
-      "foreign_today": 655200000,
+      "price": 155100,
+      "chg": -0.0108,
+      "activity": 0.69,
+      "foreign_today": 8685600000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -372,7 +347,7 @@
       "vol20": 0.642,
       "foreign_net": 10284464750,
       "inst_net": -4842497150,
-      "score": 0.484,
+      "score": 0.503,
       "news": [
         {
           "date": "11-17",
@@ -399,10 +374,26 @@
       "vol20": 0.504,
       "foreign_net": -16652616150,
       "inst_net": 20836098850,
-      "score": 0.471,
+      "score": 0.479,
       "news": [],
       "foreign_today": 0,
       "inst_today": 440300000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 178600,
+      "ret5": 0.0733,
+      "ret20": -0.118,
+      "rsi14": 46.3,
+      "vol20": 0.734,
+      "foreign_net": -3801142600,
+      "inst_net": 6589437800,
+      "score": 0.454,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 714400000,
       "exchange": "KOSPI"
     },
     {
@@ -415,16 +406,16 @@
       "vol20": 0.365,
       "foreign_net": 5277176150,
       "inst_net": -3031944750,
-      "score": 0.452,
+      "score": 0.454,
       "news": [
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
+          "title": "[2026 여성포럼]아모레퍼시픽, 임원 자리까지 여성의 길 열었다",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]아모레퍼시픽, 임원 자리까지 여성의 길 열었다",
+          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
           "risk": false
         },
         {
@@ -438,22 +429,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 178600,
-      "ret5": 0.0733,
-      "ret20": -0.118,
-      "rsi14": 46.3,
-      "vol20": 0.734,
-      "foreign_net": -3801142600,
-      "inst_net": 6589437800,
-      "score": 0.432,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 714400000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "021240",
       "name": "코웨이",
       "close": 104900,
@@ -463,16 +438,16 @@
       "vol20": 0.399,
       "foreign_net": -2846553500,
       "inst_net": -5239344400,
-      "score": 0.432,
+      "score": 0.429,
       "news": [
         {
           "date": "11-18",
-          "title": "코웨이 룰루 비데, 21개 제품 에너지효율 '1등급'",
+          "title": "[굿모닝! 18일 유통가 소식] 코웨이·배민·KT&G·롯데호텔·SK인텔릭스",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "[굿모닝! 18일 유통가 소식] 코웨이·배민·KT&G·롯데호텔·SK인텔릭스",
+          "title": "코웨이 룰루 비데, 21개 제품 에너지효율 '1등급'",
           "risk": false
         },
         {
@@ -495,7 +470,7 @@
       "vol20": 0.349,
       "foreign_net": -19864151125,
       "inst_net": 40202789025,
-      "score": 0.381,
+      "score": 0.405,
       "news": [
         {
           "date": "11-17",
@@ -503,11 +478,43 @@
           "risk": false
         }
       ],
-      "price": 32150,
-      "chg": -0.0138,
-      "activity": 0.71,
-      "foreign_today": 385800000,
-      "inst_today": 96450000,
+      "price": 32200,
+      "chg": -0.0123,
+      "activity": 0.69,
+      "foreign_today": 386400000,
+      "inst_today": 96600000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "032640",
+      "name": "LG유플러스",
+      "close": 15580,
+      "ret5": -0.0177,
+      "ret20": 0.017,
+      "rsi14": 55.4,
+      "vol20": 0.432,
+      "foreign_net": -11493413925,
+      "inst_net": 12284982480,
+      "score": 0.356,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "LG유플러스, IPTV 420만대에 AI 품질관리",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "LG유플러스, AI 기반 품질관리 IPTV 420만대에 적용...소비자 관심도 상...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "LG유플러스, AI 기반 품질관리 IPTV 420만대 적용",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 233700000,
       "exchange": "KOSPI"
     },
     {
@@ -520,7 +527,7 @@
       "vol20": 1.557,
       "foreign_net": -1258193100,
       "inst_net": -2595347850,
-      "score": 0.955,
+      "score": 0.933,
       "news": [
         {
           "date": "11-18",
@@ -538,11 +545,46 @@
           "risk": false
         }
       ],
-      "price": 107900,
-      "chg": 0.0578,
-      "activity": 1.49,
-      "foreign_today": 7553000000,
+      "price": 108000,
+      "chg": 0.0588,
+      "activity": 1.42,
+      "foreign_today": 7560000000,
       "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "close": 14080,
+      "ret5": 0.2107,
+      "ret20": -0.0098,
+      "rsi14": 52.5,
+      "vol20": 1.102,
+      "foreign_net": -14413012180,
+      "inst_net": 257219755,
+      "score": 0.902,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "미래에셋벤처투자, 정규장 1만4800원 마감 후 애프터마켓 1만4840원…2거...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "미래에셋벤처투자, 3분기 263억 적자…주식 평가손실 직격탄",
+          "risk": false
+        }
+      ],
+      "price": 15190,
+      "chg": 0.0912,
+      "activity": 7.89,
+      "foreign_today": 1640520000,
+      "inst_today": 91140000,
       "exchange": "KOSDAQ"
     },
     {
@@ -555,7 +597,7 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 0.923,
+      "score": 0.902,
       "news": [
         {
           "date": "11-17",
@@ -575,44 +617,44 @@
       ],
       "price": 13100,
       "chg": -0.0195,
-      "activity": 3.42,
+      "activity": 3.24,
       "foreign_today": 864600000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "100790",
-      "name": "미래에셋벤처투자",
-      "close": 14080,
-      "ret5": 0.2107,
-      "ret20": -0.0098,
-      "rsi14": 52.5,
-      "vol20": 1.102,
-      "foreign_net": -14413012180,
-      "inst_net": 257219755,
-      "score": 0.91,
+      "code": "108490",
+      "name": "로보티즈",
+      "close": 210500,
+      "ret5": -0.0322,
+      "ret20": -0.0907,
+      "rsi14": 41.1,
+      "vol20": 1.098,
+      "foreign_net": -10692163000,
+      "inst_net": 10606811500,
+      "score": 0.896,
       "news": [
         {
-          "date": "11-17",
-          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
+          "date": "11-18",
+          "title": "로보티즈, 내년 실적 성장 본격화···매출 100% 급증 전망",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "미래에셋벤처투자, 정규장 1만4800원 마감 후 애프터마켓 1만4840원…2거...",
+          "date": "11-18",
+          "title": "[공시셀렉트] 로보티즈, 액츄에이터 매출 크게 늘었지만…3분기 영업현...",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "미래에셋벤처투자, 3분기 263억 적자…주식 평가손실 직격탄",
+          "date": "11-18",
+          "title": "[특징주] 로보티즈, 적자 충격 딛고 10%대 반등…증권가 \"내년 가파른 턴...",
           "risk": false
         }
       ],
-      "price": 15320,
-      "chg": 0.1006,
-      "activity": 8.32,
-      "foreign_today": 1654560000,
-      "inst_today": 91920000,
+      "price": 241500,
+      "chg": 0.1418,
+      "activity": 2.25,
+      "foreign_today": 8452500000,
+      "inst_today": 966000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -625,7 +667,7 @@
       "vol20": 1.372,
       "foreign_net": 4532063200,
       "inst_net": -266153600,
-      "score": 0.858,
+      "score": 0.847,
       "news": [
         {
           "date": "11-18",
@@ -643,46 +685,11 @@
           "risk": false
         }
       ],
-      "price": 25300,
-      "chg": 0.1121,
-      "activity": 3.56,
-      "foreign_today": 2352900000,
-      "inst_today": 910800000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 13880,
-      "ret5": 0.3372,
-      "ret20": 0.076,
-      "rsi14": 55.5,
-      "vol20": 1.362,
-      "foreign_net": -16982819565,
-      "inst_net": 28477147760,
-      "score": 0.813,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "와이씨 5%대 상승…메모리 테스터 수주·매출 인식 기대",
-          "risk": false
-        }
-      ],
-      "price": 14170,
-      "chg": 0.0328,
-      "activity": 3.36,
-      "foreign_today": 1714570000,
-      "inst_today": 396760000,
+      "price": 25150,
+      "chg": 0.1055,
+      "activity": 3.37,
+      "foreign_today": 2338950000,
+      "inst_today": 905400000,
       "exchange": "KOSDAQ"
     },
     {
