@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "13:15",
-    "pool": 400,
-    "analyzed_new": 8,
+    "time": "13:30",
+    "pool": 445,
+    "analyzed_new": 30,
     "passed": 21,
     "kept_prep": false
   },
@@ -111,12 +111,37 @@
           "risk": false
         }
       ],
-      "price": 46350,
-      "chg": 0.0779,
-      "activity": 1.41,
-      "foreign_today": 4078800000,
-      "inst_today": 46350000,
+      "price": 46250,
+      "chg": 0.0756,
+      "activity": 1.43,
+      "foreign_today": 5688750000,
+      "inst_today": 925000000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "352820",
+      "name": "하이브",
+      "close": 153800,
+      "ret5": 0.0718,
+      "ret20": -0.1573,
+      "rsi14": 45.8,
+      "vol20": 0.57,
+      "foreign_net": -598444400,
+      "inst_net": 28489673750,
+      "score": 0.795,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "'5년째 적자' 하이브 게임 자회사 드림에이지, 인력감축 돌입",
+          "risk": false
+        }
+      ],
+      "price": 165800,
+      "chg": 0.0711,
+      "activity": 1.14,
+      "foreign_today": 2652800000,
+      "inst_today": 2321200000,
+      "exchange": "KOSPI"
     },
     {
       "code": "017670",
@@ -128,7 +153,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.842,
+      "score": 0.702,
       "news": [
         {
           "date": "11-18",
@@ -138,9 +163,9 @@
       ],
       "price": 81800,
       "chg": -0.0133,
-      "activity": 1.18,
-      "foreign_today": 3844600000,
-      "inst_today": 2454000000,
+      "activity": 1.14,
+      "foreign_today": 5153400000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +178,7 @@
       "vol20": 0.557,
       "foreign_net": -1757680500,
       "inst_net": 10807969000,
-      "score": 0.715,
+      "score": 0.652,
       "news": [
         {
           "date": "11-17",
@@ -171,37 +196,12 @@
           "risk": false
         }
       ],
-      "price": 270500,
-      "chg": 0.0484,
-      "activity": 1.48,
+      "price": 267500,
+      "chg": 0.0368,
+      "activity": 1.43,
       "foreign_today": 0,
-      "inst_today": 270500000,
+      "inst_today": 535000000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "352820",
-      "name": "하이브",
-      "close": 153800,
-      "ret5": 0.0718,
-      "ret20": -0.1573,
-      "rsi14": 45.8,
-      "vol20": 0.57,
-      "foreign_net": -598444400,
-      "inst_net": 28489673750,
-      "score": 0.636,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "'5년째 적자' 하이브 게임 자회사 드림에이지, 인력감축 돌입",
-          "risk": false
-        }
-      ],
-      "price": 166900,
-      "chg": 0.0782,
-      "activity": 1.08,
-      "foreign_today": 667600000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
     },
     {
       "code": "030200",
@@ -213,8 +213,13 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.618,
+      "score": 0.596,
       "news": [
+        {
+          "date": "11-18",
+          "title": "[IT는 지금] SKT, AI-RAN 무인 자율 이송 기술로 전파방송 기술대상 5년 ...",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "\"어린이 환자 겁내지 말아요\" KT, 서울대병원 손잡고 AI 로봇 실증",
@@ -224,51 +229,71 @@
           "date": "11-18",
           "title": "[텔코 NOW]SKTㆍKTㆍLGU+",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT, 서울대병원서 AI 로봇 실증…어린이 환자 불안 던다",
-          "risk": false
         }
       ],
-      "foreign_today": 2646800000,
+      "foreign_today": 3613900000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 30200,
-      "ret5": 0.0559,
-      "ret20": -0.1914,
-      "rsi14": 45.4,
-      "vol20": 0.904,
-      "foreign_net": -3311756675,
-      "inst_net": 9323673800,
-      "score": 0.582,
+      "code": "145020",
+      "name": "휴젤",
+      "close": 192500,
+      "ret5": -0.0278,
+      "ret20": 0.0508,
+      "rsi14": 52.4,
+      "vol20": 0.356,
+      "foreign_net": -5847784900,
+      "inst_net": 7280113950,
+      "score": 0.59,
       "news": [
         {
-          "date": "11-18",
-          "title": "서진시스템, 반도체 장비 타고 영업익 흑자 전환",
-          "risk": false
-        },
-        {
           "date": "11-17",
-          "title": "서진시스템 주가, 11월 17일 애프터마켓 30,200원 4.73% 하락",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "서진시스템, 3분기 매출 196% 증가…영업이익 387억원 흑자전환",
+          "title": "[외형 성장의 함정] 실적 꺾인 휴젤, ESG경영은 또 '바닥'",
           "risk": false
         }
       ],
-      "price": 31500,
-      "chg": 0.0379,
-      "activity": 0.72,
-      "foreign_today": 787500000,
-      "inst_today": 31500000,
+      "price": 198800,
+      "chg": 0.0322,
+      "activity": 1.57,
+      "foreign_today": 0,
+      "inst_today": 198800000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "028050",
+      "name": "삼성E&A",
+      "close": 67600,
+      "ret5": 0.0579,
+      "ret20": 0.5684,
+      "rsi14": 63.9,
+      "vol20": 0.869,
+      "foreign_net": -87308670000,
+      "inst_net": 45532092000,
+      "score": 0.565,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[단독] 삼성E&A 시공 말레이시아 가스플랜트 가동…셸, 사라왁 심해가스...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼성E&A 목표주가 9만6천원 상향…AI·모듈러 경쟁력 주목",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "삼성E&A 1.32% 상승…수주 17조원·특별 주주환원 부각",
+          "risk": false
+        }
+      ],
+      "price": 63800,
+      "chg": -0.0604,
+      "activity": 1.26,
+      "foreign_today": 10271800000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
     },
     {
       "code": "105560",
@@ -280,7 +305,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.576,
+      "score": 0.553,
       "news": [
         {
           "date": "11-18",
@@ -298,10 +323,69 @@
           "risk": false
         }
       ],
-      "price": 155600,
-      "chg": -0.0077,
-      "activity": 0.68,
-      "foreign_today": 8713600000,
+      "price": 156100,
+      "chg": -0.0045,
+      "activity": 0.67,
+      "foreign_today": 9522100000,
+      "inst_today": 1873200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 54100,
+      "ret5": -0.0591,
+      "ret20": 0.2523,
+      "rsi14": 58.4,
+      "vol20": 0.642,
+      "foreign_net": 10284464750,
+      "inst_net": -4842497150,
+      "score": 0.547,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 757400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 178600,
+      "ret5": 0.0733,
+      "ret20": -0.118,
+      "rsi14": 46.3,
+      "vol20": 0.734,
+      "foreign_net": -3801142600,
+      "inst_net": 6589437800,
+      "score": 0.516,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 2143200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "close": 224000,
+      "ret5": -0.0324,
+      "ret20": 0.1423,
+      "rsi14": 54.5,
+      "vol20": 0.548,
+      "foreign_net": 2891179000,
+      "inst_net": 22252576250,
+      "score": 0.497,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[증권리포트 분석] ③ 정호윤 삼성에스디에스 100% 적중",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "삼성에스디에스, 고가 24만2500원 이후 하락…변동폭 1만6000원",
+          "risk": false
+        }
+      ],
+      "foreign_today": 4256000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -315,7 +399,7 @@
       "vol20": 0.538,
       "foreign_net": -10208609250,
       "inst_net": 13220551250,
-      "score": 0.57,
+      "score": 0.472,
       "news": [
         {
           "date": "11-18",
@@ -338,92 +422,35 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "028050",
-      "name": "삼성E&A",
-      "close": 67600,
-      "ret5": 0.0579,
-      "ret20": 0.5684,
-      "rsi14": 63.9,
-      "vol20": 0.869,
-      "foreign_net": -87308670000,
-      "inst_net": 45532092000,
-      "score": 0.564,
+      "code": "192820",
+      "name": "코스맥스",
+      "close": 293000,
+      "ret5": 0.2082,
+      "ret20": 0.1015,
+      "rsi14": 61.9,
+      "vol20": 0.596,
+      "foreign_net": -39140101250,
+      "inst_net": 15285708750,
+      "score": 0.453,
       "news": [
         {
           "date": "11-18",
-          "title": "[단독] 삼성E&A 시공 말레이시아 가스플랜트 가동…셸, 사라왁 심해가스...",
+          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "삼성E&A 목표주가 9만6천원 상향…AI·모듈러 경쟁력 주목",
+          "title": "코스맥스, 쿠션·마스크팩 등 '세계일류상품' 3건 동시 선정",
           "risk": false
         },
         {
-          "date": "11-17",
-          "title": "삼성E&A 1.32% 상승…수주 17조원·특별 주주환원 부각",
-          "risk": false
-        }
-      ],
-      "price": 63200,
-      "chg": -0.0692,
-      "activity": 1.27,
-      "foreign_today": 3918400000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 54100,
-      "ret5": -0.0591,
-      "ret20": 0.2523,
-      "rsi14": 58.4,
-      "vol20": 0.642,
-      "foreign_net": 10284464750,
-      "inst_net": -4842497150,
-      "score": 0.503,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[투자, 그 후] [한미사이언스] '바이오·헬스케어' 외부투자 엇갈린 투자...",
+          "date": "11-18",
+          "title": "코스맥스 쿠션·마스크팩 세계일류상품 선정, '압전 에멀젼 기술'도 차...",
           "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 216400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "161390",
-      "name": "한국타이어앤테크놀로지",
-      "close": 62900,
-      "ret5": 0.0016,
-      "ret20": 0.0064,
-      "rsi14": 56.4,
-      "vol20": 0.504,
-      "foreign_net": -16652616150,
-      "inst_net": 20836098850,
-      "score": 0.473,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 440300000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 178600,
-      "ret5": 0.0733,
-      "ret20": -0.118,
-      "rsi14": 46.3,
-      "vol20": 0.734,
-      "foreign_net": -3801142600,
-      "inst_net": 6589437800,
-      "score": 0.448,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 714400000,
+      "inst_today": 4688000000,
       "exchange": "KOSPI"
     },
     {
@@ -436,7 +463,7 @@
       "vol20": 0.365,
       "foreign_net": 5277176150,
       "inst_net": -3031944750,
-      "score": 0.448,
+      "score": 0.447,
       "news": [
         {
           "date": "11-18",
@@ -454,101 +481,44 @@
           "risk": false
         }
       ],
-      "foreign_today": 909300000,
-      "inst_today": 0,
+      "foreign_today": 1299000000,
+      "inst_today": 519600000,
       "exchange": "KOSPI"
     },
     {
-      "code": "021240",
-      "name": "코웨이",
-      "close": 104900,
-      "ret5": 0.0511,
-      "ret20": -0.0323,
-      "rsi14": 52.0,
-      "vol20": 0.399,
-      "foreign_net": -2846553500,
-      "inst_net": -5239344400,
-      "score": 0.418,
+      "code": "003490",
+      "name": "대한항공",
+      "close": 31750,
+      "ret5": -0.0261,
+      "ret20": 0.2188,
+      "rsi14": 61.9,
+      "vol20": 0.602,
+      "foreign_net": 51992049675,
+      "inst_net": 10112869800,
+      "score": 0.435,
       "news": [
         {
           "date": "11-18",
-          "title": "'5조클럽' 향하는 코웨이, 정수기 '위생경쟁력'에 답 있었다",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코웨이, 정수기업계 1위 원천은… \"철저한 위생 관리로 소비자 신뢰를 ...",
+          "title": "록히드마틴, 차세대 고속 헬기 공동개발 제안⋯KAI·대한항공과 협의",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "코웨이 룰루 비데, 21개 제품 에너지효율 '1등급'",
-          "risk": false
-        }
-      ],
-      "foreign_today": 734300000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32450,
-      "ret5": 0.0417,
-      "ret20": 0.0237,
-      "rsi14": 54.4,
-      "vol20": 0.349,
-      "foreign_net": -19864151125,
-      "inst_net": 40202789025,
-      "score": 0.406,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "우리금융지주, 보통주 5만7,369주 소각에 따른 변경상장",
-          "risk": false
-        }
-      ],
-      "price": 32300,
-      "chg": -0.0092,
-      "activity": 0.68,
-      "foreign_today": 387600000,
-      "inst_today": 96900000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "490470",
-      "name": "세미파이브",
-      "close": 13510,
-      "ret5": 0.1799,
-      "ret20": -0.1005,
-      "rsi14": 50.0,
-      "vol20": 1.33,
-      "foreign_net": -3562734985,
-      "inst_net": -4217970210,
-      "score": 0.909,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "[특징주] 세미파이브, HBM 대체할 3D-IC 기술 공개…주가 18%대 급등",
+          "title": "‘여성 인력 25% 확대’ 목표 달성…대한항공, 성평등가족부장관상 수상...",
           "risk": false
         },
         {
-          "date": "11-17",
-          "title": "세미파이브, 차세대 로직칩 개발…\"HBM 없이 AI반도체 제조\"",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "“HBM 대안 찾자”…세미파이브, 美 SC26서 ‘3D-IC 플랫폼’ 공개",
+          "date": "11-18",
+          "title": "대한항공, 유가·환율 안정 힘입어 내년 영업이익 130% 급등 전망",
           "risk": false
         }
       ],
-      "price": 13210,
-      "chg": -0.0112,
-      "activity": 3.13,
-      "foreign_today": 871860000,
+      "price": 31000,
+      "chg": -0.0297,
+      "activity": 0.79,
+      "foreign_today": 868000000,
       "inst_today": 0,
-      "exchange": "KOSDAQ"
+      "exchange": "KOSPI"
     },
     {
       "code": "100790",
@@ -560,7 +530,7 @@
       "vol20": 1.102,
       "foreign_net": -14413012180,
       "inst_net": 257219755,
-      "score": 0.891,
+      "score": 0.87,
       "news": [
         {
           "date": "11-17",
@@ -578,46 +548,11 @@
           "risk": false
         }
       ],
-      "price": 15220,
-      "chg": 0.0934,
-      "activity": 7.5,
-      "foreign_today": 1643760000,
-      "inst_today": 91320000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "053800",
-      "name": "안랩",
-      "close": 101800,
-      "ret5": -0.1094,
-      "ret20": 0.1464,
-      "rsi14": 51.8,
-      "vol20": 1.557,
-      "foreign_net": -1258193100,
-      "inst_net": -2595347850,
-      "score": 0.891,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
-          "risk": false
-        }
-      ],
-      "price": 107900,
-      "chg": 0.0578,
-      "activity": 1.35,
-      "foreign_today": 7553000000,
-      "inst_today": 0,
+      "price": 15260,
+      "chg": 0.0963,
+      "activity": 7.19,
+      "foreign_today": 2121140000,
+      "inst_today": 366240000,
       "exchange": "KOSDAQ"
     },
     {
@@ -630,7 +565,7 @@
       "vol20": 1.098,
       "foreign_net": -10692163000,
       "inst_net": 10606811500,
-      "score": 0.879,
+      "score": 0.845,
       "news": [
         {
           "date": "11-18",
@@ -650,44 +585,114 @@
       ],
       "price": 241500,
       "chg": 0.1418,
-      "activity": 2.2,
-      "foreign_today": 8452500000,
-      "inst_today": 966000000,
+      "activity": 2.13,
+      "foreign_today": 10626000000,
+      "inst_today": 1207500000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "043260",
-      "name": "성호전자",
-      "close": 23800,
-      "ret5": 0.1811,
-      "ret20": -0.0881,
-      "rsi14": 48.9,
-      "vol20": 1.372,
-      "foreign_net": 4532063200,
-      "inst_net": -266153600,
-      "score": 0.83,
+      "code": "437730",
+      "name": "삼현",
+      "close": 46950,
+      "ret5": 0.3263,
+      "ret20": 0.1382,
+      "rsi14": 56.6,
+      "vol20": 1.261,
+      "foreign_net": 10392033950,
+      "inst_net": 5349898875,
+      "score": 0.826,
       "news": [
         {
           "date": "11-18",
-          "title": "성호전자 3분기 매출 797억 43% 급증…영업익은 43억",
+          "title": "삼현, 주가 11월 18일 장중 51,000원 6.25% 상승",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "성호전자 주가, 웃음꽃 활짝... 왜?",
+          "title": "의정부시, 삼현초 5학년 58명에 AI 구강관리…8주간 운영",
           "risk": false
         },
         {
-          "date": "11-18",
-          "title": "[특징주] 성호전자, 3분기 영업익 703% 급증 호실적에 14%대 후속 급등",
+          "date": "11-17",
+          "title": "한국투자증권 \"삼현, 휴머노이드 수주 가시화…2028년 로봇 매출 1600억 ...",
           "risk": false
         }
       ],
-      "price": 25150,
-      "chg": 0.1055,
-      "activity": 3.26,
-      "foreign_today": 2338950000,
-      "inst_today": 905400000,
+      "price": 51500,
+      "chg": 0.0729,
+      "activity": 3.16,
+      "foreign_today": 1030000000,
+      "inst_today": 2060000000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "053800",
+      "name": "안랩",
+      "close": 101800,
+      "ret5": -0.1094,
+      "ret20": 0.1464,
+      "rsi14": 51.8,
+      "vol20": 1.557,
+      "foreign_net": -1258193100,
+      "inst_net": -2595347850,
+      "score": 0.783,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
+          "risk": false
+        }
+      ],
+      "price": 106900,
+      "chg": 0.048,
+      "activity": 1.27,
+      "foreign_today": 6948500000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "490470",
+      "name": "세미파이브",
+      "close": 13510,
+      "ret5": 0.1799,
+      "ret20": -0.1005,
+      "rsi14": 50.0,
+      "vol20": 1.33,
+      "foreign_net": -3562734985,
+      "inst_net": -4217970210,
+      "score": 0.758,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[특징주] 세미파이브, HBM 대체할 3D-IC 기술 공개…주가 18%대 급등",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "세미파이브, 차세대 로직칩 개발…\"HBM 없이 AI반도체 제조\"",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "“HBM 대안 찾자”…세미파이브, 美 SC26서 ‘3D-IC 플랫폼’ 공개",
+          "risk": false
+        }
+      ],
+      "price": 13220,
+      "chg": -0.0105,
+      "activity": 2.99,
+      "foreign_today": 449480000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
