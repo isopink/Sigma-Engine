@@ -41,7 +41,7 @@ def triggers(hs):
             hit[h["code"]] = (key, f"{h['name']} 현재가 {h['price']:,} ≤ 손절가 {m['stop']:,}")
         elif m.get("take") and h["price"] >= m["take"]:
             hit[h["code"]] = (key, f"{h['name']} 현재가 {h['price']:,} ≥ 익절가 {m['take']:,}")
-        elif m.get("max_days") and m.get("entry_date") and C.business_days(m["entry_date"], C.today()) >= m["max_days"]:   # 11-18 S.Lee: 일반 종목은 최대 보유일 없음 (None)
+        elif m.get("max_days") and m.get("entry_date") and C.business_days(m["entry_date"], C.today()) >= m["max_days"]:   # 11-18 S.Lee: 일반 종목 10거래일 (값이 없으면 보유일로 안 팖)
             hit[h["code"]] = (key, f"{h['name']} 보유 {C.business_days(m['entry_date'], C.today())}일 ≥ 최대 {m['max_days']}일")
     n = C.now()
     if hit and n.hour * 100 + n.minute < TRADE_FROM:   # 장 전·장 초반 투매 구간 (11-06 KODEX 200 이 시가 −8.6% 에 손절된 일)
