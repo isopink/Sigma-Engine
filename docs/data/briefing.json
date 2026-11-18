@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:45",
-    "pool": 449,
-    "analyzed_new": 6,
+    "time": "15:00",
+    "pool": 448,
+    "analyzed_new": 5,
     "passed": 21,
     "kept_prep": false
   },
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 46550,
-      "chg": 0.0826,
-      "activity": 1.4,
-      "foreign_today": 7448000000,
-      "inst_today": 1489600000,
+      "price": 46750,
+      "chg": 0.0872,
+      "activity": 1.38,
+      "foreign_today": 7480000000,
+      "inst_today": 1496000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.57,
       "foreign_net": -598444400,
       "inst_net": 28489673750,
-      "score": 0.882,
+      "score": 0.896,
       "news": [
         {
           "date": "11-18",
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 166200,
-      "chg": 0.0736,
-      "activity": 1.15,
-      "foreign_today": 4487400000,
-      "inst_today": 3822600000,
+      "price": 166800,
+      "chg": 0.0775,
+      "activity": 1.17,
+      "foreign_today": 4503600000,
+      "inst_today": 3836400000,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +153,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.791,
+      "score": 0.797,
       "news": [
         {
           "date": "11-18",
@@ -161,10 +161,10 @@
           "risk": false
         }
       ],
-      "price": 82600,
-      "chg": -0.0036,
-      "activity": 1.08,
-      "foreign_today": 6112400000,
+      "price": 82700,
+      "chg": -0.0024,
+      "activity": 1.09,
+      "foreign_today": 6119800000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -186,12 +186,42 @@
           "risk": false
         }
       ],
-      "price": 198800,
-      "chg": 0.0322,
-      "activity": 1.5,
+      "price": 198500,
+      "chg": 0.0306,
+      "activity": 1.48,
       "foreign_today": 0,
-      "inst_today": 596400000,
+      "inst_today": 595500000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "018260",
+      "name": "삼성에스디에스",
+      "close": 224000,
+      "ret5": -0.0324,
+      "ret20": 0.1423,
+      "rsi14": 54.5,
+      "vol20": 0.548,
+      "foreign_net": 2891179000,
+      "inst_net": 22252576250,
+      "score": 0.677,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[증권리포트 분석] ③ 정호윤 삼성에스디에스 100% 적중",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "삼성에스디에스, 고가 24만2500원 이후 하락…변동폭 1만6000원",
+          "risk": false
+        }
+      ],
+      "price": 233000,
+      "chg": 0.031,
+      "activity": 0.65,
+      "foreign_today": 3961000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
     },
     {
       "code": "030200",
@@ -203,8 +233,13 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.604,
+      "score": 0.599,
       "news": [
+        {
+          "date": "11-18",
+          "title": "KT지니뮤직, 'AGF 2026'서 니케·스텔라 블레이드 실물 음반 판매",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "KT-서울대병원, AI 로봇 의료 현장에 적용",
@@ -213,11 +248,6 @@
         {
           "date": "11-18",
           "title": "KT알파 쇼핑, 말레이시아 미디어그룹과 협력…PB 해외 진출 타진",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[부음] 나종민(KT무빙 대표)씨 모친상",
           "risk": false
         }
       ],
@@ -235,7 +265,7 @@
       "vol20": 0.547,
       "foreign_net": -6746448000,
       "inst_net": 58337684500,
-      "score": 0.588,
+      "score": 0.589,
       "news": [
         {
           "date": "11-18",
@@ -253,11 +283,11 @@
           "risk": false
         }
       ],
-      "price": 254500,
-      "chg": 0.0517,
+      "price": 253750,
+      "chg": 0.0486,
       "activity": 0.68,
       "foreign_today": 0,
-      "inst_today": 6108000000,
+      "inst_today": 6090000000,
       "exchange": "KOSPI"
     },
     {
@@ -270,7 +300,7 @@
       "vol20": 0.642,
       "foreign_net": 10284464750,
       "inst_net": -4842497150,
-      "score": 0.588,
+      "score": 0.583,
       "news": [],
       "foreign_today": 0,
       "inst_today": 973800000,
@@ -286,7 +316,7 @@
       "vol20": 0.869,
       "foreign_net": -87308670000,
       "inst_net": 45532092000,
-      "score": 0.572,
+      "score": 0.573,
       "news": [
         {
           "date": "11-18",
@@ -306,9 +336,25 @@
       ],
       "price": 64000,
       "chg": -0.0574,
-      "activity": 1.17,
+      "activity": 1.16,
       "foreign_today": 9536000000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 178600,
+      "ret5": 0.0733,
+      "ret20": -0.118,
+      "rsi14": 46.3,
+      "vol20": 0.734,
+      "foreign_net": -3801142600,
+      "inst_net": 6589437800,
+      "score": 0.542,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 3214800000,
       "exchange": "KOSPI"
     },
     {
@@ -321,7 +367,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.545,
+      "score": 0.536,
       "news": [
         {
           "date": "11-18",
@@ -339,59 +385,11 @@
           "risk": false
         }
       ],
-      "price": 155500,
-      "chg": -0.0083,
-      "activity": 0.61,
-      "foreign_today": 10263000000,
-      "inst_today": 1866000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 178600,
-      "ret5": 0.0733,
-      "ret20": -0.118,
-      "rsi14": 46.3,
-      "vol20": 0.734,
-      "foreign_net": -3801142600,
-      "inst_net": 6589437800,
-      "score": 0.545,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 3214800000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "004170",
-      "name": "신세계",
-      "close": 264500,
-      "ret5": 0.0752,
-      "ret20": -0.0056,
-      "rsi14": 47.2,
-      "vol20": 0.538,
-      "foreign_net": -10208609250,
-      "inst_net": 13220551250,
-      "score": 0.524,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "[똑똑한케어] 코스맥스, 한국콜마, 룰루랩 루디언트, 신세계인터내셔날...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "신세계엘앤비 와인앤모어, 19일 마곡점 신규 오픈",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "'매출 2000억' 청사진 흔들… 어뮤즈 적자에 신세계인터 '투자 시험대'",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1058000000,
+      "price": 155300,
+      "chg": -0.0096,
+      "activity": 0.6,
+      "foreign_today": 10249800000,
+      "inst_today": 1863600000,
       "exchange": "KOSPI"
     },
     {
@@ -404,7 +402,7 @@
       "vol20": 0.54,
       "foreign_net": 12806819550,
       "inst_net": 8031556550,
-      "score": 0.513,
+      "score": 0.516,
       "news": [
         {
           "date": "11-18",
@@ -426,7 +424,7 @@
       "vol20": 0.602,
       "foreign_net": 51992049675,
       "inst_net": 10112869800,
-      "score": 0.497,
+      "score": 0.51,
       "news": [
         {
           "date": "11-18",
@@ -446,41 +444,36 @@
       ],
       "price": 31250,
       "chg": -0.0219,
-      "activity": 0.73,
+      "activity": 0.72,
       "foreign_today": 1218750000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
-      "code": "090430",
-      "name": "아모레퍼시픽",
-      "close": 129900,
-      "ret5": 0.0085,
-      "ret20": -0.0539,
-      "rsi14": 48.8,
-      "vol20": 0.365,
-      "foreign_net": 5277176150,
-      "inst_net": -3031944750,
-      "score": 0.487,
+      "code": "004170",
+      "name": "신세계",
+      "close": 264500,
+      "ret5": 0.0752,
+      "ret20": -0.0056,
+      "rsi14": 47.2,
+      "vol20": 0.538,
+      "foreign_net": -10208609250,
+      "inst_net": 13220551250,
+      "score": 0.505,
       "news": [
         {
           "date": "11-18",
-          "title": "아모레퍼시픽, 임원 불륜 논란에 징계 절차 착수…성과급 특혜 의혹 해...",
+          "title": "[똑똑한케어] 코스맥스, 한국콜마, 룰루랩 루디언트, 신세계인터내셔날...",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[2026 여성포럼]아모레퍼시픽, 임원 자리까지 여성의 길 열었다",
+          "title": "신세계엘앤비 와인앤모어, 19일 마곡점 신규 오픈",
           "risk": false
         }
       ],
-      "foreign_today": 1558800000,
-      "inst_today": 909300000,
+      "foreign_today": 0,
+      "inst_today": 1058000000,
       "exchange": "KOSPI"
     },
     {
@@ -493,7 +486,7 @@
       "vol20": 0.904,
       "foreign_net": -3311756675,
       "inst_net": 9323673800,
-      "score": 0.46,
+      "score": 0.432,
       "news": [
         {
           "date": "11-18",
@@ -511,11 +504,11 @@
           "risk": false
         }
       ],
-      "price": 31700,
-      "chg": 0.0445,
-      "activity": 0.62,
-      "foreign_today": 729100000,
-      "inst_today": 63400000,
+      "price": 31600,
+      "chg": 0.0412,
+      "activity": 0.61,
+      "foreign_today": 726800000,
+      "inst_today": 63200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -528,7 +521,7 @@
       "vol20": 1.102,
       "foreign_net": -14413012180,
       "inst_net": 257219755,
-      "score": 0.85,
+      "score": 0.849,
       "news": [
         {
           "date": "11-17",
@@ -546,11 +539,11 @@
           "risk": false
         }
       ],
-      "price": 15300,
-      "chg": 0.0991,
-      "activity": 5.95,
-      "foreign_today": 2340900000,
-      "inst_today": 489600000,
+      "price": 15270,
+      "chg": 0.097,
+      "activity": 5.74,
+      "foreign_today": 2336310000,
+      "inst_today": 488640000,
       "exchange": "KOSDAQ"
     },
     {
@@ -563,8 +556,13 @@
       "vol20": 1.261,
       "foreign_net": 10392033950,
       "inst_net": 5349898875,
-      "score": 0.845,
+      "score": 0.844,
       "news": [
+        {
+          "date": "11-18",
+          "title": "[특징주] 삼현, 로봇·자율주행 테마 강세 속 '적자 부담' 털고 10% 껑충",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "삼현 11%대 상승…방산 공급계약과 적자 부담 공존",
@@ -574,18 +572,13 @@
           "date": "11-18",
           "title": "삼현·현대오토에버 '부르릉'…자율주행 산업 성장 부각",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "삼현, 주가 11월 18일 장중 51,000원 6.25% 상승",
-          "risk": false
         }
       ],
-      "price": 53200,
-      "chg": 0.1083,
-      "activity": 3.61,
-      "foreign_today": 1436400000,
-      "inst_today": 3777200000,
+      "price": 52700,
+      "chg": 0.0979,
+      "activity": 3.57,
+      "foreign_today": 1422900000,
+      "inst_today": 3741700000,
       "exchange": "KOSDAQ"
     },
     {
@@ -598,7 +591,7 @@
       "vol20": 1.098,
       "foreign_net": -10692163000,
       "inst_net": 10606811500,
-      "score": 0.824,
+      "score": 0.828,
       "news": [
         {
           "date": "11-18",
@@ -611,11 +604,11 @@
           "risk": false
         }
       ],
-      "price": 240500,
-      "chg": 0.1371,
-      "activity": 1.86,
-      "foreign_today": 11063000000,
-      "inst_today": 1443000000,
+      "price": 241000,
+      "chg": 0.1395,
+      "activity": 1.82,
+      "foreign_today": 11086000000,
+      "inst_today": 1446000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -628,7 +621,7 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 0.765,
+      "score": 0.755,
       "news": [
         {
           "date": "11-18",
@@ -646,10 +639,10 @@
           "risk": false
         }
       ],
-      "price": 13320,
-      "chg": -0.003,
-      "activity": 2.52,
-      "foreign_today": 546120000,
+      "price": 13250,
+      "chg": -0.0082,
+      "activity": 2.43,
+      "foreign_today": 543250000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -663,7 +656,7 @@
       "vol20": 1.372,
       "foreign_net": 4532063200,
       "inst_net": -266153600,
-      "score": 0.738,
+      "score": 0.74,
       "news": [
         {
           "date": "11-18",
@@ -683,7 +676,7 @@
       ],
       "price": 25700,
       "chg": 0.1297,
-      "activity": 2.73,
+      "activity": 2.66,
       "foreign_today": 950900000,
       "inst_today": 1439200000,
       "exchange": "KOSDAQ"
