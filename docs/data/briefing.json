@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:00",
-    "pool": 446,
-    "analyzed_new": 30,
+    "time": "14:15",
+    "pool": 447,
+    "analyzed_new": 18,
     "passed": 21,
     "kept_prep": false
   },
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 46600,
-      "chg": 0.0837,
-      "activity": 1.46,
-      "foreign_today": 5731800000,
-      "inst_today": 932000000,
+      "price": 46950,
+      "chg": 0.0919,
+      "activity": 1.43,
+      "foreign_today": 5774850000,
+      "inst_today": 939000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.57,
       "foreign_net": -598444400,
       "inst_net": 28489673750,
-      "score": 0.828,
+      "score": 0.827,
       "news": [
         {
           "date": "11-18",
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 165200,
-      "chg": 0.0672,
+      "price": 166200,
+      "chg": 0.0736,
       "activity": 1.16,
-      "foreign_today": 2643200000,
-      "inst_today": 2312800000,
+      "foreign_today": 2659200000,
+      "inst_today": 2326800000,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +153,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.699,
+      "score": 0.714,
       "news": [
         {
           "date": "11-18",
@@ -161,10 +161,10 @@
           "risk": false
         }
       ],
-      "price": 81500,
-      "chg": -0.0169,
-      "activity": 1.08,
-      "foreign_today": 5134500000,
+      "price": 82200,
+      "chg": -0.0084,
+      "activity": 1.06,
+      "foreign_today": 5178600000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -178,7 +178,7 @@
       "vol20": 0.557,
       "foreign_net": -1757680500,
       "inst_net": 10807969000,
-      "score": 0.663,
+      "score": 0.661,
       "news": [
         {
           "date": "11-17",
@@ -196,11 +196,11 @@
           "risk": false
         }
       ],
-      "price": 266500,
-      "chg": 0.0329,
-      "activity": 1.37,
+      "price": 266000,
+      "chg": 0.031,
+      "activity": 1.35,
       "foreign_today": 0,
-      "inst_today": 533000000,
+      "inst_today": 532000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -213,21 +213,21 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.601,
+      "score": 0.607,
       "news": [
         {
           "date": "11-18",
-          "title": "KT-서울대병원, 의료 현장에 AI 로봇 적용 실증 추진",
+          "title": "KT알파 쇼핑, 말레이시아 홈쇼핑과 협력 모색…중소기업 해외 판로 확대",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "KT-서울대병원, 피지컬 AI 로봇 투입…어린이 환자 돌본다",
+          "title": "[부음] 나종민(KT무빙 대표)씨 모친상",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "KT·서울대병원 '의료 피지컬 AI' 실증",
+          "title": "KT, 서울대병원서 어린이 환자 돕는 'AI 로봇' 실증 나서",
           "risk": false
         }
       ],
@@ -255,7 +255,7 @@
       ],
       "price": 197900,
       "chg": 0.0275,
-      "activity": 1.55,
+      "activity": 1.52,
       "foreign_today": 0,
       "inst_today": 197900000,
       "exchange": "KOSDAQ"
@@ -277,6 +277,41 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "028050",
+      "name": "삼성E&A",
+      "close": 67600,
+      "ret5": 0.0579,
+      "ret20": 0.5684,
+      "rsi14": 63.9,
+      "vol20": 0.869,
+      "foreign_net": -87308670000,
+      "inst_net": 45532092000,
+      "score": 0.571,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[단독] 삼성E&A 시공 말레이시아 가스플랜트 가동…셸, 사라왁 심해가스...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼성E&A 목표주가 9만6천원 상향…AI·모듈러 경쟁력 주목",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "삼성E&A 1.32% 상승…수주 17조원·특별 주주환원 부각",
+          "risk": false
+        }
+      ],
+      "price": 63400,
+      "chg": -0.0663,
+      "activity": 1.19,
+      "foreign_today": 10207400000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "105560",
       "name": "KB금융",
       "close": 156100,
@@ -286,7 +321,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.564,
+      "score": 0.56,
       "news": [
         {
           "date": "11-18",
@@ -304,11 +339,11 @@
           "risk": false
         }
       ],
-      "price": 154700,
-      "chg": -0.0134,
+      "price": 155200,
+      "chg": -0.0102,
       "activity": 0.63,
-      "foreign_today": 9436700000,
-      "inst_today": 1856400000,
+      "foreign_today": 9467200000,
+      "inst_today": 1862400000,
       "exchange": "KOSPI"
     },
     {
@@ -321,7 +356,7 @@
       "vol20": 0.734,
       "foreign_net": -3801142600,
       "inst_net": 6589437800,
-      "score": 0.521,
+      "score": 0.524,
       "news": [],
       "foreign_today": 0,
       "inst_today": 2143200000,
@@ -337,7 +372,7 @@
       "vol20": 0.548,
       "foreign_net": 2891179000,
       "inst_net": 22252576250,
-      "score": 0.503,
+      "score": 0.512,
       "news": [
         {
           "date": "11-18",
@@ -364,8 +399,13 @@
       "vol20": 0.538,
       "foreign_net": -10208609250,
       "inst_net": 13220551250,
-      "score": 0.503,
+      "score": 0.494,
       "news": [
+        {
+          "date": "11-18",
+          "title": "증권가, 1주일 새 목표가 192건 내리고 48건 올려…신세계 11곳 하향",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "가구업계 3분기 실적 희비…한샘·리바트 '울고' 신세계까사 '웃었다'",
@@ -386,7 +426,7 @@
       "vol20": 0.596,
       "foreign_net": -39140101250,
       "inst_net": 15285708750,
-      "score": 0.479,
+      "score": 0.476,
       "news": [
         {
           "date": "11-18",
@@ -409,6 +449,41 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "003490",
+      "name": "대한항공",
+      "close": 31750,
+      "ret5": -0.0261,
+      "ret20": 0.2188,
+      "rsi14": 61.9,
+      "vol20": 0.602,
+      "foreign_net": 51992049675,
+      "inst_net": 10112869800,
+      "score": 0.458,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "록히드마틴, 차세대 고속 헬기 공동개발 제안⋯KAI·대한항공과 협의",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "‘여성 인력 25% 확대’ 목표 달성…대한항공, 성평등가족부장관상 수상...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "대한항공, 유가·환율 안정 힘입어 내년 영업이익 130% 급등 전망",
+          "risk": false
+        }
+      ],
+      "price": 31225,
+      "chg": -0.0227,
+      "activity": 0.75,
+      "foreign_today": 874300000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "090430",
       "name": "아모레퍼시픽",
       "close": 129900,
@@ -418,7 +493,7 @@
       "vol20": 0.365,
       "foreign_net": 5277176150,
       "inst_net": -3031944750,
-      "score": 0.472,
+      "score": 0.458,
       "news": [
         {
           "date": "11-18",
@@ -441,66 +516,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "003490",
-      "name": "대한항공",
-      "close": 31750,
-      "ret5": -0.0261,
-      "ret20": 0.2188,
-      "rsi14": 61.9,
-      "vol20": 0.602,
-      "foreign_net": 51992049675,
-      "inst_net": 10112869800,
-      "score": 0.466,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "록히드마틴, 차세대 고속 헬기 공동개발 제안⋯KAI·대한항공과 협의",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "‘여성 인력 25% 확대’ 목표 달성…대한항공, 성평등가족부장관상 수상...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "대한항공, 유가·환율 안정 힘입어 내년 영업이익 130% 급등 전망",
-          "risk": false
-        }
-      ],
-      "price": 31200,
-      "chg": -0.0235,
-      "activity": 0.76,
-      "foreign_today": 873600000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32450,
-      "ret5": 0.0417,
-      "ret20": 0.0237,
-      "rsi14": 54.4,
-      "vol20": 0.349,
-      "foreign_net": -19864151125,
-      "inst_net": 40202789025,
-      "score": 0.448,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "우리금융지주, 보통주 5만7,369주 소각에 따른 변경상장",
-          "risk": false
-        }
-      ],
-      "price": 32225,
-      "chg": -0.0115,
-      "activity": 0.64,
-      "foreign_today": 0,
-      "inst_today": 1289000000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "100790",
       "name": "미래에셋벤처투자",
       "close": 14080,
@@ -510,7 +525,7 @@
       "vol20": 1.102,
       "foreign_net": -14413012180,
       "inst_net": 257219755,
-      "score": 0.847,
+      "score": 0.845,
       "news": [
         {
           "date": "11-17",
@@ -528,11 +543,11 @@
           "risk": false
         }
       ],
-      "price": 15010,
-      "chg": 0.0783,
-      "activity": 6.53,
-      "foreign_today": 2086390000,
-      "inst_today": 360240000,
+      "price": 15130,
+      "chg": 0.0869,
+      "activity": 6.33,
+      "foreign_today": 2103070000,
+      "inst_today": 363120000,
       "exchange": "KOSDAQ"
     },
     {
@@ -545,8 +560,13 @@
       "vol20": 1.261,
       "foreign_net": 10392033950,
       "inst_net": 5349898875,
-      "score": 0.822,
+      "score": 0.821,
       "news": [
+        {
+          "date": "11-18",
+          "title": "삼현·현대오토에버 '부르릉'…자율주행 산업 성장 부각",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "삼현, 주가 11월 18일 장중 51,000원 6.25% 상승",
@@ -556,18 +576,13 @@
           "date": "11-18",
           "title": "의정부시, 삼현초 5학년 58명에 AI 구강관리…8주간 운영",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "한국투자증권 \"삼현, 휴머노이드 수주 가시화…2028년 로봇 매출 1600억 ...",
-          "risk": false
         }
       ],
-      "price": 52800,
-      "chg": 0.1,
-      "activity": 3.49,
-      "foreign_today": 1056000000,
-      "inst_today": 2112000000,
+      "price": 53500,
+      "chg": 0.1146,
+      "activity": 3.58,
+      "foreign_today": 1070000000,
+      "inst_today": 2140000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -595,7 +610,7 @@
       ],
       "price": 238500,
       "chg": 0.1277,
-      "activity": 2.0,
+      "activity": 1.95,
       "foreign_today": 10494000000,
       "inst_today": 1192500000,
       "exchange": "KOSDAQ"
@@ -610,7 +625,7 @@
       "vol20": 1.362,
       "foreign_net": -16982819565,
       "inst_net": 28477147760,
-      "score": 0.724,
+      "score": 0.738,
       "news": [
         {
           "date": "11-17",
@@ -628,45 +643,45 @@
           "risk": false
         }
       ],
-      "price": 14630,
-      "chg": 0.0663,
-      "activity": 3.07,
-      "foreign_today": 672980000,
-      "inst_today": 848540000,
+      "price": 14700,
+      "chg": 0.0714,
+      "activity": 3.03,
+      "foreign_today": 676200000,
+      "inst_today": 852600000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "490470",
-      "name": "세미파이브",
-      "close": 13510,
-      "ret5": 0.1799,
-      "ret20": -0.1005,
-      "rsi14": 50.0,
-      "vol20": 1.33,
-      "foreign_net": -3562734985,
-      "inst_net": -4217970210,
-      "score": 0.724,
+      "code": "053800",
+      "name": "안랩",
+      "close": 101800,
+      "ret5": -0.1094,
+      "ret20": 0.1464,
+      "rsi14": 51.8,
+      "vol20": 1.557,
+      "foreign_net": -1258193100,
+      "inst_net": -2595347850,
+      "score": 0.726,
       "news": [
         {
           "date": "11-18",
-          "title": "세미파이브, HBM 없는 AI 반도체 개발…3D 적층 기술 공개",
+          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
           "risk": false
         },
         {
-          "date": "11-17",
-          "title": "[특징주] 세미파이브, HBM 대체할 3D-IC 기술 공개…주가 18%대 급등",
+          "date": "11-18",
+          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
           "risk": false
         },
         {
-          "date": "11-17",
-          "title": "세미파이브, 차세대 로직칩 개발…\"HBM 없이 AI반도체 제조\"",
+          "date": "11-18",
+          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
           "risk": false
         }
       ],
-      "price": 13080,
-      "chg": -0.021,
-      "activity": 2.72,
-      "foreign_today": 444720000,
+      "price": 105400,
+      "chg": 0.0333,
+      "activity": 1.13,
+      "foreign_today": 6851000000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
