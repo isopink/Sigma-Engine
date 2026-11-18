@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "15:00",
+    "time": "15:15",
     "pool": 448,
-    "analyzed_new": 5,
-    "passed": 21,
+    "analyzed_new": 6,
+    "passed": 22,
     "kept_prep": false
   },
   "candidates": [
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 46750,
-      "chg": 0.0872,
-      "activity": 1.38,
-      "foreign_today": 7480000000,
-      "inst_today": 1496000000,
+      "price": 46650,
+      "chg": 0.0849,
+      "activity": 1.36,
+      "foreign_today": 7464000000,
+      "inst_today": 1492800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.57,
       "foreign_net": -598444400,
       "inst_net": 28489673750,
-      "score": 0.896,
+      "score": 0.891,
       "news": [
         {
           "date": "11-18",
@@ -153,7 +153,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.797,
+      "score": 0.786,
       "news": [
         {
           "date": "11-18",
@@ -161,10 +161,10 @@
           "risk": false
         }
       ],
-      "price": 82700,
-      "chg": -0.0024,
+      "price": 82600,
+      "chg": -0.0036,
       "activity": 1.09,
-      "foreign_today": 6119800000,
+      "foreign_today": 6112400000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -178,7 +178,7 @@
       "vol20": 0.356,
       "foreign_net": -5847784900,
       "inst_net": 7280113950,
-      "score": 0.781,
+      "score": 0.771,
       "news": [
         {
           "date": "11-17",
@@ -186,11 +186,11 @@
           "risk": false
         }
       ],
-      "price": 198500,
-      "chg": 0.0306,
-      "activity": 1.48,
+      "price": 197300,
+      "chg": 0.0244,
+      "activity": 1.45,
       "foreign_today": 0,
-      "inst_today": 595500000,
+      "inst_today": 591900000,
       "exchange": "KOSDAQ"
     },
     {
@@ -203,7 +203,7 @@
       "vol20": 0.548,
       "foreign_net": 2891179000,
       "inst_net": 22252576250,
-      "score": 0.677,
+      "score": 0.693,
       "news": [
         {
           "date": "11-18",
@@ -216,11 +216,46 @@
           "risk": false
         }
       ],
-      "price": 233000,
-      "chg": 0.031,
-      "activity": 0.65,
-      "foreign_today": 3961000000,
+      "price": 232000,
+      "chg": 0.0265,
+      "activity": 0.69,
+      "foreign_today": 3944000000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "032830",
+      "name": "삼성생명",
+      "close": 240000,
+      "ret5": -0.0103,
+      "ret20": 0.0235,
+      "rsi14": 40.8,
+      "vol20": 0.547,
+      "foreign_net": -6746448000,
+      "inst_net": 58337684500,
+      "score": 0.609,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "삼성생명 컨설턴트 73% 직업 만족…절반 이상 \"이직 후 소득 증가\"",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼성생명 컨설턴트, 직업 선택 이유 1위 '일·가정 양립' 꼽아",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "\"정년 없는 '평생 현역' 매력\"…삼성생명, 컨설턴트 73.2% 직업 만족",
+          "risk": false
+        }
+      ],
+      "price": 255000,
+      "chg": 0.0537,
+      "activity": 0.69,
+      "foreign_today": 0,
+      "inst_today": 6120000000,
       "exchange": "KOSPI"
     },
     {
@@ -237,57 +272,22 @@
       "news": [
         {
           "date": "11-18",
-          "title": "KT지니뮤직, 'AGF 2026'서 니케·스텔라 블레이드 실물 음반 판매",
+          "title": "KT, 서울대병원서 어린이 환자 돕는 AI 로봇 실증 나선다",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "KT-서울대병원, AI 로봇 의료 현장에 적용",
+          "title": "KT·서울대병원, 어린이 환자 돌보는 의료용 AI 로봇 실증",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "KT알파 쇼핑, 말레이시아 미디어그룹과 협력…PB 해외 진출 타진",
+          "title": "‘집토끼만 6명’… 정상 재도전과 세대교체 사이, KT의 복잡한 겨울",
           "risk": false
         }
       ],
       "foreign_today": 3868400000,
       "inst_today": 203600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "032830",
-      "name": "삼성생명",
-      "close": 240000,
-      "ret5": -0.0103,
-      "ret20": 0.0235,
-      "rsi14": 40.8,
-      "vol20": 0.547,
-      "foreign_net": -6746448000,
-      "inst_net": 58337684500,
-      "score": 0.589,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "삼성생명 컨설턴트, 직업 선택 이유 1위 '일·가정 양립' 꼽아",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "\"정년 없는 '평생 현역' 매력\"…삼성생명, 컨설턴트 73.2% 직업 만족",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "삼성생명 컨설턴트 10명 중 7명 직업에 만족… \"일·가정 함께 지키는 평...",
-          "risk": false
-        }
-      ],
-      "price": 253750,
-      "chg": 0.0486,
-      "activity": 0.68,
-      "foreign_today": 0,
-      "inst_today": 6090000000,
       "exchange": "KOSPI"
     },
     {
@@ -300,7 +300,7 @@
       "vol20": 0.642,
       "foreign_net": 10284464750,
       "inst_net": -4842497150,
-      "score": 0.583,
+      "score": 0.578,
       "news": [],
       "foreign_today": 0,
       "inst_today": 973800000,
@@ -316,7 +316,7 @@
       "vol20": 0.869,
       "foreign_net": -87308670000,
       "inst_net": 45532092000,
-      "score": 0.573,
+      "score": 0.542,
       "news": [
         {
           "date": "11-18",
@@ -334,27 +334,11 @@
           "risk": false
         }
       ],
-      "price": 64000,
-      "chg": -0.0574,
-      "activity": 1.16,
-      "foreign_today": 9536000000,
+      "price": 63900,
+      "chg": -0.0589,
+      "activity": 1.14,
+      "foreign_today": 9521100000,
       "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 178600,
-      "ret5": 0.0733,
-      "ret20": -0.118,
-      "rsi14": 46.3,
-      "vol20": 0.734,
-      "foreign_net": -3801142600,
-      "inst_net": 6589437800,
-      "score": 0.542,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 3214800000,
       "exchange": "KOSPI"
     },
     {
@@ -367,7 +351,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.536,
+      "score": 0.542,
       "news": [
         {
           "date": "11-18",
@@ -385,11 +369,27 @@
           "risk": false
         }
       ],
-      "price": 155300,
-      "chg": -0.0096,
-      "activity": 0.6,
-      "foreign_today": 10249800000,
-      "inst_today": 1863600000,
+      "price": 155400,
+      "chg": -0.0089,
+      "activity": 0.61,
+      "foreign_today": 10256400000,
+      "inst_today": 1864800000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 178600,
+      "ret5": 0.0733,
+      "ret20": -0.118,
+      "rsi14": 46.3,
+      "vol20": 0.734,
+      "foreign_net": -3801142600,
+      "inst_net": 6589437800,
+      "score": 0.542,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 3214800000,
       "exchange": "KOSPI"
     },
     {
@@ -444,7 +444,7 @@
       ],
       "price": 31250,
       "chg": -0.0219,
-      "activity": 0.72,
+      "activity": 0.73,
       "foreign_today": 1218750000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -459,16 +459,21 @@
       "vol20": 0.538,
       "foreign_net": -10208609250,
       "inst_net": 13220551250,
-      "score": 0.505,
+      "score": 0.5,
       "news": [
         {
           "date": "11-18",
-          "title": "[똑똑한케어] 코스맥스, 한국콜마, 룰루랩 루디언트, 신세계인터내셔날...",
+          "title": "롯데百 매출 90% 따라잡은 신세계… 업계 1위 ‘맹추격’",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "신세계엘앤비 와인앤모어, 19일 마곡점 신규 오픈",
+          "title": "\"신세계에서만 볼 수 있어야죠\"…크리스마스 영상의 숨은 주역 [fn이사람...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "신세계인터내셔날, 美 니치 향수 '에드워드 베스' 국내 독점 론칭",
           "risk": false
         }
       ],
@@ -486,7 +491,7 @@
       "vol20": 0.904,
       "foreign_net": -3311756675,
       "inst_net": 9323673800,
-      "score": 0.432,
+      "score": 0.406,
       "news": [
         {
           "date": "11-18",
@@ -504,11 +509,11 @@
           "risk": false
         }
       ],
-      "price": 31600,
-      "chg": 0.0412,
-      "activity": 0.61,
-      "foreign_today": 726800000,
-      "inst_today": 63200000,
+      "price": 31450,
+      "chg": 0.0362,
+      "activity": 0.6,
+      "foreign_today": 723350000,
+      "inst_today": 62900000,
       "exchange": "KOSDAQ"
     },
     {
@@ -539,11 +544,11 @@
           "risk": false
         }
       ],
-      "price": 15270,
-      "chg": 0.097,
-      "activity": 5.74,
-      "foreign_today": 2336310000,
-      "inst_today": 488640000,
+      "price": 15280,
+      "chg": 0.0977,
+      "activity": 5.59,
+      "foreign_today": 2337840000,
+      "inst_today": 488960000,
       "exchange": "KOSDAQ"
     },
     {
@@ -560,6 +565,11 @@
       "news": [
         {
           "date": "11-18",
+          "title": "의정부시 삼현초, AI 활용한 구강건강관리 프로그램 운영",
+          "risk": false
+        },
+        {
+          "date": "11-18",
           "title": "[특징주] 삼현, 로봇·자율주행 테마 강세 속 '적자 부담' 털고 10% 껑충",
           "risk": false
         },
@@ -567,18 +577,13 @@
           "date": "11-18",
           "title": "삼현 11%대 상승…방산 공급계약과 적자 부담 공존",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "삼현·현대오토에버 '부르릉'…자율주행 산업 성장 부각",
-          "risk": false
         }
       ],
-      "price": 52700,
-      "chg": 0.0979,
-      "activity": 3.57,
-      "foreign_today": 1422900000,
-      "inst_today": 3741700000,
+      "price": 53100,
+      "chg": 0.1063,
+      "activity": 3.58,
+      "foreign_today": 1433700000,
+      "inst_today": 3770100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -604,11 +609,11 @@
           "risk": false
         }
       ],
-      "price": 241000,
-      "chg": 0.1395,
-      "activity": 1.82,
-      "foreign_today": 11086000000,
-      "inst_today": 1446000000,
+      "price": 240500,
+      "chg": 0.1371,
+      "activity": 1.78,
+      "foreign_today": 11063000000,
+      "inst_today": 1443000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -621,7 +626,7 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 0.755,
+      "score": 0.771,
       "news": [
         {
           "date": "11-18",
@@ -639,10 +644,10 @@
           "risk": false
         }
       ],
-      "price": 13250,
-      "chg": -0.0082,
-      "activity": 2.43,
-      "foreign_today": 543250000,
+      "price": 13420,
+      "chg": 0.0045,
+      "activity": 2.53,
+      "foreign_today": 550220000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -656,7 +661,7 @@
       "vol20": 1.372,
       "foreign_net": 4532063200,
       "inst_net": -266153600,
-      "score": 0.74,
+      "score": 0.75,
       "news": [
         {
           "date": "11-18",
@@ -674,11 +679,11 @@
           "risk": false
         }
       ],
-      "price": 25700,
-      "chg": 0.1297,
-      "activity": 2.66,
-      "foreign_today": 950900000,
-      "inst_today": 1439200000,
+      "price": 25950,
+      "chg": 0.1407,
+      "activity": 2.63,
+      "foreign_today": 960150000,
+      "inst_today": 1453200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -710,6 +715,40 @@
         }
       ],
       "exchange": "ETF"
+    },
+    {
+      "code": "000250",
+      "name": "삼천당제약",
+      "close": 160300,
+      "ret5": -0.101,
+      "ret20": -0.2025,
+      "rsi14": 38.6,
+      "vol20": 0.628,
+      "foreign_net": -1599973050,
+      "inst_net": -1065360500,
+      "score": 0,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "삼천당제약 14%대 급락…SCD411 계약 이후 변동성 확대",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼천당제약, 장중 12% 급락…코스닥 상승에도 나홀로 약세, 무슨 일?",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼천당제약 '아일리아 시밀러' 美 허가 제동 … 보완자료 제출하고 재도...",
+          "risk": false
+        }
+      ],
+      "price": 138100,
+      "chg": -0.1406,
+      "foreign_today": 0,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
     }
   ]
 }
