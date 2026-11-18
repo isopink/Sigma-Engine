@@ -81,78 +81,36 @@
     ]
   },
   "intraday": {
-    "time": "09:45",
-    "pool": 323,
+    "time": "10:00",
+    "pool": 355,
     "analyzed_new": 30,
-    "passed": 9,
+    "passed": 11,
     "kept_prep": false
   },
   "candidates": [
     {
-      "code": "030200",
-      "name": "KT",
-      "close": 50900,
-      "ret5": 0.0,
-      "ret20": -0.002,
-      "rsi14": 53.3,
-      "vol20": 0.369,
-      "foreign_net": 13641383750,
-      "inst_net": -9459512150,
-      "score": 0.513,
+      "code": "017670",
+      "name": "SK텔레콤",
+      "close": 82900,
+      "ret5": 0.0122,
+      "ret20": 0.0865,
+      "rsi14": 54.8,
+      "vol20": 0.468,
+      "foreign_net": 18957072950,
+      "inst_net": 34103456350,
+      "score": 0.591,
       "news": [
         {
           "date": "11-18",
-          "title": "KT-서울대병원 'AI 로봇' 실증…대화·놀이로 어린이 환자 긴장 해소",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[유통딜리버리] SSG닷컴ㆍ무신사ㆍGS샵ㆍ이마트24ㆍW컨셉ㆍKT알파 쇼핑ㆍ...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT, 서울대병원서 AI 로봇 실증…어린이 환자 돌봄 돕는다",
+          "title": "[넥스트 K-브랜드 대상] [통신서비스 부문] AI로 미래 그리는 SK텔레콤…...",
           "risk": false
         }
       ],
-      "foreign_today": 814400000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 156100,
-      "ret5": 0.0216,
-      "ret20": -0.0328,
-      "rsi14": 47.8,
-      "vol20": 0.366,
-      "foreign_net": 84943533200,
-      "inst_net": -71541342600,
-      "score": 0.385,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "국민연금, KB금융 이재근 신임 회장 선임안 '찬성' 결정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "국민연금, 이재근 KB금융 회장 후보 찬성…지분 9.17%의 선택",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "ATM 줄이고 점포 닫고…4대금융, 비용효율화 총력, KB금융 36.4%로 최저",
-          "risk": false
-        }
-      ],
-      "price": 155000,
-      "chg": -0.0115,
-      "activity": 1.81,
-      "foreign_today": 2790000000,
-      "inst_today": 0,
+      "price": 82400,
+      "chg": -0.006,
+      "activity": 1.56,
+      "foreign_today": 0,
+      "inst_today": 2884000000,
       "exchange": "KOSPI"
     },
     {
@@ -165,7 +123,7 @@
       "vol20": 0.869,
       "foreign_net": -87308670000,
       "inst_net": 45532092000,
-      "score": 0.333,
+      "score": 0.485,
       "news": [
         {
           "date": "11-18",
@@ -185,45 +143,102 @@
       ],
       "price": 64300,
       "chg": -0.053,
-      "activity": 2.41,
-      "foreign_today": 1221700000,
+      "activity": 2.23,
+      "foreign_today": 2700600000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
-      "code": "100790",
-      "name": "미래에셋벤처투자",
-      "close": 14080,
-      "ret5": 0.2107,
-      "ret20": -0.0098,
-      "rsi14": 52.5,
-      "vol20": 1.102,
-      "foreign_net": -14413012180,
-      "inst_net": 257219755,
-      "score": 1.0,
+      "code": "030200",
+      "name": "KT",
+      "close": 50900,
+      "ret5": 0.0,
+      "ret20": -0.002,
+      "rsi14": 53.3,
+      "vol20": 0.369,
+      "foreign_net": 13641383750,
+      "inst_net": -9459512150,
+      "score": 0.485,
       "news": [
         {
-          "date": "11-17",
-          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
+          "date": "11-18",
+          "title": "KT알파 쇼핑, 말레이시아 미디어그룹과 글로벌 커머스 협력 모색",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "미래에셋벤처투자, 정규장 1만4800원 마감 후 애프터마켓 1만4840원…2거...",
+          "date": "11-18",
+          "title": "KT알파, 말레이시아 홈쇼핑 시장 공략…현지 미디어그룹과 협력 모색",
           "risk": false
         },
         {
-          "date": "11-16",
-          "title": "미래에셋벤처투자, 3분기 263억 적자…주식 평가손실 직격탄",
+          "date": "11-18",
+          "title": "KT, 서울대병원과 의료 현장 피지컬 AI 실증",
           "risk": false
         }
       ],
-      "price": 15150,
-      "chg": 0.0884,
-      "activity": 16.46,
-      "foreign_today": 1302900000,
+      "foreign_today": 1221600000,
       "inst_today": 0,
-      "exchange": "KOSDAQ"
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "close": 156100,
+      "ret5": 0.0216,
+      "ret20": -0.0328,
+      "rsi14": 47.8,
+      "vol20": 0.366,
+      "foreign_net": 84943533200,
+      "inst_net": -71541342600,
+      "score": 0.424,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "국민연금, KB금융 이재근 신임 회장 선임안 '찬성' 결정",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "국민연금, 이재근 KB금융 회장 후보 찬성…지분 9.17%의 선택",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "ATM 줄이고 점포 닫고…4대금융, 비용효율화 총력, KB금융 36.4%로 최저",
+          "risk": false
+        }
+      ],
+      "price": 155600,
+      "chg": -0.0077,
+      "activity": 1.51,
+      "foreign_today": 5757200000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32450,
+      "ret5": 0.0417,
+      "ret20": 0.0237,
+      "rsi14": 54.4,
+      "vol20": 0.349,
+      "foreign_net": -19864151125,
+      "inst_net": 40202789025,
+      "score": 0.197,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "우리금융지주, 보통주 5만7,369주 소각에 따른 변경상장",
+          "risk": false
+        }
+      ],
+      "price": 31900,
+      "chg": -0.0215,
+      "activity": 1.35,
+      "foreign_today": 287100000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
     },
     {
       "code": "490470",
@@ -253,11 +268,11 @@
           "risk": false
         }
       ],
-      "price": 13640,
-      "chg": 0.021,
-      "activity": 11.86,
-      "foreign_today": 491040000,
-      "inst_today": 0,
+      "price": 13750,
+      "chg": 0.0292,
+      "activity": 9.75,
+      "foreign_today": 687500000,
+      "inst_today": 13750000,
       "exchange": "KOSDAQ"
     },
     {
@@ -270,7 +285,7 @@
       "vol20": 1.557,
       "foreign_net": -1258193100,
       "inst_net": -2595347850,
-      "score": 0.974,
+      "score": 0.97,
       "news": [
         {
           "date": "11-18",
@@ -288,59 +303,115 @@
           "risk": false
         }
       ],
-      "price": 111600,
-      "chg": 0.0941,
-      "activity": 5.58,
-      "foreign_today": 4017600000,
+      "price": 110300,
+      "chg": 0.0814,
+      "activity": 4.43,
+      "foreign_today": 6838600000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "033790",
-      "name": "피노",
-      "close": 7380,
-      "ret5": 0.1302,
-      "ret20": -0.0147,
-      "rsi14": 49.5,
-      "vol20": 1.147,
-      "foreign_net": 1776747065,
-      "inst_net": -613028820,
-      "score": 0.692,
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "close": 14080,
+      "ret5": 0.2107,
+      "ret20": -0.0098,
+      "rsi14": 52.5,
+      "vol20": 1.102,
+      "foreign_net": -14413012180,
+      "inst_net": 257219755,
+      "score": 0.939,
       "news": [
         {
-          "date": "11-18",
-          "title": "“칠레 와인은 카베르네 소비뇽뿐?”…피노 누아에 승부 건 ‘코노수르...",
+          "date": "11-17",
+          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "미래에셋벤처투자, 정규장 1만4800원 마감 후 애프터마켓 1만4840원…2거...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "미래에셋벤처투자, 3분기 263억 적자…주식 평가손실 직격탄",
+          "risk": false
+        }
+      ],
+      "price": 14940,
+      "chg": 0.0733,
+      "activity": 13.32,
+      "foreign_today": 1508940000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "232140",
+      "name": "와이씨",
+      "close": 13880,
+      "ret5": 0.3372,
+      "ret20": 0.076,
+      "rsi14": 55.5,
+      "vol20": 1.362,
+      "foreign_net": -16982819565,
+      "inst_net": 28477147760,
+      "score": 0.742,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "피노 12%대 급등…니켈 투자·실적 개선 기대 반영",
+          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "와이씨 5%대 상승…메모리 테스터 수주·매출 인식 기대",
           "risk": false
         }
       ],
-      "price": 7500,
-      "chg": 0.0218,
-      "activity": 2.45,
-      "foreign_today": 210000000,
-      "inst_today": 0,
+      "price": 15150,
+      "chg": 0.1042,
+      "activity": 7.28,
+      "foreign_today": 878700000,
+      "inst_today": 121200000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "443670",
-      "name": "에스피소프트",
-      "close": 4565,
-      "ret5": -0.2529,
-      "ret20": 0.1735,
-      "rsi14": 46.8,
-      "vol20": 1.684,
-      "foreign_net": 135820739,
-      "inst_net": 166992995,
+      "code": "263860",
+      "name": "지니언스",
+      "close": 36600,
+      "ret5": 0.4186,
+      "ret20": 0.7143,
+      "rsi14": 74.4,
+      "vol20": 1.668,
+      "foreign_net": -14754665125,
+      "inst_net": 5584283925,
       "score": 0.667,
-      "news": [],
-      "price": 5210,
-      "chg": 0.1289,
-      "activity": 3.22,
-      "foreign_today": 343860000,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "지니언스 주가, 11월 17일 애프터마켓 36,700원 6.69% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "지니언스 8% 가까이 상승…3분기 영업이익 3배 이상 증가",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "지니언스 주가 7.41% 껑충…AI 해킹 위협 증가에 보안 수요 확대",
+          "risk": false
+        }
+      ],
+      "price": 41850,
+      "chg": 0.1434,
+      "activity": 13.0,
+      "foreign_today": 2176200000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
