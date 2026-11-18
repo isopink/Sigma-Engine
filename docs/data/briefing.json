@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:15",
-    "pool": 447,
-    "analyzed_new": 18,
+    "time": "14:30",
+    "pool": 449,
+    "analyzed_new": 29,
     "passed": 21,
     "kept_prep": false
   },
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 46950,
-      "chg": 0.0919,
-      "activity": 1.43,
-      "foreign_today": 5774850000,
-      "inst_today": 939000000,
+      "price": 46600,
+      "chg": 0.0837,
+      "activity": 1.42,
+      "foreign_today": 7456000000,
+      "inst_today": 1491200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.57,
       "foreign_net": -598444400,
       "inst_net": 28489673750,
-      "score": 0.827,
+      "score": 0.879,
       "news": [
         {
           "date": "11-18",
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 166200,
-      "chg": 0.0736,
-      "activity": 1.16,
-      "foreign_today": 2659200000,
-      "inst_today": 2326800000,
+      "price": 166100,
+      "chg": 0.073,
+      "activity": 1.15,
+      "foreign_today": 4484700000,
+      "inst_today": 3820300000,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +153,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.714,
+      "score": 0.775,
       "news": [
         {
           "date": "11-18",
@@ -161,77 +161,10 @@
           "risk": false
         }
       ],
-      "price": 82200,
-      "chg": -0.0084,
+      "price": 82400,
+      "chg": -0.006,
       "activity": 1.06,
-      "foreign_today": 5178600000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "214450",
-      "name": "파마리서치",
-      "close": 258000,
-      "ret5": 0.0361,
-      "ret20": -0.019,
-      "rsi14": 51.0,
-      "vol20": 0.557,
-      "foreign_net": -1757680500,
-      "inst_net": 10807969000,
-      "score": 0.661,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "파마리서치, 사내 학술교육 강화해 영업·마케팅 전문성 높인다",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "파마리서치 주가, 11월 17일 애프터마켓 260,000원 0.58% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "파마리서치, 임직원 전문성 향상 위한 사내 교육 프로그램 전개",
-          "risk": false
-        }
-      ],
-      "price": 266000,
-      "chg": 0.031,
-      "activity": 1.35,
-      "foreign_today": 0,
-      "inst_today": 532000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "030200",
-      "name": "KT",
-      "close": 50900,
-      "ret5": 0.0,
-      "ret20": -0.002,
-      "rsi14": 53.3,
-      "vol20": 0.369,
-      "foreign_net": 13641383750,
-      "inst_net": -9459512150,
-      "score": 0.607,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "KT알파 쇼핑, 말레이시아 홈쇼핑과 협력 모색…중소기업 해외 판로 확대",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[부음] 나종민(KT무빙 대표)씨 모친상",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT, 서울대병원서 어린이 환자 돕는 'AI 로봇' 실증 나서",
-          "risk": false
-        }
-      ],
-      "foreign_today": 3613900000,
+      "foreign_today": 6097600000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -245,7 +178,7 @@
       "vol20": 0.356,
       "foreign_net": -5847784900,
       "inst_net": 7280113950,
-      "score": 0.589,
+      "score": 0.775,
       "news": [
         {
           "date": "11-17",
@@ -253,27 +186,43 @@
           "risk": false
         }
       ],
-      "price": 197900,
-      "chg": 0.0275,
-      "activity": 1.52,
+      "price": 198200,
+      "chg": 0.0291,
+      "activity": 1.51,
       "foreign_today": 0,
-      "inst_today": 197900000,
+      "inst_today": 594600000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 54100,
-      "ret5": -0.0591,
-      "ret20": 0.2523,
-      "rsi14": 58.4,
-      "vol20": 0.642,
-      "foreign_net": 10284464750,
-      "inst_net": -4842497150,
-      "score": 0.577,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 757400000,
+      "code": "030200",
+      "name": "KT",
+      "close": 50900,
+      "ret5": 0.0,
+      "ret20": -0.002,
+      "rsi14": 53.3,
+      "vol20": 0.369,
+      "foreign_net": 13641383750,
+      "inst_net": -9459512150,
+      "score": 0.615,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "KT·서울대, 어린이 환자 돌보는 'AI 로봇 실증' 나선다",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "KT알파 쇼핑, 말레이시아 홈쇼핑과 협력 모색…중소기업 해외 판로 확대",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[부음] 나종민(KT무빙 대표)씨 모친상",
+          "risk": false
+        }
+      ],
+      "foreign_today": 3868400000,
+      "inst_today": 203600000,
       "exchange": "KOSPI"
     },
     {
@@ -286,7 +235,7 @@
       "vol20": 0.869,
       "foreign_net": -87308670000,
       "inst_net": 45532092000,
-      "score": 0.571,
+      "score": 0.593,
       "news": [
         {
           "date": "11-18",
@@ -304,11 +253,62 @@
           "risk": false
         }
       ],
-      "price": 63400,
-      "chg": -0.0663,
+      "price": 64200,
+      "chg": -0.0545,
       "activity": 1.19,
-      "foreign_today": 10207400000,
+      "foreign_today": 9565800000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "032830",
+      "name": "삼성생명",
+      "close": 240000,
+      "ret5": -0.0103,
+      "ret20": 0.0235,
+      "rsi14": 40.8,
+      "vol20": 0.547,
+      "foreign_net": -6746448000,
+      "inst_net": 58337684500,
+      "score": 0.593,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "\"정년 없는 '평생 현역' 매력\"…삼성생명, 컨설턴트 73.2% 직업 만족",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼성생명 컨설턴트 10명 중 7명 직업에 만족… \"일·가정 함께 지키는 평...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "\"정년없는 평생직업에 유연한 근무환경\" 삼성생명컨설턴트 73% '직업 만...",
+          "risk": false
+        }
+      ],
+      "price": 254000,
+      "chg": 0.0496,
+      "activity": 0.67,
+      "foreign_today": 0,
+      "inst_today": 6096000000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 54100,
+      "ret5": -0.0591,
+      "ret20": 0.2523,
+      "rsi14": 58.4,
+      "vol20": 0.642,
+      "foreign_net": 10284464750,
+      "inst_net": -4842497150,
+      "score": 0.588,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 973800000,
       "exchange": "KOSPI"
     },
     {
@@ -321,7 +321,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.56,
+      "score": 0.544,
       "news": [
         {
           "date": "11-18",
@@ -341,8 +341,8 @@
       ],
       "price": 155200,
       "chg": -0.0102,
-      "activity": 0.63,
-      "foreign_today": 9467200000,
+      "activity": 0.62,
+      "foreign_today": 10243200000,
       "inst_today": 1862400000,
       "exchange": "KOSPI"
     },
@@ -356,36 +356,31 @@
       "vol20": 0.734,
       "foreign_net": -3801142600,
       "inst_net": 6589437800,
-      "score": 0.524,
+      "score": 0.538,
       "news": [],
       "foreign_today": 0,
-      "inst_today": 2143200000,
+      "inst_today": 3214800000,
       "exchange": "KOSPI"
     },
     {
-      "code": "018260",
-      "name": "삼성에스디에스",
-      "close": 224000,
-      "ret5": -0.0324,
-      "ret20": 0.1423,
-      "rsi14": 54.5,
-      "vol20": 0.548,
-      "foreign_net": 2891179000,
-      "inst_net": 22252576250,
-      "score": 0.512,
+      "code": "086280",
+      "name": "현대글로비스",
+      "close": 199800,
+      "ret5": 0.0147,
+      "ret20": 0.0906,
+      "rsi14": 54.4,
+      "vol20": 0.54,
+      "foreign_net": 12806819550,
+      "inst_net": 8031556550,
+      "score": 0.522,
       "news": [
         {
           "date": "11-18",
-          "title": "[증권리포트 분석] ③ 정호윤 삼성에스디에스 100% 적중",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "삼성에스디에스, 고가 24만2500원 이후 하락…변동폭 1만6000원",
+          "title": "현대글로비스, 물류자동화기업 '알티올' 지분 100% 확보…\"스마트물류 ...",
           "risk": false
         }
       ],
-      "foreign_today": 4256000000,
+      "foreign_today": 2197800000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -399,53 +394,26 @@
       "vol20": 0.538,
       "foreign_net": -10208609250,
       "inst_net": 13220551250,
-      "score": 0.494,
+      "score": 0.522,
       "news": [
+        {
+          "date": "11-18",
+          "title": "신세계엘앤비 와인앤모어, 19일 마곡점 신규 오픈",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "'매출 2000억' 청사진 흔들… 어뮤즈 적자에 신세계인터 '투자 시험대'",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "증권가, 1주일 새 목표가 192건 내리고 48건 올려…신세계 11곳 하향",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "가구업계 3분기 실적 희비…한샘·리바트 '울고' 신세계까사 '웃었다'",
-          "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 793500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "192820",
-      "name": "코스맥스",
-      "close": 293000,
-      "ret5": 0.2082,
-      "ret20": 0.1015,
-      "rsi14": 61.9,
-      "vol20": 0.596,
-      "foreign_net": -39140101250,
-      "inst_net": 15285708750,
-      "score": 0.476,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스맥스, 쿠션·마스크팩 등 세계일류상품 3건 선정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[민주 뷰티샵] 코스맥스·한국콜마·애경산업",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 4688000000,
+      "inst_today": 1058000000,
       "exchange": "KOSPI"
     },
     {
@@ -458,7 +426,7 @@
       "vol20": 0.602,
       "foreign_net": 51992049675,
       "inst_net": 10112869800,
-      "score": 0.458,
+      "score": 0.495,
       "news": [
         {
           "date": "11-18",
@@ -469,17 +437,12 @@
           "date": "11-18",
           "title": "‘여성 인력 25% 확대’ 목표 달성…대한항공, 성평등가족부장관상 수상...",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "대한항공, 유가·환율 안정 힘입어 내년 영업이익 130% 급등 전망",
-          "risk": false
         }
       ],
-      "price": 31225,
-      "chg": -0.0227,
+      "price": 31300,
+      "chg": -0.0203,
       "activity": 0.75,
-      "foreign_today": 874300000,
+      "foreign_today": 1220700000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -493,7 +456,7 @@
       "vol20": 0.365,
       "foreign_net": 5277176150,
       "inst_net": -3031944750,
-      "score": 0.458,
+      "score": 0.495,
       "news": [
         {
           "date": "11-18",
@@ -511,9 +474,44 @@
           "risk": false
         }
       ],
-      "foreign_today": 1299000000,
-      "inst_today": 519600000,
+      "foreign_today": 1558800000,
+      "inst_today": 909300000,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 30200,
+      "ret5": 0.0559,
+      "ret20": -0.1914,
+      "rsi14": 45.4,
+      "vol20": 0.904,
+      "foreign_net": -3311756675,
+      "inst_net": 9323673800,
+      "score": 0.445,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "서진시스템, 반도체 장비 타고 영업익 흑자 전환",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "서진시스템 주가, 11월 17일 애프터마켓 30,200원 4.73% 하락",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "서진시스템, 3분기 매출 196% 증가…영업이익 387억원 흑자전환",
+          "risk": false
+        }
+      ],
+      "price": 31600,
+      "chg": 0.0412,
+      "activity": 0.62,
+      "foreign_today": 726800000,
+      "inst_today": 63200000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "100790",
@@ -525,7 +523,7 @@
       "vol20": 1.102,
       "foreign_net": -14413012180,
       "inst_net": 257219755,
-      "score": 0.845,
+      "score": 0.852,
       "news": [
         {
           "date": "11-17",
@@ -543,11 +541,11 @@
           "risk": false
         }
       ],
-      "price": 15130,
-      "chg": 0.0869,
-      "activity": 6.33,
-      "foreign_today": 2103070000,
-      "inst_today": 363120000,
+      "price": 15270,
+      "chg": 0.097,
+      "activity": 6.15,
+      "foreign_today": 2336310000,
+      "inst_today": 488640000,
       "exchange": "KOSDAQ"
     },
     {
@@ -560,7 +558,7 @@
       "vol20": 1.261,
       "foreign_net": 10392033950,
       "inst_net": 5349898875,
-      "score": 0.821,
+      "score": 0.846,
       "news": [
         {
           "date": "11-18",
@@ -578,11 +576,11 @@
           "risk": false
         }
       ],
-      "price": 53500,
-      "chg": 0.1146,
-      "activity": 3.58,
-      "foreign_today": 1070000000,
-      "inst_today": 2140000000,
+      "price": 53200,
+      "chg": 0.1083,
+      "activity": 3.62,
+      "foreign_today": 1436400000,
+      "inst_today": 3777200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -595,8 +593,13 @@
       "vol20": 1.098,
       "foreign_net": -10692163000,
       "inst_net": 10606811500,
-      "score": 0.804,
+      "score": 0.819,
       "news": [
+        {
+          "date": "11-18",
+          "title": "로보티즈 13% 상승…액추에이터 성장과 적자 부담 교차",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "로보티즈, 내년 실적 성장 본격화···매출 100% 급증 전망",
@@ -608,46 +611,46 @@
           "risk": false
         }
       ],
-      "price": 238500,
-      "chg": 0.1277,
-      "activity": 1.95,
-      "foreign_today": 10494000000,
-      "inst_today": 1192500000,
+      "price": 240000,
+      "chg": 0.1348,
+      "activity": 1.91,
+      "foreign_today": 11040000000,
+      "inst_today": 1440000000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 13880,
-      "ret5": 0.3372,
-      "ret20": 0.076,
-      "rsi14": 55.5,
-      "vol20": 1.362,
-      "foreign_net": -16982819565,
-      "inst_net": 28477147760,
-      "score": 0.738,
+      "code": "490470",
+      "name": "세미파이브",
+      "close": 13510,
+      "ret5": 0.1799,
+      "ret20": -0.1005,
+      "rsi14": 50.0,
+      "vol20": 1.33,
+      "foreign_net": -3562734985,
+      "inst_net": -4217970210,
+      "score": 0.753,
       "news": [
         {
-          "date": "11-17",
-          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
+          "date": "11-18",
+          "title": "세미파이브, HBM 없는 AI 반도체 개발…3D 적층 기술 공개",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
+          "title": "[특징주] 세미파이브, HBM 대체할 3D-IC 기술 공개…주가 18%대 급등",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "와이씨 5%대 상승…메모리 테스터 수주·매출 인식 기대",
+          "title": "세미파이브, 차세대 로직칩 개발…\"HBM 없이 AI반도체 제조\"",
           "risk": false
         }
       ],
-      "price": 14700,
-      "chg": 0.0714,
-      "activity": 3.03,
-      "foreign_today": 676200000,
-      "inst_today": 852600000,
+      "price": 13210,
+      "chg": -0.0112,
+      "activity": 2.57,
+      "foreign_today": 541610000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -660,7 +663,7 @@
       "vol20": 1.557,
       "foreign_net": -1258193100,
       "inst_net": -2595347850,
-      "score": 0.726,
+      "score": 0.72,
       "news": [
         {
           "date": "11-18",
@@ -678,10 +681,10 @@
           "risk": false
         }
       ],
-      "price": 105400,
-      "chg": 0.0333,
-      "activity": 1.13,
-      "foreign_today": 6851000000,
+      "price": 105300,
+      "chg": 0.0324,
+      "activity": 1.11,
+      "foreign_today": 6633900000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
