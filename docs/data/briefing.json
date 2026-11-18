@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "12:15",
-    "pool": 399,
-    "analyzed_new": 30,
+    "time": "12:30",
+    "pool": 400,
+    "analyzed_new": 16,
     "passed": 21,
     "kept_prep": false
   },
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 45850,
-      "chg": 0.0663,
-      "activity": 1.53,
-      "foreign_today": 4034800000,
-      "inst_today": 45850000,
+      "price": 45750,
+      "chg": 0.064,
+      "activity": 1.45,
+      "foreign_today": 4026000000,
+      "inst_today": 45750000,
       "exchange": "KOSDAQ"
     },
     {
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 80800,
-      "chg": -0.0253,
-      "activity": 1.33,
-      "foreign_today": 3797600000,
-      "inst_today": 2424000000,
+      "price": 80600,
+      "chg": -0.0277,
+      "activity": 1.27,
+      "foreign_today": 3788200000,
+      "inst_today": 2418000000,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +153,7 @@
       "vol20": 0.557,
       "foreign_net": -1757680500,
       "inst_net": 10807969000,
-      "score": 0.713,
+      "score": 0.693,
       "news": [
         {
           "date": "11-17",
@@ -171,11 +171,11 @@
           "risk": false
         }
       ],
-      "price": 269500,
-      "chg": 0.0446,
-      "activity": 1.59,
+      "price": 268000,
+      "chg": 0.0388,
+      "activity": 1.51,
       "foreign_today": 0,
-      "inst_today": 269500000,
+      "inst_today": 268000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -188,26 +188,51 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.64,
+      "score": 0.647,
       "news": [
         {
           "date": "11-18",
-          "title": "KT, 서울대병원과 '의료 피지컬 AI' 실증",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT·서울대병원, AI로봇 의료현장 실증···'어린이 환자' 케어",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT텔레캅, 하반기 대졸 신입사원 공개채용",
+          "title": "KT스카이라이프, 장비 투자 90%↑…그 뒤엔 'ipit TV'",
           "risk": false
         }
       ],
       "foreign_today": 2646800000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "192820",
+      "name": "코스맥스",
+      "close": 293000,
+      "ret5": 0.2082,
+      "ret20": 0.1015,
+      "rsi14": 61.9,
+      "vol20": 0.596,
+      "foreign_net": -39140101250,
+      "inst_net": 15285708750,
+      "score": 0.593,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "코스맥스, 쿠션·마스크팩 등 '세계일류상품' 3건 동시 선정",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "코스맥스 쿠션·마스크팩 세계일류상품 선정, '압전 에멀젼 기술'도 차...",
+          "risk": false
+        }
+      ],
+      "price": 297500,
+      "chg": 0.0171,
+      "activity": 1.51,
+      "foreign_today": 0,
+      "inst_today": 892500000,
       "exchange": "KOSPI"
     },
     {
@@ -238,10 +263,10 @@
           "risk": false
         }
       ],
-      "price": 155600,
-      "chg": -0.0077,
-      "activity": 0.79,
-      "foreign_today": 8713600000,
+      "price": 155300,
+      "chg": -0.0096,
+      "activity": 0.75,
+      "foreign_today": 8696800000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -278,41 +303,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "192820",
-      "name": "코스맥스",
-      "close": 293000,
-      "ret5": 0.2082,
-      "ret20": 0.1015,
-      "rsi14": 61.9,
-      "vol20": 0.596,
-      "foreign_net": -39140101250,
-      "inst_net": 15285708750,
-      "score": 0.573,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스, 쿠션·마스크팩 등 '세계일류상품' 3건 동시 선정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스 쿠션·마스크팩 세계일류상품 선정, '압전 에멀젼 기술'도 차...",
-          "risk": false
-        }
-      ],
-      "price": 296000,
-      "chg": 0.012,
-      "activity": 1.55,
-      "foreign_today": 0,
-      "inst_today": 888000000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "178320",
       "name": "서진시스템",
       "close": 30200,
@@ -322,7 +312,7 @@
       "vol20": 0.904,
       "foreign_net": -3311756675,
       "inst_net": 9323673800,
-      "score": 0.56,
+      "score": 0.547,
       "news": [
         {
           "date": "11-18",
@@ -340,11 +330,11 @@
           "risk": false
         }
       ],
-      "price": 31400,
-      "chg": 0.0346,
-      "activity": 0.86,
-      "foreign_today": 785000000,
-      "inst_today": 31400000,
+      "price": 31100,
+      "chg": 0.0247,
+      "activity": 0.81,
+      "foreign_today": 777500000,
+      "inst_today": 31100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -357,7 +347,7 @@
       "vol20": 0.57,
       "foreign_net": -598444400,
       "inst_net": 28489673750,
-      "score": 0.513,
+      "score": 0.533,
       "news": [
         {
           "date": "11-18",
@@ -365,10 +355,10 @@
           "risk": false
         }
       ],
-      "price": 162400,
-      "chg": 0.0491,
-      "activity": 0.98,
-      "foreign_today": 649600000,
+      "price": 163100,
+      "chg": 0.0536,
+      "activity": 0.96,
+      "foreign_today": 652400000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -429,12 +419,12 @@
       "news": [
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
+          "title": "[2026 여성포럼]아모레퍼시픽, 임원 자리까지 여성의 길 열었다",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]아모레퍼시픽, 임원 자리까지 여성의 길 열었다",
+          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
           "risk": false
         },
         {
@@ -457,7 +447,7 @@
       "vol20": 0.734,
       "foreign_net": -3801142600,
       "inst_net": 6589437800,
-      "score": 0.42,
+      "score": 0.433,
       "news": [],
       "foreign_today": 0,
       "inst_today": 714400000,
@@ -477,12 +467,12 @@
       "news": [
         {
           "date": "11-18",
-          "title": "[굿모닝! 18일 유통가 소식] 코웨이·배민·KT&G·롯데호텔·SK인텔릭스",
+          "title": "코웨이 룰루 비데, 21개 제품 에너지효율 '1등급'",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "코웨이 룰루 비데, 21개 제품 에너지효율 '1등급'",
+          "title": "[굿모닝! 18일 유통가 소식] 코웨이·배민·KT&G·롯데호텔·SK인텔릭스",
           "risk": false
         },
         {
@@ -505,7 +495,7 @@
       "vol20": 0.349,
       "foreign_net": -19864151125,
       "inst_net": 40202789025,
-      "score": 0.407,
+      "score": 0.4,
       "news": [
         {
           "date": "11-17",
@@ -513,11 +503,11 @@
           "risk": false
         }
       ],
-      "price": 32300,
-      "chg": -0.0092,
-      "activity": 0.78,
-      "foreign_today": 387600000,
-      "inst_today": 96900000,
+      "price": 32200,
+      "chg": -0.0123,
+      "activity": 0.74,
+      "foreign_today": 386400000,
+      "inst_today": 96600000,
       "exchange": "KOSPI"
     },
     {
@@ -548,45 +538,10 @@
           "risk": false
         }
       ],
-      "price": 13160,
-      "chg": -0.015,
-      "activity": 3.88,
-      "foreign_today": 868560000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "053800",
-      "name": "안랩",
-      "close": 101800,
-      "ret5": -0.1094,
-      "ret20": 0.1464,
-      "rsi14": 51.8,
-      "vol20": 1.557,
-      "foreign_net": -1258193100,
-      "inst_net": -2595347850,
-      "score": 0.92,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
-          "risk": false
-        }
-      ],
-      "price": 107200,
-      "chg": 0.051,
-      "activity": 1.67,
-      "foreign_today": 7504000000,
+      "price": 13140,
+      "chg": -0.0165,
+      "activity": 3.64,
+      "foreign_today": 867240000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -618,11 +573,46 @@
           "risk": false
         }
       ],
-      "price": 15350,
-      "chg": 0.1027,
-      "activity": 9.21,
-      "foreign_today": 1657800000,
-      "inst_today": 92100000,
+      "price": 15210,
+      "chg": 0.0927,
+      "activity": 8.73,
+      "foreign_today": 1642680000,
+      "inst_today": 91260000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "053800",
+      "name": "안랩",
+      "close": 101800,
+      "ret5": -0.1094,
+      "ret20": 0.1464,
+      "rsi14": 51.8,
+      "vol20": 1.557,
+      "foreign_net": -1258193100,
+      "inst_net": -2595347850,
+      "score": 0.9,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
+          "risk": false
+        }
+      ],
+      "price": 106900,
+      "chg": 0.048,
+      "activity": 1.56,
+      "foreign_today": 7483000000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -649,15 +639,15 @@
         },
         {
           "date": "11-18",
-          "title": "성호전자 주가, 11월 18일 장중 26,650원 17.14% 상승",
+          "title": "[특징주] 성호전자, 3분기 영업익 703% 급증 호실적에 14%대 후속 급등",
           "risk": false
         }
       ],
-      "price": 25450,
-      "chg": 0.1187,
-      "activity": 4.02,
-      "foreign_today": 2366850000,
-      "inst_today": 916200000,
+      "price": 25200,
+      "chg": 0.1077,
+      "activity": 3.75,
+      "foreign_today": 2343600000,
+      "inst_today": 907200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -688,11 +678,11 @@
           "risk": false
         }
       ],
-      "price": 14170,
-      "chg": 0.0328,
-      "activity": 3.75,
-      "foreign_today": 1714570000,
-      "inst_today": 396760000,
+      "price": 14060,
+      "chg": 0.0248,
+      "activity": 3.51,
+      "foreign_today": 1701260000,
+      "inst_today": 393680000,
       "exchange": "KOSDAQ"
     },
     {
