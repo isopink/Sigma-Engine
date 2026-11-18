@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "11:00",
-    "pool": 360,
+    "time": "11:15",
+    "pool": 401,
     "analyzed_new": 30,
-    "passed": 19,
+    "passed": 20,
     "kept_prep": false
   },
   "candidates": [
@@ -98,7 +98,7 @@
       "vol20": 0.831,
       "foreign_net": 3814995425,
       "inst_net": 1194435725,
-      "score": 0.969,
+      "score": 1.0,
       "news": [
         {
           "date": "11-17",
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 45600,
-      "chg": 0.0605,
-      "activity": 1.89,
-      "foreign_today": 2462400000,
-      "inst_today": 0,
+      "price": 45750,
+      "chg": 0.064,
+      "activity": 1.8,
+      "foreign_today": 4026000000,
+      "inst_today": 45750000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.735,
+      "score": 0.792,
       "news": [
         {
           "date": "11-18",
@@ -136,12 +136,47 @@
           "risk": false
         }
       ],
-      "price": 81100,
-      "chg": -0.0217,
-      "activity": 1.63,
-      "foreign_today": 0,
-      "inst_today": 2838500000,
+      "price": 81500,
+      "chg": -0.0169,
+      "activity": 1.53,
+      "foreign_today": 3830500000,
+      "inst_today": 2445000000,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "214450",
+      "name": "파마리서치",
+      "close": 258000,
+      "ret5": 0.0361,
+      "ret20": -0.019,
+      "rsi14": 51.0,
+      "vol20": 0.557,
+      "foreign_net": -1757680500,
+      "inst_net": 10807969000,
+      "score": 0.708,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "파마리서치, 사내 학술교육 강화해 영업·마케팅 전문성 높인다",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "파마리서치 주가, 11월 17일 애프터마켓 260,000원 0.58% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "파마리서치, 임직원 전문성 향상 위한 사내 교육 프로그램 전개",
+          "risk": false
+        }
+      ],
+      "price": 271000,
+      "chg": 0.0504,
+      "activity": 1.95,
+      "foreign_today": 0,
+      "inst_today": 271000000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "030200",
@@ -153,25 +188,25 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.582,
+      "score": 0.633,
       "news": [
         {
           "date": "11-18",
-          "title": "KT·서울대병원, AI 로봇 의료현장 실증…어린이 환자 케어 혁신 나선다",
+          "title": "AX성과 낸 KT 박윤영...통신 본업 실적 반등 절실하다",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "KT, 서울대병원에 AI 로봇 투입…어린이 환자 돌봄 실증",
+          "title": "SKT·KT, 글로벌 통신업계 최고 권위 'WCA' 트로피 사냥…나란히 3개 부문...",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "병원 가는 길 무섭지 않게…KT·서울대병원, 어린이 환자 돕는 'AI 로봇'...",
+          "title": "박정민 KT알파 대표, PB 글로벌 진출 타진",
           "risk": false
         }
       ],
-      "foreign_today": 1221600000,
+      "foreign_today": 2646800000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -185,7 +220,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.541,
+      "score": 0.558,
       "news": [
         {
           "date": "11-18",
@@ -203,10 +238,10 @@
           "risk": false
         }
       ],
-      "price": 154900,
-      "chg": -0.0121,
-      "activity": 1.07,
-      "foreign_today": 5731300000,
+      "price": 154600,
+      "chg": -0.014,
+      "activity": 0.98,
+      "foreign_today": 8657600000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -220,7 +255,7 @@
       "vol20": 0.904,
       "foreign_net": -3311756675,
       "inst_net": 9323673800,
-      "score": 0.51,
+      "score": 0.558,
       "news": [
         {
           "date": "11-18",
@@ -240,76 +275,36 @@
       ],
       "price": 31400,
       "chg": 0.0346,
-      "activity": 1.17,
-      "foreign_today": 502400000,
-      "inst_today": 0,
+      "activity": 1.09,
+      "foreign_today": 785000000,
+      "inst_today": 31400000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "192820",
-      "name": "코스맥스",
-      "close": 293000,
-      "ret5": 0.2082,
-      "ret20": 0.1015,
-      "rsi14": 61.9,
-      "vol20": 0.596,
-      "foreign_net": -39140101250,
-      "inst_net": 15285708750,
-      "score": 0.48,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스맥스 화장품 3종 '세계일류상품' 인증…누적 9건",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스 쿠션·마스크팩·압전 에멀젼, 세계일류상품 인증",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스, 세계일류상품 3건 추가…화장품 기술력 9건 인증",
-          "risk": false
-        }
-      ],
-      "price": 300500,
-      "chg": 0.0274,
-      "activity": 1.86,
-      "foreign_today": 0,
-      "inst_today": 300500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "009420",
-      "name": "한올바이오파마",
-      "close": 53500,
-      "ret5": 0.1493,
-      "ret20": 0.2985,
-      "rsi14": 69.2,
-      "vol20": 0.998,
-      "foreign_net": -12702636625,
-      "inst_net": 32359846325,
-      "score": 0.439,
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 54100,
+      "ret5": -0.0591,
+      "ret20": 0.2523,
+      "rsi14": 58.4,
+      "vol20": 0.642,
+      "foreign_net": 10284464750,
+      "inst_net": -4842497150,
+      "score": 0.475,
       "news": [
         {
           "date": "11-17",
-          "title": "양 제약지수 약보합세, 한올바이오파마ㆍ동국제약 선전",
+          "title": "[투자, 그 후] [한미사이언스] '바이오·헬스케어' 외부투자 엇갈린 투자...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "바이오시밀러 관련주 엇갈린 흐름…삼성에피스홀딩스·한올바이오파마...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "한올바이오파마 3분기 영업익 12억7400만원…매출은 감소",
+          "title": "두나무·한미사이언스·고려아연 등, 본업 살린 나눔 활동 이어가",
           "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 107000000,
+      "inst_today": 216400000,
       "exchange": "KOSPI"
     },
     {
@@ -322,42 +317,26 @@
       "vol20": 0.504,
       "foreign_net": -16652616150,
       "inst_net": 20836098850,
-      "score": 0.398,
+      "score": 0.467,
       "news": [],
       "foreign_today": 0,
-      "inst_today": 188700000,
+      "inst_today": 440300000,
       "exchange": "KOSPI"
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "close": 31550,
-      "ret5": -0.0079,
-      "ret20": 0.0064,
-      "rsi14": 49.8,
-      "vol20": 0.435,
-      "foreign_net": -23219259375,
-      "inst_net": -3286822400,
-      "score": 0.357,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "카카오뱅크, 몽골 은행 2대 주주 오른다",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "카카오뱅크, 몽골 엠뱅크 지분 15% 확보 '2대주주' 올라",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "카카오뱅크, 몽골서 '금융 이력 없는 고객' 공략…신용평가 기술로 해외...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 820300000,
-      "inst_today": 0,
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 178600,
+      "ret5": 0.0733,
+      "ret20": -0.118,
+      "rsi14": 46.3,
+      "vol20": 0.734,
+      "foreign_net": -3801142600,
+      "inst_net": 6589437800,
+      "score": 0.442,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 714400000,
       "exchange": "KOSPI"
     },
     {
@@ -370,7 +349,7 @@
       "vol20": 0.349,
       "foreign_net": -19864151125,
       "inst_net": 40202789025,
-      "score": 0.347,
+      "score": 0.375,
       "news": [
         {
           "date": "11-17",
@@ -378,70 +357,11 @@
           "risk": false
         }
       ],
-      "price": 32050,
-      "chg": -0.0169,
-      "activity": 0.98,
-      "foreign_today": 288450000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 30600,
-      "ret5": -0.0347,
-      "ret20": 0.0968,
-      "rsi14": 50.9,
-      "vol20": 0.845,
-      "foreign_net": 5401533475,
-      "inst_net": 2037936425,
-      "score": 0.327,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "대형건설사-지역업체 맞손…현대건설·GS건설 등 대구서 상생협력 확대",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "GS건설, AI 데이터센터로 '이익 성장'에 체코 원전 모멘텀까지…\"내년 6...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 214200000,
-      "inst_today": 91800000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "323410",
-      "name": "카카오뱅크",
-      "close": 20950,
-      "ret5": 0.0244,
-      "ret20": 0.0397,
-      "rsi14": 60.0,
-      "vol20": 0.26,
-      "foreign_net": 12074038925,
-      "inst_net": -1094256350,
-      "score": 0.265,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "인니·태국 이어 몽골 뚫었다…카카오뱅크, '엠뱅크' 지분 15% 확보해 2대...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "카카오뱅크, 몽골 엠뱅크 지분 15% 확보 '2대주주' 올라",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "카카오뱅크, 몽골 은행 2대 주주 오른다",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 20950000,
+      "price": 32125,
+      "chg": -0.0146,
+      "activity": 0.92,
+      "foreign_today": 385500000,
+      "inst_today": 96375000,
       "exchange": "KOSPI"
     },
     {
@@ -454,26 +374,117 @@
       "vol20": 0.432,
       "foreign_net": -11493413925,
       "inst_net": 12284982480,
-      "score": 0.214,
+      "score": 0.342,
       "news": [
+        {
+          "date": "11-18",
+          "title": "LG유플러스, AI 기반 품질관리 IPTV 420만대에 적용",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "LG유플러스, IPTV 420만대 'AI 선제조치' 가동…고객 불편 발생 전 해결",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "LG유플러스, IPTV 420만대에 AI 품질관리 적용…장애 사전 대응",
           "risk": false
-        },
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 233700000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "192820",
+      "name": "코스맥스",
+      "close": 293000,
+      "ret5": 0.2082,
+      "ret20": 0.1015,
+      "rsi14": 61.9,
+      "vol20": 0.596,
+      "foreign_net": -39140101250,
+      "inst_net": 15285708750,
+      "score": 0.308,
+      "news": [
         {
           "date": "11-18",
-          "title": "IPTV 고장 사전에 관리한다…LG유플러스, AI 기반 품질관리 체계 적용",
+          "title": "코스맥스, 화장품 기술력 인정받았다…세계일류상품 3건 추가",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "LG유플러스, IPTV 420만대에 AI 기반 품질관리 본격화",
+          "title": "코스맥스, 세계일류상품 3건 동시 선정…K뷰티 기술력 입증",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "코스맥스 화장품 3종 '세계일류상품' 인증…누적 9건",
           "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 31160000,
+      "inst_today": 879000000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "323410",
+      "name": "카카오뱅크",
+      "close": 20950,
+      "ret5": 0.0244,
+      "ret20": 0.0397,
+      "rsi14": 60.0,
+      "vol20": 0.26,
+      "foreign_net": 12074038925,
+      "inst_net": -1094256350,
+      "score": 0.283,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "카카오뱅크, '몽골 M뱅크' 2대 주주로...중앙아시아 본격 공략",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "카카오뱅크 애플페이 도입에 카드업계 '고심'…수수료 부담·삼성페이 ...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "몽골까지 진출하는 카카오뱅크…엠뱅크 2대 주주 올라",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 62850000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "006360",
+      "name": "GS건설",
+      "close": 30600,
+      "ret5": -0.0347,
+      "ret20": 0.0968,
+      "rsi14": 50.9,
+      "vol20": 0.845,
+      "foreign_net": 5401533475,
+      "inst_net": 2037936425,
+      "score": 0.233,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "하나은행·GS건설·대한전선 등 韓기업, 바레인과 경제협력 확대…수교...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "대형건설사-지역업체 맞손…현대건설·GS건설 등 대구서 상생협력 확대",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 122400000,
       "exchange": "KOSPI"
     },
     {
@@ -486,7 +497,7 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 1.0,
+      "score": 0.958,
       "news": [
         {
           "date": "11-17",
@@ -504,11 +515,11 @@
           "risk": false
         }
       ],
-      "price": 13360,
-      "chg": 0.0,
-      "activity": 5.74,
-      "foreign_today": 668000000,
-      "inst_today": 13360000,
+      "price": 13260,
+      "chg": -0.0075,
+      "activity": 5.21,
+      "foreign_today": 875160000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -521,7 +532,7 @@
       "vol20": 1.102,
       "foreign_net": -14413012180,
       "inst_net": 257219755,
-      "score": 0.888,
+      "score": 0.95,
       "news": [
         {
           "date": "11-17",
@@ -539,11 +550,11 @@
           "risk": false
         }
       ],
-      "price": 14790,
-      "chg": 0.0625,
-      "activity": 11.25,
-      "foreign_today": 1493790000,
-      "inst_today": 0,
+      "price": 15070,
+      "chg": 0.0826,
+      "activity": 10.6,
+      "foreign_today": 1627560000,
+      "inst_today": 90420000,
       "exchange": "KOSDAQ"
     },
     {
@@ -556,7 +567,7 @@
       "vol20": 1.557,
       "foreign_net": -1258193100,
       "inst_net": -2595347850,
-      "score": 0.867,
+      "score": 0.883,
       "news": [
         {
           "date": "11-18",
@@ -574,10 +585,10 @@
           "risk": false
         }
       ],
-      "price": 106100,
-      "chg": 0.0402,
-      "activity": 2.5,
-      "foreign_today": 6578200000,
+      "price": 106500,
+      "chg": 0.0441,
+      "activity": 2.28,
+      "foreign_today": 7455000000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -591,8 +602,13 @@
       "vol20": 1.372,
       "foreign_net": 4532063200,
       "inst_net": -266153600,
-      "score": 0.827,
+      "score": 0.858,
       "news": [
+        {
+          "date": "11-18",
+          "title": "성호전자 3분기 매출 797억 43% 급증…영업익은 43억",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "성호전자 주가, 웃음꽃 활짝... 왜?",
@@ -602,53 +618,48 @@
           "date": "11-18",
           "title": "[특징주] 성호전자, 3분기 영업익 703% 급증 호실적에 14%대 후속 급등",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "성호전자 주가, 11월 18일 장중 26,650원 17.14% 상승",
-          "risk": false
         }
       ],
-      "price": 25600,
-      "chg": 0.1253,
-      "activity": 5.49,
-      "foreign_today": 1049600000,
-      "inst_today": 204800000,
+      "price": 25500,
+      "chg": 0.1209,
+      "activity": 5.01,
+      "foreign_today": 2371500000,
+      "inst_today": 918000000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "263860",
-      "name": "지니언스",
-      "close": 36600,
-      "ret5": 0.4186,
-      "ret20": 0.7143,
-      "rsi14": 74.4,
-      "vol20": 1.668,
-      "foreign_net": -14754665125,
-      "inst_net": 5584283925,
-      "score": 0.755,
+      "code": "232140",
+      "name": "와이씨",
+      "close": 13880,
+      "ret5": 0.3372,
+      "ret20": 0.076,
+      "rsi14": 55.5,
+      "vol20": 1.362,
+      "foreign_net": -16982819565,
+      "inst_net": 28477147760,
+      "score": 0.825,
       "news": [
         {
           "date": "11-17",
-          "title": "지니언스 주가, 11월 17일 애프터마켓 36,700원 6.69% 상승",
+          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "지니언스 8% 가까이 상승…3분기 영업이익 3배 이상 증가",
+          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
           "risk": false
         },
         {
           "date": "11-17",
-          "title": "지니언스 주가 7.41% 껑충…AI 해킹 위협 증가에 보안 수요 확대",
+          "title": "와이씨 5%대 상승…메모리 테스터 수주·매출 인식 기대",
           "risk": false
         }
       ],
-      "price": 39650,
-      "chg": 0.0833,
-      "activity": 7.13,
-      "foreign_today": 2061800000,
-      "inst_today": 0,
+      "price": 14190,
+      "chg": 0.0343,
+      "activity": 4.7,
+      "foreign_today": 1716990000,
+      "inst_today": 397320000,
       "exchange": "KOSDAQ"
     },
     {
