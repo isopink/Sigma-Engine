@@ -14,7 +14,6 @@
     "decision.max_weight":          { "label": "최대 종목 비중",     "min": 0.05, "max": 0.20, "step": 0.025 },
     "decision.stop_loss_pct":       { "label": "손절선",             "min": -0.10, "max": -0.04, "step": 0.01 },
     "decision.take_profit_pct":     { "label": "익절선",             "min": 0.06, "max": 0.25, "step": 0.03 },
-    "decision.max_hold_days":       { "label": "최대 보유일",        "min": 3, "max": 15, "step": 2, "int": true },
     "regime_cap.상승":              { "label": "상승 국면 비중 상한", "min": 0.50, "max": 0.90, "step": 0.10 },
     "regime_cap.횡보":              { "label": "횡보 국면 비중 상한", "min": 0.30, "max": 0.80, "step": 0.10 },
     "regime_cap.하락":              { "label": "하락 국면 비중 상한", "min": 0.10, "max": 0.60, "step": 0.10 },
