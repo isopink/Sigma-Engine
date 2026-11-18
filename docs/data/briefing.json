@@ -81,13 +81,43 @@
     ]
   },
   "intraday": {
-    "time": "10:00",
-    "pool": 355,
+    "time": "10:15",
+    "pool": 358,
     "analyzed_new": 30,
-    "passed": 11,
+    "passed": 15,
     "kept_prep": false
   },
   "candidates": [
+    {
+      "code": "035900",
+      "name": "JYP Ent.",
+      "close": 42650,
+      "ret5": 0.073,
+      "ret20": 0.0797,
+      "rsi14": 56.9,
+      "vol20": 0.831,
+      "foreign_net": 3814995425,
+      "inst_net": 1194435725,
+      "score": 0.882,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "BTS 공연 ‘글로벌 대박’ 쳤는데…엔터 4사 목표가, JYP Ent.만 올라",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "JYP Ent. 거래대금 17,104백만원…장중 상승 흐름",
+          "risk": false
+        }
+      ],
+      "price": 45650,
+      "chg": 0.0616,
+      "activity": 2.01,
+      "foreign_today": 2465100000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
     {
       "code": "017670",
       "name": "SK텔레콤",
@@ -98,7 +128,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.591,
+      "score": 0.647,
       "news": [
         {
           "date": "11-18",
@@ -106,11 +136,43 @@
           "risk": false
         }
       ],
-      "price": 82400,
-      "chg": -0.006,
-      "activity": 1.56,
+      "price": 81000,
+      "chg": -0.0229,
+      "activity": 1.59,
       "foreign_today": 0,
-      "inst_today": 2884000000,
+      "inst_today": 2835000000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "030200",
+      "name": "KT",
+      "close": 50900,
+      "ret5": 0.0,
+      "ret20": -0.002,
+      "rsi14": 53.3,
+      "vol20": 0.369,
+      "foreign_net": 13641383750,
+      "inst_net": -9459512150,
+      "score": 0.541,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "KT알파 쇼핑, 동남아 판로 확대 추진…말레이시아 홈쇼핑과 협력",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "KT·서울대병원, AI 로봇 활용한 '의료 피지컬 AI' 실증 돌입",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "KT, 서울대병원에 어린이 환자 돕는 AI 로봇 실증",
+          "risk": false
+        }
+      ],
+      "foreign_today": 1221600000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -123,7 +185,7 @@
       "vol20": 0.869,
       "foreign_net": -87308670000,
       "inst_net": 45532092000,
-      "score": 0.485,
+      "score": 0.494,
       "news": [
         {
           "date": "11-18",
@@ -141,42 +203,10 @@
           "risk": false
         }
       ],
-      "price": 64300,
-      "chg": -0.053,
-      "activity": 2.23,
-      "foreign_today": 2700600000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "030200",
-      "name": "KT",
-      "close": 50900,
-      "ret5": 0.0,
-      "ret20": -0.002,
-      "rsi14": 53.3,
-      "vol20": 0.369,
-      "foreign_net": 13641383750,
-      "inst_net": -9459512150,
-      "score": 0.485,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "KT알파 쇼핑, 말레이시아 미디어그룹과 글로벌 커머스 협력 모색",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT알파, 말레이시아 홈쇼핑 시장 공략…현지 미디어그룹과 협력 모색",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT, 서울대병원과 의료 현장 피지컬 AI 실증",
-          "risk": false
-        }
-      ],
-      "foreign_today": 1221600000,
+      "price": 63500,
+      "chg": -0.0648,
+      "activity": 2.04,
+      "foreign_today": 2667000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -190,7 +220,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.424,
+      "score": 0.494,
       "news": [
         {
           "date": "11-18",
@@ -208,10 +238,58 @@
           "risk": false
         }
       ],
-      "price": 155600,
-      "chg": -0.0077,
-      "activity": 1.51,
-      "foreign_today": 5757200000,
+      "price": 155900,
+      "chg": -0.0057,
+      "activity": 1.4,
+      "foreign_today": 5768300000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "close": 62900,
+      "ret5": 0.0016,
+      "ret20": 0.0064,
+      "rsi14": 56.4,
+      "vol20": 0.504,
+      "foreign_net": -16652616150,
+      "inst_net": 20836098850,
+      "score": 0.341,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 188700000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "close": 31550,
+      "ret5": -0.0079,
+      "ret20": 0.0064,
+      "rsi14": 49.8,
+      "vol20": 0.435,
+      "foreign_net": -23219259375,
+      "inst_net": -3286822400,
+      "score": 0.329,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "성흠제 의원 \"서울시 대표 축제에 카카오가 주인공…주객전도 우려\"",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "카카오, '공공혁신 리포트 2026' 발간… \"373건 발표 자료 분석\"",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "카카오뱅크, 고객 금융 이해부터 시장 예측까지 AI 연구 확대",
+          "risk": false
+        }
+      ],
+      "foreign_today": 820300000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -225,7 +303,7 @@
       "vol20": 0.349,
       "foreign_net": -19864151125,
       "inst_net": 40202789025,
-      "score": 0.197,
+      "score": 0.306,
       "news": [
         {
           "date": "11-17",
@@ -233,11 +311,43 @@
           "risk": false
         }
       ],
-      "price": 31900,
-      "chg": -0.0215,
-      "activity": 1.35,
-      "foreign_today": 287100000,
+      "price": 32050,
+      "chg": -0.0169,
+      "activity": 1.26,
+      "foreign_today": 288450000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "006360",
+      "name": "GS건설",
+      "close": 30600,
+      "ret5": -0.0347,
+      "ret20": 0.0968,
+      "rsi14": 50.9,
+      "vol20": 0.845,
+      "foreign_net": 5401533475,
+      "inst_net": 2037936425,
+      "score": 0.294,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "대형건설사-지역업체 맞손…현대건설·GS건설 등 대구서 상생협력 확대",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "GS건설, AI 데이터센터로 '이익 성장'에 체코 원전 모멘텀까지…\"내년 6...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "GS건설, 내년 영업익 57% 증가 전망…AIDC·원전 역할-KB證",
+          "risk": false
+        }
+      ],
+      "foreign_today": 214200000,
+      "inst_today": 91800000,
       "exchange": "KOSPI"
     },
     {
@@ -268,11 +378,11 @@
           "risk": false
         }
       ],
-      "price": 13750,
-      "chg": 0.0292,
-      "activity": 9.75,
-      "foreign_today": 687500000,
-      "inst_today": 13750000,
+      "price": 13660,
+      "chg": 0.0225,
+      "activity": 8.32,
+      "foreign_today": 683000000,
+      "inst_today": 13660000,
       "exchange": "KOSDAQ"
     },
     {
@@ -285,8 +395,13 @@
       "vol20": 1.557,
       "foreign_net": -1258193100,
       "inst_net": -2595347850,
-      "score": 0.97,
+      "score": 0.976,
       "news": [
+        {
+          "date": "11-18",
+          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
@@ -296,17 +411,12 @@
           "date": "11-18",
           "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "안랩 보합권…네트워크 보안·EDR 성장에 3분기 이익 개선",
-          "risk": false
         }
       ],
-      "price": 110300,
-      "chg": 0.0814,
-      "activity": 4.43,
-      "foreign_today": 6838600000,
+      "price": 109900,
+      "chg": 0.0775,
+      "activity": 3.72,
+      "foreign_today": 6813800000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -320,7 +430,7 @@
       "vol20": 1.102,
       "foreign_net": -14413012180,
       "inst_net": 257219755,
-      "score": 0.939,
+      "score": 0.918,
       "news": [
         {
           "date": "11-17",
@@ -338,10 +448,10 @@
           "risk": false
         }
       ],
-      "price": 14940,
-      "chg": 0.0733,
-      "activity": 13.32,
-      "foreign_today": 1508940000,
+      "price": 15560,
+      "chg": 0.1178,
+      "activity": 14.48,
+      "foreign_today": 1571560000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -355,7 +465,7 @@
       "vol20": 1.362,
       "foreign_net": -16982819565,
       "inst_net": 28477147760,
-      "score": 0.742,
+      "score": 0.765,
       "news": [
         {
           "date": "11-17",
@@ -373,11 +483,11 @@
           "risk": false
         }
       ],
-      "price": 15150,
-      "chg": 0.1042,
-      "activity": 7.28,
-      "foreign_today": 878700000,
-      "inst_today": 121200000,
+      "price": 14710,
+      "chg": 0.0722,
+      "activity": 6.63,
+      "foreign_today": 853180000,
+      "inst_today": 117680000,
       "exchange": "KOSDAQ"
     },
     {
@@ -390,7 +500,7 @@
       "vol20": 1.668,
       "foreign_net": -14754665125,
       "inst_net": 5584283925,
-      "score": 0.667,
+      "score": 0.706,
       "news": [
         {
           "date": "11-17",
@@ -408,10 +518,10 @@
           "risk": false
         }
       ],
-      "price": 41850,
-      "chg": 0.1434,
-      "activity": 13.0,
-      "foreign_today": 2176200000,
+      "price": 41200,
+      "chg": 0.1257,
+      "activity": 10.61,
+      "foreign_today": 2142400000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
