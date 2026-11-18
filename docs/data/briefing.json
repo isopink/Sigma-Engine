@@ -81,13 +81,45 @@
     ]
   },
   "intraday": {
-    "time": "09:30",
-    "pool": 325,
+    "time": "09:45",
+    "pool": 323,
     "analyzed_new": 30,
-    "passed": 8,
+    "passed": 9,
     "kept_prep": false
   },
   "candidates": [
+    {
+      "code": "030200",
+      "name": "KT",
+      "close": 50900,
+      "ret5": 0.0,
+      "ret20": -0.002,
+      "rsi14": 53.3,
+      "vol20": 0.369,
+      "foreign_net": 13641383750,
+      "inst_net": -9459512150,
+      "score": 0.513,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "KT-서울대병원 'AI 로봇' 실증…대화·놀이로 어린이 환자 긴장 해소",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[유통딜리버리] SSG닷컴ㆍ무신사ㆍGS샵ㆍ이마트24ㆍW컨셉ㆍKT알파 쇼핑ㆍ...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "KT, 서울대병원서 AI 로봇 실증…어린이 환자 돌봄 돕는다",
+          "risk": false
+        }
+      ],
+      "foreign_today": 814400000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
     {
       "code": "105560",
       "name": "KB금융",
@@ -98,7 +130,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.406,
+      "score": 0.385,
       "news": [
         {
           "date": "11-18",
@@ -116,10 +148,10 @@
           "risk": false
         }
       ],
-      "price": 154800,
-      "chg": -0.0128,
-      "activity": 2.38,
-      "foreign_today": 2786400000,
+      "price": 155000,
+      "chg": -0.0115,
+      "activity": 1.81,
+      "foreign_today": 2790000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -133,7 +165,7 @@
       "vol20": 0.869,
       "foreign_net": -87308670000,
       "inst_net": 45532092000,
-      "score": 0.344,
+      "score": 0.333,
       "news": [
         {
           "date": "11-18",
@@ -151,10 +183,10 @@
           "risk": false
         }
       ],
-      "price": 65200,
-      "chg": -0.0398,
-      "activity": 2.89,
-      "foreign_today": 1238800000,
+      "price": 64300,
+      "chg": -0.053,
+      "activity": 2.41,
+      "foreign_today": 1221700000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -186,45 +218,10 @@
           "risk": false
         }
       ],
-      "price": 14790,
-      "chg": 0.0625,
-      "activity": 18.59,
-      "foreign_today": 1271940000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "053800",
-      "name": "안랩",
-      "close": 101800,
-      "ret5": -0.1094,
-      "ret20": 0.1464,
-      "rsi14": 51.8,
-      "vol20": 1.557,
-      "foreign_net": -1258193100,
-      "inst_net": -2595347850,
-      "score": 0.969,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "안랩 보합권…네트워크 보안·EDR 성장에 3분기 이익 개선",
-          "risk": false
-        }
-      ],
-      "price": 111100,
-      "chg": 0.0892,
-      "activity": 7.68,
-      "foreign_today": 3999600000,
+      "price": 15150,
+      "chg": 0.0884,
+      "activity": 16.46,
+      "foreign_today": 1302900000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -238,7 +235,7 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 0.938,
+      "score": 1.0,
       "news": [
         {
           "date": "11-17",
@@ -256,45 +253,75 @@
           "risk": false
         }
       ],
-      "price": 13210,
-      "chg": -0.0112,
-      "activity": 14.89,
-      "foreign_today": 475560000,
+      "price": 13640,
+      "chg": 0.021,
+      "activity": 11.86,
+      "foreign_today": 491040000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "043260",
-      "name": "성호전자",
-      "close": 23800,
-      "ret5": 0.1811,
-      "ret20": -0.0881,
-      "rsi14": 48.9,
-      "vol20": 1.372,
-      "foreign_net": 4532063200,
-      "inst_net": -266153600,
-      "score": 0.656,
+      "code": "053800",
+      "name": "안랩",
+      "close": 101800,
+      "ret5": -0.1094,
+      "ret20": 0.1464,
+      "rsi14": 51.8,
+      "vol20": 1.557,
+      "foreign_net": -1258193100,
+      "inst_net": -2595347850,
+      "score": 0.974,
       "news": [
         {
           "date": "11-18",
-          "title": "AI 데이터센터가 키우는 광통신 시장…성호전자·RF머트리얼즈 '폭풍 질...",
+          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "[속보] 광통신 관련주 일제히 강세…성호전자 12%대 급등·RF머트리얼즈...",
+          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
           "risk": false
         },
         {
-          "date": "11-18",
-          "title": "[특징주]성호전자, 영업이익 증가에 15.38% 상승…반도체·광통신 인수 ...",
+          "date": "11-17",
+          "title": "안랩 보합권…네트워크 보안·EDR 성장에 3분기 이익 개선",
           "risk": false
         }
       ],
-      "price": 26100,
-      "chg": 0.1473,
-      "activity": 7.78,
-      "foreign_today": 313200000,
+      "price": 111600,
+      "chg": 0.0941,
+      "activity": 5.58,
+      "foreign_today": 4017600000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "033790",
+      "name": "피노",
+      "close": 7380,
+      "ret5": 0.1302,
+      "ret20": -0.0147,
+      "rsi14": 49.5,
+      "vol20": 1.147,
+      "foreign_net": 1776747065,
+      "inst_net": -613028820,
+      "score": 0.692,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "“칠레 와인은 카베르네 소비뇽뿐?”…피노 누아에 승부 건 ‘코노수르...",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "피노 12%대 급등…니켈 투자·실적 개선 기대 반영",
+          "risk": false
+        }
+      ],
+      "price": 7500,
+      "chg": 0.0218,
+      "activity": 2.45,
+      "foreign_today": 210000000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -308,12 +335,12 @@
       "vol20": 1.684,
       "foreign_net": 135820739,
       "inst_net": 166992995,
-      "score": 0.625,
+      "score": 0.667,
       "news": [],
-      "price": 5120,
-      "chg": 0.1094,
-      "activity": 4.01,
-      "foreign_today": 337920000,
+      "price": 5210,
+      "chg": 0.1289,
+      "activity": 3.22,
+      "foreign_today": 343860000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
