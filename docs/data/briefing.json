@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "13:45",
-    "pool": 444,
+    "time": "14:00",
+    "pool": 446,
     "analyzed_new": 30,
     "passed": 21,
     "kept_prep": false
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 46700,
-      "chg": 0.086,
-      "activity": 1.48,
-      "foreign_today": 5744100000,
-      "inst_today": 934000000,
+      "price": 46600,
+      "chg": 0.0837,
+      "activity": 1.46,
+      "foreign_today": 5731800000,
+      "inst_today": 932000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.57,
       "foreign_net": -598444400,
       "inst_net": 28489673750,
-      "score": 0.822,
+      "score": 0.828,
       "news": [
         {
           "date": "11-18",
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 167000,
-      "chg": 0.0788,
-      "activity": 1.18,
-      "foreign_today": 2672000000,
-      "inst_today": 2338000000,
+      "price": 165200,
+      "chg": 0.0672,
+      "activity": 1.16,
+      "foreign_today": 2643200000,
+      "inst_today": 2312800000,
       "exchange": "KOSPI"
     },
     {
@@ -161,10 +161,10 @@
           "risk": false
         }
       ],
-      "price": 81600,
-      "chg": -0.0157,
-      "activity": 1.11,
-      "foreign_today": 5140800000,
+      "price": 81500,
+      "chg": -0.0169,
+      "activity": 1.08,
+      "foreign_today": 5134500000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -178,7 +178,7 @@
       "vol20": 0.557,
       "foreign_net": -1757680500,
       "inst_net": 10807969000,
-      "score": 0.656,
+      "score": 0.663,
       "news": [
         {
           "date": "11-17",
@@ -196,11 +196,11 @@
           "risk": false
         }
       ],
-      "price": 268000,
-      "chg": 0.0388,
-      "activity": 1.41,
+      "price": 266500,
+      "chg": 0.0329,
+      "activity": 1.37,
       "foreign_today": 0,
-      "inst_today": 536000000,
+      "inst_today": 533000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -213,21 +213,21 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.595,
+      "score": 0.601,
       "news": [
         {
           "date": "11-18",
-          "title": "KT, 서울대병원에 로봇 투입-어린이 환자와 놀이·검사과정 설명·목적지...",
+          "title": "KT-서울대병원, 의료 현장에 AI 로봇 적용 실증 추진",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "KT-서울대병원, 피지컬 AI 로봇 투입…어린이 환자 돌본다",
           "risk": false
         },
         {
           "date": "11-18",
           "title": "KT·서울대병원 '의료 피지컬 AI' 실증",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "KT, 서울대병원과 AI 로봇 의료 현장 실증 추진…비임상 서비스 적용",
           "risk": false
         }
       ],
@@ -245,7 +245,7 @@
       "vol20": 0.356,
       "foreign_net": -5847784900,
       "inst_net": 7280113950,
-      "score": 0.595,
+      "score": 0.589,
       "news": [
         {
           "date": "11-17",
@@ -255,10 +255,26 @@
       ],
       "price": 197900,
       "chg": 0.0275,
-      "activity": 1.57,
+      "activity": 1.55,
       "foreign_today": 0,
       "inst_today": 197900000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 54100,
+      "ret5": -0.0591,
+      "ret20": 0.2523,
+      "rsi14": 58.4,
+      "vol20": 0.642,
+      "foreign_net": 10284464750,
+      "inst_net": -4842497150,
+      "score": 0.577,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 757400000,
+      "exchange": "KOSPI"
     },
     {
       "code": "105560",
@@ -288,62 +304,11 @@
           "risk": false
         }
       ],
-      "price": 155600,
-      "chg": -0.0077,
-      "activity": 0.65,
-      "foreign_today": 9491600000,
-      "inst_today": 1867200000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 54100,
-      "ret5": -0.0591,
-      "ret20": 0.2523,
-      "rsi14": 58.4,
-      "vol20": 0.642,
-      "foreign_net": 10284464750,
-      "inst_net": -4842497150,
-      "score": 0.558,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 757400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "028050",
-      "name": "삼성E&A",
-      "close": 67600,
-      "ret5": 0.0579,
-      "ret20": 0.5684,
-      "rsi14": 63.9,
-      "vol20": 0.869,
-      "foreign_net": -87308670000,
-      "inst_net": 45532092000,
-      "score": 0.54,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "[단독] 삼성E&A 시공 말레이시아 가스플랜트 가동…셸, 사라왁 심해가스...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "삼성E&A 목표주가 9만6천원 상향…AI·모듈러 경쟁력 주목",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "삼성E&A 1.32% 상승…수주 17조원·특별 주주환원 부각",
-          "risk": false
-        }
-      ],
-      "price": 63100,
-      "chg": -0.0707,
-      "activity": 1.23,
-      "foreign_today": 10159100000,
-      "inst_today": 0,
+      "price": 154700,
+      "chg": -0.0134,
+      "activity": 0.63,
+      "foreign_today": 9436700000,
+      "inst_today": 1856400000,
       "exchange": "KOSPI"
     },
     {
@@ -356,7 +321,7 @@
       "vol20": 0.734,
       "foreign_net": -3801142600,
       "inst_net": 6589437800,
-      "score": 0.515,
+      "score": 0.521,
       "news": [],
       "foreign_today": 0,
       "inst_today": 2143200000,
@@ -372,7 +337,7 @@
       "vol20": 0.548,
       "foreign_net": 2891179000,
       "inst_net": 22252576250,
-      "score": 0.497,
+      "score": 0.503,
       "news": [
         {
           "date": "11-18",
@@ -399,26 +364,48 @@
       "vol20": 0.538,
       "foreign_net": -10208609250,
       "inst_net": 13220551250,
-      "score": 0.491,
+      "score": 0.503,
       "news": [
         {
           "date": "11-18",
-          "title": "[똑똑한리빙] 이케아, 세라젬, 소노시즌, 당근, 신세계까사 까사미아, 쿠...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "신세계인터, 美 니치향수 '에드워드 베스' 국내 론칭",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[Weekly 백화점·면세점] 현대백화점·롯데백화점·신세계면세점",
+          "title": "가구업계 3분기 실적 희비…한샘·리바트 '울고' 신세계까사 '웃었다'",
           "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 793500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "192820",
+      "name": "코스맥스",
+      "close": 293000,
+      "ret5": 0.2082,
+      "ret20": 0.1015,
+      "rsi14": 61.9,
+      "vol20": 0.596,
+      "foreign_net": -39140101250,
+      "inst_net": 15285708750,
+      "score": 0.479,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "코스맥스, 쿠션·마스크팩 등 세계일류상품 3건 선정",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[민주 뷰티샵] 코스맥스·한국콜마·애경산업",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 4688000000,
       "exchange": "KOSPI"
     },
     {
@@ -435,7 +422,7 @@
       "news": [
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
+          "title": "아모레퍼시픽, 임원 불륜 논란에 징계 절차 착수…성과급 특혜 의혹 해...",
           "risk": false
         },
         {
@@ -445,44 +432,12 @@
         },
         {
           "date": "11-18",
-          "title": "아모레퍼시픽, 매출 14조·배당 40% 승부…해외 성장에 무게",
+          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
           "risk": false
         }
       ],
       "foreign_today": 1299000000,
       "inst_today": 519600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "192820",
-      "name": "코스맥스",
-      "close": 293000,
-      "ret5": 0.2082,
-      "ret20": 0.1015,
-      "rsi14": 61.9,
-      "vol20": 0.596,
-      "foreign_net": -39140101250,
-      "inst_net": 15285708750,
-      "score": 0.466,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스, 쿠션·마스크팩 등 '세계일류상품' 3건 동시 선정",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스 쿠션·마스크팩 세계일류상품 선정, '압전 에멀젼 기술'도 차...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 4688000000,
       "exchange": "KOSPI"
     },
     {
@@ -495,7 +450,7 @@
       "vol20": 0.602,
       "foreign_net": 51992049675,
       "inst_net": 10112869800,
-      "score": 0.454,
+      "score": 0.466,
       "news": [
         {
           "date": "11-18",
@@ -513,11 +468,36 @@
           "risk": false
         }
       ],
-      "price": 31050,
-      "chg": -0.0282,
-      "activity": 0.78,
-      "foreign_today": 869400000,
+      "price": 31200,
+      "chg": -0.0235,
+      "activity": 0.76,
+      "foreign_today": 873600000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32450,
+      "ret5": 0.0417,
+      "ret20": 0.0237,
+      "rsi14": 54.4,
+      "vol20": 0.349,
+      "foreign_net": -19864151125,
+      "inst_net": 40202789025,
+      "score": 0.448,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "우리금융지주, 보통주 5만7,369주 소각에 따른 변경상장",
+          "risk": false
+        }
+      ],
+      "price": 32225,
+      "chg": -0.0115,
+      "activity": 0.64,
+      "foreign_today": 0,
+      "inst_today": 1289000000,
       "exchange": "KOSPI"
     },
     {
@@ -548,11 +528,11 @@
           "risk": false
         }
       ],
-      "price": 15130,
-      "chg": 0.0869,
-      "activity": 6.86,
-      "foreign_today": 2103070000,
-      "inst_today": 363120000,
+      "price": 15010,
+      "chg": 0.0783,
+      "activity": 6.53,
+      "foreign_today": 2086390000,
+      "inst_today": 360240000,
       "exchange": "KOSDAQ"
     },
     {
@@ -583,11 +563,11 @@
           "risk": false
         }
       ],
-      "price": 51800,
-      "chg": 0.0792,
-      "activity": 3.1,
-      "foreign_today": 1036000000,
-      "inst_today": 2072000000,
+      "price": 52800,
+      "chg": 0.1,
+      "activity": 3.49,
+      "foreign_today": 1056000000,
+      "inst_today": 2112000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -600,7 +580,7 @@
       "vol20": 1.098,
       "foreign_net": -10692163000,
       "inst_net": 10606811500,
-      "score": 0.81,
+      "score": 0.804,
       "news": [
         {
           "date": "11-18",
@@ -611,53 +591,48 @@
           "date": "11-18",
           "title": "[공시셀렉트] 로보티즈, 액츄에이터 매출 크게 늘었지만…3분기 영업현...",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[특징주] 로보티즈, 적자 충격 딛고 10%대 반등…증권가 \"내년 가파른 턴...",
-          "risk": false
         }
       ],
-      "price": 239500,
-      "chg": 0.1324,
-      "activity": 2.05,
-      "foreign_today": 10538000000,
-      "inst_today": 1197500000,
+      "price": 238500,
+      "chg": 0.1277,
+      "activity": 2.0,
+      "foreign_today": 10494000000,
+      "inst_today": 1192500000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "053800",
-      "name": "안랩",
-      "close": 101800,
-      "ret5": -0.1094,
-      "ret20": 0.1464,
-      "rsi14": 51.8,
-      "vol20": 1.557,
-      "foreign_net": -1258193100,
-      "inst_net": -2595347850,
-      "score": 0.755,
+      "code": "232140",
+      "name": "와이씨",
+      "close": 13880,
+      "ret5": 0.3372,
+      "ret20": 0.076,
+      "rsi14": 55.5,
+      "vol20": 1.362,
+      "foreign_net": -16982819565,
+      "inst_net": 28477147760,
+      "score": 0.724,
       "news": [
         {
-          "date": "11-18",
-          "title": "[특징주] 안랩, 사이버 위협 고조 속 '본업 경쟁력' 부각되며 11만 원 돌...",
+          "date": "11-17",
+          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
           "risk": false
         },
         {
-          "date": "11-18",
-          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패...",
+          "date": "11-17",
+          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
           "risk": false
         },
         {
-          "date": "11-18",
-          "title": "[더벨][안랩 밸류업 점검] '정치 현안' 없이 오른 주가, 상승 동력 '해킹...",
+          "date": "11-17",
+          "title": "와이씨 5%대 상승…메모리 테스터 수주·매출 인식 기대",
           "risk": false
         }
       ],
-      "price": 106300,
-      "chg": 0.0422,
-      "activity": 1.22,
-      "foreign_today": 6909500000,
-      "inst_today": 0,
+      "price": 14630,
+      "chg": 0.0663,
+      "activity": 3.07,
+      "foreign_today": 672980000,
+      "inst_today": 848540000,
       "exchange": "KOSDAQ"
     },
     {
@@ -670,8 +645,13 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 0.736,
+      "score": 0.724,
       "news": [
+        {
+          "date": "11-18",
+          "title": "세미파이브, HBM 없는 AI 반도체 개발…3D 적층 기술 공개",
+          "risk": false
+        },
         {
           "date": "11-17",
           "title": "[특징주] 세미파이브, HBM 대체할 3D-IC 기술 공개…주가 18%대 급등",
@@ -681,17 +661,12 @@
           "date": "11-17",
           "title": "세미파이브, 차세대 로직칩 개발…\"HBM 없이 AI반도체 제조\"",
           "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "“HBM 대안 찾자”…세미파이브, 美 SC26서 ‘3D-IC 플랫폼’ 공개",
-          "risk": false
         }
       ],
-      "price": 13120,
-      "chg": -0.018,
-      "activity": 2.85,
-      "foreign_today": 446080000,
+      "price": 13080,
+      "chg": -0.021,
+      "activity": 2.72,
+      "foreign_today": 444720000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
