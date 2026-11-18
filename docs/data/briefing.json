@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "12:00",
-    "pool": 401,
+    "time": "12:15",
+    "pool": 399,
     "analyzed_new": 30,
     "passed": 21,
     "kept_prep": false
@@ -111,11 +111,11 @@
           "risk": false
         }
       ],
-      "price": 45600,
-      "chg": 0.0605,
-      "activity": 1.59,
-      "foreign_today": 4012800000,
-      "inst_today": 45600000,
+      "price": 45850,
+      "chg": 0.0663,
+      "activity": 1.53,
+      "foreign_today": 4034800000,
+      "inst_today": 45850000,
       "exchange": "KOSDAQ"
     },
     {
@@ -128,7 +128,7 @@
       "vol20": 0.468,
       "foreign_net": 18957072950,
       "inst_net": 34103456350,
-      "score": 0.766,
+      "score": 0.767,
       "news": [
         {
           "date": "11-18",
@@ -136,11 +136,11 @@
           "risk": false
         }
       ],
-      "price": 80600,
-      "chg": -0.0277,
-      "activity": 1.39,
-      "foreign_today": 3788200000,
-      "inst_today": 2418000000,
+      "price": 80800,
+      "chg": -0.0253,
+      "activity": 1.33,
+      "foreign_today": 3797600000,
+      "inst_today": 2424000000,
       "exchange": "KOSPI"
     },
     {
@@ -153,7 +153,7 @@
       "vol20": 0.557,
       "foreign_net": -1757680500,
       "inst_net": 10807969000,
-      "score": 0.703,
+      "score": 0.713,
       "news": [
         {
           "date": "11-17",
@@ -171,11 +171,11 @@
           "risk": false
         }
       ],
-      "price": 267500,
-      "chg": 0.0368,
-      "activity": 1.65,
+      "price": 269500,
+      "chg": 0.0446,
+      "activity": 1.59,
       "foreign_today": 0,
-      "inst_today": 267500000,
+      "inst_today": 269500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -188,7 +188,7 @@
       "vol20": 0.369,
       "foreign_net": 13641383750,
       "inst_net": -9459512150,
-      "score": 0.641,
+      "score": 0.64,
       "news": [
         {
           "date": "11-18",
@@ -220,7 +220,7 @@
       "vol20": 0.366,
       "foreign_net": 84943533200,
       "inst_net": -71541342600,
-      "score": 0.593,
+      "score": 0.587,
       "news": [
         {
           "date": "11-18",
@@ -240,7 +240,7 @@
       ],
       "price": 155600,
       "chg": -0.0077,
-      "activity": 0.83,
+      "activity": 0.79,
       "foreign_today": 8713600000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -255,7 +255,7 @@
       "vol20": 0.538,
       "foreign_net": -10208609250,
       "inst_net": 13220551250,
-      "score": 0.579,
+      "score": 0.587,
       "news": [
         {
           "date": "11-18",
@@ -287,8 +287,13 @@
       "vol20": 0.596,
       "foreign_net": -39140101250,
       "inst_net": 15285708750,
-      "score": 0.579,
+      "score": 0.573,
       "news": [
+        {
+          "date": "11-18",
+          "title": "코스맥스, 쿠션부터 차세대 제형까지…세계일류상품 선정",
+          "risk": false
+        },
         {
           "date": "11-18",
           "title": "코스맥스, 쿠션·마스크팩 등 '세계일류상품' 3건 동시 선정",
@@ -298,18 +303,13 @@
           "date": "11-18",
           "title": "코스맥스 쿠션·마스크팩 세계일류상품 선정, '압전 에멀젼 기술'도 차...",
           "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "코스맥스, ‘세계일류상품’ 3건 동시 선정…화장품 업계 최다 9건 확보",
-          "risk": false
         }
       ],
-      "price": 297500,
-      "chg": 0.0171,
-      "activity": 1.63,
+      "price": 296000,
+      "chg": 0.012,
+      "activity": 1.55,
       "foreign_today": 0,
-      "inst_today": 892500000,
+      "inst_today": 888000000,
       "exchange": "KOSPI"
     },
     {
@@ -322,7 +322,7 @@
       "vol20": 0.904,
       "foreign_net": -3311756675,
       "inst_net": 9323673800,
-      "score": 0.559,
+      "score": 0.56,
       "news": [
         {
           "date": "11-18",
@@ -340,12 +340,37 @@
           "risk": false
         }
       ],
-      "price": 31250,
-      "chg": 0.0297,
-      "activity": 0.91,
-      "foreign_today": 781250000,
-      "inst_today": 31250000,
+      "price": 31400,
+      "chg": 0.0346,
+      "activity": 0.86,
+      "foreign_today": 785000000,
+      "inst_today": 31400000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "352820",
+      "name": "하이브",
+      "close": 153800,
+      "ret5": 0.0718,
+      "ret20": -0.1573,
+      "rsi14": 45.8,
+      "vol20": 0.57,
+      "foreign_net": -598444400,
+      "inst_net": 28489673750,
+      "score": 0.513,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "'5년째 적자' 하이브 게임 자회사 드림에이지, 인력감축 돌입",
+          "risk": false
+        }
+      ],
+      "price": 162400,
+      "chg": 0.0491,
+      "activity": 0.98,
+      "foreign_today": 649600000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
     },
     {
       "code": "008930",
@@ -357,7 +382,7 @@
       "vol20": 0.642,
       "foreign_net": 10284464750,
       "inst_net": -4842497150,
-      "score": 0.49,
+      "score": 0.493,
       "news": [
         {
           "date": "11-17",
@@ -384,7 +409,7 @@
       "vol20": 0.504,
       "foreign_net": -16652616150,
       "inst_net": 20836098850,
-      "score": 0.476,
+      "score": 0.48,
       "news": [],
       "foreign_today": 0,
       "inst_today": 440300000,
@@ -400,16 +425,16 @@
       "vol20": 0.365,
       "foreign_net": 5277176150,
       "inst_net": -3031944750,
-      "score": 0.448,
+      "score": 0.447,
       "news": [
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]아모레퍼시픽, 임원 자리까지 여성의 길 열었다",
+          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
           "risk": false
         },
         {
           "date": "11-18",
-          "title": "[2026 여성포럼]우리은행·삼성증권·아모레퍼시픽, '양성평등 경영' 가...",
+          "title": "[2026 여성포럼]아모레퍼시픽, 임원 자리까지 여성의 길 열었다",
           "risk": false
         },
         {
@@ -432,35 +457,10 @@
       "vol20": 0.734,
       "foreign_net": -3801142600,
       "inst_net": 6589437800,
-      "score": 0.428,
+      "score": 0.42,
       "news": [],
       "foreign_today": 0,
       "inst_today": 714400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32450,
-      "ret5": 0.0417,
-      "ret20": 0.0237,
-      "rsi14": 54.4,
-      "vol20": 0.349,
-      "foreign_net": -19864151125,
-      "inst_net": 40202789025,
-      "score": 0.421,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "우리금융지주, 보통주 5만7,369주 소각에 따른 변경상장",
-          "risk": false
-        }
-      ],
-      "price": 32300,
-      "chg": -0.0092,
-      "activity": 0.81,
-      "foreign_today": 387600000,
-      "inst_today": 96900000,
       "exchange": "KOSPI"
     },
     {
@@ -473,7 +473,7 @@
       "vol20": 0.399,
       "foreign_net": -2846553500,
       "inst_net": -5239344400,
-      "score": 0.421,
+      "score": 0.42,
       "news": [
         {
           "date": "11-18",
@@ -496,35 +496,28 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "032640",
-      "name": "LG유플러스",
-      "close": 15580,
-      "ret5": -0.0177,
-      "ret20": 0.017,
-      "rsi14": 55.4,
-      "vol20": 0.432,
-      "foreign_net": -11493413925,
-      "inst_net": 12284982480,
-      "score": 0.359,
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32450,
+      "ret5": 0.0417,
+      "ret20": 0.0237,
+      "rsi14": 54.4,
+      "vol20": 0.349,
+      "foreign_net": -19864151125,
+      "inst_net": 40202789025,
+      "score": 0.407,
       "news": [
         {
-          "date": "11-18",
-          "title": "LG유플러스, AI 기반 품질관리 IPTV 420만대에 적용...소비자 관심도 상...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "LG유플러스, AI 기반 품질관리 IPTV 420만대 적용",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "LG유플러스, IPTV 420만대에 AI 장애 예방 시스템 적용…고객 불만 10% 감...",
+          "date": "11-17",
+          "title": "우리금융지주, 보통주 5만7,369주 소각에 따른 변경상장",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 233700000,
+      "price": 32300,
+      "chg": -0.0092,
+      "activity": 0.78,
+      "foreign_today": 387600000,
+      "inst_today": 96900000,
       "exchange": "KOSPI"
     },
     {
@@ -537,7 +530,7 @@
       "vol20": 1.33,
       "foreign_net": -3562734985,
       "inst_net": -4217970210,
-      "score": 0.924,
+      "score": 0.94,
       "news": [
         {
           "date": "11-17",
@@ -555,46 +548,11 @@
           "risk": false
         }
       ],
-      "price": 13100,
-      "chg": -0.0195,
-      "activity": 4.15,
-      "foreign_today": 864600000,
+      "price": 13160,
+      "chg": -0.015,
+      "activity": 3.88,
+      "foreign_today": 868560000,
       "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "100790",
-      "name": "미래에셋벤처투자",
-      "close": 14080,
-      "ret5": 0.2107,
-      "ret20": -0.0098,
-      "rsi14": 52.5,
-      "vol20": 1.102,
-      "foreign_net": -14413012180,
-      "inst_net": 257219755,
-      "score": 0.917,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "미래에셋벤처투자, 정규장 1만4800원 마감 후 애프터마켓 1만4840원…2거...",
-          "risk": false
-        },
-        {
-          "date": "11-16",
-          "title": "미래에셋벤처투자, 3분기 263억 적자…주식 평가손실 직격탄",
-          "risk": false
-        }
-      ],
-      "price": 15270,
-      "chg": 0.097,
-      "activity": 8.69,
-      "foreign_today": 1649160000,
-      "inst_today": 91620000,
       "exchange": "KOSDAQ"
     },
     {
@@ -607,7 +565,7 @@
       "vol20": 1.557,
       "foreign_net": -1258193100,
       "inst_net": -2595347850,
-      "score": 0.883,
+      "score": 0.92,
       "news": [
         {
           "date": "11-18",
@@ -625,11 +583,46 @@
           "risk": false
         }
       ],
-      "price": 105900,
-      "chg": 0.0382,
-      "activity": 1.77,
-      "foreign_today": 7413000000,
+      "price": 107200,
+      "chg": 0.051,
+      "activity": 1.67,
+      "foreign_today": 7504000000,
       "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "close": 14080,
+      "ret5": 0.2107,
+      "ret20": -0.0098,
+      "rsi14": 52.5,
+      "vol20": 1.102,
+      "foreign_net": -14413012180,
+      "inst_net": 257219755,
+      "score": 0.913,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "미래에셋벤처투자, 정규장 1만4800원 마감 후 애프터마켓 1만4840원…2거...",
+          "risk": false
+        },
+        {
+          "date": "11-16",
+          "title": "미래에셋벤처투자, 3분기 263억 적자…주식 평가손실 직격탄",
+          "risk": false
+        }
+      ],
+      "price": 15350,
+      "chg": 0.1027,
+      "activity": 9.21,
+      "foreign_today": 1657800000,
+      "inst_today": 92100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -642,7 +635,7 @@
       "vol20": 1.372,
       "foreign_net": 4532063200,
       "inst_net": -266153600,
-      "score": 0.862,
+      "score": 0.86,
       "news": [
         {
           "date": "11-18",
@@ -660,11 +653,11 @@
           "risk": false
         }
       ],
-      "price": 25250,
-      "chg": 0.1099,
-      "activity": 4.23,
-      "foreign_today": 2348250000,
-      "inst_today": 909000000,
+      "price": 25450,
+      "chg": 0.1187,
+      "activity": 4.02,
+      "foreign_today": 2366850000,
+      "inst_today": 916200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -677,7 +670,7 @@
       "vol20": 1.362,
       "foreign_net": -16982819565,
       "inst_net": 28477147760,
-      "score": 0.814,
+      "score": 0.813,
       "news": [
         {
           "date": "11-17",
@@ -695,11 +688,11 @@
           "risk": false
         }
       ],
-      "price": 14030,
-      "chg": 0.0226,
-      "activity": 3.94,
-      "foreign_today": 1697630000,
-      "inst_today": 392840000,
+      "price": 14170,
+      "chg": 0.0328,
+      "activity": 3.75,
+      "foreign_today": 1714570000,
+      "inst_today": 396760000,
       "exchange": "KOSDAQ"
     },
     {
