@@ -263,6 +263,14 @@ def cancel_stale(brk, minutes=None):
     return done
 
 
+def fill_extra(res):
+    """체결 기록에 붙이는 값: 통화 · 원/달러 환율 · 원화 금액 · 지정가 · 미체결 수량 (양도세 계산 · 원화 수익률용)."""
+    fx = (C.read_json(C.ACCOUNT, {}) or {}).get("fx") or fx_cached()
+    amt = res["qty"] * res["price"]
+    return {"currency": "USD", "fx": fx, "amount_krw": round(amt * fx) if fx else None,
+            "limit": res.get("limit"), "pending": res.get("pending", 0)}
+
+
 def fx_cached(max_age=3600):
     """원/달러 환율 (1시간 캐시, Yahoo). 실패하면 마지막 값."""
     path = os.path.join(C.WORK, "fx.json")

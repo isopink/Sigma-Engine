@@ -36,7 +36,7 @@ with contextlib.redirect_stdout(sys.stderr):
     import tuning
     from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("kiwoom")
+mcp = FastMCP("kiwoom")   # 이름은 두 시장 모두 kiwoom (도구 이름 mcp__kiwoom__* 을 프롬프트 · Hook 이 같이 씀). US 는 KIS 브로커
 _broker = None
 
 
@@ -90,7 +90,8 @@ def get_briefing() -> str:
     p, r = C.params(), C.risk_limits()
     ctx = [
         "", "## 오늘 기준값 (코드가 강제함)",
-        f"- 실행 종류: {os.environ.get('RUN_MODE', 'decide')} · 대회 {C.competition_week(p=p)}주차 · 주차 비중 계수 ×{C.week_factor(p)}",
+        (f"- 실행 종류: {os.environ.get('RUN_MODE', 'decide')} · 미국 주식 실제 돈 계좌 (달러, 뉴욕 시간 {C.now().strftime('%H:%M')}) · 지정가 주문 (현재가 ±{(p.get('us') or {}).get('limit_slippage', 0):.1%})"
+         if C.US else f"- 실행 종류: {os.environ.get('RUN_MODE', 'decide')} · 대회 {C.competition_week(p=p)}주차 · 주차 비중 계수 ×{C.week_factor(p)}"),
         f"- 매수 확신도 기준 {C.buy_threshold(p):.2f} (보정 후 {C.probe_floor(p):.2f}~{C.buy_threshold(p):.2f} 는 확신도에 비례해 종목당 {(p['decision'].get('probe') or {}).get('weight_min', 0):.0%}~{(p['decision'].get('probe') or {}).get('weight', 0):.0%} 소액 매수) · 매도 확신도 기준 {p['decision']['sell_min_confidence']:.2f} · "
         f"확신도 기준이면 종목당 {p['decision']['min_weight']:.0%}, {p['decision']['full_size_confidence']:.2f} 이상이면 {p['decision'].get('max_weight', r['max_weight_per_stock']):.0%} (여러 종목으로 나눠 삼)",
         f"- 국면별 주식 비중 상한: " + " · ".join(f"{k} {v:.0%}" for k, v in p["regime_cap"].items()),
@@ -98,8 +99,11 @@ def get_briefing() -> str:
         f"일일 손실 {r['daily_loss_limit']:.0%} 도달 시 신규 매수 중단",
         f"- 보유 종목 추가 매수: 보정 후 매수 확신도 {C.buy_threshold(p):.2f} 이상이고 현재가 ≥ 평단(이익 중)일 때만 목표 비중까지 (손실 중 물타기·소액 구간 추가는 코드가 막음)",
         f"- 손절 {p['decision']['stop_loss_pct']:.0%} · 익절 {p['decision']['take_profit_pct']:.0%} · " + (f"최대 보유 {p['decision']['max_hold_days']}거래일" if p['decision'].get('max_hold_days') else "최대 보유일 없음 (11-18, 인버스 · KODEX 200 만 따로 있음)"),
-        f"- 누적 체결 {C.fill_count()}건 (대회 최소 {p['competition']['min_trades']}건)",
+        f"- 누적 체결 {C.fill_count()}건" + ("" if C.US else f" (대회 최소 {p['competition']['min_trades']}건)"),
     ]
+    if C.US:
+        ctx.append(f"- 1회 주문 최대 {C.money(r['max_order_amount'])} · 일일 손실 {r['daily_loss_limit']:.0%} · 누적 손실 {r['total_loss_limit']:.0%} 이면 신규 매수 중단 · "
+                   f"S&P 500 · 나스닥 100 · SPY · SH 만 매수 (레버리지 · 기타 ETF 금지, 코드가 강제)")
     if (hv := p.get("high_vol")) and hv.get("enabled"):
         ctx.append(f"- ⚡고변동 종목 (20일 변동성 {p['screen']['max_vol20']:.0%} 초과): 후보에 최대 {hv['max_candidates']}개 따로 포함. "
                    f"종목당 {hv['weight_cap']:.0%} 이하만 (코드가 강제), 손절 {hv['stop_loss_pct']:.0%} · 익절 {hv['take_profit_pct']:+.0%}")
@@ -170,8 +174,9 @@ def intraday(b, r):
     if not rows:
         return ""
     lim = r.get("max_buy_day_change", 0.10)
+    up = f"+{lim:.0%}" if C.US else f"+{lim:.0%}(코스닥 +{r.get('max_buy_day_change_kosdaq', lim):.0%})"   # 미국은 코스닥 예외 없음
     return "\n".join(["", "", f"## 오늘 장중 ({C.now().strftime('%H:%M')} 현재가, 전일 종가 대비)",
-                      f"위 지표는 전일 종가 기준입니다. 오늘 +{lim:.0%}(코스닥 +{r.get('max_buy_day_change_kosdaq', lim):.0%}) 이상 오른 종목은 리스크 규칙상 매수할 수 없습니다 (추격 매수 금지).",
+                      f"위 지표는 전일 종가 기준입니다. 오늘 {up} 이상 오른 종목은 리스크 규칙상 매수할 수 없습니다 (추격 매수 금지).",
                       "", "| 코드 | 종목 | 현재가 | 오늘 등락 |", "|---|---|---|---|", *rows])
 
 
@@ -255,7 +260,7 @@ def place_order(code: str, side: str, qty: int, confidence: float, bull: str, be
         if C.index_dip(code, qi["change"]):   # 급락일 지수 예외로 산 건 익절 폭·보유일이 따로
             (tp, md), m["index_dip"] = C.dip_exit(code, None, tp, md), True
             sl = C.dip_stop(code, None, sl)
-        m.update(stop=round(res["price"] * (1 + sl)), take=round(res["price"] * (1 + tp)), max_days=md)
+        m.update(stop=C.px_round(res["price"] * (1 + sl)), take=C.px_round(res["price"] * (1 + tp)), max_days=md)
         meta[code] = m
     elif not held:
         meta.pop(code, None)
@@ -263,8 +268,16 @@ def place_order(code: str, side: str, qty: int, confidence: float, bull: str, be
     C.journal("fill", code=code, name=name, side=side, qty=res["qty"], ordered=qty, price=res["price"],
               amount=res["qty"] * res["price"], confidence=adj, confidence_raw=confidence, boost=note, regime=regime,
               bull=bull, bear=bear, decision=decision, order_no=res.get("order_no"),
-              filled=res.get("filled", True), rule_exit=rule_exit)
+              filled=res.get("filled", True), rule_exit=rule_exit, **us_fill_extra(res))
     return {"ok": True, **res, "name": name}
+
+
+def us_fill_extra(res):
+    """US 체결 기록에 붙이는 값 (kis.fill_extra). KR 은 빈 dict."""
+    if not C.US:
+        return {}
+    import kis
+    return kis.fill_extra(res)
 
 
 @mcp.tool()

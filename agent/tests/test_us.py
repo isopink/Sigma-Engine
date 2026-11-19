@@ -157,6 +157,48 @@ def test_briefing_text():
     assert "| AAPL | Apple | 230.12 |" in t and "$9,000M" in t and "⚠ Apple faces lawsuit" in t and "SPY 대비" in t
 
 
+def test_tax_fifo_krw():
+    import tax
+    rows = [
+        {"kind": "fill", "time": "2027-01-05 10:00", "code": "AAPL", "side": "매수", "qty": 10, "price": 100.0, "fx": 1300},
+        {"kind": "fill", "time": "2027-02-05 10:00", "code": "AAPL", "side": "매수", "qty": 10, "price": 120.0, "fx": 1400},
+        {"kind": "fill", "time": "2027-03-05 10:00", "code": "AAPL", "side": "매도", "qty": 15, "price": 130.0, "fx": 1350},
+        {"kind": "fill", "time": "2027-03-06 10:00", "code": "MSFT", "side": "매수", "qty": 1, "price": 400.0},   # 환율 없음 → 빠짐
+    ]
+    it = tax.realized(rows, 0.0, 2027)
+    assert len(it) == 1
+    x = it[0]
+    assert x["cost_krw"] == 10 * 100 * 1300 + 5 * 120 * 1400            # FIFO: 먼저 산 10주 + 다음 5주
+    assert x["proceeds_krw"] == 15 * 130 * 1350
+    s = tax.summary(it)
+    assert s["taxable_krw"] == max(0, x["gain_krw"] - 2_500_000) and s["tax_krw"] == round(s["taxable_krw"] * 0.22)
+
+
+def test_monitor_backup_after_grace():
+    import time as _t
+    import monitor
+    calls = []
+    old = monitor.backup_sell
+    monitor.backup_sell = lambda h, why: calls.append(h["code"])
+    try:
+        hs = [{"code": "AAPL", "name": "Apple", "qty": 3, "price": 90.0}]
+        hit = {"AAPL": ("AAPL@k", "손절")}
+        st = {"date": C.today().isoformat(), "fired": {"AAPL@k": _t.time() - 60}}
+        monitor.backup(hit, hs, st)
+        assert calls == []                                   # 실행 뒤 1분: 아직 에이전트를 기다림
+        st["fired"]["AAPL@k"] = _t.time() - 6 * 60
+        monitor.backup(hit, hs, st)
+        monitor.backup(hit, hs, st)
+        assert calls == ["AAPL"]                             # 5분 넘게 그대로면 코드가 한 번만 매도
+    finally:
+        monitor.backup_sell = old
+        try:
+            os.remove(monitor.STATE)
+        except OSError:
+            pass
+    assert monitor.trade_from() == 1000                      # 미국은 10:00 전 규칙 매도 보류
+
+
 if __name__ == "__main__":
     fails = 0
     for n, f in list(globals().items()):

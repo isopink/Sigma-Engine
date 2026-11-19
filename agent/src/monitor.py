@@ -2,7 +2,8 @@
 장중 감시 (LLM 없음). 1분마다 보유 종목의 손절가·익절가·보유일을 확인하고,
 조건에 닿은 종목이 있으면 손절·익절 실행(run.py exit)을 띄웁니다. 주문은 그 실행의 에이전트가 Hook 을 거쳐 냅니다.
 
-키움 호출을 늘리지 않도록 live 모드에서는 live/snapshot.py 가 남긴 last_snapshot.json 만 읽습니다.
+키움 호출을 늘리지 않도록 live 모드에서는 live/snapshot.py 가 남긴 last_snapshot.json (US 는 last_snapshot_us.json) 만 읽습니다.
+US 는 실행이 grace_min 분 안에 못 팔면 코드가 직접 매도 (backup, 11-19 S.Lee: 대회용 아님 · 실제 돈).
 """
 import os
 import subprocess
@@ -17,7 +18,7 @@ RETRY_SEC = 10 * 60   # 매도 실행 뒤에도 잔고에 남아 있으면 이�
 
 def holdings():
     if C.mode() == "live":
-        snap = C.read_json(os.path.join(C.LIVE, "last_snapshot.json"))
+        snap = C.read_json(C.LAST_SNAPSHOT)
         if not snap or time.time() - snap.get("epoch", 0) > 15 * 60:
             return None
         return snap["holdings"]
@@ -26,6 +27,12 @@ def holdings():
 
 
 TRADE_FROM = 930   # 11-06 S.Lee: 09:30 전엔 손절·익절·보유일에 걸려도 매도하지 않음 (09:10 손절 보류에서 넓힘)
+
+
+def trade_from(p=None):
+    """이 시각 전엔 규칙 매도 보류 (HHMM). KR 09:30 그대로, US 는 params.schedule.sell_from (개장 30분 뒤 10:00)."""
+    f = ((p or C.params()).get("schedule") or {}).get("sell_from")
+    return int(f.replace(":", "")) if f else TRADE_FROM
 
 
 def triggers(hs):
@@ -44,9 +51,10 @@ def triggers(hs):
         elif m.get("max_days") and m.get("entry_date") and C.business_days(m["entry_date"], C.today()) >= m["max_days"]:   # 11-18 S.Lee: 일반 종목 10거래일 (값이 없으면 보유일로 안 팖)
             hit[h["code"]] = (key, f"{h['name']} 보유 {C.business_days(m['entry_date'], C.today())}일 ≥ 최대 {m['max_days']}일")
     n = C.now()
-    if hit and n.hour * 100 + n.minute < TRADE_FROM:   # 장 전·장 초반 투매 구간 (11-06 KODEX 200 이 시가 −8.6% 에 손절된 일)
+    tf = trade_from()
+    if hit and n.hour * 100 + n.minute < tf:   # 장 전·장 초반 투매 구간 (11-06 KODEX 200 이 시가 −8.6% 에 손절된 일)
         for _, why in hit.values():
-            print(f"  매도 보류 ({TRADE_FROM // 100}:{TRADE_FROM % 100:02d} 전): {why}", flush=True)
+            print(f"  매도 보류 ({tf // 100}:{tf % 100:02d} 전): {why}", flush=True)
         return {}
     return hit
 
@@ -60,6 +68,8 @@ def check_once():
     st = C.read_json(STATE, {}) or {}
     if st.get("date") != C.today().isoformat() or not isinstance(st.get("fired"), dict):
         st = {"date": C.today().isoformat(), "fired": {}}
+    if C.US:
+        backup(hit, hs, st)
     n = C.now()
     hm, t = n.hour * 100 + n.minute, time.time()
 
@@ -67,7 +77,7 @@ def check_once():
         # 같은 매수 건은 실행 뒤 RETRY_SEC 동안 다시 띄우지 않음 (매도 체결 전 중복 주문 방지).
         # 장 전(08:30~09:00)에 낸 매도는 09:00 동시호가로 체결되거나 거절될 수 있음 → 장 전엔 한 번만, 09:05 뒤 남아 있으면 다시
         at = st["fired"].get(key)
-        return at is None or (hm >= 905 and t - at >= RETRY_SEC)
+        return at is None or (hm >= (905 if not C.US else trade_from() + 5) and t - at >= RETRY_SEC)
 
     new = {c: why for c, (key, why) in hit.items() if due(key)}
     if not new:
@@ -80,16 +90,80 @@ def check_once():
         C.write_json(STATE, st)
 
 
+def backup(hit, hs, st):
+    """US 손절 백업 (params.us.backup_stop, 11-19 S.Lee: 실제 돈). 조건이 닿아 손절 · 익절 실행을 띄웠는데
+    grace_min 분 뒤에도 그대로 들고 있으면 (Claude 사용 한도 · 실행 실패 등) 코드가 직접 전량 매도.
+    리스크 검사(비상 정지 포함)는 Hook 과 같은 risk.check 를 거침. 같은 건은 한 번만."""
+    cfg = ((C.params().get("us") or {}).get("backup_stop")) or {}
+    if not cfg.get("enabled"):
+        return
+    grace = cfg.get("grace_min", 5) * 60
+    done = st.setdefault("backup", {})
+    for code, (key, why) in hit.items():
+        at = st["fired"].get(key)
+        if at is None or time.time() - at < grace or key in done:
+            continue
+        h = next((x for x in hs if x["code"] == code), None)
+        if not h or h["qty"] <= 0:
+            continue
+        done[key] = time.time()
+        C.write_json(STATE, st)
+        print(f"  ! 백업 매도: {why} · 에이전트 실행 뒤 {cfg.get('grace_min', 5)}분 지나도 보유 중", flush=True)
+        try:
+            backup_sell(h, why)
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! 백업 매도 실패: {e}", flush=True)
+            C.journal("block", code=code, name=h["name"], side="매도", rule="백업 매도 실패", detail=str(e)[:200], by="monitor")
+
+
+def backup_sell(h, why):
+    import broker
+    import risk
+    os.environ["RUN_MODE"] = "exit"
+    brk = broker.get()
+    acc = brk.account()
+    held = next((x for x in acc["holdings"] if x["code"] == h["code"]), None)
+    if not held:
+        return print("  이미 팔림", flush=True)
+    price = brk.quote_info(h["code"])["price"]
+    order = {"code": h["code"], "side": "매도", "qty": held["qty"], "confidence": 1.0, "rule_exit": True}
+    bad = risk.check(order, acc, price)
+    if bad:
+        for rule, detail in bad:
+            C.journal("block", code=h["code"], name=h["name"], side="매도", rule=rule, detail=detail, by="monitor")
+        return print("  백업 매도 막힘: " + " / ".join(f"{a}({b})" for a, b in bad), flush=True)
+    res = brk.order(h["code"], h["name"], "매도", held["qty"])
+    if not res.get("ok"):
+        raise RuntimeError(res.get("msg"))
+    import kis   # 체결 기록에 환율 · 원화 금액
+    meta = C.read_json(C.POSITIONS, {}) or {}
+    meta.pop(h["code"], None)
+    C.write_json(C.POSITIONS, meta)
+    C.journal("fill", code=h["code"], name=h["name"], side="매도", qty=res["qty"], ordered=held["qty"], price=res["price"],
+              amount=res["qty"] * res["price"], confidence=1.0, rule_exit=True, by="monitor_backup",
+              bull="", bear="", decision=f"코드 백업 매도: {why} (에이전트 실행이 시간 안에 팔지 못함)",
+              order_no=res.get("order_no"), filled=res.get("filled", True), **kis.fill_extra(res))
+
+
 def loop():
     s = C.params()["schedule"]
     start, end = (int(t.replace(":", "")) for t in (s["monitor_start"], s["monitor_end"]))
+    if C.US and (sc := C.session_close()) and sc < s["monitor_end"]:   # 조기 마감일 (추수감사절 다음 날 등)
+        end = int(sc.replace(":", ""))
     print(f"장중 감시 시작 · {s['monitor_interval_sec']}초 간격 · {s['monitor_end']} 종료", flush=True)
     while True:
         n = C.now()
         hm = n.hour * 100 + n.minute
-        if n.weekday() >= 5 or hm > end:
+        if not C.is_trading_day(n.date()) or hm > end:   # KR 은 휴장일 목록이 없어 예전처럼 주말만
             print("감시 종료", flush=True)
             return
+        if C.US and C.mode() == "live":   # 오래된 미체결 지정가 주문 취소
+            try:
+                import broker
+                import kis
+                kis.cancel_stale(broker.get())
+            except Exception as e:  # noqa: BLE001
+                print(f"  ! 미체결 취소 실패: {e}", flush=True)
         if hm >= start:
             try:
                 check_once()

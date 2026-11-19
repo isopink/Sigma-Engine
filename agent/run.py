@@ -10,7 +10,10 @@
   python run.py monitor               08:30~15:20  손절·익절 감시 루프 (src/monitor.py)
   python run.py sync                  로그온부터 계속  push 된 코드를 1분 안에 받아 반영 (src/sync.py)
 
+  python run.py tax [--year 2027]      US 전용: 미국 주식 연간 양도차익 · 예상 세액 (src/tax.py)
+
   --dry   Claude 를 부르지 않고 명령만 출력
+  미국 주식은 run_us.bat (SIGMA_MARKET=US) 로 같은 명령을 씀. 시각은 뉴욕 시간
 """
 import json
 import os
@@ -192,6 +195,7 @@ def main():
     ap.add_argument("--codes", default="")
     ap.add_argument("--why", default="")
     ap.add_argument("--dry", action="store_true")
+    ap.add_argument("--year", default="")
     a = ap.parse_args()
     kind, dry = a.kind, a.dry
 
@@ -207,6 +211,9 @@ def main():
         refresh_account()
         py("data_prep.py")
         publish(f"Agent prep {C.today().isoformat()}")   # 판단 전에도 대시보드에 오늘 시장 자료가 보이도록
+        return
+    if kind == "tax":   # us-stocks: 미국 양도차익 표 (LLM 없음)
+        py("tax.py", *sys.argv[2:])
         return
     if kind == "close":
         refresh_account()

@@ -33,6 +33,7 @@ DOCS_DATA = os.path.join(ROOT, "docs", "data", "us") if US else os.path.join(ROO
 LIVE = os.path.join(ROOT, "live")
 ENV_FILE = os.path.join(AGENT, ".env.us" if US else ".env")        # 미국 계좌 키는 별도 파일
 LIVE_ENV = os.path.join(LIVE, ".env.us" if US else ".env")
+LAST_SNAPSHOT = os.path.join(LIVE, "last_snapshot_us.json" if US else "last_snapshot.json")   # 잔고 루프가 남기는 마지막 잔고
 STOP_FILE = os.path.join(WORK, "STOP")   # US 비상 정지: 이 파일이 있으면 미국 주문 전부 차단 (risk.py)
 CURRENCY = "USD" if US else "KRW"
 PX_DIGITS = 2 if US else 0               # 가격 소수 자리 (달러는 센트까지)
