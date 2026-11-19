@@ -1,0 +1,220 @@
+<!doctype html>
+<!-- Sigma Engine 미국 · Designed by S.Lee -->
+<!-- us-stocks 11-19: 미국 주식(실제 돈 · KIS) 화면. 데이터 docs/data/us/*.json 은 공개 저장소에 올리지 않으므로(.gitignore)
+     실행 PC 에서 docs 폴더를 로컬 서버로 열어 봄: python -m http.server 8000 --directory docs → http://localhost:8000/us.html
+     대회 화면(index.html)과 같은 VOLT 규칙: 평면 카드, 수익 · 매수 빨강, 손실 · 매도 파랑, 움직임 · hover 없음 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sigma Engine 미국</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="icon.svg?v=3">
+<meta name="theme-color" content="#101010">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap">
+<style>
+:root { --bg: #101010; --card: #161616; --line: #2a2a2a; --ink: #f2f2f2; --body: #bdbdbd; --muted: #8c8c8c; --up: #ff5a65; --down: #4e94ff; --ok: #34c759; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--body); font: 400 14px/1.55 "Noto Serif KR", serif; font-variant-numeric: tabular-nums; }
+body { overflow-x: hidden; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 20px 16px 40px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+h1 { margin: 0; color: var(--ink); font-size: 20px; font-weight: 600; }
+h2 { margin: 0 0 12px; color: var(--ink); font-size: 15px; font-weight: 600; }
+.dots { display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 12px; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); margin-right: 6px; vertical-align: 1px; }
+.dot.ok { background: var(--ok); } .dot.err { background: var(--up); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-bottom: 16px; min-width: 0; }
+.hero { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; }
+.big { color: var(--ink); font-size: 34px; font-weight: 600; line-height: 1.2; }
+.kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; margin-top: 16px; }
+.kpis div span { display: block; color: var(--muted); font-size: 12px; }
+.kpis div b { color: var(--ink); font-weight: 500; font-size: 15px; }
+.up { color: var(--up) !important; } .down { color: var(--down) !important; }
+.chart { width: 100%; min-height: 220px; }
+.chart svg { display: block; width: 100%; height: 240px; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 12px; margin-top: 6px; }
+.legend i { display: inline-block; width: 18px; height: 0; border-top: 2px solid var(--ink); margin-right: 6px; vertical-align: 3px; }
+.legend i.krw { border-top-color: var(--muted); } .legend i.spy { border-top: 2px dashed var(--muted); }
+.tbl { width: 100%; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { color: var(--muted); font-weight: 400; text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { text-align: right; padding: 8px; border-bottom: 1px solid #1f1f1f; white-space: nowrap; }
+th:first-child, td:first-child, th.l, td.name { text-align: left; }
+td.name { color: var(--ink); max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+tr.click { cursor: pointer; }
+tr.why td { white-space: normal; text-align: left; color: var(--body); background: #131313; font-size: 13px; }
+tr.why p { margin: 4px 0; } tr.why b { color: var(--muted); font-weight: 400; margin-right: 6px; }
+.empty { color: var(--muted); padding: 8px 0; }
+.note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 24px; }
+@media (max-width: 760px) {
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .big { font-size: 28px; }
+  .hide-sm { display: none; }
+}
+@media (max-width: 480px) {
+  .hide-xs { display: none; }
+  td.name { max-width: 150px; }
+  th, td { padding: 8px 5px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Sigma Engine 미국 주식</h1>
+    <div class="dots"><span><i class="dot" id="d-agent"></i>에이전트</span><span><i class="dot" id="d-halt"></i>주문</span><span id="asof"></span></div>
+  </header>
+
+  <section class="card hero">
+    <div>
+      <div class="muted" style="color:var(--muted);font-size:12px">총자산</div>
+      <div class="big" id="total">-</div>
+      <div id="total-krw" style="color:var(--muted)"></div>
+      <div class="kpis">
+        <div><span>누적 수익률 달러</span><b id="k-usd">-</b></div>
+        <div><span>누적 수익률 원화</span><b id="k-krw">-</b></div>
+        <div><span>SPY 같은 기간</span><b id="k-spy">-</b></div>
+        <div><span>오늘 손익</span><b id="k-day">-</b></div>
+        <div><span>현금 비중</span><b id="k-cash">-</b></div>
+        <div><span>환율 원/달러</span><b id="k-fx">-</b></div>
+      </div>
+    </div>
+    <div>
+      <h2>누적 수익률</h2>
+      <div class="chart" id="chart"></div>
+      <div class="legend"><span><i></i>Sigma 달러</span><span><i class="krw"></i>Sigma 원화</span><span><i class="spy"></i>SPY</span></div>
+    </div>
+  </section>
+
+  <section class="card"><h2>포트폴리오</h2><div class="tbl" id="holdings"></div></section>
+  <section class="card"><h2>실시간 판단</h2><div id="dec-head" class="note" style="margin:-6px 0 8px"></div><div class="tbl" id="decision"></div></section>
+  <section class="card"><h2>최근 체결</h2><div class="tbl" id="trades"></div></section>
+  <section class="card"><h2>리스크 차단</h2><div class="tbl" id="risk"></div></section>
+
+  <footer>Designed by S.Lee &amp; M.Park</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(() => {
+  const BASE = 'data/us/';
+  const C = { up: '#ff5a65', down: '#4e94ff', ink: '#f2f2f2', muted: '#8c8c8c', grid: '#262626' };
+  const $ = id => document.getElementById(id);
+  const PAREN = /\s*[(（][^()（）]*[)）]/g;
+  const noParen = v => { let o = String(v ?? ''), n; while ((n = o.replace(PAREN, '')) !== o) o = n; return o; };
+  const esc = s => noParen(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const usd = (v, sign) => v == null ? '-' : (sign && v > 0 ? '+' : v < 0 ? '−' : '') + '$' + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const krw = v => v == null ? '-' : Math.round(v).toLocaleString('ko-KR') + '원';
+  const pct = (v, d = 2) => v == null || !isFinite(v) ? '-' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v * 100).toFixed(d) + '%';
+  const cls = v => v > 0 ? 'up' : v < 0 ? 'down' : '';
+  const get = n => fetch(BASE + n + '.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
+  const empty = (el, msg) => { $(el).innerHTML = `<div class="empty">${msg}</div>`; };
+  const table = (el, head, rows) => {
+    if (!rows.length) return empty(el, '없음');
+    $(el).innerHTML = `<table><thead><tr>${head.map(h => `<th class="${h[1] || ''}">${h[0]}</th>`).join('')}</tr></thead><tbody>${rows.join('')}</tbody></table>`;
+  };
+
+  function hero(equity, status, spy) {
+    const last = equity[equity.length - 1], first = equity[0];
+    $('total').textContent = usd(last.total);
+    $('total-krw').textContent = last.total_krw ? '원화 환산 ' + krw(last.total_krw) : '';
+    const rUsd = last.total / first.total - 1;
+    const rKrw = last.total_krw && first.total_krw ? last.total_krw / first.total_krw - 1 : null;
+    $('k-usd').textContent = pct(rUsd); $('k-usd').className = cls(rUsd);
+    $('k-krw').textContent = pct(rKrw); $('k-krw').className = cls(rKrw);
+    const sd = spy && spy.days ? Object.keys(spy.days).sort() : [];
+    const rSpy = sd.length ? spy.days[sd[sd.length - 1]].c / spy.start - 1 : null;
+    $('k-spy').textContent = pct(rSpy); $('k-spy').className = cls(rSpy);
+    const prev = equity.length > 1 ? equity[equity.length - 2].total : null;
+    const day = prev ? last.total - prev : null;
+    $('k-day').textContent = usd(day, true); $('k-day').className = cls(day);
+    $('k-fx').textContent = last.fx ? Number(last.fx).toLocaleString('ko-KR', { maximumFractionDigits: 2 }) : '-';
+    $('asof').textContent = last.date + ' 기준';
+  }
+
+  function chart(equity, spy) {
+    const el = $('chart');
+    const W = Math.max(280, el.clientWidth), H = 240, m = { t: 10, r: 24, b: 26, l: 48 };
+    const parse = d3.timeParse('%Y-%m-%d');
+    const f0 = equity[0];
+    const sUsd = equity.map(r => ({ d: parse(r.date), v: r.total / f0.total - 1 }));
+    const sKrw = f0.total_krw ? equity.filter(r => r.total_krw).map(r => ({ d: parse(r.date), v: r.total_krw / f0.total_krw - 1 })) : [];
+    const sSpy = spy && spy.days ? Object.keys(spy.days).sort().filter(d => d >= equity[0].date).map(d => ({ d: parse(d), v: spy.days[d].c / spy.start - 1 })) : [];
+    const all = sUsd.concat(sKrw, sSpy);
+    const x = d3.scaleTime().domain(d3.extent(all, p => p.d)).range([m.l, W - m.r]);
+    const ext = d3.extent(all.map(p => p.v).concat([0]));
+    const pad = Math.max(0.005, (ext[1] - ext[0]) * 0.1);
+    const y = d3.scaleLinear().domain([ext[0] - pad, ext[1] + pad]).nice().range([H - m.b, m.t]);
+    const svg = d3.select(el).html('').append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('preserveAspectRatio', 'none');
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(-(W - m.l - m.r)).tickFormat(v => pct(v, 1)))
+      .call(g => g.select('.domain').remove()).call(g => g.selectAll('line').attr('stroke', C.grid))
+      .call(g => g.selectAll('text').attr('fill', C.muted).attr('font-size', 11));
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.min(6, sUsd.length)).tickFormat(d3.timeFormat('%m/%d')).tickSize(0).tickPadding(8))
+      .call(g => g.select('.domain').remove()).call(g => g.selectAll('text').attr('fill', C.muted).attr('font-size', 11));
+    const line = d3.line().x(p => x(p.d)).y(p => y(p.v));
+    if (sSpy.length) svg.append('path').datum(sSpy).attr('fill', 'none').attr('stroke', C.muted).attr('stroke-width', 1.5).attr('stroke-dasharray', '4 4').attr('d', line);
+    if (sKrw.length) svg.append('path').datum(sKrw).attr('fill', 'none').attr('stroke', C.muted).attr('stroke-width', 1.5).attr('d', line);
+    svg.append('path').datum(sUsd).attr('fill', 'none').attr('stroke', C.ink).attr('stroke-width', 2).attr('d', line);
+  }
+
+  function holdings(hs, equity) {
+    const total = equity.length ? equity[equity.length - 1].total : null;
+    const stock = hs.reduce((a, h) => a + (h.value || 0), 0);
+    if (total) { const c = 1 - stock / total; $('k-cash').textContent = pct(c, 1).replace('+', ''); }
+    table('holdings', [['종목'], ['수량', 'hide-xs'], ['평단', 'hide-sm'], ['현재가'], ['평가금액', 'hide-sm'], ['수익률'], ['비중'], ['손절가', 'hide-sm'], ['익절가', 'hide-sm'], ['보유일', 'hide-sm']],
+      hs.slice().sort((a, b) => (b.weight || 0) - (a.weight || 0)).map(h => `<tr><td class="name">${esc(h.code)} ${esc(h.name)}</td><td class="hide-xs">${h.qty}</td>
+        <td class="hide-sm">${usd(h.avg_price)}</td><td>${usd(h.price)}</td><td class="hide-sm">${usd(h.value)}</td>
+        <td class="${cls(h.pnl_pct)}">${pct(h.pnl_pct)}</td><td>${pct(h.weight, 1).replace('+', '')}</td>
+        <td class="hide-sm">${h.stop ? usd(h.stop) : '없음'}</td><td class="hide-sm">${h.take ? usd(h.take) : '-'}</td>
+        <td class="hide-sm">${h.held_days ?? '-'}${h.max_days ? ' / ' + h.max_days + '일' : ''}</td></tr>`));
+  }
+
+  function decision(d) {
+    if (!d || !d.items) return empty('decision', '아직 판단 기록이 없습니다');
+    $('dec-head').textContent = `${d.time || ''} 뉴욕  국면 ${d.regime || '-'}  주식 비중 상한 ${d.cap != null ? Math.round(d.cap * 100) + '%' : '-'}`;
+    const act = a => /매수/.test(a) ? 'up' : /매도/.test(a) ? 'down' : '';
+    const rows = [];
+    d.items.slice().sort((a, b) => (b.confidence || 0) - (a.confidence || 0)).forEach((it, i) => {
+      rows.push(`<tr class="click" data-i="${i}"><td class="name">${esc(it.code)} ${esc(it.name)}</td><td class="${act(it.action)}">${esc(it.action)}${it.blocked ? ' 막힘' : ''}</td>
+        <td>${it.confidence != null ? Number(it.confidence).toFixed(2) : '-'}</td><td class="hide-sm">${it.qty ? it.qty + '주' : ''}</td></tr>`);
+      rows.push(`<tr class="why" data-w="${i}" hidden><td colspan="4"><p><b>매수 측</b>${esc(it.bull)}</p><p><b>매도 측</b>${esc(it.bear)}</p><p><b>결정</b>${esc(it.decision)}</p></td></tr>`);
+    });
+    table('decision', [['종목'], ['행동'], ['확신도'], ['수량', 'hide-sm']], rows);
+    $('decision').querySelectorAll('tr.click').forEach(tr => tr.addEventListener('click', () => {
+      const w = $('decision').querySelector(`tr[data-w="${tr.dataset.i}"]`); w.hidden = !w.hidden;
+    }));
+  }
+
+  function trades(ts) {
+    table('trades', [['시각'], ['종목', 'l'], ['구분'], ['수량', 'hide-xs'], ['가격', 'hide-xs'], ['금액', 'hide-sm']],
+      ts.slice(-15).reverse().map(t => `<tr><td>${esc(String(t.time || '').slice(5))}</td><td class="name">${esc(t.code)} ${esc(t.name)}</td>
+        <td class="${t.side === '매수' ? 'up' : 'down'}">${esc(t.side)}</td><td class="hide-xs">${t.qty}</td><td class="hide-xs">${usd(t.price)}</td><td class="hide-sm">${usd(t.amount)}</td></tr>`));
+  }
+
+  function risk(rs) {
+    table('risk', [['시각'], ['종목', 'l'], ['구분', 'hide-xs'], ['규칙'], ['내용', 'l hide-sm']],
+      rs.slice(-10).reverse().map(r => `<tr><td>${esc(String(r.time || '').slice(5))}</td><td class="name">${esc(r.name)}</td><td class="hide-xs">${esc(r.side)}</td><td>${esc(r.rule)}</td>
+        <td class="hide-sm" style="white-space:normal;text-align:left">${esc(r.detail)}</td></tr>`));
+  }
+
+  Promise.all(['equity', 'holdings', 'trades', 'risk', 'status', 'decision', 'spy'].map(get)).then(([equity, hs, ts, rs, status, dec, spy]) => {
+    if (status) {
+      const fresh = status.last_run && (Date.now() - new Date(status.last_run.replace(' ', 'T')).getTime()) < 36e5 * 30;
+      $('d-agent').className = 'dot ' + (status.failures_today ? 'err' : fresh ? 'ok' : '');
+      $('d-halt').className = 'dot ' + (/비상 정지/.test(status.note || '') ? 'err' : 'ok');
+    }
+    if (!equity || !equity.length) {
+      empty('chart', '자산 기록이 아직 없습니다. 미국 계좌 숫자는 공개 저장소에 올리지 않아서 실행 PC 에서만 보입니다');
+    } else { hero(equity, status, spy); chart(equity, spy); }
+    holdings(hs || [], equity || []);
+    decision(dec);
+    trades(ts || []);
+    risk(rs || []);
+  });
+})();
+</script>
+</body>
+</html>
