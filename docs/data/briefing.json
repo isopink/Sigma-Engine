@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "11:15",
-    "pool": 379,
+    "time": "11:30",
+    "pool": 378,
     "analyzed_new": 30,
-    "passed": 17,
+    "passed": 19,
     "kept_prep": false
   },
   "candidates": [
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 137800,
-      "chg": 0.0543,
-      "activity": 3.2,
+      "price": 139400,
+      "chg": 0.0666,
+      "activity": 3.14,
       "foreign_today": 0,
-      "inst_today": 1515800000,
+      "inst_today": 1533400000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.828,
       "foreign_net": -1284328150,
       "inst_net": 38086031300,
-      "score": 0.97,
+      "score": 0.931,
       "news": [
         {
           "date": "11-19",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 178400,
-      "chg": 0.0708,
-      "activity": 4.6,
+      "price": 180200,
+      "chg": 0.0816,
+      "activity": 4.82,
       "foreign_today": 0,
-      "inst_today": 892000000,
+      "inst_today": 901000000,
       "exchange": "KOSPI"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.773,
+      "score": 0.782,
       "news": [
         {
           "date": "11-18",
@@ -176,12 +176,44 @@
           "risk": false
         }
       ],
-      "price": 14040,
-      "chg": 0.0636,
-      "activity": 2.26,
-      "foreign_today": 687960000,
-      "inst_today": 336960000,
+      "price": 13880,
+      "chg": 0.0515,
+      "activity": 2.2,
+      "foreign_today": 680120000,
+      "inst_today": 333120000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "192820",
+      "name": "코스맥스",
+      "close": 304500,
+      "ret5": 0.16,
+      "ret20": 0.1236,
+      "rsi14": 65.6,
+      "vol20": 0.606,
+      "foreign_net": -29720408000,
+      "inst_net": 14409905500,
+      "score": 0.678,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "코스맥스, '2026 세계일류상품' 3건 동시 선정…기초·색조·차세대 제형...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "쿠션·마스크팩 '세계일류상품' 오른 코스맥스…세계 시장 사로잡은 K-뷰...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "코스맥스 쿠션·팩·에멀전… 산업부 ‘세계일류상품’에",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 609000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "011200",
@@ -193,7 +225,7 @@
       "vol20": 0.44,
       "foreign_net": 31328111150,
       "inst_net": -6239667840,
-      "score": 0.561,
+      "score": 0.552,
       "news": [
         {
           "date": "11-19",
@@ -206,6 +238,41 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "035720",
+      "name": "카카오",
+      "close": 32000,
+      "ret5": 0.0,
+      "ret20": 0.0339,
+      "rsi14": 53.0,
+      "vol20": 0.435,
+      "foreign_net": -24016672300,
+      "inst_net": 2843162775,
+      "score": 0.54,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "세이퍼존, 텔레그램 이어 카카오톡까지 대화 로깅 기술 구현…기업 정보...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[카드] \"충동구매·보이스피싱 예방까지\" 카카오뱅크, 청소년 금융 아이...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "JDC-카카오모빌리티, 제주 AI 대전환 '맞손'",
+          "risk": false
+        }
+      ],
+      "price": 31800,
+      "chg": 0.0,
+      "activity": 0.69,
+      "foreign_today": 127200000,
+      "inst_today": 159000000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "128940",
       "name": "한미약품",
       "close": 439500,
@@ -215,7 +282,7 @@
       "vol20": 0.638,
       "foreign_net": 5649878250,
       "inst_net": 3781596500,
-      "score": 0.561,
+      "score": 0.54,
       "news": [
         {
           "date": "11-19",
@@ -247,7 +314,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.53,
+      "score": 0.529,
       "news": [
         {
           "date": "11-19",
@@ -279,7 +346,7 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.5,
+      "score": 0.529,
       "news": [
         {
           "date": "11-19",
@@ -297,43 +364,27 @@
           "risk": false
         }
       ],
-      "price": 25450,
-      "chg": 0.043,
-      "activity": 1.34,
+      "price": 25350,
+      "chg": 0.0389,
+      "activity": 1.38,
       "foreign_today": 0,
-      "inst_today": 25450000,
+      "inst_today": 25350000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "close": 32000,
+      "code": "032640",
+      "name": "LG유플러스",
+      "close": 15500,
       "ret5": 0.0,
-      "ret20": 0.0339,
-      "rsi14": 53.0,
-      "vol20": 0.435,
-      "foreign_net": -24016672300,
-      "inst_net": 2843162775,
-      "score": 0.394,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "텐센트 투자 자회사 카카오 주식 366만 주 매도, 지분율 4.91%로 주요주주...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "미키 마우스 옷 입은 춘식이… 카카오·디즈니, 연말 시장 공략",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[더밸류 브리핑] 오늘의 금융계 소식...우리은행·BNK금융그룹·카카오뱅...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 128000000,
-      "inst_today": 160000000,
+      "ret20": 0.0445,
+      "rsi14": 54.2,
+      "vol20": 0.415,
+      "foreign_net": -7560092250,
+      "inst_net": 8632040710,
+      "score": 0.402,
+      "news": [],
+      "foreign_today": 139500000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -346,7 +397,7 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.303,
+      "score": 0.322,
       "news": [],
       "foreign_today": 0,
       "inst_today": 225050000,
@@ -362,7 +413,7 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.303,
+      "score": 0.299,
       "news": [
         {
           "date": "11-19",
@@ -394,16 +445,11 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.758,
+      "score": 0.736,
       "news": [
         {
           "date": "11-19",
           "title": "한진그룹, 통합 진에어 출범 앞두고 전방위 주주 소통",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[경제일보] 비용 절감부터 재무 부담까지…통합 진에어 내실 다지기 시...",
           "risk": false
         }
       ],
@@ -421,7 +467,7 @@
       "vol20": 1.656,
       "foreign_net": 542177575,
       "inst_net": 6081908050,
-      "score": 0.606,
+      "score": 0.575,
       "news": [
         {
           "date": "11-19",
@@ -439,34 +485,42 @@
           "risk": false
         }
       ],
-      "price": 38200,
-      "chg": -0.0065,
-      "activity": 2.37,
+      "price": 37600,
+      "chg": -0.0221,
+      "activity": 2.16,
       "foreign_today": 0,
-      "inst_today": 458400000,
+      "inst_today": 451200000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "267850",
-      "name": "아시아나IDT",
-      "close": 12160,
-      "ret5": -0.1227,
-      "ret20": 0.316,
-      "rsi14": 55.0,
-      "vol20": 1.689,
-      "foreign_net": -395213930,
-      "inst_net": -4350030,
-      "score": 0.545,
+      "code": "218410",
+      "name": "RFHIC",
+      "close": 56800,
+      "ret5": 0.0234,
+      "ret20": 0.1858,
+      "rsi14": 57.6,
+      "vol20": 1.242,
+      "foreign_net": -27651921250,
+      "inst_net": 34237007000,
+      "score": 0.552,
       "news": [
         {
-          "date": "11-16",
-          "title": "[특징주] 아시아나IDT 주가, 10%대 급등... 이유는?",
+          "date": "11-18",
+          "title": "RFHIC 주가, 11월 18일 장중 55,800원 2.01% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "RFHIC 주가, 11월 17일 애프터마켓 55,400원 3.36% 상승",
           "risk": false
         }
       ],
-      "foreign_today": 376960000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
+      "price": 54000,
+      "chg": -0.0305,
+      "activity": 0.74,
+      "foreign_today": 0,
+      "inst_today": 54000000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "328130",
@@ -478,7 +532,7 @@
       "vol20": 1.419,
       "foreign_net": 2764709000,
       "inst_net": 13056079915,
-      "score": 0.485,
+      "score": 0.46,
       "news": [
         {
           "date": "11-19",
@@ -496,47 +550,28 @@
           "risk": false
         }
       ],
-      "price": 15870,
-      "chg": 0.007,
-      "activity": 0.35,
+      "price": 15900,
+      "chg": 0.0089,
+      "activity": 0.43,
       "foreign_today": 0,
-      "inst_today": 63480000,
+      "inst_today": 63600000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 15170,
-      "ret5": 0.2283,
-      "ret20": 0.0859,
-      "rsi14": 60.2,
-      "vol20": 1.37,
-      "foreign_net": -15163088550,
-      "inst_net": 27088362955,
-      "score": 0.348,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "에스티아이·와이씨 매수 불끈… HBM 관련주 투자심리 달아오른다",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
-          "risk": false
-        }
-      ],
-      "price": 15050,
-      "chg": 0.008,
-      "activity": 1.58,
+      "code": "281820",
+      "name": "케이씨텍",
+      "close": 79200,
+      "ret5": 0.0574,
+      "ret20": -0.2104,
+      "rsi14": 49.5,
+      "vol20": 1.517,
+      "foreign_net": -11796977500,
+      "inst_net": 18643601050,
+      "score": 0.402,
+      "news": [],
       "foreign_today": 0,
-      "inst_today": 15050000,
-      "exchange": "KOSDAQ"
+      "inst_today": 158400000,
+      "exchange": "KOSPI"
     },
     {
       "code": "069500",
