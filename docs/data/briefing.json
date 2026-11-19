@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "13:30",
+    "time": "13:45",
     "pool": 422,
     "analyzed_new": 30,
     "passed": 22,
@@ -116,37 +116,12 @@
           "risk": false
         }
       ],
-      "price": 140900,
-      "chg": 0.078,
-      "activity": 2.8,
+      "price": 139400,
+      "chg": 0.0666,
+      "activity": 2.83,
       "foreign_today": 0,
-      "inst_today": 4649700000,
+      "inst_today": 4600200000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "010170",
-      "name": "대한광통신",
-      "close": 13390,
-      "ret5": 0.0198,
-      "ret20": -0.0797,
-      "rsi14": 49.8,
-      "vol20": 0.996,
-      "foreign_net": 5374594730,
-      "inst_net": 112011910,
-      "score": 0.88,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스피200·코스닥150 구성종목 변경한다...효성·대한광통신 편입",
-          "risk": false
-        }
-      ],
-      "price": 13990,
-      "chg": 0.0598,
-      "activity": 1.78,
-      "foreign_today": 3763310000,
-      "inst_today": 447680000,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "145020",
@@ -158,7 +133,7 @@
       "vol20": 0.374,
       "foreign_net": -6503770600,
       "inst_net": 9700135300,
-      "score": 0.854,
+      "score": 0.885,
       "news": [
         {
           "date": "11-19",
@@ -176,11 +151,36 @@
           "risk": false
         }
       ],
-      "price": 208500,
-      "chg": 0.0504,
-      "activity": 1.39,
+      "price": 209500,
+      "chg": 0.0554,
+      "activity": 1.47,
       "foreign_today": 0,
-      "inst_today": 625500000,
+      "inst_today": 628500000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "close": 13390,
+      "ret5": 0.0198,
+      "ret20": -0.0797,
+      "rsi14": 49.8,
+      "vol20": 0.996,
+      "foreign_net": 5374594730,
+      "inst_net": 112011910,
+      "score": 0.873,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "코스피200·코스닥150 구성종목 변경한다...효성·대한광통신 편입",
+          "risk": false
+        }
+      ],
+      "price": 13860,
+      "chg": 0.05,
+      "activity": 1.72,
+      "foreign_today": 3728340000,
+      "inst_today": 443520000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +193,7 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.759,
+      "score": 0.815,
       "news": [
         {
           "date": "11-19",
@@ -211,11 +211,11 @@
           "risk": false
         }
       ],
-      "price": 25750,
-      "chg": 0.0553,
-      "activity": 1.58,
+      "price": 26350,
+      "chg": 0.0799,
+      "activity": 1.68,
       "foreign_today": 0,
-      "inst_today": 412000000,
+      "inst_today": 421600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -228,7 +228,7 @@
       "vol20": 0.447,
       "foreign_net": -2764054250,
       "inst_net": 8732145600,
-      "score": 0.665,
+      "score": 0.669,
       "news": [
         {
           "date": "11-19",
@@ -250,7 +250,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.544,
+      "score": 0.567,
       "news": [
         {
           "date": "11-19",
@@ -282,21 +282,21 @@
       "vol20": 0.402,
       "foreign_net": 2310959350,
       "inst_net": -1944358500,
-      "score": 0.519,
+      "score": 0.561,
       "news": [
         {
           "date": "11-19",
+          "title": "CJ온스타일, 21일 '동가게'서 브레빌 반자동 커피머신 첫 방송",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "CJ프레시웨이, 대구서 외식업체 대상 피자 조리 세미나 진행",
+          "risk": false
+        },
+        {
+          "date": "11-19",
           "title": "CJ프레시웨이, 영남권 외식사업자 대상 피자 세미나 개최",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "CJ푸드빌 뚜레쥬르, 美 오하이오주 7호점 개점…K-베이커리 전면에",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[민주 식품가] hy·BBQ·CJ프레시웨이",
           "risk": false
         }
       ],
@@ -314,7 +314,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.475,
+      "score": 0.49,
       "news": [
         {
           "date": "11-19",
@@ -346,7 +346,7 @@
       "vol20": 0.454,
       "foreign_net": 4362701750,
       "inst_net": 3294406750,
-      "score": 0.475,
+      "score": 0.49,
       "news": [
         {
           "date": "11-19",
@@ -368,7 +368,7 @@
       "vol20": 0.44,
       "foreign_net": 31328111150,
       "inst_net": -6239667840,
-      "score": 0.456,
+      "score": 0.471,
       "news": [
         {
           "date": "11-19",
@@ -381,6 +381,25 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "032830",
+      "name": "삼성생명",
+      "close": 254500,
+      "ret5": 0.02,
+      "ret20": 0.0517,
+      "rsi14": 49.1,
+      "vol20": 0.576,
+      "foreign_net": -7831435000,
+      "inst_net": 64671469250,
+      "score": 0.446,
+      "news": [],
+      "price": 255000,
+      "chg": 0.0,
+      "activity": 0.59,
+      "foreign_today": 0,
+      "inst_today": 1020000000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "267270",
       "name": "HD건설기계",
       "close": 88300,
@@ -390,7 +409,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.418,
+      "score": 0.433,
       "news": [
         {
           "date": "11-19",
@@ -413,25 +432,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "032830",
-      "name": "삼성생명",
-      "close": 254500,
-      "ret5": 0.02,
-      "ret20": 0.0517,
-      "rsi14": 49.1,
-      "vol20": 0.576,
-      "foreign_net": -7831435000,
-      "inst_net": 64671469250,
-      "score": 0.411,
-      "news": [],
-      "price": 255000,
-      "chg": 0.0,
-      "activity": 0.57,
-      "foreign_today": 0,
-      "inst_today": 1020000000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "316140",
       "name": "우리금융지주",
       "close": 32150,
@@ -441,7 +441,7 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.399,
+      "score": 0.414,
       "news": [],
       "foreign_today": 964500000,
       "inst_today": 225050000,
@@ -457,8 +457,13 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.367,
+      "score": 0.382,
       "news": [
+        {
+          "date": "11-19",
+          "title": "[금융계 동향] MG새마을금고·NH투자증권·우리은행",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "NH투자증권, 연말정산 앞두고 연금저축 순입금 이벤트 진행",
@@ -468,11 +473,6 @@
           "date": "11-19",
           "title": "NH투자증권, 연말까지 'N2 연금저축계좌 순입금 이벤트'",
           "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자증권, 'N2 연금저축계좌 순입금 이벤트'",
-          "risk": false
         }
       ],
       "foreign_today": 0,
@@ -480,35 +480,19 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "271560",
-      "name": "오리온",
-      "close": 115400,
-      "ret5": 0.024,
-      "ret20": 0.0276,
-      "rsi14": 53.9,
-      "vol20": 0.245,
-      "foreign_net": 1999341850,
-      "inst_net": 514684200,
-      "score": 0.335,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "오리온, 베트남 국립농업대와 '20년 동행'…年 감자 공급량 1만t 달성",
-          "risk": true
-        },
-        {
-          "date": "11-19",
-          "title": "삼성·LG·롯데·CJ·오리온·한화 등 국내 주요 기업, '2026 베트남 100대...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "오리온·롯데·남양·매일유업 등...단백질에 식이섬유 얹는 식품업계 ...",
-          "risk": false
-        }
-      ],
+      "code": "443060",
+      "name": "HD현대마린솔루션",
+      "close": 184200,
+      "ret5": 0.1232,
+      "ret20": -0.1101,
+      "rsi14": 50.2,
+      "vol20": 0.739,
+      "foreign_net": -11398103450,
+      "inst_net": 14734861600,
+      "score": 0.369,
+      "news": [],
       "foreign_today": 0,
-      "inst_today": 230800000,
+      "inst_today": 184200000,
       "exchange": "KOSPI"
     },
     {
@@ -521,7 +505,7 @@
       "vol20": 1.798,
       "foreign_net": 1721167725,
       "inst_net": 19862349325,
-      "score": 0.873,
+      "score": 0.879,
       "news": [
         {
           "date": "11-18",
@@ -529,11 +513,11 @@
           "risk": false
         }
       ],
-      "price": 44550,
-      "chg": 0.0761,
+      "price": 44500,
+      "chg": 0.0749,
       "activity": 1.61,
       "foreign_today": 0,
-      "inst_today": 1336500000,
+      "inst_today": 1335000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -546,19 +530,13 @@
       "vol20": 1.11,
       "foreign_net": -3024748215,
       "inst_net": 2410895635,
-      "score": 0.861,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "넥스트바이오메디컬, 넥스피어에프 美 임상 126명 시술 완료∙∙∙2028년...",
-          "risk": false
-        }
-      ],
-      "price": 17890,
-      "chg": 0.0935,
-      "activity": 1.92,
-      "foreign_today": 375690000,
-      "inst_today": 393580000,
+      "score": 0.86,
+      "news": [],
+      "price": 17620,
+      "chg": 0.077,
+      "activity": 1.87,
+      "foreign_today": 370020000,
+      "inst_today": 387640000,
       "exchange": "KOSDAQ"
     },
     {
@@ -571,7 +549,7 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.728,
+      "score": 0.739,
       "news": [
         {
           "date": "11-19",
@@ -593,7 +571,7 @@
       "vol20": 1.37,
       "foreign_net": -15163088550,
       "inst_net": 27088362955,
-      "score": 0.69,
+      "score": 0.682,
       "news": [
         {
           "date": "11-18",
@@ -611,31 +589,39 @@
           "risk": false
         }
       ],
-      "price": 15330,
-      "chg": 0.0268,
-      "activity": 1.69,
+      "price": 15240,
+      "chg": 0.0208,
+      "activity": 1.66,
       "foreign_today": 0,
-      "inst_today": 751170000,
+      "inst_today": 746760000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "252990",
-      "name": "샘씨엔에스",
-      "close": 14320,
-      "ret5": -0.0937,
-      "ret20": -0.115,
-      "rsi14": 47.0,
-      "vol20": 1.536,
-      "foreign_net": 7452847425,
-      "inst_net": -136157645,
-      "score": 0.677,
-      "news": [],
-      "price": 14920,
-      "chg": 0.0522,
-      "activity": 0.84,
-      "foreign_today": 0,
-      "inst_today": 1089160000,
-      "exchange": "KOSDAQ"
+      "code": "009420",
+      "name": "한올바이오파마",
+      "close": 52700,
+      "ret5": 0.0614,
+      "ret20": 0.2745,
+      "rsi14": 67.0,
+      "vol20": 1.003,
+      "foreign_net": -8875301300,
+      "inst_net": 23467521250,
+      "score": 0.682,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "양 제약지수 약보합세, 한올바이오파마ㆍ동국제약 선전",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "바이오시밀러 관련주 엇갈린 흐름…삼성에피스홀딩스·한올바이오파마...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 263500000,
+      "inst_today": 368900000,
+      "exchange": "KOSPI"
     },
     {
       "code": "069500",
