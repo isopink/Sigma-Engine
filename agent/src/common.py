@@ -12,12 +12,30 @@ except Exception:  # noqa: BLE001
 
 KST = timezone(timedelta(hours=9))
 
+# ---------------- 시장 (us-stocks 11-19) ----------------
+# 실행할 때 SIGMA_MARKET=KR|US 로 고름. 값이 없으면 KR = 지금 대회 동작 그대로 (경로 · 시간대 · 설정 전부 예전과 같음).
+# US 는 실제 돈 · 한국투자증권(KIS) 계좌. 설정 · 작업 파일 · 키 · 대시보드 데이터가 전부 따로라 대회 계좌와 섞이지 않음.
+MARKET = os.environ.get("SIGMA_MARKET", "KR").strip().upper() or "KR"
+if MARKET not in ("KR", "US"):
+    raise SystemExit(f"SIGMA_MARKET 은 KR 또는 US: {MARKET!r}")
+US = MARKET == "US"
+if US:
+    from zoneinfo import ZoneInfo
+    TZ = ZoneInfo("America/New_York")   # 미국 시장은 뉴욕 시간으로 계산 (서머타임 자동). params 의 'HH:MM' 도 전부 뉴욕 시간
+else:
+    TZ = KST
+
 AGENT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(AGENT)
-CONFIG = os.path.join(AGENT, "config")
-WORK = os.path.join(AGENT, "work")            # 실행 산출물 (커밋 안 함)
-DOCS_DATA = os.path.join(ROOT, "docs", "data")
+CONFIG = os.path.join(AGENT, "config", "us") if US else os.path.join(AGENT, "config")
+WORK = os.path.join(AGENT, "work_us" if US else "work")            # 실행 산출물 (커밋 안 함)
+DOCS_DATA = os.path.join(ROOT, "docs", "data", "us") if US else os.path.join(ROOT, "docs", "data")
 LIVE = os.path.join(ROOT, "live")
+ENV_FILE = os.path.join(AGENT, ".env.us" if US else ".env")        # 미국 계좌 키는 별도 파일
+LIVE_ENV = os.path.join(LIVE, ".env.us" if US else ".env")
+STOP_FILE = os.path.join(WORK, "STOP")   # US 비상 정지: 이 파일이 있으면 미국 주문 전부 차단 (risk.py)
+CURRENCY = "USD" if US else "KRW"
+PX_DIGITS = 2 if US else 0               # 가격 소수 자리 (달러는 센트까지)
 
 JOURNAL = os.path.join(WORK, "journal.jsonl")  # 판단·체결·차단 기록 (모든 로그의 원본)
 ACCOUNT = os.path.join(WORK, "account.json")   # 마지막으로 조회한 계좌 상태 (Hook이 읽음)
@@ -28,7 +46,7 @@ RUNS = os.path.join(WORK, "runs.jsonl")
 
 
 def now():
-    return datetime.now(KST)
+    return datetime.now(TZ)
 
 
 def today():
@@ -39,8 +57,30 @@ def stamp(dt=None):
     return (dt or now()).strftime("%Y-%m-%d %H:%M")
 
 
-def load_env(path=os.path.join(AGENT, ".env")):
-    """agent/.env → os.environ (이미 있는 값은 덮어쓰지 않음)."""
+def px_round(x):
+    """가격 반올림: 원화는 원 단위(int), 달러는 센트."""
+    return round(x) if PX_DIGITS == 0 else round(float(x), PX_DIGITS)
+
+
+def px_ceil(x):
+    """가격 올림 (익절가가 기준 아래로 내려가지 않도록). 원화 원 단위, 달러 센트."""
+    k = 10 ** PX_DIGITS
+    v = math.ceil(x * k - 1e-9) / k
+    return int(v) if PX_DIGITS == 0 else v
+
+
+def money(x, signed=False):
+    """금액 표시: 1,234,567원 / $1,234.56."""
+    if x is None:
+        return "-"
+    s = "+" if signed and x > 0 else ""
+    if US:
+        return f"{'-' if x < 0 else s}${abs(x):,.2f}"
+    return f"{s}{x:,.0f}원"
+
+
+def load_env(path=ENV_FILE):
+    """agent/.env (US 는 agent/.env.us) → os.environ (이미 있는 값은 덮어쓰지 않음)."""
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
             for line in f:
@@ -107,14 +147,36 @@ def params():
 
 
 # ---------------- 날짜 ----------------
-def business_days(start, end):
-    """start 다음 날부터 end 까지의 평일 수 (보유일 계산용. 11월엔 공휴일 없음)."""
+def holidays(p=None):
+    """휴장일 목록 (params.calendar.holidays). KR params 엔 없음 → 빈 집합 (11월 공휴일 없음, 예전 동작 그대로)."""
+    try:
+        p = p or params()
+    except Exception:  # noqa: BLE001
+        return set()
+    return set(((p or {}).get("calendar") or {}).get("holidays") or [])
+
+
+def is_trading_day(d=None, p=None):
+    d = d or today()
+    return d.weekday() < 5 and d.isoformat() not in holidays(p)
+
+
+def session_close(d=None, p=None):
+    """그날 정규장 마감 'HH:MM' (params.calendar). 조기 마감일(US 추수감사절 다음 날 등)이면 그 시각. 설정 없으면 None."""
+    cal = ((p or params()) or {}).get("calendar") or {}
+    d = d or today()
+    return (cal.get("early_close") or {}).get(d.isoformat()) or cal.get("close")
+
+
+def business_days(start, end, p=None):
+    """start 다음 날부터 end 까지의 거래일 수 (보유일 계산용). 평일에서 params.calendar 휴장일을 뺌 (KR 은 휴장일 목록 없음)."""
     if isinstance(start, str):
         start = date.fromisoformat(start)
+    hs = holidays(p)
     n, d = 0, start
     while d < end:
         d += timedelta(days=1)
-        if d.weekday() < 5:
+        if d.weekday() < 5 and d.isoformat() not in hs:
             n += 1
     return n
 
@@ -372,7 +434,7 @@ def position_meta(holdings, p=None):
             if m.get("index_dip"):   # 급락일 예외로 산 지수 ETF 는 익절 폭·보유일·손절 폭이 따로
                 tp, md = dip_exit(h["code"], p, tp, md)
                 sl = dip_stop(h["code"], p, sl)
-            meta[h["code"]] = {**m, "stop": None if no_stop(h["code"], p) else round(h["avg_price"] * (1 + sl)), "take": math.ceil(h["avg_price"] * (1 + tp) - 1e-9), "max_days": md}
+            meta[h["code"]] = {**m, "stop": None if no_stop(h["code"], p) else px_round(h["avg_price"] * (1 + sl)), "take": px_ceil(h["avg_price"] * (1 + tp)), "max_days": md}
     return meta
 
 

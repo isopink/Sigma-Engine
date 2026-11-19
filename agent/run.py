@@ -84,8 +84,9 @@ def release():
 def mcp_config():
     """.mcp.json 을 절대 경로로 바꿔 work/ 에 씀 (스케줄러가 어떤 폴더에서 부르든 서버가 뜨도록)."""
     path = os.path.join(C.WORK, "mcp.json")
+    # 서버 이름은 두 시장 모두 kiwoom (도구 이름 mcp__kiwoom__* 을 서브에이전트 · Hook 이 같이 씀). US 면 SIGMA_MARKET=US 로 KIS 브로커를 씀
     C.write_json(path, {"mcpServers": {"kiwoom": {
-        "command": PY, "args": [os.path.join(HERE, "src", "mcp_server.py")], "env": {"MODE": C.mode()}}}})
+        "command": PY, "args": [os.path.join(HERE, "src", "mcp_server.py")], "env": {"MODE": C.mode(), "SIGMA_MARKET": C.MARKET}}}})
     return path
 
 
@@ -169,6 +170,8 @@ def publish(msg):
     if os.environ.get("GIT_PUSH") != "1":
         return
     paths = ["docs/data", "reports/drafts", "agent/config/params.json"]   # params.json = 조정 실행이 바꾼 기준값
+    if C.US:   # US: 기준값만 커밋 (계좌 숫자 docs/data/us 는 .gitignore, 공개하지 않음)
+        paths = ["agent/config/us/params.json"]
     subprocess.run(["git", "add", "--", *[p for p in paths if os.path.exists(os.path.join(C.ROOT, p))]], cwd=C.ROOT)
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=C.ROOT).returncode == 0:
         return
