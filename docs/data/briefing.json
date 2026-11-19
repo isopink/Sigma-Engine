@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "12:15",
-    "pool": 379,
+    "time": "12:30",
+    "pool": 378,
     "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
@@ -116,46 +116,11 @@
           "risk": false
         }
       ],
-      "price": 138900,
-      "chg": 0.0627,
-      "activity": 2.86,
+      "price": 139700,
+      "chg": 0.0689,
+      "activity": 2.79,
       "foreign_today": 0,
-      "inst_today": 1527900000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "352820",
-      "name": "하이브",
-      "close": 178600,
-      "ret5": 0.1979,
-      "ret20": -0.024,
-      "rsi14": 63.1,
-      "vol20": 0.828,
-      "foreign_net": -1284328150,
-      "inst_net": 38086031300,
-      "score": 0.909,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "민희진, 쏘스뮤직 이기고 의기양양 \"하이브 억측-언플 멈춰\"[SC이슈]",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "\"하이브, 日엔터사 인수로 수익원 다각화 긍정적\"-삼성",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "삼성증권 \"하이브, 日 엔터사 인수로 사업 확장 기대\"…목표가 유지",
-          "risk": false
-        }
-      ],
-      "price": 181600,
-      "chg": 0.09,
-      "activity": 4.53,
-      "foreign_today": 0,
-      "inst_today": 908000000,
+      "inst_today": 1536700000,
       "exchange": "KOSPI"
     },
     {
@@ -168,7 +133,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.773,
+      "score": 0.805,
       "news": [
         {
           "date": "11-18",
@@ -176,11 +141,11 @@
           "risk": false
         }
       ],
-      "price": 13710,
-      "chg": 0.0386,
-      "activity": 1.96,
-      "foreign_today": 671790000,
-      "inst_today": 329040000,
+      "price": 13920,
+      "chg": 0.0545,
+      "activity": 1.95,
+      "foreign_today": 682080000,
+      "inst_today": 334080000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +158,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.664,
+      "score": 0.655,
       "news": [
         {
           "date": "11-19",
@@ -225,21 +190,21 @@
       "vol20": 0.597,
       "foreign_net": -16149913800,
       "inst_net": -8273335450,
-      "score": 0.636,
+      "score": 0.619,
       "news": [
         {
           "date": "11-19",
+          "title": "김창한 크래프톤 대표 \"10년 연속 지스타 참가…창의적 도전 이어갈 것...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "\"아이브 올까?\"…크래프톤 지스타 부스, 신작 시연에 팬 체험까지 '북적...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
           "title": "크래프톤, 지스타 10년 연속 참가…신작 5종 시연·아이브 팬 행사",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "크래프톤, 지스타서 아이브·배틀그라운드 팬 행사 개최",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[지스타 2026] 10년 연속 지스타 참가한 크래프톤, 다채로운 이벤트 진행",
           "risk": false
         }
       ],
@@ -248,25 +213,28 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "011200",
-      "name": "HMM",
-      "close": 22300,
-      "ret5": 0.1122,
-      "ret20": -0.0409,
-      "rsi14": 52.8,
-      "vol20": 0.44,
-      "foreign_net": 31328111150,
-      "inst_net": -6239667840,
-      "score": 0.555,
+      "code": "035720",
+      "name": "카카오",
+      "close": 32000,
+      "ret5": 0.0,
+      "ret20": 0.0339,
+      "rsi14": 53.0,
+      "vol20": 0.435,
+      "foreign_net": -24016672300,
+      "inst_net": 2843162775,
+      "score": 0.575,
       "news": [
         {
           "date": "11-19",
-          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
+          "title": "카카오게임즈 ‘도깨비의세계’ 양대 앱마켓 매출 1위",
           "risk": false
         }
       ],
-      "foreign_today": 780500000,
-      "inst_today": 0,
+      "price": 31850,
+      "chg": 0.0016,
+      "activity": 0.66,
+      "foreign_today": 127400000,
+      "inst_today": 159250000,
       "exchange": "KOSPI"
     },
     {
@@ -279,7 +247,7 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.555,
+      "score": 0.566,
       "news": [
         {
           "date": "11-19",
@@ -297,42 +265,32 @@
           "risk": false
         }
       ],
-      "price": 25450,
-      "chg": 0.043,
-      "activity": 1.25,
+      "price": 25600,
+      "chg": 0.0492,
+      "activity": 1.33,
       "foreign_today": 0,
-      "inst_today": 25450000,
+      "inst_today": 25600000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "128940",
-      "name": "한미약품",
-      "close": 439500,
-      "ret5": -0.1049,
-      "ret20": 0.1551,
-      "rsi14": 49.4,
-      "vol20": 0.638,
-      "foreign_net": 5649878250,
-      "inst_net": 3781596500,
-      "score": 0.555,
+      "code": "011200",
+      "name": "HMM",
+      "close": 22300,
+      "ret5": 0.1122,
+      "ret20": -0.0409,
+      "rsi14": 52.8,
+      "vol20": 0.44,
+      "foreign_net": 31328111150,
+      "inst_net": -6239667840,
+      "score": 0.549,
       "news": [
         {
           "date": "11-19",
-          "title": "유한양행 83억ㆍ녹십자 70억ㆍ한미약품 44억 기부금 지출",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "한미약품, 세계뇌졸중학회서 심뇌혈관질환 관리 전략 공유",
+          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
           "risk": false
         }
       ],
-      "foreign_today": 1318500000,
+      "foreign_today": 780500000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -346,7 +304,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.545,
+      "score": 0.549,
       "news": [
         {
           "date": "11-19",
@@ -369,33 +327,57 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "close": 32000,
-      "ret5": 0.0,
-      "ret20": 0.0339,
-      "rsi14": 53.0,
-      "vol20": 0.435,
-      "foreign_net": -24016672300,
-      "inst_net": 2843162775,
-      "score": 0.527,
+      "code": "128940",
+      "name": "한미약품",
+      "close": 439500,
+      "ret5": -0.1049,
+      "ret20": 0.1551,
+      "rsi14": 49.4,
+      "vol20": 0.638,
+      "foreign_net": 5649878250,
+      "inst_net": 3781596500,
+      "score": 0.54,
       "news": [
         {
           "date": "11-19",
-          "title": "\"아무나 못 들어와\" 단톡방이 달라졌다…확 바뀐 카카오톡",
+          "title": "유한양행 83억ㆍ녹십자 70억ㆍ한미약품 44억 기부금 지출",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "소비자원 “AI 부당광고 차단”… 네이버·카카오·틱톡과 협력",
+          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "낮아진 뇌졸중 콜레스테롤 목표, 한미약품 '로수젯·아모프렐' 내밀었다",
           "risk": false
         }
       ],
-      "price": 31550,
-      "chg": -0.0079,
-      "activity": 0.66,
-      "foreign_today": 126200000,
-      "inst_today": 157750000,
+      "foreign_today": 1318500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "089860",
+      "name": "롯데렌탈",
+      "close": 58500,
+      "ret5": 0.0,
+      "ret20": 0.1782,
+      "rsi14": 74.7,
+      "vol20": 0.447,
+      "foreign_net": -2764054250,
+      "inst_net": 8732145600,
+      "score": 0.522,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "롯데렌탈 G car, 충남 관광 캐릭터 '워디·가디'와 제휴 프로모션 실시",
+          "risk": false
+        }
+      ],
+      "foreign_today": 175500000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -408,7 +390,7 @@
       "vol20": 0.571,
       "foreign_net": 1230037175,
       "inst_net": 5726044375,
-      "score": 0.473,
+      "score": 0.478,
       "news": [
         {
           "date": "11-19",
@@ -440,7 +422,7 @@
       "vol20": 0.415,
       "foreign_net": -7560092250,
       "inst_net": 8632040710,
-      "score": 0.391,
+      "score": 0.381,
       "news": [
         {
           "date": "11-19",
@@ -462,7 +444,7 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.327,
+      "score": 0.319,
       "news": [],
       "foreign_today": 0,
       "inst_today": 225050000,
@@ -478,7 +460,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.318,
+      "score": 0.31,
       "news": [
         {
           "date": "11-19",
@@ -510,7 +492,7 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.3,
+      "score": 0.301,
       "news": [
         {
           "date": "11-19",
@@ -542,7 +524,7 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.727,
+      "score": 0.717,
       "news": [
         {
           "date": "11-19",
@@ -564,7 +546,7 @@
       "vol20": 1.003,
       "foreign_net": -8875301300,
       "inst_net": 23467521250,
-      "score": 0.709,
+      "score": 0.699,
       "news": [
         {
           "date": "11-17",
@@ -591,7 +573,7 @@
       "vol20": 1.342,
       "foreign_net": 6179943350,
       "inst_net": -1654368500,
-      "score": 0.609,
+      "score": 0.619,
       "news": [
         {
           "date": "11-19",
@@ -623,7 +605,7 @@
       "vol20": 1.656,
       "foreign_net": 542177575,
       "inst_net": 6081908050,
-      "score": 0.564,
+      "score": 0.566,
       "news": [
         {
           "date": "11-19",
@@ -641,11 +623,11 @@
           "risk": false
         }
       ],
-      "price": 37100,
-      "chg": -0.0351,
-      "activity": 1.8,
+      "price": 37700,
+      "chg": -0.0195,
+      "activity": 1.72,
       "foreign_today": 0,
-      "inst_today": 445200000,
+      "inst_today": 452400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -658,7 +640,7 @@
       "vol20": 1.242,
       "foreign_net": -27651921250,
       "inst_net": 34237007000,
-      "score": 0.536,
+      "score": 0.549,
       "news": [
         {
           "date": "11-18",
@@ -671,11 +653,11 @@
           "risk": false
         }
       ],
-      "price": 53600,
-      "chg": -0.0377,
-      "activity": 0.64,
+      "price": 53900,
+      "chg": -0.0323,
+      "activity": 0.61,
       "foreign_today": 0,
-      "inst_today": 53600000,
+      "inst_today": 53900000,
       "exchange": "KOSDAQ"
     },
     {
