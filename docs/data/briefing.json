@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "10:02",
-    "pool": 190,
+    "time": "10:15",
+    "pool": 191,
     "passed": 0,
     "kept_prep": true
   },
@@ -434,6 +434,20 @@
           "risk": false
         }
       ],
+      "exchange": "ETF"
+    },
+    {
+      "code": "114800",
+      "name": "KODEX 인버스",
+      "close": 1329,
+      "ret5": 0.0624,
+      "ret20": 0.1075,
+      "rsi14": 61.3,
+      "vol20": 0.572,
+      "foreign_net": null,
+      "inst_net": null,
+      "score": null,
+      "news": null,
       "exchange": "ETF"
     }
   ]
