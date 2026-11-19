@@ -11,6 +11,7 @@
   python run.py sync                  로그온부터 계속  push 된 코드를 1분 안에 받아 반영 (src/sync.py)
 
   python run.py tick                  US 전용: 한국 시간 밤 15분마다. 뉴욕 시간 · 휴장일로 prep · decide · close · review · tune · report 를 골라 띄움
+  python run.py check                 US 전용: 시작 전 점검 (전략 확정 · 비상 정지 · 키 · 계좌 · 작업 등록 · 검사). 주문 안 냄
   python run.py tax [--year 2027]      US 전용: 미국 주식 연간 양도차익 · 예상 세액 (src/tax.py)
 
   --dry   Claude 를 부르지 않고 명령만 출력
@@ -290,6 +291,10 @@ def main():
     if kind == "tick":   # us-stocks: 뉴욕 시간으로 할 일을 골라 띄움
         tick()
         return
+    if kind == "check":   # us-stocks: 시작 전 점검 (src/preflight_us.py)
+        if not C.US:
+            sys.exit("check 는 미국 실행 전용 (run_us.bat check)")
+        sys.exit(subprocess.run([PY, os.path.join(HERE, "src", "preflight_us.py")], cwd=HERE).returncode)
     if kind == "tax":   # us-stocks: 미국 양도차익 표 (LLM 없음)
         py("tax.py", *sys.argv[2:])
         return
