@@ -10,6 +10,7 @@
   python run.py monitor               08:30~15:20  손절·익절 감시 루프 (src/monitor.py)
   python run.py sync                  로그온부터 계속  push 된 코드를 1분 안에 받아 반영 (src/sync.py)
 
+  python run.py tick                  US 전용: 한국 시간 밤 15분마다. 뉴욕 시간 · 휴장일로 prep · decide · close · review · tune · report 를 골라 띄움
   python run.py tax [--year 2027]      US 전용: 미국 주식 연간 양도차익 · 예상 세액 (src/tax.py)
 
   --dry   Claude 를 부르지 않고 명령만 출력
@@ -183,6 +184,77 @@ def publish(msg):
     log("푸시 완료" if r.returncode == 0 else f"푸시 실패: {r.stderr.strip()[:200]}")
 
 
+# ---------------- US 일정 (us-stocks 11-19) ----------------
+TICK_STATE = os.path.join(C.WORK, "tick_state.json")
+
+
+def _after(hm, minutes):
+    h, m = divmod(int(hm[:2]) * 60 + int(hm[3:]) + minutes, 60)
+    return f"{h:02d}:{m:02d}"
+
+
+def tick_plan(n, p, st):
+    """지금(뉴욕 시간) 띄울 실행 목록. 판단 회차 · 하루 한 번 작업(prep · close · review · tune · report)."""
+    s = p["schedule"]
+    if not C.is_trading_day(n.date(), p):
+        return []
+    hm, slot = n.strftime("%H:%M"), C._slot(n)
+    last = _after(C.session_close(n.date(), p) or "16:00", -15)   # 마감 15분 전 회차까지 (조기 마감일은 12:45)
+    todo = []
+    if slot in s["decide_times"] and slot <= last and st.get("decide") != slot:
+        todo.append("decide")
+    once = [("prep", s["prep"], s["decide_times"][0]), ("close", s["close"], None), ("tune", s["tune"], None)]
+    if n.weekday() in s.get("review_days", [2, 4]):
+        once += [("review", s["review"], None), ("report", s["report"], None)]
+    for kind, at, until in once:
+        if hm >= at and (until is None or hm < until) and not st.get(kind):
+            todo.append(kind)
+    return todo
+
+
+def _alive(pid_file):
+    try:
+        pid = int(open(pid_file).read().strip())
+    except (OSError, ValueError):
+        return False
+    r = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/NH"], capture_output=True, text=True)
+    return str(pid) in r.stdout   # os.kill(pid, 0) 은 윈도에서 프로세스를 끝내 버려서 쓰지 않음
+
+
+def _spawn(args, logname):
+    flags = getattr(subprocess, "DETACHED_PROCESS", 0) | getattr(subprocess, "CREATE_NEW_PROCESS_GROUP", 0)
+    with open(os.path.join(C.WORK, logname), "a", encoding="utf-8") as f:
+        subprocess.Popen([PY, *args], cwd=HERE, stdout=f, stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL,
+                         env={**os.environ, "SIGMA_MARKET": "US", "PYTHONIOENCODING": "utf-8"}, creationflags=flags)
+
+
+def tick():
+    """US 전용. 작업 스케줄러가 한국 시간 밤 15분마다 부름 → 뉴욕 시간으로 할 일을 골라 따로 띄우고 바로 끝남."""
+    if not C.US:
+        sys.exit("tick 은 SIGMA_MARKET=US 전용 (run_us.bat tick)")
+    os.makedirs(C.WORK, exist_ok=True)
+    n, p = C.now(), C.params()
+    s = p["schedule"]
+    st = C.read_json(TICK_STATE, {}) or {}
+    if st.get("date") != n.date().isoformat():
+        st = {"date": n.date().isoformat()}
+    if C.is_trading_day(n.date(), p) and s["monitor_start"] <= n.strftime("%H:%M") <= s["monitor_end"]:   # 감시 · 잔고 루프가 죽어 있으면 다시
+        if not _alive(os.path.join(C.WORK, "monitor.pid")):
+            log("감시 루프가 없어 띄움")
+            _spawn([os.path.join(HERE, "run.py"), "monitor"], "monitor.log")
+        if C.mode() == "live" and not _alive(os.path.join(C.WORK, "snapshot.pid")):
+            log("잔고 루프가 없어 띄움")
+            _spawn([os.path.join(C.LIVE, "snapshot_us.py"), "--loop"], "snapshot.log")
+    todo = tick_plan(n, p, st)
+    for kind in todo:
+        log(f"tick → {kind}")
+        _spawn([os.path.join(HERE, "run.py"), kind], f"{kind}.log")
+        st[kind] = C._slot(n) if kind == "decide" else C.stamp()
+    C.write_json(TICK_STATE, st)
+    if not todo:
+        log(f"tick: 할 일 없음 (뉴욕 {n.strftime('%a %H:%M')}{'' if C.is_trading_day(n.date(), p) else ' · 휴장'})")
+
+
 def briefing_fresh():
     b = C.read_json(C.BRIEFING) or {}
     return b.get("created", "").startswith(C.today().isoformat())
@@ -211,6 +283,9 @@ def main():
         refresh_account()
         py("data_prep.py")
         publish(f"Agent prep {C.today().isoformat()}")   # 판단 전에도 대시보드에 오늘 시장 자료가 보이도록
+        return
+    if kind == "tick":   # us-stocks: 뉴욕 시간으로 할 일을 골라 띄움
+        tick()
         return
     if kind == "tax":   # us-stocks: 미국 양도차익 표 (LLM 없음)
         py("tax.py", *sys.argv[2:])

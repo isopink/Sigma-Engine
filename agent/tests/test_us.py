@@ -199,6 +199,29 @@ def test_monitor_backup_after_grace():
     assert monitor.trade_from() == 1000                      # 미국은 10:00 전 규칙 매도 보류
 
 
+def test_tick_plan():
+    from datetime import datetime
+    sys.path.insert(0, AGENT)
+    import run
+    p = C.params()
+    at = lambda d, h, m: datetime(2026, 11, d, h, m, 4, tzinfo=C.TZ)  # noqa: E731
+    plan = lambda d, h, m, st=None: run.tick_plan(at(d, h, m), p, st or {})  # noqa: E731
+    assert plan(30, 7, 0) == []                                  # 월 07:00 (한국 21:00): 아직 없음
+    assert plan(30, 8, 30) == ["prep"]
+    assert plan(30, 10, 0) == ["decide"]                         # 첫 회차 (준비는 판단이 대신 함)
+    assert plan(30, 10, 7, {"decide": "10:00"}) == []            # 같은 회차는 한 번만
+    assert plan(30, 15, 45) == ["decide"] and plan(30, 16, 0) == []
+    assert plan(30, 16, 15, {"prep": 1}) == ["close"]
+    assert plan(30, 16, 30, {"prep": 1, "close": 1}) == []       # 월요일엔 회고 없음
+    assert plan(30, 16, 45, {"prep": 1, "close": 1}) == ["tune"]
+    wed = {"prep": 1, "close": 1}
+    assert run.tick_plan(datetime(2026, 12, 2, 16, 30, tzinfo=C.TZ), p, wed) == ["review"]
+    assert run.tick_plan(datetime(2026, 12, 2, 17, 0, tzinfo=C.TZ), p, {**wed, "review": 1, "tune": 1}) == ["report"]
+    assert plan(26, 10, 0) == []                                 # 추수감사절 휴장
+    assert plan(27, 12, 45) == ["decide"] and plan(27, 13, 0) == []   # 조기 마감 13:00 → 12:45 회차까지
+    assert plan(28, 10, 0) == []                                 # 토요일
+
+
 if __name__ == "__main__":
     fails = 0
     for n, f in list(globals().items()):

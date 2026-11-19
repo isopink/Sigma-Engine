@@ -337,8 +337,15 @@
     "monitor_interval_sec": 60,
     "prep": "08:30",
     "close": "16:15",
-    "tune": "16:30",
-    "sell_from": "10:00"
+    "tune": "16:45",
+    "sell_from": "10:00",
+    "review": "16:30",
+    "report": "17:00",
+    "review_days": [
+      2,
+      4
+    ],
+    "_tick_note": "작업 스케줄러는 한국 시간 21:00~08:00 15분마다 run_us.bat tick 만 부름. tick 이 뉴욕 시간 · 휴장일을 보고 prep · decide · close · review(수 · 금) · tune · report(수 · 금) 중 할 일을 띄움 (서머타임 자동). 감시 · 잔고 루프가 죽어 있으면 다시 띄움"
   },
   "calendar": {
     "_note": "NYSE 정규장 (뉴욕 시간). 휴장일 · 조기 마감일은 NYSE 공시 기준, 해마다 추가할 것. 조기 마감일엔 마감 15분 전 회차까지만 판단",

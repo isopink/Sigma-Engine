@@ -151,6 +151,10 @@ def loop():
     if C.US and (sc := C.session_close()) and sc < s["monitor_end"]:   # 조기 마감일 (추수감사절 다음 날 등)
         end = int(sc.replace(":", ""))
     print(f"장중 감시 시작 · {s['monitor_interval_sec']}초 간격 · {s['monitor_end']} 종료", flush=True)
+    if C.US:   # run.py tick 이 살아 있는지 봄
+        os.makedirs(C.WORK, exist_ok=True)
+        with open(os.path.join(C.WORK, "monitor.pid"), "w") as f:
+            f.write(str(os.getpid()))
     while True:
         n = C.now()
         hm = n.hour * 100 + n.minute
