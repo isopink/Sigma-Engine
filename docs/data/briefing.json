@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "11:00",
-    "pool": 378,
+    "time": "11:15",
+    "pool": 379,
     "analyzed_new": 30,
-    "passed": 14,
+    "passed": 17,
     "kept_prep": false
   },
   "candidates": [
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 137000,
-      "chg": 0.0482,
-      "activity": 3.25,
+      "price": 137800,
+      "chg": 0.0543,
+      "activity": 3.2,
       "foreign_today": 0,
-      "inst_today": 1507000000,
+      "inst_today": 1515800000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.828,
       "foreign_net": -1284328150,
       "inst_net": 38086031300,
-      "score": 0.961,
+      "score": 0.97,
       "news": [
         {
           "date": "11-19",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 176300,
-      "chg": 0.0582,
-      "activity": 4.35,
+      "price": 178400,
+      "chg": 0.0708,
+      "activity": 4.6,
       "foreign_today": 0,
-      "inst_today": 881500000,
+      "inst_today": 892000000,
       "exchange": "KOSPI"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.765,
+      "score": 0.773,
       "news": [
         {
           "date": "11-18",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 14160,
-      "chg": 0.0727,
-      "activity": 2.02,
-      "foreign_today": 693840000,
-      "inst_today": 339840000,
+      "price": 14040,
+      "chg": 0.0636,
+      "activity": 2.26,
+      "foreign_today": 687960000,
+      "inst_today": 336960000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +193,7 @@
       "vol20": 0.44,
       "foreign_net": 31328111150,
       "inst_net": -6239667840,
-      "score": 0.549,
+      "score": 0.561,
       "news": [
         {
           "date": "11-19",
@@ -215,7 +215,7 @@
       "vol20": 0.638,
       "foreign_net": 5649878250,
       "inst_net": 3781596500,
-      "score": 0.549,
+      "score": 0.561,
       "news": [
         {
           "date": "11-19",
@@ -238,6 +238,73 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "161890",
+      "name": "한국콜마",
+      "close": 119300,
+      "ret5": 0.1212,
+      "ret20": -0.0628,
+      "rsi14": 52.5,
+      "vol20": 0.702,
+      "foreign_net": -7062794500,
+      "inst_net": 14189115350,
+      "score": 0.53,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "화학연 손잡은 한국콜마, 화장품 개발 시행착오 줄인다",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[K뷰티 ODM 3조 시대②] 한국 ODM 양강 엇다른 '2세 경영', 한국콜마는 ...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "한국콜마 자연공시 치명적 누락, “서초구 멸종위기종 없음”",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 357900000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "086450",
+      "name": "동국제약",
+      "close": 24600,
+      "ret5": -0.0428,
+      "ret20": 0.0103,
+      "rsi14": 54.5,
+      "vol20": 0.528,
+      "foreign_net": 1533377700,
+      "inst_net": 7444916300,
+      "score": 0.5,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "혁신형 제약기업, 동국제약·동화약품 등 6곳 재인증",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "동국제약·동화약품 등 6개사, '혁신형 제약기업' 3년 연장",
+          "risk": false
+        }
+      ],
+      "price": 25450,
+      "chg": 0.043,
+      "activity": 1.34,
+      "foreign_today": 0,
+      "inst_today": 25450000,
+      "exchange": "KOSDAQ"
+    },
+    {
       "code": "035720",
       "name": "카카오",
       "close": 32000,
@@ -247,21 +314,21 @@
       "vol20": 0.435,
       "foreign_net": -24016672300,
       "inst_net": 2843162775,
-      "score": 0.373,
+      "score": 0.394,
       "news": [
         {
           "date": "11-19",
-          "title": "카카오, 춘식이 미키 마우스 옷 입고 연말 선물 시장 공략",
+          "title": "텐센트 투자 자회사 카카오 주식 366만 주 매도, 지분율 4.91%로 주요주주...",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "“미키 마우스로 변신한 춘식이”…카카오, 디즈니 협업 상품 출시",
+          "title": "미키 마우스 옷 입은 춘식이… 카카오·디즈니, 연말 시장 공략",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "[뉴스워커_카카오페이] 시니어 1,000명 금융교육…신원근 대표, 포용금융...",
+          "title": "[더밸류 브리핑] 오늘의 금융계 소식...우리은행·BNK금융그룹·카카오뱅...",
           "risk": false
         }
       ],
@@ -279,10 +346,42 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.294,
+      "score": 0.303,
       "news": [],
       "foreign_today": 0,
       "inst_today": 225050000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "005940",
+      "name": "NH투자증권",
+      "close": 23250,
+      "ret5": 0.0568,
+      "ret20": -0.0312,
+      "rsi14": 47.6,
+      "vol20": 0.423,
+      "foreign_net": -12832099325,
+      "inst_net": 18683130600,
+      "score": 0.303,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "세금 아끼고 경품도 받고… NH투자증권, 연금저축 이벤트",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "NH투자증권, 연금저축 100만원 이상 순입금 고객에 경품 행사",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "연말정산 앞두고···NH투자증권, 연금저축 이벤트 승부수",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 46500000,
       "exchange": "KOSPI"
     },
     {
@@ -295,7 +394,7 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.784,
+      "score": 0.758,
       "news": [
         {
           "date": "11-19",
@@ -305,11 +404,6 @@
         {
           "date": "11-19",
           "title": "[경제일보] 비용 절감부터 재무 부담까지…통합 진에어 내실 다지기 시...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "대한항공·아시아나·진에어, LCC 통합 앞두고 주주 설명회",
           "risk": false
         }
       ],
@@ -327,7 +421,7 @@
       "vol20": 1.656,
       "foreign_net": 542177575,
       "inst_net": 6081908050,
-      "score": 0.588,
+      "score": 0.606,
       "news": [
         {
           "date": "11-19",
@@ -345,11 +439,11 @@
           "risk": false
         }
       ],
-      "price": 38450,
-      "chg": 0.0,
-      "activity": 2.56,
+      "price": 38200,
+      "chg": -0.0065,
+      "activity": 2.37,
       "foreign_today": 0,
-      "inst_today": 461400000,
+      "inst_today": 458400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -362,7 +456,7 @@
       "vol20": 1.689,
       "foreign_net": -395213930,
       "inst_net": -4350030,
-      "score": 0.529,
+      "score": 0.545,
       "news": [
         {
           "date": "11-16",
@@ -384,7 +478,7 @@
       "vol20": 1.419,
       "foreign_net": 2764709000,
       "inst_net": 13056079915,
-      "score": 0.471,
+      "score": 0.485,
       "news": [
         {
           "date": "11-19",
@@ -402,11 +496,11 @@
           "risk": false
         }
       ],
-      "price": 15840,
-      "chg": 0.0051,
+      "price": 15870,
+      "chg": 0.007,
       "activity": 0.35,
       "foreign_today": 0,
-      "inst_today": 63360000,
+      "inst_today": 63480000,
       "exchange": "KOSDAQ"
     },
     {
@@ -419,7 +513,7 @@
       "vol20": 1.37,
       "foreign_net": -15163088550,
       "inst_net": 27088362955,
-      "score": 0.314,
+      "score": 0.348,
       "news": [
         {
           "date": "11-18",
@@ -437,11 +531,11 @@
           "risk": false
         }
       ],
-      "price": 14960,
-      "chg": 0.002,
-      "activity": 1.54,
+      "price": 15050,
+      "chg": 0.008,
+      "activity": 1.58,
       "foreign_today": 0,
-      "inst_today": 14960000,
+      "inst_today": 15050000,
       "exchange": "KOSDAQ"
     },
     {
