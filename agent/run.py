@@ -6,7 +6,8 @@
   python run.py exit --codes A,B      장중 감시가 손절·익절 조건을 보면 호출 (매도만)
   python run.py close                 15:45  계좌 조회 + 오늘 자산을 equity 에 기록
   python run.py review                수·금 15:50  주간 회고 (보고서 초안 + 조정 제안. 11-06 토 10:00 → 수 중간·금 주간, 16:00 조정이 기다렸다 바로 검토)
-  python run.py tune                  평일 16:00     기준값 자동 조정 (src/tuning.py 가 검사 후 params.json 반영)
+  python run.py tune                  평일 16:00     기준값 자동 조정 (src/tuning.py 가 검사 후 params.json 반영). 먼저 백테스트를 돌려 참고 자료로 넘김
+  python run.py backtest              언제든          백테스트 (LLM · 키움 호출 0, src/backtest.py → work/backtest/{날짜}.json · .md)
   python run.py monitor               08:30~15:20  손절·익절 감시 루프 (src/monitor.py)
   python run.py sync                  로그온부터 계속  push 된 코드를 1분 안에 받아 반영 (src/sync.py)
 
@@ -211,6 +212,8 @@ def main():
         py("logger.py", "--close")
         publish(f"Agent close {C.today().isoformat()}")
         return
+    if kind == "backtest":   # 11-19 기록된 확신도에 규칙 · 기준값만 바꿔 다시 계산 (Claude · 키움 호출 0)
+        sys.exit(0 if py("backtest.py") else 1)
     if kind not in PROMPTS:
         sys.exit(f"알 수 없는 실행: {kind}\n{__doc__}")
     if kind == "report" and C.now().weekday() not in (2, 4):
@@ -221,6 +224,13 @@ def main():
         if not tuning.allowed_today():
             log("기준값 조정은 평일에만 실행함")
             return
+        log("백테스트 (조정 참고 자료, LLM 없음)")
+        try:   # 실패 · 10분 초과해도 조정은 그대로 (get_tuning_context 의 backtest 가 '오늘 결과 없음'). KRX 일봉이 멈출 때 대비
+            ok = subprocess.run([PY, os.path.join(HERE, "src", "backtest.py"), "--quiet"], cwd=HERE, timeout=600).returncode == 0
+        except subprocess.TimeoutExpired:
+            ok = False
+        if not ok:
+            log("백테스트 실패 · 조정은 계속")
 
     trading = kind == "decide" and (C.trade_slot() or C.missed_trade())
     got = acquire()

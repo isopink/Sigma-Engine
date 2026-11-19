@@ -118,7 +118,16 @@ def context():
         "cooldown_keys": cd,
         "max_changes_per_run": rl["max_changes_per_run"],
         "tunable": {k: {**v, "current": get_value(p, k), "cooldown": k in cd} for k, v in rl["keys"].items()},
+        "backtest": backtest_summary(),
     }
+
+
+def backtest_summary():
+    """11-19 오늘 백테스트(run.py tune 이 먼저 돌림) 요약. 참고 자료일 뿐 자동 반영하지 않음. 오늘 것이 없으면 그 사실만."""
+    b = C.read_json(os.path.join(C.WORK, "backtest", "latest.json"), {}) or {}
+    if not b or not str(b.get("asof", "")).startswith(C.today().isoformat()):
+        return {"available": False, "note": "오늘 백테스트 결과 없음 (실패 · 미실행). 백테스트 없이 판단"}
+    return {"available": True, **b}
 
 
 LESSONS = os.path.join(C.WORK, "lessons.json")   # 11-06 조정 실행이 남긴 '판단 점검 교훈' → 다음 판단 브리핑에 실림

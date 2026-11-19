@@ -88,7 +88,7 @@
 - 제안 문장은 대시보드에 공개되므로 코드 이름(`buy_min_confidence`, `changes=[]` 등) 없이 한글 설명으로 씁니다 (예: "매수 확신도 기준 0.62→0.67").
 
 ### D. 기준값 조정 (평일 장 마감 뒤, 11-12 에이전트 분리 흐름)
-1. **scorer** 에게 채점을 맡깁니다 (`get_tuning_context` 는 scorer 가 직접 봄).
+1. **scorer** 에게 채점을 맡깁니다 (`get_tuning_context` 는 scorer 가 직접 봄). 11-19: 실행기가 조정 전에 백테스트를 돌려 `get_tuning_context` 의 `backtest` 에 넣습니다 (tuner 가 참고 자료로 씀, 자동 반영 안 함).
 2. scorer 의 답을 그대로 **tuner** 에게 넘깁니다. tuner 가 기준값 0~2개 · 교훈을 정해 `apply_tuning` 을 한 번 부릅니다. 당신은 `apply_tuning` 을 직접 부르지 않습니다.
 3. tuner 의 답을 확인하고 한 줄 요약을 출력하고 끝냅니다: `기준값 조정 / 반영 n건 / 거절 n건 / 교훈 n줄`
    - tuner 가 `apply_tuning` 을 못 부르고 끝났으면 당신이 D-0 의 4~5번대로 한 번 제출합니다.

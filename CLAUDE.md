@@ -19,9 +19,9 @@
 ```
 agent/      트레이딩 에이전트 (실행법 agent/README.md, 에이전트 지시 agent/CLAUDE.md)
   config/     risk_limits.json (고정, Hook 이 강제) · params.json (판단 기준값, 자동 조정) · tuning.json (조정 규칙)
-  src/        data_prep · intraday · routing · sizing · risk · broker · mcp_server · monitor · tuning · logger · benchmark · sync
+  src/        data_prep · intraday · routing · sizing · risk · broker · mcp_server · monitor · tuning · logger · benchmark · sync · replay · backtest
   .claude/    서브에이전트 · risk_check.py Hook · 도구 권한 (Bash/Edit/Write 금지) · 모델 고정 (Opus 5.5 high)
-  run.py      prep / decide / exit / close / tune / review / report / monitor
+  run.py      prep / decide / exit / close / tune / review / report / monitor / backtest
   work/       실행 산출물 (커밋 안 함). journal.jsonl 이 모든 기록의 원본
 live/       snapshot.py — 키움 잔고(kt00018) · KOSPI(ka20001) → Supabase push_snapshot, 30초마다 (params.live.snapshot_sec, 30초 밑 금지)
 supabase/   schema.sql (comments · snapshots · push_snapshot) · kospi.sql · flow.sql · realtime.sql (KOSPI · 수급 20초 수집) · heartbeat.sql
@@ -48,7 +48,7 @@ assets/     README 그림 · diagrams/*.mmd
 | 08:30 ~ 15:20 | 1분 감시: 손절 · 익절 · 보유일이면 매도 전용 실행 (**09:30 전엔 매도 안 함**) |
 | 09:30 ~ 15:15 | **15분마다 판단 + 주문** (하루 24번, `params.schedule`). 그날 판 종목은 재매수 금지. 앞 회차를 놓치면 다음 회차가 대신 |
 | 15:45 | 마감 기록 (close) |
-| 16:00 | 기준값 자동 조정 (tune). 수 · 금은 회고가 끝나길 최대 40분 기다림 |
+| 16:00 | 백테스트 (LLM 없음, 최대 10분) → 기준값 자동 조정 (tune). 수 · 금은 회고가 끝나길 최대 40분 기다림 |
 | 수 · 금 15:50 | 주간 회고 (review) → `reports/drafts/week{n}[-mid].md` |
 | 수 · 금 17:00 | 주간 보고서 초안 (report) → `reports/drafts/week{n}[-mid].report.md` |
 
@@ -85,6 +85,7 @@ assets/     README 그림 · diagrams/*.mmd
 8. 📈KODEX 200: 15:00 · 15:15 회차만, 하루 1번, 손절가 없음, 순익 +2% · 3일, 종목당 최대 20%. 그 밖의 ETF · ETN 차단
 9. 리스크 Hook (PreToolUse, 주문 직전): 현금 · 종목 한도 · 일일 손실 · 당일 상승률 (코스피 +10% · 코스닥 +15%) → 위반 시 차단. `risk_limits.json` 은 에이전트 · 회고 · 조정이 못 바꿈
 10. 자동 조정: 판단을 결과로 채점 → `tuning.json` 범위 · 1회 폭 · 쿨다운 안에서 기준값 0~2개 + 교훈(`work/lessons.json` → 다음 브리핑). 사람 검토 없이 반영되므로 보고서에 기록
+11. 백테스트 (`src/replay.py` · `backtest.py`, 11-19): 기록된 확신도(decision + fill)에 규칙 · 기준값만 바꿔 다시 계산. sizing · risk · monitor 를 그대로 import 하고 시각 · 기록 · 잔고만 시뮬레이션 값으로 바꿔 끼움. 가격 = git 기록의 회차별 장중가 (briefing · holdings), 없으면 일봉 (고+저+종)/3. `tuning.json` 키를 하나씩 · 둘씩 바꿔 학습(앞 60%) · 확인(뒤 40%) 둘 다 나으면 "지지". 결과 `work/backtest/{날짜}.json · .md`, tune 에는 참고 자료로만 (`get_tuning_context.backtest`, 자동 반영 안 함). Claude · 키움 호출 0
 
 ## 대시보드 데이터 형식 (에이전트 logger 가 맞춰 씀)
 
