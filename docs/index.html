@@ -380,7 +380,10 @@ button:focus-visible, summary:focus-visible, a:focus-visible, [tabindex="0"]:foc
   var on = function () { return b.isConnected; }, stop = function (e) { if (on()) e.preventDefault(); };
   document.addEventListener('wheel', stop, { passive: false }); document.addEventListener('touchmove', stop, { passive: false });
   addEventListener('scroll', function () { if (on() && scrollY) scrollTo(0, 0); }, { passive: true });
-  var enter = function () { if (!ready || !on()) return; b.remove(); h.classList.remove('boot-lock'); };
+  var enter = function () { if (!ready || !on()) return; b.remove(); h.classList.remove('boot-lock'); try { sessionStorage.setItem('sigma-entered', '1'); } catch (e) { /* 무시 */ } };
+  // us-stocks 11-19 S.Lee: 한 번 들어간 뒤 국내 · 미국 버튼으로 오갈 땐 Loading 화면을 건너뜀 (같은 탭 안에서만)
+  var skip = false; try { skip = sessionStorage.getItem('sigma-entered') === '1'; } catch (e) { /* 무시 */ }
+  if (skip) { b.remove(); h.classList.remove('boot-lock'); }
   window.bootReady = function () {
     if (ready || !on()) return; ready = true; b.classList.add('ready');
     b.setAttribute('role', 'button'); b.setAttribute('tabindex', '0'); b.setAttribute('aria-label', 'Sigma Engine 대시보드 열기');
