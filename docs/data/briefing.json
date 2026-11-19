@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "12:01",
+    "time": "12:15",
     "pool": 379,
     "analyzed_new": 30,
-    "passed": 21,
+    "passed": 22,
     "kept_prep": false
   },
   "candidates": [
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 139600,
-      "chg": 0.0681,
-      "activity": 2.97,
+      "price": 138900,
+      "chg": 0.0627,
+      "activity": 2.86,
       "foreign_today": 0,
-      "inst_today": 1535600000,
+      "inst_today": 1527900000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.828,
       "foreign_net": -1284328150,
       "inst_net": 38086031300,
-      "score": 0.924,
+      "score": 0.909,
       "news": [
         {
           "date": "11-19",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 181000,
-      "chg": 0.0864,
-      "activity": 4.57,
+      "price": 181600,
+      "chg": 0.09,
+      "activity": 4.53,
       "foreign_today": 0,
-      "inst_today": 905000000,
+      "inst_today": 908000000,
       "exchange": "KOSPI"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.781,
+      "score": 0.773,
       "news": [
         {
           "date": "11-18",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 13755,
-      "chg": 0.042,
-      "activity": 2.02,
-      "foreign_today": 673995000,
-      "inst_today": 330120000,
+      "price": 13710,
+      "chg": 0.0386,
+      "activity": 1.96,
+      "foreign_today": 671790000,
+      "inst_today": 329040000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +193,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.676,
+      "score": 0.664,
       "news": [
         {
           "date": "11-19",
@@ -216,6 +216,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "259960",
+      "name": "크래프톤",
+      "close": 202500,
+      "ret5": 0.0379,
+      "ret20": 0.0427,
+      "rsi14": 52.5,
+      "vol20": 0.597,
+      "foreign_net": -16149913800,
+      "inst_net": -8273335450,
+      "score": 0.636,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "크래프톤, 지스타 10년 연속 참가…신작 5종 시연·아이브 팬 행사",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "크래프톤, 지스타서 아이브·배틀그라운드 팬 행사 개최",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[지스타 2026] 10년 연속 지스타 참가한 크래프톤, 다채로운 이벤트 진행",
+          "risk": false
+        }
+      ],
+      "foreign_today": 810000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "011200",
       "name": "HMM",
       "close": 22300,
@@ -225,7 +257,7 @@
       "vol20": 0.44,
       "foreign_net": 31328111150,
       "inst_net": -6239667840,
-      "score": 0.571,
+      "score": 0.555,
       "news": [
         {
           "date": "11-19",
@@ -247,7 +279,7 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.562,
+      "score": 0.555,
       "news": [
         {
           "date": "11-19",
@@ -265,11 +297,11 @@
           "risk": false
         }
       ],
-      "price": 25500,
-      "chg": 0.0451,
-      "activity": 1.29,
+      "price": 25450,
+      "chg": 0.043,
+      "activity": 1.25,
       "foreign_today": 0,
-      "inst_today": 25500000,
+      "inst_today": 25450000,
       "exchange": "KOSDAQ"
     },
     {
@@ -282,7 +314,7 @@
       "vol20": 0.638,
       "foreign_net": 5649878250,
       "inst_net": 3781596500,
-      "score": 0.562,
+      "score": 0.555,
       "news": [
         {
           "date": "11-19",
@@ -314,7 +346,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.552,
+      "score": 0.545,
       "news": [
         {
           "date": "11-19",
@@ -346,24 +378,24 @@
       "vol20": 0.435,
       "foreign_net": -24016672300,
       "inst_net": 2843162775,
-      "score": 0.543,
+      "score": 0.527,
       "news": [
         {
           "date": "11-19",
-          "title": "소비자원 “AI 부당광고 차단”… 네이버·카카오·틱톡과 협력",
+          "title": "\"아무나 못 들어와\" 단톡방이 달라졌다…확 바뀐 카카오톡",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "단톡방서 함께 쓰고 번역까지…카카오톡, '톡보드'·자동 번역 선보여",
+          "title": "소비자원 “AI 부당광고 차단”… 네이버·카카오·틱톡과 협력",
           "risk": false
         }
       ],
-      "price": 31750,
-      "chg": -0.0016,
-      "activity": 0.67,
-      "foreign_today": 127000000,
-      "inst_today": 158750000,
+      "price": 31550,
+      "chg": -0.0079,
+      "activity": 0.66,
+      "foreign_today": 126200000,
+      "inst_today": 157750000,
       "exchange": "KOSPI"
     },
     {
@@ -376,7 +408,7 @@
       "vol20": 0.571,
       "foreign_net": 1230037175,
       "inst_net": 5726044375,
-      "score": 0.476,
+      "score": 0.473,
       "news": [
         {
           "date": "11-19",
@@ -408,7 +440,7 @@
       "vol20": 0.415,
       "foreign_net": -7560092250,
       "inst_net": 8632040710,
-      "score": 0.39,
+      "score": 0.391,
       "news": [
         {
           "date": "11-19",
@@ -430,7 +462,7 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.333,
+      "score": 0.327,
       "news": [],
       "foreign_today": 0,
       "inst_today": 225050000,
@@ -446,7 +478,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.324,
+      "score": 0.318,
       "news": [
         {
           "date": "11-19",
@@ -478,7 +510,7 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.305,
+      "score": 0.3,
       "news": [
         {
           "date": "11-19",
@@ -510,7 +542,7 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.743,
+      "score": 0.727,
       "news": [
         {
           "date": "11-19",
@@ -532,7 +564,7 @@
       "vol20": 1.003,
       "foreign_net": -8875301300,
       "inst_net": 23467521250,
-      "score": 0.724,
+      "score": 0.709,
       "news": [
         {
           "date": "11-17",
@@ -559,7 +591,7 @@
       "vol20": 1.342,
       "foreign_net": 6179943350,
       "inst_net": -1654368500,
-      "score": 0.619,
+      "score": 0.609,
       "news": [
         {
           "date": "11-19",
@@ -591,7 +623,7 @@
       "vol20": 1.656,
       "foreign_net": 542177575,
       "inst_net": 6081908050,
-      "score": 0.571,
+      "score": 0.564,
       "news": [
         {
           "date": "11-19",
@@ -609,11 +641,11 @@
           "risk": false
         }
       ],
-      "price": 37200,
-      "chg": -0.0325,
-      "activity": 1.88,
+      "price": 37100,
+      "chg": -0.0351,
+      "activity": 1.8,
       "foreign_today": 0,
-      "inst_today": 446400000,
+      "inst_today": 445200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -626,7 +658,7 @@
       "vol20": 1.242,
       "foreign_net": -27651921250,
       "inst_net": 34237007000,
-      "score": 0.533,
+      "score": 0.536,
       "news": [
         {
           "date": "11-18",
@@ -639,11 +671,11 @@
           "risk": false
         }
       ],
-      "price": 53900,
-      "chg": -0.0323,
-      "activity": 0.66,
+      "price": 53600,
+      "chg": -0.0377,
+      "activity": 0.64,
       "foreign_today": 0,
-      "inst_today": 53900000,
+      "inst_today": 53600000,
       "exchange": "KOSDAQ"
     },
     {
