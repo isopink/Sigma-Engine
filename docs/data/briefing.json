@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:00",
-    "pool": 420,
-    "analyzed_new": 19,
+    "time": "14:15",
+    "pool": 419,
+    "analyzed_new": 8,
     "passed": 22,
     "kept_prep": false
   },
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-19",
+          "title": "아모레퍼시픽 6.43% 상승…북미·일본 성장 속 13만9100원",
+          "risk": false
+        },
+        {
+          "date": "11-19",
           "title": "\"한-중 관계 개선 기대\"...CJ ENM·아모레퍼시픽 '장중 껑충'",
           "risk": false
         },
@@ -109,18 +114,13 @@
           "date": "11-19",
           "title": "아모레퍼시픽도 강세…한중 교류 복원 기대에 화장품주 재평가 부각",
           "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "'아모레퍼시픽 효자' 설화수의 글로벌 행보 [뉴스Q]",
-          "risk": false
         }
       ],
-      "price": 139000,
-      "chg": 0.0635,
-      "activity": 2.82,
+      "price": 139500,
+      "chg": 0.0673,
+      "activity": 2.84,
       "foreign_today": 0,
-      "inst_today": 4587000000,
+      "inst_today": 4603500000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.374,
       "foreign_net": -6503770600,
       "inst_net": 9700135300,
-      "score": 0.873,
+      "score": 0.867,
       "news": [
         {
           "date": "11-19",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 209500,
-      "chg": 0.0554,
-      "activity": 1.47,
+      "price": 208500,
+      "chg": 0.0504,
+      "activity": 1.44,
       "foreign_today": 0,
-      "inst_today": 628500000,
+      "inst_today": 625500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.86,
+      "score": 0.842,
       "news": [
         {
           "date": "11-18",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 13940,
-      "chg": 0.0561,
-      "activity": 1.67,
-      "foreign_today": 3749860000,
-      "inst_today": 446080000,
+      "price": 13920,
+      "chg": 0.0545,
+      "activity": 1.6,
+      "foreign_today": 3744480000,
+      "inst_today": 445440000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +193,7 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.803,
+      "score": 0.791,
       "news": [
         {
           "date": "11-19",
@@ -211,11 +211,11 @@
           "risk": false
         }
       ],
-      "price": 26100,
-      "chg": 0.0697,
-      "activity": 1.68,
+      "price": 25850,
+      "chg": 0.0594,
+      "activity": 1.67,
       "foreign_today": 0,
-      "inst_today": 417600000,
+      "inst_today": 413600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -228,7 +228,7 @@
       "vol20": 0.447,
       "foreign_net": -2764054250,
       "inst_net": 8732145600,
-      "score": 0.669,
+      "score": 0.665,
       "news": [
         {
           "date": "11-19",
@@ -250,7 +250,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.554,
+      "score": 0.551,
       "news": [
         {
           "date": "11-19",
@@ -282,26 +282,48 @@
       "vol20": 0.402,
       "foreign_net": 2310959350,
       "inst_net": -1944358500,
-      "score": 0.535,
+      "score": 0.538,
       "news": [
         {
           "date": "11-19",
-          "title": "\"한-중 관계 개선 기대\"...CJ ENM·아모레퍼시픽 '장중 껑충'",
+          "title": "세계로 뻗는 CJ ENM…TCL·샤오미에 채널 론칭",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "CJ온스타일, 21일 '동가게'서 브레빌 반자동 커피머신 첫 방송",
+          "title": "앳홈 미닉스, 미니 김치냉장고 '더 시프트' CJ온스타일 방송서 전량 소...",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "CJ프레시웨이, 대구서 외식업체 대상 피자 조리 세미나 진행",
+          "title": "이병철 삼성 창업회장 39주기…CJ·신세계·한솔 등 범삼성가 추모",
           "risk": false
         }
       ],
       "foreign_today": 0,
       "inst_today": 578000000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "051900",
+      "name": "LG생활건강",
+      "close": 252500,
+      "ret5": 0.1026,
+      "ret20": -0.0683,
+      "rsi14": 51.8,
+      "vol20": 0.454,
+      "foreign_net": 4362701750,
+      "inst_net": 3294406750,
+      "score": 0.481,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "바이오 신약부터 더마 코스메틱까지… 아모레퍼시픽·LG생활건강 동반 ...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 505000000,
       "exchange": "KOSPI"
     },
     {
@@ -314,7 +336,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.478,
+      "score": 0.475,
       "news": [
         {
           "date": "11-19",
@@ -337,28 +359,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "051900",
-      "name": "LG생활건강",
-      "close": 252500,
-      "ret5": 0.1026,
-      "ret20": -0.0683,
-      "rsi14": 51.8,
-      "vol20": 0.454,
-      "foreign_net": 4362701750,
-      "inst_net": 3294406750,
-      "score": 0.478,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "바이오 신약부터 더마 코스메틱까지… 아모레퍼시픽·LG생활건강 동반 ...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 505000000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "011200",
       "name": "HMM",
       "close": 22300,
@@ -368,7 +368,7 @@
       "vol20": 0.44,
       "foreign_net": 31328111150,
       "inst_net": -6239667840,
-      "score": 0.459,
+      "score": 0.468,
       "news": [
         {
           "date": "11-19",
@@ -390,7 +390,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.42,
+      "score": 0.424,
       "news": [
         {
           "date": "11-19",
@@ -422,7 +422,7 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.401,
+      "score": 0.405,
       "news": [],
       "foreign_today": 964500000,
       "inst_today": 225050000,
@@ -438,7 +438,7 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.369,
+      "score": 0.373,
       "news": [
         {
           "date": "11-19",
@@ -470,7 +470,7 @@
       "vol20": 0.739,
       "foreign_net": -11398103450,
       "inst_net": 14734861600,
-      "score": 0.363,
+      "score": 0.361,
       "news": [],
       "foreign_today": 0,
       "inst_today": 184200000,
@@ -486,7 +486,7 @@
       "vol20": 0.245,
       "foreign_net": 1999341850,
       "inst_net": 514684200,
-      "score": 0.338,
+      "score": 0.348,
       "news": [
         {
           "date": "11-19",
@@ -518,7 +518,7 @@
       "vol20": 1.798,
       "foreign_net": 1721167725,
       "inst_net": 19862349325,
-      "score": 0.917,
+      "score": 0.899,
       "news": [
         {
           "date": "11-18",
@@ -526,11 +526,11 @@
           "risk": false
         }
       ],
-      "price": 45350,
-      "chg": 0.0954,
-      "activity": 1.71,
+      "price": 44400,
+      "chg": 0.0725,
+      "activity": 1.69,
       "foreign_today": 0,
-      "inst_today": 1360500000,
+      "inst_today": 1332000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -543,19 +543,24 @@
       "vol20": 1.11,
       "foreign_net": -3024748215,
       "inst_net": 2410895635,
-      "score": 0.847,
+      "score": 0.829,
       "news": [
+        {
+          "date": "11-19",
+          "title": "넥스트바이오메디컬, 무릎동맥색전술 의료기기 '넥스피어에프' 美 FDA 임...",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "씨어스·스피어·인바디 ;쑥쑥;… 디지털 헬스케어 시장 대박 날까",
           "risk": false
         }
       ],
-      "price": 17610,
-      "chg": 0.0764,
-      "activity": 1.85,
-      "foreign_today": 369810000,
-      "inst_today": 387420000,
+      "price": 17500,
+      "chg": 0.0697,
+      "activity": 1.84,
+      "foreign_today": 367500000,
+      "inst_today": 385000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -568,8 +573,13 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.732,
+      "score": 0.741,
       "news": [
+        {
+          "date": "11-19",
+          "title": "[특징주] 한·중 FTA 타결에 항공주 강세…제주항공 14%·진에어 3%↑",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "한진그룹, 통합 진에어 출범 앞두고 전방위 주주 소통",
@@ -590,13 +600,13 @@
       "vol20": 1.536,
       "foreign_net": 7452847425,
       "inst_net": -136157645,
-      "score": 0.701,
+      "score": 0.69,
       "news": [],
-      "price": 15030,
-      "chg": 0.0599,
-      "activity": 0.86,
+      "price": 14960,
+      "chg": 0.055,
+      "activity": 0.85,
       "foreign_today": 0,
-      "inst_today": 1097190000,
+      "inst_today": 1092080000,
       "exchange": "KOSDAQ"
     },
     {
@@ -609,7 +619,7 @@
       "vol20": 1.37,
       "foreign_net": -15163088550,
       "inst_net": 27088362955,
-      "score": 0.669,
+      "score": 0.677,
       "news": [
         {
           "date": "11-18",
@@ -627,11 +637,11 @@
           "risk": false
         }
       ],
-      "price": 15380,
-      "chg": 0.0301,
-      "activity": 1.65,
+      "price": 15360,
+      "chg": 0.0288,
+      "activity": 1.61,
       "foreign_today": 0,
-      "inst_today": 753620000,
+      "inst_today": 752640000,
       "exchange": "KOSDAQ"
     },
     {
