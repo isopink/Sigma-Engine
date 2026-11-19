@@ -439,6 +439,18 @@ button:focus-visible, summary:focus-visible, a:focus-visible, [tabindex="0"]:foc
       <details class="kx-flow tr-box pane" data-eng="sigma" open><summary class="hd"><h3 class="eyebrow">최근 체결</h3><span class="sub">실제 계좌</span></summary><div class="ttbl tr-tbl" id="sig-trades"></div></details>
     </section>
 
+    <!-- 11-19 S.Lee: Simulator — 기준값을 바꾸면 지금까지 수익률이 어떻게 달라지나. 16:00 백테스트가 미리 계산한 docs/data/simulator.json 에서 고르기만 (토큰 0) -->
+    <section class="card c12 sim-card" id="sim-card">
+      <button type="button" class="hd sim-tog" id="sim-tog" aria-expanded="false" aria-controls="sim-body"><h2 class="eyebrow">Simulator</h2><span class="sub">기준값을 바꾸면 지금까지 수익률은</span></button>
+      <div class="sim-body" id="sim-body" hidden>
+        <div class="sim-ctl" id="sim-ctl"></div>
+        <div class="sim-res" id="sim-res"></div>
+        <div class="chart" id="sim-ch"></div>
+        <div class="sim-leg" id="sim-leg"></div>
+        <div class="sim-foot"><button type="button" class="sim-reset" id="sim-reset" hidden>지금 기준값으로</button><ul class="sim-note" id="sim-note"></ul></div>
+      </div>
+    </section>
+
 
 
   </div>
@@ -1841,6 +1853,157 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
   }
   // 11-10 S.Lee: 최근 체결 · 종목별 표는 폰 · PC 모두 늘 펼침
   document.querySelectorAll('details.tr-box').forEach(d => { d.open = true; d.addEventListener('toggle', () => { if (!d.open) d.open = true; }); });
+})();
+</script>
+<style>
+/* 11-19 S.Lee: Simulator 카드 */
+.sim-tog { display: flex; width: 100%; padding: 0; border: 0; background: none; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.sim-tog::after { content: "+"; margin-left: auto; padding-left: 12px; color: var(--muted); font-size: 16px; line-height: 1; }
+.sim-tog[aria-expanded="true"]::after { content: "−"; }
+.sim-tog .sub { margin-left: 12px; }
+.sim-tog:focus-visible, .sim-seg button:focus-visible, .sim-reset:focus-visible { outline: 2px solid #d6d6d6; outline-offset: 2px; }
+.sim-body { display: grid; gap: 18px; margin-top: 6px; }
+.sim-body[hidden] { display: none; }
+.sim-ctl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; }
+.sim-row { display: grid; gap: 7px; min-width: 0; }
+.sim-lab { display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; color: var(--body); }
+.sim-lab small { font-size: 11px; color: var(--muted); }
+.sim-seg { display: flex; border: 1px solid #3d3a39; border-radius: 2px; }
+.sim-seg button { flex: 1 1 0; min-width: 0; padding: 7px 0; border: 0; border-left: 1px solid #262626; background: none; font: inherit; font-family: var(--mono, inherit); font-size: 11.5px; color: var(--body); cursor: pointer; white-space: nowrap; }
+.sim-seg button:first-child { border-left: 0; }
+.sim-seg button.now { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.sim-seg button[aria-pressed="true"] { background: #f2f2f2; color: #101010; }
+.sim-res { display: grid; grid-template-columns: minmax(0, 1.3fr) repeat(3, minmax(0, 1fr)); gap: 14px 20px; align-items: end; padding-top: 14px; border-top: 1px solid #262626; }
+.sim-res .k { font-size: 11.5px; color: var(--muted); margin-bottom: 5px; }
+.sim-res .v { font-size: 18px; color: var(--ink); font-family: var(--mono, inherit); white-space: nowrap; }
+.sim-res .big .v { font-size: 34px; letter-spacing: -0.5px; }
+.sim-res .s { font-size: 11.5px; color: var(--muted); margin-top: 4px; font-family: var(--mono, inherit); }
+.sim-leg { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 11.5px; color: var(--muted); margin-top: -6px; }
+.sim-leg span { display: inline-flex; align-items: center; gap: 6px; }
+.sim-leg svg { flex: none; }
+.sim-foot { display: grid; gap: 10px; justify-items: start; }
+.sim-reset { padding: 6px 12px; border: 1px solid #3d3a39; border-radius: 2px; background: none; font: inherit; font-size: 12px; color: var(--body); cursor: pointer; }
+.sim-note { margin: 0; padding-left: 16px; display: grid; gap: 4px; font-size: 11.5px; line-height: 1.6; color: var(--muted); }
+@media (max-width: 640px) {
+  .sim-tog .sub { display: none; }
+  .sim-ctl { grid-template-columns: minmax(0, 1fr); }
+  .sim-res { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sim-res .big { grid-column: 1 / -1; }
+  .sim-res .big .v { font-size: 30px; }
+}
+</style>
+<script>
+// 11-19 S.Lee: Simulator — 기록된 판단(확신도)은 그대로, 기준값만 바꿔 11/2 부터 다시 계산한 결과.
+// 조합은 16:00 백테스트(agent/src/backtest.py simulator_grid)가 미리 다 계산해 docs/data/simulator.json 에 둠 → 여기선 고르기만 (토큰 · 키움 호출 0)
+(() => {
+  const $ = id => document.getElementById(id);
+  const tog = $('sim-tog'), body = $('sim-body');
+  if (!tog || !window.d3) return;
+  const UP = '#ff5a65', DN = '#4e94ff', INK = '#f2f2f2', MUTED = '#8b949e', BM = '#6f7781';
+  let S = null, pick = null, base = null, busy = false, lastW = 0;
+  const sgn = v => v > 0 ? '+' : v < 0 ? '−' : '';
+  const pct = (bp, d = 2) => bp == null ? '—' : sgn(bp) + Math.abs(bp / 100).toFixed(d) + '%';
+  const pp = bp => bp == null ? '—' : sgn(bp) + Math.abs(bp / 100).toFixed(2) + '%p';
+  const cls = (el, bp) => { el.classList.toggle('up', bp > 0); el.classList.toggle('down', bp < 0); };
+  const fmt = (k, v) => /confidence$/.test(k.key) ? v.toFixed(2) : (v < 0 ? '−' : '') + Math.round(Math.abs(v) * 100) + '%';
+  const at = sel => S.keys.reduce((i, k, j) => i * k.values.length + sel[j], 0);
+  const md = s => +s.slice(5, 7) + '/' + +s.slice(8, 10);
+  const note = lines => { const ul = $('sim-note'); ul.textContent = ''; lines.forEach(t => { const li = document.createElement('li'); li.textContent = t; ul.appendChild(li); }); };
+
+  tog.addEventListener('click', () => {
+    const open = tog.getAttribute('aria-expanded') !== 'true';
+    tog.setAttribute('aria-expanded', String(open)); body.hidden = !open;
+    if (!open) return;
+    if (S) draw(); else if (!busy) load();
+  });
+
+  function load() {
+    busy = true; note(['불러오는 중']);
+    fetch('data/simulator.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(d => {
+      busy = false;
+      if (!d || !d.ret || !d.ret.length) { note(['아직 계산된 결과가 없습니다. 평일 16:00 백테스트가 만듭니다']); return; }
+      S = d; base = S.keys.map(k => Math.max(0, k.values.findIndex(v => Math.abs(v - k.current) < 1e-9))); pick = base.slice();
+      controls(); render();
+      const reg = Object.entries(S.regime_days || {}).sort((a, b) => b[1] - a[1]), n = reg.reduce((a, r) => a + r[1], 0), v = S.validation || {};
+      const lines = ['그때 에이전트가 낸 확신도는 그대로 두고, 매매 규칙과 기준값만 바꿔 다시 계산한 결과입니다. 프롬프트나 모델을 바꾼 효과는 알 수 없습니다'];
+      if (reg.length && reg[0][1] >= n * 0.7) lines.push(`${n}거래일 중 ${reg[0][1]}일이 ${reg[0][0]} 국면이라, ${reg[0][0] === '하락' ? '현금 비중이 높을수록' : '주식 비중이 높을수록'} 유리하게 나옵니다. 시장 방향이 바뀌면 결과도 달라질 수 있습니다`);
+      if (v.recall != null) lines.push(`지금 기준값 재현과 실제 계좌는 다를 수 있습니다. 그때 기준값으로 재현했을 때 실제 체결의 ${Math.round(v.recall * 100)}%가 맞았고, 최종 자산 차이는 ${pct(Math.round(v.final_gap * 10000), 1)}였습니다`);
+      lines.push(`${md(S.days[0])} ~ ${md(S.days[S.days.length - 1])} 기준, ${S.ret.length.toLocaleString()}개 조합을 미리 계산해 두었습니다`);
+      note(lines);
+    });
+  }
+
+  function controls() {
+    const box = $('sim-ctl'); box.textContent = '';
+    S.keys.forEach((k, j) => {
+      const row = document.createElement('div'); row.className = 'sim-row';
+      const lab = document.createElement('div'); lab.className = 'sim-lab';
+      const a = document.createElement('span'); a.textContent = k.label;
+      const b = document.createElement('small'); b.textContent = '지금 ' + fmt(k, k.current);
+      lab.append(a, b);
+      const seg = document.createElement('div'); seg.className = 'sim-seg'; seg.setAttribute('role', 'group'); seg.setAttribute('aria-label', k.label);
+      k.values.forEach((v, i) => {
+        const bt = document.createElement('button'); bt.type = 'button'; bt.textContent = fmt(k, v);
+        if (i === base[j]) bt.classList.add('now');
+        bt.addEventListener('click', () => { pick[j] = i; render(); });
+        seg.appendChild(bt);
+      });
+      row.append(lab, seg); box.appendChild(row);
+    });
+    $('sim-reset').addEventListener('click', () => { pick = base.slice(); render(); });
+  }
+
+  function render() {
+    [...$('sim-ctl').children].forEach((row, j) => [...row.querySelector('.sim-seg').children].forEach((bt, i) => bt.setAttribute('aria-pressed', String(i === pick[j]))));
+    $('sim-reset').hidden = pick.every((v, j) => v === base[j]);
+    const i = at(pick), b = at(base), last = a => { for (let n = a.length - 1; n >= 0; n--) if (a[n] != null) return a[n]; return null; };
+    const r = S.ret[i], rb = S.ret[b], kb = last(S.bench), ac = last(S.actual);
+    const res = $('sim-res'); res.textContent = '';
+    const cell = (k, v, s, tone, big) => {
+      const c = document.createElement('div'); if (big) c.className = 'big';
+      const x = document.createElement('div'); x.className = 'k'; x.textContent = k;
+      const y = document.createElement('div'); y.className = 'v'; y.textContent = v; if (tone != null) cls(y, tone);
+      c.append(x, y);
+      if (s) { const z = document.createElement('div'); z.className = 's'; z.textContent = s; c.appendChild(z); }
+      res.appendChild(c);
+    };
+    cell('고른 기준값 누적 수익률', pct(r), '지금 기준값보다 ' + pp(r - rb), r, true);
+    cell('지금 기준값 재현', pct(rb), '실제 계좌 ' + pct(ac));
+    cell('KODEX 200', pct(kb), '대비 ' + pp(kb == null ? null : r - kb));
+    cell('최대 낙폭', pct(S.mdd[i]), `체결 ${S.trades[i]}회  승률 ${S.win[i] == null ? '—' : Math.round(S.win[i] / 100) + '%'}`);
+    draw();
+  }
+
+  function draw() {
+    const el = $('sim-ch'); if (!S || body.hidden) return;
+    const W = Math.max(200, el.clientWidth); lastW = W;
+    const narrow = W < 520, H = narrow ? 210 : 260;
+    el.innerHTML = '';
+    const svg = d3.select(el).append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width', '100%').attr('height', H);
+    const days = S.days, ci = S.curve[at(pick)], cb = S.curve[at(base)];
+    const lines = [{ v: S.bench, c: BM, w: 1.2, d: '1 4' }, { v: cb, c: MUTED, w: 1.2, d: '5 4' }, { v: ci, c: INK, w: 1.8, d: null }];
+    const all = [0].concat(...lines.map(l => l.v.filter(x => x != null)));
+    const y0 = d3.scaleLinear().domain([d3.min(all) / 10000, d3.max(all) / 10000]).nice(4), ticks = y0.ticks(4);
+    const tf = v => sgn(v) + Math.abs(v * 100).toFixed(ticks.length > 1 && ticks[1] - ticks[0] < 0.0099 ? 1 : 0) + '%';
+    const m = { t: 10, r: 10, b: 24, l: 44 };
+    const x = d3.scaleLinear([0, Math.max(1, days.length - 1)], [m.l, W - m.r]), y = d3.scaleLinear(y0.domain(), [H - m.b, m.t]);
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).attr('stroke', '#3d3a39');
+    svg.append('g').selectAll('text').data(ticks).join('text').attr('x', m.l - 8).attr('y', y).attr('dy', '.32em').attr('text-anchor', 'end').attr('font-size', 11).attr('fill', MUTED).text(tf);
+    const per = narrow ? 4 : 7, step = Math.max(1, Math.ceil(days.length / per)), N = days.length - 1;
+    const xt = days.map((d, i) => i).filter(i => i === 0 || i === N || (i % step === 0 && N - i >= step * .6));
+    svg.append('g').selectAll('text').data(xt).join('text').attr('x', x).attr('y', H - 6).attr('font-size', 11).attr('fill', MUTED)
+      .attr('text-anchor', (d, k) => k === 0 ? 'start' : k === xt.length - 1 ? 'end' : 'middle').text(i => md(days[i]));
+    const ln = d3.line().defined(v => v != null).curve(d3.curveMonotoneX).x((v, i) => x(i)).y(v => y(v / 10000));
+    lines.forEach(l => svg.append('path').datum(l.v).attr('fill', 'none').attr('stroke', l.c).attr('stroke-width', l.w).attr('stroke-dasharray', l.d).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('d', ln));
+    const li = ci.length - 1; svg.append('circle').attr('cx', x(li)).attr('cy', y(ci[li] / 10000)).attr('r', 3.5).attr('fill', INK);
+    const leg = $('sim-leg'); leg.textContent = '';
+    [['고른 기준값', INK, null, 1.8], ['지금 기준값', MUTED, '5 4', 1.2], ['KODEX 200', BM, '1 4', 1.2]].forEach(([n, c, d, w]) => {
+      const s = document.createElement('span');
+      s.innerHTML = `<svg width="22" height="6" aria-hidden="true"><line x1="1" x2="21" y1="3" y2="3" stroke="${c}" stroke-width="${w}" ${d ? `stroke-dasharray="${d}"` : ''} stroke-linecap="round"/></svg>`;
+      s.append(n); leg.appendChild(s);
+    });
+  }
+  window.addEventListener('resize', () => { if (S && !body.hidden && Math.abs($('sim-ch').clientWidth - lastW) > 4) draw(); });
 })();
 </script>
 <script>

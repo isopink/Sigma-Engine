@@ -85,7 +85,7 @@ assets/     README 그림 · diagrams/*.mmd
 8. 📈KODEX 200: 15:00 · 15:15 회차만, 하루 1번, 손절가 없음, 순익 +2% · 3일, 종목당 최대 20%. 그 밖의 ETF · ETN 차단
 9. 리스크 Hook (PreToolUse, 주문 직전): 현금 · 종목 한도 · 일일 손실 · 당일 상승률 (코스피 +10% · 코스닥 +15%) → 위반 시 차단. `risk_limits.json` 은 에이전트 · 회고 · 조정이 못 바꿈
 10. 자동 조정: 판단을 결과로 채점 → `tuning.json` 범위 · 1회 폭 · 쿨다운 안에서 기준값 0~2개 + 교훈(`work/lessons.json` → 다음 브리핑). 사람 검토 없이 반영되므로 보고서에 기록
-11. 백테스트 (`src/replay.py` · `backtest.py`, 11-19): 기록된 확신도(decision + fill)에 규칙 · 기준값만 바꿔 다시 계산. sizing · risk · monitor 를 그대로 import 하고 시각 · 기록 · 잔고만 시뮬레이션 값으로 바꿔 끼움. 가격 = git 기록의 회차별 장중가 (briefing · holdings), 없으면 일봉 (고+저+종)/3. `tuning.json` 키를 하나씩 · 둘씩 바꿔 학습(앞 60%) · 확인(뒤 40%) 둘 다 나으면 "지지". 결과 `work/backtest/{날짜}.json · .md`, tune 에는 참고 자료로만 (`get_tuning_context.backtest`, 자동 반영 안 함). Claude · 키움 호출 0
+11. 백테스트 (`src/replay.py` · `backtest.py`, 11-19): 기록된 확신도(decision + fill)에 규칙 · 기준값만 바꿔 다시 계산. sizing · risk · monitor 를 그대로 import 하고 시각 · 기록 · 잔고만 시뮬레이션 값으로 바꿔 끼움. 가격 = git 기록의 회차별 장중가 (briefing · holdings), 없으면 일봉 (고+저+종)/3. `tuning.json` 키를 하나씩 · 둘씩 바꿔 학습(앞 60%) · 확인(뒤 40%) 둘 다 나으면 "지지". 결과 `work/backtest/{날짜}.json · .md`, tune 에는 참고 자료로만 (`get_tuning_context.backtest`, 자동 반영 안 함). Claude · 키움 호출 0. 대시보드 Simulator 용으로 매수 기준 · 손절 · 익절 · 하락 국면 상한 네 개의 모든 조합(약 2,300개, 3분)도 미리 계산 → `docs/data/simulator.json`
 
 ## 대시보드 데이터 형식 (에이전트 logger 가 맞춰 씀)
 
@@ -97,6 +97,7 @@ assets/     README 그림 · diagrams/*.mmd
 - `decision.json`: `{time, regime, cap, reason, items: [{code, name, action, qty?, price?, confidence, bull, bear, decision, blocked?}]}` — 최근 판단 1회
 - `debates.json`: 회차별 decision 목록 (최신 120회) · `briefing.json`: 08:30 준비 · 장중 재선별 결과 · `tuning.json`: 조정 이력 · `exchange.json`: 종목 시장
 - `kodex200.json`: 일봉 시가 · 종가 (수익률 비교 기준, 마감 때 `src/benchmark.py`)
+- `simulator.json`: `{days, keys:[{key, label, values, current}], ret, mdd, trades, win, curve, bench, actual}` — 수익률은 0.01% 단위 정수, 조합 index = keys 순서 혼합 진법 (마지막 키가 가장 빨리 바뀜). 16:00 백테스트가 씀
 
 ## 대시보드 규칙 (`docs/index.html`)
 
@@ -106,6 +107,7 @@ assets/     README 그림 · diagrams/*.mmd
 - 움직임 없음 (`no-motion`). 상태 점 깜빡임(실행 중 · 오류)만. `:hover` 규칙 · 말풍선 없음
 - 첫 화면 = Loading → 준비되면 ENTER (`#boot`). 머리글 상태 점 넷: 서버 · 모니터링 · 에이전트 (+ KOSPI 칩). PC 는 그 줄을 맨 위 카드 차트 위 오른쪽 끝으로
 - 맨 위 카드: 누적 수익률 + 핵심 숫자 6개 | 누적 수익률 차트 (Sigma 흰 실선 · KODEX 200 회색 점선, 11/2 ~ 최신일). 그 아래 포트폴리오 (PC 도넛 왼쪽 · 표 오른쪽, 비중 순) → 실시간 판단 (행을 누르면 근거 펼침) → 최근 체결 → 접는 칸 (실시간 KOSPI · 기록 · 자동 조정 기록)
+- Simulator 카드 (실시간 판단 아래, 버튼으로 펼침): 기준값 네 개를 고르면 `simulator.json` 에서 그 조합의 누적 수익률 · 낙폭 · 체결 · 곡선을 보여줌. 계산은 브라우저에서 안 함 (토큰 · 키움 0)
 - 수익률 = 키움 계좌 잔고 그대로 (보정 없음). 비교 기준 KODEX 200 (`kodex200.json`, 장중은 KOSPI 등락으로 추정). KOSPI 기준값 `config.js` `kospiStart`
 - 갱신: 잔고 · 상태 10초, KOSPI · 수급 20초. 서버 점 = heartbeat 3분 넘게 없으면 빨강
 - 캘린더 운영 사고 표시 `CAL_NOTE` (11-11 · 11-12 시스템 오류)
