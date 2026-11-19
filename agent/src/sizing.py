@@ -84,7 +84,7 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
         if not ao.get("enabled"):
             limits["보유 종목 추가 매수 꺼짐"] = 0
         elif held.get("avg_price") and price < held["avg_price"]:
-            limits[f"평단 {held['avg_price']:,.0f}원 대비 손실 중이라 추가 매수 금지"] = 0
+            limits[f"평단 {C.money(held['avg_price'])} 대비 손실 중이라 추가 매수 금지"] = 0
         elif conf < C.buy_threshold(p) - 1e-9 and not xd:
             limits["추가 매수는 정식 매수 기준 이상만 (소액 매수 구간 제외)"] = 0
     if (kb := C.kosdaq_buy_block(code, price, p)):   # 11-17 S.Lee 코스닥: 10:00 이후 · 추격 금지
@@ -94,9 +94,15 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
     hv = C.high_vol(code, p)
     if hv:   # 변동성이 큰 종목은 작게만
         limits["고변동 종목 한도"] = total * hv["weight_cap"] - held_value
+    if C.US:   # us-stocks: 비상 정지 · 종목 범위 · 누적 손실 정지면 0 (Hook 과 같은 검사)
+        import risk
+        for rule, detail in risk.us_guard({"code": code, "side": "매수"}, account, p, r):
+            limits[f"{rule}: {detail}"] = 0
     binding = min(limits, key=limits.get)
     budget = max(0.0, limits[binding])
     unit = price * (1 + p["costs"]["fee_rate"])
+    if C.US:   # 미국은 지정가 = 현재가 + limit_slippage 로 냄 → 그 값으로 수량 계산 (현금 초과 방지)
+        unit *= 1 + ((p.get("us") or {}).get("limit_slippage") or 0)
     qty = math.floor(budget / unit) if price > 0 else 0
     stop_pct, take_pct, max_days = C.exit_levels(code, p)
     if xd:   # 급락일 지수 예외: 익절 순익 +3% · 최대 5일
@@ -106,8 +112,8 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
         "side": "매수", "code": code, "qty": qty, "price": price, "amount": qty * price,
         "confidence": conf, "target_weight": round(w, 4), "regime": regime, "equity_cap": cap,
         "limited_by": binding if qty else (binding if w else "확신도 기준 미달"),
-        "stop": None if C.no_stop(code, p) else round(price * (1 + stop_pct)),
-        "take": round(price * (1 + take_pct)),
+        "stop": None if C.no_stop(code, p) else C.px_round(price * (1 + stop_pct)),
+        "take": C.px_round(price * (1 + take_pct)),
         "max_days": max_days,
         "high_vol": bool(hv), "dip": bool(dp), "index_dip": bool(xd), "inverse": bool(inv), "index": bool(C.index_etf(code, p)),
         "buy_threshold": C.buy_threshold(p),
@@ -142,13 +148,20 @@ def plan_sell(code, conf, price, account, p=None, rule_exit=False):
     kw = not rule_exit and have and C.kosdaq_sell_wait(code, price, p)   # 11-17 S.Lee 코스닥 판단 매도는 5일선 · 20일선 둘 다 이탈 때만
     if kw:
         qty = 0
+    halt = None
+    if C.US:   # us-stocks: 비상 정지면 매도도 0
+        import risk
+        halt = risk.us_halted()
+        if halt:
+            qty = 0
     min_pct = (p["decision"].get("partial_sell") or {}).get("min_amount_pct") or 0
     tiny = part and qty and qty * price < min_pct * account["total"]   # 11-12 S.Lee: 소액 분할 매도 금지 (몇 주씩 쪼개 팔아 비용만 쌓이던 것)
     if tiny:
         qty = 0
     return {"side": "매도", "code": code, "qty": qty, "price": price, "amount": qty * price, "held_qty": have,
             "confidence": conf, "partial": part, "rule_exit": rule_exit,
-            "limited_by": (f"{wait} 이후에만 판단 매도" if wait
+            "limited_by": (f"비상 정지 ({halt})" if halt
+                           else f"{wait} 이후에만 판단 매도" if wait
                            else kw if kw
                            else "소액 분할 매도 금지 (절반 금액 < 총자산 %.0f%%, 전량은 확신도 %.2f 이상이거나 손절·익절·보유일)" % (min_pct * 100, p["decision"]["partial_sell"]["full_at"]) if tiny
                            else "급락일 예외 매수분 (익절·손절·보유일 규칙 매도만)" if hold

@@ -57,6 +57,31 @@ def stamp(dt=None):
     return (dt or now()).strftime("%Y-%m-%d %H:%M")
 
 
+def code_market(code):
+    """종목코드 형식으로 시장 판별: 'KR' (6자리, 숫자로 시작) | 'US' (영문 티커, BRK.B 같은 점 · 하이픈 포함) | None."""
+    import re
+    c = str(code or "").strip().upper()
+    if re.fullmatch(r"\d[0-9A-Z]{5}", c):
+        return "KR"
+    if re.fullmatch(r"[A-Z]{1,5}([.\-][A-Z]{1,2})?", c):
+        return "US"
+    return None
+
+
+def universe(p=None):
+    """US 주문 가능 종목 {티커: {name, exchange, index}} (config/us/universe.json, 주 1회 갱신). KR 은 빈 dict."""
+    if not US:
+        return {}
+    f = ((p or params()).get("screen") or {}).get("universe_file", "universe.json")
+    return (read_json(os.path.join(CONFIG, f), {}) or {}).get("tickers") or {}
+
+
+def in_universe(code, p=None):
+    """US: S&P 500 · 나스닥 100 구성 종목이거나 params 의 SPY · SH 면 True (레버리지 · 기타 ETF 차단)."""
+    p = p or params()
+    return code in universe(p) or bool(market_etf(code, p)[0])
+
+
 def px_round(x):
     """가격 반올림: 원화는 원 단위(int), 달러는 센트."""
     return round(x) if PX_DIGITS == 0 else round(float(x), PX_DIGITS)

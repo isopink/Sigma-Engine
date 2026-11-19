@@ -24,6 +24,32 @@ def orders_this_run():
     return sum(1 for x in C.read_jsonl(C.JOURNAL) if x["kind"] == "fill" and x.get("run") == run)
 
 
+def us_halted(r=None):
+    """미국 비상 정지 사유 (없으면 None). risk_limits.enabled=false 또는 work_us/STOP 파일."""
+    r = r or C.risk_limits()
+    if not r.get("enabled"):
+        return "config/us/risk_limits.json enabled=false"
+    if os.path.exists(C.STOP_FILE):
+        return "work_us/STOP 파일 있음"
+    return None
+
+
+def us_guard(order, account, p, r):
+    """SIGMA_MARKET=US 에서만: 비상 정지 · 시장 · 종목 범위 · 누적 손실 정지. 매도도 비상 정지면 막음."""
+    bad, code = [], order["code"]
+    if (why := us_halted(r)):
+        bad.append(("비상 정지", f"미국 주문 전부 차단 ({why})"))
+    if C.code_market(code) != "US":
+        bad.append(("시장", f"{code} 는 미국 티커 형식이 아님 (미국 실행은 미국 주식만)"))
+    if order["side"] == "매수":
+        if r.get("universe_only") and not C.in_universe(code, p):
+            bad.append(("종목 범위", f"{code} 는 S&P 500 · 나스닥 100 · 지정 ETF 밖 (레버리지 · 기타 ETF 금지)"))
+        init = r.get("initial_capital") or 0
+        if r.get("total_loss_halt") and init and account.get("total") and account["total"] / init - 1 <= r["total_loss_limit"]:
+            bad.append(("누적 손실 정지", f"누적 {account['total'] / init - 1:+.1%} ≤ {r['total_loss_limit']:.0%}, 신규 매수 중단 (사람이 풀어야 함)"))
+    return bad
+
+
 def check(order, account, price, p=None, r=None):
     """order: {code, side, qty, confidence}. 위반한 규칙 목록을 [(rule, detail)] 로 돌려줌. 빈 목록 = 통과."""
     p, r = p or C.params(), r or C.risk_limits()
@@ -34,6 +60,8 @@ def check(order, account, price, p=None, r=None):
     held = next((h for h in account["holdings"] if h["code"] == code), None)
     bad = []
 
+    if C.US:   # us-stocks 11-19: 실제 돈 계좌 안전장치 (KR 대회 검사는 아래 그대로)
+        bad += us_guard(order, account, p, r)
     if qty <= 0:
         bad.append(("수량", "주문 수량이 0 이하"))
     if price <= 0:
@@ -55,7 +83,7 @@ def check(order, account, price, p=None, r=None):
         amount = qty * price
         xd = C.index_dip(code, order.get("today_change"), p) if side == "매수" else None   # 급락일 지수 예외: 종목·1회 주문 한도를 그 비중까지
         if amount > max(r["max_order_amount"], total * xd["weight"] * 1.001 if xd else 0):
-            bad.append(("1회 주문 한도", f"{amount:,.0f}원 > {r['max_order_amount']:,}원"))
+            bad.append(("1회 주문 한도", f"{C.money(amount)} > {C.money(r['max_order_amount'])}"))
         pos_after = (held["qty"] if held else 0) * price + amount
         if pos_after > total * max(r["max_weight_per_stock"], xd["weight"] if xd else 0) * 1.001:
             bad.append(("종목 한도", f"매수 후 비중 {pos_after / total:.1%} > {r['max_weight_per_stock']:.0%}"))
@@ -93,7 +121,7 @@ def check(order, account, price, p=None, r=None):
             if not (p["decision"].get("add_on") or {}).get("enabled"):
                 bad.append(("추가 매수", "보유 종목 추가 매수가 꺼져 있음"))
             elif held.get("avg_price") and price < held["avg_price"]:
-                bad.append(("추가 매수", f"현재가 {price:,.0f}원 < 평단 {held['avg_price']:,.0f}원, 손실 중 물타기 금지"))
+                bad.append(("추가 매수", f"현재가 {C.money(price)} < 평단 {C.money(held['avg_price'])}, 손실 중 물타기 금지"))
             elif conf < C.buy_threshold(p) - 1e-9 and not xd:
                 bad.append(("추가 매수", f"확신도 {conf:.2f} < 매수 기준 {C.buy_threshold(p):.2f}, 소액 매수 구간으로는 추가 매수 안 함"))
         if xd and C.inverse_held(account, p):   # 11-06 S.Lee: 급락일 KODEX 200 매수 전 인버스 전량 매도

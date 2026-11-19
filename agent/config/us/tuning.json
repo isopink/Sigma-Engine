@@ -1,0 +1,93 @@
+{
+  "_note": "미국 기준값 자동 조정 규칙 (국내와 같은 키 · 범위). 요일은 뉴욕 기준 평일",
+  "weekdays": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "max_changes_per_run": 2,
+  "cooldown_runs": 1,
+  "_keys_note": "min~max = 허용 범위, step = 한 번에 바꿀 수 있는 최대 폭",
+  "keys": {
+    "decision.buy_min_confidence": {
+      "label": "매수 확신도 기준",
+      "min": 0.5,
+      "max": 0.75,
+      "step": 0.05
+    },
+    "decision.sell_min_confidence": {
+      "label": "매도 확신도 기준",
+      "min": 0.5,
+      "max": 0.75,
+      "step": 0.05
+    },
+    "decision.full_size_confidence": {
+      "label": "최대 비중 확신도",
+      "min": 0.7,
+      "max": 0.9,
+      "step": 0.05
+    },
+    "decision.min_weight": {
+      "label": "최소 종목 비중",
+      "min": 0.05,
+      "max": 0.15,
+      "step": 0.025
+    },
+    "decision.max_weight": {
+      "label": "최대 종목 비중",
+      "min": 0.05,
+      "max": 0.2,
+      "step": 0.025
+    },
+    "decision.stop_loss_pct": {
+      "label": "손절선",
+      "min": -0.1,
+      "max": -0.04,
+      "step": 0.01
+    },
+    "decision.take_profit_pct": {
+      "label": "익절선",
+      "min": 0.06,
+      "max": 0.25,
+      "step": 0.03
+    },
+    "regime_cap.상승": {
+      "label": "상승 국면 비중 상한",
+      "min": 0.5,
+      "max": 0.9,
+      "step": 0.1
+    },
+    "regime_cap.횡보": {
+      "label": "횡보 국면 비중 상한",
+      "min": 0.3,
+      "max": 0.8,
+      "step": 0.1
+    },
+    "regime_cap.하락": {
+      "label": "하락 국면 비중 상한",
+      "min": 0.1,
+      "max": 0.6,
+      "step": 0.1
+    },
+    "screen.max_vol20": {
+      "label": "후보 변동성 상한",
+      "min": 0.6,
+      "max": 1.5,
+      "step": 0.2
+    },
+    "screen.spike_ret5": {
+      "label": "5일 급등 감점 기준",
+      "min": 0.1,
+      "max": 0.3,
+      "step": 0.05
+    },
+    "screen.spike_penalty": {
+      "label": "5일 급등 감점 폭",
+      "min": 0.2,
+      "max": 1.0,
+      "step": 0.2
+    }
+  }
+}
