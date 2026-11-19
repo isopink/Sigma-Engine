@@ -38,6 +38,7 @@
     "min_trades": 0
   },
   "decision": {
+    "_pending": "임시값 (11-19). 매수 · 매도 확신도 기준 · 비중 · 손절 · 익절 · 보유일은 국내 값을 그대로 복사한 것. S.Lee 가 미국 기준을 정하기 전까지 확정 아님",
     "buy_min_confidence": 0.67,
     "sell_min_confidence": 0.55,
     "full_size_confidence": 0.8,
