@@ -43,12 +43,14 @@ def cached_change(code, max_age=600):
 
 def build_account(cash, holdings):
     stock = sum(h["value"] for h in holdings)
-    return {"total": round(cash + stock), "cash": round(cash), "stock_value": round(stock), "holdings": holdings}
+    return {"total": C.px_round(cash + stock), "cash": C.px_round(cash), "stock_value": C.px_round(stock), "holdings": holdings,
+            "currency": C.CURRENCY}
 
 
 # ---------------- 가상 계좌 ----------------
 class MockBroker:
     name = "mock"
+    MARKETS = {"KR"}
 
     def __init__(self):
         from pykrx import stock  # 무거워서 mock 일 때만 불러옴
@@ -78,11 +80,12 @@ class MockBroker:
         hs = []
         for code, pos in self.state["positions"].items():
             px = self.quote(code)
-            hs.append({"code": code, "name": pos["name"], "qty": pos["qty"], "avg_price": round(pos["avg_price"]),
-                       "price": px, "value": px * pos["qty"], "pnl_pct": round(px / pos["avg_price"] - 1, 4)})
+            hs.append({"code": code, "name": pos["name"], "qty": pos["qty"], "avg_price": C.px_round(pos["avg_price"]),
+                       "price": px, "value": C.px_round(px * pos["qty"]), "pnl_pct": round(px / pos["avg_price"] - 1, 4)})
         return save_account(build_account(self.state["cash"], hs))
 
     def order(self, code, name, side, qty):
+        check_market(self, code)
         p = C.params()["costs"]
         px = self.quote(code)
         pos = self.state["positions"].get(code)
@@ -111,8 +114,11 @@ class MockBroker:
 class KiwoomBroker:
     """주의: 주문(kt10000/kt10001)·현재가(ka10001) 필드는 대회 계좌 발급 후 실제 응답으로 확인 필요."""
     name = "live"
+    MARKETS = {"KR"}   # 대회 계좌: 국내 주식만 (us-stocks 11-19)
 
     def __init__(self):
+        if C.US:
+            raise RuntimeError("SIGMA_MARKET=US 에서는 키움(대회 계좌)을 쓰지 않음")
         sys.path.insert(0, C.LIVE)
         import snapshot as S  # live/snapshot.py: load_env, get_token, post_json, get_balance, num
         self.S = S
@@ -195,6 +201,7 @@ class KiwoomBroker:
         return save_account(build_account(cash, hs))
 
     def order(self, code, name, side, qty):
+        check_market(self, code)
         api = "kt10000" if side == "매수" else "kt10001"
         before = next((h["qty"] for h in (C.read_json(C.ACCOUNT, {}) or {}).get("holdings", []) if h["code"] == code), 0)
         res = self._call("/api/dostk/ordr", api, {
@@ -225,5 +232,19 @@ class KiwoomBroker:
         return {"ok": True, "order_no": order_no, "price": px, "qty": moved or qty, "filled": moved > 0}
 
 
+def check_market(brk, code):
+    """브로커가 맡은 시장이 아니면 주문 거절 (대회 계좌로 미국 주문 · 미국 계좌로 국내 주문이 나가지 않도록).
+    KR 은 실행 시장만 확인 (대회 검사용 가짜 코드 'A' 등이 mock 에서 쓰임), US 는 티커 형식까지 확인."""
+    if C.MARKET not in brk.MARKETS:
+        raise RuntimeError(f"{type(brk).__name__} 는 {sorted(brk.MARKETS)} 전용 · 지금 실행 시장 {C.MARKET}")
+    if C.US and C.code_market(code) != "US":
+        raise RuntimeError(f"{code} 는 미국 티커가 아님")
+    if not C.US and C.code_market(code) == "US" and brk.name == "live":
+        raise RuntimeError(f"{code} 는 미국 티커 · 대회 계좌는 국내 주식만")
+
+
 def get():
+    if C.US:   # us-stocks: 한국투자증권 해외주식 (src/kis.py). 키움 대회 계좌는 절대 쓰지 않음
+        import kis
+        return kis.KisUsBroker() if C.mode() == "live" else kis.MockUsBroker()
     return KiwoomBroker() if C.mode() == "live" else MockBroker()
