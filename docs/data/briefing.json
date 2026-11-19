@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "12:30",
-    "pool": 378,
+    "time": "13:15",
+    "pool": 421,
     "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-19",
+          "title": "아모레퍼시픽도 강세…한중 교류 복원 기대에 화장품주 재평가 부각",
+          "risk": false
+        },
+        {
+          "date": "11-19",
           "title": "'아모레퍼시픽 효자' 설화수의 글로벌 행보 [뉴스Q]",
           "risk": false
         },
@@ -109,18 +114,13 @@
           "date": "11-19",
           "title": "바이오 신약부터 더마 코스메틱까지… 아모레퍼시픽·LG생활건강 동반 ...",
           "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자 \"아모레퍼시픽 글로벌 성장 지속, 더마·헤어 브랜드 실적 확대...",
-          "risk": false
         }
       ],
-      "price": 139700,
-      "chg": 0.0689,
-      "activity": 2.79,
+      "price": 141500,
+      "chg": 0.0826,
+      "activity": 2.87,
       "foreign_today": 0,
-      "inst_today": 1536700000,
+      "inst_today": 4669500000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.805,
+      "score": 0.902,
       "news": [
         {
           "date": "11-18",
@@ -141,11 +141,138 @@
           "risk": false
         }
       ],
-      "price": 13920,
-      "chg": 0.0545,
-      "activity": 1.95,
-      "foreign_today": 682080000,
-      "inst_today": 334080000,
+      "price": 14100,
+      "chg": 0.0682,
+      "activity": 1.84,
+      "foreign_today": 3792900000,
+      "inst_today": 451200000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "145020",
+      "name": "휴젤",
+      "close": 199800,
+      "ret5": 0.0163,
+      "ret20": 0.0713,
+      "rsi14": 59.3,
+      "vol20": 0.374,
+      "foreign_net": -6503770600,
+      "inst_net": 9700135300,
+      "score": 0.867,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "휴젤, 글로벌 에스테틱 리딩 기업 정조준",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "톡신으로 세계를 연 휴젤, '토탈 에스테틱'으로 다음 25년 연다",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "장두현號 휴젤, 취임 후 단 한 분기도 안 꺾였다…다음은 美",
+          "risk": false
+        }
+      ],
+      "price": 209000,
+      "chg": 0.0529,
+      "activity": 1.44,
+      "foreign_today": 0,
+      "inst_today": 627000000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "086450",
+      "name": "동국제약",
+      "close": 24600,
+      "ret5": -0.0428,
+      "ret20": 0.0103,
+      "rsi14": 54.5,
+      "vol20": 0.528,
+      "foreign_net": 1533377700,
+      "inst_net": 7444916300,
+      "score": 0.783,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "‘제약’ 벗고 ‘뷰티’ 입는다…동국제약 권병훈, ‘DK센텔리안’ 연착...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "동국제약, 반려동물 시장 공략… 펫케어 제품 5종 추가",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
+          "risk": false
+        }
+      ],
+      "price": 26000,
+      "chg": 0.0656,
+      "activity": 1.6,
+      "foreign_today": 0,
+      "inst_today": 416000000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "089860",
+      "name": "롯데렌탈",
+      "close": 58500,
+      "ret5": 0.0,
+      "ret20": 0.1782,
+      "rsi14": 74.7,
+      "vol20": 0.447,
+      "foreign_net": -2764054250,
+      "inst_net": 8732145600,
+      "score": 0.643,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "롯데렌탈 G car, 충남 관광 캐릭터 '워디·가디'와 제휴 프로모션 실시",
+          "risk": false
+        }
+      ],
+      "foreign_today": 1053000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "214450",
+      "name": "파마리서치",
+      "close": 271000,
+      "ret5": 0.084,
+      "ret20": 0.0285,
+      "rsi14": 57.4,
+      "vol20": 0.586,
+      "foreign_net": 1503651250,
+      "inst_net": 12508935250,
+      "score": 0.601,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "파마리서치 '리쥬란', 세계일류상품 선정...수출 비중 48%",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "톡스앤필, 파마리서치 '리쥬란'과 11월 30일까지 콜라보 프로젝트 운영",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "파마리서치 ‘리쥬란’, 2026 ‘현재 세계일류상품’ 선정",
+          "risk": false
+        }
+      ],
+      "price": 277000,
+      "chg": 0.0453,
+      "activity": 1.36,
+      "foreign_today": 0,
+      "inst_today": 277000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -158,7 +285,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.655,
+      "score": 0.552,
       "news": [
         {
           "date": "11-19",
@@ -177,121 +304,39 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 609000000,
+      "inst_today": 913500000,
       "exchange": "KOSPI"
     },
     {
-      "code": "259960",
-      "name": "크래프톤",
-      "close": 202500,
-      "ret5": 0.0379,
-      "ret20": 0.0427,
-      "rsi14": 52.5,
-      "vol20": 0.597,
-      "foreign_net": -16149913800,
-      "inst_net": -8273335450,
-      "score": 0.619,
+      "code": "001040",
+      "name": "CJ",
+      "close": 115600,
+      "ret5": 0.0149,
+      "ret20": -0.043,
+      "rsi14": 48.7,
+      "vol20": 0.402,
+      "foreign_net": 2310959350,
+      "inst_net": -1944358500,
+      "score": 0.517,
       "news": [
         {
           "date": "11-19",
-          "title": "김창한 크래프톤 대표 \"10년 연속 지스타 참가…창의적 도전 이어갈 것...",
+          "title": "[민주 식품가] hy·BBQ·CJ프레시웨이",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "\"아이브 올까?\"…크래프톤 지스타 부스, 신작 시연에 팬 체험까지 '북적...",
+          "title": "[민주 식품가] 팔도·동아오츠카·CJ제일제당",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "크래프톤, 지스타 10년 연속 참가…신작 5종 시연·아이브 팬 행사",
+          "title": "CJ프레시웨이, 영남권 외식사업자 대상 피자 세미나 개최",
           "risk": false
         }
       ],
-      "foreign_today": 810000000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "close": 32000,
-      "ret5": 0.0,
-      "ret20": 0.0339,
-      "rsi14": 53.0,
-      "vol20": 0.435,
-      "foreign_net": -24016672300,
-      "inst_net": 2843162775,
-      "score": 0.575,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "카카오게임즈 ‘도깨비의세계’ 양대 앱마켓 매출 1위",
-          "risk": false
-        }
-      ],
-      "price": 31850,
-      "chg": 0.0016,
-      "activity": 0.66,
-      "foreign_today": 127400000,
-      "inst_today": 159250000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "086450",
-      "name": "동국제약",
-      "close": 24600,
-      "ret5": -0.0428,
-      "ret20": 0.0103,
-      "rsi14": 54.5,
-      "vol20": 0.528,
-      "foreign_net": 1533377700,
-      "inst_net": 7444916300,
-      "score": 0.566,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "‘제약’ 벗고 ‘뷰티’ 입는다…동국제약 권병훈, ‘DK센텔리안’ 연착...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "동국제약, 반려동물 시장 공략… 펫케어 제품 5종 추가",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
-          "risk": false
-        }
-      ],
-      "price": 25600,
-      "chg": 0.0492,
-      "activity": 1.33,
       "foreign_today": 0,
-      "inst_today": 25600000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "011200",
-      "name": "HMM",
-      "close": 22300,
-      "ret5": 0.1122,
-      "ret20": -0.0409,
-      "rsi14": 52.8,
-      "vol20": 0.44,
-      "foreign_net": 31328111150,
-      "inst_net": -6239667840,
-      "score": 0.549,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
-          "risk": false
-        }
-      ],
-      "foreign_today": 780500000,
-      "inst_today": 0,
+      "inst_today": 578000000,
       "exchange": "KOSPI"
     },
     {
@@ -304,7 +349,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.549,
+      "score": 0.476,
       "news": [
         {
           "date": "11-19",
@@ -323,131 +368,29 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 357900000,
+      "inst_today": 715800000,
       "exchange": "KOSPI"
     },
     {
-      "code": "128940",
-      "name": "한미약품",
-      "close": 439500,
-      "ret5": -0.1049,
-      "ret20": 0.1551,
-      "rsi14": 49.4,
-      "vol20": 0.638,
-      "foreign_net": 5649878250,
-      "inst_net": 3781596500,
-      "score": 0.54,
+      "code": "011200",
+      "name": "HMM",
+      "close": 22300,
+      "ret5": 0.1122,
+      "ret20": -0.0409,
+      "rsi14": 52.8,
+      "vol20": 0.44,
+      "foreign_net": 31328111150,
+      "inst_net": -6239667840,
+      "score": 0.455,
       "news": [
         {
           "date": "11-19",
-          "title": "유한양행 83억ㆍ녹십자 70억ㆍ한미약품 44억 기부금 지출",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "낮아진 뇌졸중 콜레스테롤 목표, 한미약품 '로수젯·아모프렐' 내밀었다",
+          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
           "risk": false
         }
       ],
-      "foreign_today": 1318500000,
+      "foreign_today": 1115000000,
       "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "089860",
-      "name": "롯데렌탈",
-      "close": 58500,
-      "ret5": 0.0,
-      "ret20": 0.1782,
-      "rsi14": 74.7,
-      "vol20": 0.447,
-      "foreign_net": -2764054250,
-      "inst_net": 8732145600,
-      "score": 0.522,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "롯데렌탈 G car, 충남 관광 캐릭터 '워디·가디'와 제휴 프로모션 실시",
-          "risk": false
-        }
-      ],
-      "foreign_today": 175500000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "004020",
-      "name": "현대제철",
-      "close": 29050,
-      "ret5": 0.0035,
-      "ret20": 0.032,
-      "rsi14": 52.9,
-      "vol20": 0.571,
-      "foreign_net": 1230037175,
-      "inst_net": 5726044375,
-      "score": 0.478,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "현대제철 당진제철소, 지역 수험생 1,200여 명 응원",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "2027 수능 이모저모/ 당진 현대제철이 응원합니다",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "현대제철 임직원·마중물 봉사단, 수험생 응원",
-          "risk": false
-        }
-      ],
-      "foreign_today": 116200000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "032640",
-      "name": "LG유플러스",
-      "close": 15500,
-      "ret5": 0.0,
-      "ret20": 0.0445,
-      "rsi14": 54.2,
-      "vol20": 0.415,
-      "foreign_net": -7560092250,
-      "inst_net": 8632040710,
-      "score": 0.381,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "[통신 브리핑] SK텔레콤·KT·SK브로드밴드·LG유플러스",
-          "risk": false
-        }
-      ],
-      "foreign_today": 139500000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 32150,
-      "ret5": 0.0206,
-      "ret20": 0.0206,
-      "rsi14": 52.1,
-      "vol20": 0.35,
-      "foreign_net": -22663130825,
-      "inst_net": 42319866025,
-      "score": 0.319,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 225050000,
       "exchange": "KOSPI"
     },
     {
@@ -460,7 +403,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.31,
+      "score": 0.399,
       "news": [
         {
           "date": "11-19",
@@ -479,7 +422,58 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 88300000,
+      "inst_today": 618100000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "034730",
+      "name": "SK",
+      "close": 493500,
+      "ret5": -0.008,
+      "ret20": 0.0281,
+      "rsi14": 49.1,
+      "vol20": 0.828,
+      "foreign_net": -18944817000,
+      "inst_net": 42286971250,
+      "score": 0.385,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "\"수험생, 고생했어요! …SKT, 가요대전·영화·AI 혜택 쏜다",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "KB증권 \"AI 규제, 수요 못 꺾어…삼성전자·SK하이닉스 최선호\"",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[더벨][thebell League Table | 2026 이사회 평가] SK·KT·SK바이오팜, 성...",
+          "risk": false
+        }
+      ],
+      "price": 494500,
+      "chg": 0.0082,
+      "activity": 0.48,
+      "foreign_today": 0,
+      "inst_today": 1483500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32150,
+      "ret5": 0.0206,
+      "ret20": 0.0206,
+      "rsi14": 52.1,
+      "vol20": 0.35,
+      "foreign_net": -22663130825,
+      "inst_net": 42319866025,
+      "score": 0.378,
+      "news": [],
+      "foreign_today": 964500000,
+      "inst_today": 225050000,
       "exchange": "KOSPI"
     },
     {
@@ -492,27 +486,109 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.301,
+      "score": 0.357,
       "news": [
+        {
+          "date": "11-19",
+          "title": "NH투자증권, 연말까지 'N2 연금저축계좌 순입금 이벤트'",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "NH투자증권, 'N2 연금저축계좌 순입금 이벤트'",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "NH투자증권, 연말정산 절세 겨냥 'N2 연금저축계좌 순입금 이벤트' 실시",
           "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자증권 \"내년 K뷰티 수출 178억달러…역대 최대 전망\"",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자증권, 연말 연금저축 순입금 이벤트 진행",
-          "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 46500000,
+      "inst_today": 279000000,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "032640",
+      "name": "LG유플러스",
+      "close": 15500,
+      "ret5": 0.0,
+      "ret20": 0.0445,
+      "rsi14": 54.2,
+      "vol20": 0.415,
+      "foreign_net": -7560092250,
+      "inst_net": 8632040710,
+      "score": 0.245,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "[기업들] 삼성SDI·SK케미칼·LG유플러스, 사업 범위 확대 나서",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[통신 브리핑] SK텔레콤·KT·SK브로드밴드·LG유플러스",
+          "risk": false
+        }
+      ],
+      "foreign_today": 93000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "356860",
+      "name": "티엘비",
+      "close": 42000,
+      "ret5": 0.098,
+      "ret20": 0.0619,
+      "rsi14": 54.5,
+      "vol20": 1.798,
+      "foreign_net": 1721167725,
+      "inst_net": 19862349325,
+      "score": 0.86,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "티엘비 주가, 11월 18일 애프터마켓 41,450원 3.63% 상승",
+          "risk": false
+        }
+      ],
+      "price": 44650,
+      "chg": 0.0785,
+      "activity": 1.53,
+      "foreign_today": 0,
+      "inst_today": 1339500000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "347700",
+      "name": "스피어",
+      "close": 16500,
+      "ret5": 0.0274,
+      "ret20": -0.2747,
+      "rsi14": 44.8,
+      "vol20": 1.11,
+      "foreign_net": -3024748215,
+      "inst_net": 2410895635,
+      "score": 0.846,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "넥스트바이오메디컬, 넥스피어에프 美 임상 126명 시술 완료∙∙∙2028년...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "AI 기반 무역결제 시장 불 붙는다… 美 스피어랩스·에이루트, 스테이블...",
+          "risk": false
+        }
+      ],
+      "price": 17740,
+      "chg": 0.0844,
+      "activity": 1.77,
+      "foreign_today": 372540000,
+      "inst_today": 390280000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "272450",
@@ -524,7 +600,7 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.717,
+      "score": 0.727,
       "news": [
         {
           "date": "11-19",
@@ -533,8 +609,43 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 289340000,
+      "inst_today": 750720000,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "232140",
+      "name": "와이씨",
+      "close": 15170,
+      "ret5": 0.2283,
+      "ret20": 0.0859,
+      "rsi14": 60.2,
+      "vol20": 1.37,
+      "foreign_net": -15163088550,
+      "inst_net": 27088362955,
+      "score": 0.692,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "에스티아이·와이씨 매수 불끈… HBM 관련주 투자심리 달아오른다",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
+          "risk": false
+        }
+      ],
+      "price": 15340,
+      "chg": 0.0275,
+      "activity": 1.63,
+      "foreign_today": 0,
+      "inst_today": 751660000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "009420",
@@ -546,7 +657,7 @@
       "vol20": 1.003,
       "foreign_net": -8875301300,
       "inst_net": 23467521250,
-      "score": 0.699,
+      "score": 0.657,
       "news": [
         {
           "date": "11-17",
@@ -559,106 +670,9 @@
           "risk": false
         }
       ],
-      "foreign_today": 316200000,
-      "inst_today": 0,
+      "foreign_today": 263500000,
+      "inst_today": 368900000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "181710",
-      "name": "NHN",
-      "close": 72100,
-      "ret5": -0.1021,
-      "ret20": 0.2627,
-      "rsi14": 63.1,
-      "vol20": 1.342,
-      "foreign_net": 6179943350,
-      "inst_net": -1654368500,
-      "score": 0.619,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "목표가 하향이 상향의 5배…NHN 등 하락장 속 눈높이 높아져",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NHN '최애의 아이' 첫 공식 퍼즐 게임, 글로벌 170여개국 출시",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NHN KCP, AI 에이전트 결제·정산 기술 검증…스테이블코인 결제 상용화...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 288400000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "263860",
-      "name": "지니언스",
-      "close": 35950,
-      "ret5": 0.3934,
-      "ret20": 0.7579,
-      "rsi14": 72.2,
-      "vol20": 1.656,
-      "foreign_net": 542177575,
-      "inst_net": 6081908050,
-      "score": 0.566,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "지니언스 주가, 11월 19일 장중 38,800원 0.91% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "클라우드 넘어 AI 보안까지…지니언스·파수·이글루에 러브콜 몰리나",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[오늘의 특징주] 삼성전자·원익홀딩스·지니언스",
-          "risk": false
-        }
-      ],
-      "price": 37700,
-      "chg": -0.0195,
-      "activity": 1.72,
-      "foreign_today": 0,
-      "inst_today": 452400000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "218410",
-      "name": "RFHIC",
-      "close": 56800,
-      "ret5": 0.0234,
-      "ret20": 0.1858,
-      "rsi14": 57.6,
-      "vol20": 1.242,
-      "foreign_net": -27651921250,
-      "inst_net": 34237007000,
-      "score": 0.549,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "RFHIC 주가, 11월 18일 장중 55,800원 2.01% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "RFHIC 주가, 11월 17일 애프터마켓 55,400원 3.36% 상승",
-          "risk": false
-        }
-      ],
-      "price": 53900,
-      "chg": -0.0323,
-      "activity": 0.61,
-      "foreign_today": 0,
-      "inst_today": 53900000,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "069500",
