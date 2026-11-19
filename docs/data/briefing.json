@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "12:00",
+    "time": "12:01",
     "pool": 379,
     "analyzed_new": 30,
     "passed": 21,
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 139100,
-      "chg": 0.0643,
-      "activity": 2.96,
+      "price": 139600,
+      "chg": 0.0681,
+      "activity": 2.97,
       "foreign_today": 0,
-      "inst_today": 1530100000,
+      "inst_today": 1535600000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.828,
       "foreign_net": -1284328150,
       "inst_net": 38086031300,
-      "score": 0.921,
+      "score": 0.924,
       "news": [
         {
           "date": "11-19",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 180800,
-      "chg": 0.0852,
+      "price": 181000,
+      "chg": 0.0864,
       "activity": 4.57,
       "foreign_today": 0,
-      "inst_today": 904000000,
+      "inst_today": 905000000,
       "exchange": "KOSPI"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.772,
+      "score": 0.781,
       "news": [
         {
           "date": "11-18",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 13820,
-      "chg": 0.047,
-      "activity": 2.03,
-      "foreign_today": 677180000,
-      "inst_today": 331680000,
+      "price": 13755,
+      "chg": 0.042,
+      "activity": 2.02,
+      "foreign_today": 673995000,
+      "inst_today": 330120000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +193,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.673,
+      "score": 0.676,
       "news": [
         {
           "date": "11-19",
@@ -225,7 +225,7 @@
       "vol20": 0.44,
       "foreign_net": 31328111150,
       "inst_net": -6239667840,
-      "score": 0.564,
+      "score": 0.571,
       "news": [
         {
           "date": "11-19",
@@ -247,7 +247,7 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.554,
+      "score": 0.562,
       "news": [
         {
           "date": "11-19",
@@ -282,7 +282,7 @@
       "vol20": 0.638,
       "foreign_net": 5649878250,
       "inst_net": 3781596500,
-      "score": 0.554,
+      "score": 0.562,
       "news": [
         {
           "date": "11-19",
@@ -305,36 +305,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "035720",
-      "name": "카카오",
-      "close": 32000,
-      "ret5": 0.0,
-      "ret20": 0.0339,
-      "rsi14": 53.0,
-      "vol20": 0.435,
-      "foreign_net": -24016672300,
-      "inst_net": 2843162775,
-      "score": 0.545,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "소비자원 “AI 부당광고 차단”… 네이버·카카오·틱톡과 협력",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "단톡방서 함께 쓰고 번역까지…카카오톡, '톡보드'·자동 번역 선보여",
-          "risk": false
-        }
-      ],
-      "price": 31750,
-      "chg": -0.0016,
-      "activity": 0.67,
-      "foreign_today": 127000000,
-      "inst_today": 158750000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "161890",
       "name": "한국콜마",
       "close": 119300,
@@ -344,7 +314,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.545,
+      "score": 0.552,
       "news": [
         {
           "date": "11-19",
@@ -367,6 +337,36 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "035720",
+      "name": "카카오",
+      "close": 32000,
+      "ret5": 0.0,
+      "ret20": 0.0339,
+      "rsi14": 53.0,
+      "vol20": 0.435,
+      "foreign_net": -24016672300,
+      "inst_net": 2843162775,
+      "score": 0.543,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "소비자원 “AI 부당광고 차단”… 네이버·카카오·틱톡과 협력",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "단톡방서 함께 쓰고 번역까지…카카오톡, '톡보드'·자동 번역 선보여",
+          "risk": false
+        }
+      ],
+      "price": 31750,
+      "chg": -0.0016,
+      "activity": 0.67,
+      "foreign_today": 127000000,
+      "inst_today": 158750000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "004020",
       "name": "현대제철",
       "close": 29050,
@@ -376,7 +376,7 @@
       "vol20": 0.571,
       "foreign_net": 1230037175,
       "inst_net": 5726044375,
-      "score": 0.485,
+      "score": 0.476,
       "news": [
         {
           "date": "11-19",
@@ -408,7 +408,7 @@
       "vol20": 0.415,
       "foreign_net": -7560092250,
       "inst_net": 8632040710,
-      "score": 0.396,
+      "score": 0.39,
       "news": [
         {
           "date": "11-19",
@@ -430,7 +430,7 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.337,
+      "score": 0.333,
       "news": [],
       "foreign_today": 0,
       "inst_today": 225050000,
@@ -446,7 +446,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.327,
+      "score": 0.324,
       "news": [
         {
           "date": "11-19",
@@ -478,7 +478,7 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.307,
+      "score": 0.305,
       "news": [
         {
           "date": "11-19",
@@ -532,7 +532,7 @@
       "vol20": 1.003,
       "foreign_net": -8875301300,
       "inst_net": 23467521250,
-      "score": 0.723,
+      "score": 0.724,
       "news": [
         {
           "date": "11-17",
@@ -550,6 +550,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "181710",
+      "name": "NHN",
+      "close": 72100,
+      "ret5": -0.1021,
+      "ret20": 0.2627,
+      "rsi14": 63.1,
+      "vol20": 1.342,
+      "foreign_net": 6179943350,
+      "inst_net": -1654368500,
+      "score": 0.619,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "목표가 하향이 상향의 5배…NHN 등 하락장 속 눈높이 높아져",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "NHN '최애의 아이' 첫 공식 퍼즐 게임, 글로벌 170여개국 출시",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "NHN KCP, AI 에이전트 결제·정산 기술 검증…스테이블코인 결제 상용화...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 288400000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "263860",
       "name": "지니언스",
       "close": 35950,
@@ -559,7 +591,7 @@
       "vol20": 1.656,
       "foreign_net": 542177575,
       "inst_net": 6081908050,
-      "score": 0.574,
+      "score": 0.571,
       "news": [
         {
           "date": "11-19",
@@ -577,11 +609,11 @@
           "risk": false
         }
       ],
-      "price": 37350,
-      "chg": -0.0286,
-      "activity": 1.89,
+      "price": 37200,
+      "chg": -0.0325,
+      "activity": 1.88,
       "foreign_today": 0,
-      "inst_today": 448200000,
+      "inst_today": 446400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -594,7 +626,7 @@
       "vol20": 1.242,
       "foreign_net": -27651921250,
       "inst_net": 34237007000,
-      "score": 0.535,
+      "score": 0.533,
       "news": [
         {
           "date": "11-18",
@@ -607,46 +639,11 @@
           "risk": false
         }
       ],
-      "price": 54100,
-      "chg": -0.0287,
+      "price": 53900,
+      "chg": -0.0323,
       "activity": 0.66,
       "foreign_today": 0,
-      "inst_today": 54100000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "328130",
-      "name": "루닛",
-      "close": 15830,
-      "ret5": 0.1397,
-      "ret20": 0.3565,
-      "rsi14": 58.7,
-      "vol20": 1.419,
-      "foreign_net": 2764709000,
-      "inst_net": 13056079915,
-      "score": 0.475,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "[브랜드평판] 건강관리기술 상장기업 11월 빅데이터…1위 루닛·2위 씨어...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "루닛·뷰노·제이엘케이, 글로벌 의료 AI 시장 확대 수혜 기대할까",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "루닛, 건강관리기술 브랜드평판 1위…씨어스·비트컴퓨터 順",
-          "risk": false
-        }
-      ],
-      "price": 15700,
-      "chg": -0.0038,
-      "activity": 0.43,
-      "foreign_today": 0,
-      "inst_today": 62800000,
+      "inst_today": 53900000,
       "exchange": "KOSDAQ"
     },
     {
