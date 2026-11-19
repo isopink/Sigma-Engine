@@ -469,7 +469,7 @@ def metrics(res, data, start=None, end=None, r=None):
         peak = max(peak, v)
         mdd = min(mdd, v / peak - 1)
     bench, b0 = bench_curve(data)
-    bdays = [d for d in sorted(bench) if d < start]
+    bdays = [d for d in sorted(bench) if days[0] <= d < start]   # 첫 구간은 시작일 시가 (대시보드와 같음. 11-19 전날 종가로 잡던 것 고침)
     bbase = bench[bdays[-1]] if bdays else b0
     bret = bench.get(end) / bbase - 1 if bench.get(end) and bbase else None
     fills = [f for f in res["fills"] if start <= f["time"][:10] <= end]

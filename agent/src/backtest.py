@@ -6,12 +6,14 @@
 3. 탐색: config/tuning.json 의 키를 하나씩 범위(min~max, step 간격) 안에서 바꿔 재현, 좋은 것끼리 둘씩 조합
 4. walk-forward: 앞 구간(학습)에서 고르고 뒤 구간(확인)에서 확인. 둘 다 기준보다 나아야 '지지'
 5. 결과: work/backtest/{날짜}.json · .md → 16:00 조정(get_tuning_context 의 backtest)이 참고 자료로 읽음 (자동 반영 안 함)
+6. 대시보드 Simulator: SIM_KEYS 네 개의 모든 조합을 미리 계산 → docs/data/simulator.json (브라우저는 고르기만, 토큰 0)
 
 점수 = KODEX 200 대비 초과수익률. 단 MDD 가 기준보다 1%p 넘게 나빠지거나 거래가 대회 최소(8회) 미만이면 제외.
 """
 import argparse
 import copy
 import itertools
+import json
 import os
 import sys
 
@@ -28,6 +30,10 @@ LIMITS = [
     "판단 시점 가격은 git 기록의 회차별 장중 가격, 없으면 일봉 (고+저+종)/3. 회차 사이 손절 · 익절은 일봉 저가 · 고가로 근사 (둘 다 닿으면 손절 먼저)",
     "에이전트가 규칙과 다르게 한 판단(기준 이상인데 관망 등)은 규칙대로 처리",
 ]
+
+
+# 11-19 S.Lee: 대시보드 Simulator 에서 바꿔 볼 기준값 (수익률을 가장 크게 움직인 넷). 값 = tuning.json 범위 + 지금 값
+SIM_KEYS = ["decision.buy_min_confidence", "decision.stop_loss_pct", "decision.take_profit_pct", "regime_cap.하락"]
 
 
 def set_value(p, key, v):
@@ -79,7 +85,44 @@ def discretion(data, p):
     return {"count": len(out), "examples": out[:8]}
 
 
-def main(journal=None, ref="HEAD", fetch=True, out_dir=None, quick=False):
+def simulator_grid(data, p, rl, report):
+    """SIM_KEYS 의 모든 조합을 전 기간 재현 → 대시보드용 숫자. 수익률 · 낙폭 · 승률은 0.01% 단위 정수 (파일 크기)."""
+    bp = lambda v: None if v is None else round(v * 10000)
+    keys = []
+    for k in SIM_KEYS:
+        sec, leaf = k.split(".", 1)
+        cur = p[sec][leaf]
+        vals = sorted(set(grid(rl["keys"][k])) | {round(cur, 4)})
+        keys.append({"key": k, "label": rl["keys"][k]["label"], "values": vals, "current": round(cur, 4)})
+    init = C.risk_limits()["initial_capital"]
+    ret, mdd, trades, win, curve = [], [], [], [], []
+    for combo in itertools.product(*[k["values"] for k in keys]):
+        q = copy.deepcopy(p)
+        for k, v in zip(keys, combo):
+            set_value(q, k["key"], v)
+        res = R.simulate(data, q)
+        m = R.metrics(res, data)
+        ret.append(bp(m["return"]))
+        mdd.append(bp(m["mdd"]))
+        trades.append(m["trades"])
+        win.append(bp(m["win_rate"]))
+        curve.append([bp(e["total"] / init - 1) for e in res["equity"]])
+    bench, b0 = R.bench_curve(data)
+    actual = {e["date"]: e["total"] for e in data["equity"]}
+    days = data["days"]
+    return {
+        "asof": report["asof"], "days": days, "init": init,
+        "keys": keys, "order": "keys 순서대로, 마지막 키가 가장 빨리 바뀜 (index = 혼합 진법)",
+        "bench": [bp(bench[d] / b0 - 1) if bench.get(d) and b0 else None for d in days],
+        "actual": [bp(actual[d] / init - 1) if actual.get(d) else None for d in days],
+        "ret": ret, "mdd": mdd, "trades": trades, "win": win, "curve": curve,
+        "regime_days": report["regime_days"],
+        "validation": {"final_gap": report["validation"]["final_gap"], "recall": report["validation"]["recall"]},
+        "limits": report["limits"][:3],
+    }
+
+
+def main(journal=None, ref="HEAD", fetch=True, out_dir=None, quick=False, sim_out=C.DOCS_DATA):
     p, rl = C.params(), C.read_json(os.path.join(C.CONFIG, "tuning.json"))
     data = R.load_data(journal, ref, fetch)
     days = data["days"]
@@ -185,6 +228,10 @@ def main(journal=None, ref="HEAD", fetch=True, out_dir=None, quick=False):
     with open(path[:-5] + ".md", "w", encoding="utf-8") as f:
         f.write(markdown(report))
     C.write_json(os.path.join(out_dir, "latest.json"), {"path": os.path.basename(path), **summary(report)})
+    if sim_out:
+        sim = simulator_grid(data, p, rl, report)
+        with open(os.path.join(sim_out, "simulator.json"), "w", encoding="utf-8") as f:   # 한 줄로 (대시보드가 받는 크기)
+            json.dump(sim, f, ensure_ascii=False, separators=(",", ":"))
     return path, report
 
 
@@ -251,8 +298,10 @@ if __name__ == "__main__":
     ap.add_argument("--out", help="결과 폴더 (기본 work/backtest)")
     ap.add_argument("--quick", action="store_true", help="두 개 조합 생략")
     ap.add_argument("--quiet", action="store_true", help="요약 한 줄만 출력 (run.py tune)")
+    ap.add_argument("--sim-out", default=C.DOCS_DATA, help="대시보드 Simulator 파일 폴더 (기본 docs/data)")
+    ap.add_argument("--no-sim", action="store_true", help="Simulator 조합 계산 생략")
     a = ap.parse_args()
-    path, rep = main(a.journal, a.ref, not a.no_fetch, a.out, a.quick)
+    path, rep = main(a.journal, a.ref, not a.no_fetch, a.out, a.quick, None if a.no_sim else a.sim_out)
     if a.quiet:
         v, f = rep["validation"], rep["baseline"]["full"]
         print(f"백테스트 {rep['days'][-1]}: 지금 기준값 초과 {_pct(f['excess'])} · MDD {_pct(f['mdd'])} · 검증 자산 차이 {_pct(v['final_gap'])} · 체결 일치 {v['recall']:.0%} → {path}")
