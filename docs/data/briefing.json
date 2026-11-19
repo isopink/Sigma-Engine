@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "11:45",
+    "time": "11:46",
     "pool": 378,
     "analyzed_new": 30,
     "passed": 20,
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 138700,
-      "chg": 0.0612,
-      "activity": 2.97,
+      "price": 138100,
+      "chg": 0.0566,
+      "activity": 3.03,
       "foreign_today": 0,
-      "inst_today": 1525700000,
+      "inst_today": 1519100000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.828,
       "foreign_net": -1284328150,
       "inst_net": 38086031300,
-      "score": 0.935,
+      "score": 0.917,
       "news": [
         {
           "date": "11-19",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 180100,
-      "chg": 0.081,
+      "price": 180200,
+      "chg": 0.0816,
       "activity": 4.72,
       "foreign_today": 0,
-      "inst_today": 900500000,
+      "inst_today": 901000000,
       "exchange": "KOSPI"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.772,
+      "score": 0.76,
       "news": [
         {
           "date": "11-18",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 13780,
-      "chg": 0.0439,
-      "activity": 2.09,
-      "foreign_today": 675220000,
-      "inst_today": 330720000,
+      "price": 13820,
+      "chg": 0.047,
+      "activity": 2.1,
+      "foreign_today": 677180000,
+      "inst_today": 331680000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +193,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.685,
+      "score": 0.667,
       "news": [
         {
           "date": "11-19",
@@ -216,6 +216,28 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "011200",
+      "name": "HMM",
+      "close": 22300,
+      "ret5": 0.1122,
+      "ret20": -0.0409,
+      "rsi14": 52.8,
+      "vol20": 0.44,
+      "foreign_net": 31328111150,
+      "inst_net": -6239667840,
+      "score": 0.563,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
+          "risk": false
+        }
+      ],
+      "foreign_today": 780500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "128940",
       "name": "한미약품",
       "close": 439500,
@@ -225,7 +247,7 @@
       "vol20": 0.638,
       "foreign_net": 5649878250,
       "inst_net": 3781596500,
-      "score": 0.565,
+      "score": 0.552,
       "news": [
         {
           "date": "11-19",
@@ -248,28 +270,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "011200",
-      "name": "HMM",
-      "close": 22300,
-      "ret5": 0.1122,
-      "ret20": -0.0409,
-      "rsi14": 52.8,
-      "vol20": 0.44,
-      "foreign_net": 31328111150,
-      "inst_net": -6239667840,
-      "score": 0.554,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
-          "risk": false
-        }
-      ],
-      "foreign_today": 780500000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "161890",
       "name": "한국콜마",
       "close": 119300,
@@ -279,7 +279,7 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.554,
+      "score": 0.542,
       "news": [
         {
           "date": "11-19",
@@ -311,7 +311,7 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.543,
+      "score": 0.542,
       "news": [
         {
           "date": "11-19",
@@ -331,7 +331,7 @@
       ],
       "price": 25400,
       "chg": 0.041,
-      "activity": 1.34,
+      "activity": 1.33,
       "foreign_today": 0,
       "inst_today": 25400000,
       "exchange": "KOSDAQ"
@@ -346,8 +346,13 @@
       "vol20": 0.435,
       "foreign_net": -24016672300,
       "inst_net": 2843162775,
-      "score": 0.533,
+      "score": 0.531,
       "news": [
+        {
+          "date": "11-19",
+          "title": "단톡방서 함께 쓰고 번역까지…카카오톡, '톡보드'·자동 번역 선보여",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "JDC-카카오모빌리티, 제주AX 대전환 및 미래 신산업 생태계 조성 맞손",
@@ -356,11 +361,6 @@
         {
           "date": "11-19",
           "title": "카카오뱅크 독주 속 케이뱅크·토스뱅크 순익 격차 29억원",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "카카오톡, 게시판 공동 편집·외국어 자동 번역 도입",
           "risk": false
         }
       ],
@@ -381,7 +381,7 @@
       "vol20": 0.415,
       "foreign_net": -7560092250,
       "inst_net": 8632040710,
-      "score": 0.413,
+      "score": 0.406,
       "news": [
         {
           "date": "11-19",
@@ -403,7 +403,7 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.348,
+      "score": 0.344,
       "news": [],
       "foreign_today": 0,
       "inst_today": 225050000,
@@ -419,7 +419,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.337,
+      "score": 0.333,
       "news": [
         {
           "date": "11-19",
@@ -451,7 +451,7 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.315,
+      "score": 0.312,
       "news": [
         {
           "date": "11-19",
@@ -483,7 +483,7 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.739,
+      "score": 0.74,
       "news": [
         {
           "date": "11-19",
@@ -496,6 +496,33 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "009420",
+      "name": "한올바이오파마",
+      "close": 52700,
+      "ret5": 0.0614,
+      "ret20": 0.2745,
+      "rsi14": 67.0,
+      "vol20": 1.003,
+      "foreign_net": -8875301300,
+      "inst_net": 23467521250,
+      "score": 0.719,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "양 제약지수 약보합세, 한올바이오파마ㆍ동국제약 선전",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "바이오시밀러 관련주 엇갈린 흐름…삼성에피스홀딩스·한올바이오파마...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 316200000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "263860",
       "name": "지니언스",
       "close": 35950,
@@ -505,7 +532,7 @@
       "vol20": 1.656,
       "foreign_net": 542177575,
       "inst_net": 6081908050,
-      "score": 0.587,
+      "score": 0.583,
       "news": [
         {
           "date": "11-19",
@@ -523,11 +550,11 @@
           "risk": false
         }
       ],
-      "price": 37750,
-      "chg": -0.0182,
-      "activity": 2.04,
+      "price": 37700,
+      "chg": -0.0195,
+      "activity": 2.03,
       "foreign_today": 0,
-      "inst_today": 453000000,
+      "inst_today": 452400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -540,7 +567,7 @@
       "vol20": 1.242,
       "foreign_net": -27651921250,
       "inst_net": 34237007000,
-      "score": 0.554,
+      "score": 0.552,
       "news": [
         {
           "date": "11-18",
@@ -553,11 +580,11 @@
           "risk": false
         }
       ],
-      "price": 53900,
-      "chg": -0.0323,
+      "price": 54100,
+      "chg": -0.0287,
       "activity": 0.69,
       "foreign_today": 0,
-      "inst_today": 53900000,
+      "inst_today": 54100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -570,7 +597,7 @@
       "vol20": 1.419,
       "foreign_net": 2764709000,
       "inst_net": 13056079915,
-      "score": 0.467,
+      "score": 0.469,
       "news": [
         {
           "date": "11-19",
@@ -588,28 +615,12 @@
           "risk": false
         }
       ],
-      "price": 15720,
-      "chg": -0.0025,
-      "activity": 0.44,
+      "price": 15740,
+      "chg": -0.0013,
+      "activity": 0.43,
       "foreign_today": 0,
-      "inst_today": 62880000,
+      "inst_today": 62960000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "281820",
-      "name": "케이씨텍",
-      "close": 79200,
-      "ret5": 0.0574,
-      "ret20": -0.2104,
-      "rsi14": 49.5,
-      "vol20": 1.517,
-      "foreign_net": -11796977500,
-      "inst_net": 18643601050,
-      "score": 0.413,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 158400000,
-      "exchange": "KOSPI"
     },
     {
       "code": "069500",
