@@ -25,8 +25,11 @@ def orders_this_run():
 
 
 def us_halted(r=None):
-    """미국 비상 정지 사유 (없으면 None). risk_limits.enabled=false 또는 work_us/STOP 파일."""
+    """미국 비상 정지 사유 (없으면 None). risk_limits.enabled=false 또는 work_us/STOP 파일 또는 전략 미정(strategy_us.READY=False)."""
     r = r or C.risk_limits()
+    S = C.strategy()
+    if S and not getattr(S, "READY", False):
+        return "src/strategy_us.py READY=False (메인 설계 미정)"
     if not r.get("enabled"):
         return "config/us/risk_limits.json enabled=false"
     if os.path.exists(C.STOP_FILE):
@@ -50,6 +53,17 @@ def us_guard(order, account, p, r):
     return bad
 
 
+def strategy_rules(order, account, price, p=None):
+    """us-stocks: strategy_us.risk_rules 추가 규칙 [(rule, detail)]. 국내면 []. 전략 함수가 오류를 내면 막음 (fail closed)."""
+    S = C.strategy()
+    if not S:
+        return []
+    try:
+        return [(f"전략 · {a}", b) for a, b in (S.risk_rules(order, account, price, C.strategy_ctx(order["code"], p, account=account)) or [])]
+    except Exception as e:  # noqa: BLE001
+        return [("전략 규칙 오류", f"{type(e).__name__}: {e}")]
+
+
 def check(order, account, price, p=None, r=None):
     """order: {code, side, qty, confidence}. 위반한 규칙 목록을 [(rule, detail)] 로 돌려줌. 빈 목록 = 통과."""
     p, r = p or C.params(), r or C.risk_limits()
@@ -62,6 +76,7 @@ def check(order, account, price, p=None, r=None):
 
     if C.US:   # us-stocks 11-19: 실제 돈 계좌 안전장치 (KR 대회 검사는 아래 그대로)
         bad += us_guard(order, account, p, r)
+        bad += strategy_rules({**order, "code": code, "side": side, "qty": qty, "confidence": conf}, account, price, p)
     if qty <= 0:
         bad.append(("수량", "주문 수량이 0 이하"))
     if price <= 0:
@@ -75,7 +90,11 @@ def check(order, account, price, p=None, r=None):
     if side == "매수":
         if run_mode == "exit":
             bad.append(("실행 종류", "손절·익절 실행에서는 매수 금지"))
-        if conf < C.probe_floor(p) - 1e-9 and not C.index_dip(code, order.get("today_change"), p):   # 소액 매수 구간까지 허용. 급락일 지수 예외는 확신도 기준 없음 (크기만 비례)
+        sw = sizing.strategy_weight(code, conf, account, p, r, None) if C.US else None   # us-stocks: 전략 비중이 있으면 확신도 기준 대신 그 값
+        if sw is not None:
+            if sw <= 0:
+                bad.append(("확신도", f"{conf:.2f} → 미국 전략 비중 0 (매수 안 함)"))
+        elif conf < C.probe_floor(p) - 1e-9 and not C.index_dip(code, order.get("today_change"), p):   # 소액 매수 구간까지 허용. 급락일 지수 예외는 확신도 기준 없음 (크기만 비례)
             bad.append(("확신도", f"{conf:.2f} < 매수 기준 {C.buy_threshold(p):.2f} (소액 매수 {C.probe_floor(p):.2f})"))
         chg, lim = order.get("today_change"), C.buy_day_limit(code, r, p)   # 코스닥 +15% (11-09)
         if chg is not None and chg >= lim:
@@ -142,7 +161,14 @@ def check(order, account, price, p=None, r=None):
         have = held["qty"] if held else 0
         if qty > have:
             bad.append(("보유 수량", f"매도 {qty}주 > 보유 {have}주 (공매도 불가)"))
-        if run_mode != "exit" and conf < p["decision"]["sell_min_confidence"] and not order.get("rule_exit"):
+        cap_q, part = sizing.sell_qty(have, conf, p, order.get("rule_exit") or run_mode == "exit", code, account)
+        custom_sell = C.US and run_mode != "exit" and not order.get("rule_exit") and C.strategy().sell_qty(code, have, conf, C.strategy_ctx(code, p, default=cap_q, account=account)) is not None
+        if custom_sell:   # us-stocks: 미국 전략 매도 수량이 있으면 확신도 기준 대신 그 수량
+            if cap_q <= 0:
+                bad.append(("확신도", f"{conf:.2f} → 미국 전략 매도 수량 0"))
+            elif qty > cap_q:
+                bad.append(("전략 매도 수량", f"최대 {cap_q}주 (요청 {qty}주)"))
+        elif run_mode != "exit" and conf < p["decision"]["sell_min_confidence"] and not order.get("rule_exit"):
             bad.append(("확신도", f"{conf:.2f} < 매도 기준 {p['decision']['sell_min_confidence']:.2f}"))
         if run_mode != "exit" and not order.get("rule_exit") and (f := C.etf_wait(code, p)):   # 11-06 S.Lee: 시장 ETF 판단 매도도 trade_from 이후만
             bad.append((f"{C.market_etf(code, p)[1]} 시간", f"{C.market_etf(code, p)[1]} 판단 매도는 {f} 이후에만"))
@@ -150,8 +176,9 @@ def check(order, account, price, p=None, r=None):
             bad.append(("코스닥 판단 매도", kw))
         if run_mode != "exit" and not order.get("rule_exit") and C.dip_held(code):   # 11-06 급락일 예외 매수분은 판단 매도 금지
             bad.append(("급락일 예외 보유", "급락일 예외로 산 지수 ETF 는 익절·손절·보유일 규칙 매도만"))
-        cap_q, part = sizing.sell_qty(have, conf, p, order.get("rule_exit") or run_mode == "exit")
-        if part and C.sold_today(code):
+        if custom_sell:
+            pass
+        elif part and C.sold_today(code):
             bad.append(("분할 매도", f"오늘 이미 분할 매도한 종목 · 확신도 {conf:.2f} < 전량 기준 {p['decision']['partial_sell']['full_at']:.2f}이면 하루 1번만"))
         elif part and qty > cap_q:
             bad.append(("분할 매도", f"확신도 {conf:.2f} < 전량 기준 {p['decision']['partial_sell']['full_at']:.2f} → 최대 {cap_q}주 (요청 {qty}주)"))

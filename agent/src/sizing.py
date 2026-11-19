@@ -48,6 +48,9 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
     ix = C.index_etf(code, p)
     top = inv["weight_cap"] if inv else ix.get("weight_cap") if ix else None   # 인버스·지수(11-05)는 종목당 10% 대신 자기 한도 20%까지
     w = target_weight(conf, p, r, top=top)
+    sw = strategy_weight(code, conf, account, p, r, w)   # us-stocks: 미국 전략 비중 (None = 기존 계산)
+    if sw is not None:
+        w = sw
     if inv and w > 0 and inv.get("min_weight"):   # 11-06 하락 국면 인버스 최소 10% (소액 2%로만 들어가던 문제). 국면 제한은 아래에서 따로
         w = max(w, min(inv["min_weight"], inv["weight_cap"]))
     dp = C.dip(code, p)
@@ -98,6 +101,8 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
         import risk
         for rule, detail in risk.us_guard({"code": code, "side": "매수"}, account, p, r):
             limits[f"{rule}: {detail}"] = 0
+        for rule, detail in risk.strategy_rules({"code": code, "side": "매수", "qty": None, "confidence": conf}, account, price, p):
+            limits[f"{rule}: {detail}"] = 0
     binding = min(limits, key=limits.get)
     budget = max(0.0, limits[binding])
     unit = price * (1 + p["costs"]["fee_rate"])
@@ -111,7 +116,7 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
     return {
         "side": "매수", "code": code, "qty": qty, "price": price, "amount": qty * price,
         "confidence": conf, "target_weight": round(w, 4), "regime": regime, "equity_cap": cap,
-        "limited_by": binding if qty else (binding if w else "확신도 기준 미달"),
+        "limited_by": binding if qty else (binding if w else ("전략 비중 0" if sw is not None else "확신도 기준 미달")),
         "stop": None if C.no_stop(code, p) else C.px_round(price * (1 + stop_pct)),
         "take": C.px_round(price * (1 + take_pct)),
         "max_days": max_days,
@@ -121,12 +126,28 @@ def plan_buy(code, conf, price, account, p=None, r=None, regime=None, today_chan
     }
 
 
-def sell_qty(have, conf, p, rule_exit=False):
-    """판단 매도 분할 (11-05): 보정 후 확신도가 매도 기준 ~ full_at 이면 fraction 만(올림), 그 이상·규칙 매도면 전량."""
+def strategy_weight(code, conf, account, p, r, default):
+    """us-stocks: strategy_us.buy_weight 결과 (0 ~ 종목당 한도로 자름). 국내 · 전략 미정이면 None."""
+    S = C.strategy()
+    if not S:
+        return None
+    o = S.buy_weight(code, conf, C.strategy_ctx(code, p, default=default, account=account))
+    return None if o is None else max(0.0, min(float(o), r["max_weight_per_stock"]))
+
+
+def sell_qty(have, conf, p, rule_exit=False, code=None, account=None):
+    """판단 매도 분할 (11-05): 보정 후 확신도가 매도 기준 ~ full_at 이면 fraction 만(올림), 그 이상·규칙 매도면 전량.
+    (수량, 분할 여부). us-stocks: 미국 전략 sell_qty 가 있으면 판단 매도 수량은 그 값 (규칙 매도는 항상 전량)."""
     ps = p["decision"].get("partial_sell") or {}
     if rule_exit or not ps.get("enabled") or conf >= ps["full_at"] - 1e-9 or have <= 1:
-        return have, False
-    return min(have, math.ceil(have * ps["fraction"])), True
+        res = have, False
+    else:
+        res = min(have, math.ceil(have * ps["fraction"])), True
+    S = C.strategy() if code and not rule_exit else None
+    if S and (o := S.sell_qty(code, have, conf, C.strategy_ctx(code, p, default=res[0], account=account))) is not None:
+        q = max(0, min(int(o), have))
+        return q, 0 < q < have
+    return res
 
 
 def plan_sell(code, conf, price, account, p=None, rule_exit=False):
@@ -135,7 +156,7 @@ def plan_sell(code, conf, price, account, p=None, rule_exit=False):
     p = p or C.params()
     held = next((h for h in account["holdings"] if h["code"] == code), None)
     have = held["qty"] if held else 0
-    qty, part = sell_qty(have, conf, p, rule_exit)
+    qty, part = sell_qty(have, conf, p, rule_exit, code, account)
     again = part and C.sold_today(code)   # 11-05 HMM: 15분마다 절반씩 팔아 1시간 만에 97% 매도 → 분할은 하루 1번
     if again:
         qty = 0
@@ -152,6 +173,10 @@ def plan_sell(code, conf, price, account, p=None, rule_exit=False):
     if C.US:   # us-stocks: 비상 정지면 매도도 0
         import risk
         halt = risk.us_halted()
+        halt = f"비상 정지 ({halt})" if halt else None
+        if not halt and have:
+            sr = risk.strategy_rules({"code": code, "side": "매도", "qty": qty, "confidence": conf, "rule_exit": rule_exit}, account, price, p)
+            halt = " / ".join(f"{a}: {b}" for a, b in sr) or None
         if halt:
             qty = 0
     min_pct = (p["decision"].get("partial_sell") or {}).get("min_amount_pct") or 0
@@ -160,7 +185,7 @@ def plan_sell(code, conf, price, account, p=None, rule_exit=False):
         qty = 0
     return {"side": "매도", "code": code, "qty": qty, "price": price, "amount": qty * price, "held_qty": have,
             "confidence": conf, "partial": part, "rule_exit": rule_exit,
-            "limited_by": (f"비상 정지 ({halt})" if halt
+            "limited_by": (halt if halt
                            else f"{wait} 이후에만 판단 매도" if wait
                            else kw if kw
                            else "소액 분할 매도 금지 (절반 금액 < 총자산 %.0f%%, 전량은 확신도 %.2f 이상이거나 손절·익절·보유일)" % (min_pct * 100, p["decision"]["partial_sell"]["full_at"]) if tiny

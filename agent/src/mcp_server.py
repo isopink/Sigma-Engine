@@ -104,6 +104,9 @@ def get_briefing() -> str:
     if C.US:
         ctx.append(f"- 1회 주문 최대 {C.money(r['max_order_amount'])} · 일일 손실 {r['daily_loss_limit']:.0%} · 누적 손실 {r['total_loss_limit']:.0%} 이면 신규 매수 중단 · "
                    f"S&P 500 · 나스닥 100 · SPY · SH 만 매수 (레버리지 · 기타 ETF 금지, 코드가 강제)")
+        S = C.strategy()
+        ctx.append(f"- 미국 전략: {S.NAME}" + ("" if S.READY else " · 아직 확정 전이라 주문은 전부 막힘 (확신도 · 기록만)"))
+        ctx += [f"- {x}" for x in S.RULES_TEXT]
     if (hv := p.get("high_vol")) and hv.get("enabled"):
         ctx.append(f"- ⚡고변동 종목 (20일 변동성 {p['screen']['max_vol20']:.0%} 초과): 후보에 최대 {hv['max_candidates']}개 따로 포함. "
                    f"종목당 {hv['weight_cap']:.0%} 이하만 (코드가 강제), 손절 {hv['stop_loss_pct']:.0%} · 익절 {hv['take_profit_pct']:+.0%}")

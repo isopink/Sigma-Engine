@@ -480,10 +480,14 @@ def exit_levels(code, p=None, briefing=None):
     p = p or params()
     d, hv = p["decision"], high_vol(code, p, briefing)
     if etf := market_etf(code, p)[0]:
-        return etf.get("stop_loss_pct", d["stop_loss_pct"]), gross_take(etf["take_profit_net_pct"], p, etf.get("sell_tax_rate")), etf.get("max_hold_days", d["max_hold_days"])
-    if hv:
-        return hv["stop_loss_pct"], hv["take_profit_pct"], d["max_hold_days"]
-    return d["stop_loss_pct"], d["take_profit_pct"], d["max_hold_days"]
+        res = etf.get("stop_loss_pct", d["stop_loss_pct"]), gross_take(etf["take_profit_net_pct"], p, etf.get("sell_tax_rate")), etf.get("max_hold_days", d["max_hold_days"])
+    elif hv:
+        res = hv["stop_loss_pct"], hv["take_profit_pct"], d["max_hold_days"]
+    else:
+        res = d["stop_loss_pct"], d["take_profit_pct"], d["max_hold_days"]
+    if (S := strategy()) and (o := S.exit_levels(code, strategy_ctx(code, p, row=briefing_row(code, briefing) or {}, default=res))) is not None:
+        return tuple(o)   # us-stocks: 미국 전략 손절 · 익절 · 보유일
+    return res
 
 
 def conf_boost(code, side, conf, p=None, briefing=None, regime=None):
@@ -522,7 +526,27 @@ def conf_boost(code, side, conf, p=None, briefing=None, regime=None):
             else:
                 add += mb["add"]
                 notes.append(f"{regime} 국면 매수 +{mb['add']:.2f}")
-    return round(min(1.0, conf + add), 3), (" · ".join(notes) or None)
+    res = round(min(1.0, conf + add), 3), (" · ".join(notes) or None)
+    if (S := strategy()) and (o := S.confidence(code, side, conf, strategy_ctx(code, p, row=row, regime=regime, default=res))) is not None:
+        return round(max(0.0, min(1.0, float(o[0]))), 3), o[1]   # us-stocks: 미국 전략 확신도 보정 (strategy_us.py)
+    return res
+
+
+def strategy():
+    """us-stocks: 미국 실행이면 strategy_us 모듈 (S.Lee 메인 설계를 끼우는 곳), 국내면 None (대회 동작 그대로)."""
+    if not US:
+        return None
+    import strategy_us
+    return strategy_us
+
+
+def strategy_ctx(code, p=None, row=None, regime=None, **kw):
+    """strategy_us 함수에 넘기는 공통 자료: p · r · row(브리핑 행) · regime(오늘 국면) + 호출별 값(default · account …)."""
+    if row is None:
+        row = briefing_row(code) or {}
+    if not regime:
+        regime = (latest_regime() or {}).get("regime") or "횡보"
+    return {"p": p or params(), "r": risk_limits(), "row": row, "regime": regime, **kw}
 
 
 def _slot(t=None):

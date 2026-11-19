@@ -23,7 +23,7 @@ def test_kr_default_paths():
     code = ("import common as C, os;"
             "print(C.MARKET, C.CONFIG.endswith(os.path.join('agent','config')), C.WORK.endswith(os.path.join('agent','work')),"
             " C.DOCS_DATA.endswith(os.path.join('docs','data')), C.ENV_FILE.endswith(os.path.join('agent','.env')), C.TZ is C.KST, C.px_round(1234.6))")
-    out = subprocess.run([sys.executable, "-c", code], cwd=os.path.join(AGENT, "src"), env=env, capture_output=True, text=True).stdout.split()
+    out = subprocess.run([sys.executable, "-c", code], cwd=os.path.join(AGENT, "src"), env=env, capture_output=True, text=True, encoding="utf-8", errors="replace").stdout.split()
     assert out == ["KR", "True", "True", "True", "True", "True", "1235"], out
 
 
@@ -39,7 +39,7 @@ def test_us_paths_and_clock():
 
 def test_bad_market_rejected():
     env = {**os.environ, "SIGMA_MARKET": "JP"}
-    r = subprocess.run([sys.executable, "-c", "import common"], cwd=os.path.join(AGENT, "src"), env=env, capture_output=True, text=True)
+    r = subprocess.run([sys.executable, "-c", "import common"], cwd=os.path.join(AGENT, "src"), env=env, capture_output=True, text=True, encoding="utf-8", errors="replace")
     assert r.returncode != 0 and "SIGMA_MARKET" in r.stderr
 
 
@@ -60,6 +60,21 @@ def _with_universe(fn):
     return run
 
 
+def _ready(fn):
+    """전략 확정(READY=True) 상태로 실행 (기본은 False = 주문 전부 차단)."""
+    def run():
+        import strategy_us as S
+        old = S.READY
+        S.READY = True
+        try:
+            fn()
+        finally:
+            S.READY = old
+    run.__name__ = fn.__name__
+    return run
+
+
+@_ready
 @_with_universe
 def _guard_cases():
     import risk
@@ -113,6 +128,7 @@ def test_brokers_refuse_wrong_market():
         pass
 
 
+@_ready
 def test_sizing_us_limit_and_cents():
     import sizing
     p, r = C.params(), {**C.risk_limits(), "enabled": True}
@@ -220,6 +236,57 @@ def test_tick_plan():
     assert plan(26, 10, 0) == []                                 # 추수감사절 휴장
     assert plan(27, 12, 45) == ["decide"] and plan(27, 13, 0) == []   # 조기 마감 13:00 → 12:45 회차까지
     assert plan(28, 10, 0) == []                                 # 토요일
+
+
+def test_strategy_default_halts():
+    """메인 설계 전(READY=False)엔 enabled=true 여도 주문 전부 차단. 국내 실행엔 전략 모듈이 끼지 않음."""
+    import risk
+    import strategy_us as S
+    assert S.READY is False
+    assert "READY" in risk.us_halted({**C.risk_limits(), "enabled": True})
+    env = {k: v for k, v in os.environ.items() if k != "SIGMA_MARKET"}
+    out = subprocess.run([sys.executable, "-c", "import common as C; print(C.strategy())"], cwd=os.path.join(AGENT, "src"),
+                         env=env, capture_output=True, text=True, encoding="utf-8", errors="replace").stdout.strip()
+    assert out == "None", out
+
+
+@_ready
+@_with_universe
+def test_strategy_plugs():
+    """strategy_us 함수를 채우면 plan_order(사이징) · Hook(risk.check) · 손절 익절 계산이 모두 그 값을 씀."""
+    import risk
+    import sizing
+    import strategy_us as S
+    p, r = C.params(), {**C.risk_limits(), "enabled": True}
+    saved = {k: getattr(S, k) for k in ("confidence", "buy_weight", "sell_qty", "exit_levels", "risk_rules")}
+    dp, risk.daily_pnl = risk.daily_pnl, lambda acc: 0.0   # work_us/day_start.json (가상 계좌 기록) 영향 없이
+    rl, C.risk_limits = C.risk_limits, lambda: r              # plan_sell 은 파일의 한도를 읽음 → 켠 상태로
+    try:
+        S.confidence = lambda code, side, conf, ctx: (conf + 0.1, "테스트 +0.1")
+        S.buy_weight = lambda code, conf, ctx: 0.05 if conf >= 0.5 else 0.0
+        S.exit_levels = lambda code, ctx: (-0.04, 0.06, 5)
+        S.sell_qty = lambda code, have, conf, ctx: have if conf >= 0.9 else 0
+        S.risk_rules = lambda order, acc, price, ctx: [("테스트 금지", "BRK.B 금지")] if order["code"] == "BRK.B" else []
+        assert C.conf_boost("AAPL", "매수", 0.45, p)[0] == 0.55
+        acc = _acc(total=7000.0, cash=7000.0)
+        plan = sizing.plan_buy("AAPL", 0.55, 100.0, acc, p, r, regime="상승")
+        assert plan["target_weight"] == 0.05 and plan["qty"] == 3, plan          # 7000 × 5% = 350 → 3주
+        assert plan["stop"] == 96.0 and plan["take"] == 106.0 and plan["max_days"] == 5
+        assert risk.check({"code": "AAPL", "side": "매수", "qty": 3, "confidence": 0.45}, acc, 100.0, p, r) == []   # 0.45 + 0.1 → 비중 5%
+        assert any("확신도" in x for x, _ in risk.check({"code": "AAPL", "side": "매수", "qty": 3, "confidence": 0.3}, acc, 100.0, p, r))
+        assert sizing.plan_buy("BRK.B", 0.9, 100.0, acc, p, r, regime="상승")["qty"] == 0
+        assert any("테스트 금지" in x for x, _ in risk.check({"code": "BRK.B", "side": "매수", "qty": 1, "confidence": 0.9}, acc, 100.0, p, r))
+        held = _acc(total=7000.0, cash=6000.0, hs=[{"code": "AAPL", "name": "Apple", "qty": 10, "avg_price": 100.0, "price": 100.0, "value": 1000.0}])
+        assert sizing.plan_sell("AAPL", 0.6, 100.0, held, p)["qty"] == 0               # plan_sell 은 보정 후 확신도를 받음
+        assert sizing.plan_sell("AAPL", 0.95, 100.0, held, p)["qty"] == 10
+        assert risk.check({"code": "AAPL", "side": "매도", "qty": 10, "confidence": 0.85}, held, 100.0, p, r) == []
+        assert risk.check({"code": "AAPL", "side": "매도", "qty": 10, "confidence": 0.1, "rule_exit": True}, held, 100.0, p, r) == []   # 규칙 매도는 전략 수량과 무관
+        S.risk_rules = lambda *a: 1 / 0
+        assert any("전략 규칙 오류" in x for x, _ in risk.check({"code": "AAPL", "side": "매수", "qty": 3, "confidence": 0.45}, acc, 100.0, p, r))   # 오류면 막음
+    finally:
+        for k, v in saved.items():
+            setattr(S, k, v)
+        risk.daily_pnl, C.risk_limits = dp, rl
 
 
 if __name__ == "__main__":
