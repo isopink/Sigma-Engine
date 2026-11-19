@@ -64,3 +64,26 @@ copy .env.example .env      :: fill KRX_ID / KRX_PW / NAVER_CLIENT_ID / NAVER_CL
 - Without `KRX_ID` / `KRX_PW`, data prep falls back to a fixed large-cap list without investor flow data.
 
 > Kiwoom App Key / Secret and any `.env` file are never committed (excluded via `.gitignore`).
+
+## 미국 주식 (SIGMA_MARKET=US, us-stocks 11-19)
+
+대회 계좌와 별개인 **실제 돈** 미국 주식 계좌 (한국투자증권 KIS). 코드는 같고 실행할 때 시장만 고름.
+
+| | 국내 (기본) | 미국 |
+|---|---|---|
+| 진입점 | `run.bat` | `run_us.bat` (`SIGMA_MARKET=US`) |
+| 설정 | `config/*.json` | `config/us/*.json` (+ `universe.json`) |
+| 키 | `.env` · `live/.env` | `.env.us` (예시 `.env.us.example`) |
+| 작업 파일 | `work/` | `work_us/` |
+| 시각 | 한국 시간 | 뉴욕 시간 (서머타임 자동) |
+| 대시보드 | `docs/index.html` (공개) | `docs/us.html` + `docs/data/us/` (비공개, 로컬) |
+
+처음 켜는 순서
+1. `.env.us.example` 을 `.env.us` 로 복사하고 KIS 키 · 계좌번호 입력 (`MODE=mock` 이면 가상 계좌로 먼저 돌려 볼 수 있음)
+2. `run_us.bat prep` → `run_us.bat decide --dry` 로 브리핑 · 명령 확인
+3. `.\setup_tasks_us.ps1` 로 작업 등록 (SigmaUS-tick · monitor · snapshot)
+4. 첫 실제 주문 전에 `config/us/risk_limits.json` 의 `enabled` 를 사람이 직접 `true` 로 커밋 (기본 false = 비상 정지)
+
+- 비상 정지: `enabled=false` 커밋 또는 `work_us/STOP` 파일 만들기 → 매도 포함 모든 미국 주문 차단
+- 양도세 참고: `run_us.bat tax` → `work_us/tax_{연도}.csv`
+- 화면: `python -m http.server 8000 --directory docs` → http://localhost:8000/us.html
