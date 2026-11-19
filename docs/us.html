@@ -1,268 +1,709 @@
 <!doctype html>
 <!-- Sigma Engine 미국 · Designed by S.Lee -->
-<!-- us-stocks 11-19: 미국 주식(실제 돈 · KIS) 화면. 데이터 docs/data/us/*.json 은 공개 저장소에 올리지 않으므로(.gitignore)
-     실행 PC 에서 docs 폴더를 로컬 서버로 열어 봄: python -m http.server 8000 --directory docs → http://localhost:8000/us.html
-     대회 화면(index.html)과 같은 VOLT 규칙: 평면 카드, 수익 · 매수 빨강, 손실 · 매도 파랑, 움직임 · hover 없음 -->
+<!-- us-stocks 11-19 S.Lee: 국내 화면(index.html)의 형식을 그대로 옮긴 미국 주식 화면. 시작 전이라 카드마다 Prepare to Launch.
+     머리 · 스타일 · Loading · VOLT 블록은 index.html 과 같음 (데이터를 읽는 스크립트만 뺌). 시작하면 카드 안을 실제 숫자로 채움 -->
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sigma Engine 미국</title>
 <meta name="robots" content="noindex">
+<meta name="author" content="S.Lee">
 <link rel="icon" type="image/svg+xml" href="icon.svg?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png?v=3">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=4">
 <meta name="theme-color" content="#101010">
+<script>/* 11-10 S.Lee: 처음에 예전 화면이 잠깐 보이던 것 막기. VOLT 가 켜질 때까지 어두운 빈 화면, 늦어도 3초 뒤엔 보임 */
+if (!/(^|[?&])theme=classic\b/.test(location.search)) { var h = document.documentElement; h.dataset.theme = 'volt'; h.style.background = '#101010'; h.classList.add('volt-wait'); setTimeout(function () { h.classList.remove('volt-wait'); }, 3000); }
+</script>
+<style>html.volt-wait body > *:not(#boot) { visibility: hidden; }
+/* 11-12 S.Lee: 첫 화면 = Loading 글자만 (실시간 잔고까지 받아 대시보드를 다 그리면 사라짐, 움직임 없음) */
+#boot { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 14px; background: #101010; color: #f2f2f2; font: 400 13px "Noto Serif KR", serif; letter-spacing: 4px; text-transform: uppercase; }
+#boot b { font-weight: 400; font-size: clamp(20px, 5vw, 30px); letter-spacing: 1px; text-transform: none; }
+#boot span { color: #8b949e; padding: 6px 14px 6px 18px; border: 1px solid transparent; }
+/* 11-12 S.Lee: 다 그리면 LOADING 글자를 하이라이트(흰 바탕 · 검은 글자), 그때부터 누르면 대시보드. 그 전엔 눌러도 안 넘어감 */
+#boot.ready { cursor: pointer; } #boot.ready span { color: #101010; background: #f2f2f2; border-color: #f2f2f2; }
+#boot:focus-visible { outline: none; } #boot.ready:focus-visible span { outline: 2px solid #f2f2f2; outline-offset: 4px; }
+html.boot-lock, html.boot-lock body { overflow: hidden !important; overscroll-behavior: none; height: 100%; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap">
+<!-- 11-12 로딩 줄이기: d3 를 HTML 을 읽는 동안 미리 받아 둠 (본문은 d3 · VOLT 가 켜질 때까지 숨김), 예전 화면 글꼴 Noto Serif KR 은 ?theme=classic 일 때만 -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap">   <!-- 11-12 S.Lee: 영어 · 한글 모두 Noto Serif KR -->
 <style>
-:root { --bg: #101010; --card: #161616; --line: #2a2a2a; --ink: #f2f2f2; --body: #bdbdbd; --muted: #8c8c8c; --up: #ff5a65; --down: #4e94ff; --ok: #34c759; }
+/* Bento grid on near-black. Rosso Corsa = gains & the one hero line; blue = losses; everything else greyscale. Sharp corners, hairline borders. */
+:root {
+  --canvas: #141414; --card: #1c1c1c; --card-2: #232323; --line: #2a2a2a; --grid: #262626;
+  --ink: #f5f5f5; --body: #a0a0a0; --muted: #8c8c8c;
+  --red: #da291c; --red-hi: #ff5a4a; --blue: #4aa3d4; --grey: #585858;
+  --font: "Noto Serif KR", "AppleMyungjo", "Batang", serif;
+  color-scheme: dark;
+}
 * { box-sizing: border-box; }
-html, body { margin: 0; background: var(--bg); color: var(--body); font: 400 14px/1.55 "Noto Serif KR", serif; font-variant-numeric: tabular-nums; }
-body { overflow-x: hidden; }
-.wrap { max-width: 1200px; margin: 0 auto; padding: 20px 16px 40px; }
-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
-h1 { margin: 0; color: var(--ink); font-size: 20px; font-weight: 600; }
-h2 { margin: 0 0 12px; color: var(--ink); font-size: 15px; font-weight: 600; }
-.dots { display: flex; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 12px; }
-.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--muted); margin-right: 6px; vertical-align: 1px; }
-.dot.ok { background: var(--ok); } .dot.err { background: var(--up); }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 18px; margin-bottom: 16px; min-width: 0; }
-.hero { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; }
-.big { color: var(--ink); font-size: 34px; font-weight: 600; line-height: 1.2; }
-.kpis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; margin-top: 16px; }
-.kpis div span { display: block; color: var(--muted); font-size: 12px; }
-.kpis div b { color: var(--ink); font-weight: 500; font-size: 15px; }
-.up { color: var(--up) !important; } .down { color: var(--down) !important; }
-.chart { width: 100%; min-height: 220px; }
-.chart svg { display: block; width: 100%; height: 240px; }
-.legend { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); font-size: 12px; margin-top: 6px; }
-.legend i { display: inline-block; width: 18px; height: 0; border-top: 2px solid var(--ink); margin-right: 6px; vertical-align: 3px; }
-.legend i.krw { border-top-color: var(--muted); } .legend i.spy { border-top: 2px dashed var(--muted); }
-.tbl { width: 100%; overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { color: var(--muted); font-weight: 400; text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
-td { text-align: right; padding: 8px; border-bottom: 1px solid #1f1f1f; white-space: nowrap; }
-th:first-child, td:first-child, th.l, td.name { text-align: left; }
-td.name { color: var(--ink); max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
-tr.click { cursor: pointer; }
-tr.why td { white-space: normal; text-align: left; color: var(--body); background: #131313; font-size: 13px; }
-tr.why p { margin: 4px 0; } tr.why b { color: var(--muted); font-weight: 400; margin-right: 6px; }
-.empty { color: var(--muted); padding: 8px 0; }
-.note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+html, body { margin: 0; background: var(--canvas); color: var(--ink); }
+body { font-family: var(--font); font-size: 14px; font-variant-numeric: tabular-nums; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1360px; margin: 0 auto; padding-block: 32px 64px; padding-left: max(16px, 3vw, env(safe-area-inset-left, 0px)); padding-right: max(16px, 3vw, env(safe-area-inset-right, 0px)); display: grid; gap: 16px; }
+
+.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; padding-bottom: 16px; }
+.top h1 { margin: 6px 0 0; font-size: clamp(26px, 3.4vw, 40px); font-weight: 500; letter-spacing: -0.8px; line-height: 1.1; }
+.top h1 .tagline { font-size: clamp(13px, 1.3vw, 16px); font-weight: 400; letter-spacing: 0; margin-left: 10px; color: var(--muted); white-space: nowrap; }
+.top h1 .st-top { display: inline-flex; gap: 14px; align-items: center; vertical-align: middle; font-size: 13px; }
+.st-top .who { display: inline-flex; align-items: center; gap: 6px; }
+.st-line[hidden], .kx-row[hidden], .chip[hidden] { display: none !important; }   /* 11-10 hallmark: 데이터 전 빈 KOSPI 칩 숨김 */
+svg [tabindex]:focus-visible { outline: 2px solid #f6e500; outline-offset: 2px; stroke: #f6e500; stroke-width: 2px; }
+html, body { overflow-x: clip; }   /* 11-10 hallmark 34 */   /* 11-10 hallmark 26a: 차트 점 · 도넛 조각 키보드 포커스 */
+.kx-row { font-size: 13px; color: var(--body); text-align: center; padding: 0 0 12px; margin: -4px 0 14px; border-bottom: 1px solid rgba(255,255,255,.07); }
+.kx-row b { color: var(--ink); font-weight: 500; margin: 0 6px 0 4px; }
+.kx-row .kc-rsi { margin-left: 6px; }
+@media (max-width: 640px) { .top .sched { display: none; } }
+.eyebrow { margin: 0; font-size: 12px; font-weight: 600; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 9999px; font-size: 12px; color: var(--body); white-space: nowrap; }
+.chip b { color: var(--ink); font-weight: 500; }
+.chip.live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--red); }
+.sched { margin-top: 14px; }
+.sched .chip.live { border-color: rgba(218,41,28,.5); color: var(--ink); }
+@media (max-width: 640px) { .sched { justify-content: center; } }
+
+.grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); padding: 20px; display: flex; flex-direction: column; gap: 12px; min-width: 0; position: relative; }
+.card .hd { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.card .val { font-size: 28px; font-weight: 500; letter-spacing: -0.5px; line-height: 1; }
+.card .sub { font-size: 12px; color: var(--muted); }
+#sp-week, #sp-dd, #sp-kospi, #sp-win { display: none !important; }   /* 11-12 S.Lee: 기록 카드 4개는 그림 없이 숫자만 */
+.c12 { grid-column: span 12; } .c6 { grid-column: span 6; } .c8 { grid-column: span 8; } .c7 { grid-column: span 7; } .c5 { grid-column: span 5; } .c4 { grid-column: span 4; } .c3 { grid-column: span 3; }
+.up { color: var(--red-hi); } .down { color: var(--blue); }
+.chart { width: 100%; flex: 1; min-height: 56px; }
+.seg { display: inline-flex; border: 1px solid rgba(255,255,255,.09); border-radius: 9999px; padding: 2px; background: rgba(255,255,255,.03); }
+.seg button { font: inherit; font-size: 11px; color: var(--muted); background: none; border: 0; border-radius: 9999px; padding: 3px 10px; cursor: pointer; white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: rgba(255,255,255,.1); color: var(--ink); }
+.chart.empty { min-height: 0 !important; flex: 0 0 auto; }
+.chart svg { display: block; width: 100%; overflow: visible; }
+
+.hero { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: 32px; }
+.hero .big { font-size: clamp(44px, 5.2vw, 72px); font-weight: 500; letter-spacing: -2px; line-height: 1; color: var(--red-hi); margin: 12px 0 8px; }
+.hero .side { display: flex; flex-direction: column; justify-content: flex-start; gap: 28px; }
+.kv { display: grid; gap: 4px; }
+.hero .vs { display: flex; align-items: baseline; gap: 10px; font-size: 18px; margin-top: 8px; }
+.hero .vs.sm { font-size: 13px; margin-top: 4px; }
+.hero .big.won { font-size: clamp(36px, 4.4vw, 60px); letter-spacing: -1.5px; white-space: nowrap; }   /* 누적 손익 (원) */
+.hero .ret-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 6px 20px; }
+.hero .vs-side { display: grid; gap: 4px; font-size: 18px; padding-bottom: 14px; }
+.kv span:last-child { font-size: 18px; font-weight: 500; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 11px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 2px; vertical-align: middle; margin-right: 6px; }
+.legend i.sq { height: 8px; width: 8px; }
+
+
+.tip { position: absolute; z-index: 20; pointer-events: none; background: #0c0c0c; border: 1px solid #333; padding: 10px 12px; font-size: 12px; line-height: 1.55; max-width: 280px; box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+.tip .t { color: var(--muted); margin-bottom: 2px; }
+.tip .r, .dec-detail .r { display: flex; justify-content: space-between; gap: 16px; }
+.tip .r span:first-child, .dec-detail .r span:first-child { color: var(--body); }
+.tip .why { color: var(--body); margin-top: 6px; padding-top: 6px; border-top: 1px solid #262626; }
+.tip .why b { color: var(--ink); font-weight: 500; }
+.tip .tp, .dec-detail .tp { margin: 6px 0 0; color: var(--body); }
+.tip .tp b, .dec-detail .tp b { color: var(--ink); font-weight: 500; }
+@media (max-width: 640px) {
+  /* 휴대폰: 로고 · 제목 · 부제 · 버튼을 한 줄씩 가운데로 */
+  .top { flex-direction: column; align-items: center; text-align: center; gap: 14px; }
+  .brand { flex-direction: column; gap: 10px; }
+  .top h1 .tagline { display: block; margin: 8px 0 0; }
+  .top h1 .st-top { display: flex; }
+  .top h1 { font-size: 28px; }
+  .top { gap: 12px; padding-bottom: 4px; }
+  .wrap { padding-block: 20px 40px; gap: 12px; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+details.log { background: var(--card); border: 1px solid var(--line); }
+details.log summary { cursor: pointer; padding: 16px 20px; font-size: 13px; color: var(--body); list-style: none; display: flex; justify-content: space-between; }
+details.log summary::-webkit-details-marker { display: none; }
+details.log summary::after { content: "+"; color: var(--muted); font-size: 16px; line-height: 1; }
+details.log[open] > summary::after { content: "−"; }
+.st-line { display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 4px 0; font-size: 12px; color: var(--muted); }
+.st-line > span + span::before { content: "·"; margin: 0 8px; color: rgba(255,255,255,.25); }
+.st-line b { color: var(--ink); font-weight: 500; }
+.st-line .who { display: inline-flex; align-items: center; gap: 6px; }
+.st-line b.on { color: var(--red-hi); }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); flex: none; }
+.dot.ok { background: #3ecf8e; box-shadow: 0 0 0 3px rgba(62,207,142,.2); }   /* 11-05 동작 중 = 초록 (글자 On/Off 대신 점 색) */
+.dot.bad { background: var(--red-hi); box-shadow: 0 0 0 3px rgba(255,90,74,.2); animation: dot-bad 1s ease-in-out infinite; }   /* 멈춤·문제 = 빨강 깜빡임 */
+.dot.run { animation: dot-run 1.2s ease-in-out infinite; }   /* 실행 중 = 초록 깜빡임 */
+@keyframes dot-run { 50% { box-shadow: 0 0 0 6px rgba(62,207,142,0); opacity: .45; } }
+@keyframes dot-bad { 50% { box-shadow: 0 0 0 6px rgba(255,90,74,0); opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .dot.run, .dot.bad { animation: none; } }
+.hero-card > .st-line { position: absolute; top: 20px; right: 20px; z-index: 1; flex-direction: column; align-items: flex-end; gap: 6px; }   /* 누적 수익률 카드 우상단, 시장 모니터링 위 · 에이전트 아래 */
+.hero-card > .st-line > span + span::before { content: none; }
+.hero-chart { padding-top: 44px; }   /* 우상단 상태줄과 차트 이름표가 겹치지 않게 */
+@media (max-width: 640px) { .hero-chart { padding-top: 0; } .hero-card > .st-line { position: static; flex-direction: row; gap: 4px 14px; } }   /* 폰: 상태 표시를 위 한 줄로 (KOSPI 대비와 겹침 방지) */
+.dec-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; margin-bottom: 6px; font-size: 13px; color: var(--body); }
+.dec-head b { color: var(--ink); font-weight: 600; }
+.dec-more { display: flex; width: 100%; justify-content: center; align-items: center; gap: 6px; margin-top: 2px; padding: 11px 0 2px; border: 0; border-top: 1px solid rgba(255,255,255,.06); background: none; font: inherit; font-size: 12.5px; color: var(--muted); cursor: pointer; }   /* 11-05 Live Decision 접기 */
+.dec-row[hidden], .dec-more[hidden] { display: none; }
+.dec-more:hover { color: var(--ink); } .dec-more:focus-visible { outline: 2px solid #f6e500; outline-offset: 2px; border-radius: 6px; }
+.dec-more::after { content: "+"; font-size: 15px; line-height: 1; } .dec-more[aria-expanded="true"]::after { content: "−"; }
+/* 오늘 마지막 매매 회차 결과 한 줄 (샀다 / 팔았다 / 막혔다 / 관망) */
+.dec-trade { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin: 2px 0 8px; padding: 8px 12px; border-radius: 10px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); font-size: 13px; color: var(--body); line-height: 1.6; }
+.dec-trade[hidden], .dec-colhead[hidden] { display: none; }
+.dec-trade .t { color: var(--ink); font-weight: 600; }
+.dec-trade .buy { color: var(--red-hi); } .dec-trade .sell { color: #4aa3d4; } .dec-trade .blk { color: var(--muted); }
+.dec-head .why { flex: 1 1 260px; min-width: 0; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dec-row { display: grid; grid-template-columns: minmax(80px, 150px) 78px 128px minmax(0, 1fr); gap: 14px; align-items: center; padding: 11px 0; border-top: 1px solid rgba(255,255,255,.06); font-size: 13px; }
+.dec-row .nm { color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dec-row .nm .vl { display: block; margin-top: 2px; font-size: 11px; color: var(--muted); }   /* 20일 변동성 */
+.dec-row .nm .vl.hi { color: var(--red-hi); }
+.dec-row .nm .ex { margin-left: 6px; font-size: 11px; color: var(--muted); }   /* 시장 (Kospi · Kosdaq · ETF) */
+.dec-row .act { justify-self: start; font-size: 12px; padding: 2px 10px; border-radius: 9999px; border: 1px solid rgba(255,255,255,.14); color: var(--body); white-space: nowrap; }
+.dec-row .act.buy { color: var(--red-hi); border-color: rgba(255,90,74,.45); }
+.dec-row .act.sell { color: #4aa3d4; border-color: rgba(74,163,212,.45); }
+.dec-row .cf { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--body); }
+.dec-row .cf i { position: relative; flex: 1; height: 4px; border-radius: 2px; background: rgba(255,255,255,.08); }
+.dec-row .cf i b { position: absolute; inset: 0 auto 0 0; border-radius: 2px; background: #6a6a6a; }
+.dec-row .cf i b.hi { background: var(--red-hi); }
+.dec-row .why { min-width: 0; color: var(--body); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dec-row .why em { font-style: normal; color: var(--red-hi); }
+@media (min-width: 641px) {   /* 11-13 S.Lee: PC 판단 행 — 누르면 판단 근거 전체 + 매수 측 · 매도 측 근거를 근거 칸 아래로 펼침 */
+  .dec-row[role="button"] { cursor: pointer; }
+  .dec-row.open .why { white-space: normal; overflow: visible; }
+  .dec-row .dec-detail { grid-column: 4 / -1; padding: 0 0 6px; font-size: 12px; line-height: 1.7; color: var(--body); white-space: normal; max-width: 960px; }
+  .dec-row .dec-detail .t, .dec-row .dec-detail .tp.dc { display: none; }
+  .dec-row .dec-detail .r { justify-content: flex-start; gap: 12px; }
+}
+/* 폰: 꼭 필요한 정보만 (11-03). 판단 행은 종목·확신도만, 탭하면 근거가 행 아래로 펼쳐짐 (11-05) */
+/* 폰은 홍보용 (11-03): 수익률·응원·매수매도 판단·보유 손익·KOSPI·캘린더만. 상세는 PC */
+.m-only { display: none; }
+@media (max-width: 640px) { .m-hide { display: none !important; } .m-only { display: block; } .dec-list .dec-row .why { display: none; } }
+@media (max-width: 640px) {
+  .dec-row { grid-template-columns: minmax(0, 1fr) auto 104px; gap: 6px 10px; cursor: pointer; }
+  .dec-row .cf::after { content: "+"; font-size: 15px; line-height: 1; color: var(--muted); }
+  .dec-row.open .cf::after { content: "−"; }
+  .dec-detail { grid-column: 1 / -1; padding: 2px 0 6px; font-size: 13px; line-height: 1.6; color: var(--body); }
+  .dec-detail .t { display: none; }
+  .dec-row .why { grid-column: 1 / -1; white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+}
+/* 11-10 가독성 개편: 엔진 요약 */
+.eng-sum { gap: 22px; }
+.eng { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.eng-h { display: flex; align-items: center; justify-content: flex-start; gap: 8px; flex-wrap: nowrap; }
+.eng .st-line { order: 2; } .eng .who.solo { padding: 4px; margin: -4px; cursor: help; }
+.eng .st-line { position: static; flex-direction: row; gap: 4px 12px; }
+.eng .st-line > span + span::before { content: none; }
+.hero .eng .big { margin: 4px 0 2px; }
+.hero-kpi { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 16px; margin-top: 22px; padding-top: 20px; border-top: 1px solid #2a2a2a; }   /* 11-12 S.Lee */
+.hero-kpi .hk { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.hero-kpi .k { font-size: 12px; letter-spacing: .4px; text-transform: uppercase; color: #8c8c8c; white-space: nowrap; }
+.hero-kpi .v { font-size: 18px; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+@media (max-width: 640px) { [data-theme=volt] .hero .side.eng-sum .big { font-size: 40px !important; }
+  .hero-kpi { gap: 14px 10px; margin-top: 14px; padding-top: 14px; text-align: center; } .hero-kpi .hk { align-items: center; } .hero-kpi .v { font-size: 15px; } .hero-kpi .k { font-size: 10px; letter-spacing: .8px; } }
+.tr-tbl .r { grid-template-columns: 74px 44px minmax(0, 1.4fr) 54px 1fr !important; }
+@media (max-width: 640px) {
+  .hero .side.eng-sum { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .hero .side.eng-sum .eng { text-align: center; } .hero .side.eng-sum .eng-h { justify-content: center; }   /* 11-10 S.Lee: 폰은 가운데 정렬 */
+  .hero .side.eng-sum > div:first-child { grid-column: auto; }
+  .hero .side.eng-sum .eng .big.won { font-size: 24px; letter-spacing: -.5px; white-space: nowrap; }
+  .eng .st-line { font-size: 11px; gap: 2px 8px; }
+  .tr-tbl .r { grid-template-columns: 44px 34px minmax(0, 1fr) 40px 76px !important; gap: 8px !important; }
+}
+/* 11-10 포트폴리오 공통 양식 */
+.pf-one { margin-top: 8px; }
+.tr-box > summary { cursor: default; pointer-events: none; list-style: none; }   /* 11-10 S.Lee: 최근 체결 · 종목별 표는 폰 · PC 모두 접지 않고 늘 펼침 */
+.tr-box > summary::-webkit-details-marker { display: none; }
+.tr-box > summary .eyebrow::after { content: none !important; }
+.tr-box:not([open]) > summary { margin-bottom: 0; }
+/* 11-10 S.Lee: PC 는 한눈에 보도록 접는 칸을 모두 펼치고 + − 표시와 클릭을 없앰 */
+@media (min-width: 641px) {
+  details > summary { pointer-events: none; cursor: default; }
+  details.log summary::after, .tr-box > summary .eyebrow::after { content: none !important; }
+}
+.pf-one .hd { margin-bottom: 4px; }
+.ttbl .r { display: grid; grid-template-columns: minmax(0, 1.4fr) 54px 1fr 1fr 68px; gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid rgba(255,255,255,.06); font-size: 12.5px; color: var(--body); }
+.ttbl .r.h { font-size: 11px; color: var(--muted); border-top: 0; padding-top: 2px; }
+.ttbl .r > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ttbl .r .n { color: var(--ink); }
+.ttbl .r .num { text-align: right; font-variant-numeric: tabular-nums; }
+.ttbl .r .up { color: var(--red-hi); } .ttbl .r .down { color: #4aa3d4; }
+.ttbl .empty { padding: 10px 0; font-size: 12.5px; color: var(--muted); }
+.ttbl .ex { margin-left: 6px; font-size: 11px; color: var(--muted); }
+.cal { display: grid; grid-template-columns: 44px repeat(5, minmax(0, 1fr)); gap: 6px; }
+.cal .wd, .cal .wk { font-size: 11px; color: var(--muted); display: flex; align-items: center; }
+.cal .wd { justify-content: center; padding-bottom: 2px; }
+.cal .cell { position: relative; min-height: 84px; border-radius: 10px; border: 1px solid rgba(255,255,255,.07); background: rgba(255,255,255,.025); padding: 8px 10px; display: flex; flex-direction: column; justify-content: space-between; }
+.cal .cell .top { display: flex; justify-content: space-between; gap: 6px; font-size: 11px; color: var(--muted); }
+.cal .cell .k { color: rgba(255,255,255,.62); font-variant-numeric: tabular-nums; }
+.cal .cell .v { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 500; color: var(--ink); text-align: center; }   /* 11-10 S.Lee: 칸 정중앙에 Sigma 당일 등락만 */
+.cal .cell.has { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: inset 0 1px 0 rgba(255,255,255,.06); }
+.cal .cell .v.up { color: var(--red-hi); } .cal .cell .v.down { color: var(--blue); }
+.cal .cell.today { border-color: rgba(255,90,74,.7) !important; }
+.cal .cell.has { cursor: default; }
+.cal .cell .note { position: absolute; left: 0; right: 0; bottom: 8px; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: #c9c9c9; }   /* 11-12 S.Lee 운영 사고 표시 (빨강은 점만) */
+.cal .cell .note .dot { width: 6px; height: 6px; }
+.cal .cell.incident { border-color: rgba(255,90,74,.45) !important; }
+@media (max-width: 640px) { .cal { grid-template-columns: 30px repeat(5, minmax(0, 1fr)); gap: 4px; } .cal .cell { min-height: 60px; padding: 6px; } .cal .cell .v { font-size: 12px; } .cal-sub { display: none; } }
+.fb-body { padding: 4px 20px 18px; }
+.more-body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 0 16px 16px; }
+.wrap > *, .more-body > * { min-width: 0; }   /* 넓은 표가 페이지 폭을 밀어내지 않게 */
+.more-body details.log { border-radius: 16px; }
+details.log summary:focus-visible { outline: 2px solid #f6e500; outline-offset: -2px; }
+.tbl { overflow-x: auto; padding: 0 20px 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; min-width: 960px; }
+th { text-align: left; font-size: 11px; font-weight: 600; color: var(--muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 10px 12px 10px 0; border-bottom: 1px solid #222; vertical-align: top; color: var(--body); line-height: 1.5; }
+.pf-tbl-wrap > summary { pointer-events: none; cursor: default; } .pf-tbl-wrap > summary .eyebrow::after { content: none !important; }   /* 11-10 S.Lee: 늘 펼쳐 둠 (+ − 없음) */
+.pf-tbl-wrap { margin-top: 14px; } .pf-tbl-wrap .pf-tbl { max-width: 720px; margin: 0 auto; }
+.chart.pf-split { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 0 40px; }   /* 11-12 S.Lee: PC 는 도넛 왼쪽 · 종목 표 오른쪽 */
+.chart.pf-split > svg { justify-self: center; } .chart.pf-split > .pf-tbl-wrap { margin-top: 0; min-width: 0; align-self: center; }
+.chart.pf-split > .pf-tbl-wrap > summary { display: none; }   /* 11-12 S.Lee: PC 는 'Table' 이름표 없앰, 표를 도넛 가운데 높이에 맞춤 */
+.pf-tbl { width: 100%; min-width: 0; border-collapse: collapse; font-size: 13px; }
+.pf-tbl th { font-size: 11px; font-weight: 400; color: var(--muted); padding: 0 4px 8px; text-align: center; border-bottom: 1px solid rgba(255,255,255,.1); }
+.pf-tbl td { text-align: center; padding: 7px 4px; color: var(--ink); border-bottom: 1px solid rgba(255,255,255,.05); font-variant-numeric: tabular-nums; }
+.pf-tbl td.nm { color: var(--body); white-space: nowrap; } .pf-tbl .nmi { display: inline-block; text-align: left; }
+.pf-tbl td.sum { font-size: 18px; font-weight: 500; vertical-align: middle; border-left: 1px solid rgba(255,255,255,.05); }
+.pf-tbl td.up { color: var(--red-hi, #ff5a4a); } .pf-tbl td.down { color: #4aa3d4; }
+.pf-tbl tr.cash td { color: var(--muted); border-bottom: 0; }
+.pf-tbl .sw { display: inline-block; width: 8px; height: 8px; margin-right: 6px; vertical-align: 1px; }
+td.k { color: var(--ink); white-space: nowrap; }
+
+.fl-kv { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; font-size: 14px; }
+.fl-kv .k { display: inline-flex; align-items: center; gap: 8px; color: #a0a0a0; font-size: 13px; }
+.fl-kv .k svg { flex: none; }
+.fl-kv .v { font-size: 20px; margin-left: 8px; font-variant-numeric: tabular-nums; }
+.fl-kv .fl-sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+.lim { display: flex; flex-direction: column; gap: 12px; }
+.lim-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; font-size: 13px; color: var(--body); }
+.lim-row .now { font-variant-numeric: tabular-nums; color: var(--ink); }
+.lim-row .now small { color: var(--muted); font-size: 12px; margin-left: 4px; }
+.lim-row .track { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: rgba(255,255,255,.07); overflow: hidden; }
+.lim-row .track i { display: block; height: 100%; border-radius: 3px; }
+.kx-flow { margin-top: 14px; padding-top: 14px; border-top: 1px dashed rgba(255,255,255,.08); }   /* 카드 안 아래칸 (누적 수익률 → 실시간 판단, 실시간 KOSPI → 순매수) */
+.kx-flow .hd { margin-bottom: 8px; }
+.kx-flow .fl-kv .v { font-size: 17px; }
+.card.hero-card.neg { background:
+    radial-gradient(700px 320px at 0% 0%, rgba(74,163,212,.20), transparent 70%),
+    linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 100%);
+  border-color: rgba(120,190,230,.16); }
+.f-empty { color: var(--muted); font-size: 13px; margin: 8px 0; }
+.foot { color: var(--muted); font-size: 11px; text-align: center; padding-top: 8px; }
+
+@media (max-width: 1100px) { .c3 { grid-column: span 6; } .c4, .c5, .c6, .c7, .c8 { grid-column: span 12; } }
+@media (max-width: 640px) {
+  .c3 { grid-column: span 6; padding: 16px; }
+  .c3 .val { font-size: 20px; }
+  .c3 .hd .sub { display: none; }
+  .c3 .hd { flex-direction: column; gap: 4px; }
+  .grid { gap: 12px; }
+  .card { padding: 16px; }
+  .more-body { padding: 0 10px 10px; gap: 10px; }
+  details.log summary { padding: 14px 16px; }
+  .fb-body { padding: 4px 16px 16px; } .tbl { padding: 0 16px 16px; }
+  #ch-kx { min-height: 240px !important; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .hero .side { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px 10px; }
+  .hero .side > div:first-child { grid-column: 1 / -1; }
+  .hero .big { font-size: 52px; margin: 8px 0 0; }
+  .hero .big.won { font-size: 40px; }
+  .hero .kv { padding-top: 12px; border-top: 1px solid rgba(255,255,255,.08); }
+  .hero .kv span:last-child { font-size: 14px; white-space: nowrap; }
+  #ch-hero { min-height: 0 !important; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .draw { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: draw 1.2s cubic-bezier(.2,.7,.2,1) forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .h-in { opacity: 0; animation: h-in .6s ease var(--d, 0s) forwards; }   /* 11-05 대표 차트 첫 진입: 선이 그려진 뒤 색칠·끝점이 나타남 */
+  @keyframes h-in { to { opacity: 1; } }
+  .h-pulse { transform-box: fill-box; transform-origin: center; animation: h-pulse 2.4s ease-out infinite; }   /* 오늘 끝점 맥박 */
+  @keyframes h-pulse { 0% { transform: scale(1); opacity: .55; } 70%, 100% { transform: scale(3.4); opacity: 0; } }
+}
+
+/* ===== glass / gradient layer ===== */
+body {
+  background:
+    radial-gradient(1100px 620px at 8% -12%, rgba(218,41,28,.26), transparent 62%),
+    radial-gradient(900px 560px at 105% -5%, rgba(74,163,212,.14), transparent 60%),
+    radial-gradient(900px 700px at 50% 115%, rgba(218,41,28,.12), transparent 65%),
+    linear-gradient(180deg, #0d0d10 0%, #0a0a0c 100%);
+  background-attachment: fixed;
+}
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 48px 48px; mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at 50% 0%, #000 0%, transparent 70%); }
+.wrap { position: relative; z-index: 1; }
+.brand { display: flex; align-items: center; gap: 16px; }
+.top h1 { color: var(--ink); letter-spacing: -1.2px; }
+.chip { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.09); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.chip.live::before { box-shadow: 0 0 0 0 rgba(218,41,28,.6); animation: pulse 2s infinite; }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(218,41,28,.6); } 70% { box-shadow: 0 0 0 8px rgba(218,41,28,0); } 100% { box-shadow: 0 0 0 0 rgba(218,41,28,0); } }
+.card, details.log {
+  background: linear-gradient(180deg, rgba(255,255,255,.055) 0%, rgba(255,255,255,.018) 100%);
+  border: 1px solid rgba(255,255,255,.08); border-radius: 16px;
+  backdrop-filter: blur(18px) saturate(140%); -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.07), 0 12px 32px rgba(0,0,0,.35);
+}
+.card.hero-card { background:
+    radial-gradient(700px 320px at 0% 0%, rgba(218,41,28,.20), transparent 70%),
+    linear-gradient(180deg, rgba(255,255,255,.06) 0%, rgba(255,255,255,.02) 100%);
+  border-color: rgba(255,120,100,.16); }
+.card.glow-red { background: radial-gradient(260px 140px at 100% 0%, rgba(218,41,28,.16), transparent 70%), linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.018)); }
+.card.glow-blue { background: radial-gradient(260px 140px at 100% 0%, rgba(74,163,212,.16), transparent 70%), linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.018)); }
+.hero .big { background: linear-gradient(135deg, #ff8a70 0%, #ff4a36 45%, #c41a0d 100%); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(0 6px 28px rgba(218,41,28,.35)); }
+.hero .big.neg { background: linear-gradient(135deg, #9ad6f2 0%, #4aa3d4 45%, #1f6f9c 100%); -webkit-background-clip: text; background-clip: text; filter: drop-shadow(0 6px 28px rgba(74,163,212,.35)); }
+.tip { background: rgba(14,14,16,.78); border: 1px solid rgba(255,255,255,.1); border-radius: 12px; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+details.log summary { border-radius: 16px; }
+.foot { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.foot a { color: var(--body); text-decoration: none; display: inline-flex; align-items: center; padding: 4px 6px; vertical-align: -4px; }
+button:focus-visible, summary:focus-visible, a:focus-visible, [tabindex="0"]:focus-visible { outline: 2px solid #f6e500; outline-offset: 2px; }
+.foot a:hover, .foot a:focus-visible { color: var(--ink); }
+/* us-stocks 11-19 S.Lee: 시장 전환 (국내 대회 화면 ↔ 미국 화면). 평면 알약 둘, 지금 화면만 흰 바탕 */
 .mkt { display: flex; justify-content: flex-end; margin: 0 0 10px; }
 .mkt-sw { display: inline-flex; padding: 2px; border: 1px solid var(--line); border-radius: 9999px; background: var(--card); }
 .mkt-sw a { padding: 5px 14px; border-radius: 9999px; font-size: 12px; line-height: 1.4; color: var(--muted); text-decoration: none; white-space: nowrap; }
-.mkt-sw a[aria-current=page] { background: var(--ink); color: var(--bg); }
-a:focus-visible { outline: 2px solid #f6e500; outline-offset: 2px; }
-.launch { padding: 32px 28px; }
-.eyebrow { color: var(--muted); font-size: 12px; letter-spacing: .4px; }
-.launch-h { margin: 6px 0 8px; color: var(--ink); font-size: clamp(30px, 5vw, 48px); font-weight: 500; letter-spacing: -0.8px; line-height: 1.1; }
-.launch-sub { margin: 0 0 24px; color: var(--body); max-width: 560px; }
-.steps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
-.steps li { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
-.steps .n { color: var(--muted); font-size: 12px; }
-.steps .t { color: var(--ink); font-size: 15px; }
-.steps .s { display: block; color: var(--muted); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.steps .st { color: var(--muted); font-size: 12px; white-space: nowrap; }
-.steps .st.ok { color: var(--ink); }
-[hidden] { display: none !important; }
-footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 24px; }
-@media (max-width: 760px) {
-  .hero { grid-template-columns: minmax(0, 1fr); }
-  .big { font-size: 28px; }
-  .hide-sm { display: none; }
-}
-@media (max-width: 480px) {
-  .hide-xs { display: none; }
-  td.name { max-width: 150px; }
-  th, td { padding: 8px 5px; }
-}
+.mkt-sw a[aria-current=page] { background: var(--ink); color: var(--canvas); }
+@media (max-width: 640px) { .mkt { justify-content: center; } }
+/* us-stocks 11-19: 시작 전 카드 안 문구 */
+.ptl { display: flex; align-items: center; justify-content: center; min-height: 160px; padding: 24px 12px; color: var(--muted); font-size: 15px; letter-spacing: 1px; text-align: center; }
+.ptl.ptl-hero { justify-content: flex-start; min-height: 0; padding: 0; margin: 14px 0 8px; color: var(--ink); font-size: clamp(28px, 3vw, 40px); font-weight: 500; letter-spacing: -0.8px; line-height: 1.1; text-align: left; white-space: nowrap; }
+.ptl.ptl-chart { min-height: 230px; }
+.ptl.ptl-sm { min-height: 90px; font-size: 13px; }
+.hero-note { color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) { .ptl.ptl-hero { justify-content: center; font-size: 30px; } .hero-note { text-align: center; } }
 </style>
 </head>
 <body>
+<div id="boot" role="status" aria-live="polite" tabindex="-1"><b>Sigma Engine</b><span>불러오는 중</span></div>
+<script>
+/* 11-12 S.Lee: Loading 화면 — 다 그리기 전엔 스크롤 · 터치 · 키 모두 막고, 다 그리면(window.bootReady) 하이라이트 뒤 누르면 들어감. 12초 뒤엔 무조건 준비됨 */
+(function () {
+  var b = document.getElementById('boot'), h = document.documentElement, ready = false;
+  h.classList.add('boot-lock');
+  var on = function () { return b.isConnected; }, stop = function (e) { if (on()) e.preventDefault(); };
+  document.addEventListener('wheel', stop, { passive: false }); document.addEventListener('touchmove', stop, { passive: false });
+  addEventListener('scroll', function () { if (on() && scrollY) scrollTo(0, 0); }, { passive: true });
+  var enter = function () { if (!ready || !on()) return; b.remove(); h.classList.remove('boot-lock'); };
+  window.bootReady = function () {
+    if (ready || !on()) return; ready = true; b.classList.add('ready');
+    b.setAttribute('role', 'button'); b.setAttribute('tabindex', '0'); b.setAttribute('aria-label', 'Sigma Engine 대시보드 열기');
+    b.querySelector('span').textContent = '들어가기';   // 11-12 S.Lee: 다 되면 문구를 Enter 로 try { b.focus({ preventScroll: true }); } catch (e) { /* 무시 */ }
+  };
+  b.addEventListener('click', enter);
+  document.addEventListener('keydown', function (e) {
+    if (!on()) return;
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); enter(); }
+    else if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].indexOf(e.key) >= 0) e.preventDefault();
+  });
+  setTimeout(function () { window.bootReady(); }, 12000);
+})();
+</script>
 <div class="wrap">
   <nav class="mkt" aria-label="시장 선택"><div class="mkt-sw"><a href="./">국내</a><a href="us.html" aria-current="page">미국</a></div></nav>
-  <header>
-    <h1>Sigma Engine 미국 주식</h1>
-    <div class="dots"><span><i class="dot" id="d-agent"></i>에이전트</span><span><i class="dot" id="d-halt"></i>주문</span><span id="asof"></span></div>
-  </header>
 
-  <section class="card launch" id="launch" hidden>
-    <div class="eyebrow">미국 주식 · 실제 돈 · 한국투자증권</div>
-    <div class="launch-h">Prepare to Launch</div>
-    <p class="launch-sub" id="launch-sub">매매 설계를 끼우고 시작 전 점검을 통과하면 이 화면이 실제 계좌로 바뀝니다.</p>
-    <ol class="steps" id="steps"></ol>
-    <div class="note" id="launch-asof"></div>
-  </section>
-
-  <section class="card hero" data-live>
-    <div>
-      <div class="muted" style="color:var(--muted);font-size:12px">총자산</div>
-      <div class="big" id="total">-</div>
-      <div id="total-krw" style="color:var(--muted)"></div>
-      <div class="kpis">
-        <div><span>누적 수익률 달러</span><b id="k-usd">-</b></div>
-        <div><span>누적 수익률 원화</span><b id="k-krw">-</b></div>
-        <div><span>SPY 같은 기간</span><b id="k-spy">-</b></div>
-        <div><span>오늘 손익</span><b id="k-day">-</b></div>
-        <div><span>현금 비중</span><b id="k-cash">-</b></div>
-        <div><span>환율 원/달러</span><b id="k-fx">-</b></div>
+  <header class="top">
+    <div class="brand">
+      <div>
+        <h1 class="h1-bare"><span class="sr-only">Sigma Engine 미국</span><span class="tagline st-top" id="st-top" aria-label="실행 상태"></span></h1>
+        <div class="chips sched" id="sched" aria-label="S&amp;P 500"><span class="chip kx-chip m-hide" id="kx-chip"><b>S&amp;P 500</b> 시작 전</span></div>
       </div>
     </div>
-    <div>
-      <h2>누적 수익률</h2>
-      <div class="chart" id="chart"></div>
-      <div class="legend"><span><i></i>Sigma 달러</span><span><i class="krw"></i>Sigma 원화</span><span><i class="spy"></i>SPY</span></div>
+  </header>
+
+
+  <div class="grid">
+    <section class="card c12 hero-card">
+      <div class="hero">
+        <div class="side eng-sum">
+          <div class="eng" id="eng-sigma">
+            <div class="eng-h"><span class="eyebrow">누적 수익률</span></div>
+            <div class="ptl ptl-hero">Prepare to Launch</div>
+            <div class="hero-note">미국 주식 · 한국투자증권 · 달러 · 원화 수익률과 SPY 비교</div>
+          </div>
+        </div>
+        <div class="hero-chart" style="display:flex;flex-direction:column;gap:10px;min-width:0">
+          <div class="ptl ptl-chart">Prepare to Launch</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card c12 pane">
+      <div class="hd"><h2 class="eyebrow">포트폴리오</h2><span class="sub">달러</span></div>
+      <div class="ptl">Prepare to Launch</div>
+    </section>
+
+    <section class="card c12" id="dec-card">
+      <div class="hd"><h2 class="eyebrow">실시간 판단</h2><span class="sub">뉴욕 시간</span></div>
+      <div class="ptl">Prepare to Launch</div>
+      <details class="kx-flow tr-box pane" open><summary class="hd"><h3 class="eyebrow">최근 체결</h3><span class="sub">실제 계좌</span></summary><div class="ptl ptl-sm">Prepare to Launch</div></details>
+    </section>
+  </div>
+
+
+  <details class="log more m-hide">
+    <summary>실시간 S&amp;P 500</summary>
+    <div class="more-body">
+      <div class="grid">
+        <section class="card c12">
+          <div class="hd"><h2 class="eyebrow">실시간 S&amp;P 500</h2></div>
+          <div class="ptl">Prepare to Launch</div>
+        </section>
+      </div>
     </div>
-  </section>
+  </details>
 
-  <section class="card" data-live><h2>포트폴리오</h2><div class="tbl" id="holdings"></div></section>
-  <section class="card" data-live><h2>실시간 판단</h2><div id="dec-head" class="note" style="margin:-6px 0 8px"></div><div class="tbl" id="decision"></div></section>
-  <section class="card" data-live><h2>최근 체결</h2><div class="tbl" id="trades"></div></section>
-  <section class="card" data-live><h2>리스크 차단</h2><div class="tbl" id="risk"></div></section>
+  <details class="log more m-hide">
+    <summary>기록</summary>
+    <div class="more-body">
+      <div class="grid">
+        <section class="card c3 m-hide"><div class="hd"><h2 class="eyebrow">이번 주</h2><span class="sub">지난 금요일 대비</span></div><div class="ptl ptl-sm">Prepare to Launch</div></section>
+        <section class="card c3 m-hide"><div class="hd"><h2 class="eyebrow">최대 낙폭</h2><span class="sub">고점 대비</span></div><div class="ptl ptl-sm">Prepare to Launch</div></section>
+        <section class="card c3 m-hide"><div class="hd"><h2 class="eyebrow">SPY</h2><span class="sub">시작일 대비</span></div><div class="ptl ptl-sm">Prepare to Launch</div></section>
+        <section class="card c3 m-hide"><div class="hd"><h2 class="eyebrow">승률</h2></div><div class="ptl ptl-sm">Prepare to Launch</div></section>
+        <section class="card c6 m-hide"><div class="hd"><h2 class="eyebrow">리스크 한도 사용률</h2><span class="sub">주문 직전 Hook이 강제, 100%면 차단</span></div><div class="ptl">Prepare to Launch</div></section>
+        <section class="card c6 m-hide"><div class="hd"><h2 class="eyebrow">일별 초과수익</h2><span class="sub">Sigma Engine − SPY (%p)</span></div><div class="ptl">Prepare to Launch</div></section>
+        <section class="card c12"><div class="hd"><h2 class="eyebrow">수익률 캘린더</h2><span class="sub">Sigma Engine 당일 등락</span></div><div class="ptl">Prepare to Launch</div></section>
+      </div>
+    </div>
+  </details>
 
-  <footer>Designed by S.Lee &amp; M.Park</footer>
+  <details class="log more">
+    <summary>자동 조정 기록</summary>
+    <div class="more-body"><div class="ptl">Prepare to Launch</div></div>
+  </details>
+
+  <p class="foot"><span>Designed by S.Lee &amp; M.Park</span></p>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
-(() => {
-  const BASE = 'data/us/';
-  const C = { up: '#ff5a65', down: '#4e94ff', ink: '#f2f2f2', muted: '#8c8c8c', grid: '#262626' };
-  const $ = id => document.getElementById(id);
+/* 11-10 S.Lee: VoltAgent 디자인 (본 화면 기본). ?theme=classic 이면 예전 Noto Serif · 유리 화면.
+   색은 한 곳에서 바꿈: 기존 CSS 글자 · d3 색 속성 · 캔버스(커버 신경망) · 인라인 style 의 빨강/파랑/초록을
+   VoltAgent 팔레트로 옮김. 11-12 S.Lee: 초록 없앰 → 검정 · 흰 · 회색 무채색 + 빨강(수익 · 매수 · 오류) + 파랑(손실 · 매도). 예전: 초록 = 수익 · 강조 */
+(function () {
+  const VOLT = !/(^|[?&])theme=classic\b/.test(location.search);   // 11-10 S.Lee: 본 화면을 VoltAgent 로. 예전 화면은 ?theme=classic
+  window.VOLT = VOLT;
+  if (!VOLT) { document.documentElement.lang = 'ko'; return; }
+  document.documentElement.dataset.theme = 'volt';
+  const HEX = { '#da291c': '#f2f2f2', '#ff5a4a': '#d6d6d6', '#ff8a70': '#d6d6d6', '#ff4a36': '#f2f2f2', '#c41a0d': '#bdbdbd', '#a8160b': '#bdbdbd', '#ff6a55': '#d6d6d6', '#b01e0a': '#bdbdbd', '#ffd2cc': '#ffffff', '#ff7a6e': '#cfcfcf', '#e0b84a': '#d0d0d0',
+    '#4aa3d4': '#4e94ff', '#7cc4ea': '#bdbdbd', '#9ad6f2': '#d0d0d0', '#1f6f9c': '#5a6068', '#3ecf8e': '#b4b4b4', '#c8f5dc': '#ffffff',
+    '#141414': '#101010', '#1c1c1c': '#101010', '#232323': '#1a1a1a', '#2a2a2a': '#3d3a39', '#0d0d10': '#101010', '#0a0a0c': '#101010', '#f6e500': '#d6d6d6' };
+  const RGB = { '218,41,28': '242,242,242', '255,90,74': '255,90,101', '255,120,100': '242,242,242', '255,120,104': '214,214,214',
+    '74,163,212': '78,148,255', '120,190,230': '78,148,255', '62,207,142': '200,200,200', '70,210,135': '225,225,225', '110,230,170': '235,235,235' };
+  const hexRe = new RegExp(Object.keys(HEX).join('|'), 'gi');
+  const rgbRe = new RegExp('(' + Object.keys(RGB).map(k => k.replace(/,/g, ',\\s*')).join('|') + ')', 'g');
+  const map = v => typeof v !== 'string' ? v : v.replace(hexRe, m => HEX[m.toLowerCase()]).replace(rgbRe, m => RGB[m.replace(/\s/g, '')]);
+  window.voltColor = map;
+  // 1) 이미 읽힌 스타일 글자
+  document.querySelectorAll('style').forEach(s => { s.textContent = map(s.textContent); });
+  // 2) d3 색 속성
+  if (window.d3) {
+    const A = d3.selection.prototype.attr, S = d3.selection.prototype.style, CK = /^(fill|stroke|stop-color|color|flood-color)$/;
+    const wrap = v => typeof v === 'function' ? function () { return map(v.apply(this, arguments)); } : map(v);
+    d3.selection.prototype.attr = function (n, v) { return arguments.length > 1 && CK.test(n) ? A.call(this, n, wrap(v)) : A.apply(this, arguments); };
+    d3.selection.prototype.style = function (n, v, p) { return arguments.length > 1 && CK.test(n) ? S.call(this, n, wrap(v), p) : S.apply(this, arguments); };
+  }
+  // 3) 캔버스 (커버 신경망)
+  const P = CanvasRenderingContext2D.prototype;
+  ['fillStyle', 'strokeStyle', 'shadowColor'].forEach(k => { const d = Object.getOwnPropertyDescriptor(P, k); Object.defineProperty(P, k, { get: d.get, set(v) { d.set.call(this, map(v)); }, configurable: true }); });
+  const acs = CanvasGradient.prototype.addColorStop; CanvasGradient.prototype.addColorStop = function (o, c) { return acs.call(this, o, map(c)); };
+  // 4) 나중에 innerHTML 로 들어오는 인라인 style
+  const fix = el => { if (el.nodeType !== 1) return; if (el.hasAttribute('style')) { const s = el.getAttribute('style'), m = map(s); if (m !== s) el.setAttribute('style', m); } el.querySelectorAll && el.querySelectorAll('[style]').forEach(fix0); };
+  const fix0 = el => { const s = el.getAttribute('style'), m = map(s); if (m !== s) el.setAttribute('style', m); };
+  new MutationObserver(ms => ms.forEach(m => m.type === 'childList' ? m.addedNodes.forEach(fix) : fix0(m.target))).observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['style'] });
+  // 5) 글꼴: Inter + Pretendard (한글) + JetBrains Mono (숫자 · 코드)
+  for (const href of []) {   // 11-12 S.Lee: Inter · JetBrains Mono · Pretendard 안 씀 → 전부 Noto Serif KR (head 에서 받음)
+    const l = document.createElement('link'); l.rel = 'stylesheet'; l.href = href; document.head.appendChild(l);
+  }
+  // 6) VoltAgent 겉모습 (이 블록은 색 바꾸기 뒤에 붙여 그대로 씀)
+  // 11-12 S.Lee: 수익 · 매수 = 빨강, 손실 · 매도 = 파랑 (한국식). 초록은 Sigma 이름 · 선 · 상태 점에만
+  const pl = document.createElement('style'); pl.id = 'volt-pl';
+  pl.textContent = '[data-theme=volt] .up, [data-theme=volt] .up b { color: #ff5a65 !important; } [data-theme=volt] .down, [data-theme=volt] .down b { color: #4e94ff !important; }';
+  document.head.appendChild(pl);
+  const st = document.createElement('style'); st.id = 'volt-css';
+  st.textContent = `
+:root[data-theme=volt] { --canvas: #101010; --card: #101010; --card-2: #1a1a1a; --line: #3d3a39; --grid: #262626; --ink: #f2f2f2; --body: #bdbdbd; --muted: #8b949e;
+  --red: #f2f2f2; --red-hi: #d6d6d6; --blue: #8b949e; --grey: #5a5a5a;
+  --font: Inter, "Pretendard Variable", Pretendard, system-ui, -apple-system, "Segoe UI", sans-serif; --mono: "JetBrains Mono", SFMono-Regular, Menlo, Consolas, monospace; }
+[data-theme=volt] body { background:
+    radial-gradient(1000px 520px at 6% -10%, rgba(242,242,242,.10), transparent 62%),
+    radial-gradient(800px 480px at 104% 2%, rgba(242,242,242,.035), transparent 60%),
+    radial-gradient(900px 600px at 50% 118%, rgba(242,242,242,.06), transparent 65%),
+    #101010 !important; background-attachment: fixed !important; font-feature-settings: "calt", "rlig"; }
+/* 11-10 S.Lee: 은은한 그라데이션 (초록 빛 번짐 · 카드 윗변 빛 · 카드 위쪽 얇은 초록 선) */
+[data-theme=volt] .card::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; border-radius: 8px 8px 0 0; pointer-events: none;
+  background: linear-gradient(90deg, transparent 0%, rgba(242,242,242,.55) 22%, rgba(242,242,242,.12) 60%, transparent 100%); }
+[data-theme=volt] body::before { display: none; }
+[data-theme=volt] .card, [data-theme=volt] details.log, [data-theme=volt] .card.hero-card, [data-theme=volt] .card.glow-red, [data-theme=volt] .card.glow-blue {
+  background: linear-gradient(180deg, rgba(255,255,255,.028) 0%, rgba(255,255,255,0) 38%), #101010 !important; border: 1px solid #3d3a39 !important; border-radius: 8px !important; box-shadow: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+[data-theme=volt] .card.hero-card { background: radial-gradient(640px 300px at 0% 0%, rgba(242,242,242,.09), transparent 70%), radial-gradient(520px 260px at 100% 100%, rgba(242,242,242,.03), transparent 70%), #101010 !important; }
+[data-theme=volt] details.log summary { border-radius: 8px; }
+[data-theme=volt] .chip, [data-theme=volt] .tip, [data-theme=volt] .cal .cell.has { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+[data-theme=volt] .chip { background: #101010; border-color: #3d3a39; }
+[data-theme=volt] .tip { background: #1a1a1a; border-color: #3d3a39; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,.7); }
+[data-theme=volt] .top h1 { font-weight: 400; letter-spacing: -0.65px; color: #fff; }
+[data-theme=volt] .hero .big, [data-theme=volt] .hero .big.neg { background: none !important; -webkit-background-clip: border-box; background-clip: border-box; filter: none !important; color: #ff5a65; font-weight: 400; letter-spacing: -0.65px; }
+[data-theme=volt] .hero .big.neg { color: #4e94ff; }   /* 11-12 S.Lee: 수익 빨강 · 손실 파랑 */
+[data-theme=volt] .eyebrow { text-transform: uppercase; letter-spacing: 2.2px; font-weight: 600; font-size: 12px; color: #8b949e; }
+/* 11-10 S.Lee: Sigma Engine 강조 */
+[data-theme=volt] .eng#eng-sigma .eyebrow { color: #f2f2f2; }
+[data-theme=volt] .eyebrow, [data-theme=volt] .cal .note { letter-spacing: .6px !important; }   /* 11-12 S.Lee: 한글 라벨은 자간을 좁게 (영어 대문자용 2.2px 이면 글자가 흩어져 보임) */
+[data-theme=volt] .eng .eyebrow.on, [data-theme=volt] .eyebrow.on { color: #8b949e; }
+[data-theme=volt] .hero .eng#eng-sigma .big:not(.neg) { color: #ff5a65; }
+@media (max-width: 640px) { [data-theme=volt] .hero .eng .eyebrow { letter-spacing: 1px; font-size: 11px; white-space: nowrap; } [data-theme=volt] .eng .eyebrow::after { margin-left: 5px !important; font-size: 8.5px !important; letter-spacing: .6px !important; padding: 0 5px !important; } }
+[data-theme=volt] .kx-chip b, [data-theme=volt] .kx-row b, [data-theme=volt] .pf-tbl td, [data-theme=volt] .dec-row .cf, [data-theme=volt] .ttbl .r, [data-theme=volt] .chips .chip b, [data-theme=volt] svg text { font-family: var(--mono); }
+[data-theme=volt] .dot.ok { background: #f2f2f2; box-shadow: 0 0 0 3px rgba(242,242,242,.2); }
+[data-theme=volt] .dot.bad { background: #ff5a4a; box-shadow: 0 0 0 3px rgba(255,90,74,.2); }
+[data-theme=volt] .dec-row .act { border-radius: 9999px; }
+[data-theme=volt] .grid > .card + .card { }
+[data-theme=volt] .foot { border-top: 1px dashed rgba(79,93,117,.4); padding-top: 24px; }
+[data-theme=volt] svg [tabindex]:focus-visible, [data-theme=volt] button:focus-visible, [data-theme=volt] summary:focus-visible { outline-color: #d6d6d6; }
+`;
+  document.head.appendChild(st);
+  document.documentElement.classList.remove('volt-wait'); document.documentElement.style.background = '';
+  // 11-10 S.Lee: 화면 전체에서 괄호와 그 안 글자를 지움
   const PAREN = /\s*[(（][^()（）]*[)）]/g;
-  const noParen = v => { let o = String(v ?? ''), n; while ((n = o.replace(PAREN, '')) !== o) o = n; return o; };
-  const esc = s => noParen(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const usd = (v, sign) => v == null ? '-' : (sign && v > 0 ? '+' : v < 0 ? '−' : '') + '$' + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  const krw = v => v == null ? '-' : Math.round(v).toLocaleString('ko-KR') + '원';
-  const pct = (v, d = 2) => v == null || !isFinite(v) ? '-' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v * 100).toFixed(d) + '%';
-  const cls = v => v > 0 ? 'up' : v < 0 ? 'down' : '';
-  const get = n => fetch(BASE + n + '.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null);
-  const empty = (el, msg) => { $(el).innerHTML = `<div class="empty">${msg}</div>`; };
-  const table = (el, head, rows) => {
-    if (!rows.length) return empty(el, '없음');
-    $(el).innerHTML = `<table><thead><tr>${head.map(h => `<th class="${h[1] || ''}">${h[0]}</th>`).join('')}</tr></thead><tbody>${rows.join('')}</tbody></table>`;
-  };
-
-  function hero(equity, status, spy) {
-    const last = equity[equity.length - 1], first = equity[0];
-    $('total').textContent = usd(last.total);
-    $('total-krw').textContent = last.total_krw ? '원화 환산 ' + krw(last.total_krw) : '';
-    const rUsd = last.total / first.total - 1;
-    const rKrw = last.total_krw && first.total_krw ? last.total_krw / first.total_krw - 1 : null;
-    $('k-usd').textContent = pct(rUsd); $('k-usd').className = cls(rUsd);
-    $('k-krw').textContent = pct(rKrw); $('k-krw').className = cls(rKrw);
-    const sd = spy && spy.days ? Object.keys(spy.days).sort() : [];
-    const rSpy = sd.length ? spy.days[sd[sd.length - 1]].c / spy.start - 1 : null;
-    $('k-spy').textContent = pct(rSpy); $('k-spy').className = cls(rSpy);
-    const prev = equity.length > 1 ? equity[equity.length - 2].total : null;
-    const day = prev ? last.total - prev : null;
-    $('k-day').textContent = usd(day, true); $('k-day').className = cls(day);
-    $('k-fx').textContent = last.fx ? Number(last.fx).toLocaleString('ko-KR', { maximumFractionDigits: 2 }) : '-';
-    $('asof').textContent = last.date + ' 기준';
-  }
-
-  function chart(equity, spy) {
-    const el = $('chart');
-    const W = Math.max(280, el.clientWidth), H = 240, m = { t: 10, r: 24, b: 26, l: 48 };
-    const parse = d3.timeParse('%Y-%m-%d');
-    const f0 = equity[0];
-    const sUsd = equity.map(r => ({ d: parse(r.date), v: r.total / f0.total - 1 }));
-    const sKrw = f0.total_krw ? equity.filter(r => r.total_krw).map(r => ({ d: parse(r.date), v: r.total_krw / f0.total_krw - 1 })) : [];
-    const sSpy = spy && spy.days ? Object.keys(spy.days).sort().filter(d => d >= equity[0].date).map(d => ({ d: parse(d), v: spy.days[d].c / spy.start - 1 })) : [];
-    const all = sUsd.concat(sKrw, sSpy);
-    const x = d3.scaleTime().domain(d3.extent(all, p => p.d)).range([m.l, W - m.r]);
-    const ext = d3.extent(all.map(p => p.v).concat([0]));
-    const pad = Math.max(0.005, (ext[1] - ext[0]) * 0.1);
-    const y = d3.scaleLinear().domain([ext[0] - pad, ext[1] + pad]).nice().range([H - m.b, m.t]);
-    const svg = d3.select(el).html('').append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('preserveAspectRatio', 'none');
-    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickSize(-(W - m.l - m.r)).tickFormat(v => pct(v, 1)))
-      .call(g => g.select('.domain').remove()).call(g => g.selectAll('line').attr('stroke', C.grid))
-      .call(g => g.selectAll('text').attr('fill', C.muted).attr('font-size', 11));
-    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.min(6, sUsd.length)).tickFormat(d3.timeFormat('%m/%d')).tickSize(0).tickPadding(8))
-      .call(g => g.select('.domain').remove()).call(g => g.selectAll('text').attr('fill', C.muted).attr('font-size', 11));
-    const line = d3.line().x(p => x(p.d)).y(p => y(p.v));
-    if (sSpy.length) svg.append('path').datum(sSpy).attr('fill', 'none').attr('stroke', C.muted).attr('stroke-width', 1.5).attr('stroke-dasharray', '4 4').attr('d', line);
-    if (sKrw.length) svg.append('path').datum(sKrw).attr('fill', 'none').attr('stroke', C.muted).attr('stroke-width', 1.5).attr('d', line);
-    svg.append('path').datum(sUsd).attr('fill', 'none').attr('stroke', C.ink).attr('stroke-width', 2).attr('d', line);
-  }
-
-  function holdings(hs, equity) {
-    const total = equity.length ? equity[equity.length - 1].total : null;
-    const stock = hs.reduce((a, h) => a + (h.value || 0), 0);
-    if (total) { const c = 1 - stock / total; $('k-cash').textContent = pct(c, 1).replace('+', ''); }
-    table('holdings', [['종목'], ['수량', 'hide-xs'], ['평단', 'hide-sm'], ['현재가'], ['평가금액', 'hide-sm'], ['수익률'], ['비중'], ['손절가', 'hide-sm'], ['익절가', 'hide-sm'], ['보유일', 'hide-sm']],
-      hs.slice().sort((a, b) => (b.weight || 0) - (a.weight || 0)).map(h => `<tr><td class="name">${esc(h.code)} ${esc(h.name)}</td><td class="hide-xs">${h.qty}</td>
-        <td class="hide-sm">${usd(h.avg_price)}</td><td>${usd(h.price)}</td><td class="hide-sm">${usd(h.value)}</td>
-        <td class="${cls(h.pnl_pct)}">${pct(h.pnl_pct)}</td><td>${pct(h.weight, 1).replace('+', '')}</td>
-        <td class="hide-sm">${h.stop ? usd(h.stop) : '없음'}</td><td class="hide-sm">${h.take ? usd(h.take) : '-'}</td>
-        <td class="hide-sm">${h.held_days ?? '-'}${h.max_days ? ' / ' + h.max_days + '일' : ''}</td></tr>`));
-  }
-
-  function decision(d) {
-    if (!d || !d.items) return empty('decision', '아직 판단 기록이 없습니다');
-    $('dec-head').textContent = `${d.time || ''} 뉴욕  국면 ${d.regime || '-'}  주식 비중 상한 ${d.cap != null ? Math.round(d.cap * 100) + '%' : '-'}`;
-    const act = a => /매수/.test(a) ? 'up' : /매도/.test(a) ? 'down' : '';
-    const rows = [];
-    d.items.slice().sort((a, b) => (b.confidence || 0) - (a.confidence || 0)).forEach((it, i) => {
-      rows.push(`<tr class="click" data-i="${i}"><td class="name">${esc(it.code)} ${esc(it.name)}</td><td class="${act(it.action)}">${esc(it.action)}${it.blocked ? ' 막힘' : ''}</td>
-        <td>${it.confidence != null ? Number(it.confidence).toFixed(2) : '-'}</td><td class="hide-sm">${it.qty ? it.qty + '주' : ''}</td></tr>`);
-      rows.push(`<tr class="why" data-w="${i}" hidden><td colspan="4"><p><b>매수 측</b>${esc(it.bull)}</p><p><b>매도 측</b>${esc(it.bear)}</p><p><b>결정</b>${esc(it.decision)}</p></td></tr>`);
-    });
-    table('decision', [['종목'], ['행동'], ['확신도'], ['수량', 'hide-sm']], rows);
-    $('decision').querySelectorAll('tr.click').forEach(tr => tr.addEventListener('click', () => {
-      const w = $('decision').querySelector(`tr[data-w="${tr.dataset.i}"]`); w.hidden = !w.hidden;
-    }));
-  }
-
-  function trades(ts) {
-    table('trades', [['시각'], ['종목', 'l'], ['구분'], ['수량', 'hide-xs'], ['가격', 'hide-xs'], ['금액', 'hide-sm']],
-      ts.slice(-15).reverse().map(t => `<tr><td>${esc(String(t.time || '').slice(5))}</td><td class="name">${esc(t.code)} ${esc(t.name)}</td>
-        <td class="${t.side === '매수' ? 'up' : 'down'}">${esc(t.side)}</td><td class="hide-xs">${t.qty}</td><td class="hide-xs">${usd(t.price)}</td><td class="hide-sm">${usd(t.amount)}</td></tr>`));
-  }
-
-  function risk(rs) {
-    table('risk', [['시각'], ['종목', 'l'], ['구분', 'hide-xs'], ['규칙'], ['내용', 'l hide-sm']],
-      rs.slice(-10).reverse().map(r => `<tr><td>${esc(String(r.time || '').slice(5))}</td><td class="name">${esc(r.name)}</td><td class="hide-xs">${esc(r.side)}</td><td>${esc(r.rule)}</td>
-        <td class="hide-sm" style="white-space:normal;text-align:left">${esc(r.detail)}</td></tr>`));
-  }
-
-  const STEPS = [   // launch.json 이 없을 때(공개 화면 · 점검 전) 보여 줄 단계. 이름은 agent/src/preflight_us.py STEPS 와 같음
-    ['strategy', '매매 설계 확정', '매수 · 매도 · 확신도'], ['limits', '리스크 한도 확정', '임시값 정리 · 자동 조정 범위'],
-    ['kis', 'KIS 계좌 연결', '키 · 계좌 조회 · 시작 금액'], ['tasks', '일정 등록', '작업 스케줄러 · 종목 목록'],
-    ['tests', '검사 통과', '미국 규칙 검사'], ['switch', '비상 정지 해제', '사람이 직접 켬'],
-  ];
-  const STATE = { ok: ['ok', '완료'], warn: ['ok', '확인'], bad: ['err', '필요'], wait: ['', '대기'] };
-  function launch(l) {
-    const by = {}; ((l && l.steps) || []).forEach(x => { by[x.key] = x; });
-    $('steps').innerHTML = STEPS.map(([k, t, sub], i) => {
-      const st = STATE[(by[k] || {}).state || 'wait'];
-      return `<li><span class="n">${String(i + 1).padStart(2, '0')}</span><span><span class="t">${esc(t)}</span><span class="s">${esc(sub)}</span></span>
-        <span class="st ${st[0] === 'ok' ? 'ok' : ''}"><i class="dot ${st[0]}"></i>${st[1]}</span></li>`;
-    }).join('');
-    const done = STEPS.filter(([k]) => ['ok', 'warn'].includes((by[k] || {}).state)).length;
-    $('launch-asof').textContent = l ? `시작 전 점검 ${l.time} 뉴욕 · ${done} / ${STEPS.length} 완료` : '아직 시작 전 점검을 하지 않았습니다';
-    if (l && l.ok) $('launch-sub').textContent = '점검을 모두 통과했습니다. 다음 정규장부터 에이전트가 매매를 시작합니다.';
-  }
-
-  Promise.all(['equity', 'holdings', 'trades', 'risk', 'status', 'decision', 'spy', 'launch'].map(get)).then(([equity, hs, ts, rs, status, dec, spy, ln]) => {
-    const live = !!(ln && ln.ok && equity && equity.length);   // 점검 통과 + 자산 기록이 생기면 실제 계좌 화면
-    $('launch').hidden = live;
-    document.querySelectorAll('[data-live]').forEach(el => { el.hidden = !live; });
-    if (!live) launch(ln);
-    if (status) {
-      const fresh = status.last_run && (Date.now() - new Date(status.last_run.replace(' ', 'T')).getTime()) < 36e5 * 30;
-      $('d-agent').className = 'dot ' + (status.failures_today ? 'err' : fresh ? 'ok' : '');
-      $('d-halt').className = 'dot ' + (/비상 정지/.test(status.note || '') ? 'err' : 'ok');
-    }
-    if (!live) return;
-    if (!equity || !equity.length) {
-      empty('chart', '자산 기록이 아직 없습니다. 미국 계좌 숫자는 공개 저장소에 올리지 않아서 실행 PC 에서만 보입니다');
-    } else { hero(equity, status, spy); chart(equity, spy); }
-    holdings(hs || [], equity || []);
-    decision(dec);
-    trades(ts || []);
-    risk(rs || []);
-  });
+  const noParen = v => { let o = v, n; while ((n = o.replace(PAREN, '')) !== o) o = n; return o; };
+  const tr = s => noParen(s);   // 11-12 S.Lee: 화면 글자는 한글, 괄호 지우기만
+  const SKIP = 'script, style';   // 종목명 · 판단 근거는 사전에 없으니 그대로 남음
+  const walk = root => { if (!root) return; if (root.nodeType === 3) { const p = root.parentElement; if (p && !p.closest(SKIP)) { const v = tr(root.nodeValue); if (v !== root.nodeValue) root.nodeValue = v; } return; }
+    if (root.nodeType !== 1 || root.closest && root.closest(SKIP)) return; const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT); let n; const a = []; while ((n = w.nextNode())) a.push(n); a.forEach(walk); };
+  document.documentElement.lang = 'ko';
+  new MutationObserver(ms => ms.forEach(m => m.type === 'characterData' ? walk(m.target) : m.addedNodes.forEach(walk))).observe(document.documentElement, { childList: true, subtree: true, characterData: true });
+  document.addEventListener('DOMContentLoaded', () => walk(document.body));
+  // 대시보드 판 모양 · 이름판 표식 · 머리글 배치 (11-10 VoltAgent). 움직임은 아래 no-motion 이 끔
+  const CUT = 'polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut))';
+  const PLATE = `linear-gradient(135deg, transparent 50%, var(--ln) 50% calc(50% + 1.3px), transparent calc(50% + 1.3px)) 0 0 / var(--cut) var(--cut) no-repeat,
+    linear-gradient(315deg, transparent 50%, var(--ln) 50% calc(50% + 1.3px), transparent calc(50% + 1.3px)) 100% 100% / var(--cut) var(--cut) no-repeat,
+    repeating-linear-gradient(135deg, rgba(242,242,242,.6) 0 3px, transparent 3px 7px) calc(100% - 16px) 5px / 52px 4px no-repeat`;   // 딴 모서리의 빗금 선 둘 + 오른쪽 위 경고 줄무늬
+  const BR = '#f2f2f2, #f2f2f2';
+  const fxCss = document.createElement('style'); fxCss.id = 'volt-fx';
+  fxCss.textContent = `
+.sigil { display: block; overflow: visible; }
+.sigil .sg, .fx-orbit { transform-origin: 0 0; }
+[data-theme=volt] .top { flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 12px; }   /* 11-10 S.Lee: 제목 중앙 정렬 (PC 도), 로고 없음 */
+[data-theme=volt] .top h1 .tagline { display: block; margin: 8px 0 0; }
+[data-theme=volt] .top h1 .st-top { display: flex; justify-content: center; }
+[data-theme=volt] .top .chips { justify-content: center; }
+@media (min-width: 641px) {   /* 11-12 S.Lee: PC 는 상태 점 · KOSPI 칩을 차트 바로 위 한 줄로 (구분선 없음) */
+  [data-theme=volt] .hero-chart > header.top { flex-direction: row; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 10px 22px; padding: 0; margin: 0; border: 0; }
+  [data-theme=volt] .hero-chart > header.top .brand > div { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 10px 22px; }
+  [data-theme=volt] .hero-chart > header.top .sched { margin-top: 0; }
+  [data-theme=volt] .hero-chart > header.top .brand { margin: 0; text-align: right; }
+  [data-theme=volt] .hero-chart:has(> header.top) { padding-top: 0; }
+}
+/* ---- 대시보드: 깊은 우주 + 전술 격자 ---- */
+#fx-space { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+#fx-grid { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; mask-image: radial-gradient(ellipse 90% 80% at 50% 30%, #000 0%, transparent 78%); -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 30%, #000 0%, transparent 78%); }
+#fx-grid i { position: absolute; inset: -64px; background-image: linear-gradient(rgba(242,242,242,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(242,242,242,.05) 1px, transparent 1px); background-size: 64px 64px; }
+[data-theme=volt] body::before { display: block; inset: -20%; z-index: 0; mask-image: none; -webkit-mask-image: none; background-size: auto;
+  background-image: radial-gradient(40% 30% at 28% 30%, rgba(242,242,242,.10), transparent 70%), radial-gradient(34% 26% at 74% 64%, rgba(214,214,214,.06), transparent 70%), radial-gradient(28% 22% at 58% 16%, rgba(242,242,242,.035), transparent 70%); }
+/* ---- 대시보드: 모서리를 딴 판 ---- */
+[data-theme=volt] .wrap .card, [data-theme=volt] .wrap details.log { --cut: 14px; --ln: #5a5653; border-radius: 2px !important; clip-path: ${CUT};
+  background: ${PLATE}, linear-gradient(180deg, rgba(255,255,255,.028) 0%, rgba(255,255,255,0) 38%), rgba(16,16,16,.84) !important; background-origin: border-box !important; transition: border-color .18s; }
+[data-theme=volt] .wrap .card.hero-card { --ln: rgba(242,242,242,.75); background: ${PLATE},
+  linear-gradient(${BR}) calc(100% - 7px) 16px / 12px 1px no-repeat, linear-gradient(${BR}) calc(100% - 7px) 16px / 1px 12px no-repeat,
+  linear-gradient(${BR}) 7px calc(100% - 7px) / 12px 1px no-repeat, linear-gradient(${BR}) 7px calc(100% - 7px) / 1px 12px no-repeat,
+  radial-gradient(640px 300px at 0% 0%, rgba(242,242,242,.10), transparent 70%), radial-gradient(520px 260px at 100% 100%, rgba(242,242,242,.03), transparent 70%), rgba(16,16,16,.84) !important; background-origin: border-box !important; }
+[data-theme=volt] .wrap details.log summary { border-radius: 2px; }
+[data-theme=volt] .card .hd .eyebrow::before { content: ""; display: inline-block; width: 4px; height: 10px; margin-right: 9px; background: #f2f2f2; vertical-align: -1px; }   /* 이름판 표식 */
+[data-theme=volt] .chip { border-radius: 2px; }
+[data-theme=volt] .dec-row .act, [data-theme=volt] .eng .eyebrow::after { border-radius: 2px !important; }
+[data-theme=volt] .dec-row .cf i, [data-theme=volt] .dec-row .cf i b { border-radius: 0; }
+[data-theme=volt] .tip { border-radius: 2px; }
+[data-theme=volt] #ch-hero { position: relative; }
+@media (hover: hover) { [data-theme=volt] .wrap .card:hover { border-color: rgba(242,242,242,.5) !important; --ln: rgba(242,242,242,.8); } }
+.fx-sweep path { pointer-events: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .sigil .sg { animation: sg-rot var(--d, 40s) linear infinite; }
+  .sigil .sg.rev, .fx-orbit.rev { animation-direction: reverse; }
+  .sigil .core { transform-origin: 0 0; animation: sg-core 2.6s ease-in-out infinite; }
+  .fx-orbit { animation: sg-rot 26s linear infinite; } .fx-orbit.rev { animation-duration: 43s; } .fx-orbit.fx-sweep { animation-duration: 6.5s; }
+  [data-theme=volt] .cover .live { animation: nn-breathe 14s ease-in-out infinite alternate; }   /* 신경망 전체가 천천히 숨 쉬듯 다가왔다 물러남 */
+  @keyframes nn-breathe { from { transform: scale(1) rotate(-.4deg); } to { transform: scale(1.08) rotate(.5deg); } }
+  @keyframes sg-rot { to { transform: rotate(360deg); } }
+  @keyframes sg-core { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.7); opacity: .55; } }
+  [data-theme=volt] body::before { animation: fx-aurora 38s ease-in-out infinite alternate; will-change: transform; }
+  @keyframes fx-aurora { from { transform: translate3d(-4%, -2%, 0) rotate(0deg) scale(1); } to { transform: translate3d(5%, 4%, 0) rotate(9deg) scale(1.16); } }
+  #fx-grid i { animation: fx-grid 16s linear infinite; will-change: transform; }
+  @keyframes fx-grid { to { transform: translate3d(64px, 64px, 0); } }
+  [data-theme=volt] .card::after { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 1px; pointer-events: none;
+    background: linear-gradient(90deg, transparent, rgba(242,242,242,.95) 50%, transparent) no-repeat; background-size: 140px 1px; background-position: -140px 0;
+    animation: fx-edge 9s linear infinite; animation-delay: calc(var(--i, 0) * -1.7s); }   /* 판 윗변을 지나가는 신호 */
+  @keyframes fx-edge { 0% { background-position: -140px 0; } 45%, 100% { background-position: calc(100% + 140px) 0; } }
+  /* 격납고 문처럼 가운데서 위아래로 열림 (처음 한 번) */
+  .fx-go .wrap .card, .fx-go .wrap details.log { animation: fx-door .62s cubic-bezier(.2, .9, .25, 1) both; animation-delay: calc(var(--fx0, 0ms) + var(--i, 0) * 80ms); }
+  @keyframes fx-door { 0% { opacity: 0; filter: brightness(2.4); clip-path: polygon(14px 50%, 100% 50%, 100% 50%, calc(100% - 14px) 50%, 0 50%, 0 50%); } 22% { opacity: 1; }
+    100% { opacity: 1; filter: brightness(1); clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px); } }
+  @keyframes fx-fade { from { opacity: 0; } to { opacity: 1; } }
+  /* 확신도 막대가 충전되듯 참 */
+  .fx-go .dec-row .cf i b { transform-origin: 0 50%; animation: fx-charge .7s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--fx0, 0ms) + 520ms); }
+  @keyframes fx-charge { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  /* 수익률 차트를 훑는 스캐너 */
+  [data-theme=volt] #ch-hero::after { content: ""; position: absolute; top: 4%; bottom: 12%; left: 4%; width: 1px; pointer-events: none; opacity: 0;
+    background: linear-gradient(180deg, transparent, rgba(242,242,242,.85), transparent); box-shadow: 0 0 14px 2px rgba(242,242,242,.22); animation: fx-scan 7s cubic-bezier(.4, 0, .6, 1) infinite 1.5s; }
+  @keyframes fx-scan { 0% { left: 4%; opacity: 0; } 8% { opacity: .9; } 58% { opacity: .9; } 68%, 100% { left: 96%; opacity: 0; } }
+}
+`;
+  document.head.appendChild(fxCss);
+  // 11-12 S.Lee: 애니메이션 전부 없앰 (판 열림 · 숫자 해독 · 우주 배경 · 격자 · 오로라 · 스캐너 · 레이더 · 궤도 · 윗변 신호 · 선 그리기 · 끝점 맥박).
+  //   상태 점 깜빡임(실행 중 · 오류)만 신호라서 남김
+  const still = document.createElement('style'); still.id = 'no-motion';
+  still.textContent = `*:not(.dot), *::before, *::after { animation: none !important; transition: none !important; }
+html { scroll-behavior: auto !important; }
+.draw { stroke-dasharray: none !important; stroke-dashoffset: 0 !important; } .h-in { opacity: 1 !important; } .h-pulse { display: none !important; }
+[data-theme=volt] #ch-hero::after, [data-theme=volt] .card::after { display: none !important; }`;
+  document.head.appendChild(still);
+  // 11-12 S.Lee: 평면 화면 — 판 모양(모서리 따기) · 경고 줄무늬 · 윗변 빛 · 유리 질감 · 빛 번짐 · 배경 오로라 · 마우스 반응 없앰, 레이아웃은 그대로
+  const flat = document.createElement('style'); flat.id = 'flat';
+  flat.textContent = `[data-theme=volt] body { background: #101010 !important; }
+[data-theme=volt] body::before, [data-theme=volt] body::after { display: none !important; }
+[data-theme=volt] .wrap .card, [data-theme=volt] .wrap details.log, [data-theme=volt] .wrap .card.hero-card, [data-theme=volt] .card.glow-red, [data-theme=volt] .card.glow-blue {
+  clip-path: none !important; background: #161616 !important; background-image: none !important; border: 1px solid #2a2a2a !important; border-radius: 8px !important;
+  box-shadow: none !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+[data-theme=volt] .card::before, [data-theme=volt] .card::after, [data-theme=volt] details.log::before, [data-theme=volt] details.log::after { display: none !important; }
+[data-theme=volt] *, [data-theme=volt] *::before, [data-theme=volt] *::after { text-shadow: none !important; filter: none !important; }
+[data-theme=volt] :not(svg, svg *), [data-theme=volt] :not(svg, svg *)::before { clip-path: none !important; }
+[data-theme=volt] .chip, [data-theme=volt] .tag { box-shadow: none !important; background-image: none !important; }
+#tip { display: none !important; }
+.chart svg, #ch-hero svg, .cal .cell { pointer-events: none; cursor: default !important; }
+[data-theme=volt] .eyebrow::before, [data-theme=volt] .card-h::before { box-shadow: none !important; }
+/* 11-12 S.Lee: 투명도 없앰 — 차트 영역 채움 · 흐린 숫자 · 점 빛 번짐 · 반투명 막대 */
+#ch-hero path[clip-path], svg path[fill^="url"] { display: none !important; }
+[data-theme=volt] .dot { box-shadow: none !important; }
+svg [opacity]:not([opacity="0"]) { opacity: 1 !important; } svg [fill-opacity] { fill-opacity: 1 !important; } svg [stroke-opacity] { stroke-opacity: 1 !important; }
+[data-theme=volt] .card, [data-theme=volt] details.log, [data-theme=volt] .chip { backdrop-filter: none !important; }`;
+  document.head.appendChild(flat);
+  // 11-12 S.Lee: 글꼴은 영어 · 한글 · 숫자 모두 Noto Serif KR (숫자는 자릿수 맞춤만)
+  const serif = document.createElement('style'); serif.id = 'serif';
+  serif.textContent = `[data-theme=volt] body, [data-theme=volt] body *, [data-theme=volt] svg text, [data-theme=volt] button, [data-theme=volt] input { font-family: "Noto Serif KR", serif !important; }
+[data-theme=volt] body { font-variant-numeric: tabular-nums; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+[data-theme=volt] .top h1.h1-bare { font-size: inherit; line-height: 1; margin: 0; } [data-theme=volt] .top h1.h1-bare .tagline { margin: 0; }
+/* 11-12 S.Lee: 머리글 상태 점 — 작동 = 초록, 꺼짐 = 회색 (오류 = 빨강 그대로). 화면에서 초록은 여기만 */
+[data-theme=volt] .dot.ok { background: #34c759 !important; } [data-theme=volt] .dot:not(.ok):not(.bad) { background: #5a5a5a !important; }`;
+  document.head.appendChild(serif);
+  // 마우스를 올렸을 때 바뀌는 규칙(:hover)은 지움
+  const dropHover = () => { for (const sh of document.styleSheets) { let rs; try { rs = sh.cssRules; } catch (e) { continue; }
+    const walk = list => { for (let i = list.length - 1; i >= 0; i--) { const r = list[i];
+      if (r.cssRules && !r.selectorText) walk(r.cssRules);
+      else if (r.selectorText && /:hover/.test(r.selectorText)) { const keep = r.selectorText.split(',').filter(x => !/:hover/.test(x)); if (keep.length) r.selectorText = keep.join(','); else (r.parentRule || r.parentStyleSheet).deleteRule(i); } } };
+    walk(rs); } };
+  dropHover(); addEventListener('load', dropHover);
+})();
+</script>
+<script>
+// us-stocks 11-19: 시작 전 상태 점은 전부 회색 (꺼짐), 바로 들어갈 수 있게 Loading 준비
+(() => {
+  const st = document.getElementById('st-top');
+  if (st) st.innerHTML = ['서버', '모니터링', '에이전트'].map(n => `<span class="who" aria-label="${n} 시작 전"><i class="dot"></i>${n}</span>`).join('');
+  if (window.bootReady) window.bootReady();
+})();
+</script>
+<script>
+// 11-12 S.Lee: PC(641px 이상)는 머리글(상태 점 · KOSPI 칩)을 맨 위 카드의 차트 위로, 폰은 원래 자리
+(() => {
+  const hd = document.querySelector('header.top'), card = document.querySelector('.hero-card .hero-chart'), grid = document.querySelector('.grid');
+  if (!hd || !card || !grid) return;
+  const mq = matchMedia('(min-width: 641px)');
+  const place = () => { if (mq.matches) { if (hd.parentNode !== card) card.prepend(hd); } else if (hd.parentNode === card) grid.before(hd); };
+  place(); mq.addEventListener ? mq.addEventListener('change', place) : mq.addListener(place);
 })();
 </script>
 </body>
