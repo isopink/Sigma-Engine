@@ -258,9 +258,15 @@ def equity_close():
     b = C.read_json(C.BRIEFING, {}) or {}
     m = b.get("market", {})
     reg = C.latest_regime() or {}
-    rows.append({"date": C.today().isoformat(), "total": acc["total"],
-                 "kospi": m.get("close") if m.get("source") == "KOSPI" and b.get("asof") == C.today().isoformat() else None,
-                 "regime": reg.get("regime"), "cap": reg.get("cap")})
+    row = {"date": C.today().isoformat(), "total": acc["total"],
+           "kospi": m.get("close") if m.get("source") == "KOSPI" and b.get("asof") == C.today().isoformat() else None,
+           "regime": reg.get("regime"), "cap": reg.get("cap")}
+    if C.US:   # us-stocks: 지수는 S&P 500, 환율 · 원화 환산 자산도 같이 (원화 수익률 = 환율 효과 포함)
+        snap = C.read_json(C.LAST_SNAPSHOT, {}) or {}
+        fx = acc.get("fx")
+        row = {**row, "kospi": None, "index": snap.get("index") or (m.get("close") if b.get("asof") == C.today().isoformat() else None),
+               "fx": fx, "total_krw": round(acc["total"] * fx) if fx else None, "currency": "USD"}
+    rows.append(row)
     out("equity", sorted(rows, key=lambda r: r["date"]))
 
 
@@ -283,4 +289,4 @@ if __name__ == "__main__":
     if "--close" in sys.argv:
         equity_close()
     write_all()
-    print("docs/data 갱신:", datetime.now(C.KST).strftime("%H:%M:%S"))
+    print("docs/data 갱신:", C.now().strftime("%H:%M:%S"), "(뉴욕)" if C.US else "")

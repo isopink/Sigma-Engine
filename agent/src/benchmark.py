@@ -90,7 +90,28 @@ def update_spx():
     return out
 
 
+# ---- us-stocks 11-19: 미국 비교 기준 SPY (kodex200.json 과 같은 형식 → docs/data/us/spy.json) ----
+def update_spy():
+    import yahoo
+    days = {r["date"]: {"o": round(r["open"] or r["close"], 2), "c": round(r["close"], 2)} for r in yahoo.daily("SPY", "1y")}
+    start = C.params()["competition"]["start"]   # US: 운용 시작일
+    first = min((d for d in days if d >= start), default=None)
+    if not first:
+        raise ValueError(f"운용 시작일 {start} 이후 SPY 일봉이 아직 없음")
+    out = {"symbol": "SPY", "name": "SPY", "start_date": first, "start": days[first]["o"],
+           "days": {d: v for d, v in sorted(days.items()) if d >= first}, "updated": C.stamp()}
+    C.write_json(os.path.join(C.DOCS_DATA, "spy.json"), out)
+    return out
+
+
 if __name__ == "__main__":
+    if C.US:
+        try:
+            r = update_spy()
+            print(f"SPY 기준 {len(r['days'])}일 · 시작 시가 {r['start']:,.2f}")
+        except Exception as e:  # noqa: BLE001
+            print(f"  ! SPY 기준 갱신 실패: {e}")
+        sys.exit(0)
     rc = 0
     try:
         r = update()

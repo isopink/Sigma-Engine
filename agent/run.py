@@ -125,6 +125,9 @@ def claude(kind, prompt, dry=False):
            "--mcp-config", mcp_config(), "--strict-mcp-config",
            "--allowedTools", *TOOLS_ALLOW, "--disallowedTools", *TOOLS_DENY,
            "--max-budget-usd", os.environ.get("MAX_BUDGET_USD", "5")]
+    if C.US:   # us-stocks: CLAUDE.md(국내) 위에 미국에서 다르게 읽을 점을 덧붙임
+        with open(os.path.join(HERE, "US.md"), encoding="utf-8") as f:
+            cmd += ["--append-system-prompt", f.read()]
     eff = (C.params().get("effort") or {}).get(kind)   # 11-12 S.Lee: 실행 종류별 effort (기준값 조정 · 회고 = max). 없으면 settings.json 의 high
     if eff:
         cmd += ["--effort", eff]
@@ -351,6 +354,8 @@ def main():
                                       time=C.stamp(), codes=a.codes, why=a.why, next_trade=C.next_trade_time() or "내일",
                                       week=C.competition_week(p=p),
                                       period=("이번 주 월~수 (수요일 중간 회고)" if C.now().weekday() == 2 else f"{start} 이후 이번 주 (금요일 주간 회고)"))   # 11-06 S.Lee: 수·금 두 번
+        if C.US:   # 미국은 대회가 아님 → 주차 표현만 바꿈
+            prompt = "[미국 주식 · 실제 돈 · 뉴욕 시간] " + prompt.replace("대회 ", "운용 ")
         claude(kind, prompt, dry)
         publish(f"Agent {kind} {C.stamp()}")
     finally:
