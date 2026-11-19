@@ -1,19 +1,18 @@
 {
-  "created": "2026-11-19 08:31",
-  "asof": "2026-11-18",
+  "created": "2026-11-20 08:31",
+  "asof": "2026-11-19",
   "universe": 74,
   "source": "krx",
   "market": {
     "source": "KOSPI",
-    "close": 5067,
-    "ma20": 5446,
-    "ma60": 6243,
-    "ret5": -0.0573,
-    "ret20": -0.1165,
-    "rsi14": 36.5,
-    "rule_hint": "하락",
+    "close": 5138,
+    "ma20": 5426,
+    "ma60": 6214,
+    "ret5": -0.0383,
+    "ret20": -0.0715,
+    "rsi14": 38.7,
+    "rule_hint": "횡보",
     "closes": [
-      6813.34,
       6977.94,
       6869.83,
       6471.17,
@@ -77,631 +76,309 @@
       5290.53,
       5100.5,
       4968.48,
-      5067.44
+      5067.44,
+      5137.89
     ]
   },
-  "intraday": {
-    "time": "15:15",
-    "pool": 457,
-    "analyzed_new": 7,
-    "passed": 22,
-    "kept_prep": false
-  },
+  "intraday": null,
   "candidates": [
+    {
+      "code": "089590",
+      "name": "제주항공",
+      "close": 8500,
+      "ret5": 0.1502,
+      "ret20": 0.5977,
+      "rsi14": 77.0,
+      "vol20": 0.87,
+      "foreign_net": 11915226795,
+      "inst_net": 5866475775,
+      "score": 1.0,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "주주환원 승부수 통했나…제주항공·SK하이닉스 강세, 밸류업 수급 대이...",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "214450",
+      "name": "파마리서치",
+      "close": 276500,
+      "ret5": 0.1332,
+      "ret20": 0.0929,
+      "rsi14": 59.8,
+      "vol20": 0.567,
+      "foreign_net": -277526250,
+      "inst_net": 13097068250,
+      "score": 0.475,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "[더벨]파마리서치서 밀당PT까지…KCR파트너스의 성장투자 승부수",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "\"의료진이 제품을 고르는 기준은 가격보다 임상 근거\"... 파마리서치, 뉴...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[포토뉴스](주)파마리서치, 경포동 취약계층에 김장김치·난방유 기부",
+          "risk": false
+        }
+      ],
+      "exchange": "KOSDAQ"
+    },
     {
       "code": "090430",
       "name": "아모레퍼시픽",
-      "close": 135300,
-      "ret5": 0.0513,
-      "ret20": 0.0022,
-      "rsi14": 56.8,
-      "vol20": 0.392,
-      "foreign_net": -579748100,
-      "inst_net": 5273740500,
-      "score": 0.976,
+      "close": 141000,
+      "ret5": 0.1199,
+      "ret20": 0.065,
+      "rsi14": 63.3,
+      "vol20": 0.412,
+      "foreign_net": 3517154600,
+      "inst_net": 12004797350,
+      "score": 0.325,
       "news": [
         {
-          "date": "11-19",
-          "title": "한중 정상회담에 한한령 해제 기대감…하이브·SM·CJ ENM·아모레퍼시픽...",
+          "date": "11-20",
+          "title": "용산구, 아모레퍼시픽·용산문화재단과 지역 상생 협력…민관협력 본격...",
           "risk": false
         },
         {
-          "date": "11-19",
-          "title": "아모레퍼시픽 6.43% 상승…북미·일본 성장 속 13만9100원",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "\"한-중 관계 개선 기대\"...CJ ENM·아모레퍼시픽 '장중 껑충'",
+          "date": "11-20",
+          "title": "아모레퍼시픽, 임원 사내 부적절 관계에 '성과급 특혜' 의혹…인사 공정...",
           "risk": false
         }
       ],
-      "price": 140000,
-      "chg": 0.0712,
-      "activity": 2.83,
-      "foreign_today": 0,
-      "inst_today": 6160000000,
       "exchange": "KOSPI"
     },
     {
-      "code": "004170",
-      "name": "신세계",
-      "close": 276500,
-      "ret5": 0.1309,
-      "ret20": 0.0222,
-      "rsi14": 53.0,
-      "vol20": 0.559,
-      "foreign_net": -15878053250,
-      "inst_net": 19734369250,
-      "score": 0.934,
+      "code": "352820",
+      "name": "하이브",
+      "close": 187200,
+      "ret5": 0.2031,
+      "ret20": 0.0648,
+      "rsi14": 67.1,
+      "vol20": 0.831,
+      "foreign_net": 11197099000,
+      "inst_net": 50993204600,
+      "score": 0.287,
       "news": [
         {
-          "date": "11-19",
-          "title": "[유통 브리핑] 현대백화점·신세계백화점",
+          "date": "11-20",
+          "title": "iM證 “한·중 FTA 타결에 엔터주 재평가 기대⋯에스엠·하이브 수혜 클...",
           "risk": false
         },
         {
-          "date": "11-19",
-          "title": "“정돈된 삶 채우는 기능성 일상복”… 신세계 센텀시티, ‘모이프’ 팝...",
+          "date": "11-20",
+          "title": "넥스·하이브, ‘Starri | BTS’ 출시···방탄소년단의 음악을 거실에...",
           "risk": false
         }
       ],
-      "price": 294000,
-      "chg": 0.0991,
-      "activity": 2.55,
-      "foreign_today": 0,
-      "inst_today": 1470000000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "145020",
-      "name": "휴젤",
-      "close": 199800,
-      "ret5": 0.0163,
-      "ret20": 0.0713,
-      "rsi14": 59.3,
-      "vol20": 0.374,
-      "foreign_net": -6503770600,
-      "inst_net": 9700135300,
-      "score": 0.919,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "휴젤, 글로벌 에스테틱 리딩 기업 정조준",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "톡신으로 세계를 연 휴젤, '토탈 에스테틱'으로 다음 25년 연다",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "장두현號 휴젤, 취임 후 단 한 분기도 안 꺾였다…다음은 美",
-          "risk": false
-        }
-      ],
-      "price": 210500,
-      "chg": 0.0605,
-      "activity": 1.58,
-      "foreign_today": 0,
-      "inst_today": 1263000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "086450",
-      "name": "동국제약",
-      "close": 24600,
-      "ret5": -0.0428,
-      "ret20": 0.0103,
-      "rsi14": 54.5,
-      "vol20": 0.528,
-      "foreign_net": 1533377700,
-      "inst_net": 7444916300,
-      "score": 0.773,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "‘제약’ 벗고 ‘뷰티’ 입는다…동국제약 권병훈, ‘DK센텔리안’ 연착...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "동국제약, 반려동물 시장 공략… 펫케어 제품 5종 추가",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
-          "risk": false
-        }
-      ],
-      "price": 26500,
-      "chg": 0.0861,
-      "activity": 1.74,
-      "foreign_today": 477000000,
-      "inst_today": 212000000,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "010170",
       "name": "대한광통신",
-      "close": 13390,
-      "ret5": 0.0198,
-      "ret20": -0.0797,
-      "rsi14": 49.8,
+      "close": 14450,
+      "ret5": 0.115,
+      "ret20": 0.0743,
+      "rsi14": 55.3,
       "vol20": 0.996,
-      "foreign_net": 5374594730,
-      "inst_net": 112011910,
-      "score": 0.739,
+      "foreign_net": 28161277075,
+      "inst_net": 1626643455,
+      "score": 0.275,
       "news": [
         {
-          "date": "11-18",
-          "title": "코스피200·코스닥150 구성종목 변경한다...효성·대한광통신 편입",
+          "date": "11-19",
+          "title": "초고속 통신 쟁탈전에 불붙었다…대한광통신·자람테크놀로지 주가 '꿈...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "코스피200·코스닥150 리밸런싱…대한광통신에 685억 유입될 듯",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "코스닥 '급등'...HPSP·로보티즈·대한광통신·안랩 '껑충'",
           "risk": false
         }
       ],
-      "price": 14190,
-      "chg": 0.075,
-      "activity": 1.57,
-      "foreign_today": 4441470000,
-      "inst_today": 624360000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "443060",
-      "name": "HD현대마린솔루션",
-      "close": 184200,
-      "ret5": 0.1232,
-      "ret20": -0.1101,
-      "rsi14": 50.2,
-      "vol20": 0.739,
-      "foreign_net": -11398103450,
-      "inst_net": 14734861600,
-      "score": 0.611,
-      "news": [],
-      "foreign_today": 1842000000,
-      "inst_today": 368400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "089860",
-      "name": "롯데렌탈",
-      "close": 58500,
-      "ret5": 0.0,
-      "ret20": 0.1782,
-      "rsi14": 74.7,
-      "vol20": 0.447,
-      "foreign_net": -2764054250,
-      "inst_net": 8732145600,
-      "score": 0.517,
+      "code": "263860",
+      "name": "지니언스",
+      "close": 38550,
+      "ret5": 0.1577,
+      "ret20": 0.8668,
+      "rsi14": 75.4,
+      "vol20": 1.659,
+      "foreign_net": -1165601075,
+      "inst_net": 6589252200,
+      "score": 0.8,
       "news": [
         {
+          "date": "11-20",
+          "title": "미국 보안주 줄줄이 상승…안랩·지니언스에 쏠리는 관심",
+          "risk": false
+        },
+        {
           "date": "11-19",
-          "title": "롯데렌탈 G car, 충남 관광 캐릭터 '워디·가디'와 제휴 프로모션 실시",
+          "title": "지니언스 주가, 11월 19일 애프터마켓 38,150원 0.78% 하락",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "실적 개선에도 지니언스 4.29% 하락…거래대금 854억원",
           "risk": false
         }
       ],
-      "foreign_today": 1111500000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "051900",
-      "name": "LG생활건강",
-      "close": 252500,
-      "ret5": 0.1026,
-      "ret20": -0.0683,
-      "rsi14": 51.8,
-      "vol20": 0.454,
-      "foreign_net": 4362701750,
-      "inst_net": 3294406750,
-      "score": 0.512,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 1262500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "192820",
-      "name": "코스맥스",
-      "close": 304500,
-      "ret5": 0.16,
-      "ret20": 0.1236,
-      "rsi14": 65.6,
-      "vol20": 0.606,
-      "foreign_net": -29720408000,
-      "inst_net": 14409905500,
-      "score": 0.507,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "코스맥스, 연매출 3조원 달성 '초읽기'",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "코스맥스, '2026 세계일류상품' 3건 동시 선정…기초·색조·차세대 제형...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "쿠션·마스크팩 '세계일류상품' 오른 코스맥스…세계 시장 사로잡은 K-뷰...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1218000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "001040",
-      "name": "CJ",
-      "close": 115600,
-      "ret5": 0.0149,
-      "ret20": -0.043,
-      "rsi14": 48.7,
-      "vol20": 0.402,
-      "foreign_net": 2310959350,
-      "inst_net": -1944358500,
-      "score": 0.464,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "CJ제일제당 퀴진케이, 英·베트남·美서 'K-씨푸드 쿠킹 클래스' 성황리...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "'한한령 해빙' 조짐에 CJENM 중국 사업 반전 기대 : 판권·공동제작 길 ...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "CJ대한통운 \"개인정보 유출 가능성 조사 중…규모·대상 미확정\"",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 809200000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "271560",
-      "name": "오리온",
-      "close": 115400,
-      "ret5": 0.024,
-      "ret20": 0.0276,
-      "rsi14": 53.9,
-      "vol20": 0.245,
-      "foreign_net": 1999341850,
-      "inst_net": 514684200,
-      "score": 0.412,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "오리온, 베트남 국립농업대와 '20년 동행'…年 감자 공급량 1만t 달성",
-          "risk": true
-        },
-        {
-          "date": "11-19",
-          "title": "삼성·LG·롯데·CJ·오리온·한화 등 국내 주요 기업, '2026 베트남 100대...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "오리온·롯데·남양·매일유업 등...단백질에 식이섬유 얹는 식품업계 ...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 923200000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "241560",
-      "name": "두산밥캣",
-      "close": 52300,
-      "ret5": -0.0169,
-      "ret20": 0.0336,
-      "rsi14": 50.1,
-      "vol20": 0.346,
-      "foreign_net": -13701604000,
-      "inst_net": 16998799400,
-      "score": 0.412,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "두산밥캣-마음AI, 축사 분뇨 운반부터 청소까지 자율작업 실증",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "두산밥캣 AI로 지게차·잔디깎이 무인화 전환 속도 : 박성철 최대시장 ...",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "수요는 엇갈리고 경쟁사는 치고 오고…두산밥캣, '희망'으로 지은 4500억...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 575300000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "267270",
-      "name": "HD건설기계",
-      "close": 88300,
-      "ret5": -0.0596,
-      "ret20": -0.0626,
-      "rsi14": 44.2,
-      "vol20": 0.688,
-      "foreign_net": -14153791600,
-      "inst_net": 18106237050,
-      "score": 0.408,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "HD건설기계, 美 PSI와 1,600억 원 규모 발전용 엔진 공급 계약 체결",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "안산시, HD건설기계에 감사패 전달…지역기업과 30년 넘게 상생 협력",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "HD건설기계, 에티오피아 6·25 전사자 122명 추모의 벽 건립",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1059600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "005940",
-      "name": "NH투자증권",
-      "close": 23250,
-      "ret5": 0.0568,
-      "ret20": -0.0312,
-      "rsi14": 47.6,
-      "vol20": 0.423,
-      "foreign_net": -12832099325,
-      "inst_net": 18683130600,
-      "score": 0.365,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "[오늘의 증권] 하나증권·한국투자증권·NH투자증권·KB증권",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자증권, 연말정산 앞두고 'N2 연금저축계좌 순입금 이벤트' 진행",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자증권, 연말정산 앞두고 연금저축 이벤트…세액공제·경품 혜택 제...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 627750000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "161890",
-      "name": "한국콜마",
-      "close": 119300,
-      "ret5": 0.1212,
-      "ret20": -0.0628,
-      "rsi14": 52.5,
-      "vol20": 0.702,
-      "foreign_net": -7062794500,
-      "inst_net": 14189115350,
-      "score": 0.346,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "한국콜마 ‘아픈 손가락’ 美사업 새판 짠다",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "화학연 손잡은 한국콜마, 화장품 개발 시행착오 줄인다",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[K뷰티 ODM 3조 시대②] 한국 ODM 양강 엇다른 '2세 경영', 한국콜마는 ...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 835100000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "277810",
-      "name": "레인보우로보틱스",
-      "close": 408000,
-      "ret5": 0.1691,
-      "ret20": 0.0895,
-      "rsi14": 57.4,
-      "vol20": 1.201,
-      "foreign_net": -11546441250,
-      "inst_net": 34312587250,
-      "score": 1.0,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스닥, 2% 상승에 660선 회복...레인보우로보틱스, 로보티즈 등 상승",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "레인보우로보틱스 20%·로보티즈 13% 주가 급등",
-          "risk": false
-        }
-      ],
-      "price": 416000,
-      "chg": 0.0221,
-      "activity": 2.29,
-      "foreign_today": 0,
-      "inst_today": 4992000000,
       "exchange": "KOSDAQ"
     },
     {
       "code": "356860",
       "name": "티엘비",
-      "close": 42000,
-      "ret5": 0.098,
-      "ret20": 0.0619,
-      "rsi14": 54.5,
-      "vol20": 1.798,
-      "foreign_net": 1721167725,
-      "inst_net": 19862349325,
-      "score": 0.891,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "티엘비 주가, 11월 18일 애프터마켓 41,450원 3.63% 상승",
-          "risk": false
-        }
-      ],
-      "price": 44350,
-      "chg": 0.0713,
-      "activity": 1.6,
-      "foreign_today": 0,
-      "inst_today": 2927100000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "347700",
-      "name": "스피어",
-      "close": 16500,
-      "ret5": 0.0274,
-      "ret20": -0.2747,
-      "rsi14": 44.8,
-      "vol20": 1.11,
-      "foreign_net": -3024748215,
-      "inst_net": 2410895635,
-      "score": 0.825,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "스피어 7.09% 올라 1만7520원…누적 매출 218% 증가",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "넥스트바이오메디컬, 무릎동맥색전술 의료기기 '넥스피어에프' 美 FDA 임...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "씨어스·스피어·인바디 ;쑥쑥;… 디지털 헬스케어 시장 대박 날까",
-          "risk": false
-        }
-      ],
-      "price": 17640,
-      "chg": 0.0782,
-      "activity": 1.75,
-      "foreign_today": 970200000,
-      "inst_today": 617400000,
+      "close": 46250,
+      "ret5": 0.1171,
+      "ret20": 0.2317,
+      "rsi14": 58.8,
+      "vol20": 1.812,
+      "foreign_net": -12035600,
+      "inst_net": 17120449175,
+      "score": 0.65,
+      "news": [],
       "exchange": "KOSDAQ"
     },
     {
       "code": "232140",
       "name": "와이씨",
-      "close": 15170,
-      "ret5": 0.2283,
-      "ret20": 0.0859,
-      "rsi14": 60.2,
-      "vol20": 1.37,
-      "foreign_net": -15163088550,
-      "inst_net": 27088362955,
-      "score": 0.711,
+      "close": 15790,
+      "ret5": 0.3136,
+      "ret20": 0.2165,
+      "rsi14": 62.3,
+      "vol20": 1.342,
+      "foreign_net": -15243523345,
+      "inst_net": 30834499285,
+      "score": 0.612,
       "news": [
         {
           "date": "11-18",
           "title": "에스티아이·와이씨 매수 불끈… HBM 관련주 투자심리 달아오른다",
           "risk": false
-        },
+        }
+      ],
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "328130",
+      "name": "루닛",
+      "close": 16710,
+      "ret5": 0.1868,
+      "ret20": 0.5136,
+      "rsi14": 62.1,
+      "vol20": 1.398,
+      "foreign_net": 4212732050,
+      "inst_net": 14520627350,
+      "score": 0.6,
+      "news": [
         {
-          "date": "11-17",
-          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
+          "date": "11-19",
+          "title": "거래소 지수 정기 변경…씨어스 편입·루닛 제외",
           "risk": false
         },
         {
-          "date": "11-17",
-          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
+          "date": "11-19",
+          "title": "건강관리기술 상장기업 2026년 11월 브랜드평판...루닛, 씨어스, 비트컴...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[브랜드평판] 건강관리기술 상장기업 11월 빅데이터…1위 루닛·2위 씨어...",
           "risk": false
         }
       ],
-      "price": 15410,
-      "chg": 0.0322,
-      "activity": 1.57,
-      "foreign_today": 0,
-      "inst_today": 1833790000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "468530",
-      "name": "프로티나",
-      "close": 54200,
-      "ret5": -0.0373,
-      "ret20": 0.1656,
-      "rsi14": 55.2,
-      "vol20": 1.271,
-      "foreign_net": 5286107875,
-      "inst_net": 359679675,
-      "score": 0.711,
-      "news": [],
-      "price": 57400,
-      "chg": 0.0709,
-      "activity": 0.66,
-      "foreign_today": 0,
-      "inst_today": 1033200000,
+      "code": "261780",
+      "name": "아리바이오랩",
+      "close": 5650,
+      "ret5": 0.2959,
+      "ret20": 0.4543,
+      "rsi14": 66.3,
+      "vol20": 1.435,
+      "foreign_net": 2796178163,
+      "inst_net": -152341960,
+      "score": 0.562,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "아리바이오랩, 스턴메디칼과 바디필러 장기 공급계약 체결",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[더벨][i-point] 아리바이오랩, 538억원 수출 계약 \"상장유지·신성장 동...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "아리바이오랩, 바디필러 538억원 수출계약…신사업 성장동력 확보",
+          "risk": false
+        }
+      ],
       "exchange": "KOSDAQ"
     },
     {
-      "code": "069500",
-      "name": "KODEX 200",
-      "close": 79400,
-      "ret5": -0.0608,
-      "ret20": -0.1151,
-      "rsi14": 36.7,
-      "vol20": 0.576,
+      "code": "114800",
+      "name": "KODEX 인버스",
+      "close": 1309,
+      "ret5": 0.0422,
+      "ret20": 0.0531,
+      "rsi14": 58.7,
+      "vol20": 0.565,
       "foreign_net": null,
       "inst_net": null,
       "score": null,
       "news": [
         {
-          "date": "11-18",
-          "title": "KODEX 200 2% 상승…코스피 대형주 강세 반영",
+          "date": "11-17",
+          "title": "KODEX 인버스 2.34% 상승…증시 약세에 거래 12억주",
           "risk": false
         }
       ],
       "exchange": "ETF"
     },
     {
-      "code": "114800",
-      "name": "KODEX 인버스",
-      "close": 1329,
-      "ret5": 0.0624,
-      "ret20": 0.1075,
-      "rsi14": 61.3,
-      "vol20": 0.572,
+      "code": "069500",
+      "name": "KODEX 200",
+      "close": 80630,
+      "ret5": -0.0429,
+      "ret20": -0.0681,
+      "rsi14": 39.0,
+      "vol20": 0.569,
       "foreign_net": null,
       "inst_net": null,
       "score": null,
-      "news": [],
+      "news": [
+        {
+          "date": "11-19",
+          "title": "KODEX 200 0.31% 하락…거래대금 1조511억원 집중",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "KODEX 200 2% 상승…코스피 대형주 강세 반영",
+          "risk": false
+        }
+      ],
       "exchange": "ETF"
     }
   ]
