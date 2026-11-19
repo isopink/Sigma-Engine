@@ -193,6 +193,17 @@ def session_close(d=None, p=None):
     return (cal.get("early_close") or {}).get(d.isoformat()) or cal.get("close")
 
 
+def in_session(t=None, p=None):
+    """정규장 중인지. KR 은 예전 그대로 평일 09:00~15:30, US 는 params.calendar (휴장일 · 조기 마감 반영)."""
+    t = t or now()
+    if not US:
+        return 900 <= t.hour * 100 + t.minute <= 1530 and t.weekday() < 5
+    p = p or params()
+    cal = p.get("calendar") or {}
+    hm = t.strftime("%H:%M")
+    return is_trading_day(t.date(), p) and cal.get("open", "09:30") <= hm <= (session_close(t.date(), p) or "16:00")
+
+
 def business_days(start, end, p=None):
     """start 다음 날부터 end 까지의 거래일 수 (보유일 계산용). 평일에서 params.calendar 휴장일을 뺌 (KR 은 휴장일 목록 없음)."""
     if isinstance(start, str):

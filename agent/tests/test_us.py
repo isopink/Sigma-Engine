@@ -128,6 +128,35 @@ def test_sizing_us_limit_and_cents():
     assert halted["qty"] == 0 and "비상 정지" in halted["limited_by"]
 
 
+def test_calendar_session():
+    from datetime import date, datetime
+    p = C.params()
+    at = lambda d, hm: datetime(*d, *hm, tzinfo=C.TZ)  # noqa: E731
+    assert C.in_session(at((2026, 11, 30), (10, 0)), p)                 # 월요일 장중
+    assert not C.in_session(at((2026, 11, 30), (9, 0)), p)              # 개장 전
+    assert not C.in_session(at((2026, 11, 26), (11, 0)), p)             # 추수감사절 휴장
+    assert C.in_session(at((2026, 11, 27), (12, 30)), p)                # 조기 마감일 13:00 전
+    assert not C.in_session(at((2026, 11, 27), (13, 30)), p)            # 조기 마감 뒤
+    assert C.business_days("2026-11-25", date(2026, 11, 30), p) == 2   # 26 휴장 · 주말 빼고 27 · 30
+
+
+def test_ticker_format():
+    assert C.code_market("AAPL") == "US" and C.code_market("BRK.B") == "US"
+    assert C.code_market("005930") == "KR" and C.code_market("0009K0") == "KR"
+    assert C.code_market("ENERGY") is None and C.code_market("HEALTH CARE") is None   # S&P 500 표의 업종 합계 행
+
+
+def test_briefing_text():
+    import us_data
+    row = {"code": "AAPL", "name": "Apple", "close": 230.12, "ma5": 228.5, "ma20": 220.1, "ma60": 210.0, "ret5": 0.012,
+           "ret20": 0.05, "rsi14": 61.2, "vol20": 0.25, "mdd60": -0.08, "rel_strength": 0.03, "trading_value_20d": 9e9, "score": 0.9,
+           "news": [{"date": "11-18", "title": "Apple faces lawsuit", "risk": True}]}
+    b = {"asof": "2026-11-18", "market": {"source": "S&P 500", "close": 7323.63, "ma5": 7400, "ma20": 7500, "ma60": 7600,
+                                           "rule_hint": "하락", "us": []}, "candidates": [row], "holdings": []}
+    t = us_data.to_text(b)
+    assert "| AAPL | Apple | 230.12 |" in t and "$9,000M" in t and "⚠ Apple faces lawsuit" in t and "SPY 대비" in t
+
+
 if __name__ == "__main__":
     fails = 0
     for n, f in list(globals().items()):

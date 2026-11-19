@@ -35,7 +35,11 @@ def chart(code, rng="1y", interval="1d", timeout=10):
 
 def daily(code, rng="1y"):
     """일봉 [{date, open, high, low, close, volume}] (값 없는 날 제외, 뉴욕 거래일)."""
-    r = chart(code, rng, "1d")
+    return daily_from(chart(code, rng, "1d"))
+
+
+def daily_from(r):
+    """chart() 결과 → 일봉 목록."""
     ts = r.get("timestamp") or []
     q = ((r.get("indicators") or {}).get("quote") or [{}])[0]
     off = (r.get("meta") or {}).get("gmtoffset", 0)

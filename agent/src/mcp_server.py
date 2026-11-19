@@ -26,7 +26,10 @@ with contextlib.redirect_stdout(sys.stderr):
     import common as C
     C.load_env()
     import broker as B
-    import data_prep
+    if C.US:   # us-stocks: 미국 브리핑 (요약 형식 · live_market 이 미국용)
+        import us_data as data_prep
+    else:
+        import data_prep
     import risk
     import routing
     import sizing

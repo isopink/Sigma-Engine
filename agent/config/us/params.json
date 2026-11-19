@@ -258,7 +258,24 @@
       "MU",
       "GE"
     ],
-    "universe_file": "universe.json"
+    "universe_file": "universe.json",
+    "ndx_extra": {
+      "_note": "나스닥 100 중 S&P 500 에 없는 종목 (Wikipedia 나스닥 100 구성 표가 없어 직접 관리, 분기 리밸런싱 때 확인). 겹쳐도 무방",
+      "ASML": "ASML Holding",
+      "ARM": "Arm Holdings",
+      "AZN": "AstraZeneca",
+      "PDD": "PDD Holdings",
+      "MELI": "MercadoLibre",
+      "CCEP": "Coca-Cola Europacific Partners",
+      "TEAM": "Atlassian",
+      "ZS": "Zscaler",
+      "GFS": "GlobalFoundries",
+      "SHOP": "Shopify",
+      "TRI": "Thomson Reuters",
+      "MDB": "MongoDB",
+      "BIDU": "Baidu"
+    },
+    "spike_day": 0.25
   },
   "schedule": {
     "_note": "뉴욕 시간. 10:00~15:45 15분마다 24회 (국내와 같은 회차 수 · 모델 · effort, 11-19 S.Lee). 개장 30분(09:30~10:00)은 판단 · 매도 안 함",

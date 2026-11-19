@@ -221,8 +221,10 @@ def run(dry=False):
     it = p["screen"].get("intraday", {})
     if not it.get("enabled", True):
         return print("장중 후보 갱신 꺼짐 (params.screen.intraday.enabled)")
+    if C.US:   # us-stocks: 미국은 장중 전 종목 순위 API 를 아직 안 씀 → 준비 후보 유지 (현재가 · 장중 RSI 는 --rsi 가 갱신)
+        return print("미국: 장중 순위 없음, 준비 후보를 그대로 씀")
     n = C.now()
-    if not dry and (not (900 <= n.hour * 100 + n.minute <= 1530) or n.weekday() >= 5):
+    if not dry and not C.in_session(n):
         return print("장중이 아니라 08:30 후보를 그대로 씀")
     brk = broker.get()
     if brk.name != "live":
@@ -300,7 +302,7 @@ PREP_ROWS = os.path.join(C.WORK, "prep_rows.json")   # 08:30 준비에서 계산
 def rsi_now(closes, price):
     """전일까지 종가 + 지금 가격(오늘 종가로 가정) → RSI(14). 전일 RSI 와 같은 GS Quant 함수."""
     import pandas as pd
-    from data_prep import gts
+    from ind import gts
     s = pd.Series([*closes, price], index=pd.bdate_range(end=C.today(), periods=len(closes) + 1), dtype=float)
     return round(float(gts.relative_strength_index(s, 14).iloc[-1]), 1)
 
@@ -310,10 +312,10 @@ def live_rsi():
     현재가는 순위 API 값(있으면) → 없으면 ka10001 (1.1초 간격). 종가가 없으면 pykrx 로 받음."""
     import broker
     n = C.now()
-    if not (900 <= n.hour * 100 + n.minute <= 1530) or n.weekday() >= 5:
+    if not C.in_session(n):
         return print("장중이 아니라 장중 RSI 생략 (전일 RSI 사용)")
     brk = broker.get()
-    if brk.name != "live":
+    if brk.name != "live" and not C.US:   # 미국 가상 계좌는 Yahoo 가격으로 계산
         return print("mock 모드: 장중 RSI 생략")
     b = C.read_json(C.BRIEFING)
     if not b:
@@ -331,7 +333,11 @@ def live_rsi():
         if c not in done:
             try:
                 closes = x.get("closes") or cache.get(c, {}).get("closes")
-                if not closes:
+                if not closes and C.US:
+                    import us_data
+                    closes = [round(v["close"], 2) for v in us_data.ohlcv(c)[0][-120:]]
+                    x["closes"] = closes
+                elif not closes:
                     import data_prep
                     closes = [round(float(v)) for v in data_prep.ohlcv(c)["종가"].tail(120)]
                     x["closes"] = closes
