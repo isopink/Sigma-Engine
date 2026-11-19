@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "14:45",
+    "time": "15:00",
     "pool": 457,
     "analyzed_new": 30,
     "passed": 22,
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 140000,
-      "chg": 0.0712,
-      "activity": 2.81,
+      "price": 139900,
+      "chg": 0.0704,
+      "activity": 2.82,
       "foreign_today": 0,
-      "inst_today": 6160000000,
+      "inst_today": 6155600000,
       "exchange": "KOSPI"
     },
     {
@@ -133,8 +133,13 @@
       "vol20": 0.559,
       "foreign_net": -15878053250,
       "inst_net": 19734369250,
-      "score": 0.941,
+      "score": 0.94,
       "news": [
+        {
+          "date": "11-19",
+          "title": "“정돈된 삶 채우는 기능성 일상복”… 신세계 센텀시티, ‘모이프’ 팝...",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "신세계 10.09% 급등…3분기 영업이익 사상 최대",
@@ -148,7 +153,7 @@
       ],
       "price": 294000,
       "chg": 0.0991,
-      "activity": 2.61,
+      "activity": 2.57,
       "foreign_today": 0,
       "inst_today": 1470000000,
       "exchange": "KOSPI"
@@ -163,7 +168,7 @@
       "vol20": 0.374,
       "foreign_net": -6503770600,
       "inst_net": 9700135300,
-      "score": 0.909,
+      "score": 0.912,
       "news": [
         {
           "date": "11-19",
@@ -181,11 +186,11 @@
           "risk": false
         }
       ],
-      "price": 211500,
-      "chg": 0.0655,
-      "activity": 1.53,
+      "price": 211000,
+      "chg": 0.063,
+      "activity": 1.56,
       "foreign_today": 0,
-      "inst_today": 1269000000,
+      "inst_today": 1266000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -216,11 +221,11 @@
           "risk": false
         }
       ],
-      "price": 26300,
-      "chg": 0.0779,
-      "activity": 1.68,
-      "foreign_today": 473400000,
-      "inst_today": 210400000,
+      "price": 26450,
+      "chg": 0.084,
+      "activity": 1.71,
+      "foreign_today": 476100000,
+      "inst_today": 211600000,
       "exchange": "KOSDAQ"
     },
     {
@@ -233,7 +238,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.759,
+      "score": 0.753,
       "news": [
         {
           "date": "11-18",
@@ -241,11 +246,11 @@
           "risk": false
         }
       ],
-      "price": 14120,
-      "chg": 0.0697,
-      "activity": 1.57,
-      "foreign_today": 4419560000,
-      "inst_today": 621280000,
+      "price": 14160,
+      "chg": 0.0727,
+      "activity": 1.56,
+      "foreign_today": 4432080000,
+      "inst_today": 623040000,
       "exchange": "KOSDAQ"
     },
     {
@@ -258,7 +263,7 @@
       "vol20": 0.739,
       "foreign_net": -11398103450,
       "inst_net": 14734861600,
-      "score": 0.623,
+      "score": 0.619,
       "news": [],
       "foreign_today": 1842000000,
       "inst_today": 368400000,
@@ -274,7 +279,7 @@
       "vol20": 0.447,
       "foreign_net": -2764054250,
       "inst_net": 8732145600,
-      "score": 0.527,
+      "score": 0.526,
       "news": [
         {
           "date": "11-19",
@@ -296,7 +301,7 @@
       "vol20": 0.454,
       "foreign_net": 4362701750,
       "inst_net": 3294406750,
-      "score": 0.518,
+      "score": 0.516,
       "news": [],
       "foreign_today": 0,
       "inst_today": 1262500000,
@@ -312,7 +317,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.514,
+      "score": 0.512,
       "news": [
         {
           "date": "11-19",
@@ -344,11 +349,11 @@
       "vol20": 0.576,
       "foreign_net": -7831435000,
       "inst_net": 64671469250,
-      "score": 0.491,
+      "score": 0.488,
       "news": [],
       "price": 255000,
       "chg": 0.0,
-      "activity": 0.68,
+      "activity": 0.7,
       "foreign_today": 0,
       "inst_today": 2805000000,
       "exchange": "KOSPI"
@@ -363,21 +368,21 @@
       "vol20": 0.402,
       "foreign_net": 2310959350,
       "inst_net": -1944358500,
-      "score": 0.482,
+      "score": 0.479,
       "news": [
         {
           "date": "11-19",
-          "title": "한중 정상회담에 한한령 해제 기대감…하이브·SM·CJ ENM·아모레퍼시픽...",
+          "title": "CJ제일제당, 3개국서 쿠킹 클래스 성료···'K씨푸드' 글로벌 확산",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "영·베트남·미 요리학교 파고든 'K-씨푸드'…CJ제일제당, 해외 쿠킹 클...",
+          "title": "CJ프레시웨이, 영남권 외식사업자 맞춤형 솔루션 제공…전문 식재 활용...",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "CJ제일제당 퀴진케이, 3개국서 한국 수산물 활용 쿠킹 클래스 개최",
+          "title": "[유통단신] CJ제일제당·한국수산회, 'K-씨푸드' 쿠킹 클래스 마무리 外...",
           "risk": false
         }
       ],
@@ -395,7 +400,7 @@
       "vol20": 0.245,
       "foreign_net": 1999341850,
       "inst_net": 514684200,
-      "score": 0.427,
+      "score": 0.419,
       "news": [
         {
           "date": "11-19",
@@ -427,7 +432,7 @@
       "vol20": 0.346,
       "foreign_net": -13701604000,
       "inst_net": 16998799400,
-      "score": 0.423,
+      "score": 0.419,
       "news": [
         {
           "date": "11-18",
@@ -459,7 +464,7 @@
       "vol20": 0.688,
       "foreign_net": -14153791600,
       "inst_net": 18106237050,
-      "score": 0.4,
+      "score": 0.409,
       "news": [
         {
           "date": "11-19",
@@ -491,21 +496,21 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.373,
+      "score": 0.367,
       "news": [
         {
           "date": "11-19",
+          "title": "[오늘의 증권] 하나증권·한국투자증권·NH투자증권·KB증권",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "NH투자증권, 연말정산 앞두고 'N2 연금저축계좌 순입금 이벤트' 진행",
+          "risk": false
+        },
+        {
+          "date": "11-19",
           "title": "NH투자증권, 연말정산 앞두고 연금저축 이벤트…세액공제·경품 혜택 제...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자증권, 사랑의 백미 600포 부안군 기탁해",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[금융계 동향] MG새마을금고·NH투자증권·우리은행",
           "risk": false
         }
       ],
@@ -536,11 +541,11 @@
           "risk": false
         }
       ],
-      "price": 413000,
-      "chg": 0.0147,
-      "activity": 2.31,
+      "price": 413500,
+      "chg": 0.016,
+      "activity": 2.28,
       "foreign_today": 0,
-      "inst_today": 4956000000,
+      "inst_today": 4962000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -553,7 +558,7 @@
       "vol20": 1.798,
       "foreign_net": 1721167725,
       "inst_net": 19862349325,
-      "score": 0.905,
+      "score": 0.898,
       "news": [
         {
           "date": "11-18",
@@ -561,11 +566,11 @@
           "risk": false
         }
       ],
-      "price": 44500,
-      "chg": 0.0749,
-      "activity": 1.68,
+      "price": 44300,
+      "chg": 0.07,
+      "activity": 1.63,
       "foreign_today": 0,
-      "inst_today": 2937000000,
+      "inst_today": 2923800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -578,7 +583,7 @@
       "vol20": 1.11,
       "foreign_net": -3024748215,
       "inst_net": 2410895635,
-      "score": 0.823,
+      "score": 0.833,
       "news": [
         {
           "date": "11-19",
@@ -596,11 +601,11 @@
           "risk": false
         }
       ],
-      "price": 17490,
-      "chg": 0.0691,
-      "activity": 1.77,
-      "foreign_today": 961950000,
-      "inst_today": 612150000,
+      "price": 17570,
+      "chg": 0.074,
+      "activity": 1.76,
+      "foreign_today": 966350000,
+      "inst_today": 614950000,
       "exchange": "KOSDAQ"
     },
     {
@@ -613,7 +618,7 @@
       "vol20": 1.37,
       "foreign_net": -15163088550,
       "inst_net": 27088362955,
-      "score": 0.732,
+      "score": 0.73,
       "news": [
         {
           "date": "11-18",
@@ -631,11 +636,11 @@
           "risk": false
         }
       ],
-      "price": 15500,
-      "chg": 0.0382,
-      "activity": 1.62,
+      "price": 15490,
+      "chg": 0.0375,
+      "activity": 1.59,
       "foreign_today": 0,
-      "inst_today": 1844500000,
+      "inst_today": 1843310000,
       "exchange": "KOSDAQ"
     },
     {
@@ -648,13 +653,13 @@
       "vol20": 1.271,
       "foreign_net": 5286107875,
       "inst_net": 359679675,
-      "score": 0.723,
+      "score": 0.712,
       "news": [],
-      "price": 57300,
-      "chg": 0.069,
-      "activity": 0.64,
+      "price": 56900,
+      "chg": 0.0616,
+      "activity": 0.65,
       "foreign_today": 0,
-      "inst_today": 1031400000,
+      "inst_today": 1024200000,
       "exchange": "KOSDAQ"
     },
     {
