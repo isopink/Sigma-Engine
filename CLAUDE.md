@@ -32,7 +32,8 @@ assets/     README 그림 · diagrams/*.mmd
 
 ## 실행 PC
 
-- 에이전트는 상시 켜 둔 **데스크톱** `C:\dev\uostock-ai-trader` 에서 돎. 노트북 · 클라우드는 수정 전용
+- 에이전트는 상시 켜 둔 **데스크톱** `C:\dev\uostock-ai-trader` 에서 돎 (실행 전용, 직접 고치지 않음). 노트북 · 클라우드는 수정 전용
+- 데스크톱에도 수정용 복사본 `C:\Users\석민이\orca\sigma-engine` 이 따로 있음 (11-19). 여기서 고쳐 push → 같은 PC 의 sync 가 실행 폴더로 pull. 실행 폴더의 `agent/work/journal.jsonl` 은 이 PC 에서 바로 읽을 수 있음
 - push → 데스크톱 `sync` (로그온부터 상시)가 1분 안에 pull · 검사 · 반영, 장중이면 감시 · 잔고 루프 재시작, `sync.py` 가 바뀌면 자기 자신도 재시작. 1분마다 heartbeat
 - 에이전트도 판단마다 `docs/data` 를 커밋 · push 함 → push 가 거절되면 `git pull --rebase` 후 다시
 - 작업을 멈출 때: `Stop-ScheduledTask` 는 run.bat 만 끔 → 감시를 재시작하려면 `run.py monitor` python 도 종료
