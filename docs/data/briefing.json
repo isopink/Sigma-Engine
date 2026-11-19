@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "10:30",
+    "time": "10:45",
     "pool": 354,
     "analyzed_new": 30,
     "passed": 7,
@@ -89,34 +89,34 @@
   },
   "candidates": [
     {
-      "code": "323410",
-      "name": "카카오뱅크",
-      "close": 21050,
-      "ret5": 0.0319,
-      "ret20": 0.0473,
-      "rsi14": 61.3,
-      "vol20": 0.26,
-      "foreign_net": 10318319375,
-      "inst_net": 1825680175,
+      "code": "030200",
+      "name": "KT",
+      "close": 49950,
+      "ret5": -0.0167,
+      "ret20": 0.0152,
+      "rsi14": 48.8,
+      "vol20": 0.352,
+      "foreign_net": 10608508500,
+      "inst_net": -9893151650,
       "score": 1.0,
       "news": [
         {
           "date": "11-19",
-          "title": "카카오뱅크, 금융 AI 학술대회서 논문 2편 발표",
+          "title": "공연 티켓부터 항공권까지…KT 등 이통 3사, 수험생 마케팅 본격화",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "카카오뱅크, 서울시와 청소년 금융 아이디어 시상…충동구매·보이스피...",
+          "title": "KT, 수능 마친 수험생 대상 혜택 프로모션",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "카카오뱅크·서울시, 청소년 금융 아이디어 공모전 개최",
+          "title": "KT, 수험생 대상 ‘Y수능 페스타’ 개최...AI 한 달 무료·쇼핑 혜택",
           "risk": false
         }
       ],
-      "foreign_today": 399950000,
+      "foreign_today": 499500000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -182,10 +182,10 @@
           "risk": false
         }
       ],
-      "price": 14170,
-      "chg": -0.069,
-      "activity": 1.86,
-      "foreign_today": 127530000,
+      "price": 14030,
+      "chg": -0.0782,
+      "activity": 1.94,
+      "foreign_today": 126270000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
