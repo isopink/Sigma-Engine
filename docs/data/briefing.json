@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "11:30",
+    "time": "11:45",
     "pool": 378,
     "analyzed_new": 30,
-    "passed": 19,
+    "passed": 20,
     "kept_prep": false
   },
   "candidates": [
@@ -102,6 +102,11 @@
       "news": [
         {
           "date": "11-19",
+          "title": "'아모레퍼시픽 효자' 설화수의 글로벌 행보 [뉴스Q]",
+          "risk": false
+        },
+        {
+          "date": "11-19",
           "title": "바이오 신약부터 더마 코스메틱까지… 아모레퍼시픽·LG생활건강 동반 ...",
           "risk": false
         },
@@ -109,18 +114,13 @@
           "date": "11-19",
           "title": "NH투자 \"아모레퍼시픽 글로벌 성장 지속, 더마·헤어 브랜드 실적 확대...",
           "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "NH투자證 \"아모레퍼시픽, 내년 더마·헤어로 글로벌 성장 본격화\"",
-          "risk": false
         }
       ],
-      "price": 139400,
-      "chg": 0.0666,
-      "activity": 3.14,
+      "price": 138700,
+      "chg": 0.0612,
+      "activity": 2.97,
       "foreign_today": 0,
-      "inst_today": 1533400000,
+      "inst_today": 1525700000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.828,
       "foreign_net": -1284328150,
       "inst_net": 38086031300,
-      "score": 0.931,
+      "score": 0.935,
       "news": [
         {
           "date": "11-19",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 180200,
-      "chg": 0.0816,
-      "activity": 4.82,
+      "price": 180100,
+      "chg": 0.081,
+      "activity": 4.72,
       "foreign_today": 0,
-      "inst_today": 901000000,
+      "inst_today": 900500000,
       "exchange": "KOSPI"
     },
     {
@@ -168,7 +168,7 @@
       "vol20": 0.996,
       "foreign_net": 5374594730,
       "inst_net": 112011910,
-      "score": 0.782,
+      "score": 0.772,
       "news": [
         {
           "date": "11-18",
@@ -176,11 +176,11 @@
           "risk": false
         }
       ],
-      "price": 13880,
-      "chg": 0.0515,
-      "activity": 2.2,
-      "foreign_today": 680120000,
-      "inst_today": 333120000,
+      "price": 13780,
+      "chg": 0.0439,
+      "activity": 2.09,
+      "foreign_today": 675220000,
+      "inst_today": 330720000,
       "exchange": "KOSDAQ"
     },
     {
@@ -193,7 +193,7 @@
       "vol20": 0.606,
       "foreign_net": -29720408000,
       "inst_net": 14409905500,
-      "score": 0.678,
+      "score": 0.685,
       "news": [
         {
           "date": "11-19",
@@ -216,63 +216,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "011200",
-      "name": "HMM",
-      "close": 22300,
-      "ret5": 0.1122,
-      "ret20": -0.0409,
-      "rsi14": 52.8,
-      "vol20": 0.44,
-      "foreign_net": 31328111150,
-      "inst_net": -6239667840,
-      "score": 0.552,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
-          "risk": false
-        }
-      ],
-      "foreign_today": 780500000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "035720",
-      "name": "카카오",
-      "close": 32000,
-      "ret5": 0.0,
-      "ret20": 0.0339,
-      "rsi14": 53.0,
-      "vol20": 0.435,
-      "foreign_net": -24016672300,
-      "inst_net": 2843162775,
-      "score": 0.54,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "세이퍼존, 텔레그램 이어 카카오톡까지 대화 로깅 기술 구현…기업 정보...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[카드] \"충동구매·보이스피싱 예방까지\" 카카오뱅크, 청소년 금융 아이...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "JDC-카카오모빌리티, 제주 AI 대전환 '맞손'",
-          "risk": false
-        }
-      ],
-      "price": 31800,
-      "chg": 0.0,
-      "activity": 0.69,
-      "foreign_today": 127200000,
-      "inst_today": 159000000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "128940",
       "name": "한미약품",
       "close": 439500,
@@ -282,7 +225,7 @@
       "vol20": 0.638,
       "foreign_net": 5649878250,
       "inst_net": 3781596500,
-      "score": 0.54,
+      "score": 0.565,
       "news": [
         {
           "date": "11-19",
@@ -305,6 +248,28 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "011200",
+      "name": "HMM",
+      "close": 22300,
+      "ret5": 0.1122,
+      "ret20": -0.0409,
+      "rsi14": 52.8,
+      "vol20": 0.44,
+      "foreign_net": 31328111150,
+      "inst_net": -6239667840,
+      "score": 0.554,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
+          "risk": false
+        }
+      ],
+      "foreign_today": 780500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "161890",
       "name": "한국콜마",
       "close": 119300,
@@ -314,8 +279,13 @@
       "vol20": 0.702,
       "foreign_net": -7062794500,
       "inst_net": 14189115350,
-      "score": 0.529,
+      "score": 0.554,
       "news": [
+        {
+          "date": "11-19",
+          "title": "한국콜마 ‘아픈 손가락’ 美사업 새판 짠다",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "화학연 손잡은 한국콜마, 화장품 개발 시행착오 줄인다",
@@ -324,11 +294,6 @@
         {
           "date": "11-19",
           "title": "[K뷰티 ODM 3조 시대②] 한국 ODM 양강 엇다른 '2세 경영', 한국콜마는 ...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "한국콜마 자연공시 치명적 누락, “서초구 멸종위기종 없음”",
           "risk": false
         }
       ],
@@ -346,8 +311,13 @@
       "vol20": 0.528,
       "foreign_net": 1533377700,
       "inst_net": 7444916300,
-      "score": 0.529,
+      "score": 0.543,
       "news": [
+        {
+          "date": "11-19",
+          "title": "동국제약, 반려동물 시장 공략… 펫케어 제품 5종 추가",
+          "risk": false
+        },
         {
           "date": "11-19",
           "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
@@ -357,19 +327,49 @@
           "date": "11-19",
           "title": "혁신형 제약기업, 동국제약·동화약품 등 6곳 재인증",
           "risk": false
+        }
+      ],
+      "price": 25400,
+      "chg": 0.041,
+      "activity": 1.34,
+      "foreign_today": 0,
+      "inst_today": 25400000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "close": 32000,
+      "ret5": 0.0,
+      "ret20": 0.0339,
+      "rsi14": 53.0,
+      "vol20": 0.435,
+      "foreign_net": -24016672300,
+      "inst_net": 2843162775,
+      "score": 0.533,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "JDC-카카오모빌리티, 제주AX 대전환 및 미래 신산업 생태계 조성 맞손",
+          "risk": false
         },
         {
           "date": "11-19",
-          "title": "동국제약·동화약품 등 6개사, '혁신형 제약기업' 3년 연장",
+          "title": "카카오뱅크 독주 속 케이뱅크·토스뱅크 순익 격차 29억원",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "카카오톡, 게시판 공동 편집·외국어 자동 번역 도입",
           "risk": false
         }
       ],
-      "price": 25350,
-      "chg": 0.0389,
-      "activity": 1.38,
-      "foreign_today": 0,
-      "inst_today": 25350000,
-      "exchange": "KOSDAQ"
+      "price": 31750,
+      "chg": -0.0016,
+      "activity": 0.68,
+      "foreign_today": 127000000,
+      "inst_today": 158750000,
+      "exchange": "KOSPI"
     },
     {
       "code": "032640",
@@ -381,8 +381,14 @@
       "vol20": 0.415,
       "foreign_net": -7560092250,
       "inst_net": 8632040710,
-      "score": 0.402,
-      "news": [],
+      "score": 0.413,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "[통신 브리핑] SK텔레콤·KT·SK브로드밴드·LG유플러스",
+          "risk": false
+        }
+      ],
       "foreign_today": 139500000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -397,10 +403,42 @@
       "vol20": 0.35,
       "foreign_net": -22663130825,
       "inst_net": 42319866025,
-      "score": 0.322,
+      "score": 0.348,
       "news": [],
       "foreign_today": 0,
       "inst_today": 225050000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "267270",
+      "name": "HD건설기계",
+      "close": 88300,
+      "ret5": -0.0596,
+      "ret20": -0.0626,
+      "rsi14": 44.2,
+      "vol20": 0.688,
+      "foreign_net": -14153791600,
+      "inst_net": 18106237050,
+      "score": 0.337,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "HD건설기계, 美 PSI와 1,600억 원 규모 발전용 엔진 공급 계약 체결",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "안산시, HD건설기계에 감사패 전달…지역기업과 30년 넘게 상생 협력",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "HD건설기계, 에티오피아 6·25 전사자 122명 추모의 벽 건립",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 88300000,
       "exchange": "KOSPI"
     },
     {
@@ -413,21 +451,21 @@
       "vol20": 0.423,
       "foreign_net": -12832099325,
       "inst_net": 18683130600,
-      "score": 0.299,
+      "score": 0.315,
       "news": [
         {
           "date": "11-19",
-          "title": "세금 아끼고 경품도 받고… NH투자증권, 연금저축 이벤트",
+          "title": "NH투자증권, 연말정산 절세 겨냥 'N2 연금저축계좌 순입금 이벤트' 실시",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "NH투자증권, 연금저축 100만원 이상 순입금 고객에 경품 행사",
+          "title": "NH투자증권 \"내년 K뷰티 수출 178억달러…역대 최대 전망\"",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "연말정산 앞두고···NH투자증권, 연금저축 이벤트 승부수",
+          "title": "NH투자증권, 연말 연금저축 순입금 이벤트 진행",
           "risk": false
         }
       ],
@@ -445,7 +483,7 @@
       "vol20": 1.119,
       "foreign_net": 1511510540,
       "inst_net": 1458372165,
-      "score": 0.736,
+      "score": 0.739,
       "news": [
         {
           "date": "11-19",
@@ -467,7 +505,7 @@
       "vol20": 1.656,
       "foreign_net": 542177575,
       "inst_net": 6081908050,
-      "score": 0.575,
+      "score": 0.587,
       "news": [
         {
           "date": "11-19",
@@ -485,11 +523,11 @@
           "risk": false
         }
       ],
-      "price": 37600,
-      "chg": -0.0221,
-      "activity": 2.16,
+      "price": 37750,
+      "chg": -0.0182,
+      "activity": 2.04,
       "foreign_today": 0,
-      "inst_today": 451200000,
+      "inst_today": 453000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -502,7 +540,7 @@
       "vol20": 1.242,
       "foreign_net": -27651921250,
       "inst_net": 34237007000,
-      "score": 0.552,
+      "score": 0.554,
       "news": [
         {
           "date": "11-18",
@@ -515,11 +553,11 @@
           "risk": false
         }
       ],
-      "price": 54000,
-      "chg": -0.0305,
-      "activity": 0.74,
+      "price": 53900,
+      "chg": -0.0323,
+      "activity": 0.69,
       "foreign_today": 0,
-      "inst_today": 54000000,
+      "inst_today": 53900000,
       "exchange": "KOSDAQ"
     },
     {
@@ -532,7 +570,7 @@
       "vol20": 1.419,
       "foreign_net": 2764709000,
       "inst_net": 13056079915,
-      "score": 0.46,
+      "score": 0.467,
       "news": [
         {
           "date": "11-19",
@@ -550,11 +588,11 @@
           "risk": false
         }
       ],
-      "price": 15900,
-      "chg": 0.0089,
-      "activity": 0.43,
+      "price": 15720,
+      "chg": -0.0025,
+      "activity": 0.44,
       "foreign_today": 0,
-      "inst_today": 63600000,
+      "inst_today": 62880000,
       "exchange": "KOSDAQ"
     },
     {
@@ -567,7 +605,7 @@
       "vol20": 1.517,
       "foreign_net": -11796977500,
       "inst_net": 18643601050,
-      "score": 0.402,
+      "score": 0.413,
       "news": [],
       "foreign_today": 0,
       "inst_today": 158400000,
