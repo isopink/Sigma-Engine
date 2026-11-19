@@ -961,6 +961,40 @@ def test_kosdaq_buy_block_and_sell_wait():
         C.market_of = old
 
 
+def test_replay_buy_then_stop():
+    """11-19 백테스트: 기록된 확신도로 실전 규칙(sizing · risk · monitor)을 그대로 돌림. 매수 → 다음 날 일봉 저가로 손절, 끝나면 common 원상복구."""
+    import replay
+    p = C.params()
+
+    class Snap:
+        def price(self, code, t):
+            return None
+
+        def briefing(self, t):
+            return {}
+
+        def params_at(self, t):
+            return p
+
+    item = {"code": "000001", "name": "테스트", "side": "매수", "conf": 0.80, "adj_known": True, "src": "fill", "price": 10000, "time": "2026-11-17 10:02"}
+    data = {"runs": [{"id": "20261117-1000-decide", "time": "2026-11-17 10:00", "mode": "decide", "regime": "횡보", "cap": 0.7,
+                      "items": {"000001": item}, "actual": []}],
+            "days": ["2026-11-17", "2026-11-18"], "snap": Snap(),
+            "ohlc": {"000001": {"2026-11-16": [10000, 10000, 10000, 10000], "2026-11-17": [10000, 10100, 9900, 10000],
+                                "2026-11-18": [9800, 9900, 9000, 9100]}},
+            "markets": {"000001": "KOSPI"}, "equity": [], "kodex200": {}, "journal": []}
+    now0, rj0 = C.now, C.read_json
+    res = replay.simulate(data, p)
+    assert C.now is now0 and C.read_json is rj0   # 끝나면 common 원상복구
+    buys = [f for f in res["fills"] if f["side"] == "매수"]
+    sells = [f for f in res["fills"] if f["side"] == "매도"]
+    assert len(buys) == 1 and buys[0]["qty"] > 0, res
+    stop = round(10000 * (1 + p["decision"]["stop_loss_pct"]))
+    assert len(sells) == 1 and sells[0]["rule_exit"] and sells[0]["price"] == min(9800, stop), sells
+    assert not res["holdings"] and res["closed"][0]["ret"] < 0
+    assert res["equity"][-1]["total"] < C.risk_limits()["initial_capital"]
+
+
 if __name__ == "__main__":
     fails = 0
     for n, f in list(globals().items()):
