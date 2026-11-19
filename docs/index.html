@@ -362,6 +362,12 @@ details.log summary { border-radius: 16px; }
 .foot a { color: var(--body); text-decoration: none; display: inline-flex; align-items: center; padding: 4px 6px; vertical-align: -4px; }
 button:focus-visible, summary:focus-visible, a:focus-visible, [tabindex="0"]:focus-visible { outline: 2px solid #f6e500; outline-offset: 2px; }
 .foot a:hover, .foot a:focus-visible { color: var(--ink); }
+/* us-stocks 11-19 S.Lee: 시장 전환 (국내 대회 화면 ↔ 미국 화면). 평면 알약 둘, 지금 화면만 흰 바탕 */
+.mkt { display: flex; justify-content: flex-end; margin: 0 0 10px; }
+.mkt-sw { display: inline-flex; padding: 2px; border: 1px solid var(--line); border-radius: 9999px; background: var(--card); }
+.mkt-sw a { padding: 5px 14px; border-radius: 9999px; font-size: 12px; line-height: 1.4; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.mkt-sw a[aria-current=page] { background: var(--ink); color: var(--canvas); }
+@media (max-width: 640px) { .mkt { justify-content: center; } }
 </style>
 </head>
 <body>
@@ -390,6 +396,7 @@ button:focus-visible, summary:focus-visible, a:focus-visible, [tabindex="0"]:foc
 })();
 </script>
 <div class="wrap">
+  <nav class="mkt" aria-label="시장 선택"><div class="mkt-sw"><a href="./" aria-current="page">국내</a><a href="us.html">미국</a></div></nav>   <!-- us-stocks 11-19 S.Lee: 미국 화면으로 한 번에 -->
 
   <header class="top">
     <div class="brand">

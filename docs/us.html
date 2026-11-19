@@ -48,6 +48,23 @@ tr.why td { white-space: normal; text-align: left; color: var(--body); backgroun
 tr.why p { margin: 4px 0; } tr.why b { color: var(--muted); font-weight: 400; margin-right: 6px; }
 .empty { color: var(--muted); padding: 8px 0; }
 .note { color: var(--muted); font-size: 12px; margin-top: 8px; }
+.mkt { display: flex; justify-content: flex-end; margin: 0 0 10px; }
+.mkt-sw { display: inline-flex; padding: 2px; border: 1px solid var(--line); border-radius: 9999px; background: var(--card); }
+.mkt-sw a { padding: 5px 14px; border-radius: 9999px; font-size: 12px; line-height: 1.4; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.mkt-sw a[aria-current=page] { background: var(--ink); color: var(--bg); }
+a:focus-visible { outline: 2px solid #f6e500; outline-offset: 2px; }
+.launch { padding: 32px 28px; }
+.eyebrow { color: var(--muted); font-size: 12px; letter-spacing: .4px; }
+.launch-h { margin: 6px 0 8px; color: var(--ink); font-size: clamp(30px, 5vw, 48px); font-weight: 500; letter-spacing: -0.8px; line-height: 1.1; }
+.launch-sub { margin: 0 0 24px; color: var(--body); max-width: 560px; }
+.steps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.steps li { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.steps .n { color: var(--muted); font-size: 12px; }
+.steps .t { color: var(--ink); font-size: 15px; }
+.steps .s { display: block; color: var(--muted); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.steps .st { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.steps .st.ok { color: var(--ink); }
+[hidden] { display: none !important; }
 footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 24px; }
 @media (max-width: 760px) {
   .hero { grid-template-columns: minmax(0, 1fr); }
@@ -63,12 +80,21 @@ footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 2
 </head>
 <body>
 <div class="wrap">
+  <nav class="mkt" aria-label="시장 선택"><div class="mkt-sw"><a href="./">국내</a><a href="us.html" aria-current="page">미국</a></div></nav>
   <header>
     <h1>Sigma Engine 미국 주식</h1>
     <div class="dots"><span><i class="dot" id="d-agent"></i>에이전트</span><span><i class="dot" id="d-halt"></i>주문</span><span id="asof"></span></div>
   </header>
 
-  <section class="card hero">
+  <section class="card launch" id="launch" hidden>
+    <div class="eyebrow">미국 주식 · 실제 돈 · 한국투자증권</div>
+    <div class="launch-h">Prepare to Launch</div>
+    <p class="launch-sub" id="launch-sub">매매 설계를 끼우고 시작 전 점검을 통과하면 이 화면이 실제 계좌로 바뀝니다.</p>
+    <ol class="steps" id="steps"></ol>
+    <div class="note" id="launch-asof"></div>
+  </section>
+
+  <section class="card hero" data-live>
     <div>
       <div class="muted" style="color:var(--muted);font-size:12px">총자산</div>
       <div class="big" id="total">-</div>
@@ -89,10 +115,10 @@ footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 2
     </div>
   </section>
 
-  <section class="card"><h2>포트폴리오</h2><div class="tbl" id="holdings"></div></section>
-  <section class="card"><h2>실시간 판단</h2><div id="dec-head" class="note" style="margin:-6px 0 8px"></div><div class="tbl" id="decision"></div></section>
-  <section class="card"><h2>최근 체결</h2><div class="tbl" id="trades"></div></section>
-  <section class="card"><h2>리스크 차단</h2><div class="tbl" id="risk"></div></section>
+  <section class="card" data-live><h2>포트폴리오</h2><div class="tbl" id="holdings"></div></section>
+  <section class="card" data-live><h2>실시간 판단</h2><div id="dec-head" class="note" style="margin:-6px 0 8px"></div><div class="tbl" id="decision"></div></section>
+  <section class="card" data-live><h2>최근 체결</h2><div class="tbl" id="trades"></div></section>
+  <section class="card" data-live><h2>리스크 차단</h2><div class="tbl" id="risk"></div></section>
 
   <footer>Designed by S.Lee &amp; M.Park</footer>
 </div>
@@ -200,12 +226,35 @@ footer { color: var(--muted); font-size: 12px; text-align: center; margin-top: 2
         <td class="hide-sm" style="white-space:normal;text-align:left">${esc(r.detail)}</td></tr>`));
   }
 
-  Promise.all(['equity', 'holdings', 'trades', 'risk', 'status', 'decision', 'spy'].map(get)).then(([equity, hs, ts, rs, status, dec, spy]) => {
+  const STEPS = [   // launch.json 이 없을 때(공개 화면 · 점검 전) 보여 줄 단계. 이름은 agent/src/preflight_us.py STEPS 와 같음
+    ['strategy', '매매 설계 확정', '매수 · 매도 · 확신도'], ['limits', '리스크 한도 확정', '임시값 정리 · 자동 조정 범위'],
+    ['kis', 'KIS 계좌 연결', '키 · 계좌 조회 · 시작 금액'], ['tasks', '일정 등록', '작업 스케줄러 · 종목 목록'],
+    ['tests', '검사 통과', '미국 규칙 검사'], ['switch', '비상 정지 해제', '사람이 직접 켬'],
+  ];
+  const STATE = { ok: ['ok', '완료'], warn: ['ok', '확인'], bad: ['err', '필요'], wait: ['', '대기'] };
+  function launch(l) {
+    const by = {}; ((l && l.steps) || []).forEach(x => { by[x.key] = x; });
+    $('steps').innerHTML = STEPS.map(([k, t, sub], i) => {
+      const st = STATE[(by[k] || {}).state || 'wait'];
+      return `<li><span class="n">${String(i + 1).padStart(2, '0')}</span><span><span class="t">${esc(t)}</span><span class="s">${esc(sub)}</span></span>
+        <span class="st ${st[0] === 'ok' ? 'ok' : ''}"><i class="dot ${st[0]}"></i>${st[1]}</span></li>`;
+    }).join('');
+    const done = STEPS.filter(([k]) => ['ok', 'warn'].includes((by[k] || {}).state)).length;
+    $('launch-asof').textContent = l ? `시작 전 점검 ${l.time} 뉴욕 · ${done} / ${STEPS.length} 완료` : '아직 시작 전 점검을 하지 않았습니다';
+    if (l && l.ok) $('launch-sub').textContent = '점검을 모두 통과했습니다. 다음 정규장부터 에이전트가 매매를 시작합니다.';
+  }
+
+  Promise.all(['equity', 'holdings', 'trades', 'risk', 'status', 'decision', 'spy', 'launch'].map(get)).then(([equity, hs, ts, rs, status, dec, spy, ln]) => {
+    const live = !!(ln && ln.ok && equity && equity.length);   // 점검 통과 + 자산 기록이 생기면 실제 계좌 화면
+    $('launch').hidden = live;
+    document.querySelectorAll('[data-live]').forEach(el => { el.hidden = !live; });
+    if (!live) launch(ln);
     if (status) {
       const fresh = status.last_run && (Date.now() - new Date(status.last_run.replace(' ', 'T')).getTime()) < 36e5 * 30;
       $('d-agent').className = 'dot ' + (status.failures_today ? 'err' : fresh ? 'ok' : '');
       $('d-halt').className = 'dot ' + (/비상 정지/.test(status.note || '') ? 'err' : 'ok');
     }
+    if (!live) return;
     if (!equity || !equity.length) {
       empty('chart', '자산 기록이 아직 없습니다. 미국 계좌 숫자는 공개 저장소에 올리지 않아서 실행 PC 에서만 보입니다');
     } else { hero(equity, status, spy); chart(equity, spy); }

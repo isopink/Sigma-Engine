@@ -9,3 +9,4 @@ f60d2df	운영	미국 프롬프트 (agent/US.md) · 기준선 SPY · 마감 기�
 7e5aff5	대시보드	미국 화면 docs/us.html (로컬 전용)
 -	운영	미국 매수 · 매도 · 확신도 · 리스크 한도는 S.Lee 미정 → config/us 값에 임시값(_pending) 표시
 -	구조	미국 메인 설계 끼우는 곳 src/strategy_us.py (확신도 · 비중 · 매도 수량 · 손절익절 · 추가 규칙) + 시작 전 점검 run.py check
+-	대시보드	국내 화면에 국내 · 미국 전환 버튼, 미국 화면 시작 전 Prepare to Launch 6단계 (점검 결과 반영)

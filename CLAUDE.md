@@ -8,6 +8,7 @@
 > - 사용량: 국내 대회 에이전트의 회차 수 · effort · 모델은 줄이지 않음. 미국 쪽도 같은 모델 · effort 기준 (S.Lee 11-19)
 > - **미정 (S.Lee 11-19)**: 미국 매수 · 매도 규칙, 확신도 기준, 리스크 Hook 한도. 지금 `config/us` 값은 국내 복사 · Claude 제안 임시값 (`_pending`). 정하기 전엔 `enabled` 를 켜지 않음
 > - 메인 설계는 `agent/src/strategy_us.py` 함수 5개에 끼움 (`READY=False` 면 주문 전부 차단). 시작 전 점검 `run_us.bat check`
+> - 화면: `index.html` 오른쪽 위 국내 · 미국 전환 → `us.html`. 시작 전엔 Prepare to Launch 6단계 (`run_us.bat check` 가 `docs/data/us/launch.json` 에 씀, 상태만 · 계좌 숫자 없음)
 > - 구조: `SIGMA_MARKET=US` → `config/us` · `work_us` · `.env.us` · 뉴욕 시간 · KIS 브로커 `src/kis.py` · 데이터 `src/us_data.py` · 프롬프트 덧붙임 `agent/US.md` · 일정 `run.py tick` · 화면 `docs/us.html`. 실행법은 `agent/README.md` 맨 아래
 > - 안전: `config/us/risk_limits.json` `enabled` 기본 false (비상 정지), US 실행에선 키움 브로커를 못 만듦, 손절 백업 매도, 미국 계좌 숫자는 공개 저장소 · Supabase 에 안 올림
 > - 변경 기록은 `reports/changes_us.tsv` (대회 보고서용 changes.tsv 와 분리). 검사 `python agent/tests/test_us.py`

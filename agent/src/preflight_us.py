@@ -86,6 +86,25 @@ def checks():
     return out
 
 
+STEPS = [   # 미국 화면 단계 ← 점검 줄 이름 앞부분. 화면엔 상태만 (잔고 · 키 같은 내용은 안 씀)
+    ("strategy", "매매 설계 확정", "매수 · 매도 · 확신도 (strategy_us.py)", ("전략 확정", "전략 함수")),
+    ("limits", "리스크 한도 확정", "임시값 정리 · 자동 조정 범위", ("임시값 표시", "리스크 한도", "자동 조정")),
+    ("kis", "KIS 계좌 연결", "키 · 계좌 조회 · 시작 금액", (".env.us", "KIS", "MODE", "시작 금액")),
+    ("tasks", "일정 등록", "작업 스케줄러 · 종목 목록", ("작업 스케줄러", "종목 목록", "뉴욕 시간")),
+    ("tests", "검사 통과", "test_us.py", ("test_us",)),
+    ("switch", "비상 정지 해제", "enabled · STOP 파일", ("비상 정지", "work_us/STOP")),
+]
+
+
+def launch(rows):
+    steps = []
+    for key, title, sub, prefixes in STEPS:
+        marks = [m for m, n, _ in rows if n.startswith(prefixes)]
+        steps.append({"key": key, "title": title, "sub": sub,
+                      "state": "bad" if BAD in marks else "warn" if WARN in marks else "ok" if marks else "wait"})
+    return {"time": C.stamp(), "ok": all(x["state"] != "bad" for x in steps), "steps": steps}
+
+
 def main():
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -100,6 +119,7 @@ def main():
     print()
     print("시작 가능 ✅" if not bad else f"시작 전 고칠 것 {len(bad)}개: " + " · ".join(bad))
     C.write_json(os.path.join(C.WORK, "preflight.json"), {"time": C.stamp(), "ok": not bad, "rows": rows})
+    C.write_json(os.path.join(C.DOCS_DATA, "launch.json"), launch(rows))   # 미국 화면 'Prepare to Launch' (docs/data/us 는 커밋 안 함)
     return 0 if not bad else 1
 
 
