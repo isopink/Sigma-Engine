@@ -81,44 +81,107 @@
     ]
   },
   "intraday": {
-    "time": "10:45",
-    "pool": 354,
+    "time": "11:00",
+    "pool": 378,
     "analyzed_new": 30,
-    "passed": 7,
+    "passed": 14,
     "kept_prep": false
   },
   "candidates": [
     {
-      "code": "030200",
-      "name": "KT",
-      "close": 49950,
-      "ret5": -0.0167,
-      "ret20": 0.0152,
-      "rsi14": 48.8,
-      "vol20": 0.352,
-      "foreign_net": 10608508500,
-      "inst_net": -9893151650,
+      "code": "090430",
+      "name": "아모레퍼시픽",
+      "close": 135300,
+      "ret5": 0.0513,
+      "ret20": 0.0022,
+      "rsi14": 56.8,
+      "vol20": 0.392,
+      "foreign_net": -579748100,
+      "inst_net": 5273740500,
       "score": 1.0,
       "news": [
         {
           "date": "11-19",
-          "title": "공연 티켓부터 항공권까지…KT 등 이통 3사, 수험생 마케팅 본격화",
+          "title": "바이오 신약부터 더마 코스메틱까지… 아모레퍼시픽·LG생활건강 동반 ...",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "KT, 수능 마친 수험생 대상 혜택 프로모션",
+          "title": "NH투자 \"아모레퍼시픽 글로벌 성장 지속, 더마·헤어 브랜드 실적 확대...",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "KT, 수험생 대상 ‘Y수능 페스타’ 개최...AI 한 달 무료·쇼핑 혜택",
+          "title": "NH투자證 \"아모레퍼시픽, 내년 더마·헤어로 글로벌 성장 본격화\"",
           "risk": false
         }
       ],
-      "foreign_today": 499500000,
-      "inst_today": 0,
+      "price": 137000,
+      "chg": 0.0482,
+      "activity": 3.25,
+      "foreign_today": 0,
+      "inst_today": 1507000000,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "352820",
+      "name": "하이브",
+      "close": 178600,
+      "ret5": 0.1979,
+      "ret20": -0.024,
+      "rsi14": 63.1,
+      "vol20": 0.828,
+      "foreign_net": -1284328150,
+      "inst_net": 38086031300,
+      "score": 0.961,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "민희진, 쏘스뮤직 이기고 의기양양 \"하이브 억측-언플 멈춰\"[SC이슈]",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "\"하이브, 日엔터사 인수로 수익원 다각화 긍정적\"-삼성",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "삼성증권 \"하이브, 日 엔터사 인수로 사업 확장 기대\"…목표가 유지",
+          "risk": false
+        }
+      ],
+      "price": 176300,
+      "chg": 0.0582,
+      "activity": 4.35,
+      "foreign_today": 0,
+      "inst_today": 881500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "close": 13390,
+      "ret5": 0.0198,
+      "ret20": -0.0797,
+      "rsi14": 49.8,
+      "vol20": 0.996,
+      "foreign_net": 5374594730,
+      "inst_net": 112011910,
+      "score": 0.765,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "코스피200·코스닥150 구성종목 변경한다...효성·대한광통신 편입",
+          "risk": false
+        }
+      ],
+      "price": 14160,
+      "chg": 0.0727,
+      "activity": 2.02,
+      "foreign_today": 693840000,
+      "inst_today": 339840000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "011200",
@@ -130,7 +193,7 @@
       "vol20": 0.44,
       "foreign_net": 31328111150,
       "inst_net": -6239667840,
-      "score": 0.786,
+      "score": 0.549,
       "news": [
         {
           "date": "11-19",
@@ -138,9 +201,156 @@
           "risk": false
         }
       ],
-      "foreign_today": 535200000,
+      "foreign_today": 780500000,
       "inst_today": 0,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "128940",
+      "name": "한미약품",
+      "close": 439500,
+      "ret5": -0.1049,
+      "ret20": 0.1551,
+      "rsi14": 49.4,
+      "vol20": 0.638,
+      "foreign_net": 5649878250,
+      "inst_net": 3781596500,
+      "score": 0.549,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "한미약품, 소비자 마음 잡고 '제약사 1위' 등극…유한양행·동국제약 순",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "낮아진 뇌졸중 콜레스테롤 목표, 한미약품 '로수젯·아모프렐' 내밀었다",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "한미약품, 세계뇌졸중학회서 심뇌혈관질환 관리 전략 공유",
+          "risk": false
+        }
+      ],
+      "foreign_today": 1318500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "035720",
+      "name": "카카오",
+      "close": 32000,
+      "ret5": 0.0,
+      "ret20": 0.0339,
+      "rsi14": 53.0,
+      "vol20": 0.435,
+      "foreign_net": -24016672300,
+      "inst_net": 2843162775,
+      "score": 0.373,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "카카오, 춘식이 미키 마우스 옷 입고 연말 선물 시장 공략",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "“미키 마우스로 변신한 춘식이”…카카오, 디즈니 협업 상품 출시",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[뉴스워커_카카오페이] 시니어 1,000명 금융교육…신원근 대표, 포용금융...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 128000000,
+      "inst_today": 160000000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 32150,
+      "ret5": 0.0206,
+      "ret20": 0.0206,
+      "rsi14": 52.1,
+      "vol20": 0.35,
+      "foreign_net": -22663130825,
+      "inst_net": 42319866025,
+      "score": 0.294,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 225050000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "272450",
+      "name": "진에어",
+      "close": 7820,
+      "ret5": -0.0475,
+      "ret20": 0.3529,
+      "rsi14": 70.3,
+      "vol20": 1.119,
+      "foreign_net": 1511510540,
+      "inst_net": 1458372165,
+      "score": 0.784,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "한진그룹, 통합 진에어 출범 앞두고 전방위 주주 소통",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[경제일보] 비용 절감부터 재무 부담까지…통합 진에어 내실 다지기 시...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "대한항공·아시아나·진에어, LCC 통합 앞두고 주주 설명회",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 289340000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "263860",
+      "name": "지니언스",
+      "close": 35950,
+      "ret5": 0.3934,
+      "ret20": 0.7579,
+      "rsi14": 72.2,
+      "vol20": 1.656,
+      "foreign_net": 542177575,
+      "inst_net": 6081908050,
+      "score": 0.588,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "지니언스 주가, 11월 19일 장중 38,800원 0.91% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "클라우드 넘어 AI 보안까지…지니언스·파수·이글루에 러브콜 몰리나",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[오늘의 특징주] 삼성전자·원익홀딩스·지니언스",
+          "risk": false
+        }
+      ],
+      "price": 38450,
+      "chg": 0.0,
+      "activity": 2.56,
+      "foreign_today": 0,
+      "inst_today": 461400000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "267850",
@@ -152,7 +362,7 @@
       "vol20": 1.689,
       "foreign_net": -395213930,
       "inst_net": -4350030,
-      "score": 0.857,
+      "score": 0.529,
       "news": [
         {
           "date": "11-16",
@@ -160,54 +370,79 @@
           "risk": false
         }
       ],
-      "foreign_today": 389120000,
+      "foreign_today": 376960000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
-      "code": "100790",
-      "name": "미래에셋벤처투자",
-      "close": 15240,
-      "ret5": 0.239,
-      "ret20": 0.0167,
-      "rsi14": 57.9,
-      "vol20": 1.124,
-      "foreign_net": -14682117560,
-      "inst_net": 1803537460,
-      "score": 0.643,
-      "news": [
-        {
-          "date": "11-17",
-          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
-          "risk": false
-        }
-      ],
-      "price": 14030,
-      "chg": -0.0782,
-      "activity": 1.94,
-      "foreign_today": 126270000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "017670",
-      "name": "SK텔레콤",
-      "close": 83300,
-      "ret5": 0.0024,
-      "ret20": 0.0804,
-      "rsi14": 55.5,
-      "vol20": 0.468,
-      "foreign_net": 32770015750,
-      "inst_net": 8287433600,
-      "score": 0.723,
+      "code": "328130",
+      "name": "루닛",
+      "close": 15830,
+      "ret5": 0.1397,
+      "ret20": 0.3565,
+      "rsi14": 58.7,
+      "vol20": 1.419,
+      "foreign_net": 2764709000,
+      "inst_net": 13056079915,
+      "score": 0.471,
       "news": [
         {
           "date": "11-19",
-          "title": "SK텔레콤 AI-RAN 무인 이송, 2027년 KG모빌리티 실증",
+          "title": "[브랜드평판] 건강관리기술 상장기업 11월 빅데이터…1위 루닛·2위 씨어...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "루닛·뷰노·제이엘케이, 글로벌 의료 AI 시장 확대 수혜 기대할까",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "루닛, 건강관리기술 브랜드평판 1위…씨어스·비트컴퓨터 順",
           "risk": false
         }
       ],
-      "exchange": "KOSPI"
+      "price": 15840,
+      "chg": 0.0051,
+      "activity": 0.35,
+      "foreign_today": 0,
+      "inst_today": 63360000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "232140",
+      "name": "와이씨",
+      "close": 15170,
+      "ret5": 0.2283,
+      "ret20": 0.0859,
+      "rsi14": 60.2,
+      "vol20": 1.37,
+      "foreign_net": -15163088550,
+      "inst_net": 27088362955,
+      "score": 0.314,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "에스티아이·와이씨 매수 불끈… HBM 관련주 투자심리 달아오른다",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
+          "risk": false
+        }
+      ],
+      "price": 14960,
+      "chg": 0.002,
+      "activity": 1.54,
+      "foreign_today": 0,
+      "inst_today": 14960000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "069500",
