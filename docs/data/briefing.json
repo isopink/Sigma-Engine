@@ -81,31 +81,113 @@
     ]
   },
   "intraday": {
-    "time": "10:15",
-    "pool": 191,
-    "passed": 0,
-    "kept_prep": true
+    "time": "10:30",
+    "pool": 354,
+    "analyzed_new": 30,
+    "passed": 7,
+    "kept_prep": false
   },
   "candidates": [
     {
-      "code": "003490",
-      "name": "대한항공",
-      "close": 31550,
-      "ret5": 0.0,
-      "ret20": 0.1642,
-      "rsi14": 60.6,
-      "vol20": 0.594,
-      "foreign_net": 56180944050,
-      "inst_net": -1966497875,
-      "score": 0.851,
+      "code": "323410",
+      "name": "카카오뱅크",
+      "close": 21050,
+      "ret5": 0.0319,
+      "ret20": 0.0473,
+      "rsi14": 61.3,
+      "vol20": 0.26,
+      "foreign_net": 10318319375,
+      "inst_net": 1825680175,
+      "score": 1.0,
       "news": [
         {
           "date": "11-19",
-          "title": "‘SAF 의무화’ 앞둔 대한항공…국산 확대·공급망 다변화 속도",
+          "title": "카카오뱅크, 금융 AI 학술대회서 논문 2편 발표",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "카카오뱅크, 서울시와 청소년 금융 아이디어 시상…충동구매·보이스피...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "카카오뱅크·서울시, 청소년 금융 아이디어 공모전 개최",
           "risk": false
         }
       ],
+      "foreign_today": 399950000,
+      "inst_today": 0,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "011200",
+      "name": "HMM",
+      "close": 22300,
+      "ret5": 0.1122,
+      "ret20": -0.0409,
+      "rsi14": 52.8,
+      "vol20": 0.44,
+      "foreign_net": 31328111150,
+      "inst_net": -6239667840,
+      "score": 0.786,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "실적 전망 엇갈린 증시…삼성전자·SK하이닉스·HMM에 시선 집",
+          "risk": false
+        }
+      ],
+      "foreign_today": 535200000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "267850",
+      "name": "아시아나IDT",
+      "close": 12160,
+      "ret5": -0.1227,
+      "ret20": 0.316,
+      "rsi14": 55.0,
+      "vol20": 1.689,
+      "foreign_net": -395213930,
+      "inst_net": -4350030,
+      "score": 0.857,
+      "news": [
+        {
+          "date": "11-16",
+          "title": "[특징주] 아시아나IDT 주가, 10%대 급등... 이유는?",
+          "risk": false
+        }
+      ],
+      "foreign_today": 389120000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "close": 15240,
+      "ret5": 0.239,
+      "ret20": 0.0167,
+      "rsi14": 57.9,
+      "vol20": 1.124,
+      "foreign_net": -14682117560,
+      "inst_net": 1803537460,
+      "score": 0.643,
+      "news": [
+        {
+          "date": "11-17",
+          "title": "미래에셋벤처투자 주가 17.13% 급등…스페이스X 호재",
+          "risk": false
+        }
+      ],
+      "price": 14170,
+      "chg": -0.069,
+      "activity": 1.86,
+      "foreign_today": 127530000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "017670",
@@ -126,295 +208,6 @@
         }
       ],
       "exchange": "KOSPI"
-    },
-    {
-      "code": "352820",
-      "name": "하이브",
-      "close": 178600,
-      "ret5": 0.1979,
-      "ret20": -0.024,
-      "rsi14": 63.1,
-      "vol20": 0.828,
-      "foreign_net": -1284328150,
-      "inst_net": 38086031300,
-      "score": 0.723,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "민희진, 쏘스뮤직 이기고 의기양양 \"하이브 억측-언플 멈춰\"[SC이슈]",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "\"하이브, 日엔터사 인수로 수익원 다각화 긍정적\"-삼성",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "삼성증권 \"하이브, 日 엔터사 인수로 사업 확장 기대\"…목표가 유지",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "068270",
-      "name": "셀트리온",
-      "close": 207500,
-      "ret5": 0.0048,
-      "ret20": 0.0533,
-      "rsi14": 58.3,
-      "vol20": 0.394,
-      "foreign_net": 6255983000,
-      "inst_net": 67129360250,
-      "score": 0.681,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "셀트리온, 美 직판·시밀러 성장...내년 매출 7조 돌파-하나證",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[경력채용] 셀트리온제약, 녹십자웰빙, 비씨월드제약, 지놈앤컴퍼니",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "032830",
-      "name": "삼성생명",
-      "close": 254500,
-      "ret5": 0.02,
-      "ret20": 0.0517,
-      "rsi14": 49.1,
-      "vol20": 0.576,
-      "foreign_net": -7831435000,
-      "inst_net": 64671469250,
-      "score": 0.617,
-      "news": [],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "028050",
-      "name": "삼성E&A",
-      "close": 64000,
-      "ret5": -0.039,
-      "ret20": 0.3389,
-      "rsi14": 56.2,
-      "vol20": 0.849,
-      "foreign_net": -85520822550,
-      "inst_net": 27636615500,
-      "score": 0.596,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "[오늘 IR 일정]현대모비스·삼성E&A 등 57개사",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "해외시장 악화에도 삼성E&A 질주…중동 미청구공사 관리는 변수",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "034730",
-      "name": "SK",
-      "close": 493500,
-      "ret5": -0.008,
-      "ret20": 0.0281,
-      "rsi14": 49.1,
-      "vol20": 0.828,
-      "foreign_net": -18944817000,
-      "inst_net": 42286971250,
-      "score": 0.447,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "\"수험생, 고생했어요! …SKT, 가요대전·영화·AI 혜택 쏜다",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "KB증권 \"AI 규제, 수요 못 꺾어…삼성전자·SK하이닉스 최선호\"",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[더벨][thebell League Table | 2026 이사회 평가] SK·KT·SK바이오팜, 성...",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
-      "close": 156200,
-      "ret5": 0.0189,
-      "ret20": -0.0274,
-      "rsi14": 47.9,
-      "vol20": 0.366,
-      "foreign_net": 32763285800,
-      "inst_net": -20886872700,
-      "score": 0.362,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "[금융 라운지] KB금융 이재근號, 부문장 체제 손보나…금융지주 '권력 분...",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "010170",
-      "name": "대한광통신",
-      "close": 13390,
-      "ret5": 0.0198,
-      "ret20": -0.0797,
-      "rsi14": 49.8,
-      "vol20": 0.996,
-      "foreign_net": 5374594730,
-      "inst_net": 112011910,
-      "score": 0.255,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스피200·코스닥150 구성종목 변경한다...효성·대한광통신 편입",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "277810",
-      "name": "레인보우로보틱스",
-      "close": 408000,
-      "ret5": 0.1691,
-      "ret20": 0.0895,
-      "rsi14": 57.4,
-      "vol20": 1.201,
-      "foreign_net": -11546441250,
-      "inst_net": 34312587250,
-      "score": 1.0,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "코스닥, 2% 상승에 660선 회복...레인보우로보틱스, 로보티즈 등 상승",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "레인보우로보틱스 20%·로보티즈 13% 주가 급등",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "437730",
-      "name": "삼현",
-      "close": 53200,
-      "ret5": 0.2216,
-      "ret20": 0.1718,
-      "rsi14": 64.3,
-      "vol20": 1.297,
-      "foreign_net": 4443898450,
-      "inst_net": 23741958800,
-      "score": 0.883,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "삼현, 한화시스템 48억원 계약 착수금 4.2%로 변경",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "삼현 주가, 11월 18일 애프터마켓 52,600원 9.58% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "K2·K9 수출 확대에 방산주에 매수 봇물… 삼현·RF머트리얼즈 '점프'",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 15170,
-      "ret5": 0.2283,
-      "ret20": 0.0859,
-      "rsi14": 60.2,
-      "vol20": 1.37,
-      "foreign_net": -15163088550,
-      "inst_net": 27088362955,
-      "score": 0.862,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "에스티아이·와이씨 매수 불끈… HBM 관련주 투자심리 달아오른다",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[코스닥 기관] 와이씨 알테오젠 파마리서치 원익홀딩스 RFHIC 쓸어 담았다",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "[특징주] 외국인 '루닛·아리바이오홀딩스', 기관 '와이씨·SFA반도체' 순...",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "356860",
-      "name": "티엘비",
-      "close": 42000,
-      "ret5": 0.098,
-      "ret20": 0.0619,
-      "rsi14": 54.5,
-      "vol20": 1.798,
-      "foreign_net": 1721167725,
-      "inst_net": 19862349325,
-      "score": 0.851,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "티엘비 주가, 11월 18일 애프터마켓 41,450원 3.63% 상승",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "035900",
-      "name": "JYP Ent.",
-      "close": 52500,
-      "ret5": 0.262,
-      "ret20": 0.3274,
-      "rsi14": 73.2,
-      "vol20": 1.154,
-      "foreign_net": 2135171175,
-      "inst_net": 14908133725,
-      "score": 0.819,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "[속보] 하이브·에스엠·JYP Ent. 등 엔터주 장후 '동반 급등'",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
     },
     {
       "code": "069500",
@@ -447,7 +240,7 @@
       "foreign_net": null,
       "inst_net": null,
       "score": null,
-      "news": null,
+      "news": [],
       "exchange": "ETF"
     }
   ]
