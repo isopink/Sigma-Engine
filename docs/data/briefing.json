@@ -80,7 +80,12 @@
       5067.44
     ]
   },
-  "intraday": null,
+  "intraday": {
+    "time": "09:30",
+    "pool": 151,
+    "passed": 0,
+    "kept_prep": true
+  },
   "candidates": [
     {
       "code": "003490",
