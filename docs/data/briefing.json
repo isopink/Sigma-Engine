@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "10:00",
-    "pool": 378,
+    "time": "10:15",
+    "pool": 379,
     "analyzed_new": 30,
-    "passed": 17,
+    "passed": 18,
     "kept_prep": false
   },
   "candidates": [
@@ -98,39 +98,14 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.779,
+      "score": 0.824,
       "news": [],
-      "price": 32250,
-      "chg": 0.0157,
-      "activity": 1.23,
-      "foreign_today": 3289500000,
-      "inst_today": 96750000,
+      "price": 32300,
+      "chg": 0.0173,
+      "activity": 1.19,
+      "foreign_today": 3294600000,
+      "inst_today": 96900000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "086450",
-      "name": "동국제약",
-      "close": 26600,
-      "ret5": 0.0747,
-      "ret20": 0.1295,
-      "rsi14": 62.9,
-      "vol20": 0.584,
-      "foreign_net": 4697380350,
-      "inst_net": 8725253525,
-      "score": 0.663,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "동국제약·동화약품·제넥신 등 6곳 '혁신형 3년' 연장",
-          "risk": false
-        }
-      ],
-      "price": 26000,
-      "chg": -0.0226,
-      "activity": 1.46,
-      "foreign_today": 0,
-      "inst_today": 234000000,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "090430",
@@ -142,7 +117,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.642,
+      "score": 0.647,
       "news": [
         {
           "date": "11-20",
@@ -169,7 +144,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.611,
+      "score": 0.627,
       "news": [
         {
           "date": "11-19",
@@ -182,41 +157,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "010170",
-      "name": "대한광통신",
-      "close": 14450,
-      "ret5": 0.115,
-      "ret20": 0.0743,
-      "rsi14": 55.3,
-      "vol20": 0.996,
-      "foreign_net": 28161277075,
-      "inst_net": 1626643455,
-      "score": 0.589,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "초고속 통신 쟁탈전에 불붙었다…대한광통신·자람테크놀로지 주가 '꿈...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "코스피200·코스닥150 리밸런싱…대한광통신에 685억 유입될 듯",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "코스닥 '급등'...HPSP·로보티즈·대한광통신·안랩 '껑충'",
-          "risk": false
-        }
-      ],
-      "price": 14100,
-      "chg": -0.0112,
-      "activity": 3.27,
-      "foreign_today": 0,
-      "inst_today": 141000000,
-      "exchange": "KOSDAQ"
-    },
-    {
       "code": "006360",
       "name": "GS건설",
       "close": 30300,
@@ -226,21 +166,21 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.547,
+      "score": 0.598,
       "news": [
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 20일 개관…24일 청약",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 모델하우스 20일 개관",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 공급…24일부터 청약",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 20일 개관…24일 청약",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, 전용 84㎡ 구성 '아르뮤제자이' 견본주택 20일 개관",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양",
           "risk": false
         }
       ],
@@ -258,27 +198,27 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.474,
+      "score": 0.51,
       "news": [
         {
           "date": "11-20",
-          "title": "KB금융, 우키시마호 캠페인 세 번째 영상 '아직 끝나지 않은 귀향' 공개",
+          "title": "KB금융, 우키시마호 캠페인 마지막 영상 '아직 끝나지 않은 귀향' 공개",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "KB금융, 우키시마호 추모 캠페인 완결편 공개…\"끝나지 않은 귀향\"",
+          "title": "KB금융, 우키시마호 캠페인 완결편 '아직 끝나지 않은 귀향' 공개",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "‘순익 6조’ 앞당긴 양종희 KB금융 회장…37년 여정 마침표",
+          "title": "KB금융, 우키시마호 캠페인 마지막 영상 공개…유해 봉환·진상 규명 과...",
           "risk": false
         }
       ],
       "price": 154500,
       "chg": 0.0105,
-      "activity": 1.42,
+      "activity": 1.28,
       "foreign_today": 2008500000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -293,11 +233,16 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.453,
+      "score": 0.461,
       "news": [
         {
           "date": "11-20",
-          "title": "[금융 라운지] 대출 넘어 투자·상장·AI까지…기업은행, 중소기업 성장...",
+          "title": "[AI프리뷰] 20일 V리그 도로공사-IBK기업은행전, 4연승 도로공사 vs 반등...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[금융 라운지] 대출 넘어 투자·상장·AI까지…IBK기업은행, 중소기업 성...",
           "risk": false
         },
         {
@@ -320,7 +265,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.4,
+      "score": 0.441,
       "news": [
         {
           "date": "11-20",
@@ -343,6 +288,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "004020",
+      "name": "현대제철",
+      "close": 28600,
+      "ret5": -0.0035,
+      "ret20": 0.0515,
+      "rsi14": 50.2,
+      "vol20": 0.559,
+      "foreign_net": -1282328200,
+      "inst_net": 6416192450,
+      "score": 0.422,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "현대제철·포스코, 美 제철소 자금조달 숨통…4억달러 항만채권 소송 각...",
+          "risk": true
+        },
+        {
+          "date": "11-20",
+          "title": "[속보] 현대제철·포스코 美 제철소 '올해의 에너지 딜' 수상…4억달러...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[수능]충남 당진현대제철,수능한파 녹이는 따뜻한 응원",
+          "risk": false
+        }
+      ],
+      "foreign_today": 114400000,
+      "inst_today": 28600000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "032820",
       "name": "우리기술",
       "close": 8620,
@@ -352,7 +329,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.347,
+      "score": 0.343,
       "news": [
         {
           "date": "11-20",
@@ -375,6 +352,54 @@
       "exchange": "KOSDAQ"
     },
     {
+      "code": "004170",
+      "name": "신세계",
+      "close": 296500,
+      "ret5": 0.2328,
+      "ret20": 0.147,
+      "rsi14": 60.7,
+      "vol20": 0.584,
+      "foreign_net": -12152454250,
+      "inst_net": 18854224500,
+      "score": 0.333,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 296500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "032640",
+      "name": "LG유플러스",
+      "close": 15250,
+      "ret5": 0.0013,
+      "ret20": 0.051,
+      "rsi14": 50.7,
+      "vol20": 0.411,
+      "foreign_net": -6983514240,
+      "inst_net": 9306926035,
+      "score": 0.206,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "LG유플러스, 파주 AIDC 3단계 구축에 7890억원 추가 투자",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[인사] LG유플러스",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[전일 주요공시] 고려아연·하이브·CJ CGV·LG유플러스·강원랜드 등",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 30500000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "035900",
       "name": "JYP Ent.",
       "close": 47100,
@@ -390,18 +415,13 @@
           "date": "11-19",
           "title": "[공시] CJ ENM·JYP Ent.·에스엠 등 9종목 '공매도 금지', 지슨 '투자경...",
           "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "JYP Ent. 주가, 11월 19일 47,500원 1.60% 상승",
-          "risk": false
         }
       ],
-      "price": 49200,
-      "chg": 0.0261,
-      "activity": 3.17,
-      "foreign_today": 1476000000,
-      "inst_today": 49200000,
+      "price": 48900,
+      "chg": 0.0198,
+      "activity": 2.88,
+      "foreign_today": 1467000000,
+      "inst_today": 48900000,
       "exchange": "KOSDAQ"
     },
     {
@@ -414,7 +434,7 @@
       "vol20": 1.797,
       "foreign_net": -12861215,
       "inst_net": 27180544,
-      "score": 0.926,
+      "score": 0.912,
       "news": [
         {
           "date": "11-20",
@@ -432,11 +452,11 @@
           "risk": false
         }
       ],
-      "price": 2430,
-      "chg": 0.0125,
-      "activity": 8.34,
-      "foreign_today": 690120000,
-      "inst_today": 2430000,
+      "price": 2505,
+      "chg": 0.0438,
+      "activity": 9.56,
+      "foreign_today": 711420000,
+      "inst_today": 2505000,
       "exchange": "KOSDAQ"
     },
     {
@@ -449,13 +469,13 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.863,
+      "score": 0.892,
       "news": [],
-      "price": 44050,
-      "chg": -0.0319,
-      "activity": 2.36,
-      "foreign_today": 881000000,
-      "inst_today": 44050000,
+      "price": 44100,
+      "chg": -0.0308,
+      "activity": 2.21,
+      "foreign_today": 882000000,
+      "inst_today": 44100000,
       "exchange": "KOSDAQ"
     },
     {
@@ -468,18 +488,23 @@
       "vol20": 1.187,
       "foreign_net": -7789259250,
       "inst_net": 26870908750,
-      "score": 0.758,
+      "score": 0.765,
       "news": [
+        {
+          "date": "11-20",
+          "title": "로보티즈, 젠슨 황 시연 오리 로봇에 부품 40억 공급",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "로보티즈, 39.8억 규모 공급계약 체결",
           "risk": false
         }
       ],
-      "price": 246500,
-      "chg": -0.0295,
-      "activity": 2.57,
-      "foreign_today": 1232500000,
+      "price": 244500,
+      "chg": -0.0374,
+      "activity": 2.19,
+      "foreign_today": 1222500000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -493,7 +518,7 @@
       "vol20": 1.526,
       "foreign_net": -9456591800,
       "inst_net": 17781929500,
-      "score": 0.695,
+      "score": 0.696,
       "news": [],
       "foreign_today": 774000000,
       "inst_today": 86000000,
