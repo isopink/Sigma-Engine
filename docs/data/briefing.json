@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "11:45",
-    "pool": 428,
+    "time": "12:00",
+    "pool": 429,
     "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
@@ -98,13 +98,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.847,
+      "score": 0.846,
       "news": [],
-      "price": 32350,
-      "chg": 0.0189,
-      "activity": 0.95,
-      "foreign_today": 6211200000,
-      "inst_today": 291150000,
+      "price": 32300,
+      "chg": 0.0173,
+      "activity": 0.92,
+      "foreign_today": 6201600000,
+      "inst_today": 290700000,
       "exchange": "KOSPI"
     },
     {
@@ -117,7 +117,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.71,
+      "score": 0.706,
       "news": [
         {
           "date": "11-19",
@@ -139,7 +139,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.702,
+      "score": 0.699,
       "news": [
         {
           "date": "11-20",
@@ -157,6 +157,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "051900",
+      "name": "LG생활건강",
+      "close": 253500,
+      "ret5": 0.1118,
+      "ret20": -0.0488,
+      "rsi14": 52.6,
+      "vol20": 0.452,
+      "foreign_net": 2313137750,
+      "inst_net": 7604417750,
+      "score": 0.685,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "[굿모닝! 20일 유통가 소식] 코웨이·LG생활건강·배민·콜마비앤에이치...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "LG생활건강, '발을씻자' 3000만개 판매 돌파...한정판 딸기향 출시",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "LG생활건강 온더바디, 3000만개 팔린 발을씻자…수박 이어 딸기향 출격",
+          "risk": false
+        }
+      ],
+      "foreign_today": 2028000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "009420",
       "name": "한올바이오파마",
       "close": 53800,
@@ -166,7 +198,7 @@
       "vol20": 0.988,
       "foreign_net": -6464630450,
       "inst_net": 19240936650,
-      "score": 0.679,
+      "score": 0.678,
       "news": [],
       "foreign_today": 430400000,
       "inst_today": 0,
@@ -182,7 +214,7 @@
       "vol20": 0.638,
       "foreign_net": 3796040250,
       "inst_net": 16061526750,
-      "score": 0.656,
+      "score": 0.664,
       "news": [
         {
           "date": "11-20",
@@ -200,11 +232,11 @@
           "risk": false
         }
       ],
-      "price": 461000,
-      "chg": 0.0924,
-      "activity": 1.87,
+      "price": 460000,
+      "chg": 0.09,
+      "activity": 1.82,
       "foreign_today": 0,
-      "inst_today": 461000000,
+      "inst_today": 460000000,
       "exchange": "KOSPI"
     },
     {
@@ -217,7 +249,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.634,
+      "score": 0.636,
       "news": [],
       "foreign_today": 1312500000,
       "inst_today": 187500000,
@@ -233,7 +265,7 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.595,
+      "score": 0.594,
       "news": [
         {
           "date": "11-20",
@@ -265,27 +297,27 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.557,
+      "score": 0.552,
       "news": [
         {
           "date": "11-20",
-          "title": "이재근 KB금융 회장 공식 선임…찬성률 97.69%",
+          "title": "'이재근號' KB금융 출범…조직 재편·미래 성장전략에 방점",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "이재근 KB금융그룹 신임회장 선임… “분권화 통한 지속가능 조직”시험...",
+          "title": "이재근 KB금융 회장 시대 열린다…첫 과제는 CEO 인사",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "이재근 회장 선임 주총서 양종희 회장이 한 말은 \"KB금융 다음 성장 준비...",
+          "title": "KB금융, '이재근호' 출범 & 주총서 회장 선임...금융권 새 이슈는?",
           "risk": false
         }
       ],
       "price": 154400,
       "chg": 0.0098,
-      "activity": 0.85,
+      "activity": 0.82,
       "foreign_today": 3242400000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -300,16 +332,21 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.527,
+      "score": 0.517,
       "news": [
         {
           "date": "11-20",
-          "title": "신세계사이먼, 파주 프리미엄 아울렛에 해외 관광객 유치",
+          "title": "[신세계I&C 인사] 양윤지 전무 체제… KT·CJ 출신 전략·AI 전문가 영입",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "명품 넘어 취향 저격…신세계百, VIP 서비스 ‘예약 오픈런’",
+          "title": "신세계센텀시티, 컨템포러리 브랜드 '모이프' 팝업",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "신세계사이먼, 파주 프리미엄 아울렛에 해외 관광객 유치",
           "risk": false
         }
       ],
@@ -327,7 +364,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.511,
+      "score": 0.51,
       "news": [
         {
           "date": "11-20",
@@ -345,6 +382,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "000100",
+      "name": "유한양행",
+      "close": 80900,
+      "ret5": 0.0151,
+      "ret20": -0.0253,
+      "rsi14": 53.6,
+      "vol20": 0.385,
+      "foreign_net": -1211047000,
+      "inst_net": 17803494550,
+      "score": 0.49,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "뇌 전달력 높이고 월 1회 투약으로…유한양행, 사노피 이어 ‘고셔병 신...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "보릿고개 영양제 '삐콤씨' … 100년 유한양행, 63년 전 포장 되살렸다 [...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "유한양행, 폐암 신약·해외사업 동반 성장…내년 영업익 44% 증가 전망",
+          "risk": false
+        }
+      ],
+      "foreign_today": 566300000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "011200",
       "name": "HMM",
       "close": 22500,
@@ -354,7 +423,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.481,
+      "score": 0.469,
       "news": [
         {
           "date": "11-20",
@@ -386,7 +455,7 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.466,
+      "score": 0.469,
       "news": [
         {
           "date": "11-20",
@@ -409,60 +478,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 51400,
-      "ret5": -0.032,
-      "ret20": 0.2137,
-      "rsi14": 52.5,
-      "vol20": 0.658,
-      "foreign_net": 741619100,
-      "inst_net": 1545561850,
-      "score": 0.443,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "파마리서치 33%↑·한미사이언스 20%↑…'검은 11월' 제약·바이오의 파...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "한미사이언스, '2026 대한민국 나눔국민대상' 보건복지부 장관표창 수상",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 205600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "005940",
-      "name": "NH투자증권",
-      "close": 23350,
-      "ret5": 0.0566,
-      "ret20": -0.0021,
-      "rsi14": 48.4,
-      "vol20": 0.414,
-      "foreign_net": -14382511900,
-      "inst_net": 19642066325,
-      "score": 0.389,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "대상·NH투자증권, 김장철 배추 할인 지원에 7000만원 출연",
-          "risk": false
-        }
-      ],
-      "foreign_today": 210150000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "032820",
       "name": "우리기술",
       "close": 8620,
@@ -472,7 +487,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.351,
+      "score": 0.336,
       "news": [
         {
           "date": "11-20",
@@ -519,7 +534,7 @@
       ],
       "price": 49150,
       "chg": 0.025,
-      "activity": 1.84,
+      "activity": 1.73,
       "foreign_today": 2801550000,
       "inst_today": 147450000,
       "exchange": "KOSDAQ"
@@ -534,13 +549,13 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.824,
+      "score": 0.825,
       "news": [],
-      "price": 40150,
-      "chg": 0.0664,
-      "activity": 1.29,
+      "price": 39950,
+      "chg": 0.0611,
+      "activity": 1.27,
       "foreign_today": 0,
-      "inst_today": 602250000,
+      "inst_today": 599250000,
       "exchange": "KOSDAQ"
     },
     {
@@ -553,14 +568,49 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.817,
+      "score": 0.818,
       "news": [],
-      "price": 44300,
-      "chg": -0.0264,
-      "activity": 1.69,
+      "price": 43650,
+      "chg": -0.0407,
+      "activity": 1.64,
       "foreign_today": 0,
-      "inst_today": 708800000,
+      "inst_today": 698400000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "180640",
+      "name": "한진칼",
+      "close": 216500,
+      "ret5": 0.0934,
+      "ret20": 0.8132,
+      "rsi14": 65.9,
+      "vol20": 1.302,
+      "foreign_net": 48691610400,
+      "inst_net": 20077461600,
+      "score": 0.804,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "한진칼 주가, 11월 20일 장중 236,500원 9.49% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[특징주] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "원화 강세에 항공주 날개 달까…한진칼·진에어 상승랠리",
+          "risk": false
+        }
+      ],
+      "price": 237500,
+      "chg": 0.0995,
+      "activity": 1.55,
+      "foreign_today": 0,
+      "inst_today": 2137500000,
+      "exchange": "KOSPI"
     },
     {
       "code": "277810",
@@ -572,48 +622,13 @@
       "vol20": 1.198,
       "foreign_net": -28959795250,
       "inst_net": 61126812250,
-      "score": 0.641,
+      "score": 0.629,
       "news": [],
-      "price": 412000,
-      "chg": -0.0317,
-      "activity": 1.87,
+      "price": 411000,
+      "chg": -0.0341,
+      "activity": 1.79,
       "foreign_today": 0,
-      "inst_today": 824000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "089890",
-      "name": "코세스",
-      "close": 37800,
-      "ret5": 0.1118,
-      "ret20": -0.0195,
-      "rsi14": 58.4,
-      "vol20": 1.615,
-      "foreign_net": 5156049025,
-      "inst_net": -1141274250,
-      "score": 0.595,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "SK증권 \"코세스, 내년 반도체 장비 매출 1500억 이상…연료전지 장비도...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[모닝 리포트] \"코세스, 반도체·SOFC 동반 성장\"…목표가 7만3000원",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "코세스, 美 데이터센터 규제 강화 '수혜'…\"고마진 SOFC 침투율 상승으...",
-          "risk": false
-        }
-      ],
-      "price": 36350,
-      "chg": -0.0242,
-      "activity": 1.57,
-      "foreign_today": 0,
-      "inst_today": 72700000,
+      "inst_today": 822000000,
       "exchange": "KOSDAQ"
     },
     {
