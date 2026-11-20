@@ -81,13 +81,83 @@
     ]
   },
   "intraday": {
-    "time": "13:00",
-    "pool": 430,
-    "analyzed_new": 11,
+    "time": "13:15",
+    "pool": 461,
+    "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
   },
   "candidates": [
+    {
+      "code": "128940",
+      "name": "한미약품",
+      "close": 424500,
+      "ret5": -0.065,
+      "ret20": 0.1551,
+      "rsi14": 45.8,
+      "vol20": 0.638,
+      "foreign_net": 3796040250,
+      "inst_net": 16061526750,
+      "score": 0.942,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[오늘 IR 일정]현대모비스·한미약품 등 26개사",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "한미약품, 비만신약 기술이전 기대...내년 R&D 성과 주목-KB證",
+          "risk": false
+        }
+      ],
+      "price": 453500,
+      "chg": 0.0746,
+      "activity": 1.6,
+      "foreign_today": 0,
+      "inst_today": 5895500000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "214450",
+      "name": "파마리서치",
+      "close": 276500,
+      "ret5": 0.1332,
+      "ret20": 0.0929,
+      "rsi14": 59.8,
+      "vol20": 0.567,
+      "foreign_net": -277526250,
+      "inst_net": 13097068250,
+      "score": 0.903,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "[더벨]파마리서치서 밀당PT까지…KCR파트너스의 성장투자 승부수",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "\"의료진이 제품을 고르는 기준은 가격보다 임상 근거\"... 파마리서치, 뉴...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[포토뉴스](주)파마리서치, 경포동 취약계층에 김장김치·난방유 기부",
+          "risk": false
+        }
+      ],
+      "price": 278000,
+      "chg": 0.0,
+      "activity": 1.18,
+      "foreign_today": 0,
+      "inst_today": 1668000000,
+      "exchange": "KOSDAQ"
+    },
     {
       "code": "004170",
       "name": "신세계",
@@ -98,24 +168,29 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.876,
+      "score": 0.89,
       "news": [
         {
           "date": "11-20",
-          "title": "[위클리오늘] 산업일반 소식_한화리조트, 신세계프라퍼티(11.20)",
+          "title": "광주지방국세청, (주)광주신세계와 '호남의 K-SUUL' 홍보 나선다",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "[유통 브리핑] 현대백화점그룹·신세계백화점·롯데면세점",
+          "title": "대전신세계 1층에 '티파니앤코' 부티크 문 열어…다채로운 컬렉션 선보...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[위클리오늘] 산업일반 소식_한화리조트, 신세계프라퍼티(11.20)",
           "risk": false
         }
       ],
-      "price": 295000,
-      "chg": -0.0017,
-      "activity": 2.1,
+      "price": 294000,
+      "chg": -0.0051,
+      "activity": 2.08,
       "foreign_today": 0,
-      "inst_today": 1770000000,
+      "inst_today": 5292000000,
       "exchange": "KOSPI"
     },
     {
@@ -128,13 +203,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.869,
+      "score": 0.852,
       "news": [],
-      "price": 31950,
-      "chg": 0.0063,
+      "price": 31900,
+      "chg": 0.0047,
       "activity": 0.82,
-      "foreign_today": 6134400000,
-      "inst_today": 287550000,
+      "foreign_today": 8070700000,
+      "inst_today": 1467400000,
       "exchange": "KOSPI"
     },
     {
@@ -147,7 +222,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.752,
+      "score": 0.826,
       "news": [
         {
           "date": "11-19",
@@ -156,7 +231,7 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 425000000,
+      "inst_today": 1615000000,
       "exchange": "KOSPI"
     },
     {
@@ -169,7 +244,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.745,
+      "score": 0.697,
       "news": [
         {
           "date": "11-20",
@@ -182,8 +257,24 @@
           "risk": false
         }
       ],
-      "foreign_today": 1410000000,
-      "inst_today": 423000000,
+      "foreign_today": 2115000000,
+      "inst_today": 282000000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "009420",
+      "name": "한올바이오파마",
+      "close": 53800,
+      "ret5": 0.0508,
+      "ret20": 0.345,
+      "rsi14": 68.5,
+      "vol20": 0.988,
+      "foreign_net": -6464630450,
+      "inst_net": 19240936650,
+      "score": 0.684,
+      "news": [],
+      "foreign_today": 430400000,
+      "inst_today": 430400000,
       "exchange": "KOSPI"
     },
     {
@@ -196,7 +287,7 @@
       "vol20": 0.452,
       "foreign_net": 2313137750,
       "inst_net": 7604417750,
-      "score": 0.73,
+      "score": 0.684,
       "news": [
         {
           "date": "11-20",
@@ -219,55 +310,29 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "009420",
-      "name": "한올바이오파마",
-      "close": 53800,
-      "ret5": 0.0508,
-      "ret20": 0.345,
-      "rsi14": 68.5,
-      "vol20": 0.988,
-      "foreign_net": -6464630450,
-      "inst_net": 19240936650,
-      "score": 0.723,
-      "news": [],
-      "foreign_today": 430400000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "128940",
-      "name": "한미약품",
-      "close": 424500,
-      "ret5": -0.065,
-      "ret20": 0.1551,
-      "rsi14": 45.8,
-      "vol20": 0.638,
-      "foreign_net": 3796040250,
-      "inst_net": 16061526750,
-      "score": 0.693,
+      "code": "145020",
+      "name": "휴젤",
+      "close": 212500,
+      "ret5": 0.0959,
+      "ret20": 0.1792,
+      "rsi14": 68.0,
+      "vol20": 0.403,
+      "foreign_net": -8100021500,
+      "inst_net": 15359845350,
+      "score": 0.645,
       "news": [
         {
           "date": "11-20",
-          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[오늘 IR 일정]현대모비스·한미약품 등 26개사",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "한미약품, 비만신약 기술이전 기대...내년 R&D 성과 주목-KB證",
+          "title": "[약업분석] 휴젤, 3분기 누적 매출 3521억·15%↑…영업익은 15% 감소",
           "risk": false
         }
       ],
-      "price": 461000,
-      "chg": 0.0924,
-      "activity": 1.64,
+      "price": 208500,
+      "chg": -0.0234,
+      "activity": 1.5,
       "foreign_today": 0,
-      "inst_today": 461000000,
-      "exchange": "KOSPI"
+      "inst_today": 208500000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "161390",
@@ -279,101 +344,40 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.679,
+      "score": 0.613,
       "news": [],
-      "foreign_today": 1312500000,
-      "inst_today": 187500000,
+      "foreign_today": 1437500000,
+      "inst_today": 437500000,
       "exchange": "KOSPI"
     },
     {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 30300,
-      "ret5": 0.0117,
-      "ret20": 0.0412,
-      "rsi14": 49.7,
-      "vol20": 0.822,
-      "foreign_net": 3941333100,
-      "inst_net": 10148144825,
-      "score": 0.628,
+      "code": "352820",
+      "name": "하이브",
+      "close": 187200,
+      "ret5": 0.2031,
+      "ret20": 0.0648,
+      "rsi14": 67.1,
+      "vol20": 0.831,
+      "foreign_net": 11197099000,
+      "inst_net": 50993204600,
+      "score": 0.6,
       "news": [
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 개관",
+          "title": "iM證 “한·중 FTA 타결에 엔터주 재평가 기대⋯에스엠·하이브 수혜 클...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, 안산서 '아르뮤제자이' 오피스텔 370실 분양",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[굿모닝! 20일 건설업계 소식] GS건설·대우건설·한화·태영건설·LH",
+          "title": "넥스·하이브, ‘Starri | BTS’ 출시···방탄소년단의 음악을 거실에...",
           "risk": false
         }
       ],
-      "foreign_today": 1666500000,
-      "inst_today": 60600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "024110",
-      "name": "기업은행",
-      "close": 19170,
-      "ret5": 0.01,
-      "ret20": -0.0313,
-      "rsi14": 44.8,
-      "vol20": 0.177,
-      "foreign_net": -363476385,
-      "inst_net": 8490185425,
-      "score": 0.533,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "[AI프리뷰] 20일 V리그 도로공사-IBK기업은행전, 4연승 도로공사 vs 반등...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[금융 라운지] 대출 넘어 투자·상장·AI까지…IBK기업은행, 중소기업 성...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 345060000,
-      "inst_today": 172530000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "000100",
-      "name": "유한양행",
-      "close": 80900,
-      "ret5": 0.0151,
-      "ret20": -0.0253,
-      "rsi14": 53.6,
-      "vol20": 0.385,
-      "foreign_net": -1211047000,
-      "inst_net": 17803494550,
-      "score": 0.518,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "뇌 전달력 높이고 월 1회 투약으로…유한양행, 사노피 이어 ‘고셔병 신...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "보릿고개 영양제 '삐콤씨' … 100년 유한양행, 63년 전 포장 되살렸다 [...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "유한양행, 폐암 신약·해외사업 동반 성장…내년 영업익 44% 증가 전망",
-          "risk": false
-        }
-      ],
-      "foreign_today": 566300000,
-      "inst_today": 0,
+      "price": 187600,
+      "chg": -0.0095,
+      "activity": 1.76,
+      "foreign_today": 0,
+      "inst_today": 1688400000,
       "exchange": "KOSPI"
     },
     {
@@ -386,7 +390,7 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.496,
+      "score": 0.548,
       "news": [
         {
           "date": "11-20",
@@ -405,7 +409,39 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 469200000,
+      "inst_today": 1290300000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "006360",
+      "name": "GS건설",
+      "close": 30300,
+      "ret5": 0.0117,
+      "ret20": 0.0412,
+      "rsi14": 49.7,
+      "vol20": 0.822,
+      "foreign_net": 3941333100,
+      "inst_net": 10148144825,
+      "score": 0.484,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 개관",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "GS건설, 안산서 '아르뮤제자이' 오피스텔 370실 분양",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[굿모닝! 20일 건설업계 소식] GS건설·대우건설·한화·태영건설·LH",
+          "risk": false
+        }
+      ],
+      "foreign_today": 1484700000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -418,7 +454,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.489,
+      "score": 0.477,
       "news": [
         {
           "date": "11-20",
@@ -436,40 +472,8 @@
           "risk": false
         }
       ],
-      "foreign_today": 652500000,
+      "foreign_today": 1485000000,
       "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "008930",
-      "name": "한미사이언스",
-      "close": 51400,
-      "ret5": -0.032,
-      "ret20": 0.2137,
-      "rsi14": 52.5,
-      "vol20": 0.658,
-      "foreign_net": 741619100,
-      "inst_net": 1545561850,
-      "score": 0.482,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "한미사이언스, '2026 대한민국 나눔국민대상' 수상",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "파마리서치 33%↑·한미사이언스 20%↑…'검은 11월' 제약·바이오의 파...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 205600000,
       "exchange": "KOSPI"
     },
     {
@@ -482,7 +486,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.35,
+      "score": 0.297,
       "news": [
         {
           "date": "11-20",
@@ -500,7 +504,7 @@
           "risk": false
         }
       ],
-      "foreign_today": 206880000,
+      "foreign_today": 318940000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -527,30 +531,11 @@
           "risk": false
         }
       ],
-      "price": 48800,
-      "chg": 0.0177,
-      "activity": 1.43,
-      "foreign_today": 2781600000,
-      "inst_today": 146400000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "356860",
-      "name": "티엘비",
-      "close": 46250,
-      "ret5": 0.1171,
-      "ret20": 0.2317,
-      "rsi14": 58.8,
-      "vol20": 1.812,
-      "foreign_net": -12035600,
-      "inst_net": 17120449175,
-      "score": 0.92,
-      "news": [],
-      "price": 43650,
-      "chg": -0.0407,
-      "activity": 1.65,
-      "foreign_today": 0,
-      "inst_today": 698400000,
+      "price": 48750,
+      "chg": 0.0167,
+      "activity": 1.38,
+      "foreign_today": 3412500000,
+      "inst_today": 828750000,
       "exchange": "KOSDAQ"
     },
     {
@@ -563,48 +548,32 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.869,
+      "score": 0.865,
       "news": [],
-      "price": 39500,
-      "chg": 0.0491,
-      "activity": 1.14,
+      "price": 39750,
+      "chg": 0.0558,
+      "activity": 1.11,
       "foreign_today": 0,
-      "inst_today": 592500000,
+      "inst_today": 1510500000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "089890",
-      "name": "코세스",
-      "close": 37800,
-      "ret5": 0.1118,
-      "ret20": -0.0195,
-      "rsi14": 58.4,
-      "vol20": 1.615,
-      "foreign_net": 5156049025,
-      "inst_net": -1141274250,
-      "score": 0.664,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "SK증권 \"코세스, 내년 반도체 장비 매출 1500억 이상…연료전지 장비도...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[모닝 리포트] \"코세스, 반도체·SOFC 동반 성장\"…목표가 7만3000원",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "코세스, 美 데이터센터 규제 강화 '수혜'…\"고마진 SOFC 침투율 상승으...",
-          "risk": false
-        }
-      ],
-      "price": 36950,
-      "chg": -0.0081,
-      "activity": 1.57,
+      "code": "356860",
+      "name": "티엘비",
+      "close": 46250,
+      "ret5": 0.1171,
+      "ret20": 0.2317,
+      "rsi14": 58.8,
+      "vol20": 1.812,
+      "foreign_net": -12035600,
+      "inst_net": 17120449175,
+      "score": 0.729,
+      "news": [],
+      "price": 43150,
+      "chg": -0.0516,
+      "activity": 1.6,
       "foreign_today": 0,
-      "inst_today": 73900000,
+      "inst_today": 733550000,
       "exchange": "KOSDAQ"
     },
     {
@@ -617,14 +586,30 @@
       "vol20": 1.198,
       "foreign_net": -28959795250,
       "inst_net": 61126812250,
-      "score": 0.635,
+      "score": 0.684,
       "news": [],
-      "price": 412500,
-      "chg": -0.0306,
-      "activity": 1.52,
+      "price": 413000,
+      "chg": -0.0294,
+      "activity": 1.48,
       "foreign_today": 0,
-      "inst_today": 825000000,
+      "inst_today": 2478000000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "281820",
+      "name": "케이씨텍",
+      "close": 86000,
+      "ret5": 0.1361,
+      "ret20": -0.0683,
+      "rsi14": 53.6,
+      "vol20": 1.526,
+      "foreign_net": -9456591800,
+      "inst_net": 17781929500,
+      "score": 0.658,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 1548000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "114800",
