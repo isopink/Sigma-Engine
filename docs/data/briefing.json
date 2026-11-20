@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "10:15",
+    "time": "10:30",
     "pool": 379,
     "analyzed_new": 30,
-    "passed": 18,
+    "passed": 20,
     "kept_prep": false
   },
   "candidates": [
@@ -98,13 +98,45 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.824,
+      "score": 0.833,
       "news": [],
-      "price": 32300,
-      "chg": 0.0173,
-      "activity": 1.19,
-      "foreign_today": 3294600000,
-      "inst_today": 96900000,
+      "price": 32450,
+      "chg": 0.022,
+      "activity": 1.11,
+      "foreign_today": 3309900000,
+      "inst_today": 97350000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "086280",
+      "name": "현대글로비스",
+      "close": 203500,
+      "ret5": 0.0025,
+      "ret20": 0.1433,
+      "rsi14": 57.4,
+      "vol20": 0.524,
+      "foreign_net": 9030521700,
+      "inst_net": 3804299600,
+      "score": 0.728,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "현대글로비스, 'PCTC 운영대수' 2029년 139척으로 34%↑",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "한진·현대글로비스 주가 신바람...무슨 호재 있나",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "메리츠증권 \"현대글로비스, 中 자동차 수출 급증 수혜…내년 호실적\"",
+          "risk": false
+        }
+      ],
+      "foreign_today": 2035000000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -117,7 +149,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.647,
+      "score": 0.658,
       "news": [
         {
           "date": "11-20",
@@ -144,7 +176,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.627,
+      "score": 0.614,
       "news": [
         {
           "date": "11-19",
@@ -157,6 +189,22 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "close": 62500,
+      "ret5": 0.0146,
+      "ret20": 0.0263,
+      "rsi14": 54.6,
+      "vol20": 0.504,
+      "foreign_net": -23018310150,
+      "inst_net": 28602985000,
+      "score": 0.605,
+      "news": [],
+      "foreign_today": 625000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "006360",
       "name": "GS건설",
       "close": 30300,
@@ -166,21 +214,21 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.598,
+      "score": 0.57,
       "news": [
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 모델하우스 20일 개관",
+          "title": "GS건설, ‘아르뮤제자이’ 견본주택 20일 오픈… 청약 접수 24일",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 20일 개관…24일 청약",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 분양...주거형 오피스텔 동향은?",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 견본주택 개관…24일 청약",
           "risk": false
         }
       ],
@@ -198,28 +246,28 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.51,
+      "score": 0.518,
       "news": [
         {
           "date": "11-20",
-          "title": "KB금융, 우키시마호 캠페인 마지막 영상 '아직 끝나지 않은 귀향' 공개",
+          "title": "KB금융, 우키시마호 역사 캠페인 마지막 영상 공개…미완의 귀향 조명",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "KB금융, 우키시마호 캠페인 완결편 '아직 끝나지 않은 귀향' 공개",
+          "title": "KB금융, 주총서 회장 선임 의결…'이재근 체제' 막 올랐다(2보)",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "KB금융, 우키시마호 캠페인 마지막 영상 공개…유해 봉환·진상 규명 과...",
+          "title": "[속보]KB금융, 이재근 차기 회장 선임안 의결",
           "risk": false
         }
       ],
-      "price": 154500,
-      "chg": 0.0105,
-      "activity": 1.28,
-      "foreign_today": 2008500000,
+      "price": 155000,
+      "chg": 0.0137,
+      "activity": 1.15,
+      "foreign_today": 2015000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -233,7 +281,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.461,
+      "score": 0.439,
       "news": [
         {
           "date": "11-20",
@@ -243,11 +291,6 @@
         {
           "date": "11-20",
           "title": "[금융 라운지] 대출 넘어 투자·상장·AI까지…IBK기업은행, 중소기업 성...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "기업은행, 코스닥 활성화 정책 설문…\"기관투자자 유입·부실기업 퇴출...",
           "risk": false
         }
       ],
@@ -265,7 +308,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.441,
+      "score": 0.412,
       "news": [
         {
           "date": "11-20",
@@ -297,7 +340,7 @@
       "vol20": 0.559,
       "foreign_net": -1282328200,
       "inst_net": 6416192450,
-      "score": 0.422,
+      "score": 0.395,
       "news": [
         {
           "date": "11-19",
@@ -329,7 +372,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.343,
+      "score": 0.325,
       "news": [
         {
           "date": "11-20",
@@ -361,7 +404,7 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.333,
+      "score": 0.325,
       "news": [],
       "foreign_today": 0,
       "inst_today": 296500000,
@@ -377,13 +420,8 @@
       "vol20": 0.411,
       "foreign_net": -6983514240,
       "inst_net": 9306926035,
-      "score": 0.206,
+      "score": 0.202,
       "news": [
-        {
-          "date": "11-20",
-          "title": "LG유플러스, 파주 AIDC 3단계 구축에 7890억원 추가 투자",
-          "risk": false
-        },
         {
           "date": "11-20",
           "title": "[인사] LG유플러스",
@@ -391,7 +429,12 @@
         },
         {
           "date": "11-20",
-          "title": "[전일 주요공시] 고려아연·하이브·CJ CGV·LG유플러스·강원랜드 등",
+          "title": "LG유플러스, 파주 AIDC 3단계 구축에 7890억원 추가 투자",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "LG유플러스, 안형균·노성주 전무 승진…AI·통신 인재 전면배치",
           "risk": false
         }
       ],
@@ -412,16 +455,40 @@
       "score": 1.0,
       "news": [
         {
+          "date": "11-20",
+          "title": "JYP Ent. 주가, 11월 20일 장중 49,400원 고가 기록",
+          "risk": false
+        },
+        {
           "date": "11-19",
           "title": "[공시] CJ ENM·JYP Ent.·에스엠 등 9종목 '공매도 금지', 지슨 '투자경...",
           "risk": false
         }
       ],
-      "price": 48900,
-      "chg": 0.0198,
-      "activity": 2.88,
-      "foreign_today": 1467000000,
-      "inst_today": 48900000,
+      "price": 49300,
+      "chg": 0.0282,
+      "activity": 2.65,
+      "foreign_today": 1479000000,
+      "inst_today": 49300000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "356860",
+      "name": "티엘비",
+      "close": 46250,
+      "ret5": 0.1171,
+      "ret20": 0.2317,
+      "rsi14": 58.8,
+      "vol20": 1.812,
+      "foreign_net": -12035600,
+      "inst_net": 17120449175,
+      "score": 0.921,
+      "news": [],
+      "price": 45250,
+      "chg": -0.0055,
+      "activity": 2.35,
+      "foreign_today": 905000000,
+      "inst_today": 45250000,
       "exchange": "KOSDAQ"
     },
     {
@@ -434,7 +501,7 @@
       "vol20": 1.797,
       "foreign_net": -12861215,
       "inst_net": 27180544,
-      "score": 0.912,
+      "score": 0.895,
       "news": [
         {
           "date": "11-20",
@@ -452,30 +519,11 @@
           "risk": false
         }
       ],
-      "price": 2505,
-      "chg": 0.0438,
-      "activity": 9.56,
-      "foreign_today": 711420000,
-      "inst_today": 2505000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "356860",
-      "name": "티엘비",
-      "close": 46250,
-      "ret5": 0.1171,
-      "ret20": 0.2317,
-      "rsi14": 58.8,
-      "vol20": 1.812,
-      "foreign_net": -12035600,
-      "inst_net": 17120449175,
-      "score": 0.892,
-      "news": [],
-      "price": 44100,
-      "chg": -0.0308,
-      "activity": 2.21,
-      "foreign_today": 882000000,
-      "inst_today": 44100000,
+      "price": 2440,
+      "chg": 0.0167,
+      "activity": 8.76,
+      "foreign_today": 692960000,
+      "inst_today": 2440000,
       "exchange": "KOSDAQ"
     },
     {
@@ -488,23 +536,18 @@
       "vol20": 1.187,
       "foreign_net": -7789259250,
       "inst_net": 26870908750,
-      "score": 0.765,
+      "score": 0.746,
       "news": [
         {
           "date": "11-20",
           "title": "로보티즈, 젠슨 황 시연 오리 로봇에 부품 40억 공급",
           "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "로보티즈, 39.8억 규모 공급계약 체결",
-          "risk": false
         }
       ],
-      "price": 244500,
-      "chg": -0.0374,
-      "activity": 2.19,
-      "foreign_today": 1222500000,
+      "price": 246500,
+      "chg": -0.0295,
+      "activity": 1.95,
+      "foreign_today": 1232500000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -518,7 +561,7 @@
       "vol20": 1.526,
       "foreign_net": -9456591800,
       "inst_net": 17781929500,
-      "score": 0.696,
+      "score": 0.711,
       "news": [],
       "foreign_today": 774000000,
       "inst_today": 86000000,
