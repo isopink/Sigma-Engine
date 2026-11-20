@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "11:00",
-    "pool": 378,
+    "time": "11:15",
+    "pool": 427,
     "analyzed_new": 30,
-    "passed": 19,
+    "passed": 22,
     "kept_prep": false
   },
   "candidates": [
@@ -98,13 +98,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.868,
+      "score": 0.852,
       "news": [],
       "price": 32350,
       "chg": 0.0189,
-      "activity": 1.06,
-      "foreign_today": 3299700000,
-      "inst_today": 97050000,
+      "activity": 1.02,
+      "foreign_today": 6211200000,
+      "inst_today": 291150000,
       "exchange": "KOSPI"
     },
     {
@@ -117,7 +117,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.66,
+      "score": 0.687,
       "news": [
         {
           "date": "11-20",
@@ -130,8 +130,8 @@
           "risk": false
         }
       ],
-      "foreign_today": 705000000,
-      "inst_today": 0,
+      "foreign_today": 1410000000,
+      "inst_today": 423000000,
       "exchange": "KOSPI"
     },
     {
@@ -144,7 +144,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.613,
+      "score": 0.678,
       "news": [
         {
           "date": "11-19",
@@ -153,7 +153,7 @@
         }
       ],
       "foreign_today": 0,
-      "inst_today": 187000000,
+      "inst_today": 425000000,
       "exchange": "KOSPI"
     },
     {
@@ -166,10 +166,10 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.613,
+      "score": 0.6,
       "news": [],
-      "foreign_today": 625000000,
-      "inst_today": 0,
+      "foreign_today": 1312500000,
+      "inst_today": 187500000,
       "exchange": "KOSPI"
     },
     {
@@ -182,26 +182,26 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.575,
+      "score": 0.574,
       "news": [
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 370실 공급…20일 견본주택 개관",
+          "title": "[굿모닝! 20일 건설업계 소식] GS건설·대우건설·한화·태영건설·LH",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양 돌입",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 개관",
+          "title": "[건설 레이더] GS건설·태영건설·한신공영, 안산·고창·남양주서 견본...",
           "risk": false
         }
       ],
-      "foreign_today": 969600000,
-      "inst_today": 0,
+      "foreign_today": 1666500000,
+      "inst_today": 60600000,
       "exchange": "KOSPI"
     },
     {
@@ -214,29 +214,61 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.5,
+      "score": 0.565,
       "news": [
         {
           "date": "11-20",
-          "title": "은행장 거쳐 지주 회장으로…이재근, KB금융 새 수장",
+          "title": "KB금융그룹 이재근號 출범...임시 주총서 97.69% 찬성",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "이재근 KB금융 회장 정식 선임…3년 임기 스타트",
+          "title": "이재근 KB금융 회장 선임…조직개편·CEO 인사 앞둬",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "이재근 KB금융 회장 공식 선임 … 23일 취임식",
+          "title": "이재근, KB금융지주 신임 회장 정식 선임…임기 21일부터 3년",
           "risk": false
         }
       ],
-      "price": 154600,
-      "chg": 0.0111,
-      "activity": 1.02,
-      "foreign_today": 2009800000,
+      "price": 154900,
+      "chg": 0.0131,
+      "activity": 0.96,
+      "foreign_today": 3252900000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "004170",
+      "name": "신세계",
+      "close": 296500,
+      "ret5": 0.2328,
+      "ret20": 0.147,
+      "rsi14": 60.7,
+      "vol20": 0.584,
+      "foreign_net": -12152454250,
+      "inst_net": 18854224500,
+      "score": 0.522,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "신세계사이먼 파주 아울렛에 말레이시아 관광객 1600명 방문",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "신세계百, 디저트살롱 계절 별미 선봬→현대어린이책미술관, 고객 참여...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "디올 뷰티, 신세계 강남점서 홀리데이 팝업",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 1779000000,
       "exchange": "KOSPI"
     },
     {
@@ -249,7 +281,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.443,
+      "score": 0.478,
       "news": [
         {
           "date": "11-20",
@@ -262,8 +294,8 @@
           "risk": false
         }
       ],
-      "foreign_today": 287550000,
-      "inst_today": 38340000,
+      "foreign_today": 345060000,
+      "inst_today": 172530000,
       "exchange": "KOSPI"
     },
     {
@@ -276,7 +308,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.425,
+      "score": 0.47,
       "news": [
         {
           "date": "11-20",
@@ -294,8 +326,166 @@
           "risk": false
         }
       ],
-      "foreign_today": 405000000,
+      "foreign_today": 652500000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 51400,
+      "ret5": -0.032,
+      "ret20": 0.2137,
+      "rsi14": 52.5,
+      "vol20": 0.658,
+      "foreign_net": 741619100,
+      "inst_net": 1545561850,
+      "score": 0.443,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "파마리서치 33%↑·한미사이언스 20%↑…'검은 11월' 제약·바이오의 파...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "한미사이언스, '2026 대한민국 나눔국민대상' 보건복지부 장관표창 수상",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 205600000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "161890",
+      "name": "한국콜마",
+      "close": 117300,
+      "ret5": 0.1301,
+      "ret20": -0.0578,
+      "rsi14": 50.5,
+      "vol20": 0.7,
+      "foreign_net": -14109482950,
+      "inst_net": 17605623350,
+      "score": 0.443,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "한국콜마, 3분기 만에 작년 연간 영업익…4분기도 고성장 예고",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[K뷰티 ODM 3조 시대③] 한국콜마·코스맥스 다음 승부처는 미국, '베테...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 469200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "close": 32350,
+      "ret5": 0.0352,
+      "ret20": -0.0386,
+      "rsi14": 50.7,
+      "vol20": 0.903,
+      "foreign_net": -2316425600,
+      "inst_net": 13351444375,
+      "score": 0.435,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "서진시스템, 반도체 장비 타고 영업익 흑자 전환",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "서진시스템 주가, 11월 17일 애프터마켓 30,200원 4.73% 하락",
+          "risk": false
+        },
+        {
+          "date": "11-17",
+          "title": "서진시스템, 3분기 매출 196% 증가…영업이익 387억원 흑자전환",
+          "risk": false
+        }
+      ],
+      "price": 30450,
+      "chg": -0.0455,
+      "activity": 0.7,
+      "foreign_today": 304500000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "032820",
+      "name": "우리기술",
+      "close": 8620,
+      "ret5": 0.0323,
+      "ret20": -0.104,
+      "rsi14": 44.9,
+      "vol20": 0.777,
+      "foreign_net": 24791260,
+      "inst_net": 2696830050,
+      "score": 0.33,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "두산에너빌리티·한전기술·우리기술 등 원자력발전 관련주 약세…양대...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "두나무 순익 86% 급감…'배당 의존' 우리기술투자 현금흐름 빨간불",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "우리기술, 임시주총서 이기복 독립이사 선임",
+          "risk": false
+        }
+      ],
+      "foreign_today": 206880000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "032640",
+      "name": "LG유플러스",
+      "close": 15250,
+      "ret5": 0.0013,
+      "ret20": 0.051,
+      "rsi14": 50.7,
+      "vol20": 0.411,
+      "foreign_net": -6983514240,
+      "inst_net": 9306926035,
+      "score": 0.27,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "[위클리오늘] 산업일반 소식_LG유플러스, KT(11.20)",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "LG유플러스, 안형균·노성주 전무 승진…상무 9명 신규 선임",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[인사] LG유플러스",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 106750000,
       "exchange": "KOSPI"
     },
     {
@@ -308,13 +498,8 @@
       "vol20": 0.559,
       "foreign_net": -1282328200,
       "inst_net": 6416192450,
-      "score": 0.396,
+      "score": 0.217,
       "news": [
-        {
-          "date": "11-19",
-          "title": "현대제철·포스코, 美 제철소 자금조달 숨통…4억달러 항만채권 소송 각...",
-          "risk": true
-        },
         {
           "date": "11-20",
           "title": "[속보] 현대제철·포스코 美 제철소 '올해의 에너지 딜' 수상…4억달러...",
@@ -326,99 +511,8 @@
           "risk": false
         }
       ],
-      "foreign_today": 114400000,
+      "foreign_today": 0,
       "inst_today": 28600000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "032820",
-      "name": "우리기술",
-      "close": 8620,
-      "ret5": 0.0323,
-      "ret20": -0.104,
-      "rsi14": 44.9,
-      "vol20": 0.777,
-      "foreign_net": 24791260,
-      "inst_net": 2696830050,
-      "score": 0.321,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "두나무 순익 86% 급감…'배당 의존' 우리기술투자 현금흐름 빨간불",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "우리기술, 임시주총서 이기복 독립이사 선임",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[오늘의 증시일정] STX·우리기술·이지스밸류플러스리츠",
-          "risk": false
-        }
-      ],
-      "foreign_today": 181020000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "004170",
-      "name": "신세계",
-      "close": 296500,
-      "ret5": 0.2328,
-      "ret20": 0.147,
-      "rsi14": 60.7,
-      "vol20": 0.584,
-      "foreign_net": -12152454250,
-      "inst_net": 18854224500,
-      "score": 0.321,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "하우스오브신세계 디저트살롱에서 계절 별미 만나보세요",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "신세계百 “디저트살롱에서 계절 별미 만나세요”",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 296500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "032640",
-      "name": "LG유플러스",
-      "close": 15250,
-      "ret5": 0.0013,
-      "ret20": 0.051,
-      "rsi14": 50.7,
-      "vol20": 0.411,
-      "foreign_net": -6983514240,
-      "inst_net": 9306926035,
-      "score": 0.208,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "LG유플러스, 안형균·노성주 전무 승진…상무 9명 신규 선임",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[위클리오늘] 산업일반 소식_LG유플러스, KT(11.20)",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[인사] LG유플러스",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 30500000,
       "exchange": "KOSPI"
     },
     {
@@ -444,11 +538,11 @@
           "risk": false
         }
       ],
-      "price": 49050,
-      "chg": 0.0229,
-      "activity": 2.2,
-      "foreign_today": 1471500000,
-      "inst_today": 49050000,
+      "price": 49400,
+      "chg": 0.0302,
+      "activity": 2.08,
+      "foreign_today": 2815800000,
+      "inst_today": 148200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -461,99 +555,86 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.915,
+      "score": 0.817,
       "news": [],
-      "price": 44900,
-      "chg": -0.0132,
-      "activity": 2.07,
-      "foreign_today": 898000000,
-      "inst_today": 44900000,
+      "price": 44800,
+      "chg": -0.0154,
+      "activity": 1.94,
+      "foreign_today": 0,
+      "inst_today": 716800000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "109610",
-      "name": "에스와이",
-      "close": 2400,
-      "ret5": 0.222,
-      "ret20": 0.3408,
-      "rsi14": 60.4,
-      "vol20": 1.797,
-      "foreign_net": -12861215,
-      "inst_net": 27180544,
-      "score": 0.906,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "에스와이스틸텍, 포스코·동명스틸과 손잡고 연 1만 톤 GI 소재 확보",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "에스와이스틸텍, 포스코·동명스틸과 '데크 플레이트 핵심 소재' 공급 나...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "에스와이스틸텍, 포스코,동명스틸과 GI 소재공급 협력 강화 MOU 체결",
-          "risk": false
-        }
-      ],
-      "price": 2450,
-      "chg": 0.0208,
-      "activity": 7.4,
-      "foreign_today": 695800000,
-      "inst_today": 2450000,
+      "code": "491000",
+      "name": "리브스메드",
+      "close": 37700,
+      "ret5": 0.1121,
+      "ret20": -0.0258,
+      "rsi14": 51.5,
+      "vol20": 1.171,
+      "foreign_net": 690944275,
+      "inst_net": 5020912275,
+      "score": 0.8,
+      "news": [],
+      "price": 39550,
+      "chg": 0.0505,
+      "activity": 1.27,
+      "foreign_today": 0,
+      "inst_today": 593250000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "281820",
-      "name": "케이씨텍",
-      "close": 86000,
-      "ret5": 0.1361,
-      "ret20": -0.0683,
-      "rsi14": 53.6,
-      "vol20": 1.526,
-      "foreign_net": -9456591800,
-      "inst_net": 17781929500,
-      "score": 0.717,
+      "code": "277810",
+      "name": "레인보우로보틱스",
+      "close": 422500,
+      "ret5": 0.2318,
+      "ret20": 0.1623,
+      "rsi14": 59.5,
+      "vol20": 1.198,
+      "foreign_net": -28959795250,
+      "inst_net": 61126812250,
+      "score": 0.635,
       "news": [],
-      "foreign_today": 774000000,
-      "inst_today": 86000000,
-      "exchange": "KOSPI"
+      "price": 412000,
+      "chg": -0.0317,
+      "activity": 2.14,
+      "foreign_today": 0,
+      "inst_today": 824000000,
+      "exchange": "KOSDAQ"
     },
     {
-      "code": "108490",
-      "name": "로보티즈",
-      "close": 251000,
-      "ret5": 0.0524,
-      "ret20": 0.0819,
-      "rsi14": 52.0,
-      "vol20": 1.187,
-      "foreign_net": -7789259250,
-      "inst_net": 26870908750,
-      "score": 0.698,
+      "code": "089890",
+      "name": "코세스",
+      "close": 37800,
+      "ret5": 0.1118,
+      "ret20": -0.0195,
+      "rsi14": 58.4,
+      "vol20": 1.615,
+      "foreign_net": 5156049025,
+      "inst_net": -1141274250,
+      "score": 0.591,
       "news": [
         {
           "date": "11-20",
-          "title": "로보티즈, 프랑스 기업과 40억 규모 공급계약 체결",
+          "title": "SK증권 \"코세스, 내년 반도체 장비 매출 1500억 이상…연료전지 장비도...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "로보티즈, 폴렌로보틱스와 40억 규모 액추에이터 공급계약",
+          "title": "[모닝 리포트] \"코세스, 반도체·SOFC 동반 성장\"…목표가 7만3000원",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "로보티즈, 젠슨 황 시연 오리 로봇에 부품 40억 공급",
+          "title": "코세스, 美 데이터센터 규제 강화 '수혜'…\"고마진 SOFC 침투율 상승으...",
           "risk": false
         }
       ],
-      "price": 242500,
-      "chg": -0.0453,
-      "activity": 1.63,
-      "foreign_today": 1212500000,
-      "inst_today": 0,
+      "price": 37150,
+      "chg": -0.0027,
+      "activity": 1.66,
+      "foreign_today": 0,
+      "inst_today": 74300000,
       "exchange": "KOSDAQ"
     },
     {
