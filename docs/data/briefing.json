@@ -80,108 +80,14 @@
       5137.89
     ]
   },
-  "intraday": null,
+  "intraday": {
+    "time": "09:30",
+    "pool": 340,
+    "analyzed_new": 30,
+    "passed": 8,
+    "kept_prep": false
+  },
   "candidates": [
-    {
-      "code": "089590",
-      "name": "제주항공",
-      "close": 8500,
-      "ret5": 0.1502,
-      "ret20": 0.5977,
-      "rsi14": 77.0,
-      "vol20": 0.87,
-      "foreign_net": 11915226795,
-      "inst_net": 5866475775,
-      "score": 1.0,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "주주환원 승부수 통했나…제주항공·SK하이닉스 강세, 밸류업 수급 대이...",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "214450",
-      "name": "파마리서치",
-      "close": 276500,
-      "ret5": 0.1332,
-      "ret20": 0.0929,
-      "rsi14": 59.8,
-      "vol20": 0.567,
-      "foreign_net": -277526250,
-      "inst_net": 13097068250,
-      "score": 0.475,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "[더벨]파마리서치서 밀당PT까지…KCR파트너스의 성장투자 승부수",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "\"의료진이 제품을 고르는 기준은 가격보다 임상 근거\"... 파마리서치, 뉴...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[포토뉴스](주)파마리서치, 경포동 취약계층에 김장김치·난방유 기부",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "090430",
-      "name": "아모레퍼시픽",
-      "close": 141000,
-      "ret5": 0.1199,
-      "ret20": 0.065,
-      "rsi14": 63.3,
-      "vol20": 0.412,
-      "foreign_net": 3517154600,
-      "inst_net": 12004797350,
-      "score": 0.325,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "용산구, 아모레퍼시픽·용산문화재단과 지역 상생 협력…민관협력 본격...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "아모레퍼시픽, 임원 사내 부적절 관계에 '성과급 특혜' 의혹…인사 공정...",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "352820",
-      "name": "하이브",
-      "close": 187200,
-      "ret5": 0.2031,
-      "ret20": 0.0648,
-      "rsi14": 67.1,
-      "vol20": 0.831,
-      "foreign_net": 11197099000,
-      "inst_net": 50993204600,
-      "score": 0.287,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "iM證 “한·중 FTA 타결에 엔터주 재평가 기대⋯에스엠·하이브 수혜 클...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "넥스·하이브, ‘Starri | BTS’ 출시···방탄소년단의 음악을 거실에...",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSPI"
-    },
     {
       "code": "010170",
       "name": "대한광통신",
@@ -192,7 +98,7 @@
       "vol20": 0.996,
       "foreign_net": 28161277075,
       "inst_net": 1626643455,
-      "score": 0.275,
+      "score": 0.65,
       "news": [
         {
           "date": "11-19",
@@ -210,36 +116,46 @@
           "risk": false
         }
       ],
+      "price": 14270,
+      "chg": 0.0007,
+      "activity": 4.29,
+      "foreign_today": 799120000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "263860",
-      "name": "지니언스",
-      "close": 38550,
-      "ret5": 0.1577,
-      "ret20": 0.8668,
-      "rsi14": 75.4,
-      "vol20": 1.659,
-      "foreign_net": -1165601075,
-      "inst_net": 6589252200,
-      "score": 0.8,
+      "code": "109610",
+      "name": "에스와이",
+      "close": 2400,
+      "ret5": 0.222,
+      "ret20": 0.3408,
+      "rsi14": 60.4,
+      "vol20": 1.797,
+      "foreign_net": -12861215,
+      "inst_net": 27180544,
+      "score": 1.0,
       "news": [
         {
           "date": "11-20",
-          "title": "미국 보안주 줄줄이 상승…안랩·지니언스에 쏠리는 관심",
+          "title": "에스와이스틸텍, 포스코·동명스틸과 손잡고 연 1만 톤 GI 소재 확보",
           "risk": false
         },
         {
-          "date": "11-19",
-          "title": "지니언스 주가, 11월 19일 애프터마켓 38,150원 0.78% 하락",
+          "date": "11-20",
+          "title": "에스와이스틸텍, 포스코·동명스틸과 '데크 플레이트 핵심 소재' 공급 나...",
           "risk": false
         },
         {
-          "date": "11-19",
-          "title": "실적 개선에도 지니언스 4.29% 하락…거래대금 854억원",
+          "date": "11-20",
+          "title": "에스와이스틸텍, 포스코,동명스틸과 GI 소재공급 협력 강화 MOU 체결",
           "risk": false
         }
       ],
+      "price": 2435,
+      "chg": 0.0146,
+      "activity": 13.28,
+      "foreign_today": 280025000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -252,8 +168,83 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.65,
+      "score": 0.95,
       "news": [],
+      "price": 43800,
+      "chg": -0.0374,
+      "activity": 3.5,
+      "foreign_today": 1182600000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "437730",
+      "name": "삼현",
+      "close": 53000,
+      "ret5": 0.2226,
+      "ret20": 0.2326,
+      "rsi14": 63.9,
+      "vol20": 1.276,
+      "foreign_net": -2298674525,
+      "inst_net": 29963410575,
+      "score": 0.75,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "삼현 5만2700원 약보합…3분기 영업손실 61억원",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "삼현 주가, 11월 19일 장중 50,700원 4.52% 하락",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "삼현, 한화시스템 48억원 계약 착수금 4.2%로 변경",
+          "risk": false
+        }
+      ],
+      "price": 54000,
+      "chg": 0.0131,
+      "activity": 4.69,
+      "foreign_today": 486000000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "035900",
+      "name": "JYP Ent.",
+      "close": 47100,
+      "ret5": 0.0455,
+      "ret20": 0.2378,
+      "rsi14": 59.8,
+      "vol20": 1.216,
+      "foreign_net": -28575760900,
+      "inst_net": 12012728650,
+      "score": 0.7,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "[공시] CJ ENM·JYP Ent.·에스엠 등 9종목 '공매도 금지', 지슨 '투자경...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "JYP Ent. 주가, 11월 19일 47,500원 1.60% 상승",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "JYP Ent. 2.89% 상승…역대 최대 3분기 매출 뒤 4만8100원",
+          "risk": false
+        }
+      ],
+      "price": 48300,
+      "chg": 0.0073,
+      "activity": 3.14,
+      "foreign_today": 1352400000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
@@ -266,7 +257,7 @@
       "vol20": 1.342,
       "foreign_net": -15243523345,
       "inst_net": 30834499285,
-      "score": 0.612,
+      "score": 0.3,
       "news": [
         {
           "date": "11-18",
@@ -274,66 +265,11 @@
           "risk": false
         }
       ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "328130",
-      "name": "루닛",
-      "close": 16710,
-      "ret5": 0.1868,
-      "ret20": 0.5136,
-      "rsi14": 62.1,
-      "vol20": 1.398,
-      "foreign_net": 4212732050,
-      "inst_net": 14520627350,
-      "score": 0.6,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "거래소 지수 정기 변경…씨어스 편입·루닛 제외",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "건강관리기술 상장기업 2026년 11월 브랜드평판...루닛, 씨어스, 비트컴...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[브랜드평판] 건강관리기술 상장기업 11월 빅데이터…1위 루닛·2위 씨어...",
-          "risk": false
-        }
-      ],
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "261780",
-      "name": "아리바이오랩",
-      "close": 5650,
-      "ret5": 0.2959,
-      "ret20": 0.4543,
-      "rsi14": 66.3,
-      "vol20": 1.435,
-      "foreign_net": 2796178163,
-      "inst_net": -152341960,
-      "score": 0.562,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "아리바이오랩, 스턴메디칼과 바디필러 장기 공급계약 체결",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[더벨][i-point] 아리바이오랩, 538억원 수출 계약 \"상장유지·신성장 동...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "아리바이오랩, 바디필러 538억원 수출계약…신사업 성장동력 확보",
-          "risk": false
-        }
-      ],
+      "price": 15350,
+      "chg": -0.0291,
+      "activity": 3.63,
+      "foreign_today": 92100000,
+      "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
