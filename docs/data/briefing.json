@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "11:30",
-    "pool": 427,
+    "time": "11:45",
+    "pool": 428,
     "analyzed_new": 30,
     "passed": 22,
     "kept_prep": false
@@ -98,13 +98,35 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.84,
+      "score": 0.847,
       "news": [],
-      "price": 32400,
-      "chg": 0.0205,
-      "activity": 0.99,
-      "foreign_today": 6220800000,
-      "inst_today": 291600000,
+      "price": 32350,
+      "chg": 0.0189,
+      "activity": 0.95,
+      "foreign_today": 6211200000,
+      "inst_today": 291150000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "089590",
+      "name": "제주항공",
+      "close": 8500,
+      "ret5": 0.1502,
+      "ret20": 0.5977,
+      "rsi14": 77.0,
+      "vol20": 0.87,
+      "foreign_net": 11915226795,
+      "inst_net": 5866475775,
+      "score": 0.71,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "주주환원 승부수 통했나…제주항공·SK하이닉스 강세, 밸류업 수급 대이...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 425000000,
       "exchange": "KOSPI"
     },
     {
@@ -117,7 +139,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.697,
+      "score": 0.702,
       "news": [
         {
           "date": "11-20",
@@ -135,25 +157,19 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "089590",
-      "name": "제주항공",
-      "close": 8500,
-      "ret5": 0.1502,
-      "ret20": 0.5977,
-      "rsi14": 77.0,
-      "vol20": 0.87,
-      "foreign_net": 11915226795,
-      "inst_net": 5866475775,
-      "score": 0.689,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "주주환원 승부수 통했나…제주항공·SK하이닉스 강세, 밸류업 수급 대이...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 425000000,
+      "code": "009420",
+      "name": "한올바이오파마",
+      "close": 53800,
+      "ret5": 0.0508,
+      "ret20": 0.345,
+      "rsi14": 68.5,
+      "vol20": 0.988,
+      "foreign_net": -6464630450,
+      "inst_net": 19240936650,
+      "score": 0.679,
+      "news": [],
+      "foreign_today": 430400000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -166,7 +182,7 @@
       "vol20": 0.638,
       "foreign_net": 3796040250,
       "inst_net": 16061526750,
-      "score": 0.63,
+      "score": 0.656,
       "news": [
         {
           "date": "11-20",
@@ -184,11 +200,11 @@
           "risk": false
         }
       ],
-      "price": 461500,
-      "chg": 0.0936,
-      "activity": 1.91,
+      "price": 461000,
+      "chg": 0.0924,
+      "activity": 1.87,
       "foreign_today": 0,
-      "inst_today": 461500000,
+      "inst_today": 461000000,
       "exchange": "KOSPI"
     },
     {
@@ -201,7 +217,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.622,
+      "score": 0.634,
       "news": [],
       "foreign_today": 1312500000,
       "inst_today": 187500000,
@@ -217,7 +233,7 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.58,
+      "score": 0.595,
       "news": [
         {
           "date": "11-20",
@@ -226,12 +242,12 @@
         },
         {
           "date": "11-20",
-          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양 돌입",
+          "title": "[건설 레이더] GS건설·태영건설·한신공영, 안산·고창·남양주서 견본...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "[건설 레이더] GS건설·태영건설·한신공영, 안산·고창·남양주서 견본...",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양 돌입",
           "risk": false
         }
       ],
@@ -249,28 +265,28 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.563,
+      "score": 0.557,
       "news": [
         {
           "date": "11-20",
-          "title": "KB금융, 이재근 선임안 통과…양종희 \"고객 필요로 할 금융 준비\"",
+          "title": "이재근 KB금융 회장 공식 선임…찬성률 97.69%",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "이재근 KB금융 차기 회장 선임안 가결…주주 97.69% 찬성",
+          "title": "이재근 KB금융그룹 신임회장 선임… “분권화 통한 지속가능 조직”시험...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "KB금융 '이재근호' 출범…21일부터 3년 임기",
+          "title": "이재근 회장 선임 주총서 양종희 회장이 한 말은 \"KB금융 다음 성장 준비...",
           "risk": false
         }
       ],
-      "price": 154900,
-      "chg": 0.0131,
-      "activity": 0.9,
-      "foreign_today": 3252900000,
+      "price": 154400,
+      "chg": 0.0098,
+      "activity": 0.85,
+      "foreign_today": 3242400000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -284,21 +300,16 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.529,
+      "score": 0.527,
       "news": [
         {
           "date": "11-20",
-          "title": "신세계프라퍼티 중소기업 매출 확대 지원, 스타필드 입점 120곳 할인 행...",
+          "title": "신세계사이먼, 파주 프리미엄 아울렛에 해외 관광객 유치",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "신세계백화점, 디저트살롱서 계절 별미 선봬",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "‘스타필드 파트너스 위크’ 신세계프라퍼티, 협력사에 ‘매출 지원’도",
+          "title": "명품 넘어 취향 저격…신세계百, VIP 서비스 ‘예약 오픈런’",
           "risk": false
         }
       ],
@@ -316,7 +327,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.487,
+      "score": 0.511,
       "news": [
         {
           "date": "11-20",
@@ -343,7 +354,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.471,
+      "score": 0.481,
       "news": [
         {
           "date": "11-20",
@@ -375,8 +386,13 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.454,
+      "score": 0.466,
       "news": [
+        {
+          "date": "11-20",
+          "title": "화장품 만들기 전 안전성부터 확인, 한국콜마 AI 기술 개발 [뉴스큐]",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "한국콜마, 3분기 만에 작년 연간 영업익…4분기도 고성장 예고",
@@ -402,7 +418,7 @@
       "vol20": 0.658,
       "foreign_net": 741619100,
       "inst_net": 1545561850,
-      "score": 0.445,
+      "score": 0.443,
       "news": [
         {
           "date": "11-20",
@@ -425,35 +441,25 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "021240",
-      "name": "코웨이",
-      "close": 106700,
-      "ret5": 0.044,
-      "ret20": 0.0047,
-      "rsi14": 54.8,
-      "vol20": 0.401,
-      "foreign_net": -15533982300,
-      "inst_net": 6421641100,
-      "score": 0.37,
+      "code": "005940",
+      "name": "NH투자증권",
+      "close": 23350,
+      "ret5": 0.0566,
+      "ret20": -0.0021,
+      "rsi14": 48.4,
+      "vol20": 0.414,
+      "foreign_net": -14382511900,
+      "inst_net": 19642066325,
+      "score": 0.389,
       "news": [
         {
           "date": "11-20",
-          "title": "코웨이, 교보문고와 제휴…고객 대상 전자책 1년 무료 구독 이벤트",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "시간은 내 일정에, 수입은 실적에…코웨이 '코디' 전국 모집",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "코웨이, 글로벌 투자행사에서 '10개 핵심 주식'에 선정",
+          "title": "대상·NH투자증권, 김장철 배추 할인 지원에 7000만원 출연",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 213400000,
+      "foreign_today": 210150000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -466,7 +472,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.345,
+      "score": 0.351,
       "news": [
         {
           "date": "11-20",
@@ -487,38 +493,6 @@
       "foreign_today": 206880000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "032640",
-      "name": "LG유플러스",
-      "close": 15250,
-      "ret5": 0.0013,
-      "ret20": 0.051,
-      "rsi14": 50.7,
-      "vol20": 0.411,
-      "foreign_net": -6983514240,
-      "inst_net": 9306926035,
-      "score": 0.261,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "[위클리오늘] 산업일반 소식_LG유플러스, KT(11.20)",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "LG유플러스, 안형균·노성주 전무 승진…상무 9명 신규 선임",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[인사] LG유플러스",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 106750000,
-      "exchange": "KOSPI"
     },
     {
       "code": "035900",
@@ -543,30 +517,11 @@
           "risk": false
         }
       ],
-      "price": 49050,
-      "chg": 0.0229,
-      "activity": 1.97,
-      "foreign_today": 2795850000,
-      "inst_today": 147150000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "356860",
-      "name": "티엘비",
-      "close": 46250,
-      "ret5": 0.1171,
-      "ret20": 0.2317,
-      "rsi14": 58.8,
-      "vol20": 1.812,
-      "foreign_net": -12035600,
-      "inst_net": 17120449175,
-      "score": 0.807,
-      "news": [],
-      "price": 44200,
-      "chg": -0.0286,
-      "activity": 1.82,
-      "foreign_today": 0,
-      "inst_today": 707200000,
+      "price": 49150,
+      "chg": 0.025,
+      "activity": 1.84,
+      "foreign_today": 2801550000,
+      "inst_today": 147450000,
       "exchange": "KOSDAQ"
     },
     {
@@ -579,13 +534,32 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.798,
+      "score": 0.824,
       "news": [],
-      "price": 39800,
-      "chg": 0.0571,
+      "price": 40150,
+      "chg": 0.0664,
       "activity": 1.29,
       "foreign_today": 0,
-      "inst_today": 597000000,
+      "inst_today": 602250000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "356860",
+      "name": "티엘비",
+      "close": 46250,
+      "ret5": 0.1171,
+      "ret20": 0.2317,
+      "rsi14": 58.8,
+      "vol20": 1.812,
+      "foreign_net": -12035600,
+      "inst_net": 17120449175,
+      "score": 0.817,
+      "news": [],
+      "price": 44300,
+      "chg": -0.0264,
+      "activity": 1.69,
+      "foreign_today": 0,
+      "inst_today": 708800000,
       "exchange": "KOSDAQ"
     },
     {
@@ -598,46 +572,49 @@
       "vol20": 1.198,
       "foreign_net": -28959795250,
       "inst_net": 61126812250,
-      "score": 0.647,
+      "score": 0.641,
       "news": [],
-      "price": 408000,
-      "chg": -0.0411,
-      "activity": 2.0,
+      "price": 412000,
+      "chg": -0.0317,
+      "activity": 1.87,
       "foreign_today": 0,
-      "inst_today": 816000000,
+      "inst_today": 824000000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "181710",
-      "name": "NHN",
-      "close": 64100,
-      "ret5": -0.0656,
-      "ret20": 0.1529,
-      "rsi14": 53.5,
-      "vol20": 1.409,
-      "foreign_net": 6447826400,
-      "inst_net": 1443068500,
-      "score": 0.588,
+      "code": "089890",
+      "name": "코세스",
+      "close": 37800,
+      "ret5": 0.1118,
+      "ret20": -0.0195,
+      "rsi14": 58.4,
+      "vol20": 1.615,
+      "foreign_net": 5156049025,
+      "inst_net": -1141274250,
+      "score": 0.595,
       "news": [
         {
           "date": "11-20",
-          "title": "흥국증권 \"NHN KCP, 해외 가맹점 확대 타고 고성장세 지속…목표가 1만5...",
+          "title": "SK증권 \"코세스, 내년 반도체 장비 매출 1500억 이상…연료전지 장비도...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "흥국證 \"NHN KCP, 해외 가맹점 확대에 고성장 지속…목표가 1만5000원\"",
+          "title": "[모닝 리포트] \"코세스, 반도체·SOFC 동반 성장\"…목표가 7만3000원",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "NHN커머스, 고도몰에 GEO·웹MCP 적용…AI 쇼핑 대응 강화",
+          "title": "코세스, 美 데이터센터 규제 강화 '수혜'…\"고마진 SOFC 침투율 상승으...",
           "risk": false
         }
       ],
-      "foreign_today": 769200000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
+      "price": 36350,
+      "chg": -0.0242,
+      "activity": 1.57,
+      "foreign_today": 0,
+      "inst_today": 72700000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "114800",
