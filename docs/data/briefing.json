@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "13:15",
+    "time": "13:30",
     "pool": 461,
     "analyzed_new": 30,
     "passed": 22,
@@ -98,7 +98,7 @@
       "vol20": 0.638,
       "foreign_net": 3796040250,
       "inst_net": 16061526750,
-      "score": 0.942,
+      "score": 0.962,
       "news": [
         {
           "date": "11-20",
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 453500,
-      "chg": 0.0746,
-      "activity": 1.6,
+      "price": 452000,
+      "chg": 0.0711,
+      "activity": 1.59,
       "foreign_today": 0,
-      "inst_today": 5895500000,
+      "inst_today": 5876000000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.567,
       "foreign_net": -277526250,
       "inst_net": 13097068250,
-      "score": 0.903,
+      "score": 0.912,
       "news": [
         {
           "date": "11-20",
@@ -153,7 +153,7 @@
       ],
       "price": 278000,
       "chg": 0.0,
-      "activity": 1.18,
+      "activity": 1.15,
       "foreign_today": 0,
       "inst_today": 1668000000,
       "exchange": "KOSDAQ"
@@ -168,7 +168,7 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.89,
+      "score": 0.899,
       "news": [
         {
           "date": "11-20",
@@ -188,7 +188,7 @@
       ],
       "price": 294000,
       "chg": -0.0051,
-      "activity": 2.08,
+      "activity": 2.06,
       "foreign_today": 0,
       "inst_today": 5292000000,
       "exchange": "KOSPI"
@@ -203,13 +203,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.852,
+      "score": 0.849,
       "news": [],
-      "price": 31900,
-      "chg": 0.0047,
-      "activity": 0.82,
-      "foreign_today": 8070700000,
-      "inst_today": 1467400000,
+      "price": 31800,
+      "chg": 0.0016,
+      "activity": 0.8,
+      "foreign_today": 8045400000,
+      "inst_today": 1462800000,
       "exchange": "KOSPI"
     },
     {
@@ -222,7 +222,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.826,
+      "score": 0.824,
       "news": [
         {
           "date": "11-19",
@@ -244,7 +244,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.697,
+      "score": 0.704,
       "news": [
         {
           "date": "11-20",
@@ -271,7 +271,7 @@
       "vol20": 0.988,
       "foreign_net": -6464630450,
       "inst_net": 19240936650,
-      "score": 0.684,
+      "score": 0.686,
       "news": [],
       "foreign_today": 430400000,
       "inst_today": 430400000,
@@ -287,8 +287,13 @@
       "vol20": 0.452,
       "foreign_net": 2313137750,
       "inst_net": 7604417750,
-      "score": 0.684,
+      "score": 0.679,
       "news": [
+        {
+          "date": "11-20",
+          "title": "LG생활건강, ‘온더바디 발을씻자’ 한정판 딸기향 출시...소비자 관심도...",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "LG생활건강 '온더바디 발을씻자' 한정판 딸기향 출시·2027년도 정기 임...",
@@ -297,11 +302,6 @@
         {
           "date": "11-20",
           "title": "LG생활건강 '온더바디 발을씻자' 3000만 개 판매 돌파…2세대 기술 적용...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[굿모닝! 20일 유통가 소식] 코웨이·LG생활건강·배민·콜마비앤에이치...",
           "risk": false
         }
       ],
@@ -319,7 +319,7 @@
       "vol20": 0.403,
       "foreign_net": -8100021500,
       "inst_net": 15359845350,
-      "score": 0.645,
+      "score": 0.648,
       "news": [
         {
           "date": "11-20",
@@ -327,11 +327,11 @@
           "risk": false
         }
       ],
-      "price": 208500,
-      "chg": -0.0234,
-      "activity": 1.5,
+      "price": 210500,
+      "chg": -0.0141,
+      "activity": 1.47,
       "foreign_today": 0,
-      "inst_today": 208500000,
+      "inst_today": 210500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -344,7 +344,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.613,
+      "score": 0.61,
       "news": [],
       "foreign_today": 1437500000,
       "inst_today": 437500000,
@@ -360,7 +360,7 @@
       "vol20": 0.831,
       "foreign_net": 11197099000,
       "inst_net": 50993204600,
-      "score": 0.6,
+      "score": 0.597,
       "news": [
         {
           "date": "11-20",
@@ -373,11 +373,11 @@
           "risk": false
         }
       ],
-      "price": 187600,
-      "chg": -0.0095,
-      "activity": 1.76,
+      "price": 187700,
+      "chg": -0.009,
+      "activity": 1.73,
       "foreign_today": 0,
-      "inst_today": 1688400000,
+      "inst_today": 1689300000,
       "exchange": "KOSPI"
     },
     {
@@ -390,7 +390,7 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.548,
+      "score": 0.535,
       "news": [
         {
           "date": "11-20",
@@ -413,6 +413,33 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "024110",
+      "name": "기업은행",
+      "close": 19170,
+      "ret5": 0.01,
+      "ret20": -0.0313,
+      "rsi14": 44.8,
+      "vol20": 0.177,
+      "foreign_net": -363476385,
+      "inst_net": 8490185425,
+      "score": 0.484,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "우리은행·IBK기업은행·KB금융 등 금융권, 고객·기업·선수 지원에 나...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[AI프리뷰] 20일 V리그 도로공사-IBK기업은행전, 4연승 도로공사 vs 반등...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 325890000,
+      "inst_today": 651780000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "006360",
       "name": "GS건설",
       "close": 30300,
@@ -422,8 +449,13 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.484,
+      "score": 0.472,
       "news": [
+        {
+          "date": "11-20",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 오픈...소비자 관심도 상승",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 개관",
@@ -433,46 +465,9 @@
           "date": "11-20",
           "title": "GS건설, 안산서 '아르뮤제자이' 오피스텔 370실 분양",
           "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[굿모닝! 20일 건설업계 소식] GS건설·대우건설·한화·태영건설·LH",
-          "risk": false
         }
       ],
       "foreign_today": 1484700000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "011200",
-      "name": "HMM",
-      "close": 22500,
-      "ret5": 0.0664,
-      "ret20": 0.0,
-      "rsi14": 54.2,
-      "vol20": 0.426,
-      "foreign_net": 28020425150,
-      "inst_net": 5148667775,
-      "score": 0.477,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "HMM, 2조 투입해 선대 확장 속도…공급과잉 파고 넘어 수익성 지킬까",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[더벨][HMM 해외투자 지도] 신사업 진두지휘 최원혁 대표, 전초기지 '브...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "유가 90달러대 진정·운임 하락…SK이노·S-OIL·HMM·팬오션 ‘엇갈린 셈...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 1485000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -486,8 +481,13 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.297,
+      "score": 0.289,
       "news": [
+        {
+          "date": "11-20",
+          "title": "휘청이는 증시에 VC주도 '파란불'… 우리기술투자·아주IB투자 낙폭 어디...",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "두산에너빌리티·한전기술·우리기술 등 원자력발전 관련주 약세…양대...",
@@ -496,11 +496,6 @@
         {
           "date": "11-20",
           "title": "두나무 순익 86% 급감…'배당 의존' 우리기술투자 현금흐름 빨간불",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "우리기술, 임시주총서 이기복 독립이사 선임",
           "risk": false
         }
       ],
@@ -531,11 +526,11 @@
           "risk": false
         }
       ],
-      "price": 48750,
-      "chg": 0.0167,
-      "activity": 1.38,
-      "foreign_today": 3412500000,
-      "inst_today": 828750000,
+      "price": 48450,
+      "chg": 0.0104,
+      "activity": 1.34,
+      "foreign_today": 3391500000,
+      "inst_today": 823650000,
       "exchange": "KOSDAQ"
     },
     {
@@ -548,13 +543,43 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.865,
+      "score": 0.868,
       "news": [],
-      "price": 39750,
-      "chg": 0.0558,
-      "activity": 1.11,
+      "price": 39800,
+      "chg": 0.0571,
+      "activity": 1.08,
       "foreign_today": 0,
-      "inst_today": 1510500000,
+      "inst_today": 1512400000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "456160",
+      "name": "지투지바이오",
+      "close": 35200,
+      "ret5": -0.0195,
+      "ret20": -0.1569,
+      "rsi14": 49.6,
+      "vol20": 1.324,
+      "foreign_net": 1797622750,
+      "inst_net": 51439200,
+      "score": 0.717,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "지투지바이오, ‘위고비 공동연구’ 공시서 삭제…왜? [김유림의 바이오...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[11월 제약사 이모저모④] 지투지바이오, GC·GC녹십자, 한국 노보 등 소...",
+          "risk": false
+        }
+      ],
+      "price": 38150,
+      "chg": 0.0777,
+      "activity": 0.57,
+      "foreign_today": 0,
+      "inst_today": 877450000,
       "exchange": "KOSDAQ"
     },
     {
@@ -567,13 +592,13 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.729,
+      "score": 0.717,
       "news": [],
-      "price": 43150,
-      "chg": -0.0516,
-      "activity": 1.6,
+      "price": 42600,
+      "chg": -0.0637,
+      "activity": 1.55,
       "foreign_today": 0,
-      "inst_today": 733550000,
+      "inst_today": 724200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -586,30 +611,14 @@
       "vol20": 1.198,
       "foreign_net": -28959795250,
       "inst_net": 61126812250,
-      "score": 0.684,
+      "score": 0.692,
       "news": [],
-      "price": 413000,
-      "chg": -0.0294,
-      "activity": 1.48,
+      "price": 413500,
+      "chg": -0.0282,
+      "activity": 1.44,
       "foreign_today": 0,
-      "inst_today": 2478000000,
+      "inst_today": 2481000000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "281820",
-      "name": "케이씨텍",
-      "close": 86000,
-      "ret5": 0.1361,
-      "ret20": -0.0683,
-      "rsi14": 53.6,
-      "vol20": 1.526,
-      "foreign_net": -9456591800,
-      "inst_net": 17781929500,
-      "score": 0.658,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 1548000000,
-      "exchange": "KOSPI"
     },
     {
       "code": "114800",
