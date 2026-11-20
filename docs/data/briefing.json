@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:00",
-    "pool": 461,
-    "analyzed_new": 13,
+    "time": "14:15",
+    "pool": 320,
+    "analyzed_new": 7,
     "passed": 22,
     "kept_prep": false
   },
@@ -98,7 +98,7 @@
       "vol20": 0.638,
       "foreign_net": 3796040250,
       "inst_net": 16061526750,
-      "score": 0.955,
+      "score": 1.0,
       "news": [
         {
           "date": "11-20",
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 452000,
-      "chg": 0.0711,
-      "activity": 1.56,
+      "price": 453500,
+      "chg": 0.0746,
+      "activity": 1.54,
       "foreign_today": 0,
-      "inst_today": 5876000000,
+      "inst_today": 5895500000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.567,
       "foreign_net": -277526250,
       "inst_net": 13097068250,
-      "score": 0.927,
+      "score": 0.954,
       "news": [
         {
           "date": "11-20",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 276500,
-      "chg": -0.0054,
+      "price": 276000,
+      "chg": -0.0072,
       "activity": 1.12,
       "foreign_today": 0,
-      "inst_today": 1659000000,
+      "inst_today": 1656000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,48 +168,29 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.893,
+      "score": 0.892,
       "news": [
         {
           "date": "11-20",
-          "title": "케이비젼 '정서불안 김햄찌' 부산 팝업, 신세계 센텀시티서 22일까지 운...",
+          "title": "광주지방국세청, (주)광주신세계와 '호남의 K-SUUL' 홍보 나선다",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "신세계프라퍼티, 협력사 상품 할인 판매 '파트너스 위크' 진행",
+          "title": "'189년' 주얼러 티파니앤코 부티크, 대전신세계서 만난다",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "대전신세계, 티파니앤코 부티크 신규 오픈",
+          "title": "디올 뷰티, 신세계 강남점서 홀리데이 팝업 운영⋯ 12월 1일까지",
           "risk": false
         }
       ],
-      "price": 291500,
-      "chg": -0.0135,
-      "activity": 2.04,
+      "price": 288500,
+      "chg": -0.0237,
+      "activity": 2.05,
       "foreign_today": 0,
-      "inst_today": 5247000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 31850,
-      "ret5": 0.0031,
-      "ret20": 0.0208,
-      "rsi14": 49.9,
-      "vol20": 0.35,
-      "foreign_net": -49023940650,
-      "inst_net": 66229754800,
-      "score": 0.825,
-      "news": [],
-      "price": 31800,
-      "chg": 0.0016,
-      "activity": 0.79,
-      "foreign_today": 8045400000,
-      "inst_today": 1462800000,
+      "inst_today": 5193000000,
       "exchange": "KOSPI"
     },
     {
@@ -222,7 +203,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.819,
+      "score": 0.846,
       "news": [
         {
           "date": "11-19",
@@ -235,78 +216,33 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "090430",
-      "name": "아모레퍼시픽",
-      "close": 141000,
-      "ret5": 0.1199,
-      "ret20": 0.065,
-      "rsi14": 63.3,
-      "vol20": 0.412,
-      "foreign_net": 3517154600,
-      "inst_net": 12004797350,
-      "score": 0.718,
+      "code": "352820",
+      "name": "하이브",
+      "close": 187200,
+      "ret5": 0.2031,
+      "ret20": 0.0648,
+      "rsi14": 67.1,
+      "vol20": 0.831,
+      "foreign_net": 11197099000,
+      "inst_net": 50993204600,
+      "score": 0.692,
       "news": [
         {
           "date": "11-20",
-          "title": "용산구, 아모레퍼시픽·용산문화재단과 지역 상생 협력…민관협력 본격...",
+          "title": "iM證 “한·중 FTA 타결에 엔터주 재평가 기대⋯에스엠·하이브 수혜 클...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "아모레퍼시픽, 임원 사내 부적절 관계에 '성과급 특혜' 의혹…인사 공정...",
+          "title": "넥스·하이브, ‘Starri | BTS’ 출시···방탄소년단의 음악을 거실에...",
           "risk": false
         }
       ],
-      "foreign_today": 2115000000,
-      "inst_today": 282000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "009420",
-      "name": "한올바이오파마",
-      "close": 53800,
-      "ret5": 0.0508,
-      "ret20": 0.345,
-      "rsi14": 68.5,
-      "vol20": 0.988,
-      "foreign_net": -6464630450,
-      "inst_net": 19240936650,
-      "score": 0.695,
-      "news": [],
-      "foreign_today": 430400000,
-      "inst_today": 430400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "051900",
-      "name": "LG생활건강",
-      "close": 253500,
-      "ret5": 0.1118,
-      "ret20": -0.0488,
-      "rsi14": 52.6,
-      "vol20": 0.452,
-      "foreign_net": 2313137750,
-      "inst_net": 7604417750,
-      "score": 0.684,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "LG생활건강, 2027년 임원 인사…전무 2명 승진",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[유통 브리핑] CJ올리브영·LG생활건강",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "LG생활건강, 온더바디 '발을씻자' 누적 판매 3000만개 돌파 기념 '딸기향...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 2028000000,
-      "inst_today": 0,
+      "price": 186300,
+      "chg": -0.0164,
+      "activity": 1.67,
+      "foreign_today": 0,
+      "inst_today": 1676700000,
       "exchange": "KOSPI"
     },
     {
@@ -319,7 +255,7 @@
       "vol20": 0.403,
       "foreign_net": -8100021500,
       "inst_net": 15359845350,
-      "score": 0.678,
+      "score": 0.692,
       "news": [
         {
           "date": "11-20",
@@ -335,49 +271,19 @@
       "exchange": "KOSDAQ"
     },
     {
-      "code": "161390",
-      "name": "한국타이어앤테크놀로지",
-      "close": 62500,
-      "ret5": 0.0146,
-      "ret20": 0.0263,
-      "rsi14": 54.6,
-      "vol20": 0.504,
-      "foreign_net": -23018310150,
-      "inst_net": 28602985000,
-      "score": 0.621,
+      "code": "009420",
+      "name": "한올바이오파마",
+      "close": 53800,
+      "ret5": 0.0508,
+      "ret20": 0.345,
+      "rsi14": 68.5,
+      "vol20": 0.988,
+      "foreign_net": -6464630450,
+      "inst_net": 19240936650,
+      "score": 0.662,
       "news": [],
-      "foreign_today": 1437500000,
-      "inst_today": 437500000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "352820",
-      "name": "하이브",
-      "close": 187200,
-      "ret5": 0.2031,
-      "ret20": 0.0648,
-      "rsi14": 67.1,
-      "vol20": 0.831,
-      "foreign_net": 11197099000,
-      "inst_net": 50993204600,
-      "score": 0.621,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "iM證 “한·중 FTA 타결에 엔터주 재평가 기대⋯에스엠·하이브 수혜 클...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "넥스·하이브, ‘Starri | BTS’ 출시···방탄소년단의 음악을 거실에...",
-          "risk": false
-        }
-      ],
-      "price": 186700,
-      "chg": -0.0143,
-      "activity": 1.66,
       "foreign_today": 0,
-      "inst_today": 1680300000,
+      "inst_today": 430400000,
       "exchange": "KOSPI"
     },
     {
@@ -390,7 +296,7 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.554,
+      "score": 0.585,
       "news": [
         {
           "date": "11-20",
@@ -410,6 +316,25 @@
       ],
       "foreign_today": 0,
       "inst_today": 1290300000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 31850,
+      "ret5": 0.0031,
+      "ret20": 0.0208,
+      "rsi14": 49.9,
+      "vol20": 0.35,
+      "foreign_net": -49023940650,
+      "inst_net": 66229754800,
+      "score": 0.515,
+      "news": [],
+      "price": 31700,
+      "chg": -0.0016,
+      "activity": 0.8,
+      "foreign_today": 0,
+      "inst_today": 1458200000,
       "exchange": "KOSPI"
     },
     {
@@ -435,103 +360,153 @@
           "risk": false
         }
       ],
-      "foreign_today": 325890000,
+      "foreign_today": 0,
       "inst_today": 651780000,
       "exchange": "KOSPI"
     },
     {
-      "code": "006360",
-      "name": "GS건설",
-      "close": 30300,
-      "ret5": 0.0117,
-      "ret20": 0.0412,
-      "rsi14": 49.7,
-      "vol20": 0.822,
-      "foreign_net": 3941333100,
-      "inst_net": 10148144825,
+      "code": "021240",
+      "name": "코웨이",
+      "close": 106700,
+      "ret5": 0.044,
+      "ret20": 0.0047,
+      "rsi14": 54.8,
+      "vol20": 0.401,
+      "foreign_net": -15533982300,
+      "inst_net": 6421641100,
       "score": 0.492,
       "news": [
         {
           "date": "11-20",
-          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 견본주택 20일 개관",
+          "title": "코웨이-교보문고 맞손, 문화 콘텐츠로 혜택범위 확대",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "[CEO&뉴스] 허윤홍 GS건설 대표, '자이' 위상 굳히고 신사업 확장 승부수",
+          "title": "코웨이-교보문고, 코웨이 고객 대상 전자책 1년 무료 구독 이벤트 진행",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 370실 24일 청약",
+          "title": "코웨이, 교보문고와 마케팅 제휴 MOU…전자책 구독 이벤트",
           "risk": false
         }
       ],
-      "foreign_today": 1484700000,
-      "inst_today": 0,
+      "foreign_today": 0,
+      "inst_today": 640200000,
       "exchange": "KOSPI"
     },
     {
-      "code": "032820",
-      "name": "우리기술",
-      "close": 8620,
-      "ret5": 0.0323,
-      "ret20": -0.104,
-      "rsi14": 44.9,
-      "vol20": 0.777,
-      "foreign_net": 24791260,
-      "inst_net": 2696830050,
-      "score": 0.305,
+      "code": "259960",
+      "name": "크래프톤",
+      "close": 197700,
+      "ret5": -0.014,
+      "ret20": 0.0356,
+      "rsi14": 49.2,
+      "vol20": 0.6,
+      "foreign_net": -17961858100,
+      "inst_net": -10511610100,
+      "score": 0.485,
       "news": [
         {
           "date": "11-20",
-          "title": "휘청이는 증시에 VC주도 '파란불'… 우리기술투자·아주IB투자 낙폭 어디...",
+          "title": "[지스타 2026] 10년 연속 참가 크래프톤, 신작 4종으로 관람객 맞이",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "두산에너빌리티·한전기술·우리기술 등 원자력발전 관련주 약세…양대...",
+          "title": "[지스타2026] 크래프톤 '타래: 언바운드' 속 쿠노이치와 착호갑사, 관람...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "두나무 순익 86% 급감…'배당 의존' 우리기술투자 현금흐름 빨간불",
+          "title": "동양풍 핵앤슬래시부터 가족 협동까지…크래프톤 신작의 두 가지 재미[...",
           "risk": false
         }
       ],
-      "foreign_today": 318940000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
+      "foreign_today": 0,
+      "inst_today": 988500000,
+      "exchange": "KOSPI"
     },
     {
-      "code": "035900",
-      "name": "JYP Ent.",
-      "close": 47100,
-      "ret5": 0.0455,
-      "ret20": 0.2378,
-      "rsi14": 59.8,
-      "vol20": 1.216,
-      "foreign_net": -28575760900,
-      "inst_net": 12012728650,
-      "score": 1.0,
+      "code": "326030",
+      "name": "SK바이오팜",
+      "close": 86700,
+      "ret5": -0.0148,
+      "ret20": 0.1716,
+      "rsi14": 60.0,
+      "vol20": 0.501,
+      "foreign_net": -19998110600,
+      "inst_net": 22599384150,
+      "score": 0.469,
       "news": [
         {
           "date": "11-20",
-          "title": "JYP Ent. 주가, 11월 20일 장중 49,400원 고가 기록",
+          "title": "SK바이오팜, 엑스코프리 고성장 지속...오파칼림 임상 주목-KB證",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "[공시] CJ ENM·JYP Ent.·에스엠 등 9종목 '공매도 금지', 지슨 '투자경...",
+          "title": "\"11월 임상 재개·12월 4일 AES…SK바이오팜 '오파칼림' 반전 시나리오\"",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "이동훈 SK바이오팜 사장 “세노바메이트 성장 영역 확대…새로운 성장 ...",
           "risk": false
         }
       ],
-      "price": 48050,
-      "chg": 0.0021,
-      "activity": 1.3,
-      "foreign_today": 3363500000,
-      "inst_today": 816850000,
-      "exchange": "KOSDAQ"
+      "foreign_today": 0,
+      "inst_today": 606900000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "close": 51400,
+      "ret5": -0.032,
+      "ret20": 0.2137,
+      "rsi14": 52.5,
+      "vol20": 0.658,
+      "foreign_net": 741619100,
+      "inst_net": 1545561850,
+      "score": 0.454,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "\"2주만에 느끼는 기적같은 탄력\"…한미사이언스 '아데시' 신제품 써보니",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "보유 주식 처분까지…신동국, 한미사이언스 지분 매입에 자금 압박 '가...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "한미사이언스, '2026 대한민국 나눔국민대상' 수상",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 308400000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "close": 62500,
+      "ret5": 0.0146,
+      "ret20": 0.0263,
+      "rsi14": 54.6,
+      "vol20": 0.504,
+      "foreign_net": -23018310150,
+      "inst_net": 28602985000,
+      "score": 0.369,
+      "news": [],
+      "foreign_today": 0,
+      "inst_today": 437500000,
+      "exchange": "KOSPI"
     },
     {
       "code": "491000",
@@ -543,43 +518,13 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.864,
+      "score": 0.862,
       "news": [],
       "price": 39400,
       "chg": 0.0465,
       "activity": 1.06,
       "foreign_today": 0,
       "inst_today": 1497200000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "456160",
-      "name": "지투지바이오",
-      "close": 35200,
-      "ret5": -0.0195,
-      "ret20": -0.1569,
-      "rsi14": 49.6,
-      "vol20": 1.324,
-      "foreign_net": 1797622750,
-      "inst_net": 51439200,
-      "score": 0.774,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "지투지바이오, ‘위고비 공동연구’ 공시서 삭제…왜? [김유림의 바이오...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[11월 제약사 이모저모④] 지투지바이오, GC·GC녹십자, 한국 노보 등 소...",
-          "risk": false
-        }
-      ],
-      "price": 38500,
-      "chg": 0.0876,
-      "activity": 0.8,
-      "foreign_today": 0,
-      "inst_today": 885500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -592,8 +537,13 @@
       "vol20": 1.302,
       "foreign_net": 48691610400,
       "inst_net": 20077461600,
-      "score": 0.768,
+      "score": 0.831,
       "news": [
+        {
+          "date": "11-20",
+          "title": "경찰, 조원태 회장 '한진칼 배임 의혹' 압색…휴대전화 확보",
+          "risk": true
+        },
         {
           "date": "11-20",
           "title": "경찰, 조원태 한진그룹 회장 휴대전화 압수…'한진칼 배임' 수사",
@@ -603,18 +553,13 @@
           "date": "11-20",
           "title": "[단독]경찰, 조원태 회장 휴대전화 압수…총수 겨눈 한진칼 배임 수사",
           "risk": true
-        },
-        {
-          "date": "11-20",
-          "title": "[KAL의 전쟁①] KCGI 진입부터 호반 최대주주 등극까지···한진칼 경영...",
-          "risk": false
         }
       ],
-      "price": 236500,
-      "chg": 0.0949,
-      "activity": 1.11,
+      "price": 237500,
+      "chg": 0.0995,
+      "activity": 1.08,
       "foreign_today": 0,
-      "inst_today": 3547500000,
+      "inst_today": 3562500000,
       "exchange": "KOSPI"
     },
     {
@@ -627,13 +572,68 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.734,
+      "score": 0.8,
       "news": [],
-      "price": 42600,
-      "chg": -0.0637,
-      "activity": 1.51,
+      "price": 42650,
+      "chg": -0.0626,
+      "activity": 1.49,
       "foreign_today": 0,
-      "inst_today": 724200000,
+      "inst_today": 725050000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "456160",
+      "name": "지투지바이오",
+      "close": 35200,
+      "ret5": -0.0195,
+      "ret20": -0.1569,
+      "rsi14": 49.6,
+      "vol20": 1.324,
+      "foreign_net": 1797622750,
+      "inst_net": 51439200,
+      "score": 0.738,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "지투지바이오, ‘위고비 공동연구’ 공시서 삭제…왜? [김유림의 바이오...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[11월 제약사 이모저모④] 지투지바이오, GC·GC녹십자, 한국 노보 등 소...",
+          "risk": false
+        }
+      ],
+      "price": 37400,
+      "chg": 0.0565,
+      "activity": 0.83,
+      "foreign_today": 0,
+      "inst_today": 860200000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "277810",
+      "name": "레인보우로보틱스",
+      "close": 422500,
+      "ret5": 0.2318,
+      "ret20": 0.1623,
+      "rsi14": 59.5,
+      "vol20": 1.198,
+      "foreign_net": -28959795250,
+      "inst_net": 61126812250,
+      "score": 0.731,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "반등 신호일까, 추세 이탈일까…레인보우로보틱스·두산로보틱스 하락...",
+          "risk": false
+        }
+      ],
+      "price": 410500,
+      "chg": -0.0353,
+      "activity": 1.38,
+      "foreign_today": 0,
+      "inst_today": 2463000000,
       "exchange": "KOSDAQ"
     },
     {
