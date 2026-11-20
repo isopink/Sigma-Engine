@@ -1033,6 +1033,7 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
     let peak = INIT;   // 고점은 시작 원금부터 (첫날 손실도 낙폭으로 잡음)
     eq.forEach((r, i) => {
       r.ret = r.total / INIT - 1; r.kret = k0 && r.kospi ? r.kospi / k0 - 1 : 0; r.sret = spxRet(r.date);
+      r.dret = CFG.depositRate ? CFG.depositRate * Math.max(0, (r.d - toD(START)) / 864e5) / 365 : null;   // 11-21 은행 예금 (단리, 세전)
       const kPrev = i ? eq[i - 1].kospi : k0;
       r.day = r.total / (i ? eq[i - 1].total : INIT) - 1; r.kday = r.kospi && kPrev ? r.kospi / kPrev - 1 : 0;   // 첫날은 시작 원금·시작일 시가 대비
       peak = Math.max(peak, r.total); r.dd = r.total / peak - 1;
@@ -1343,9 +1344,10 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
     const narrow = W < 520;
     const neg = D.ret < 0, col = window.VOLT ? C.red : neg ? C.blue : C.red, colHi = window.VOLT ? C.redHi : neg ? '#7cc4ea' : C.redHi;   // 수익률 선 색
     const sp = rows.filter(r => r.sret != null);   // 11-17 S&P 500 참고선
-    const lo = Math.min(0, d3.min(rows, r => Math.min(r.ret, r.kret, r.sret ?? 0))), hi = Math.max(0, d3.max(rows, r => Math.max(r.ret, r.kret, r.sret ?? 0)));
+    const dp = rows.filter(r => r.dret != null), DPN = '은행 예금';   // 11-21 은행 예금 참고선
+    const lo = Math.min(0, d3.min(rows, r => Math.min(r.ret, r.kret, r.sret ?? 0, r.dret ?? 0))), hi = Math.max(0, d3.max(rows, r => Math.max(r.ret, r.kret, r.sret ?? 0, r.dret ?? 0)));
     const y0 = d3.scaleLinear([lo, hi], [0, 1]).nice(4), ticks = y0.ticks(4), tstep = ticks.length > 1 ? ticks[1] - ticks[0] : .01, tf = v => (v > 0 ? '+' : '') + (v * 100).toFixed(tstep < .0099 ? 1 : 0) + '%';
-    const lw = Math.max(textW(svg, 'Sigma Engine ' + pct(D.ret), 12), textW(svg, BMN() + ' ' + pct(D.kret), 12), sp.length ? textW(svg, 'S&P 500 ' + pct(sp[sp.length - 1].sret), 12) : 0);
+    const lw = Math.max(textW(svg, 'Sigma Engine ' + pct(D.ret), 12), textW(svg, BMN() + ' ' + pct(D.kret), 12), sp.length ? textW(svg, 'S&P 500 ' + pct(sp[sp.length - 1].sret), 12) : 0, dp.length ? textW(svg, DPN + ' ' + pct(dp[dp.length - 1].dret), 12) : 0);
     const m = { t: narrow ? 12 : 10, r: narrow ? 8 : lw + 18, b: narrow ? 56 : 28, l: d3.max(ticks, v => textW(svg, tf(v))) + 10 };   // 휴대폰은 아래쪽에 범례 자리 (11-10 위 → 아래)
     // 11-06 S.Lee: 가로축 = 11/2 ~ 마지막 기록일 거래일(주말 뺌). 첫날이 맨 왼쪽, 최신 날짜가 맨 오른쪽 — 날이 늘면 칸이 좁아짐
     const last = rows[rows.length - 1].d, DAYS = d3.utcDays(toD(START), d3.utcDay.offset(last, 1)).filter(d => d.getUTCDay() % 6 !== 0);
@@ -1376,10 +1378,12 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
     const SPC = '#6f7781';   // S&P 500 선 색 (KODEX 200 보다 어두운 회색)
     const LS = window.VOLT ? { s: 1.6, o: 1.2, od: '5 4', k: 1.2, kd: '1 4', kc: '#8b949e', f: null } : { s: 0.6, o: 0.9, od: null, k: 0.6, kd: null, kc: '#a8a8a8', f: 'url(#fHeroGlow)' };   // 11-10 S.Lee: 선이 구분되게 (굵기 · 점선), 11-13 Sigma 2.4 → 1.6
     if (sp.length > 1) svg.append('path').datum(sp).attr('fill', 'none').attr('stroke', SPC).attr('stroke-width', 1.2).attr('stroke-dasharray', '7 4').attr('stroke-linecap', 'round').attr('d', d3.line().curve(cv).x(r => x(r.d)).y(r => y(r.sret)));   // 11-17 S&P 500: 회색 긴 점선
+    const DPC = '#5f666e';   // 11-21 은행 예금 선 색 (가는 실선, 어두운 회색)
+    if (dp.length > 1) svg.append('path').datum(dp).attr('fill', 'none').attr('stroke', DPC).attr('stroke-width', 1).attr('stroke-linecap', 'round').attr('d', d3.line().x(r => x(r.d)).y(r => y(r.dret)));
     const kp = svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', LS.kc).attr('stroke-width', LS.k).attr('stroke-dasharray', LS.kd).attr('stroke-linecap', 'round').attr('stroke-linejoin', 'round').attr('filter', LS.f).attr('d', kLine);   // 11-05 1.75 → 0.6 (얇게)
     const p = svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', col).attr('stroke-width', LS.s).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round').attr('filter', LS.f).attr('d', d3.line().curve(cv).x(r => x(r.d)).y(r => y(r.ret)));   // 11-05 2.5 → 0.6
     if (fx) { if (!LS.kd) animate(kp); animate(p); }   // 점선은 그리기 효과가 점선을 덮어서 안 씀
-    const dots = rows.slice(0, -1);   // C: 거래일마다 작은 점 (마지막 날은 끝점이 대신)
+    const one = rows.length < 2, dots = one ? [] : rows;   // C: 거래일마다 작은 점. 11-21 S.Lee: 마지막 날 굵은 끝점 없앰 → 마지막 날도 작은 점 (하루치일 때만 끝점)
     fade(svg.append('g').selectAll('circle').data(dots).join('circle').attr('cx', r => x(r.d)).attr('cy', r => y(r.kret)).attr('r', 2).attr('fill', '#141414').attr('stroke', '#a8a8a8').attr('stroke-width', 1), .9);
     fade(svg.append('g').selectAll('circle').data(dots).join('circle').attr('cx', r => x(r.d)).attr('cy', r => y(r.ret)).attr('r', 2.2).attr('fill', '#141414').attr('stroke', col).attr('stroke-width', 1.2), .9);
     const L = rows[rows.length - 1], ex = x(L.d), yR = y(L.ret), yK = y(L.kret);
@@ -1388,12 +1392,14 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
       // 11-12 S.Lee: 오른쪽 끝 Sigma ↔ 비교선 사이 세로 점선 없앰
       fade(bg, 1.1);
     }
-    fade(svg.append('circle').attr('cx', ex).attr('cy', yK).attr('r', 3.5).attr('fill', '#a8a8a8'), 1);   // KOSPI 끝점 (하루치일 땐 선 대신 이 점만 보임)
-    svg.append('circle').attr('class', 'h-pulse').attr('cx', ex).attr('cy', yR).attr('r', 4.5).attr('fill', col);   // 맥박 (퍼졌다 사라짐)
-    fade(svg.append('circle').attr('cx', ex).attr('cy', yR).attr('r', 4.5).attr('fill', col).attr('stroke', '#fff').attr('stroke-width', 1.5), 1);
+    if (one) {   // 하루치일 땐 선 대신 끝점만 보임
+      fade(svg.append('circle').attr('cx', ex).attr('cy', yK).attr('r', 3.5).attr('fill', '#a8a8a8'), 1);
+      fade(svg.append('circle').attr('cx', ex).attr('cy', yR).attr('r', 4.5).attr('fill', col).attr('stroke', '#fff').attr('stroke-width', 1.5), 1);
+    }
     if (!narrow) {
       const labs = [{ n: 'Sigma Engine', v: L.ret, c: colHi, y: y(L.ret) }, { n: BMN(), v: L.kret, c: '#9a9a9a', y: y(L.kret) }];
       if (sp.length) labs.push({ n: 'S&P 500', v: sp[sp.length - 1].sret, c: '#8c8c8c', y: y(sp[sp.length - 1].sret) });
+      if (dp.length) labs.push({ n: DPN, v: dp[dp.length - 1].dret, c: '#8c8c8c', y: y(dp[dp.length - 1].dret) });
       labs.sort((a, b) => a.y - b.y).forEach((l, i, a) => { if (i && l.y - a[i - 1].y < 18) l.y = a[i - 1].y + 18; });   // 이름표가 겹치면 아래로 밀어 냄
       labs.forEach(l => { const t = svg.append('text').attr('x', x(L.d) + 12).attr('y', l.y).attr('dy', '.32em').attr('font-size', 12).attr('fill', l.c); t.append('tspan').attr('font-weight', 600).text(l.n); t.append('tspan').attr('dx', 6).text(pct(l.v)); });
     } else {   // 휴대폰: 오른쪽 이름표 대신 그래프 아래 한 줄 범례 (11-10 S.Lee: 위 → 아래, 가운데)
@@ -1401,6 +1407,7 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
       const items = [{ n: 'Sigma Engine', s: 'Sigma', v: L.ret, lc: col, c: colHi, w: LS.s }];
       items.push({ n: BMN(), s: BMN(), v: L.kret, lc: LS.kc, c: '#9a9a9a', d: LS.kd, w: LS.k });
       if (sp.length) items.push({ n: 'S&P 500', s: 'S&P', v: sp[sp.length - 1].sret, lc: SPC, c: '#8c8c8c', d: '7 4', w: 1.2 });
+      if (dp.length) items.push({ n: DPN, s: '예금', v: dp[dp.length - 1].dret, lc: DPC, c: '#8c8c8c', w: 1 });
       const avail = W - 8;
       const draw = (short, fs, gapX) => {
         const g = svg.append('g');
