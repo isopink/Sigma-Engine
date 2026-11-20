@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "12:45",
-    "pool": 429,
-    "analyzed_new": 30,
+    "time": "13:00",
+    "pool": 430,
+    "analyzed_new": 11,
     "passed": 22,
     "kept_prep": false
   },
@@ -98,7 +98,7 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.883,
+      "score": 0.876,
       "news": [
         {
           "date": "11-20",
@@ -109,18 +109,13 @@
           "date": "11-20",
           "title": "[유통 브리핑] 현대백화점그룹·신세계백화점·롯데면세점",
           "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "크리스챤 디올 뷰티, 신세계 강남점서 '디올 뷰티 홀리데이 팝업' 개최",
-          "risk": false
         }
       ],
-      "price": 295500,
-      "chg": 0.0,
-      "activity": 2.14,
+      "price": 295000,
+      "chg": -0.0017,
+      "activity": 2.1,
       "foreign_today": 0,
-      "inst_today": 1773000000,
+      "inst_today": 1770000000,
       "exchange": "KOSPI"
     },
     {
@@ -133,13 +128,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.861,
+      "score": 0.869,
       "news": [],
-      "price": 31900,
-      "chg": 0.0047,
-      "activity": 0.85,
-      "foreign_today": 6124800000,
-      "inst_today": 287100000,
+      "price": 31950,
+      "chg": 0.0063,
+      "activity": 0.82,
+      "foreign_today": 6134400000,
+      "inst_today": 287550000,
       "exchange": "KOSPI"
     },
     {
@@ -249,7 +244,7 @@
       "vol20": 0.638,
       "foreign_net": 3796040250,
       "inst_net": 16061526750,
-      "score": 0.708,
+      "score": 0.693,
       "news": [
         {
           "date": "11-20",
@@ -267,11 +262,11 @@
           "risk": false
         }
       ],
-      "price": 464000,
-      "chg": 0.0995,
-      "activity": 1.68,
+      "price": 461000,
+      "chg": 0.0924,
+      "activity": 1.64,
       "foreign_today": 0,
-      "inst_today": 464000000,
+      "inst_today": 461000000,
       "exchange": "KOSPI"
     },
     {
@@ -300,7 +295,7 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.635,
+      "score": 0.628,
       "news": [
         {
           "date": "11-20",
@@ -455,7 +450,7 @@
       "vol20": 0.658,
       "foreign_net": 741619100,
       "inst_net": 1545561850,
-      "score": 0.474,
+      "score": 0.482,
       "news": [
         {
           "date": "11-20",
@@ -532,11 +527,11 @@
           "risk": false
         }
       ],
-      "price": 48850,
-      "chg": 0.0188,
-      "activity": 1.5,
-      "foreign_today": 2784450000,
-      "inst_today": 146550000,
+      "price": 48800,
+      "chg": 0.0177,
+      "activity": 1.43,
+      "foreign_today": 2781600000,
+      "inst_today": 146400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -549,13 +544,13 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.891,
+      "score": 0.92,
       "news": [],
-      "price": 43050,
-      "chg": -0.0538,
-      "activity": 1.63,
+      "price": 43650,
+      "chg": -0.0407,
+      "activity": 1.65,
       "foreign_today": 0,
-      "inst_today": 688800000,
+      "inst_today": 698400000,
       "exchange": "KOSDAQ"
     },
     {
@@ -568,32 +563,13 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.876,
+      "score": 0.869,
       "news": [],
-      "price": 39750,
-      "chg": 0.0558,
-      "activity": 1.17,
+      "price": 39500,
+      "chg": 0.0491,
+      "activity": 1.14,
       "foreign_today": 0,
-      "inst_today": 596250000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "277810",
-      "name": "레인보우로보틱스",
-      "close": 422500,
-      "ret5": 0.2318,
-      "ret20": 0.1623,
-      "rsi14": 59.5,
-      "vol20": 1.198,
-      "foreign_net": -28959795250,
-      "inst_net": 61126812250,
-      "score": 0.657,
-      "news": [],
-      "price": 413000,
-      "chg": -0.0294,
-      "activity": 1.58,
-      "foreign_today": 0,
-      "inst_today": 826000000,
+      "inst_today": 592500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -606,7 +582,7 @@
       "vol20": 1.615,
       "foreign_net": 5156049025,
       "inst_net": -1141274250,
-      "score": 0.657,
+      "score": 0.664,
       "news": [
         {
           "date": "11-20",
@@ -624,11 +600,30 @@
           "risk": false
         }
       ],
-      "price": 36450,
-      "chg": -0.0215,
-      "activity": 1.58,
+      "price": 36950,
+      "chg": -0.0081,
+      "activity": 1.57,
       "foreign_today": 0,
-      "inst_today": 72900000,
+      "inst_today": 73900000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "277810",
+      "name": "레인보우로보틱스",
+      "close": 422500,
+      "ret5": 0.2318,
+      "ret20": 0.1623,
+      "rsi14": 59.5,
+      "vol20": 1.198,
+      "foreign_net": -28959795250,
+      "inst_net": 61126812250,
+      "score": 0.635,
+      "news": [],
+      "price": 412500,
+      "chg": -0.0306,
+      "activity": 1.52,
+      "foreign_today": 0,
+      "inst_today": 825000000,
       "exchange": "KOSDAQ"
     },
     {
