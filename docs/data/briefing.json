@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:30",
-    "pool": 461,
-    "analyzed_new": 30,
+    "time": "14:45",
+    "pool": 460,
+    "analyzed_new": 13,
     "passed": 22,
     "kept_prep": false
   },
@@ -98,7 +98,7 @@
       "vol20": 0.638,
       "foreign_net": 3796040250,
       "inst_net": 16061526750,
-      "score": 0.995,
+      "score": 1.0,
       "news": [
         {
           "date": "11-20",
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 451500,
-      "chg": 0.0699,
-      "activity": 1.52,
+      "price": 453000,
+      "chg": 0.0735,
+      "activity": 1.53,
       "foreign_today": 0,
-      "inst_today": 10384500000,
+      "inst_today": 10419000000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.567,
       "foreign_net": -277526250,
       "inst_net": 13097068250,
-      "score": 0.973,
+      "score": 0.978,
       "news": [
         {
           "date": "11-20",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 275500,
-      "chg": -0.009,
-      "activity": 1.11,
+      "price": 276000,
+      "chg": -0.0072,
+      "activity": 1.13,
       "foreign_today": 0,
-      "inst_today": 3030500000,
+      "inst_today": 3036000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,27 +168,27 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.871,
+      "score": 0.876,
       "news": [
         {
           "date": "11-20",
+          "title": "신세계百 디저트살롱, 계절 별미 3종 출시",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "신세계프라퍼티, '스타필드 파트너스 위크' 개최…협력사 성장 지원",
+          "risk": false
+        },
+        {
+          "date": "11-20",
           "title": "신세계사이먼 파주 아울렛에 말레이시아 단체 관광객 1600명 방문",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "광주지방국세청, (주)광주신세계와 '호남의 K-SUUL' 홍보 나선다",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "'189년' 주얼러 티파니앤코 부티크, 대전신세계서 만난다",
           "risk": false
         }
       ],
       "price": 287500,
       "chg": -0.0271,
-      "activity": 2.06,
+      "activity": 2.05,
       "foreign_today": 0,
       "inst_today": 7475000000,
       "exchange": "KOSPI"
@@ -225,13 +225,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.812,
+      "score": 0.833,
       "news": [],
-      "price": 31700,
-      "chg": -0.0016,
+      "price": 31750,
+      "chg": 0.0,
       "activity": 0.8,
-      "foreign_today": 9985500000,
-      "inst_today": 1680100000,
+      "foreign_today": 10001250000,
+      "inst_today": 1682750000,
       "exchange": "KOSPI"
     },
     {
@@ -273,11 +273,43 @@
           "risk": false
         }
       ],
-      "price": 185100,
-      "chg": -0.0227,
-      "activity": 1.65,
+      "price": 184200,
+      "chg": -0.0275,
+      "activity": 1.63,
       "foreign_today": 0,
-      "inst_today": 2591400000,
+      "inst_today": 2578800000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "051900",
+      "name": "LG생활건강",
+      "close": 253500,
+      "ret5": 0.1118,
+      "ret20": -0.0488,
+      "rsi14": 52.6,
+      "vol20": 0.452,
+      "foreign_net": 2313137750,
+      "inst_net": 7604417750,
+      "score": 0.667,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "LG생활건강 온더바디 발을씻자, 한정판 딸기향 선보여",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "LG생활건강, 2027년 임원 인사…전무 2명 승진",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[유통 브리핑] CJ올리브영·LG생활건강",
+          "risk": false
+        }
+      ],
+      "foreign_today": 2028000000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -308,38 +340,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "051900",
-      "name": "LG생활건강",
-      "close": 253500,
-      "ret5": 0.1118,
-      "ret20": -0.0488,
-      "rsi14": 52.6,
-      "vol20": 0.452,
-      "foreign_net": 2313137750,
-      "inst_net": 7604417750,
-      "score": 0.661,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "LG생활건강, 2027년 임원 인사…전무 2명 승진",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[유통 브리핑] CJ올리브영·LG생활건강",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "LG생활건강, 온더바디 '발을씻자' 누적 판매 3000만개 돌파 기념 '딸기향...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 2028000000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "145020",
       "name": "휴젤",
       "close": 212500,
@@ -349,7 +349,7 @@
       "vol20": 0.403,
       "foreign_net": -8100021500,
       "inst_net": 15359845350,
-      "score": 0.656,
+      "score": 0.651,
       "news": [
         {
           "date": "11-20",
@@ -357,11 +357,11 @@
           "risk": false
         }
       ],
-      "price": 208000,
-      "chg": -0.0258,
-      "activity": 1.41,
+      "price": 206500,
+      "chg": -0.0328,
+      "activity": 1.45,
       "foreign_today": 0,
-      "inst_today": 208000000,
+      "inst_today": 206500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -374,7 +374,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.57,
+      "score": 0.575,
       "news": [],
       "foreign_today": 1125000000,
       "inst_today": 562500000,
@@ -390,7 +390,7 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.548,
+      "score": 0.554,
       "news": [
         {
           "date": "11-20",
@@ -410,6 +410,38 @@
       ],
       "foreign_today": 0,
       "inst_today": 1642200000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "021240",
+      "name": "코웨이",
+      "close": 106700,
+      "ret5": 0.044,
+      "ret20": 0.0047,
+      "rsi14": 54.8,
+      "vol20": 0.401,
+      "foreign_net": -15533982300,
+      "inst_net": 6421641100,
+      "score": 0.505,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "코웨이, 교보문고와 손잡고 고객 혜택 확대…생활밀착형 멤버십 강화",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "코웨이, 교보문고와 마케팅 제휴…고객에 전자책 구독 혜택",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "코웨이, 교보문고와 제휴 확대…멤버십 혜택 생활·문화 영역으로 넓힌...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 1173700000,
       "exchange": "KOSPI"
     },
     {
@@ -442,38 +474,6 @@
       ],
       "foreign_today": 2025000000,
       "inst_today": 0,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "021240",
-      "name": "코웨이",
-      "close": 106700,
-      "ret5": 0.044,
-      "ret20": 0.0047,
-      "rsi14": 54.8,
-      "vol20": 0.401,
-      "foreign_net": -15533982300,
-      "inst_net": 6421641100,
-      "score": 0.5,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "코웨이, 교보문고와 마케팅 제휴…고객에 전자책 구독 혜택",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "코웨이, 교보문고와 제휴 확대…멤버십 혜택 생활·문화 영역으로 넓힌...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "교보문고·코웨이가 협업을?…독서 콘텐츠·생활가전 서비스에 '맞손'",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1173700000,
       "exchange": "KOSPI"
     },
     {
@@ -518,7 +518,7 @@
       "vol20": 1.216,
       "foreign_net": -28575760900,
       "inst_net": 12012728650,
-      "score": 1.0,
+      "score": 0.995,
       "news": [
         {
           "date": "11-20",
@@ -531,60 +531,11 @@
           "risk": false
         }
       ],
-      "price": 47800,
-      "chg": -0.0031,
-      "activity": 1.23,
-      "foreign_today": 4684400000,
-      "inst_today": 956000000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "491000",
-      "name": "리브스메드",
-      "close": 37700,
-      "ret5": 0.1121,
-      "ret20": -0.0258,
-      "rsi14": 51.5,
-      "vol20": 1.171,
-      "foreign_net": 690944275,
-      "inst_net": 5020912275,
-      "score": 0.812,
-      "news": [],
-      "price": 38950,
-      "chg": 0.0345,
-      "activity": 1.05,
-      "foreign_today": 0,
-      "inst_today": 1947500000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "456160",
-      "name": "지투지바이오",
-      "close": 35200,
-      "ret5": -0.0195,
-      "ret20": -0.1569,
-      "rsi14": 49.6,
-      "vol20": 1.324,
-      "foreign_net": 1797622750,
-      "inst_net": 51439200,
-      "score": 0.801,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "지투지바이오, ‘위고비 공동연구’ 공시서 삭제…왜? [김유림의 바이오...",
-          "risk": false
-        },
-        {
-          "date": "11-18",
-          "title": "[11월 제약사 이모저모④] 지투지바이오, GC·GC녹십자, 한국 노보 등 소...",
-          "risk": false
-        }
-      ],
-      "price": 37450,
-      "chg": 0.0579,
-      "activity": 0.9,
-      "foreign_today": 0,
-      "inst_today": 1685250000,
+      "price": 47450,
+      "chg": -0.0104,
+      "activity": 1.2,
+      "foreign_today": 4650100000,
+      "inst_today": 949000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -615,12 +566,61 @@
           "risk": true
         }
       ],
-      "price": 237000,
-      "chg": 0.0972,
-      "activity": 1.07,
+      "price": 233000,
+      "chg": 0.0787,
+      "activity": 1.05,
       "foreign_today": 0,
-      "inst_today": 4740000000,
+      "inst_today": 4660000000,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "491000",
+      "name": "리브스메드",
+      "close": 37700,
+      "ret5": 0.1121,
+      "ret20": -0.0258,
+      "rsi14": 51.5,
+      "vol20": 1.171,
+      "foreign_net": 690944275,
+      "inst_net": 5020912275,
+      "score": 0.785,
+      "news": [],
+      "price": 38450,
+      "chg": 0.0212,
+      "activity": 1.03,
+      "foreign_today": 0,
+      "inst_today": 1922500000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "456160",
+      "name": "지투지바이오",
+      "close": 35200,
+      "ret5": -0.0195,
+      "ret20": -0.1569,
+      "rsi14": 49.6,
+      "vol20": 1.324,
+      "foreign_net": 1797622750,
+      "inst_net": 51439200,
+      "score": 0.774,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "지투지바이오, ‘위고비 공동연구’ 공시서 삭제…왜? [김유림의 바이오...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[11월 제약사 이모저모④] 지투지바이오, GC·GC녹십자, 한국 노보 등 소...",
+          "risk": false
+        }
+      ],
+      "price": 36900,
+      "chg": 0.0424,
+      "activity": 0.92,
+      "foreign_today": 0,
+      "inst_today": 1660500000,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "267850",
@@ -640,10 +640,10 @@
           "risk": false
         }
       ],
-      "price": 13970,
-      "chg": 0.0763,
-      "activity": 2.32,
-      "foreign_today": 111760000,
+      "price": 13750,
+      "chg": 0.0593,
+      "activity": 2.22,
+      "foreign_today": 110000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
