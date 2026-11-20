@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "13:45",
-    "pool": 460,
-    "analyzed_new": 30,
+    "time": "14:00",
+    "pool": 461,
+    "analyzed_new": 13,
     "passed": 22,
     "kept_prep": false
   },
@@ -98,7 +98,7 @@
       "vol20": 0.638,
       "foreign_net": 3796040250,
       "inst_net": 16061526750,
-      "score": 0.965,
+      "score": 0.955,
       "news": [
         {
           "date": "11-20",
@@ -116,11 +116,11 @@
           "risk": false
         }
       ],
-      "price": 450500,
-      "chg": 0.0675,
-      "activity": 1.58,
+      "price": 452000,
+      "chg": 0.0711,
+      "activity": 1.56,
       "foreign_today": 0,
-      "inst_today": 5856500000,
+      "inst_today": 5876000000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.567,
       "foreign_net": -277526250,
       "inst_net": 13097068250,
-      "score": 0.936,
+      "score": 0.927,
       "news": [
         {
           "date": "11-20",
@@ -151,11 +151,11 @@
           "risk": false
         }
       ],
-      "price": 278500,
-      "chg": 0.0018,
-      "activity": 1.14,
+      "price": 276500,
+      "chg": -0.0054,
+      "activity": 1.12,
       "foreign_today": 0,
-      "inst_today": 1671000000,
+      "inst_today": 1659000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -168,29 +168,29 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.901,
+      "score": 0.893,
       "news": [
         {
           "date": "11-20",
-          "title": "신세계프라퍼티, 중소기업 브랜드 20% 할인 '스타필드 파트너스 위크' 실...",
+          "title": "케이비젼 '정서불안 김햄찌' 부산 팝업, 신세계 센텀시티서 22일까지 운...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "대전신세계, 티파니앤코 새로운 부티크 오픈",
+          "title": "신세계프라퍼티, 협력사 상품 할인 판매 '파트너스 위크' 진행",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "신세계프라퍼티, 임대료 넘어 매출까지 챙긴다",
+          "title": "대전신세계, 티파니앤코 부티크 신규 오픈",
           "risk": false
         }
       ],
-      "price": 292000,
-      "chg": -0.0118,
-      "activity": 2.06,
+      "price": 291500,
+      "chg": -0.0135,
+      "activity": 2.04,
       "foreign_today": 0,
-      "inst_today": 5256000000,
+      "inst_today": 5247000000,
       "exchange": "KOSPI"
     },
     {
@@ -203,13 +203,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.83,
+      "score": 0.825,
       "news": [],
-      "price": 31750,
-      "chg": 0.0,
-      "activity": 0.8,
-      "foreign_today": 8032750000,
-      "inst_today": 1460500000,
+      "price": 31800,
+      "chg": 0.0016,
+      "activity": 0.79,
+      "foreign_today": 8045400000,
+      "inst_today": 1462800000,
       "exchange": "KOSPI"
     },
     {
@@ -222,7 +222,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.825,
+      "score": 0.819,
       "news": [
         {
           "date": "11-19",
@@ -244,7 +244,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.719,
+      "score": 0.718,
       "news": [
         {
           "date": "11-20",
@@ -271,7 +271,7 @@
       "vol20": 0.988,
       "foreign_net": -6464630450,
       "inst_net": 19240936650,
-      "score": 0.696,
+      "score": 0.695,
       "news": [],
       "foreign_today": 430400000,
       "inst_today": 430400000,
@@ -291,17 +291,17 @@
       "news": [
         {
           "date": "11-20",
+          "title": "LG생활건강, 2027년 임원 인사…전무 2명 승진",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[유통 브리핑] CJ올리브영·LG생활건강",
+          "risk": false
+        },
+        {
+          "date": "11-20",
           "title": "LG생활건강, 온더바디 '발을씻자' 누적 판매 3000만개 돌파 기념 '딸기향...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "LG생활건강, ‘온더바디 발을씻자’ 한정판 딸기향 출시...소비자 관심도...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "LG생활건강 '온더바디 발을씻자' 한정판 딸기향 출시·2027년도 정기 임...",
           "risk": false
         }
       ],
@@ -319,7 +319,7 @@
       "vol20": 0.403,
       "foreign_net": -8100021500,
       "inst_net": 15359845350,
-      "score": 0.673,
+      "score": 0.678,
       "news": [
         {
           "date": "11-20",
@@ -327,11 +327,11 @@
           "risk": false
         }
       ],
-      "price": 209000,
-      "chg": -0.0211,
-      "activity": 1.48,
+      "price": 208000,
+      "chg": -0.0258,
+      "activity": 1.43,
       "foreign_today": 0,
-      "inst_today": 209000000,
+      "inst_today": 208000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -344,7 +344,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.62,
+      "score": 0.621,
       "news": [],
       "foreign_today": 1437500000,
       "inst_today": 437500000,
@@ -360,7 +360,7 @@
       "vol20": 0.831,
       "foreign_net": 11197099000,
       "inst_net": 50993204600,
-      "score": 0.62,
+      "score": 0.621,
       "news": [
         {
           "date": "11-20",
@@ -373,11 +373,11 @@
           "risk": false
         }
       ],
-      "price": 187100,
-      "chg": -0.0121,
-      "activity": 1.7,
+      "price": 186700,
+      "chg": -0.0143,
+      "activity": 1.66,
       "foreign_today": 0,
-      "inst_today": 1683900000,
+      "inst_today": 1680300000,
       "exchange": "KOSPI"
     },
     {
@@ -390,7 +390,7 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.561,
+      "score": 0.554,
       "news": [
         {
           "date": "11-20",
@@ -422,7 +422,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.491,
+      "score": 0.492,
       "news": [
         {
           "date": "11-20",
@@ -449,8 +449,13 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.485,
+      "score": 0.492,
       "news": [
+        {
+          "date": "11-20",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 견본주택 20일 개관",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "[CEO&뉴스] 허윤홍 GS건설 대표, '자이' 위상 굳히고 신사업 확장 승부수",
@@ -459,11 +464,6 @@
         {
           "date": "11-20",
           "title": "GS건설, '아르뮤제자이' 오피스텔 370실 24일 청약",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 오픈...소비자 관심도 상승",
           "risk": false
         }
       ],
@@ -481,7 +481,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.298,
+      "score": 0.305,
       "news": [
         {
           "date": "11-20",
@@ -526,11 +526,11 @@
           "risk": false
         }
       ],
-      "price": 48000,
-      "chg": 0.001,
-      "activity": 1.32,
-      "foreign_today": 3360000000,
-      "inst_today": 816000000,
+      "price": 48050,
+      "chg": 0.0021,
+      "activity": 1.3,
+      "foreign_today": 3363500000,
+      "inst_today": 816850000,
       "exchange": "KOSDAQ"
     },
     {
@@ -543,13 +543,43 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.871,
+      "score": 0.864,
       "news": [],
-      "price": 39600,
-      "chg": 0.0518,
-      "activity": 1.08,
+      "price": 39400,
+      "chg": 0.0465,
+      "activity": 1.06,
       "foreign_today": 0,
-      "inst_today": 1504800000,
+      "inst_today": 1497200000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "456160",
+      "name": "지투지바이오",
+      "close": 35200,
+      "ret5": -0.0195,
+      "ret20": -0.1569,
+      "rsi14": 49.6,
+      "vol20": 1.324,
+      "foreign_net": 1797622750,
+      "inst_net": 51439200,
+      "score": 0.774,
+      "news": [
+        {
+          "date": "11-18",
+          "title": "지투지바이오, ‘위고비 공동연구’ 공시서 삭제…왜? [김유림의 바이오...",
+          "risk": false
+        },
+        {
+          "date": "11-18",
+          "title": "[11월 제약사 이모저모④] 지투지바이오, GC·GC녹십자, 한국 노보 등 소...",
+          "risk": false
+        }
+      ],
+      "price": 38500,
+      "chg": 0.0876,
+      "activity": 0.8,
+      "foreign_today": 0,
+      "inst_today": 885500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -562,8 +592,13 @@
       "vol20": 1.302,
       "foreign_net": 48691610400,
       "inst_net": 20077461600,
-      "score": 0.766,
+      "score": 0.768,
       "news": [
+        {
+          "date": "11-20",
+          "title": "경찰, 조원태 한진그룹 회장 휴대전화 압수…'한진칼 배임' 수사",
+          "risk": true
+        },
         {
           "date": "11-20",
           "title": "[단독]경찰, 조원태 회장 휴대전화 압수…총수 겨눈 한진칼 배임 수사",
@@ -573,18 +608,13 @@
           "date": "11-20",
           "title": "[KAL의 전쟁①] KCGI 진입부터 호반 최대주주 등극까지···한진칼 경영...",
           "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "한진칼 주가, 11월 20일 장중 236,500원 9.49% 상승",
-          "risk": false
         }
       ],
-      "price": 236000,
-      "chg": 0.0926,
-      "activity": 1.13,
+      "price": 236500,
+      "chg": 0.0949,
+      "activity": 1.11,
       "foreign_today": 0,
-      "inst_today": 3540000000,
+      "inst_today": 3547500000,
       "exchange": "KOSPI"
     },
     {
@@ -597,32 +627,13 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.737,
+      "score": 0.734,
       "news": [],
-      "price": 42700,
-      "chg": -0.0615,
-      "activity": 1.54,
+      "price": 42600,
+      "chg": -0.0637,
+      "activity": 1.51,
       "foreign_today": 0,
-      "inst_today": 725900000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "277810",
-      "name": "레인보우로보틱스",
-      "close": 422500,
-      "ret5": 0.2318,
-      "ret20": 0.1623,
-      "rsi14": 59.5,
-      "vol20": 1.198,
-      "foreign_net": -28959795250,
-      "inst_net": 61126812250,
-      "score": 0.708,
-      "news": [],
-      "price": 411500,
-      "chg": -0.0329,
-      "activity": 1.43,
-      "foreign_today": 0,
-      "inst_today": 2469000000,
+      "inst_today": 724200000,
       "exchange": "KOSDAQ"
     },
     {
