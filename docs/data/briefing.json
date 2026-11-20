@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "11:15",
+    "time": "11:30",
     "pool": 427,
     "analyzed_new": 30,
     "passed": 22,
@@ -98,13 +98,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.852,
+      "score": 0.84,
       "news": [],
-      "price": 32350,
-      "chg": 0.0189,
-      "activity": 1.02,
-      "foreign_today": 6211200000,
-      "inst_today": 291150000,
+      "price": 32400,
+      "chg": 0.0205,
+      "activity": 0.99,
+      "foreign_today": 6220800000,
+      "inst_today": 291600000,
       "exchange": "KOSPI"
     },
     {
@@ -117,7 +117,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.687,
+      "score": 0.697,
       "news": [
         {
           "date": "11-20",
@@ -144,7 +144,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.678,
+      "score": 0.689,
       "news": [
         {
           "date": "11-19",
@@ -157,6 +157,41 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "128940",
+      "name": "한미약품",
+      "close": 424500,
+      "ret5": -0.065,
+      "ret20": 0.1551,
+      "rsi14": 45.8,
+      "vol20": 0.638,
+      "foreign_net": 3796040250,
+      "inst_net": 16061526750,
+      "score": 0.63,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[오늘 IR 일정]현대모비스·한미약품 등 26개사",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "한미약품, 비만신약 기술이전 기대...내년 R&D 성과 주목-KB證",
+          "risk": false
+        }
+      ],
+      "price": 461500,
+      "chg": 0.0936,
+      "activity": 1.91,
+      "foreign_today": 0,
+      "inst_today": 461500000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "161390",
       "name": "한국타이어앤테크놀로지",
       "close": 62500,
@@ -166,7 +201,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.6,
+      "score": 0.622,
       "news": [],
       "foreign_today": 1312500000,
       "inst_today": 187500000,
@@ -182,7 +217,7 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.574,
+      "score": 0.58,
       "news": [
         {
           "date": "11-20",
@@ -214,27 +249,27 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.565,
+      "score": 0.563,
       "news": [
         {
           "date": "11-20",
-          "title": "KB금융그룹 이재근號 출범...임시 주총서 97.69% 찬성",
+          "title": "KB금융, 이재근 선임안 통과…양종희 \"고객 필요로 할 금융 준비\"",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "이재근 KB금융 회장 선임…조직개편·CEO 인사 앞둬",
+          "title": "이재근 KB금융 차기 회장 선임안 가결…주주 97.69% 찬성",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "이재근, KB금융지주 신임 회장 정식 선임…임기 21일부터 3년",
+          "title": "KB금융 '이재근호' 출범…21일부터 3년 임기",
           "risk": false
         }
       ],
       "price": 154900,
       "chg": 0.0131,
-      "activity": 0.96,
+      "activity": 0.9,
       "foreign_today": 3252900000,
       "inst_today": 0,
       "exchange": "KOSPI"
@@ -249,21 +284,21 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.522,
+      "score": 0.529,
       "news": [
         {
           "date": "11-20",
-          "title": "신세계사이먼 파주 아울렛에 말레이시아 관광객 1600명 방문",
+          "title": "신세계프라퍼티 중소기업 매출 확대 지원, 스타필드 입점 120곳 할인 행...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "신세계百, 디저트살롱 계절 별미 선봬→현대어린이책미술관, 고객 참여...",
+          "title": "신세계백화점, 디저트살롱서 계절 별미 선봬",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "디올 뷰티, 신세계 강남점서 홀리데이 팝업",
+          "title": "‘스타필드 파트너스 위크’ 신세계프라퍼티, 협력사에 ‘매출 지원’도",
           "risk": false
         }
       ],
@@ -281,7 +316,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.478,
+      "score": 0.487,
       "news": [
         {
           "date": "11-20",
@@ -308,7 +343,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.47,
+      "score": 0.471,
       "news": [
         {
           "date": "11-20",
@@ -331,6 +366,33 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "161890",
+      "name": "한국콜마",
+      "close": 117300,
+      "ret5": 0.1301,
+      "ret20": -0.0578,
+      "rsi14": 50.5,
+      "vol20": 0.7,
+      "foreign_net": -14109482950,
+      "inst_net": 17605623350,
+      "score": 0.454,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "한국콜마, 3분기 만에 작년 연간 영업익…4분기도 고성장 예고",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[K뷰티 ODM 3조 시대③] 한국콜마·코스맥스 다음 승부처는 미국, '베테...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 469200000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "008930",
       "name": "한미사이언스",
       "close": 51400,
@@ -340,7 +402,7 @@
       "vol20": 0.658,
       "foreign_net": 741619100,
       "inst_net": 1545561850,
-      "score": 0.443,
+      "score": 0.445,
       "news": [
         {
           "date": "11-20",
@@ -363,66 +425,36 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "161890",
-      "name": "한국콜마",
-      "close": 117300,
-      "ret5": 0.1301,
-      "ret20": -0.0578,
-      "rsi14": 50.5,
-      "vol20": 0.7,
-      "foreign_net": -14109482950,
-      "inst_net": 17605623350,
-      "score": 0.443,
+      "code": "021240",
+      "name": "코웨이",
+      "close": 106700,
+      "ret5": 0.044,
+      "ret20": 0.0047,
+      "rsi14": 54.8,
+      "vol20": 0.401,
+      "foreign_net": -15533982300,
+      "inst_net": 6421641100,
+      "score": 0.37,
       "news": [
         {
           "date": "11-20",
-          "title": "한국콜마, 3분기 만에 작년 연간 영업익…4분기도 고성장 예고",
+          "title": "코웨이, 교보문고와 제휴…고객 대상 전자책 1년 무료 구독 이벤트",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "[K뷰티 ODM 3조 시대③] 한국콜마·코스맥스 다음 승부처는 미국, '베테...",
+          "title": "시간은 내 일정에, 수입은 실적에…코웨이 '코디' 전국 모집",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "코웨이, 글로벌 투자행사에서 '10개 핵심 주식'에 선정",
           "risk": false
         }
       ],
       "foreign_today": 0,
-      "inst_today": 469200000,
+      "inst_today": 213400000,
       "exchange": "KOSPI"
-    },
-    {
-      "code": "178320",
-      "name": "서진시스템",
-      "close": 32350,
-      "ret5": 0.0352,
-      "ret20": -0.0386,
-      "rsi14": 50.7,
-      "vol20": 0.903,
-      "foreign_net": -2316425600,
-      "inst_net": 13351444375,
-      "score": 0.435,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "서진시스템, 반도체 장비 타고 영업익 흑자 전환",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "서진시스템 주가, 11월 17일 애프터마켓 30,200원 4.73% 하락",
-          "risk": false
-        },
-        {
-          "date": "11-17",
-          "title": "서진시스템, 3분기 매출 196% 증가…영업이익 387억원 흑자전환",
-          "risk": false
-        }
-      ],
-      "price": 30450,
-      "chg": -0.0455,
-      "activity": 0.7,
-      "foreign_today": 304500000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
     },
     {
       "code": "032820",
@@ -434,7 +466,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.33,
+      "score": 0.345,
       "news": [
         {
           "date": "11-20",
@@ -466,7 +498,7 @@
       "vol20": 0.411,
       "foreign_net": -6983514240,
       "inst_net": 9306926035,
-      "score": 0.27,
+      "score": 0.261,
       "news": [
         {
           "date": "11-20",
@@ -486,33 +518,6 @@
       ],
       "foreign_today": 0,
       "inst_today": 106750000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "004020",
-      "name": "현대제철",
-      "close": 28600,
-      "ret5": -0.0035,
-      "ret20": 0.0515,
-      "rsi14": 50.2,
-      "vol20": 0.559,
-      "foreign_net": -1282328200,
-      "inst_net": 6416192450,
-      "score": 0.217,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "[속보] 현대제철·포스코 美 제철소 '올해의 에너지 딜' 수상…4억달러...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[수능]충남 당진현대제철,수능한파 녹이는 따뜻한 응원",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 28600000,
       "exchange": "KOSPI"
     },
     {
@@ -538,11 +543,11 @@
           "risk": false
         }
       ],
-      "price": 49400,
-      "chg": 0.0302,
-      "activity": 2.08,
-      "foreign_today": 2815800000,
-      "inst_today": 148200000,
+      "price": 49050,
+      "chg": 0.0229,
+      "activity": 1.97,
+      "foreign_today": 2795850000,
+      "inst_today": 147150000,
       "exchange": "KOSDAQ"
     },
     {
@@ -555,13 +560,13 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.817,
+      "score": 0.807,
       "news": [],
-      "price": 44800,
-      "chg": -0.0154,
-      "activity": 1.94,
+      "price": 44200,
+      "chg": -0.0286,
+      "activity": 1.82,
       "foreign_today": 0,
-      "inst_today": 716800000,
+      "inst_today": 707200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -574,13 +579,13 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.8,
+      "score": 0.798,
       "news": [],
-      "price": 39550,
-      "chg": 0.0505,
-      "activity": 1.27,
+      "price": 39800,
+      "chg": 0.0571,
+      "activity": 1.29,
       "foreign_today": 0,
-      "inst_today": 593250000,
+      "inst_today": 597000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -593,49 +598,46 @@
       "vol20": 1.198,
       "foreign_net": -28959795250,
       "inst_net": 61126812250,
-      "score": 0.635,
+      "score": 0.647,
       "news": [],
-      "price": 412000,
-      "chg": -0.0317,
-      "activity": 2.14,
+      "price": 408000,
+      "chg": -0.0411,
+      "activity": 2.0,
       "foreign_today": 0,
-      "inst_today": 824000000,
+      "inst_today": 816000000,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "089890",
-      "name": "코세스",
-      "close": 37800,
-      "ret5": 0.1118,
-      "ret20": -0.0195,
-      "rsi14": 58.4,
-      "vol20": 1.615,
-      "foreign_net": 5156049025,
-      "inst_net": -1141274250,
-      "score": 0.591,
+      "code": "181710",
+      "name": "NHN",
+      "close": 64100,
+      "ret5": -0.0656,
+      "ret20": 0.1529,
+      "rsi14": 53.5,
+      "vol20": 1.409,
+      "foreign_net": 6447826400,
+      "inst_net": 1443068500,
+      "score": 0.588,
       "news": [
         {
           "date": "11-20",
-          "title": "SK증권 \"코세스, 내년 반도체 장비 매출 1500억 이상…연료전지 장비도...",
+          "title": "흥국증권 \"NHN KCP, 해외 가맹점 확대 타고 고성장세 지속…목표가 1만5...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "[모닝 리포트] \"코세스, 반도체·SOFC 동반 성장\"…목표가 7만3000원",
+          "title": "흥국證 \"NHN KCP, 해외 가맹점 확대에 고성장 지속…목표가 1만5000원\"",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "코세스, 美 데이터센터 규제 강화 '수혜'…\"고마진 SOFC 침투율 상승으...",
+          "title": "NHN커머스, 고도몰에 GEO·웹MCP 적용…AI 쇼핑 대응 강화",
           "risk": false
         }
       ],
-      "price": 37150,
-      "chg": -0.0027,
-      "activity": 1.66,
-      "foreign_today": 0,
-      "inst_today": 74300000,
-      "exchange": "KOSDAQ"
+      "foreign_today": 769200000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
     },
     {
       "code": "114800",
