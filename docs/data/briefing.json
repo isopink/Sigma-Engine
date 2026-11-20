@@ -81,10 +81,10 @@
     ]
   },
   "intraday": {
-    "time": "09:30",
+    "time": "09:45",
     "pool": 340,
     "analyzed_new": 30,
-    "passed": 8,
+    "passed": 13,
     "kept_prep": false
   },
   "candidates": [
@@ -98,7 +98,7 @@
       "vol20": 0.996,
       "foreign_net": 28161277075,
       "inst_net": 1626643455,
-      "score": 0.65,
+      "score": 0.772,
       "news": [
         {
           "date": "11-19",
@@ -116,10 +116,244 @@
           "risk": false
         }
       ],
-      "price": 14270,
-      "chg": 0.0007,
-      "activity": 4.29,
-      "foreign_today": 799120000,
+      "price": 14070,
+      "chg": -0.0133,
+      "activity": 3.97,
+      "foreign_today": 787920000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 31850,
+      "ret5": 0.0031,
+      "ret20": 0.0208,
+      "rsi14": 49.9,
+      "vol20": 0.35,
+      "foreign_net": -49023940650,
+      "inst_net": 66229754800,
+      "score": 0.614,
+      "news": [],
+      "price": 32300,
+      "chg": 0.0173,
+      "activity": 1.33,
+      "foreign_today": 1098200000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "006360",
+      "name": "GS건설",
+      "close": 30300,
+      "ret5": 0.0117,
+      "ret20": 0.0412,
+      "rsi14": 49.7,
+      "vol20": 0.822,
+      "foreign_net": 3941333100,
+      "inst_net": 10148144825,
+      "score": 0.404,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 견본주택 개관",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "GS건설, 안산 ‘아르뮤제자이’ 오피스텔 20일 견본주택 개관…370실 공...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "GS건설 아르뮤제자이 오피스텔 견본주택 20일 오픈",
+          "risk": false
+        }
+      ],
+      "foreign_today": 515100000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "105560",
+      "name": "KB금융",
+      "close": 154500,
+      "ret5": 0.0144,
+      "ret20": -0.0215,
+      "rsi14": 45.5,
+      "vol20": 0.363,
+      "foreign_net": -30997404200,
+      "inst_net": 41739631250,
+      "score": 0.316,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "KB금융, 우키시마호 역사 캠페인 완결편 공개…끝나지 않은 귀향 조명",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "KB금융, '우키시마호' 영상 완결판 공개..은행권 '역사 연계' 공헌 확대",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[금융권 소식] KB금융ㆍ하나은행ㆍ키움저축은행(11.20)",
+          "risk": false
+        }
+      ],
+      "price": 154900,
+      "chg": 0.0131,
+      "activity": 1.57,
+      "foreign_today": 929400000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "011200",
+      "name": "HMM",
+      "close": 22500,
+      "ret5": 0.0664,
+      "ret20": 0.0,
+      "rsi14": 54.2,
+      "vol20": 0.426,
+      "foreign_net": 28020425150,
+      "inst_net": 5148667775,
+      "score": 0.298,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "HMM, 2조 투입해 선대 확장 속도…공급과잉 파고 넘어 수익성 지킬까",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[더벨][HMM 해외투자 지도] 신사업 진두지휘 최원혁 대표, 전초기지 '브...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "유가 90달러대 진정·운임 하락…SK이노·S-OIL·HMM·팬오션 ‘엇갈린 셈...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 292500000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "032820",
+      "name": "우리기술",
+      "close": 8620,
+      "ret5": 0.0323,
+      "ret20": -0.104,
+      "rsi14": 44.9,
+      "vol20": 0.777,
+      "foreign_net": 24791260,
+      "inst_net": 2696830050,
+      "score": 0.263,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "두나무 순익 86% 급감…'배당 의존' 우리기술투자 현금흐름 빨간불",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "우리기술, 임시주총서 이기복 독립이사 선임",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "[오늘의 증시일정] STX·우리기술·이지스밸류플러스리츠",
+          "risk": false
+        }
+      ],
+      "foreign_today": 137920000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "035900",
+      "name": "JYP Ent.",
+      "close": 47100,
+      "ret5": 0.0455,
+      "ret20": 0.2378,
+      "rsi14": 59.8,
+      "vol20": 1.216,
+      "foreign_net": -28575760900,
+      "inst_net": 12012728650,
+      "score": 1.0,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "[공시] CJ ENM·JYP Ent.·에스엠 등 9종목 '공매도 금지', 지슨 '투자경...",
+          "risk": false
+        },
+        {
+          "date": "11-19",
+          "title": "JYP Ent. 주가, 11월 19일 47,500원 1.60% 상승",
+          "risk": false
+        }
+      ],
+      "price": 49200,
+      "chg": 0.0261,
+      "activity": 3.41,
+      "foreign_today": 1377600000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "108490",
+      "name": "로보티즈",
+      "close": 251000,
+      "ret5": 0.0524,
+      "ret20": 0.0819,
+      "rsi14": 52.0,
+      "vol20": 1.187,
+      "foreign_net": -7789259250,
+      "inst_net": 26870908750,
+      "score": 0.965,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "로보티즈, 39.8억 규모 공급계약 체결",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "로보티즈, 폴렌로보틱스와 40억원 부품 공급계약",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[속보] 로보티즈, 프랑스 폴렌 로보틱스와 39억7812만원 규모 공급계약...",
+          "risk": false
+        }
+      ],
+      "price": 246500,
+      "chg": -0.0295,
+      "activity": 3.09,
+      "foreign_today": 3204500000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "356860",
+      "name": "티엘비",
+      "close": 46250,
+      "ret5": 0.1171,
+      "ret20": 0.2317,
+      "rsi14": 58.8,
+      "vol20": 1.812,
+      "foreign_net": -12035600,
+      "inst_net": 17120449175,
+      "score": 0.912,
+      "news": [],
+      "price": 43650,
+      "chg": -0.0407,
+      "activity": 2.75,
+      "foreign_today": 1178550000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -133,7 +367,7 @@
       "vol20": 1.797,
       "foreign_net": -12861215,
       "inst_net": 27180544,
-      "score": 1.0,
+      "score": 0.895,
       "news": [
         {
           "date": "11-20",
@@ -153,122 +387,43 @@
       ],
       "price": 2435,
       "chg": 0.0146,
-      "activity": 13.28,
+      "activity": 10.07,
       "foreign_today": 280025000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "356860",
-      "name": "티엘비",
-      "close": 46250,
-      "ret5": 0.1171,
-      "ret20": 0.2317,
-      "rsi14": 58.8,
-      "vol20": 1.812,
-      "foreign_net": -12035600,
-      "inst_net": 17120449175,
-      "score": 0.95,
-      "news": [],
-      "price": 43800,
-      "chg": -0.0374,
-      "activity": 3.5,
-      "foreign_today": 1182600000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "437730",
-      "name": "삼현",
-      "close": 53000,
-      "ret5": 0.2226,
-      "ret20": 0.2326,
-      "rsi14": 63.9,
-      "vol20": 1.276,
-      "foreign_net": -2298674525,
-      "inst_net": 29963410575,
-      "score": 0.75,
+      "code": "261780",
+      "name": "아리바이오랩",
+      "close": 5650,
+      "ret5": 0.2959,
+      "ret20": 0.4543,
+      "rsi14": 66.3,
+      "vol20": 1.435,
+      "foreign_net": 2796178163,
+      "inst_net": -152341960,
+      "score": 0.772,
       "news": [
         {
           "date": "11-19",
-          "title": "삼현 5만2700원 약보합…3분기 영업손실 61억원",
+          "title": "아리바이오랩, 스턴메디칼과 바디필러 장기 공급계약 체결",
           "risk": false
         },
         {
           "date": "11-19",
-          "title": "삼현 주가, 11월 19일 장중 50,700원 4.52% 하락",
+          "title": "[더벨][i-point] 아리바이오랩, 538억원 수출 계약 \"상장유지·신성장 동...",
           "risk": false
         },
         {
-          "date": "11-18",
-          "title": "삼현, 한화시스템 48억원 계약 착수금 4.2%로 변경",
+          "date": "11-19",
+          "title": "아리바이오랩, 바디필러 538억원 수출계약…신사업 성장동력 확보",
           "risk": false
         }
       ],
-      "price": 54000,
-      "chg": 0.0131,
-      "activity": 4.69,
-      "foreign_today": 486000000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "035900",
-      "name": "JYP Ent.",
-      "close": 47100,
-      "ret5": 0.0455,
-      "ret20": 0.2378,
-      "rsi14": 59.8,
-      "vol20": 1.216,
-      "foreign_net": -28575760900,
-      "inst_net": 12012728650,
-      "score": 0.7,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "[공시] CJ ENM·JYP Ent.·에스엠 등 9종목 '공매도 금지', 지슨 '투자경...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "JYP Ent. 주가, 11월 19일 47,500원 1.60% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "JYP Ent. 2.89% 상승…역대 최대 3분기 매출 뒤 4만8100원",
-          "risk": false
-        }
-      ],
-      "price": 48300,
-      "chg": 0.0073,
-      "activity": 3.14,
-      "foreign_today": 1352400000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "232140",
-      "name": "와이씨",
-      "close": 15790,
-      "ret5": 0.3136,
-      "ret20": 0.2165,
-      "rsi14": 62.3,
-      "vol20": 1.342,
-      "foreign_net": -15243523345,
-      "inst_net": 30834499285,
-      "score": 0.3,
-      "news": [
-        {
-          "date": "11-18",
-          "title": "에스티아이·와이씨 매수 불끈… HBM 관련주 투자심리 달아오른다",
-          "risk": false
-        }
-      ],
-      "price": 15350,
-      "chg": -0.0291,
-      "activity": 3.63,
-      "foreign_today": 92100000,
+      "price": 5200,
+      "chg": -0.1065,
+      "activity": 5.53,
+      "foreign_today": 379600000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
