@@ -81,7 +81,7 @@
     ]
   },
   "intraday": {
-    "time": "12:15",
+    "time": "12:30",
     "pool": 428,
     "analyzed_new": 30,
     "passed": 22,
@@ -98,13 +98,43 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.826,
+      "score": 0.873,
       "news": [],
-      "price": 32100,
-      "chg": 0.011,
-      "activity": 0.89,
-      "foreign_today": 6163200000,
-      "inst_today": 288900000,
+      "price": 32200,
+      "chg": 0.0142,
+      "activity": 0.88,
+      "foreign_today": 6182400000,
+      "inst_today": 289800000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "004170",
+      "name": "신세계",
+      "close": 296500,
+      "ret5": 0.2328,
+      "ret20": 0.147,
+      "rsi14": 60.7,
+      "vol20": 0.584,
+      "foreign_net": -12152454250,
+      "inst_net": 18854224500,
+      "score": 0.873,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "크리스챤 디올 뷰티, 신세계 강남점서 '디올 뷰티 홀리데이 팝업' 개최",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "크리스챤 디올 뷰티, 2026 홀리데이 컬렉션 공개…신세계 강남점 팝업 운...",
+          "risk": false
+        }
+      ],
+      "price": 297000,
+      "chg": 0.0051,
+      "activity": 2.19,
+      "foreign_today": 0,
+      "inst_today": 1782000000,
       "exchange": "KOSPI"
     },
     {
@@ -117,7 +147,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.71,
+      "score": 0.739,
       "news": [
         {
           "date": "11-19",
@@ -139,7 +169,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.703,
+      "score": 0.739,
       "news": [
         {
           "date": "11-20",
@@ -166,7 +196,7 @@
       "vol20": 0.452,
       "foreign_net": 2313137750,
       "inst_net": 7604417750,
-      "score": 0.696,
+      "score": 0.724,
       "news": [
         {
           "date": "11-20",
@@ -189,41 +219,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "128940",
-      "name": "한미약품",
-      "close": 424500,
-      "ret5": -0.065,
-      "ret20": 0.1551,
-      "rsi14": 45.8,
-      "vol20": 0.638,
-      "foreign_net": 3796040250,
-      "inst_net": 16061526750,
-      "score": 0.688,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[오늘 IR 일정]현대모비스·한미약품 등 26개사",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "한미약품, 비만신약 기술이전 기대...내년 R&D 성과 주목-KB證",
-          "risk": false
-        }
-      ],
-      "price": 462000,
-      "chg": 0.0948,
-      "activity": 1.77,
-      "foreign_today": 0,
-      "inst_today": 462000000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "009420",
       "name": "한올바이오파마",
       "close": 53800,
@@ -233,7 +228,7 @@
       "vol20": 0.988,
       "foreign_net": -6464630450,
       "inst_net": 19240936650,
-      "score": 0.681,
+      "score": 0.709,
       "news": [],
       "foreign_today": 430400000,
       "inst_today": 0,
@@ -249,7 +244,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.645,
+      "score": 0.672,
       "news": [],
       "foreign_today": 1312500000,
       "inst_today": 187500000,
@@ -265,7 +260,7 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.594,
+      "score": 0.619,
       "news": [
         {
           "date": "11-20",
@@ -274,12 +269,12 @@
         },
         {
           "date": "11-20",
-          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양 돌입",
+          "title": "[건설 레이더] GS건설·태영건설·한신공영, 안산·고창·남양주서 견본...",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "[건설 레이더] GS건설·태영건설·한신공영, 안산·고창·남양주서 견본...",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양 돌입",
           "risk": false
         }
       ],
@@ -288,35 +283,38 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "004170",
-      "name": "신세계",
-      "close": 296500,
-      "ret5": 0.2328,
-      "ret20": 0.147,
-      "rsi14": 60.7,
-      "vol20": 0.584,
-      "foreign_net": -12152454250,
-      "inst_net": 18854224500,
-      "score": 0.529,
+      "code": "105560",
+      "name": "KB금융",
+      "close": 154500,
+      "ret5": 0.0144,
+      "ret20": -0.0215,
+      "rsi14": 45.5,
+      "vol20": 0.363,
+      "foreign_net": -30997404200,
+      "inst_net": 41739631250,
+      "score": 0.575,
       "news": [
         {
           "date": "11-20",
-          "title": "크리스챤 디올 뷰티, 신세계 강남점서 '디올 뷰티 홀리데이 팝업' 개최",
+          "title": "KB금융, 이재근 회장 선임…21일부터 3년 임기",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "크리스챤 디올 뷰티, 신세계 강남점에 홀리데이 팝업 오픈…12월 1일까지...",
+          "title": "이재근 KB금융 회장 선임안 주총 통과…‘세대교체’ 리더십 출범",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "크리스챤 디올 뷰티, 2026 홀리데이 컬렉션 공개…신세계 강남점 팝업 운...",
+          "title": "[KB금융 세대교체] ⑧분권화에 따른 힘의 이동, 부문장보다 부사장 거론",
           "risk": false
         }
       ],
-      "foreign_today": 0,
-      "inst_today": 1779000000,
+      "price": 154200,
+      "chg": 0.0085,
+      "activity": 0.76,
+      "foreign_today": 3238200000,
+      "inst_today": 0,
       "exchange": "KOSPI"
     },
     {
@@ -329,7 +327,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.507,
+      "score": 0.53,
       "news": [
         {
           "date": "11-20",
@@ -356,7 +354,7 @@
       "vol20": 0.385,
       "foreign_net": -1211047000,
       "inst_net": 17803494550,
-      "score": 0.486,
+      "score": 0.507,
       "news": [
         {
           "date": "11-20",
@@ -379,38 +377,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "161890",
-      "name": "한국콜마",
-      "close": 117300,
-      "ret5": 0.1301,
-      "ret20": -0.0578,
-      "rsi14": 50.5,
-      "vol20": 0.7,
-      "foreign_net": -14109482950,
-      "inst_net": 17605623350,
-      "score": 0.478,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "화장품 만들기 전 안전성부터 확인, 한국콜마 AI 기술 개발 [뉴스큐]",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "한국콜마, 3분기 만에 작년 연간 영업익…4분기도 고성장 예고",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[K뷰티 ODM 3조 시대③] 한국콜마·코스맥스 다음 승부처는 미국, '베테...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 469200000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "011200",
       "name": "HMM",
       "close": 22500,
@@ -420,7 +386,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.464,
+      "score": 0.485,
       "news": [
         {
           "date": "11-20",
@@ -443,6 +409,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "161890",
+      "name": "한국콜마",
+      "close": 117300,
+      "ret5": 0.1301,
+      "ret20": -0.0578,
+      "rsi14": 50.5,
+      "vol20": 0.7,
+      "foreign_net": -14109482950,
+      "inst_net": 17605623350,
+      "score": 0.47,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "화장품 만들기 전 안전성부터 확인, 한국콜마 AI 기술 개발 [뉴스큐]",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "한국콜마, 3분기 만에 작년 연간 영업익…4분기도 고성장 예고",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "[K뷰티 ODM 3조 시대③] 한국콜마·코스맥스 다음 승부처는 미국, '베테...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 469200000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "008930",
       "name": "한미사이언스",
       "close": 51400,
@@ -452,7 +450,7 @@
       "vol20": 0.658,
       "foreign_net": 741619100,
       "inst_net": 1545561850,
-      "score": 0.464,
+      "score": 0.448,
       "news": [
         {
           "date": "11-20",
@@ -484,7 +482,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.341,
+      "score": 0.343,
       "news": [
         {
           "date": "11-20",
@@ -529,11 +527,11 @@
           "risk": false
         }
       ],
-      "price": 48850,
-      "chg": 0.0188,
-      "activity": 1.67,
-      "foreign_today": 2784450000,
-      "inst_today": 146550000,
+      "price": 48900,
+      "chg": 0.0198,
+      "activity": 1.58,
+      "foreign_today": 2787300000,
+      "inst_today": 146700000,
       "exchange": "KOSDAQ"
     },
     {
@@ -546,13 +544,13 @@
       "vol20": 1.171,
       "foreign_net": 690944275,
       "inst_net": 5020912275,
-      "score": 0.812,
+      "score": 0.873,
       "news": [],
-      "price": 39550,
-      "chg": 0.0505,
-      "activity": 1.24,
+      "price": 39900,
+      "chg": 0.0598,
+      "activity": 1.21,
       "foreign_today": 0,
-      "inst_today": 593250000,
+      "inst_today": 598500000,
       "exchange": "KOSDAQ"
     },
     {
@@ -565,49 +563,14 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.804,
+      "score": 0.843,
       "news": [],
-      "price": 43100,
-      "chg": -0.0527,
-      "activity": 1.57,
+      "price": 42400,
+      "chg": -0.0681,
+      "activity": 1.63,
       "foreign_today": 0,
-      "inst_today": 689600000,
+      "inst_today": 678400000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "180640",
-      "name": "한진칼",
-      "close": 216500,
-      "ret5": 0.0934,
-      "ret20": 0.8132,
-      "rsi14": 65.9,
-      "vol20": 1.302,
-      "foreign_net": 48691610400,
-      "inst_net": 20077461600,
-      "score": 0.797,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "[KAL의 전쟁①] KCGI 진입부터 호반 최대주주 등극까지···한진칼 경영...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "한진칼 주가, 11월 20일 장중 236,500원 9.49% 상승",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[특징주] 한진칼, 지분 경쟁 지속·항공업황 기대에 10%대 급등",
-          "risk": false
-        }
-      ],
-      "price": 237500,
-      "chg": 0.0995,
-      "activity": 1.47,
-      "foreign_today": 0,
-      "inst_today": 2137500000,
-      "exchange": "KOSPI"
     },
     {
       "code": "277810",
@@ -619,14 +582,46 @@
       "vol20": 1.198,
       "foreign_net": -28959795250,
       "inst_net": 61126812250,
-      "score": 0.623,
+      "score": 0.664,
       "news": [],
-      "price": 408000,
-      "chg": -0.0411,
-      "activity": 1.72,
+      "price": 410500,
+      "chg": -0.0353,
+      "activity": 1.65,
       "foreign_today": 0,
-      "inst_today": 816000000,
+      "inst_today": 821000000,
       "exchange": "KOSDAQ"
+    },
+    {
+      "code": "181710",
+      "name": "NHN",
+      "close": 64100,
+      "ret5": -0.0656,
+      "ret20": 0.1529,
+      "rsi14": 53.5,
+      "vol20": 1.409,
+      "foreign_net": 6447826400,
+      "inst_net": 1443068500,
+      "score": 0.627,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "NHN링크, 청년문화예술패스 추가 지원금 티켓링크서 사용 가능",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "흥국증권 \"NHN KCP, 해외 가맹점 확대 타고 고성장세 지속…목표가 1만5...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "흥국證 \"NHN KCP, 해외 가맹점 확대에 고성장 지속…목표가 1만5000원\"",
+          "risk": false
+        }
+      ],
+      "foreign_today": 769200000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
     },
     {
       "code": "114800",
