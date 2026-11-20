@@ -81,9 +81,9 @@
     ]
   },
   "intraday": {
-    "time": "14:45",
+    "time": "15:00",
     "pool": 460,
-    "analyzed_new": 13,
+    "analyzed_new": 6,
     "passed": 22,
     "kept_prep": false
   },
@@ -102,25 +102,25 @@
       "news": [
         {
           "date": "11-20",
+          "title": "[특징주] 한미약품, 장중 46만7500원까지 상승",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "차익 실현 매물 쏟아진 바이오주…한미약품 홀로 버티기 성공할까",
+          "risk": false
+        },
+        {
+          "date": "11-20",
           "title": "증시 '검은 금요일'에도 한미약품은 상승…국산 비만약 '에페' 기대감[종...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "기술수출에 임상 호재까지 겹쳤다…한미약품·한미사이언스 '신약 랠리...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[오늘 IR 일정]현대모비스·한미약품 등 26개사",
           "risk": false
         }
       ],
-      "price": 453000,
-      "chg": 0.0735,
-      "activity": 1.53,
+      "price": 451000,
+      "chg": 0.0687,
+      "activity": 1.52,
       "foreign_today": 0,
-      "inst_today": 10419000000,
+      "inst_today": 10373000000,
       "exchange": "KOSPI"
     },
     {
@@ -133,7 +133,7 @@
       "vol20": 0.567,
       "foreign_net": -277526250,
       "inst_net": 13097068250,
-      "score": 0.978,
+      "score": 0.984,
       "news": [
         {
           "date": "11-20",
@@ -153,7 +153,7 @@
       ],
       "price": 276000,
       "chg": -0.0072,
-      "activity": 1.13,
+      "activity": 1.14,
       "foreign_today": 0,
       "inst_today": 3036000000,
       "exchange": "KOSDAQ"
@@ -168,29 +168,29 @@
       "vol20": 0.584,
       "foreign_net": -12152454250,
       "inst_net": 18854224500,
-      "score": 0.876,
+      "score": 0.881,
       "news": [
+        {
+          "date": "11-20",
+          "title": "신세계프라퍼티, 임대료 지원 넘어 입점 중소기업 매출 확대 돕는다",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "대전신세계, 티파니앤코의 새로운 부티크 오픈",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "신세계百 디저트살롱, 계절 별미 3종 출시",
           "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "신세계프라퍼티, '스타필드 파트너스 위크' 개최…협력사 성장 지원",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "신세계사이먼 파주 아울렛에 말레이시아 단체 관광객 1600명 방문",
-          "risk": false
         }
       ],
-      "price": 287500,
-      "chg": -0.0271,
+      "price": 289000,
+      "chg": -0.022,
       "activity": 2.05,
       "foreign_today": 0,
-      "inst_today": 7475000000,
+      "inst_today": 7514000000,
       "exchange": "KOSPI"
     },
     {
@@ -203,7 +203,7 @@
       "vol20": 0.87,
       "foreign_net": 11915226795,
       "inst_net": 5866475775,
-      "score": 0.839,
+      "score": 0.843,
       "news": [
         {
           "date": "11-19",
@@ -225,13 +225,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.833,
+      "score": 0.822,
       "news": [],
-      "price": 31750,
-      "chg": 0.0,
+      "price": 31700,
+      "chg": -0.0016,
       "activity": 0.8,
-      "foreign_today": 10001250000,
-      "inst_today": 1682750000,
+      "foreign_today": 9985500000,
+      "inst_today": 1680100000,
       "exchange": "KOSPI"
     },
     {
@@ -244,40 +244,10 @@
       "vol20": 0.988,
       "foreign_net": -6464630450,
       "inst_net": 19240936650,
-      "score": 0.72,
+      "score": 0.724,
       "news": [],
       "foreign_today": 376600000,
       "inst_today": 699400000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "352820",
-      "name": "하이브",
-      "close": 187200,
-      "ret5": 0.2031,
-      "ret20": 0.0648,
-      "rsi14": 67.1,
-      "vol20": 0.831,
-      "foreign_net": 11197099000,
-      "inst_net": 50993204600,
-      "score": 0.667,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "iM證 “한·중 FTA 타결에 엔터주 재평가 기대⋯에스엠·하이브 수혜 클...",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "넥스·하이브, ‘Starri | BTS’ 출시···방탄소년단의 음악을 거실에...",
-          "risk": false
-        }
-      ],
-      "price": 184200,
-      "chg": -0.0275,
-      "activity": 1.63,
-      "foreign_today": 0,
-      "inst_today": 2578800000,
       "exchange": "KOSPI"
     },
     {
@@ -290,8 +260,13 @@
       "vol20": 0.452,
       "foreign_net": 2313137750,
       "inst_net": 7604417750,
-      "score": 0.667,
+      "score": 0.67,
       "news": [
+        {
+          "date": "11-20",
+          "title": "LG생활건강 두피관리 제품 다변화, 이선주 북미서 'K뷰티' 단계별 확산 ...",
+          "risk": false
+        },
         {
           "date": "11-20",
           "title": "LG생활건강 온더바디 발을씻자, 한정판 딸기향 선보여",
@@ -300,11 +275,6 @@
         {
           "date": "11-20",
           "title": "LG생활건강, 2027년 임원 인사…전무 2명 승진",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[유통 브리핑] CJ올리브영·LG생활건강",
           "risk": false
         }
       ],
@@ -322,7 +292,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.661,
+      "score": 0.665,
       "news": [
         {
           "date": "11-20",
@@ -340,6 +310,36 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "352820",
+      "name": "하이브",
+      "close": 187200,
+      "ret5": 0.2031,
+      "ret20": 0.0648,
+      "rsi14": 67.1,
+      "vol20": 0.831,
+      "foreign_net": 11197099000,
+      "inst_net": 50993204600,
+      "score": 0.659,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "iM證 “한·중 FTA 타결에 엔터주 재평가 기대⋯에스엠·하이브 수혜 클...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "넥스·하이브, ‘Starri | BTS’ 출시···방탄소년단의 음악을 거실에...",
+          "risk": false
+        }
+      ],
+      "price": 185000,
+      "chg": -0.0232,
+      "activity": 1.63,
+      "foreign_today": 0,
+      "inst_today": 2590000000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "145020",
       "name": "휴젤",
       "close": 212500,
@@ -349,7 +349,7 @@
       "vol20": 0.403,
       "foreign_net": -8100021500,
       "inst_net": 15359845350,
-      "score": 0.651,
+      "score": 0.654,
       "news": [
         {
           "date": "11-20",
@@ -357,11 +357,11 @@
           "risk": false
         }
       ],
-      "price": 206500,
-      "chg": -0.0328,
-      "activity": 1.45,
+      "price": 207000,
+      "chg": -0.0304,
+      "activity": 1.42,
       "foreign_today": 0,
-      "inst_today": 206500000,
+      "inst_today": 207000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -374,7 +374,7 @@
       "vol20": 0.504,
       "foreign_net": -23018310150,
       "inst_net": 28602985000,
-      "score": 0.575,
+      "score": 0.578,
       "news": [],
       "foreign_today": 1125000000,
       "inst_today": 562500000,
@@ -390,7 +390,7 @@
       "vol20": 0.7,
       "foreign_net": -14109482950,
       "inst_net": 17605623350,
-      "score": 0.554,
+      "score": 0.557,
       "news": [
         {
           "date": "11-20",
@@ -413,38 +413,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "021240",
-      "name": "코웨이",
-      "close": 106700,
-      "ret5": 0.044,
-      "ret20": 0.0047,
-      "rsi14": 54.8,
-      "vol20": 0.401,
-      "foreign_net": -15533982300,
-      "inst_net": 6421641100,
-      "score": 0.505,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "코웨이, 교보문고와 손잡고 고객 혜택 확대…생활밀착형 멤버십 강화",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "코웨이, 교보문고와 마케팅 제휴…고객에 전자책 구독 혜택",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "코웨이, 교보문고와 제휴 확대…멤버십 혜택 생활·문화 영역으로 넓힌...",
-          "risk": false
-        }
-      ],
-      "foreign_today": 0,
-      "inst_today": 1173700000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "011200",
       "name": "HMM",
       "close": 22500,
@@ -454,7 +422,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.5,
+      "score": 0.508,
       "news": [
         {
           "date": "11-20",
@@ -477,6 +445,38 @@
       "exchange": "KOSPI"
     },
     {
+      "code": "021240",
+      "name": "코웨이",
+      "close": 106700,
+      "ret5": 0.044,
+      "ret20": 0.0047,
+      "rsi14": 54.8,
+      "vol20": 0.401,
+      "foreign_net": -15533982300,
+      "inst_net": 6421641100,
+      "score": 0.503,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "코웨이 리엔케이, 다이소 입점…전용 화장품 6종 선봬",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "코웨이, 교보문고와 고객 대상 공동 마케팅 협력 확대",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "코웨이 리엔케이, 다이소 전용 화장품 6종 출시…유통망 확대",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 1173700000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "032820",
       "name": "우리기술",
       "close": 8620,
@@ -486,7 +486,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.269,
+      "score": 0.27,
       "news": [
         {
           "date": "11-20",
@@ -518,7 +518,7 @@
       "vol20": 1.216,
       "foreign_net": -28575760900,
       "inst_net": 12012728650,
-      "score": 0.995,
+      "score": 1.0,
       "news": [
         {
           "date": "11-20",
@@ -531,11 +531,30 @@
           "risk": false
         }
       ],
-      "price": 47450,
-      "chg": -0.0104,
-      "activity": 1.2,
-      "foreign_today": 4650100000,
-      "inst_today": 949000000,
+      "price": 47550,
+      "chg": -0.0083,
+      "activity": 1.18,
+      "foreign_today": 4659900000,
+      "inst_today": 951000000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "491000",
+      "name": "리브스메드",
+      "close": 37700,
+      "ret5": 0.1121,
+      "ret20": -0.0258,
+      "rsi14": 51.5,
+      "vol20": 1.171,
+      "foreign_net": 690944275,
+      "inst_net": 5020912275,
+      "score": 0.816,
+      "news": [],
+      "price": 38700,
+      "chg": 0.0279,
+      "activity": 1.03,
+      "foreign_today": 0,
+      "inst_today": 1935000000,
       "exchange": "KOSDAQ"
     },
     {
@@ -548,8 +567,13 @@
       "vol20": 1.302,
       "foreign_net": 48691610400,
       "inst_net": 20077461600,
-      "score": 0.79,
+      "score": 0.784,
       "news": [
+        {
+          "date": "11-20",
+          "title": "경찰, 조원태 한진그룹 회장 휴대전화 압수…한진칼 자사주 배임 의혹 ...",
+          "risk": true
+        },
         {
           "date": "11-20",
           "title": "경찰, 조원태 회장 '한진칼 배임 의혹' 압색…휴대전화 확보",
@@ -557,40 +581,16 @@
         },
         {
           "date": "11-20",
-          "title": "경찰, 조원태 한진그룹 회장 휴대전화 압수…'한진칼 배임' 수사",
-          "risk": true
-        },
-        {
-          "date": "11-20",
-          "title": "[단독]경찰, 조원태 회장 휴대전화 압수…총수 겨눈 한진칼 배임 수사",
-          "risk": true
+          "title": "한진칼 7.87% 강세…최대주주 변경 이후 거래 집중",
+          "risk": false
         }
       ],
-      "price": 233000,
-      "chg": 0.0787,
-      "activity": 1.05,
-      "foreign_today": 0,
-      "inst_today": 4660000000,
-      "exchange": "KOSPI"
-    },
-    {
-      "code": "491000",
-      "name": "리브스메드",
-      "close": 37700,
-      "ret5": 0.1121,
-      "ret20": -0.0258,
-      "rsi14": 51.5,
-      "vol20": 1.171,
-      "foreign_net": 690944275,
-      "inst_net": 5020912275,
-      "score": 0.785,
-      "news": [],
-      "price": 38450,
-      "chg": 0.0212,
+      "price": 235000,
+      "chg": 0.088,
       "activity": 1.03,
       "foreign_today": 0,
-      "inst_today": 1922500000,
-      "exchange": "KOSDAQ"
+      "inst_today": 4700000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "456160",
@@ -602,7 +602,7 @@
       "vol20": 1.324,
       "foreign_net": 1797622750,
       "inst_net": 51439200,
-      "score": 0.774,
+      "score": 0.778,
       "news": [
         {
           "date": "11-18",
@@ -617,7 +617,7 @@
       ],
       "price": 36900,
       "chg": 0.0424,
-      "activity": 0.92,
+      "activity": 0.94,
       "foreign_today": 0,
       "inst_today": 1660500000,
       "exchange": "KOSDAQ"
@@ -632,7 +632,7 @@
       "vol20": 1.702,
       "foreign_net": 178095105,
       "inst_net": 96525020,
-      "score": 0.726,
+      "score": 0.73,
       "news": [
         {
           "date": "11-20",
@@ -640,10 +640,10 @@
           "risk": false
         }
       ],
-      "price": 13750,
-      "chg": 0.0593,
-      "activity": 2.22,
-      "foreign_today": 110000000,
+      "price": 13880,
+      "chg": 0.0693,
+      "activity": 2.17,
+      "foreign_today": 111040000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
