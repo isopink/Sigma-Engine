@@ -1093,7 +1093,7 @@ window.TRADE_TIMES = ['09:30', '09:45', '10:00', '10:15', '10:30', '10:45', '11:
       const lastOf = k => { const r = [...e].reverse().find(r => r[k] != null); return r ? r[k] : null; };
       const vs = k => { const b = lastOf(k); return b == null ? ['—', ''] : [pp(D.ret - b), tn(D.ret - b)]; };
       const it = [[BMN() + ' 대비', pp(D.alpha), tn(D.alpha)], ['S&P 500 대비', ...vs('sret')], ['은행 예금 대비', ...vs('dret')],
-                  ['오늘', pct(today), tn(today)], ['이번 주', pct(D.week), tn(D.week)], ['회전율', D.turnover.toFixed(2) + '배', '']];
+                  ['오늘', pct(today), tn(today)], ['누적 손익', signed(total), tn(total)], ['회전율', D.turnover.toFixed(2) + '배', '']];
       $('hero-kpi').innerHTML = it.map(([k, v, c]) => `<div class="hk"><span class="k">${esc(k)}</span><span class="v ${c}">${esc(v)}</span></div>`).join(''); }
     $('k-week').textContent = pct(D.week); tone($('k-week'), D.week);
     $('k-mdd').textContent = pct(D.mdd); tone($('k-mdd'), D.mdd);
