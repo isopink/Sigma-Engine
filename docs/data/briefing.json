@@ -81,13 +81,106 @@
     ]
   },
   "intraday": {
-    "time": "09:45",
-    "pool": 340,
+    "time": "10:00",
+    "pool": 378,
     "analyzed_new": 30,
-    "passed": 13,
+    "passed": 17,
     "kept_prep": false
   },
   "candidates": [
+    {
+      "code": "316140",
+      "name": "우리금융지주",
+      "close": 31850,
+      "ret5": 0.0031,
+      "ret20": 0.0208,
+      "rsi14": 49.9,
+      "vol20": 0.35,
+      "foreign_net": -49023940650,
+      "inst_net": 66229754800,
+      "score": 0.779,
+      "news": [],
+      "price": 32250,
+      "chg": 0.0157,
+      "activity": 1.23,
+      "foreign_today": 3289500000,
+      "inst_today": 96750000,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "086450",
+      "name": "동국제약",
+      "close": 26600,
+      "ret5": 0.0747,
+      "ret20": 0.1295,
+      "rsi14": 62.9,
+      "vol20": 0.584,
+      "foreign_net": 4697380350,
+      "inst_net": 8725253525,
+      "score": 0.663,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "동국제약·동화약품·제넥신 등 6곳 '혁신형 3년' 연장",
+          "risk": false
+        }
+      ],
+      "price": 26000,
+      "chg": -0.0226,
+      "activity": 1.46,
+      "foreign_today": 0,
+      "inst_today": 234000000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "090430",
+      "name": "아모레퍼시픽",
+      "close": 141000,
+      "ret5": 0.1199,
+      "ret20": 0.065,
+      "rsi14": 63.3,
+      "vol20": 0.412,
+      "foreign_net": 3517154600,
+      "inst_net": 12004797350,
+      "score": 0.642,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "용산구, 아모레퍼시픽·용산문화재단과 지역 상생 협력…민관협력 본격...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "아모레퍼시픽, 임원 사내 부적절 관계에 '성과급 특혜' 의혹…인사 공정...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 705000000,
+      "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "089590",
+      "name": "제주항공",
+      "close": 8500,
+      "ret5": 0.1502,
+      "ret20": 0.5977,
+      "rsi14": 77.0,
+      "vol20": 0.87,
+      "foreign_net": 11915226795,
+      "inst_net": 5866475775,
+      "score": 0.611,
+      "news": [
+        {
+          "date": "11-19",
+          "title": "주주환원 승부수 통했나…제주항공·SK하이닉스 강세, 밸류업 수급 대이...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 187000000,
+      "exchange": "KOSPI"
+    },
     {
       "code": "010170",
       "name": "대한광통신",
@@ -98,7 +191,7 @@
       "vol20": 0.996,
       "foreign_net": 28161277075,
       "inst_net": 1626643455,
-      "score": 0.772,
+      "score": 0.589,
       "news": [
         {
           "date": "11-19",
@@ -116,31 +209,12 @@
           "risk": false
         }
       ],
-      "price": 14070,
-      "chg": -0.0133,
-      "activity": 3.97,
-      "foreign_today": 787920000,
-      "inst_today": 0,
+      "price": 14100,
+      "chg": -0.0112,
+      "activity": 3.27,
+      "foreign_today": 0,
+      "inst_today": 141000000,
       "exchange": "KOSDAQ"
-    },
-    {
-      "code": "316140",
-      "name": "우리금융지주",
-      "close": 31850,
-      "ret5": 0.0031,
-      "ret20": 0.0208,
-      "rsi14": 49.9,
-      "vol20": 0.35,
-      "foreign_net": -49023940650,
-      "inst_net": 66229754800,
-      "score": 0.614,
-      "news": [],
-      "price": 32300,
-      "chg": 0.0173,
-      "activity": 1.33,
-      "foreign_today": 1098200000,
-      "inst_today": 0,
-      "exchange": "KOSPI"
     },
     {
       "code": "006360",
@@ -152,25 +226,25 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.404,
+      "score": 0.547,
       "news": [
         {
           "date": "11-20",
-          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 견본주택 개관",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 20일 개관…24일 청약",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, 안산 ‘아르뮤제자이’ 오피스텔 20일 견본주택 개관…370실 공...",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 공급…24일부터 청약",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설 아르뮤제자이 오피스텔 견본주택 20일 오픈",
+          "title": "GS건설, 전용 84㎡ 구성 '아르뮤제자이' 견본주택 20일 개관",
           "risk": false
         }
       ],
-      "foreign_today": 515100000,
+      "foreign_today": 969600000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -184,29 +258,56 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.316,
+      "score": 0.474,
       "news": [
         {
           "date": "11-20",
-          "title": "KB금융, 우키시마호 역사 캠페인 완결편 공개…끝나지 않은 귀향 조명",
+          "title": "KB금융, 우키시마호 캠페인 세 번째 영상 '아직 끝나지 않은 귀향' 공개",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "KB금융, '우키시마호' 영상 완결판 공개..은행권 '역사 연계' 공헌 확대",
+          "title": "KB금융, 우키시마호 추모 캠페인 완결편 공개…\"끝나지 않은 귀향\"",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "[금융권 소식] KB금융ㆍ하나은행ㆍ키움저축은행(11.20)",
+          "title": "‘순익 6조’ 앞당긴 양종희 KB금융 회장…37년 여정 마침표",
           "risk": false
         }
       ],
-      "price": 154900,
-      "chg": 0.0131,
-      "activity": 1.57,
-      "foreign_today": 929400000,
+      "price": 154500,
+      "chg": 0.0105,
+      "activity": 1.42,
+      "foreign_today": 2008500000,
       "inst_today": 0,
+      "exchange": "KOSPI"
+    },
+    {
+      "code": "024110",
+      "name": "기업은행",
+      "close": 19170,
+      "ret5": 0.01,
+      "ret20": -0.0313,
+      "rsi14": 44.8,
+      "vol20": 0.177,
+      "foreign_net": -363476385,
+      "inst_net": 8490185425,
+      "score": 0.453,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "[금융 라운지] 대출 넘어 투자·상장·AI까지…기업은행, 중소기업 성장...",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "기업은행, 코스닥 활성화 정책 설문…\"기관투자자 유입·부실기업 퇴출...",
+          "risk": false
+        }
+      ],
+      "foreign_today": 287550000,
+      "inst_today": 38340000,
       "exchange": "KOSPI"
     },
     {
@@ -219,7 +320,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.298,
+      "score": 0.4,
       "news": [
         {
           "date": "11-20",
@@ -237,7 +338,7 @@
           "risk": false
         }
       ],
-      "foreign_today": 292500000,
+      "foreign_today": 405000000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -251,7 +352,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.263,
+      "score": 0.347,
       "news": [
         {
           "date": "11-20",
@@ -269,7 +370,7 @@
           "risk": false
         }
       ],
-      "foreign_today": 137920000,
+      "foreign_today": 181020000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
@@ -298,63 +399,9 @@
       ],
       "price": 49200,
       "chg": 0.0261,
-      "activity": 3.41,
-      "foreign_today": 1377600000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "108490",
-      "name": "로보티즈",
-      "close": 251000,
-      "ret5": 0.0524,
-      "ret20": 0.0819,
-      "rsi14": 52.0,
-      "vol20": 1.187,
-      "foreign_net": -7789259250,
-      "inst_net": 26870908750,
-      "score": 0.965,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "로보티즈, 39.8억 규모 공급계약 체결",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "로보티즈, 폴렌로보틱스와 40억원 부품 공급계약",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "[속보] 로보티즈, 프랑스 폴렌 로보틱스와 39억7812만원 규모 공급계약...",
-          "risk": false
-        }
-      ],
-      "price": 246500,
-      "chg": -0.0295,
-      "activity": 3.09,
-      "foreign_today": 3204500000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "356860",
-      "name": "티엘비",
-      "close": 46250,
-      "ret5": 0.1171,
-      "ret20": 0.2317,
-      "rsi14": 58.8,
-      "vol20": 1.812,
-      "foreign_net": -12035600,
-      "inst_net": 17120449175,
-      "score": 0.912,
-      "news": [],
-      "price": 43650,
-      "chg": -0.0407,
-      "activity": 2.75,
-      "foreign_today": 1178550000,
-      "inst_today": 0,
+      "activity": 3.17,
+      "foreign_today": 1476000000,
+      "inst_today": 49200000,
       "exchange": "KOSDAQ"
     },
     {
@@ -367,7 +414,7 @@
       "vol20": 1.797,
       "foreign_net": -12861215,
       "inst_net": 27180544,
-      "score": 0.895,
+      "score": 0.926,
       "news": [
         {
           "date": "11-20",
@@ -385,47 +432,72 @@
           "risk": false
         }
       ],
-      "price": 2435,
-      "chg": 0.0146,
-      "activity": 10.07,
-      "foreign_today": 280025000,
+      "price": 2430,
+      "chg": 0.0125,
+      "activity": 8.34,
+      "foreign_today": 690120000,
+      "inst_today": 2430000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "356860",
+      "name": "티엘비",
+      "close": 46250,
+      "ret5": 0.1171,
+      "ret20": 0.2317,
+      "rsi14": 58.8,
+      "vol20": 1.812,
+      "foreign_net": -12035600,
+      "inst_net": 17120449175,
+      "score": 0.863,
+      "news": [],
+      "price": 44050,
+      "chg": -0.0319,
+      "activity": 2.36,
+      "foreign_today": 881000000,
+      "inst_today": 44050000,
+      "exchange": "KOSDAQ"
+    },
+    {
+      "code": "108490",
+      "name": "로보티즈",
+      "close": 251000,
+      "ret5": 0.0524,
+      "ret20": 0.0819,
+      "rsi14": 52.0,
+      "vol20": 1.187,
+      "foreign_net": -7789259250,
+      "inst_net": 26870908750,
+      "score": 0.758,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "로보티즈, 39.8억 규모 공급계약 체결",
+          "risk": false
+        }
+      ],
+      "price": 246500,
+      "chg": -0.0295,
+      "activity": 2.57,
+      "foreign_today": 1232500000,
       "inst_today": 0,
       "exchange": "KOSDAQ"
     },
     {
-      "code": "261780",
-      "name": "아리바이오랩",
-      "close": 5650,
-      "ret5": 0.2959,
-      "ret20": 0.4543,
-      "rsi14": 66.3,
-      "vol20": 1.435,
-      "foreign_net": 2796178163,
-      "inst_net": -152341960,
-      "score": 0.772,
-      "news": [
-        {
-          "date": "11-19",
-          "title": "아리바이오랩, 스턴메디칼과 바디필러 장기 공급계약 체결",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "[더벨][i-point] 아리바이오랩, 538억원 수출 계약 \"상장유지·신성장 동...",
-          "risk": false
-        },
-        {
-          "date": "11-19",
-          "title": "아리바이오랩, 바디필러 538억원 수출계약…신사업 성장동력 확보",
-          "risk": false
-        }
-      ],
-      "price": 5200,
-      "chg": -0.1065,
-      "activity": 5.53,
-      "foreign_today": 379600000,
-      "inst_today": 0,
-      "exchange": "KOSDAQ"
+      "code": "281820",
+      "name": "케이씨텍",
+      "close": 86000,
+      "ret5": 0.1361,
+      "ret20": -0.0683,
+      "rsi14": 53.6,
+      "vol20": 1.526,
+      "foreign_net": -9456591800,
+      "inst_net": 17781929500,
+      "score": 0.695,
+      "news": [],
+      "foreign_today": 774000000,
+      "inst_today": 86000000,
+      "exchange": "KOSPI"
     },
     {
       "code": "114800",
