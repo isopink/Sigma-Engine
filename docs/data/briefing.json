@@ -81,8 +81,8 @@
     ]
   },
   "intraday": {
-    "time": "10:45",
-    "pool": 380,
+    "time": "11:00",
+    "pool": 378,
     "analyzed_new": 30,
     "passed": 19,
     "kept_prep": false
@@ -98,13 +98,13 @@
       "vol20": 0.35,
       "foreign_net": -49023940650,
       "inst_net": 66229754800,
-      "score": 0.856,
+      "score": 0.868,
       "news": [],
-      "price": 32400,
-      "chg": 0.0205,
-      "activity": 1.11,
-      "foreign_today": 3304800000,
-      "inst_today": 97200000,
+      "price": 32350,
+      "chg": 0.0189,
+      "activity": 1.06,
+      "foreign_today": 3299700000,
+      "inst_today": 97050000,
       "exchange": "KOSPI"
     },
     {
@@ -117,7 +117,7 @@
       "vol20": 0.412,
       "foreign_net": 3517154600,
       "inst_net": 12004797350,
-      "score": 0.658,
+      "score": 0.66,
       "news": [
         {
           "date": "11-20",
@@ -182,21 +182,21 @@
       "vol20": 0.822,
       "foreign_net": 3941333100,
       "inst_net": 10148144825,
-      "score": 0.586,
+      "score": 0.575,
       "news": [
         {
           "date": "11-20",
-          "title": "[건설업계 동향] GS건설ㆍ대우건설ㆍIPARK현대산업개발(11.20)",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 370실 공급…20일 견본주택 개관",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 개관…370실 공급",
+          "title": "GS건설, 안산 '아르뮤제자이' 오피스텔 370실 분양",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "GS건설, ‘아르뮤제자이’ 견본주택 20일 오픈… 청약 접수 24일",
+          "title": "GS건설, '아르뮤제자이' 오피스텔 견본주택 개관",
           "risk": false
         }
       ],
@@ -214,28 +214,28 @@
       "vol20": 0.363,
       "foreign_net": -30997404200,
       "inst_net": 41739631250,
-      "score": 0.505,
+      "score": 0.5,
       "news": [
         {
           "date": "11-20",
-          "title": "이재근 KB금융 신임 회장 선임안 주총 통과…21일부터 3년 임기",
+          "title": "은행장 거쳐 지주 회장으로…이재근, KB금융 새 수장",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "떠나는 양종희 KB금융 회장, 마지막 당부는 '내부통제·소비자보호'",
+          "title": "이재근 KB금융 회장 정식 선임…3년 임기 스타트",
           "risk": false
         },
         {
           "date": "11-20",
-          "title": "KB금융, 주총서 이재근 회장 선임안 통과…찬성률 76.14%",
+          "title": "이재근 KB금융 회장 공식 선임 … 23일 취임식",
           "risk": false
         }
       ],
-      "price": 154800,
-      "chg": 0.0124,
-      "activity": 1.08,
-      "foreign_today": 2012400000,
+      "price": 154600,
+      "chg": 0.0111,
+      "activity": 1.02,
+      "foreign_today": 2009800000,
       "inst_today": 0,
       "exchange": "KOSPI"
     },
@@ -249,7 +249,7 @@
       "vol20": 0.177,
       "foreign_net": -363476385,
       "inst_net": 8490185425,
-      "score": 0.441,
+      "score": 0.443,
       "news": [
         {
           "date": "11-20",
@@ -276,7 +276,7 @@
       "vol20": 0.426,
       "foreign_net": 28020425150,
       "inst_net": 5148667775,
-      "score": 0.423,
+      "score": 0.425,
       "news": [
         {
           "date": "11-20",
@@ -308,7 +308,7 @@
       "vol20": 0.559,
       "foreign_net": -1282328200,
       "inst_net": 6416192450,
-      "score": 0.414,
+      "score": 0.396,
       "news": [
         {
           "date": "11-19",
@@ -331,22 +331,6 @@
       "exchange": "KOSPI"
     },
     {
-      "code": "004170",
-      "name": "신세계",
-      "close": 296500,
-      "ret5": 0.2328,
-      "ret20": 0.147,
-      "rsi14": 60.7,
-      "vol20": 0.584,
-      "foreign_net": -12152454250,
-      "inst_net": 18854224500,
-      "score": 0.324,
-      "news": [],
-      "foreign_today": 0,
-      "inst_today": 296500000,
-      "exchange": "KOSPI"
-    },
-    {
       "code": "032820",
       "name": "우리기술",
       "close": 8620,
@@ -356,7 +340,7 @@
       "vol20": 0.777,
       "foreign_net": 24791260,
       "inst_net": 2696830050,
-      "score": 0.306,
+      "score": 0.321,
       "news": [
         {
           "date": "11-20",
@@ -379,6 +363,33 @@
       "exchange": "KOSDAQ"
     },
     {
+      "code": "004170",
+      "name": "신세계",
+      "close": 296500,
+      "ret5": 0.2328,
+      "ret20": 0.147,
+      "rsi14": 60.7,
+      "vol20": 0.584,
+      "foreign_net": -12152454250,
+      "inst_net": 18854224500,
+      "score": 0.321,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "하우스오브신세계 디저트살롱에서 계절 별미 만나보세요",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "신세계百 “디저트살롱에서 계절 별미 만나세요”",
+          "risk": false
+        }
+      ],
+      "foreign_today": 0,
+      "inst_today": 296500000,
+      "exchange": "KOSPI"
+    },
+    {
       "code": "032640",
       "name": "LG유플러스",
       "close": 15250,
@@ -388,7 +399,7 @@
       "vol20": 0.411,
       "foreign_net": -6983514240,
       "inst_net": 9306926035,
-      "score": 0.216,
+      "score": 0.208,
       "news": [
         {
           "date": "11-20",
@@ -433,11 +444,11 @@
           "risk": false
         }
       ],
-      "price": 49100,
-      "chg": 0.024,
-      "activity": 2.41,
-      "foreign_today": 1473000000,
-      "inst_today": 49100000,
+      "price": 49050,
+      "chg": 0.0229,
+      "activity": 2.2,
+      "foreign_today": 1471500000,
+      "inst_today": 49050000,
       "exchange": "KOSDAQ"
     },
     {
@@ -450,13 +461,13 @@
       "vol20": 1.812,
       "foreign_net": -12035600,
       "inst_net": 17120449175,
-      "score": 0.928,
+      "score": 0.915,
       "news": [],
-      "price": 45350,
-      "chg": -0.0033,
-      "activity": 2.22,
-      "foreign_today": 907000000,
-      "inst_today": 45350000,
+      "price": 44900,
+      "chg": -0.0132,
+      "activity": 2.07,
+      "foreign_today": 898000000,
+      "inst_today": 44900000,
       "exchange": "KOSDAQ"
     },
     {
@@ -469,7 +480,7 @@
       "vol20": 1.797,
       "foreign_net": -12861215,
       "inst_net": 27180544,
-      "score": 0.892,
+      "score": 0.906,
       "news": [
         {
           "date": "11-20",
@@ -487,41 +498,11 @@
           "risk": false
         }
       ],
-      "price": 2425,
-      "chg": 0.0104,
-      "activity": 7.83,
-      "foreign_today": 688700000,
-      "inst_today": 2425000,
-      "exchange": "KOSDAQ"
-    },
-    {
-      "code": "108490",
-      "name": "로보티즈",
-      "close": 251000,
-      "ret5": 0.0524,
-      "ret20": 0.0819,
-      "rsi14": 52.0,
-      "vol20": 1.187,
-      "foreign_net": -7789259250,
-      "inst_net": 26870908750,
-      "score": 0.721,
-      "news": [
-        {
-          "date": "11-20",
-          "title": "로보티즈, 폴렌로보틱스와 40억 규모 액추에이터 공급계약",
-          "risk": false
-        },
-        {
-          "date": "11-20",
-          "title": "로보티즈, 젠슨 황 시연 오리 로봇에 부품 40억 공급",
-          "risk": false
-        }
-      ],
-      "price": 244000,
-      "chg": -0.0394,
-      "activity": 1.75,
-      "foreign_today": 1220000000,
-      "inst_today": 0,
+      "price": 2450,
+      "chg": 0.0208,
+      "activity": 7.4,
+      "foreign_today": 695800000,
+      "inst_today": 2450000,
       "exchange": "KOSDAQ"
     },
     {
@@ -534,11 +515,46 @@
       "vol20": 1.526,
       "foreign_net": -9456591800,
       "inst_net": 17781929500,
-      "score": 0.712,
+      "score": 0.717,
       "news": [],
       "foreign_today": 774000000,
       "inst_today": 86000000,
       "exchange": "KOSPI"
+    },
+    {
+      "code": "108490",
+      "name": "로보티즈",
+      "close": 251000,
+      "ret5": 0.0524,
+      "ret20": 0.0819,
+      "rsi14": 52.0,
+      "vol20": 1.187,
+      "foreign_net": -7789259250,
+      "inst_net": 26870908750,
+      "score": 0.698,
+      "news": [
+        {
+          "date": "11-20",
+          "title": "로보티즈, 프랑스 기업과 40억 규모 공급계약 체결",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "로보티즈, 폴렌로보틱스와 40억 규모 액추에이터 공급계약",
+          "risk": false
+        },
+        {
+          "date": "11-20",
+          "title": "로보티즈, 젠슨 황 시연 오리 로봇에 부품 40억 공급",
+          "risk": false
+        }
+      ],
+      "price": 242500,
+      "chg": -0.0453,
+      "activity": 1.63,
+      "foreign_today": 1212500000,
+      "inst_today": 0,
+      "exchange": "KOSDAQ"
     },
     {
       "code": "114800",
