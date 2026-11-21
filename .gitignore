@@ -17,7 +17,7 @@ live/last_snapshot.json
 
 # 보고서 빌드 중간 산출물 (PDF 만 커밋)
 reports/*/*_report.html
-reports/week2/*.woff2
+reports/week*/*.woff2
 
 # 회고 · 보고서 초안은 공개 저장소에 올리지 않음 (로컬에만)
 reports/drafts/
