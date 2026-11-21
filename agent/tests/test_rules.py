@@ -171,11 +171,16 @@ def test_view_run_blocks_orders():
 
 
 def test_trade_slot():
-    p = {"schedule": {"trade_times": ["09:30", "10:30"]}}
+    p = {"schedule": {"trade_times": ["09:30", "10:30"], "interval_min": 15}}
     t = lambda h, m: datetime(2026, 11, 3, h, m, 7, tzinfo=C.KST)  # noqa: E731
-    assert C.trade_slot(t(9, 31), p) and not C.trade_slot(t(9, 45), p) and not C.trade_slot(t(9, 15), p)
-    assert C.next_trade_time(t(9, 45), p) == "10:30" and C.next_trade_time(t(10, 30), p) is None
-    assert C.trade_slot(t(9, 45), {"schedule": {}})   # trade_times 가 없으면 모든 회차가 매매
+    real = C.params
+    C.params = lambda: p   # 회차 단위 15분으로 고정 (실제 설정은 11-21 부터 30분)
+    try:
+        assert C.trade_slot(t(9, 31), p) and not C.trade_slot(t(9, 45), p) and not C.trade_slot(t(9, 15), p)
+        assert C.next_trade_time(t(9, 45), p) == "10:30" and C.next_trade_time(t(10, 30), p) is None
+        assert C.trade_slot(t(9, 45), {"schedule": {}})   # trade_times 가 없으면 모든 회차가 매매
+    finally:
+        C.params = real
 
 
 def test_intraday_screen():
@@ -869,11 +874,11 @@ def test_reconcile_fills_partial_order_first():
 
 
 def test_schedule_slots():
-    """회차 단위는 params.schedule.interval_min (지금 15분: 09:30~15:15 24회)."""
+    """회차 단위는 params.schedule.interval_min (11-21 S.Lee 15 → 30분: 09:30~15:00 12회)."""
     p = C.params()
-    assert C.interval_min(p) == 15 and len(p["schedule"]["trade_times"]) == 24
-    assert p["schedule"]["trade_times"][-1] == "15:15"
-    assert C._slot(datetime(2026, 11, 6, 9, 49, 30, tzinfo=C.KST)) == "09:45"
+    assert C.interval_min(p) == 30 and len(p["schedule"]["trade_times"]) == 12
+    assert p["schedule"]["trade_times"][-1] == "15:00" and p["schedule"]["decide_times"] == p["schedule"]["trade_times"]
+    assert C._slot(datetime(2026, 11, 6, 9, 49, 30, tzinfo=C.KST)) == "09:30"
     q = {**p, "schedule": {**p["schedule"], "interval_min": 10}}
     real = C.params
     C.params = lambda: q
