@@ -39,9 +39,9 @@ PROMPTS = {
     "decide": "정기 판단 실행입니다 ({time}). CLAUDE.md 의 '{sec_a}' 순서대로 진행하세요.",
     "view": "판단 갱신 실행입니다 ({time}). 이번 회차는 매매하지 않습니다 (다음 매매 {next_trade}). CLAUDE.md 의 'A-2. 판단 갱신' 순서대로 진행하세요.",
     "exit": "손절·익절 실행입니다 ({time}). 대상 종목: {codes}. 감시 사유: {why}. CLAUDE.md 의 'B. 손절·익절 실행' 순서대로 진행하세요.",
-    "review": "주간 회고 실행입니다 ({time}). 대회 {week}주차, 기간 {period}. CLAUDE.md 의 'C. 주간 회고' 순서대로 진행하세요.",
+    "review": "주간 회고 실행입니다 ({time}). 대회 {week}주차, 기간 {period}. CLAUDE.md 의 'C. 주간 회고' 순서대로 진행하세요. 서브에이전트는 Agent 도구에 run_in_background: false 로 불러 답을 받은 다음 제출 도구를 부르고 끝내세요 (11-20 백그라운드로 띄우고 먼저 끝나 제출이 빠짐).",
     "tune": "기준값 조정 실행입니다 ({time}). 대회 {week}주차. CLAUDE.md 의 '{sec_d}' 순서대로 진행하세요.",
-    "report": "주간 보고서 작성 실행입니다 ({time}). 대회 {week}주차, 기간 {period}. CLAUDE.md 의 'E. 주간 보고서' 순서대로 진행하세요.",
+    "report": "주간 보고서 작성 실행입니다 ({time}). 대회 {week}주차, 기간 {period}. CLAUDE.md 의 'E. 주간 보고서' 순서대로 진행하세요. 서브에이전트는 Agent 도구에 run_in_background: false 로 불러 답을 받은 다음 제출 도구를 부르고 끝내세요 (11-20 백그라운드로 띄우고 먼저 끝나 제출이 빠짐).",
 }
 
 
